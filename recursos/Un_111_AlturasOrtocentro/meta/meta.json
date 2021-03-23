@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Geometría clásica"
+  ], 
+  "titulo": "Alturas y ortocentro de un triángulo", 
+  "descripcion": "En un triángulo podemos distinguir cuatro centros: ortocentro, circuncentro, baricentro, incentro; que son los puntos de intersección de cuatro grupos de rectas notables: alturas, mediatrices, medianas, bisectrices. En este interactivo empezaremos con las alturas y el ortocentro. Probamos, usando el Teorema de Ceva, que las alturas de un triángulo son concurrentes.",
+  "resena": "Concurrencia de las alturas de un triángulo por el teorema de Ceva, y existencia del punto de concurrencia (ortocentro).",
+  "id": "_Un_111_AlturasOrtocentro"
+}

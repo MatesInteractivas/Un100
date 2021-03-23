@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_072_EsfuerzosPorFlexionEnVigas" 
+	nivel="Licenciatura, Bachillerato" 
+	area="Física, Mecánica, Estática" 
+	plataforma="HTML 5" 
+	ver="Final"
+	>
+	<titulo><![CDATA[
+		Esfuerzos por flexión en vigas 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+	Una viga es un elemento estructural que se somete a cargas que actúan transversalmente al eje
+	longitudinal, originando deformaciones y esfuerzos internos.  Es importante, para el diseño de estos
+	elementos, comprender el concepto de flexión, la curva elástica generada y cómo se determinan las
+	deformaciones y esfuerzos internos. En esta unidad puede ayudar a
+	comprender el concepto de flexión en una viga sometida a cargas externas y
+	a calcular los esfuerzos por flexión.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

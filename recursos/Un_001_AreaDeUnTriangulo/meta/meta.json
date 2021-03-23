@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Algebra elemental"
+  ], 
+  "titulo": "El área de un triángulo", 
+  "descripcion": "El objetivo de esta unidad es mostrar al estudiante el origen y la validez de la famosa fórmula: área = base por altura sobre dos, para calcular el área de un triángulo y prepararlo para reconocer las diversas situaciones en las que no puede ser aplicada directamente y cómo resolverlas usando las herramientas matemáticas más simples, esencialmente, el Teorema de Pitágoras y sistemas de ecuaciones de primer y segundo grados.",
+  "resena": "Origen y validez de la fórmula para el área del triángulo.",
+  "id": "_Un_001_AreaDeUnTriangulo"
+}

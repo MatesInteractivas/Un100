@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Teoría de grafos", 
+    "Algoritmos"
+  ], 
+  "titulo": "Redes de Mundo pequeño", 
+  "descripcion": "Se introducirá al alumno a las redes de mundo pequeño, para que conozca algunas de sus propiedades básicas y sea capaz de cuantificar y distinguir sus principales características.",
+  "resena": "Redes en que los nodos no son vecinos entre sí, pero donde puede llegarse de un nodo a cualquier otro en pocos pasos.",
+  "id": "_Un_085_RedesMundoPequenyo"
+}

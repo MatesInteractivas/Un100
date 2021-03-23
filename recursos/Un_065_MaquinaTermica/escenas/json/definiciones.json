@@ -1,0 +1,47 @@
+var definiciones = [
+    {
+        trm     :"Adiabático",
+        def     :"Que no permite la transferencia de calor, como las paredes de un termo."
+    },
+    {
+        trm     :"Contacto térmico",
+        def     :"Dos sistemas que están en contacto mecánico directo o separados mediante una superficie que permite la transferencia de calor (lo que se conoce como <i>superficie diatérmica</i>), se dice que están en contacto térmico."
+    },
+        {
+        trm     :"Energía calorífica",
+        def     :"La energía térmica o calorífica es la parte de energía interna de un sistema termodinámico que es proporcional a su temperatura absoluta y se incrementa o disminuye por transferencia de energía."
+    },
+    {
+        trm     :"Energía cinética",
+        def     :"En física, la energía cinética de un cuerpo es aquella que posee debido a su movimiento."
+    },
+    {
+        trm     :"Isotérmico",
+        def     :"A temperatura constante."
+    },
+    {
+        trm     :"Ley cero de la termodinámica",
+        def     :"La ley cero de la termodinámica también se puede formular de la siguiente manera: <b>dos sistemas en equilibrio térmico con un tercero, están en equilibrio térmico entre sí</b>.<br><br>Hoy en día parece una obviedad, ¿no es así? Pero esta ley, enunciada por primera vez en el año 1931 por el físico inglés Ralph Fowler, tiene dos importantístimas aplicaciones.<br><br>Primero, constituye un método para medir la temperatura de cualquier sistema gracias a las llamadas <i>propiedades termométricas</i> (una propiedad que varía con la temperatura con mucha rapidez y que es fácil de medir). En el termómetro de vidrio esta propiedad es la altura alcanzada por el mercurio en el capilar de vidrio debido a la expansión térmica que sufre el mercurio por efecto de la temperatura.<br><br>Segundo, la ley cero permite calibrar los termómetros y establecer equivalencias entre las distintas escalas de temperatura, como lo puedes apreciar en la animación."
+    },
+    {
+        trm     :"Ley de Boyle",
+        def     :"A temperatura constante, el volumen de un gas es inversamente proporcional a la presión ejercida sobre él."
+    },
+    {
+        trm     :"Ley de Charles",
+        def     :"A presión constante, el volumen de un gas es directamente proporcional a su temperatura."
+    },
+    {
+        trm     :"Ley de Gay-Lussac",
+        def     :"A volumen constante, la presión de un gas es directamente proporcional a su temperatura."
+    },
+    {
+        trm     :"Primera ley de la termodinámica",
+        def     :"Si se realiza trabajo sobre un sistema o éste intercambia calor con otro, la energía interna del sistema cambiará."
+    },
+    {
+        trm     :"Punto de ebullición",
+        def     :"Temperatura a la que las sustancias pasan del estado líquido al estado gaseoso. En otras palabras, es la temperatura a la que hierve y se evapora un líquido, como el agua."
+    }
+];
+

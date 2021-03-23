@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría analítica"
+  ], 
+  "titulo": "Sistema de coordenadas polares", 
+  "descripcion": "El objetivo de esta unidad es mostrar el sistema de coordenadas polares en el que se fija un punto O llamado polo y un segmento horizontal que parte de este punto llamado eje polar. Cada punto P queda fijado por la distancia de P al polo (r) y el ángulo que determina el segmento OP con el eje polar (θ).",
+  "resena": "Presentación del sistema de coordenadas polares como alternativa al cartesiano y representación de figuras en el mismo.",
+  "id": "_Un_024_CoordenadasPolares"
+}

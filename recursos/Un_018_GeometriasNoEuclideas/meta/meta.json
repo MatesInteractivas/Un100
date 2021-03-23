@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría"
+  ], 
+  "titulo": "Geometrías no euclídeas", 
+  "descripcion": "Se introducen los fundamentos de la Geometría Euclídea. Se enuncian los elementos básicos y los postulados formulados por Euclides, y con base en ellos se demuestra que la suma de los ángulos de un triángulo plano son dos ángulos rectos. Asimismo, se demuestra que hay otros modelos, en que dicha suma es una cantidad superior o inferior a esos dos ángulos rectos. Finalmente, se muestra que hay modelos geométricos que en los que no se cumple el postulado quinto de Euclides, que hay geometrías no euclídeas.",
+  "resena": "Geometrías que no respetan los postulados de la geometría euclidiana y algunas propiedades.",
+  "id": "_Un_018_GeometriasNoEuclideas"
+}

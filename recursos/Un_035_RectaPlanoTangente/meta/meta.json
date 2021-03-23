@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría"
+  ], 
+  "titulo": "Recta y plano tangente", 
+  "descripcion": "Se definen: a) La recta tangente a una función en un punto, como la recta que mejor se aproxima a dicha función en el entorno próximo a él, y se determina su ecuación. Se aborda el cálculo de derivadas. b) El plano tangente a una superficie en un punto, como el plano que mejor se aproxima a dicha superficie en el entorno proximo a él. Se presentan tanto las derivadas parciales como las direccionales, y cómo calcular éstas a partir de las primeras. Se ve la relación existente entre continuidad, derivabilidad y diferenciabilidad. Se muestra que la existencia de todas las derivadas direccionales, no es suficiente para la existencia del plano tangente. Pero si existe éste, basta calcular las derivadas parciales.",
+  "resena": "Tangencia de rectas y planos. Ecuaciones correspondientes de estos elementos y su relación con la derivada.",
+  "id": "_Un_035_RectaPlanoTangente"
+}

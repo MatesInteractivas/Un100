@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría"
+  ], 
+  "titulo": "Geometría esférica", 
+  "descripcion": "Se determina la trayectoria mínima sobre una esfera entre dos de sus puntos, es decir se determina la geodésica entre esos dos puntos. Se define qué es un segmento esférico y un triángulo esférico. Se comprueba que la suma de los ángulos de un triángulo esférico es superior a 180º Y se muestra que la geometría esférica no es una geometría euclídea, que hay otras geometrías.",
+  "resena": "Concepto de geodésica en la geometría esférica y propiedades de los triángulos esféricos.",
+  "id": "_Un_016_GeometriaEsferica"
+}

@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Estadística"
+  ], 
+  "titulo": "Estadística básica", 
+  "descripcion": "La estadistica  básica  es muy  útil  para resumir información, especialmente  en  las medidas  de tendencia central y  variabilidad. Se utilizan en encuestas, indicadores económicos, predicciones económicas, tomas  de  decisión. Permiten presentar la información de una forma clara y facil de interpretar. En esta unidad se busca el logro de los siguientes objetivos. * Distinguir entre variables cualitativas y cuantitativas * Calcular las medidas de tendencia central. Media, mediana y moda. * Construir tablas de frecuencia. * Costruir gráficos de frecuencia.",
+  "resena": "Medidas de tendencia central y variabilidad en diversos ejemplos, así como herramientas de la estadística.",
+  "id": "_Un_050_EstadisticaBasica"
+}

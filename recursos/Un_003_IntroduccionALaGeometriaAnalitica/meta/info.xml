@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_003_IntroduccionALaGeometriaAnalitica" 
+	nivel="Licenciatura" 
+	area="Matem&aacute;ticas, Geometr&iacute;a anal&iacute;tica" 
+	plataforma="HTML 5"
+        ver="En desarrollo"
+	>
+	<titulo><![CDATA[
+		Introducci&oacute;n a la geometr&iacute;a anal&iacute;tica 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		El objetivo de esta unidad es familiarizar al alumno con las curvas básicas de la geometr&iacute;a anal&iacute;tica, as&iacute; como mostrar gr&aacute;ficamente que provienen de cortar un cono con un plano (a lo cual se debe el nombre 'secciones c&oacute;nicas'). En una de las escenas el usuario puede manipular la apertura, inclinaci&oacute;n y posici&oacute;n del cono para hacer evidente que es posible construir las cuatro secciones (circunferencia, elipse, par&aacute;bola e hip&eacute;rbola) con cortes del cono. Se muestra la equivalencia entre las secciones c&oacute;nicas y la ecuaci&oacute;n general de segundo grado en dos variables.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

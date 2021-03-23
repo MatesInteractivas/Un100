@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cierre</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='HTMLIFrame' id='E2' x='20' y='65' ancho='984' alto='485' dibujar-si='tplano=1' archivo='4_Cierre_Plano.html' ">
+      <param name="E_03" value="tipo='HTMLIFrame' id='E3' x='20' y='65' ancho='984' alto='485' dibujar-si='tesfera=1' archivo='4_Cierre_Esferica.html' ">
+      <param name="E_04" value="tipo='HTMLIFrame' id='E4' x='20' y='65' ancho='984' alto='485' dibujar-si='tpoincare=1' archivo='4_Cierre_Poincare.html' ">
+      <param name="C_01" value="id='tplano' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='((E1._w-218)/2,360,218,170)' valor='0' color='0000ff' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='22' imagen='images/g_plana.png' acción='calcular' parámetro='textoplano=1;;tplano=1;tesfera=0;tpoincare=0;muestraE1=0' ">
+      <param name="C_02" value="id='tesfera' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(120,70,218,170)' valor='0' color='0000ff' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='22' imagen='images/g_esferica.png' acción='calcular' parámetro='textoesfera=1;;tplano=0;tesfera=1;tpoincare=0;muestraE1=0' ">
+      <param name="C_03" value="id='tpoincare' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w-120-218,70,218,170)' valor='1' color='0000ff' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='22' imagen='images/g_hiperbolica.png' acción='calcular' parámetro='textopoincare=1;;tplano=0;tesfera=0;tpoincare=1;muestraE1=0' ">
+      <param name="C_04" value="id='volver' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Regresar' expresión='((E1._w-110)/2,E1._h-55,110,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='tplano=0;tesfera=0;tpoincare=0;muestraE1=0' dibujar-si='(tplano)||(tesfera)||(tpoincare)||(muestraE1)' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='tplano=1;tesfera=1;tpoincare=1;muestraE1=1;;textoplano=0;textoesfera=0;textopoincare=0;;tplano=0;tesfera=0;tpoincare=0;muestraE1=0' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='El Quinto Postulado de Euclides' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='no' expresión='(0,0,1,1)' archivo='images/fondo3.svg' rotini='0' opacidad='1' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='textoplano=1' coord_abs='sí' expresión='[380,520]' texto='Geometría euclídea' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='22' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='textoesfera=1' coord_abs='sí' expresión='[130,290]' texto='Geometría no euclídea' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='22' align='left' anchor='top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='textopoincare=1' coord_abs='sí' expresión='[610,290]' texto='Geometría no euclídea' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='22' align='left' anchor='top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

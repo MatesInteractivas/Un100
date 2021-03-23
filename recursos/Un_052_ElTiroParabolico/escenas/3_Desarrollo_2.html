@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>El tiro parabólico: Construcción geométrica de las trayectorias parabólicas</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='1' discreto='no' decimales='0' fijo='sí' visible='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Construcción de las trayectorias parabólicas' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 2' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='\b{Construcción de las trayectorias parabólicas}\n\nSea \serif{\b{\${h}}} la altura máxima que puede alcanzar una bala disparada verticalmente, la cual se calcula como la altura donde toda la energía, que inicialmente es sólo cinética, se convierte en potencial, es decir: \serif{\b{\${E = mgh = \frac{mv_0^2}{2}}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,180)' texto='Se construye una circunferencia con centro en \serif{\b{\${O}}} y de radio \serif{\b{\${h}}}. Dada una dirección de disparo cualquiera, se refleja el punto sobre el cañón a una altura \serif{\b{\${h}}} y se llama \serif{\b{\${F}}}. \n\nConstruimos la parábola con foco \serif{\b{\${F}}} y directriz horizontal a una altura \serif{\b{\${h}}} sobre el cañon. A cualquier posición \serif{\b{\${B}}} de la bala a lo largo de la parábola, le asignamos una velocidad en la dirección de la tangente a la parábola y de magnitud \serif{\b{\${v = \sqrt{}{\frac{BF}{h}} v_0}}}. Entonces: ' decimales='2' fijo='sí' ancho='550' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==0' coord_abs='no' expresión='(6,-0.5,0.5,0.5)' archivo='images/3_Desarrollo_2.png' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='\b{Teorema.} La trayectoria parabólica con la velocidad asignada satisface la ecuación: \c{\serif{\b{\${\frac{mv_0^2}{2} = mgh = \frac{mv^2}{2} + mgy}}}}\nque corresponde a la conservación de la energía en el tiro parabólico.\n\n\b{Demostración.} Sea \serif{\b{\${d}}} la directriz, es decir la recta horizontal con altura \serif{\b{\${h}}} sobre el cañón.\nSean \serif{\b{\${(x, y)}}} las coordenadas de una posición arbitraria de \serif{\b{\${B}}}. Por construcción de la trayectoria, \serif{\b{\${BF = Bd = h - y}}}. Entonces se cumple la siguiente cadena de igualdades:\n\n\serif{\b{\${\frac{mv^2}{2} + mgy = \frac{m}{2} \frac{BF}{h} v_0^2 + mgy}}}          por la definición \serif{\b{\${v = \sqrt{}{\frac{BF}{h}} v_0}}}\n                         \serif{\b{\${= \frac{mv_0^2}{2} \frac{h - y}{h} + mgy}}}        porque \serif{\b{\${BF = h - y}}}\n                         \serif{\b{\${= mgh \frac{h - y}{h} + mgy}}}           por la definición de \serif{\b{\${h}}}, tal que \serif{\b{\${mgh = \frac{mv_0^2}{2}}}}\n                         \serif{\b{\${= mgh}}}                                      por mera simplificación algebraica.\n\nLo cual demuestra el teorema. \serif{\b{\${QED}}}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

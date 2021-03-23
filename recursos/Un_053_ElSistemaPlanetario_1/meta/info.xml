@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_053_ElSistemaPlanetario_1" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Física, Dinámica Celeste" 
+	plataforma="HTML 5"
+        ver="Beta"
+	>
+	<titulo><![CDATA[
+		El Sistema planetario: Modelos geocéntrico y heliocéntrico
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+      El propósito de esta unidad es profundizar en los conocimientos considerados elementales sobre el sistema
+      planetario, pero que en realidad muy pocos han revisado en detalle y con la profundidad necesaria para
+      poder comprender a fondo el contenido y significado de las leyes de Kepler. La unidad pretende preparar
+      al estudiante para el estudio profundo y detallado de las trayectorias planetarias según Johannes Kepler.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

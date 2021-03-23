@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometría</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+</head>
+
+<body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '1'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '-5.61,3.75,1.00'  visible = '0'  ancho = '3'  color = '#0,#ff'  etiqueta = '0,0' />
+<objeto  nombre = 'R'  tipo = 'punto'  constructor = '0'  parametros = '-1.23,8.49,1.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,1' />
+<objeto  nombre = 'x'  tipo = 'recta'  constructor = '31'  parametros = '0.73,-0.68,6.67'  objRef = '0,1'  visible = '1'  ancho = '1'  color = '#c0c0c0,#c0c0c0'  etiqueta = '0,2' />
+<objeto  nombre = 'g'  tipo = 'escalar'  constructor = '80'  parametros = '20.00,4.31'  etiqueta = '0,3' />
+<objeto  nombre = 'cir'  tipo = 'circulo'  constructor = '61'  parametros = '-5.61,3.75,20.00,0.00'  objRef = '0,3'  visible = '0,0'  ancho = '1,2'  color = '#ff,#c0c0c0,#ff0000,#c0c0c0'  etiqueta = '0,4' />
+<objeto  nombre = 'dir'  tipo = 'recta'  constructor = '34'  parametros = '0.68,0.73,1.06'  objRef = '2,0'  visible = '1'  ancho = '1'  color = '#c0c0c0,#c0c0c0'  etiqueta = '0,5' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '9'  parametros = '7.97,18.43,0.00'  objRef = '2,4,1'  visible = '0'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,6' />
+<objeto  nombre = 'F'  tipo = 'punto'  constructor = '6'  parametros = '-4.66,4.78,1.00,13.31,1.01'  objRef = '0,6'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,7' />
+<objeto  nombre = 'V1'  tipo = 'punto'  constructor = '3'  parametros = '-5.14,4.26,1.00'  objRef = '0,7'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,8' />
+<objeto  nombre = 'p'  tipo = 'escalar'  constructor = '81'  parametros = '0.70,2.18'  objRef = '0,8'  etiqueta = '0,9' />
+<objeto  nombre = 'con'  tipo = 'conica'  constructor = '107'  parametros = '1.00,-0.93,0.86,7.31,-10.32,80.61,-37.43,-0.85,27.16,3.29,3.55,-0.00,-12.62'  objRef = '7,5'  visible = '1,0,0,0,0,0'  ancho = '2,2,1,2,1,1'  color = '#ff,#c0c0c0,#ff,#c0c0c0,#ff,#c0c0c0,#c0c0c0,#c0c0c0,#ff0000'  etiqueta = '1,13' />
+<objeto  nombre = 'O'  tipo = 'punto'  constructor = '0'  parametros = '0.00,0.00,1.00'  visible = '0'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,11' />
+<objeto  nombre = 'e'  tipo = 'escalar'  constructor = '99'  parametros = '1.00,4.31'  objRef = '10'  etiqueta = '0,12' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-7.57,-5.08,0.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '0,13' />
+<objeto  nombre = 'I'  tipo = 'angulo'  constructor = '95'  parametros = '0.82,4.40'  objRef = '10'  etiqueta = '0,14' />
+<objeto  nombre = 'ang1'  tipo = 'angulo'  constructor = '155'  parametros = '-0.82,4.31'  objRef = '14'  formulas = '-I ' etiqueta = '0,15' />
+<objeto  nombre = 'rot'  tipo = 'funcionRigida'  constructor = '122'  parametros = '0.68,0.73,0.00,-0.73,0.68,0.00,0.00,0.00,1.00,0.68,-0.73,0.00,0.73,0.68,0.00,0.00,0.00,1.00'  objRef = '11,15'  etiqueta = '0,16' />
+<objeto  nombre = 'con2'  tipo = 'conica'  constructor = '111'  parametros = '-0.00,-0.00,1.00,-1.41,-6.67,43.44,-1.01,9.37,-1.98,1.41,0.00,-0.00,-1.98'  objRef = '10,16'  visible = '1,0,0,0,0,0'  ancho = '2,2,1,2,1,1'  color = '#8000,#c0c0c0,#ff,#c0c0c0,#ff,#c0c0c0,#c0c0c0,#c0c0c0,#ff0000'  etiqueta = '1,18' />
+<objeto  nombre = 'E'  tipo = 'punto'  constructor = '0'  parametros = '-7.57,-6.09,0.00'  visible = '1'  ancho = '3'  color = '#0,#8000'  etiqueta = '0,18' />
+<objeto  nombre = 'f'  tipo = 'recta'  constructor = '38'  parametros = '-0.64,-0.77,0.00'  objRef = '8,11'  visible = '1,0'  ancho = '1,1'  color = '#ff8080,#c0c0c0,#0'  etiqueta = '0,19' />
+<objeto  nombre = 'V2'  tipo = 'punto'  constructor = '20'  parametros = '-0.36,6.67,1.00'  objRef = '8,16'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,20' />
+<objeto  nombre = 'd'  tipo = 'recta'  constructor = '38'  parametros = '-1.00,-0.05,-0.00'  objRef = '20,11'  visible = '1,0'  ancho = '1,1'  color = '#ff8080,#c0c0c0,#0'  etiqueta = '0,21' />
+<objeto  nombre = 'ejex'  tipo = 'recta'  constructor = '30'  parametros = '0.00,1.00,0.00'  visible = '0'  ancho = '1'  color = '#ff0000,#c0c0c0'  etiqueta = '0,22' />
+<objeto  nombre = 'K'  tipo = 'punto'  constructor = '1'  parametros = '-9.08,0.00,-1.00'  objRef = '2,22'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '0,23' />
+<objeto  nombre = 'x100'  tipo = 'punto'  constructor = '0'  parametros = '100.00,0.00,0.00'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,24' />
+<objeto  nombre = 'L'  tipo = 'arco'  constructor = '205'  parametros = '0.82,-9.08,0.00,100.00,0.00,-5.61,3.75'  objRef = '24,23,0'  visible = '1'  ancho = '5'  color = '#ff,#ff'  etiqueta = '1,25' />
+<objeto  nombre = 'i'  tipo = 'recta'  constructor = '52'  parametros = '0.00,-1.00,6.67'  objRef = '17'  visible = '1'  ancho = '1'  color = '#b9ffb9,#c0c0c0'  etiqueta = '0,26' />
+<objeto  nombre = 'j'  tipo = 'recta'  constructor = '53'  parametros = '1.00,0.00,0.36'  objRef = '17'  visible = '1'  ancho = '1'  color = '#b9ffb9,#c0c0c0'  etiqueta = '0,27' />
+<objeto  nombre = 'a'  tipo = 'recta'  constructor = '54'  parametros = '1.00,0.00,1.06,1.00'  objRef = '17'  visible = '1'  ancho = '1'  color = '#c0c0c0,#c0c0c0'  etiqueta = '0,-1' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '34'  parametros = '0.68,0.73,0.36'  objRef = '2,8'  visible = '1'  ancho = '1'  color = '#c0c0c0,#c0c0c0'  etiqueta = '0,-1' />
+
+<nota texto="<p>Cuando los ejes de una parábola no son paralelos a los ejes cartesianos, su ecuación general tiene término en <mt>xy</mt></p>
+<p align='center' style='font-family:descartesJS_serif;'>Ax<sup>2</sup> + Bxy + Cy<sup>2</sup> + Dx + Ey + F = 0</p>
+<p>para eliminar el término <mt>xy</mt>, hay que hacer que <mt>B</mt> sea <mt>0</mt>, una manera de hacerlo es girarla alrededor del origen hasta que su eje sea paralelo a uno de los ejes cartesianos.</p>
+<p>Mueve el punto <mt>R</mt> y observa cómo cambia la ecuación de la parábola roja. Cuando su eje es paralelo a uno de los ejes cartesianos, el coeficiente de <mt>xy</mt> se hace cero.</p>
+<p>Conforme la parábola se hace horizontal, el coeficiente de <mt>x<sup>2</sup></mt> también se hace pequeño y conforme se hace vertical, el coeficiente de <mt>y<sup>2</sup></mt> se hace pequeño.</p>
+<p>El ángulo de inclinación de la parábola respecto al eje <mt>X</mt> satisface<p>
+<p align='center'><mt>cot(2 ang) = (A-C)/B</mt>. En este caso, vale <mt>$L$</mt> grados.</p>	
+<p>Con los cambios de variable</p>
+<p align='center' style='font-family:descartesJS_serif;'>x = cos(ang)x - sen(ang)y
+<br>y = sen(ang)x + cos(ang)y</p>
+<p>Se obtiene la ecuación de la parábola con eje paralelo a uno de los ejes caratesianos, que aparece junto al punto verde.</p>
+<p>Posteriormente, hay que trasladar al origen esta nueva parábola para obtener el parámetros <mt>p</mt></p>
+<p align='center' style='font-family:descartesJS_serif;'>p = $p$</p>"/>
+
+<table align='center'>  
+<tr>
+	<td width ='482px' height='540px' valign='middle' class="celda_izquierda">
+			<canvas id="pizarron" width="482" height="540"></canvas>
+		</td>
+    
+    <td width ='20px'></td>
+    
+    <td width ='482px' height="540px" valign='middle' class="celda_derecha">
+			<p id="cuaderno" >Este es un p&aacute;rrafo</p>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

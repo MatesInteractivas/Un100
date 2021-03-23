@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Geometría Analítica"
+  ], 
+  "titulo": "Lugares geométricos círculo. Parte 2", 
+  "descripcion": "El objetivo de esta serie de interactivos es estudiar ejemplos planteados que cuentan con condiciones que debe cumplir un punto del plano para poder ser considerado un elemento del lugar geométrico. Una vez establecidas las condiciones,  procederemos a encontrar la ecuación que debe satisfacerse para identificar la curva. En este caso, se hace una construccion del lugar geométrico que describe un punto M cuando se mueve un punto A en un círculo.  Se prueba que dicho lugar geométrico también es un círculo.",
+  "resena": "Continuación sobre las condiciones de puntos en el plano que pertenecen a un círculo.",
+  "id": "_Un_124_LugaresGeometricosCirculo2"
+}

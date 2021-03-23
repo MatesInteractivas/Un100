@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Desarrollo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Demostración de la fórmula' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Times New Roman;}{\colortbl\red0\green128\blue0;\red0\green0\blue0;}\f0\fs38 Sean \f1\i\b S = P + <D>\b0\i0\f0   y  \f1\i\b S&squot; = P&squot; + <D&squot;>\b0\i0\f0  dos subvariedades lineales afines en \f1{\*\mjaformula\i\b ℝ\b0\i0{\supix\i\b m\b0\i0}}\f0  y sea \f1\i\b R\b0\i0\f0  una base de \f1\i\b <D>+<D&squot;>\b0\i0\par\f1\fs38 \i\b{\*\mjaformula{\fraction{\num{\matrix\type 4\rows 2\columns 1{\element\i\b P - P&squot;\b0\i0}{\element\i\b R\b0\i0}}}{\den{\matrix\type 4\rows 1\columns 1{\element\i\b R\b0\i0}}}}}\b0\i0\f0  es el módulo del vector \f1\i\b alt\b0\i0\f0  que comienza en un punto de \f1\i\b <R>\b0\i0\f0 , termina en \f1\i\b P - P&squot;\b0\i0\f0  y es perpendicular a \f1\i\b <R>\b0\i0\f0 , \par\f0\fs38 es decir, la altura desde \f1\i\b P-P&squot;\b0\i0\f0  a \f1\i\b <R>\b0\i0\f0  \par\f0\fs20  \par\cf0\f0\fs38 Veamos que este módulo, \f1\i\b |alt|\b0\i0\f0 , es la distancia de un punto de \f1\i\b S\b0\i0\f0  a un punto de \f1\i\b S&squot;\b0\i0\par\cf1\f1\fs38\i\b |alt| = distancia(P - P&squot;, r)\b0\i0\f0 , con \f1\i\b r\b0\i0\f0  perteneciente a \f1\i\b R\b0\i0\f0 . Sumando \f1\i\b P&squot;\b0\i0\f0  en ambos extremos, \par\cf1\f1\fs38\i\b distancia(P - P&squot;, r) = distancia(P, r + P&squot;) = distancia(P, d + d&squot; + P&squot;)\b0\i0\f0  pues \f1\i\b r\b0\i0\f0  pertenece a \f1\i\b <D>+<D&squot;>\b0\i0\f0 . Restando \f1\i\b d\b0\i0\f0  en ambos \par\cf1\f0\fs38 extremos concluimos que \f1\i\b |alt| = distancia(-d + P, d&squot; + P&squot;)\b0\i0\f0  que es la distancia de un punto de \f1\i\b S\b0\i0\f0  a un punto de \f1\i\b S&squot;\b0\i0\f0  \par\cf1\f0\fs20  \par\cf0\f0\fs38 Veamos que la distancia de un punto de \f1\i\b S\b0\i0\f0 , \f1\i\b P + d\b0\i0\f0 , a un punto de \f1\i\b S&squot;\b0\i0\f0 , \f1\i\b P&squot; + d&squot;\b0\i0\f0 , es menor o igual que \f1\i\b |alt|\b0\i0\par\cf0\f1\fs38 \cf1{\*\mjaformula\i\b distancia\b0\i0{\supix\i\b 2\b0\i0}\i\b (P + d, P&squot; + d&squot;) = distancia\b0\i0{\supix\i\b 2\b0\i0}\i\b (P - P&squot;, d&squot; - d)\b0\i0}\f0 , hemos restado \f1\i\b P&squot; - d\b0\i0\f0  en ambos extremos,\par\cf1\f0\fs38 \f1{\*\mjaformula\i\b distancia\b0\i0{\supix\i\b 2\b0\i0}\i\b (P - P&squot;, d&squot; - d) = distancia\b0\i0{\supix\i\b 2\b0\i0}\i\b (P - P&squot; - r, d&squot; - d - r)\b0\i0}\f0  se ha restado \f1\i\b r = P - P&squot; - alt\b0\i0\f0  y como \f1\i\b d&squot; - d - r\b0\i0\f0  pertenece a \par\cf1\f1\fs38\i\b <R>\b0\i0\f0 , lo designamos por \f1\i\b r&squot;\b0\i0\f0 . Así \f1{\*\mjaformula\i\b distancia\b0\i0{\supix\i\b 2\b0\i0}\i\b (P + d, P&squot; + d&squot;) = distancia\b0\i0{\supix\i\b 2\b0\i0}\i\b (alt, r&squot;) = (alt - r&squot;) · (alt - r&squot;) = |alt|\b0\i0{\supix\i\b 2\b0\i0}\i\b  + |r&squot;|\b0\i0{\supix\i\b 2\b0\i0}\i\b  >= |alt|\b0\i0{\supix\i\b 2\b0\i0}}\f0  \par\cf1\f0\fs38 pues \f1\i\b alt\b0\i0\f0  es perpendicular a \f1\i\b <R>\b0\i0\f0 , \f1\i\b alt · r&squot; = 0\b0\i0\par\cf1\f1\fs20\i\b  \b0\i0\par\cf1\f0\fs20 \fs38 Concluimos por tanto que \f1\i\b |alt|\b0\i0\f0  o \f1\i\b{\*\mjaformula{\fraction{\num{\matrix\type 4\rows 2\columns 1{\element\i\b P - P&squot;\b0\i0}{\element\i\b R\b0\i0}}}{\den{\matrix\type 4\rows 1\columns 1{\element\i\b R\b0\i0}}}}}\b0\i0\f0  es la distancia de \f1\i\b S\b0\i0\f0  a \f1\i\b S&squot;\b0\i0 .}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

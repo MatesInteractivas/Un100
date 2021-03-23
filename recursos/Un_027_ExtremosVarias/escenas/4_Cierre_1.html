@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='Covertura' x='0' y='0' ancho='100%' alto='100%' dibujar-si='info' fijo='sí' escala='48' O.x='0' O.y='0' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='55273c75' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='INFO' x='(E1._w-470)/2' y='(E1._h-345)/2' ancho='470' alto='345' dibujar-si='info' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' expresión='((E1._w-120)/2,E1._h-55,120,30)' valor='0' incr='1' min='0' max='1' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="C_02" value="id='cerrarInfo' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' expresión='(INFO._w-35,0,35,35)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='info=0' ">
+      <param name="C_03" value="id='info' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w-55,15,35,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_top_left' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' imagen='images/info.svg' acción='calcular' parámetro='info=1' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='info=1' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='273c75' coord_abs='sí' expresión='(1,1,INFO._w-3,INFO._h-3)' ancho='3' border_radius='0' lineDash='solid' ">
+      <param name="G_02" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='20303a' coord_abs='sí' expresión='(0,0,INFO._w,35)' relleno='273c75' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='INFO' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(20,50)' texto='\b{Conclusiones}\n\nEn este apartado se resumen los principales resultados obtenidos sobre extremos de funciones de dos variables.\n\nEn esta unidad se ha extendido este concepto a las funciones de dos variables y se han analizado los:\n\n• Extremos relativos y absolutos\n• Extremos condicionados' decimales='2' fijo='sí' ancho='INFO._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Resumen' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ff20303a' coord_abs='sí' expresión='(20,65,984,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_06" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(895,175,0.5,0.5)' archivo='images/imagen_1.png' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(895,335,0.5,0.5)' archivo='images/imagen_2.png' rotini='0' opacidad='1' ">
+      <param name="G_08" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(895,495,0.5,0.5)' archivo='images/imagen_3.png' rotini='0' opacidad='1' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E1._w/2,E1._h-42)' texto='[steps+1] / 2' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='[40,85]' texto='\color{3498db}{\b{Extremos relativos}}\n\n\b{1.} Condición necesaria. Si \serif{\b{\${z = f(x, y)}}} es una función diferenciable en \serif{\b{\${D}}}, la condición necesaria para la existencia de extremo relativo de \serif{\b{\${f}}} en \serif{\b{\${P}}} es que sea un punto con derivadas parciales primeras cero.\n\n\b{Teorema del Hessiano}. Sea \serif{\b{\${f}}} una función diferenciable en \serif{\b{\${(a, b)}}} cumpliendo que \serif{\b{\${f_x(a, b) = f_y(a, b) = 0}}}\n\nSe define la matriz hessiana como:\n\n\n\n\nEntonces,\n• Si \serif{\b{\${det(H(a, b)) > 0}}} y \serif{\b{\${f_{xx}(a, b) > 0}}} entonces \serif{\b{\${(a, b)}}} es un Mínimo para \serif{\b{\${f}}}.\n• Si \serif{\b{\${det(H(a, b)) > 0}}} y \serif{\b{\${f_{xx}(a,b ) < 0}}} entonces \serif{\b{\${(a, b)}}} es un Máximo para \serif{\b{\${f}}}\n• Si \serif{\b{\${det(H(a, b)) < 0}}}, \serif{\b{\${(a, b)}}} es un Punto Silla para \serif{\b{\${f}}}.' decimales='2' fijo='sí' ancho='740' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(300,350)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs38\i\b \b0\i0\i\b{\*\mjaformula\i\b H = \b0\i0{\matrix\type 0\rows 2\columns 2{\element\i\b f\b0\i0{\subix\i\b xx\b0\i0}\i\b (a, b)\b0\i0}{\element\i\b f\b0\i0{\subix\i\b xy\b0\i0}\i\b (a, b)\b0\i0}{\element\i\b f\b0\i0{\subix\i\b xy\b0\i0}\i\b (a, b)\b0\i0}{\element\i\b f\b0\i0{\subix\i\b yy\b0\i0}\i\b (a, b)\b0\i0}}}\b0\i0\i\b \b0\i0}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_12" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='[40,85]' texto='\color{3498db}{\b{Extremos absolutos}}\n\n\b{2. Teorema de Weierstrass.} Toda función \serif{\b{\${z = f(x, y)}}} continua en un conjunto \serif{\b{\${R}}} cerrado y acotado alcanza su máximo y mínimo absoluto en \serif{\b{\${R}}}.\n\n\n\color{3498db}{\b{Extremos condicionados}}\n\n\b{3. Teorema de Lagrange.} Si:\n\n- \serif{\b{\${Q(a, b)}}} es un extremo de \serif{\b{\${f}}} sometido a la restricción \serif{\b{\${G(x, y) = 0}}}\n- \serif{\b{\${f}}} y \serif{\b{\${G}}} tienen derivadas parciales primeras continuas en un dominio que contenga a \serif{\b{\${G}}} entonces el gradiente de \serif{\b{\${f}}} y de \serif{\b{\${G}}} son proporcionales en \serif{\b{\${Q}}}.\n\nEsto significa que los extremos condicionados son puntos críticos de la\nfunción Lagrangiana: \serif{\b{\${L(x, y) = f(x, y) + λG(x, y)}}}.' decimales='2' fijo='sí' ancho='740' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

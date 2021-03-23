@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Informática", 
+    "Computación"
+  ], 
+  "titulo": "Tipos de datos y variables", 
+  "descripcion": "Comprender que son las constantes, las variables y cual es su importancia en la progrmación de computadoras, de igual forma entender que son los tipos de datos, cómo utilizarlos y cuales son  las más comunes en los diferentes lenguajes de programación",
+  "resena": "Descripción y uso apropiado de tipos de datos en la computación.",
+  "id": "_Un_058_TiposDeDatosYVariables"
+}

@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Lógica"
+  ], 
+  "titulo": "Diagramas de Carroll y mapas de Karnaugh", 
+  "descripcion": "Una alternativa más cómoda y, en nuestro concepto, más lógica, para representar dos o más conjuntos, son los diagramas de Carroll. En Game of Logic, Lewis Carroll hace una introducción instructiva a los conceptos  de  la  lógica, usando diagramas biliterales y triliterales tipo eulerianos. Por otra parte, las representaciones  de  uno  o  más  atributos y las simplificaciones booleanas o de circuitos lógicos se  comprenden mejor con  los mapas de  Karnaugh que,  a  través del  agrupamiento  de ceros  y unos, dentro del mapa, ayuda a visualizar  las  relaciones lógicas entre las variables y conduce directamente a  una  función  booleana simplificada. Ambos  diagramas, Carroll  y Karnaugh, tienen  una  lógica  de construcción similar. Los objetivos a lograr en esta unidad son: * Representar, en un diagrama de Carroll, dos, tres o cuatro atributos. * Representar, en un diagrama de Carroll, las operaciones entre conjuntos. * Utilizar los mapas de Karnaugh para representar relaciones lógicas entre dos, tres y cuatro variables.",
+  "resena": "Representación de Carroll como alternativa a los conjuntos. Su papel en la lógica. Simplificación lógica booleana de Karnaugh.",
+  "id": "_Un_090_DiagramasDeCarrollYMapasDeKarnaugh"
+}

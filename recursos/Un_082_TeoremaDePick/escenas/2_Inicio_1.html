@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='Covertura' x='0' y='0' ancho='100%' alto='100%' dibujar-si='muestraDefinicionDePoligonoSimple' fijo='sí' escala='48' O.x='0' O.y='0' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='55273c75' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='DefinicionPoligonoSimple' x='(E1._w-800)/2' y='(E1._h-490)/2' ancho='800' alto='490' dibujar-si='muestraDefinicionDePoligonoSimple' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='muestraDefinicionDePoligonoSimple' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(705,85,134,25)' valor='0' color='222222' borderColor='no' color-int='fff0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='vacio.gif' acción='calcular' parámetro='muestraDefinicionDePoligonoSimple=1' dibujar-si='paso==0' ">
+      <param name="C_02" value="id='cerrar_info' interfaz='botón' tipo='numérico' región='interior' espacio='DefinicionPoligonoSimple' expresión='(DefinicionPoligonoSimple._w-35,0,35,35)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='muestraDefinicionDePoligonoSimple=0' ">
+      <param name="C_03" value="id='paso' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' expresión='((E1._w-120)/2,E1._h-55,120,30)' valor='0' incr='1' min='0' max='limPasos' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='titulo1=&squot;Teorema de Pick&squot;;titulo2=&squot;Ejemplos&squot;;;borde=0;marco.x=40;marco.y=85;marco.w=984;marco.h=540;;posImagenEjemplo.x=40;posImagenEjemplo.y=85;posTextoEjemplo.x=posImagenEjemplo.x+540;posTextoEjemplo.y=85;;paso=0;limPasos=3;' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='ffffff' dibujar-si='paso==0' coord_abs='sí' expresión='[E1._w/2,20]' texto='[titulo1]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(20,65,984,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E1._w/2,E1._h-42)' texto='[paso+1] / [limPasos+1]' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso==0' coord_abs='sí' expresión='[marco.x+borde,marco.y+borde]' texto='El teorema de Pick, proporciona una fórmula elegante para calcular el área de un \color{0000ff}{\u{polígono simple}}, cuyos vértices se encuentran sobre una retícula.\n\nEl área \serif{\b{\${A}}} de un polígono simple con vértices sobre una retícula es:\n\c{\serif{\b{\${A = I + \frac{B}{2} -1}}}\n\ndonde \serif{\b{\${B}}} es el número de puntos de la retícula que se encuentran en el borde del polígono, e \serif{\b{\${I}}} son el número de puntos de la retícula que se encuentran en el interior del polígono.' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='paso==0' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='ffffff' dibujar-si='paso>0' coord_abs='sí' expresión='[E1._w/2,20]' texto='[titulo2]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='paso==1' coord_abs='sí' expresión='(posImagenEjemplo.x+250,posImagenEjemplo.y+175,0.5,0.5)' archivo='images/ejemploInicio1.png' rotini='0' opacidad='1' info='paso==1' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso==1' coord_abs='sí' expresión='[posTextoEjemplo.x,posTextoEjemplo.y]' texto='El número de puntos sobre el borde es:\n\serif{\b{\${B = 26}}}\n\nEl número de puntos interiores es:\n\serif{\b{\${I = 30}}}\n\nAplicando el teorema de Pick tenemos:\n\serif{\b{\${A = I + \frac{B}{2} -1}}}\n     \serif{\b{\${= 30 + \frac{26}{2} -1}}}\n     \serif{\b{\${= 30 + 13 - 1}}}\n     \serif{\b{\${= 42}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='paso==1' ">
+      <param name="G_08" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='paso==2' coord_abs='sí' expresión='(posImagenEjemplo.x+250,posImagenEjemplo.y+175,0.5,0.5)' archivo='images/ejemploInicio2.png' rotini='0' opacidad='1' info='paso==2' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso==2' coord_abs='sí' expresión='[posTextoEjemplo.x,posTextoEjemplo.y]' texto='El número de puntos sobre el borde es:\n\serif{\b{\${B = 8}}}\n\nEl número de puntos interiores es:\n\serif{\b{\${I = 9}}}\n\nAplicando el teorema de Pick tenemos:\n\serif{\b{\${A = I + \frac{B}{2} - 1}}}\n     \serif{\b{\${= 9 + \frac{8}{2} - 1}}}\n     \serif{\b{\${= 9 + 4 - 1}}}\n     \serif{\b{\${= 12}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='paso==2' ">
+      <param name="G_10" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='paso==3' coord_abs='sí' expresión='(posImagenEjemplo.x+250,posImagenEjemplo.y+175,0.5,0.5)' archivo='images/ejemploInicio3.png' rotini='0' opacidad='1' info='paso==3' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso==3' coord_abs='sí' expresión='[posTextoEjemplo.x,posTextoEjemplo.y]' texto='El número de puntos sobre el borde es:\n\serif{\b{\${B = 14}}}\n\nEl número de puntos interiores es:\n\serif{\b{\${I = 16}}}\n\nAplicando el teorema de Pick tenemos:\n\serif{\b{\${A = I + \frac{B}{2} - 1}}}\n     \serif{\b{\${= 16 + \frac{14}{2} - 1}}}\n     \serif{\b{\${= 16 + 7 - 1}}}\n     \serif{\b{\${= 22}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='paso==3' ">
+      <param name="G_12" value="espacio='DefinicionPoligonoSimple' tipo='rectángulo' fondo='sí' color='273c75' coord_abs='sí' expresión='(1,1,DefinicionPoligonoSimple._w-3,DefinicionPoligonoSimple._h-3)' ancho='3' border_radius='0' lineDash='solid' ">
+      <param name="G_13" value="espacio='DefinicionPoligonoSimple' tipo='rectángulo' fondo='sí' color='20303a' coord_abs='sí' expresión='(0,0,DefinicionPoligonoSimple._w,35)' relleno='273c75' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_14" value="espacio='DefinicionPoligonoSimple' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(20,50)' texto='Un polígono se llama \b{simple} si:\n\n    • sus vértices no coinciden unos con otros, \n    • ninguno de los vértices se encuentra sobre uno de los lados del polígono \n    • y para cualesquiera dos de sus lados estos no se cortan.\n\nEjemplos:' decimales='2' fijo='sí' ancho='DefinicionPoligonoSimple._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_15" value="espacio='DefinicionPoligonoSimple' tipo='imagen' fondo='sí' coord_abs='no' expresión='(0,-2.3,0.45,0.45)' archivo='images/ejemploPoligonosSimples.png' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

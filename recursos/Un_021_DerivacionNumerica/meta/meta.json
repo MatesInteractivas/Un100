@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Derivación numérica", 
+  "descripcion": "Los objetivos de la unidad son los siguientes: - mostrar diferentes fórmulas de derivacion numérica (diferencias progresivas, regresivas y centradas) justificando su validez a partir de desarrollos en serie de Taylor. - analizar el error de la aproximación numérica de la derivada en un punto cuando se utilizan estas fórmulas.",
+  "resena": "Tipos de de derivación numérica y análisis de su error, así como su relación con expansiones en serie de Taylor.",
+  "id": "_Un_021_DerivacionNumerica"
+}

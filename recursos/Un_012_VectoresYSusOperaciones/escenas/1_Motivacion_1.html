@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Motivación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='Grafico' x='20' y='65' ancho='984' alto='435' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='b8c4c8' red10='889498' ejes='405860' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='Algebra' x='(E1._w-550)/2' y='500' ancho='550' alto='50' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='a3' tipo='audio' espacio='E1' expresión='((E1._w-300)/2,E1._h-75,300,35)' archivo='audios/Motiv1.ogg' ">
+      <param name="A_01" value="id='Angulo(x,y)' algoritmo='sí' expresión='ang' local='ang' hacer='ang=(abs(x)>epsilon)?atan(abs(y)/abs(x)):pi/2;ang=((x<0)&(y>0))?pi-ang:ang;ang=((x<0)&(y<0))?pi+ang:ang;ang=((x>0)&(y<0))?2*pi-ang:ang' tipo='función' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='v.x=rnd*6;v.y=rnd*3.5;epsilon=0.000001' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Los vectores surgen como una necesidad para dar realidad matemática a ciertos fenómenos de la naturaleza' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='Grafico' tipo='segmento' fondo='no' color='00ff00' coord_abs='no' expresión='(0,0)(0,v.y)' decimales='2' fijo='sí' tamaño='1' ancho='2' negrita='no' cursiva='no' font_family='Serif' fuente puntos='17' lineDash='solid' info='proyección en y' ">
+      <param name="G_03" value="espacio='Grafico' tipo='segmento' fondo='no' color='00ff00' coord_abs='no' expresión='(0,0)(v.x,0)' decimales='2' fijo='sí' tamaño='1' ancho='2' negrita='no' cursiva='no' font_family='Serif' fuente puntos='17' lineDash='solid' info='proyección en x' ">
+      <param name="G_04" value="espacio='Grafico' tipo='flecha' fondo='no' color='20303a' coord_abs='no' expresión='(0,0)(v.x,v.y)' decimales='2' fijo='sí' ancho='3' punta='5' flecha='ee0022' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_05" value="espacio='Grafico' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(0,0)' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_06" value="espacio='Grafico' tipo='arco' fondo='no' color='20303a' coord_abs='no' centro='(0,0)' radio='0.7' inicio='0' fin='Angulo(v.x,v.y)*180/pi' vectores='no' texto=' ϕ' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' lineDash='solid' ">
+      <param name="G_07" value="espacio='Grafico' tipo='texto' fondo='no' color='20303a' coord_abs='no' expresión='(v.x,v.y)' texto='\serif{\b{\${v = (v_x, v_y)}}}' decimales='2' fijo='sí' ancho='1' color_borde_texto='ffffff' negrita='no' cursiva='no' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='Grafico' tipo='texto' fondo='no' color='20303a' coord_abs='no' expresión='(v.x,0)' texto='\serif{\b{\${v_x}}}' decimales='2' fijo='sí' ancho='1' color_borde_texto='ffffff' negrita='no' cursiva='no' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='Algebra' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[Algebra._w/2,12]' texto='\serif{\b{\${v = ([v.x], [v.y])}}};    \serif{\b{\${v = [sqrt(v.x^2+v.y^2)]}}};    \serif{\b{\${ϕ = [Angulo(v.x,v.y)*180/pi]°}}} ' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' ">
+      <param name="G_10" value="espacio='Grafico' tipo='texto' fondo='no' color='20303a' coord_abs='no' expresión='(0,v.y)' texto='\serif{\b{\${v_y}}}' decimales='2' fijo='sí' ancho='1' color_borde_texto='ffffff' negrita='no' cursiva='no' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="Animación" value="pausa='2000' controles='no' auto='sí' repetir='no' inicio='t=0' hacer='t=(t+1)%30;x=rnd;y=rnd;v.x=(x<0.5)?-rnd*6:v.x;v.x=(x=0.5)?0:v.x;v.x=(x>0.5)?rnd*6:v.x;v.y=(y<0.5)?-rnd*3.5:v.y;v.y=(y=0.5)?0:v.y;v.y=(x>0.5)?rnd*3.5:v.y;' mientras='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

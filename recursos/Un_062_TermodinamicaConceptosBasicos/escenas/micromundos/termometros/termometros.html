@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  
+  <script type="text/javascript" src="../../../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes.class" width="516" height="558">
+      <param name="tamaño" value="516x558">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='-258' O.y='-299' imagen='images/fondo2.png' despl_imagen='expand.' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='btReinicar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(2,505,89,43)' valor='0' color='ff000000' borderColor='no' color-int='ff000000' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/replay.png' acción='calcular' parámetro='t=0;calentar=0' dibujar-si='t>=0.1' ">
+      <param name="C_02" value="id='btCalentar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(170,505,144,40)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/prender_apagar.png' acción='calcular' parámetro='calentar=1-calentar' dibujar-si='1' ">
+      <param name="A_01" value="id='ancho' expresión='516' tipo='variable' ">
+      <param name="A_02" value="id='alto' expresión='578' tipo='variable' ">
+      <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='calentar=0;yIni=-7.8;animando=1;reset=0' ">
+      <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="A_05" value="id='reiniciar' evento='sí' condición='reset' acción='inicio' ejecución='alternar' ">
+      <param name="G_01" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='calentar' coord_abs='no' expresión='(2.8,-9.2)' archivo='images/fuego.png' rotini='0' opacidad='1' ">
+      <param name="G_02" value="espacio='E1' tipo='polígono' fondo='no' color='ff7d37' coord_abs='no' expresión='(4,-7.5)(4.1,-7.5)(4.1,-8.5)(4,-8.5)(4,-7.5)' ancho='8' lineDash='solid' info='mercurio termometro 1' ">
+      <param name="G_03" value="espacio='E1' tipo='polígono' fondo='no' color='ff7d37' coord_abs='no' expresión='(6.06,-7.5)(6.16,-7.5)(6.16,-8.5)(6.06,-8.5)(6.06,-7.5)' ancho='8' lineDash='solid' info='mercurio termometro 2' ">
+      <param name="G_04" value="espacio='E1' tipo='punto' fondo='no' color='ff7d37' coord_abs='no' expresión='(4.07,yIni+s)' familia='s' s.intervalo='[0,1.2]' s.pasos='25' decimales='2' fijo='sí' tamaño='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_05" value="espacio='E1' tipo='punto' fondo='no' color='ff7d37' coord_abs='no' expresión='(6.12,yIni+s)' familia='s' s.intervalo='[0,1.2]' s.pasos='25' decimales='2' fijo='sí' tamaño='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_06" value="espacio='E1' tipo='punto' fondo='no' color='ff7d37' coord_abs='no' expresión='(4.07,yIni+1.2+s)' familia='s' s.intervalo='[0,t]' s.pasos='20*t' decimales='2' fijo='sí' tamaño='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_07" value="espacio='E1' tipo='punto' fondo='no' color='ff7d37' coord_abs='no' expresión='(6.12,yIni+1.2+s)' familia='s' s.intervalo='[0,t]' s.pasos='20*t' decimales='2' fijo='sí' tamaño='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[190,75+s]' familia='s' s.intervalo='[0,240]' s.pasos='11' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs20{\*\mjaformula{\expr ((240-s)/0.89)+32}}\fs30}' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='10' align='left' anchor='top_left' info='farenheit' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='[290,75+c]' familia='c' c.intervalo='[0,240]' c.pasos='15' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs20{\*\mjaformula{\expr (240-c)/1.6}}\fs30}' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='10' align='left' anchor='top_left' info='celcius' ">
+      <param name="Animación" value="pausa='40' controles='no' auto='sí' repetir='no' inicio='t=0.00001' hacer='t=((t<2.7)&calentar&animando)?t+0.02:t;t=((t>0)&(!calentar)&animando)?t-0.002:t;' mientras='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

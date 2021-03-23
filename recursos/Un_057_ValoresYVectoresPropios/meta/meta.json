@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Algebra lineal"
+  ], 
+  "titulo": "Valores y vectores propios", 
+  "descripcion": "En diversos campos de la ingeniería y las matemáticas es necesario calcular los valores y vectores propios de una matríz cuadrada. Algunos campos de aplicación son las Ecuaciones diferenciales, los Sistemas eléctricos y el Análisis de estructuras en ingeniería civil. En esta unidad se busca el logro de los siguientes objetivos. * Encontrar el polinimio característico de una matríz. * Encontrar valores y vectores propios de una matríz. * Diagonalizar matrices.",
+  "resena": "Cálculo de valores y vectores propios de matrices cuadradas y aplicaciones diversas.",
+  "id": "_Un_057_ValoresYVectoresPropios"
+}

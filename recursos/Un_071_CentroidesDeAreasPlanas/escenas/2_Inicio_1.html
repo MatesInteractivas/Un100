@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E1' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='45' O.x='-40%' O.y='40%' despl_imagen='arr-izq' fondo='ffffff' red='5ec0c0c0' red10='no' ejes='000000' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E2' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='A' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='5' expresión='(0,7)' ">
+      <param name="C_02" value="id='B' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='5' expresión='(8,4)' ">
+      <param name="C_03" value="id='C' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='5' expresión='(2,1)' ">
+      <param name="C_04" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='3' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='siempre' hacer='x1=A.x;y1=A.y;x4=B.x;y4=B.y;x2=(x4+C.x)/2;y2=(y4+C.y)/2;x3=(x1+C.x)/2;y3=(y1+C.y)/2;xi=(A.x+B.x+C.x)/3;yi=(A.y+B.y+C.y)/3' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='A.x=(A.x<-.8)?-.8:A.x;B.x=(B.x<-.8)?-.8:B.x;C.x=(C.x<-.8)?-.8:C.x;A.x=(A.x>9.5)?9.5:A.x;B.x=(B.x>9.5)?9.5:B.x;C.x=(C.x>9.5)?9.5:C.x;A.y=(A.y<-.7)?-.7:A.y;B.y=(B.y<-.7)?-.7:B.y;C.y=(C.y<-.7)?-.7:C.y;A.y=(A.y>8.5)?8.5:A.y;B.y=(B.y>8.5)?8.5:B.y;C.y=(C.y>8.5)?8.5:C.y' ">
+      <param name="G_01" value="espacio='E1' tipo='polígono' fondo='no' color='20303a' coord_abs='no' expresión='(A.x,A.y)(B.x,B.y)(C.x,C.y)(A.x,A.y)' relleno='90ffff80' ancho='2' lineDash='solid' ">
+      <param name="G_02" value="espacio='E1' tipo='segmento' fondo='no' color='00a300' coord_abs='no' expresión='(A.x,A.y)(x2,y2)' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='segmento' fondo='no' color='00a300' coord_abs='no' expresión='(B.x,B.y)(x3,y3)' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_04" value="espacio='E1' tipo='segmento' fondo='no' color='00a300' coord_abs='no' expresión='(C.x,C.y)((A.x+B.x)/2,(A.y+B.y)/2)' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_05" value="espacio='E1' tipo='punto' fondo='no' color='0000ff' coord_abs='no' expresión='(xi,yi)' texto='\color{000000}{Centroide}' decimales='2' fijo='sí' tamaño='5' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='[131,13]' texto='\${(\frac{x_1 + x_2 + x_3}{3}, \frac{y_1 + y_2 + y_3}{3})}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='E0' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[E0._w/2,20]' texto='Centroide de un triángulo' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_08" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 4' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_09" value="espacio='E2' tipo='texto' fondo='no' color='20303a' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='\b{Centroide de un triángulo}\n\nEn el estudio de la Estática y la Mecánica de Materiales, es importante conocer el centro de gravedad de un cuerpo, en tanto que es el punto de aplicación de la resultante de todas las fuerzas de gravedad que actúan sobre las distintas porciones del cuerpo.\n\nEste centro de gravedad, para placas planas de espesor constante y masa homogénea, se puede determinar geométricamente puesto que coincide con el centroide del área de dicha placa.\n\nEn general, para superficies geométricas conocidas, es posible determinar los centroides conociendo las coordenadas del centroide de un triángulo.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_10" value="espacio='E2' tipo='texto' fondo='no' color='20303a' dibujar-si='steps==1' coord_abs='sí' expresión='(20,300)' texto='En la figura, el centroide coincide con la intersección de las medianas, punto que se conoce como baricentro.\n\nInteractúa con el triángulo de la ventana izquierda y observa la posición del centroide.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==1' coord_abs='no' expresión='(0,2.5,0.35,0.35)' archivo='images/centroide1.png' rotini='0' opacidad='1' ">
+      <param name="G_12" value="espacio='E2' tipo='texto' fondo='no' color='20303a' dibujar-si='steps==2' coord_abs='sí' expresión='(20,20)' texto='\b{Ecuaciones del centroide de un triángulo}\n\nEn general, para superficies geométricas conocidas, es posible determinar los centroides conociendo las coordenadas del centroide de un triángulo, las cuales se indican en la siguiente imagen.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_13" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==2' coord_abs='no' expresión='(0,-1.25,0.35,0.35)' archivo='images/centro_img_1.png' rotini='0' opacidad='1' ">
+      <param name="G_14" value="espacio='E2' tipo='texto' fondo='no' color='20303a' dibujar-si='steps==3' coord_abs='sí' expresión='(20,20)' texto='En un triángulo rectángulo, aplicando las expresiones anteriores, el centroide se encuentra en la posición que indica la figura:\n\n\n\n\n\n\n\n\n\n\n\n\n\nEs decir, a un tercio de la cualquiera de los catetos. Verifícalo, construyendo triángulos rectángulos.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_15" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==3' coord_abs='no' expresión='(0,0.5,0.45,0.45)' archivo='images/centroide2.png' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

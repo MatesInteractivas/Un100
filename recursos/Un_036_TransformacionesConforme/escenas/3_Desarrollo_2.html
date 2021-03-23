@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Desarrollo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='botones' x='5' y='90' ancho='300' alto='455' dibujar-si='0' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='d5f3ff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_04" value="tipo='R2' id='explica' x='315' y='90' ancho='650' alto='455' dibujar-si='0' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='fbfadc' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='2' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Transformaciones conformes: Propiedades' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 3' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='Las funciones consideradas en la pantalla anterior:\n\n• \b{Cuadrado}            \serif{\b{\${f(z) = z^2}}}\n\n• \b{Giro de \serif{\b{\${180º}}}}      \serif{\b{\${f(z) = e^{iπ} z}}}\n\n• \b{Seno}                     \serif{\b{\${f(z) = sen(z)}}}\n\nverifican que el ángulo entre las curvas \n\c{\serif{\b{\${C_1 ≡ y = x + 1}}}   y   \serif{\b{\${C_2 ≡ y = -x + 2}}}} \nen el punto en el que se cortan, \serif{\b{\${z_0 = 0.5 + i}}}, coincide con el formado por las curvas \serif{\b{\${f(C_1)}}} y \serif{\b{\${f(C_2)}}} en el punto \serif{\b{\${f(z_0)}}}.\n\nPero, ¿se podría afirmar que son conformes en este punto?' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(E2._w/2+20,70)' texto='• \b{Inversión}              \serif{\b{\${f(z) = 1/z}}}\n\n• \b{Exponencial}        \serif{\b{\${f(z) = e^z}}}\n\n• \b{Coseno}                  \serif{\b{\${f(z) = cos(z)}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='\b{\color{2980b9}{¿Cómo saber si una transformación es conforme en un punto?}}\n\n\b{Resultado:} \n\nUna función analítica \serif{\b{\${f}}} es conforme en todo punto \serif{\b{\${z_0}}} en el que \serif{\b{\${f&squot;(z_0)}}} sea distinto de cero.\n\n\b{Observación:} \n\nLa condición \serif{\b{\${f&squot;(z_0) ≠ 0}}} garantiza además la existencia de un entorno de \serif{\b{\${z_0}}} donde la función es biyectiva.\n\n\n\b{Ejemplo:}\n\n• La función \serif{\b{\${f(z) = z^2}}} es entera y el único punto en que se anula la derivada es cero. \n• La función es biyectiva salvo en un entrono del punto \serif{\b{\${0}}} ya que dos puntos equidistantes del origen y con argumentos diferentes en \serif{\b{\${π}}} les corresponde la misma imagen.\n• La función \serif{\b{\${f(z) = z^2}}} es conforme en todo \serif{\b{\${z ≠ 0}}}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='(20,20)' texto='\b{\color{2980b9}{¿Por qué tiene interés su estudio?}}\n\n\b{Resultados:}\n\n• Una transformación \serif{\b{\${w = f(z)}}} conforme en un punto \serif{\b{\${z_0}}} tiene una inversa local que es conforme.\n• Si \serif{\b{\${D}}} es un dominio simplemente conexo del plano complejo distinto de todo el plano entonces existe una función analítica y biyectiva de \serif{\b{\${D}}} en el interior del círculo unidad.\n• Además, fijado un punto \serif{\b{\${z_0}}} de \serif{\b{\${D}}} y una dirección a través de \serif{\b{\${z_0}}}, para transformarlos en el origen y en eje real positivo, respectivamente, la transformación es única.\n\n\b{Invarianza de la ecuación de Laplace:}\n\nSi \serif{\b{\${u}}} es una función armónica en un dominio \serif{\b{\${D}}} del plano \serif{\b{\${XY}}}, \serif{\b{\${D&squot;}}} un dominio del plano \serif{\b{\${UV}}} y \serif{\b{\${f}}} es una función biyectiva de \serif{\b{\${D}}} en \serif{\b{\${D&squot;}}} entonces la función \serif{\b{\${h(w) = u(f^{-1}(w))}}} es armónica en \serif{\b{\${D&squot;}}}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==2' coord_abs='no' expresión='(0,-3.5,0.5,0.5)' archivo='images/laplace.png' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Física", 
+    "Mecánica", 
+    "Óptica", 
+    "Física Moderna"
+  ], 
+  "titulo": "Difraccion De Bragg", 
+  "descripcion": "En esta unidad didáctica el estudiante conocerá las propiedades y la forma en la que se crean los rayos X. Además conocerá los tipos de estructura que tienen los materiales especialmente la de los cristales que tienen tamaños similares a la longitud de onda de los rayos X. Finalmente entenderá la ley de Bragg y conocerá su utilidad en la cristalografía.",
+  "resena": "Generación y propiedades de los rayos X y su uso en el análisis de cristales (ley de Bragg).",
+  "id": "_Un_093_DifraccionDeBragg"
+}

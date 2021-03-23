@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cierre</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Explorar" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Explorar">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='-50%' O.y='-50%' despl_imagen='centrada' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R3' R3='sí' id='E2' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='no' escala='40' O.x='-35' O.y='0' despl_imagen='arr-izq' fondo='ffffff' despliegue='pintor' cortar='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='n2' tipo='numérico' interfaz='menú' región='interior' espacio='E0' nombre='Función superior' expresión='(350,10,160,25)' valor='0' decimales='2' fijo='sí' visible='no' opciones='1[1],2[2],3[3],4[4],5[5]' dibujar-si='pp' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_02" value="id='n3' tipo='numérico' interfaz='menú' región='interior' espacio='E0' nombre='Función inferior' expresión='(530,10,160,25)' valor='0' decimales='2' fijo='sí' visible='no' opciones='1[1],2[2],3[3],4[4],5[5]' dibujar-si='pp' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_03" value="id='b' tipo='numérico' interfaz='barra' región='interior' espacio='E0' nombre='b' expresión='(170,10,160,25)' valor='3' incr='0.1' min='1' max='3' discreto='no' decimales='1' fijo='sí' visible='sí' dibujar-si='pp' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' ">
+      <param name="C_04" value="id='n4' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Otro ejercicio' expresión='(20+(482-160)/2,E0._h-75,160,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='otro=otro+1;b=ent(rnd*40)/10+1;n5=0' dibujar-si='(otro<5)&(n5!=0)' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_05" value="id='n5' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E0' nombre='V =' expresión='(20+(482-180)/2,400,180,35)' valor='0' discreto='no' decimales='2' fijo='sí' visible='sí' activo-si='n5=0' evaluar='no' respuesta='krypto_1' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' ">
+      <param name="A_01" value="id='f1(x)' algoritmo='no' expresión='_Eval_(n10)' tipo='función' ">
+      <param name="A_02" value="id='f3(x)' algoritmo='no' expresión='_Eval_(n20)' tipo='función' ">
+      <param name="A_03" value="id='f(x)' algoritmo='no' expresión='_Eval_(n7)' tipo='función' ">
+      <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otro=1;c8=1;b=ent(rnd*40)/10+1;msgFinal=&squot;Terminaste todos los ejercicios&squot;;' ">
+      <param name="A_05" value="id='n10' expresión='&squot;x&squot;' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_06" value="id='n20' expresión='&squot;.5&squot;' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_07" value="id='a5' algoritmo='sí' evaluar='siempre' hacer='n10=(otro=1)?&squot;x&squot;:n10;n10=(otro=2)?&squot;x+1&squot;:n10;n10=(otro=3)?&squot;2*sqrt(x)&squot;:n10;n10=(otro=4)?&squot;.5*x^2+1&squot;:n10;n10=(otro=5)?&squot;4-x/2&squot;:n10;n20=(otro=1)?&squot;x/2&squot;:n20;n20=(otro=2)?&squot;.5&squot;:n20;n20=(otro=3)?&squot;sqrt(x)&squot;:n20;n20=(otro=5)?&squot;.2*x^2&squot;:n20;n20=(otro=4)?&squot;sin(x/2)&squot;:n20;S=(otro=1)?6.75:S;S=(otro=2)?20.26:S;S=(otro=3)?10.94:S;S=(otro=4)?10.14:S;S=(otro=5)?23.55:S' ">
+      <param name="A_08" value="id='a6' algoritmo='sí' evaluar='siempre' hacer='b=(b>3)&(n2=3)&(n3=4)?3:b;b=(b>3.5)&(n2=5)&(n3=1)?3.5:b;b=(b>3.8)&(n2=5)&(n3=3)?3.8:b;b=(b>3)&(n2=5)&(n3=4)?3:b' ">
+      <param name="A_09" value="id='E3.rot.z' expresión='0' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_10" value="id='E2.rot.z' expresión='-15' evaluar='una-sola-vez' constante='sí' ">
+      <param name="G_01" value="espacio='E0' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E0._w/2,20]' texto='Ejercicios de Cierre' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E0' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(20,65,482,540)' relleno='ffffff' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E0' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[40,360]' texto='El volumen es igual a:' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E0' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[360,405]' texto='π' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='otro=1' coord_abs='sí' expresión='[40,85]' texto='El sólido de sección hueca que se observa en la escena, se formó al rotar la región acotada por:\n\n\serif{\b{\${f(x) = x}}}, \n\serif{\b{\${g(x) = \frac{x}{2}}}},\n\serif{\b{\${a = 0}}}, \n\serif{\b{\${b = [b]}}}' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='otro=2' coord_abs='sí' expresión='[40,85]' texto='El sólido de sección hueca que se observa en la escena, se formó al rotar la región acotada por:\n\serif{\b{\${f(x) = x + 1}}}, \n\serif{\b{\${g(x) = \frac{1}{2}}}},\n\serif{\b{\${a = 0}}}, \n\serif{\b{\${b = [b]}}}' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='otro=3' coord_abs='sí' expresión='[40,85]' texto='El sólido de sección hueca que se observa en la escena, se formó al rotar la región acotada por:\n\serif{\b{\${f(x) = 2 \sqrt{}{x}}}},\n\serif{\b{\${g(x) = \sqrt{}{x}}}},\n\serif{\b{\${a = 0}}}, \n\serif{\b{\${b = [b]}}}' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_08" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='otro=4' coord_abs='sí' expresión='[40,85]' texto='El sólido de sección hueca que se observa en la escena, se formó al rotar la región acotada por:\n\serif{\b{\${f(x) = \frac{x^2}{2} + 1}}},\n\serif{\b{\${g(x) = sen(\frac{x}{2})}}},\n\serif{\b{\${a = 0}}},\n\serif{\b{\${b= [b]}}}' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_09" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='otro=5' coord_abs='sí' expresión='[40,85]' texto='El sólido de sección hueca que se observa en la escena, se formó al rotar la región acotada por:\n\serif{\b{\${f(x) = 4 - \frac{x}{2}}}},\n\serif{\b{\${g(x) = \frac{x^2}{5}}}},\n\serif{\b{\${a = 0}}},\n\serif{\b{\${b = [b]}}}' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_10" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='abs(S-n5)<.1' coord_abs='sí' expresión='[20+482/2,480]' texto='¡EXCELENTE!' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='(abs(S-n5)>.09)&(n5!=0)' coord_abs='sí' expresión='[20+482/2,480]' texto='¡REVISA TUS CÁLCULOS!\nEl volumen es \serif{\b{\${[S] π}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_center' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_12" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='(otro>=5)&&(n5!=0)' coord_abs='sí' expresión='[20+482/2,560]' texto='[msgFinal]' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='(otro>=5)' ">
+      <param name="S_01" value="espacio='E2' tipo='curva' fondo='no' color='0000ff' expresión='U=6*u y=U x=0 z=f1(U)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='3' Nu='15' ">
+      <param name="S_02" value="espacio='E2' tipo='curva' fondo='no' color='rojo' expresión='U=6*u y=U x=0 z=f3(U)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='3' Nu='15' ">
+      <param name="S_03" value="espacio='E2' tipo='superficie' fondo='no' color='5100ff00' color_reverso='5100ff00' expresión='U=u V=b*v z=f1(V)*cos(2*pi*U) x=f1(V)*sen(2*pi*U) y=V' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='metal' Nu='15' Nv='15' ">
+      <param name="S_04" value="espacio='E2' tipo='superficie' fondo='no' color='naranja' color_reverso='naranja' expresión='U=u V=b*v z=f3(V)*cos(2*pi*U) x=f3(V)*sen(2*pi*U) y=V' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='metal' Nu='15' Nv='15' ">
+      <param name="S_05" value="espacio='E2' tipo='superficie' fondo='no' color='naranja' color_reverso='naranja' expresión='V=f3(b)+(f1(b)-f3(b))*v U=u*2*pi x=V*cos(U) y=0 z=V*sen(U)' rotini='(0,30,0)' posini='(0,b,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='sí' aristas='no' modelo='metal' Nu='15' Nv='1' ">
+      <param name="S_06" value="espacio='E2' tipo='superficie' fondo='no' color='naranja' color_reverso='naranja' expresión='V=f3(0)+(f1(0)-f3(0))*v U=u*2*pi x=V*cos(U) y=0 z=V*sen(U)' rotini='(0,30,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='sí' aristas='no' modelo='metal' Nu='15' Nv='1' ">
+      <param name="S_07" value="espacio='E2' tipo='segmento' fondo='no' color='000000' expresión='(0,0,0)(5,0,0)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='7' ">
+      <param name="S_08" value="espacio='E2' tipo='segmento' fondo='no' color='000000' expresión='(0,0,0)(0,6,0)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='7' ">
+      <param name="S_09" value="espacio='E2' tipo='segmento' fondo='no' color='000000' expresión='(0,0,0)(0,0,4)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='7' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

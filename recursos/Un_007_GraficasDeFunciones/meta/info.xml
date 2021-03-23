@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_007_GraficasDeFunciones" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Gráficas de funciones"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Gráficas de funciones 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		El objetivo de la unidad es presentar al alumno el concepto de graficación de una función. Mediante la unidad, podrá graficar funciones de su elección. Se permite al alumno graficar más de una función simultáneamente y se cuentan con pulsadores que representan parámetros que el alumno puede incluir en sus funciones, de tal suerte que pueda observar el efecto de tales al variarlos. Esta unidad puede aprovecharse, por ejemplo, para ilustrar el concepto de 'recta tangente' a una curva en un punto al graficar la función y su primera derivada.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

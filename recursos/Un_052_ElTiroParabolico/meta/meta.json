@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría analítica", 
+    "Física", 
+    "Cinemática"
+  ], 
+  "titulo": "El tiro parabólico", 
+  "descripcion": "Se estudia el tiro parabólico como un fenómeno físico desde un punto de vista dinámico. Adicionalmente, se hace un estudio geométrico de las trayectorias generadas por un proyectil disparado a igual velocidad y con distintos ángulos, incluyendo su envolvente y el lugar geométrico de sus focos. Se incluye una justificación de dicho abordaje geométrico desde el punto de vista de conservación de la energía, así como una deducción del dicho abordaje.",
+  "resena": "Dinámica del tiro parabólico físico y la construcción de su lugar geométrico a partir de las energías.",
+  "id": "_Un_052_ElTiroParabolico"
+}

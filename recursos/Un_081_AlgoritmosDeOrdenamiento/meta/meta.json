@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Algoritmos de ordenamiento", 
+  "descripcion": "Se presentan los algoritmos de ordenamiento de burbuja, por inserción, por mezcla y rápido. Así como explicaciones sobre el proceso del ordenamiento y pseudocódigo para la compresión de los algoritmos.",
+  "resena": "Análisis de varios algoritmos para ordenar datos en computación, y los pseudocódigos correspondientes.",
+  "id": "_Un_081_AlgoritmosDeOrdenamiento"
+}

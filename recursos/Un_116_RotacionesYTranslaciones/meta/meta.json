@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Geometría Analítica"
+  ], 
+  "titulo": "Rotaciones y traslaciones de cónicas", 
+  "descripcion": "Estudio de las rotaciones y traslaciones en el plano caratesiano aplicadas a las cónicas para ver cómo se simplifican sus ecuaciones y pueden obtenerse fácilmente sus características.",
+  "resena": "Rotaciones y traslaciones aplicadas a cónicas rotadas y no centradas en el origen para simplificar sus ecuaciones y análisis.",
+  "id": "_Un_116_RotacionesYTranslaciones"
+}

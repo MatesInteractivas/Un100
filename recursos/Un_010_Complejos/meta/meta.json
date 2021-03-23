@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Algebra"
+  ], 
+  "titulo": "Números complejos", 
+  "descripcion": "En esta unidad se introduce un conjunto de números que amplia al de los números reales, el de los números complejos. En este nuevo conjunto se pueden extender las operaciones conocidas en |R. Los objetivos de esta unidad son: 1) Mostrar la necesidad de introducir un nuevo sistema de números. 2) Mostrar cómo se puede operar con los números complejos.",
+  "resena": "Motivación, origen y operaciones en los números complejos.",
+  "id": "_Un_010_Complejos"
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E3' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='3' discreto='no' decimales='0' fijo='sí' visible='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='xi=0;yi=0;otro=1' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='A.x=(A.x<-.8)?-.8:A.x;B.x=(B.x<-.8)?-.8:B.x;C.x=(C.x<-.8)?-.8:C.x;A.x=(A.x>9.5)?9.5:A.x;B.x=(B.x>9.5)?9.5:B.x;C.x=(C.x>9.5)?9.5:C.x;A.y=(A.y<-.7)?-.7:A.y;B.y=(B.y<-.7)?-.7:B.y;C.y=(C.y<-.7)?-.7:C.y;A.y=(A.y>8.5)?8.5:A.y;B.y=(B.y>8.5)?8.5:B.y;C.y=(C.y>8.5)?8.5:C.y' ">
+      <param name="A_03" value="id='e3' evento='sí' condición='xi=0' acción='animar' ejecución='alternar' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Ejemplos Resueltos de Series Uniformes' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 4' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='\b{Problema 1:} Un cliente puede comprar de contado en un almacén de cadena o cancelar el \serif{\b{\${30%}}} de contado como cuota inicial y el resto a 18 meses en cuotas iguales, a un interés del \serif{\b{\${1.2%}}} mensual. Si las cuotas son de \serif{\b{\${$120.000}}}, ¿Cuál fue el valor del crédito solicitado? ¿Cuál era el valor del articulo a comprar?\n\n\b{Análisis:} Para el ejemplo anterior, el gráfico de flujo de caja es el siguiente:' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==0' coord_abs='no' expresión='(0,-2,1,1)' archivo='images/3_desarrollo_3_1.svg' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='\b{Problema 2:} En una cuenta de ahorros se depositan \serif{\b{\${US$12}}} cada fin de mes, a un interés del \serif{\b{\${3%}}} mensual. ¿Cuánto dinero se tendrá ahorrado transcurridos año y medio?\n\n\b{Análisis:} El gráfico de flujo de caja para el valor futuro de esta serie uniforme queda asi:' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==1' coord_abs='no' expresión='(0,-1,1,1)' archivo='images/3_desarrollo_3_2.svg' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='(20,20)' texto='\b{Problema 3:} Se quiere tener ahorrados \serif{\b{\${$850.000}}} dentro de dos años, para un viaje que se tiene planeado, para ello, se empiezan a hacer ahorros cada fin de mes en una cuenta que paga un interés del \serif{\b{\${2.65%}}} mensual. ¿Cuál debe ser el valor de los depósitos?\n\n\b{Análisis:} En este caso, el diagrama de flujo de caja es el siguiente:' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==2' coord_abs='no' expresión='(0,-1,1,1)' archivo='images/3_desarrollo_3_3.svg' rotini='0' opacidad='1' ">
+      <param name="G_09" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==3' coord_abs='sí' expresión='(20,20)' texto='\b{Problema 4:} Se hace una compra a crédito de un equipo de oficina pactando la siguiente forma de pago: \serif{\b{\${20}}} cuotas mensuales de \serif{\b{\${$26.000}}} cada una, de forma que la primera se paga dentro de cinco meses. Una vez ha transcurrido un mes de adquirido el equipo, se decide cancelar el total de la deuda. Si el interés pactado fue del \serif{\b{\${3%}}} mensual, ¿qué valor debe pagarse?\n\n\b{Análisis:} Este ejemplo corresponde con una anualidad diferida cuyo diagrama de flujo de caja es el siguiente:' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_10" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==3' coord_abs='no' expresión='(0,-2,1,1)' archivo='images/3_desarrollo_3_4.svg' rotini='0' opacidad='1' ">
+      <param name="G_11" value="espacio='E3' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='\b{Solución:}\n\n\serif{\b{\${P = A \frac{(1 + i)^n - 1}{i(1 + i)^n}}}}\n\n\serif{\b{\${P = 120.000 \frac{(1.012)^{18} - 1}{0.012(1.012)^{18}}}}}\n\n\serif{\b{\${P = $1.932.280.78}}}    Valor del préstamo\n\n\serif{\b{\${C = \frac{1.932.280.78}{0.7} = 2.760.401.04}}}    Valor del artículo' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='E3' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='\b{Solución:}\n\n\serif{\b{\${F = A \frac{(1 + i)^n - 1}{i}}}}\n\n\serif{\b{\${F = 12 \frac{(1.03)^{18} - 1}{0.03}}}}\n\n\serif{\b{\${F = US$280.97}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_13" value="espacio='E3' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='(20,20)' texto='\b{Solución:}\n\n\serif{\b{\${A = F \frac{i}{(1 + i)^n - 1}}}}\n\n\serif{\b{\${A = 850.000 \frac{0.0265}{(1.0265)^{24} - 1}}}}\n\n\serif{\b{\${A = $25.792}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_14" value="espacio='E3' tipo='texto' fondo='no' color='000000' dibujar-si='steps==3' coord_abs='sí' expresión='(20,20)' texto='\b{Solución:}\n\n\serif{\b{\${P = A \frac{(1 + i)^n - 1}{i(1 + i)^n} \frac{1}{(1 + i)^n}}}}\n\n\serif{\b{\${P = 26.000 \frac{(1.03)^{20} - 1}{0.03(1.03)^{20}} \frac{1}{(1.03)^3}}}}\n\n\serif{\b{\${P = $353.989.92}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="Animación" value="pausa='40' controles='no' auto='no' repetir='no' inicio='ggg=0' hacer='ggg=ggg+1' mientras='ggg<10' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

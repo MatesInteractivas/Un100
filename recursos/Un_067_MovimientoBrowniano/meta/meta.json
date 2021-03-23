@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Física", 
+    "Fisicoquímica", 
+    "Bioquímica"
+  ], 
+  "titulo": "Movimiento browniano", 
+  "descripcion": "A través de una conversación con un tutor digital y la exploración simultánea de modelos interactivos y simulaciones, el estudiante hará observaciones, formulará hipótesis y realizará inferencias con el objeto de entender el movimiento browniano, así como su papel en la corroboración del modelo cinético de los fluidos y la naturaleza corpuscular de la materia. Asimismo, comprenderá la importancia del trabajo de Albert Einstein en la explicación de dicho fenómeno.", 
+  "resena": "Diálogo sobre la naturaleza del movimiento browniano y su papel en la corroboración del modelo atómico de la materia.",
+  "id": "_Un_067_MovimientoBrowniano"
+}

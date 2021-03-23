@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Motivación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='322' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E3' x='362' y='65' ancho='642' alto='435' dibujar-si='1' fijo='no' escala='48' O.x='-230' O.y='140' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='405860' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='aaux' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' nombre='a =' expresión='(362,525,316,35)' valor='3' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="C_02" value="id='y0aux' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' nombre='\${y_0 =}' expresión='(688,525,316,35)' valor='a+1' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="C_03" value="id='n' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' nombre='n =' expresión='(362,570,316,35)' valor='0' incr='1' min='0' max='99' discreto='sí' decimales='0' fijo='sí' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="C_04" value="id='dec' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' nombre='decimales =' expresión='(688,570,316,35)' valor='12' incr='1' min='0' max='12' discreto='sí' decimales='0' fijo='sí' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='18' negrita='no' cursiva='no' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="C_05" value="id='calculos' interfaz='botón' tipo='numérico' región='interior' espacio='E3' nombre='[(calculos)?&squot;Ocultar cálculos&squot;:&squot;Mostrar cálculos&squot;]' expresión='(E3._w-170,E3._h-45,160,35)' valor='calculos' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='calculos=1-calculos' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="A_01" value="id='y' vector='sí' evaluar='una-sola-vez' tamaño='100' expresión='y[0]=0;y[1]=0;y[2]=0' tipo='vector' ">
+      <param name="A_02" value="id='F(nn)' algoritmo='sí' expresión='0' inicio='i=0;y[0]=y0aux;' hacer='y[i+1]=0.5*(y[i]+a/y[i]);i=i+1' mientras='i<=nn' tipo='función' ">
+      <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='calculos=0;' ">
+      <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='F(n);otro=((a=aaux)&(y0=y0aux))?0:1;n=((a=aaux)&(y0=y0aux))?n:0;a=(a=aaux)?a:aaux;y0=(y0=y0aux)?y0:y0aux' ">
+      <param name="A_05" value="id='otroejemplo' evento='sí' condición='otro' acción='limpiar' ejecución='alternar' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Método de Herón para la raíz cuadrada' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E3' tipo='ecuación' fondo='no' color='20303a' coord_abs='no' expresión='y=sqrt(x)' ancho='3' visible='no' editable='no' ">
+      <param name="G_03" value="espacio='E3' tipo='punto' fondo='no' color='0000ff' coord_abs='no' expresión='(a,0)' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_04" value="espacio='E3' tipo='punto' fondo='no' color='0000ff' coord_abs='no' expresión='(a-0.10,-0.5)' texto='a' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_05" value="espacio='E3' tipo='segmento' fondo='no' color='00c400' dibujar-si='n=0' coord_abs='no' expresión='(0,y[n])(y[n]^2,y[n])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='Serif' fuente puntos='15' lineDash='solid' ">
+      <param name="G_06" value="espacio='E3' tipo='punto' fondo='no' color='00c400' dibujar-si='n=0' coord_abs='no' expresión='(-0.65,y[n]-0.1)' texto='\${y_{[n]}}' decimales='2' fijo='no' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_07" value="espacio='E3' tipo='segmento' fondo='no' color='ff0000' dibujar-si='n>0' coord_abs='no' expresión='(0,y[n])(y[n]^2,y[n])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='Serif' fuente puntos='15' lineDash='solid' ">
+      <param name="G_08" value="espacio='E3' tipo='punto' fondo='no' color='00c400' dibujar-si='(n>0)&(abs(y[n]-y[n-1])>=0.5)' coord_abs='no' expresión='(-0.65,y[n-1]-0.1)' rastro='808080' texto='\${y_{[n-1]}}' decimales='2' fijo='no' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_09" value="espacio='E3' tipo='punto' fondo='no' color='ff0000' dibujar-si='n>0' coord_abs='no' expresión='(-0.65,y[n]-0.1)' texto='\${y_{[n]}}' decimales='2' fijo='no' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_10" value="espacio='E3' tipo='segmento' fondo='no' color='00c400' dibujar-si='n>0' coord_abs='no' expresión='(0,y[n-1])(y[n-1]^2,y[n-1])' rastro='808080' decimales='2' fijo='sí' tamaño='1' ancho='1' negrita='no' cursiva='no' font_family='Serif' fuente puntos='15' lineDash='solid' ">
+      <param name="G_11" value="espacio='E3' tipo='segmento' fondo='no' color='0000ff' coord_abs='no' expresión='(0,sqrt(a))(a,sqrt(a))' decimales='2' fijo='sí' tamaño='4' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_12" value="espacio='E3' tipo='punto' fondo='no' color='0000ff' coord_abs='no' expresión='(a,sqrt(a)/2)' texto='\${\sqrt{}{a}}' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_13" value="espacio='E3' tipo='segmento' fondo='no' color='0000ff' coord_abs='no' expresión='(a,0)(a,sqrt(a))' familia='s' s.intervalo='[0,1]' s.pasos='8' decimales='2' fijo='sí' tamaño='2' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_14" value="espacio='E3' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[10,10]' texto='\${\sqrt{}{[a]} ≃ [y[n]]}' decimales='dec' fijo='no' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_15" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='calculos==0' coord_abs='sí' expresión='(20,20)' texto='Herón de Alejandría (126-51 a.C.) afirmó que si \serif{\b{\${y}}} es una aproximación de la raíz cuadrada de un número positivo \serif{\b{\${a}}} entonces: \c{\serif{\b{\${y&squot; = \frac{1}{2}(y + \frac{a}{y})}}}}\nes una aproximación mejor.\n\nEn base a ello, partiendo de una aproximación inicial \serif{\b{\${y_0}}} podemos obtener de manera recurrente una sucesión de valores \c{\serif{\b{\${y_n = \frac{1}{2}(y_{n - 1} + \frac{a}{y_{n - 1}})}}}}\nque convergerán a la raíz cuadrada de \serif{\b{\${a}}}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_16" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='calculos==1' coord_abs='sí' expresión='[20,20]' texto='El valor que se desea obtener\n\serif{\b{\${\sqrt{}{[a]} ≃ [sqrt(a)]}}}' decimales='dec' fijo='no' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_17" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(calculos==1)&&(n==0)' coord_abs='sí' expresión='[20,120]' texto='El valor aproximado actual\n\serif{\b{\${y_0 = [y[0]]}}}\n\nEl error exacto cometido\n\serif{\b{\${e = y_0 - \sqrt{}{a} ≃ [abs(y[0]-sqrt(a))]}}}' decimales='dec' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_18" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(calculos==1)&&(n>0)' coord_abs='sí' expresión='[20,120]' texto='El valor aproximado actual\n\serif{\b{\${y_{[n-1]} = [y[n-1]]}}}\n\nLa nueva aproximación\n\ts{17}{\serif{\b{\${y_{[n]} = \frac{1}{2}(y_{[n-1]} + \frac{[a]}{y_{[n-1]}}) = [y[n]]}}}}\n\nEl error entre iteraciones\n\serif{\b{\${│y_{[n]} - y_{[n-1]}│ = [abs(y[n]-y[n-1])]}}}\n\nEl error exacto cometido\n\serif{\b{\${e = y_{[n]} - \sqrt{}{a} ≃ [y[n]-sqrt(a)]}}}' decimales='dec' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="Animación" value="pausa='1000' controles='no' auto='sí' repetir='no' inicio='t=0' hacer='t=t+1' mientras='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

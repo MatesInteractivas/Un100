@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometría</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+</head>
+
+<body onload="init();">
+<ambiente  ventana = '-14.99,-10.53,14.99,10.53'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '0'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '0'  parametros = '-3.67,5.19,0.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,0' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-4.23,-1.48,0.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,1' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '5.54,0.21,0.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,2' />
+<objeto  nombre = 'a'  tipo = 'recta'  constructor = '38'  parametros = '0.17,-0.99,-0.74'  objRef = '1,2'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#ff0000,#edededed'  etiqueta = '0,3' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '38'  parametros = '0.48,0.88,-2.82'  objRef = '2,0'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#ff0000,#edededed'  etiqueta = '0,4' />
+<objeto  nombre = 'c'  tipo = 'recta'  constructor = '38'  parametros = '-1.00,0.08,-4.09'  objRef = '0,1'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#ff0000,#edededed'  etiqueta = '0,5' />
+<objeto  nombre = 'N'  tipo = 'punto'  constructor = '3'  parametros = '-3.95,1.86,0.00'  objRef = '0,1'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,6' />
+<objeto  nombre = 'L'  tipo = 'punto'  constructor = '3'  parametros = '0.66,-0.64,0.00'  objRef = '1,2'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,7' />
+<objeto  nombre = 'M'  tipo = 'punto'  constructor = '3'  parametros = '0.94,2.70,0.00'  objRef = '2,0'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,8' />
+<objeto  nombre = 'na'  tipo = 'recta'  constructor = '33'  parametros = '-0.99,-0.17,0.54'  objRef = '1,2'  visible = '1'  ancho = '1'  color = '#800080,#edededed'  etiqueta = '0,9' />
+<objeto  nombre = 'nb'  tipo = 'recta'  constructor = '33'  parametros = '0.88,-0.48,0.46'  objRef = '2,0'  visible = '1'  ancho = '1'  color = '#800080,#edededed'  etiqueta = '0,10' />
+<objeto  nombre = 'nc'  tipo = 'recta'  constructor = '33'  parametros = '0.08,1.00,-1.52'  objRef = '0,1'  visible = '1'  ancho = '1'  color = '#800080,#edededed'  etiqueta = '0,11' />
+<objeto  nombre = 'O'  tipo = 'punto'  constructor = '1'  parametros = '0.29,1.50,0.00'  objRef = '9,10'  visible = '1'  ancho = '3'  color = '#0,#ff00'  etiqueta = '2,12' />
+<objeto  nombre = 'cc'  tipo = 'circulo'  constructor = '63'  parametros = '0.29,1.50,5.41,0.00'  objRef = '0,1,2'  visible = '0,0'  ancho = '2,2'  color = '#ff,#ff,#ff,#c0c0c0'  etiqueta = '0,13' />
+
+<nota texto="" />
+<table align='center'>  
+<tr>
+	<td width ='482px' height='540px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="482" height="540">
+			</canvas>
+		</td>
+    
+    <td width ='20px'></td>
+    
+    <td width ='482px' height="540px" valign='middle' class="celda_derecha">
+    
+	<div class="cuaderno2">
+<p>En el triángulo de la izquierda hemos trazado las tres mediatrices de los lados del triángulo.</p> 
+<p>Observa que tres mediatrices se cortan en un punto, llamado <resalta>circuncentro</resalta>.
+<br>
+<p>Antes de probar este resultado, piensa en las siguientes preguntas, arrastra los  vértices del triángulo para tratar de encontrar las respuestas.
+<ul>
+<li>¿Puede caer el circuncentro fuera del triángulo?</li>
+<li>¿Puede caer el circuncentro en un lado del triángulo?</li>
+<li>¿Puede caer el circuncentro en un vértice del triángulo?</li>
+<li>¿Cómo es el triángulo (observa sus ángulos) cuando el circuncentro está en uno de sus lados?</li>
+<li>¿Cómo es el triángulo (observa sus ángulos) cuando el circuncentro está fuera de él?</li>
+<li>Cuándo el circuncentro está en uno de los lados, en qué lugar de dicho lado está?</li>
+<li>Cómo son las distancias del circuncentro a cada uno de los vértices del triángulo?</li>
+
+</ul>	
+	 
+	<p id="cuaderno">Este es un p&aacute;rrafo 	</p>
+	</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

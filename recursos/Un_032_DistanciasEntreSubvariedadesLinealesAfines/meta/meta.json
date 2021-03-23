@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Distancias entre subvariedades lineales afines", 
+  "descripcion": "Se presenta la fórmula para calcular el m-volumen. Una sola fórmula para encontrar las distancias entre puntos, rectas, planos o cualquier par de subvariedades lineales afines de R^m.",
+  "resena": "Descripción de una única fórmula para el cálculo de distancias enre subvariedades lineales afines de R^m.",
+  "id": "_Un_032_DistanciasEntreSubvariedadesLinealesAfines"
+}

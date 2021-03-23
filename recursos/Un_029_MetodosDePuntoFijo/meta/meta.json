@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Física"
+  ], 
+  "titulo": "Métodos de punto fijo", 
+  "descripcion": "Se introducen los métodos iterativos para la resolución de ecuaciones no lineales y se analiza cómo pueden construirse. Asimismo, se muestran ejemplos de convergencia monótona, convergencia oscilante, divergencia monótona y divergencia oscilante. Por último, se presenta la generalización de la construcción de estos métodos de punto fijo, y se comprueba que el de Newton es un caso particular de los mismos.",
+  "resena": "Formulación y uso de métodos iterativos para la resolución de ecuaciones no lineales.",
+  "id": "_Un_029_MetodosDePuntoFijo"
+}

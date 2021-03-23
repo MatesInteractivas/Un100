@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='540' fijo='sí' escala='48' O.x='-50%' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='HTMLIFrame' id='E6' x='55' y='105' ancho='375' alto='400' dibujar-si='(E2.Oy<-800)&(E2.Oy>-1370)' archivo='http://www.youtube.com/embed/wclrISwNL7s' ">
+      <param name="E_04" value="tipo='HTMLIFrame' id='E7' x='55' y='105' ancho='375' alto='400' dibujar-si='(E2.Oy<-1370)' archivo='images/ani_information.gif' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='2' discreto='no' decimales='0' fijo='sí' visible='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='A' vector='sí' evaluar='una-sola-vez' tamaño='5' tipo='vector' ">
+      <param name="A_02" value="id='P' vector='sí' evaluar='una-sola-vez' tamaño='5' expresión='P[0]=0;P[1]=0;P[2]=0' tipo='vector' ">
+      <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=1' hacer='p=-200;' ">
+      <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='x=E1.mouse_x;y=E1.mouse_y;p1=(x<0)&(x>-2)&(y<3)&(y>1)&(E1.mouse_pressed)?(p1=0?1:0):p1;p2=(x<2)&(x>0)&(y<3)&(y>1)&(E1.mouse_pressed)?(p2=0?1:0):p2;p3=(x<0)&(x>-2)&(y<1)&(y>-1)&(E1.mouse_pressed)?(p3=0?1:0):p3;p4=(x<2)&(x>0)&(y<1)&(y>-1)&(E1.mouse_pressed)?(p4=0?1:0):p4;p1=(p2+p3+p4>0)?0:p1;p2=(p1+p3+p4>0)?0:p2;p3=(p2+p1+p4>0)?0:p3;p4=(p2+p3+p1>0)?0:p4;P[1]=p1;P[2]=p2;P[3]=p3;P[4]=p4;' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Importancia de la Información' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 3' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='\b{Conclusiones}\n\nTodo este conjunto de definiciones nos ha llevado desde un concepto muy humano como es el \b{Atributo} hasta un concepto muy técnico como es la \b{Base de Datos}. Pero si miramos el trasfondo de toda esta secuencia podemos descubrir cuál es su objetivo fundamental. El objetivo es poder hablar de Información, sí, y ¿Cómo se pude definir la información? Pues la Información no es más que un conjunto de datos suficientemente organizados y entendibles (algunas veces organizados utilizando tecnología pero no necesariamente). \n\nEsto nos permite abordar debidamente el término Informática. \n\n\b{¿Qué es pues la Informática?}\n\nNo es más que la Ciencia que estudia, aplica y optimiza el tratamiento eficiente de la información.\n' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='\b{¿Sabe usted qué significa el tratamiento eficiente de la información?}\n\nSencillamente es la ciencia que se ocupa de que la información, cualquiera que sea su procedencia o su destinación, cumpla con dos objetivos: \n\n\b{a) Veracidad:} “Toda información debe ser verdad (es decir veraz)”. De nada le sirve a usted que vaya al Banco y solicite su saldo e inmediatamente y sin ninguna demora le den un saldo que no corresponde a la realidad. \n\n\b{b) Oportunidad:} “Toda información debe llegar en el momento indicado (o sea oportunamente)”. De nada le sirve que en el Banco le digan que su verdadero saldo si se lo entregan en 10 meses.\n\n\n\b{¿Porqué al hablar de Informática se relaciona el concepto con computadores?}\n\nEn la actualidad los computadores son los dispositivos que mejor pueden cumplir con el objetivo de la Oportunidad ya que trabajan a velocidades altas (millonésimas de segundo). Y quién se encargada de cumplir con la veracidad? Pues el ser humano quien planea, organiza, programa y ejecuta todo lo que el computador va a entregar como información.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='(20,20)' texto='Cuando se trate de algoritmos computacionales deberán ir orientados a facilitar la codificación posterior, precisamente para tener toda la certeza de que el computador va a ejecutar lo que nosotros hemos concebido como solución. \n\nTrate de utilizar en sus algoritmos, órdenes que sean de fácil conversión a cualquier lenguaje de programación convencional. No olvide que lo más importante en el desarrollo de soluciones computacionales es la lógica que se haya utilizado para solucionar un determinado problema. Siempre tenga en cuenta que de una buena lógica utilizada en la construcción de los algoritmos dependen los buenos programas, es decir, las buenas aplicaciones. \n\n\n\n\b{Fuente: La Esencia de la lógica de programación}\nTrejos Buniticá, Omar Iván \n\b{ISBN}: 958-33-1125-1' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

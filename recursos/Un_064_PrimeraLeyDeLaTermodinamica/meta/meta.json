@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Física", 
+    "Fisicoquímica", 
+    "Termodinámica"
+  ], 
+  "titulo": "Conservación de la energía", 
+  "descripcion": "A través de una conversación con un tutor digital y la observación y el análisis de modelos y ejemplos interactivos, el estudiante conocerá la primera ley de la termodinámica y sabrá reconocerla en fenómenos variados de la vida cotidiana.",
+  "resena": "Diálogo interactivo sobre la primera ley de la termodinámica (conservación de energía).",
+  "id": "_Un_064_PrimeraLeyDeLaTermodinamica"
+}

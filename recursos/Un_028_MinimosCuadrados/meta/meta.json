@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Mínimos cuadrados", 
+  "descripcion": "Los objetivos de la unidad son los siguientes: - Introducir el método de mínimos cuadrados. - Mostrar ejemplos de su aplicación práctica.",
+  "resena": "El método de mínimos cuadrados, y el papel del error cuadrático medio al realizar ajustes y optimizaciones.",
+  "id": "_Un_028_MinimosCuadrados"
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometría</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+</head>
+
+<body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '1'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '0'  parametros = '1.08,7.63,-3.380843063978213892000000000000000000000e+221'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,0' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-6.77,4.01,-3.380843063978213892000000000000000000000e+221'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,1' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '3.13,-1.56,-3.380843063978213892000000000000000000000e+221'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,2' />
+<objeto  nombre = 'a'  tipo = 'recta'  constructor = '38'  parametros = '-0.49,-0.87,0.18'  objRef = '1,2'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,3' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '38'  parametros = '0.98,0.22,-2.71'  objRef = '2,0'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,4' />
+<objeto  nombre = 'c'  tipo = 'recta'  constructor = '38'  parametros = '-0.42,0.91,-6.48'  objRef = '0,1'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,5' />
+<objeto  nombre = 'L'  tipo = 'punto'  constructor = '3'  parametros = '-1.82,1.23,3.28'  objRef = '1,2'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,6' />
+<objeto  nombre = 'd'  tipo = 'recta'  constructor = '38'  parametros = '-0.91,0.41,-2.17'  objRef = '0,6'  visible = '1,1'  ancho = '2,1'  color = '#ff,#c0c0c0,#0'  etiqueta = '0,7' />
+<objeto  nombre = 'M'  tipo = 'punto'  constructor = '3'  parametros = '2.10,3.04,0.00'  objRef = '2,0'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,8' />
+<objeto  nombre = 'N'  tipo = 'punto'  constructor = '3'  parametros = '-2.84,5.82,0.00'  objRef = '0,1'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,9' />
+<objeto  nombre = 'e'  tipo = 'recta'  constructor = '38'  parametros = '0.78,0.63,-1.45'  objRef = '2,9'  visible = '1,1'  ancho = '2,1'  color = '#ff,#c0c0c0,#0'  etiqueta = '0,10' />
+<objeto  nombre = 'f'  tipo = 'recta'  constructor = '38'  parametros = '0.11,0.99,-3.25'  objRef = '8,1'  visible = '1,1'  ancho = '2,1'  color = '#ff,#c0c0c0,#0'  etiqueta = '0,11' />
+<objeto  nombre = 'G'  tipo = 'punto'  constructor = '1'  parametros = '-0.85,3.36,1.95'  objRef = '7,10'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,12' />
+<objeto  nombre = 'D'  tipo = 'poligono'  constructor = '200'  objRef = '1,2,0'  visible = '1'  ancho = '1'  color = '#8000,#c0c0c0'  etiqueta = '0,13' />
+<objeto  nombre = 'E'  tipo = 'poligono'  constructor = '200'  objRef = '1,6,12'  visible = '1'  ancho = '1'  color = '#8000,#4080ff'  etiqueta = '0,14' />
+<objeto  nombre = 'A1'  tipo = 'escalar'  constructor = '90'  parametros = '39.76,6.77'  objRef = '13'  etiqueta = '0,15' />
+<objeto  nombre = 'A2'  tipo = 'escalar'  constructor = '90'  parametros = '6.63,6.77'  objRef = '14'  etiqueta = '0,16' />
+<objeto  nombre = 'g'  tipo = 'escalar'  constructor = '154'  parametros = '6.00,6.77'  objRef = '15,16'  formulas = 'A1/A2 ' etiqueta = '0,-1' />
+<objeto  nombre = 'AG'  tipo = 'escalar'  constructor = '81'  parametros = '4.69,0.36'  objRef = '0,12'  etiqueta = '0,-1' />
+<objeto  nombre = 'GL'  tipo = 'escalar'  constructor = '81'  parametros = '2.34,7.51'  objRef = '12,6'  etiqueta = '0,-1' />
+<nota  texto="<br><br><br><br><br><br><br><br><br><br><br><p align='center' style='font-family:descartesJS_serif;width:380px;'>Area ABC = $abs(A1)$ <br>
+Area GBL = $abs(A2)$<br>
+Distancia AG = $AG$<br>
+Distancia GL = $GL$</p>" />
+<table align='center'>  
+<tr>
+	<td width ='482px' height='540px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="482" height="540">
+			</canvas>
+		</td>
+    
+    <td width ='20px'></td>
+    
+    <td width ='482px' height="540px" valign='middle' class="celda_derecha">
+    
+	<div class="cuaderno2">
+<p>El gravicentro <mt>G</mt> es el centro de gravedad del triángulo <mt>ABC</mt></p>
+
+<p>Observa que <mt>G</mt> divide a dicho triángulo en 6 triángulos más pequeños</p>
+<p>El área de cada uno de ellos es la sexta parte del área del triángulo <mt>ABC</mt>, ¿por qué?</p>
+<p>La distancia de <mt>G</mt> a <mt>A</mt> es el doble de la distancia de <mt>G</mt> a <mt>L</mt>, ¿por qué?</p> 	
+<p id="cuaderno">This is a paragraph.</p>	</div>	 	
+</td>
+</tr>
+</table>
+           
+
+</body>
+</html>

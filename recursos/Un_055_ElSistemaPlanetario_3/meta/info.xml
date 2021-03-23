@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_055_ElSistemaPlanetario_3" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Física, Dinámica Celeste" 
+	plataforma="HTML 5"
+        ver="Beta"
+	>
+	<titulo><![CDATA[
+		El Sistema planetario: Areas iguales en tiempos iguales. Segunda ley de Kepler.
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+      El objetivo de esta unidad es presentar la Segunda Ley de Kepler que dice que los 
+      radios vectores, i.e.los segmentos del Sol a cada planeta, barren áreas iguales 
+      en tiempos iguales. Se discute el significado de esta ley y se muestran sus implicaciones
+      en la capacidad de predecir la posición de todos los planetas en todo momento a partir de
+      las de un momento dado. La unidad presenta una escena que hace precisamente eso.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

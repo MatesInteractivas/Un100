@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_017_DiscoDePoincare" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Geometría" 
+	plataforma="HTML 5"	ver="Beta"	
+	>
+	<titulo><![CDATA[
+		Geometr&iacute;as no eucl&iacute;deas: Disco de Poincar&eacute;
+	]]></titulo>
+	
+	<Descripcion><![CDATA[            Se plantea el modelo geom&eacute;trico bidimensional denominado El disco de Poincar&eacute;: interior del c&iacute;rculo, en el que las geodésicas son arcos de circunferencias eucl&iacute;deas ortogonales a su frontera. Se muestran los objetos b&aacute;sicos en el disco de Poincar&eacute;: los segmentos, circunferencias, &aacute;ngulos y sus particularidades para el observador eucl&iacute;deo. Se comprueba que la suma de los &aacute;ngulos de un tri&aacute;ngulo en el disco de Poincar&eacute; es inferior a 180º Finalmente se muestra que la geometr&aacute;a del disco de Poincar&eacute; no es una  geometr&iacute;a eucl&iacute;dea, es decir, hay otras geometr&iacute;as. 		]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

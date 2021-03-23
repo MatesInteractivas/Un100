@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometría</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</head>
+ <body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '0'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '0'  parametros = '-0.49,2.62,-0.00'  visible = '1'  ancho = '2'  color = '#0,#ff'  etiqueta = '2,0' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-7.84,-4.52,-0.00'  visible = '1'  ancho = '2'  color = '#0,#ff'  etiqueta = '2,1' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '4.01,-4.46,-0.00'  visible = '1'  ancho = '2'  color = '#0,#ff'  etiqueta = '2,2' />
+<objeto  nombre = 'a'  tipo = 'recta'  constructor = '38'  parametros = '0.00,-1.00,-4.48'  objRef = '1,2'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,3' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '38'  parametros = '0.84,0.54,-0.99'  objRef = '2,0'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,4' />
+<objeto  nombre = 'c'  tipo = 'recta'  constructor = '38'  parametros = '-0.70,0.72,-2.22'  objRef = '0,1'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,5' />
+<objeto  nombre = 'O'  tipo = 'punto'  constructor = '0'  parametros = '-0.34,-0.79,0.00'  visible = '1'  ancho = '2'  color = '#0,#ff'  etiqueta = '2,6' />
+<objeto  nombre = 'l'  tipo = 'recta'  constructor = '31'  parametros = '-1.00,-0.04,-0.37'  objRef = '0,6'  visible = '1'  ancho = '1'  color = '#8000,#c0c0c0'  etiqueta = '0,-1' />
+<objeto  nombre = 'm'  tipo = 'recta'  constructor = '31'  parametros = '0.45,-0.90,-0.55'  objRef = '1,6'  visible = '1'  ancho = '1'  color = '#8000,#c0c0c0'  etiqueta = '0,-1' />
+<objeto  nombre = 'n'  tipo = 'recta'  constructor = '31'  parametros = '0.64,0.76,0.82'  objRef = '2,6'  visible = '1'  ancho = '1'  color = '#8000,#c0c0c0'  etiqueta = '0,-1' />
+<objeto  nombre = 'L'  tipo = 'punto'  constructor = '1'  parametros = '-0.18,-4.48,-0.33'  objRef = '3,7'  visible = '1'  ancho = '2'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'M'  tipo = 'punto'  constructor = '1'  parametros = '1.19,-0.02,-0.33'  objRef = '4,8'  visible = '1'  ancho = '2'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'N'  tipo = 'punto'  constructor = '1'  parametros = '-2.30,0.87,-0.33'  objRef = '9,5'  visible = '1'  ancho = '2'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'rn'  tipo = 'escalar'  constructor = '86'  parametros = '0.33,-0.21'  objRef = '12,0,1'  etiqueta = '0,-1' />
+<objeto  nombre = 'rl'  tipo = 'escalar'  constructor = '86'  parametros = '1.83,-0.70'  objRef = '10,1,2'  etiqueta = '0,-1' />
+<objeto  nombre = 'rm'  tipo = 'escalar'  constructor = '86'  parametros = '1.68,-0.70'  objRef = '11,2,0'  etiqueta = '0,-1' />
+<objeto  nombre = 'x'  tipo = 'escalar'  constructor = '154'  parametros = '1.00,-1.00'  objRef = '13,14,15'  formulas = 'rl*rn*rm ' etiqueta = '0,-1' />
+<objeto  nombre = 'd'  tipo = 'recta'  constructor = '32'  parametros = '0.00,-1.00,2.62'  objRef = '3,0'  visible = '1'  ancho = '1'  color = '#c0c0c0,#c0c0c0'  etiqueta = '0,-1' />
+<objeto  nombre = 'R'  tipo = 'punto'  constructor = '1'  parametros = '6.57,2.66,2.47'  objRef = '17,8'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'S'  tipo = 'punto'  constructor = '1'  parametros = '-4.36,2.60,2.47'  objRef = '17,9'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'D'  tipo = 'poligono'  constructor = '200'  objRef = '12,1,2'  visible = '1'  ancho = '1'  color = '#8000,#80ffff'  etiqueta = '0,-1' />
+<objeto  nombre = 'E'  tipo = 'poligono'  constructor = '200'  objRef = '12,0,19'  visible = '1'  ancho = '1'  color = '#8000,#80ffff'  etiqueta = '0,-1' />
+<nota  texto ="" />
+
+<table align='center'>  
+<tr>
+	<td width ='482px' height='540px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="482" height="540">
+			</canvas>
+		</td>
+    
+    <td width ='20px'></td>
+    
+    <td width ='482px' height="540px" valign='middle' class="celda_derecha">
+    
+	<div class="cuaderno2">
+<p>Trazamos una paralela a \(BC\) por el punto \(A\)<br>
+Prolongamos \(BM\) y \(CN\) hasta que corten a la recta anterior en los puntos \(R\) y \(S\) <br>
+Los triángulos \(BCN\) y \(ASN\) son semejantes, así que 
+\[
+\frac{AN}{NB}=\frac{SA}{BC}
+\]
+ Similarmente, los triángulos \(BCO\) y \(RSO\) son semejantes, \(BLO \) y \(RAO\) son semejantes y \(LCO\) y \(ASO\) son semejantes así que 
+ \[
+\frac{BL}{LC}=\frac{AR}{SA}
+\]
+Finalmente, los triángulos \(BCM\) y \(RAM\) son semejantes, así que
+ \[
+\frac{CM}{MA}=\frac{BC}{AR}
+\]
+
+<p>Entonces, 
+\[
+\frac{AN}{NB}\frac{BL}{LC}\frac{CM}{MA}=\frac{SA}{BC}\frac{AR}{SA}\frac{BC}{AR}=1
+\]
+
+
+<p id="cuaderno">This is a paragraph.</p></div>
+
+	
+	 	
+</td>
+</tr>
+</table>
+           
+</td>
+</tr>
+</table>
+
+</body>
+</html>

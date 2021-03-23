@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='text' x='20' y='65' ancho='984' alto='105' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='graf' x='20' y='190' ancho='482' alto='415' dibujar-si='1' fijo='sí' escala='25' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_04" value="tipo='R2' id='solu' x='522' y='190' ancho='482' alto='415' dibujar-si='1' fijo='sí' escala='20' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='ca' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='solu' expresión='(275,20,60+10*(a*100>999),35)' valor='&squot;&squot;' discreto='no' decimales='2' fijo='no' visible='sí' acción='calcular' parámetro='bien1=(abs(ca-100*a)<0.005)?1:0' dibujar-si='(ay=0)&(bien1=0)' evaluar='no' respuesta='krypto_s' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_02" value="id='cC' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='solu' expresión='(290,95,58,35)' valor='&squot;&squot;' discreto='no' decimales='2' fijo='no' visible='sí' acción='calcular' parámetro='bien2=(abs(cC-(180-C))<0.005)?1:0' dibujar-si='(ay=0)&(bien2=0)' evaluar='no' respuesta='krypto_c' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_03" value="id='ay' interfaz='botón' tipo='numérico' región='interior' espacio='solu' expresión='(solu._w-55,190,35,35)' valor='0' color='222222' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_top_left' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/info.svg' acción='calcular' parámetro='ay=1' dibujar-si='(ay=0)&(bien1*bien2=0)' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_04" value="id='otros' interfaz='botón' tipo='numérico' región='interior' espacio='solu' nombre='Otros datos' expresión='(solu._w-150,solu._h-55,130,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='ay=0;ca=&squot;&squot;;cC=&squot;&squot;;bien1=0;bien2=0;alfa=15+ent(rnd*10);d=1400+20*ent(rnd*10);v=940+2*ent(rnd*30);t=20+10*ent(rnd*4)' activo-si='(ay==1)||((bien1*bien2)==1)' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=0' hacer='d=1600;alfa=20;v=980;t=30;ay=0;;' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='alfar=alfa*pi/180;c=d/100;b=(v*t/60)/100;aux=asen(6/c);Ax=-0.5*c*cos(aux);Ay=-3;Bx=0.5*c*cos(aux);By=3;a=sqrt(b^2+c^2-2*b*c*cos(alfar));Cr=acos((a^2+b^2-c^2)/(2*a*b));C=Cr*180/pi;Cx=Ax+b*cos(aux+alfar);Cy=Ay+b*sen(aux+alfar);' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='La ruta del avión' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='text' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[20,15]' texto='Cuando un avión está a \serif{\b{\${[d]}}}km, en linea recta, de su destino, una tormenta lo desvía de su ruta un ángulo de \serif{\b{\${[alfa]º}}}. Si se mantiene en esa dirección durante \serif{\b{\${[t]}}} minutos a una velocidad de \serif{\b{\${[v]}}}km/h, ¿qué ángulo deberá girar para llegar a su destino?, ¿cuántos km deberá recorrer?' decimales='2' fijo='no' ancho='text._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_03" value="espacio='graf' tipo='polígono' fondo='no' color='20303a' coord_abs='no' expresión='(Ax,Ay)(Bx,By)(Cx,Cy)' relleno='45ffff80' ancho='0' lineDash='solid' ">
+      <param name="G_04" value="espacio='graf' tipo='arco' fondo='no' color='ff9000' coord_abs='no' centro='(Cx,Cy)' radio='2' inicio='(Bx,By)' fin='(Ax+2*(Cx-Ax),Ay+2*(Cy-Ay))' vectores='no' decimales='2' fijo='sí' relleno='20ffaa00' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_05" value="espacio='graf' tipo='curva' fondo='no' color='667680' coord_abs='no' expresión='(Ax+t*cos(alfar+aux),Ay+t*sen(alfar+aux))' parámetro='t' t.intervalo='[0,b+4]' t.pasos='1' ancho='1' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_06" value="espacio='graf' tipo='arco' fondo='no' color='ffaa00' coord_abs='no' centro='(Ax,Ay)' radio='2' inicio='(Bx,By)' fin='(Cx,Cy)' vectores='no' decimales='2' fijo='sí' relleno='45ffc800' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_07" value="espacio='graf' tipo='segmento' fondo='no' color='2045cc' coord_abs='no' expresión='(Ax,Ay)(Cx,Cy)' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_08" value="espacio='graf' tipo='segmento' fondo='no' color='2045cc' coord_abs='no' expresión='(Ax,Ay)(Bx,By)' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_09" value="espacio='graf' tipo='segmento' fondo='no' color='aa0000' coord_abs='no' expresión='(Cx,Cy)(Bx,By)' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_10" value="espacio='graf' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(Ax-0.6,Ay-0.3)' texto='A' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_11" value="espacio='graf' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(Bx+0.2,By-0.3)' texto='B' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_12" value="espacio='graf' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(Cx-0.3,Cy+0.2)' texto='C' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_13" value="espacio='graf' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='((Cx+Bx)/2,0.3+(Cy+By)/2)' texto='a' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_14" value="espacio='solu' tipo='texto' fondo='no' color='000000' dibujar-si='ay==0' coord_abs='sí' expresión='[20,27]' texto='Distancia que debe recorrer: \serif{\b{\${a = [a*100]}}}    km\n\n\nÁngulo que ha de girar: \serif{\b{\${180º - C = [180-C]   º}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_15" value="espacio='graf' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='((Ax+Bx)/2,-0.6+(Ay+By)/2)' texto='c' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_16" value="espacio='graf' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(-0.3+(Ax+Cx)/2,0.3+(Ay+Cy)/2)' texto='b' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_17" value="espacio='graf' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(Ax+2*cos(aux+alfar/2),Ay+2*sen(aux+alfar/2))' texto='\serif{\b{\${[alfa]º}}}' decimales='2' fijo='no' tamaño='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' ">
+      <param name="G_18" value="espacio='solu' tipo='texto' fondo='no' color='000000' dibujar-si='(ay=0)&(bien1*bien2=0)' coord_abs='sí' expresión='[20,185]' texto='Introduce los resultados redondeados a centésimas, o pulsa en la ayuda para ver la solución.' decimales='2' fijo='sí' ancho='solu._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_19" value="espacio='solu' tipo='texto' fondo='no' color='000000' dibujar-si='ay==1' coord_abs='sí' expresión='[20,15]' texto='Entre \serif{\b{\${A}}} y el punto de destino \serif{\b{\${B}}} hay c =\serif{\b{\${[d]}}}km. A una velocidad de\serif{\b{\${[v]}}}km/h durante \serif{\b{\${[t]}}} minutos recorre: \serif{\b{\${b = [b*100]}}}km\nPor tanto la distancia que ha de recorrer para llegar a su destino es: \n\serif{\b{\${a^2 = [b*100]^2 + [c*100]^2 - 2·[b*100]·[c*100]·cos[alfa]º}}}\n\serif{\b{\${a = [a*100]}}}km\n\serif{\b{\${C = arccos \frac{[a*100]^2 + [b*100]^2 - [c*100]^2}{2·[a*100]·[b*100]} = [C]º}}}\nY el ángulo que debe girar es el suplementario de \serif{\b{\${C}}}: \serif{\b{\${180º - [C]º = [180-C]º}}}' decimales='2' fijo='no' ancho='solu._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

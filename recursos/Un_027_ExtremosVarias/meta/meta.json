@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Extremos de varias variables", 
+  "descripcion": "Se aborda el problema de encontrar los máximos y mínimos relativos de una función de varias variables. Se pretende: - Introducir el método del hessiano para la clasificación de extremos de funciones de varias variables. - Mostrar gráficamente la interpretacion del método de Lagrange para el cálculo de extremos condicionados en el caso de funciones de dos variables y una restricción.",
+  "resena": "Máximos y mínimos de funciones de varias variables. Métodos hessiano y Lagrange.",
+  "id": "_Un_027_ExtremosVarias"
+}

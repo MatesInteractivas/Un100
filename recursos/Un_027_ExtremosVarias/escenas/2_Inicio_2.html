@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='fab=ff(Q.x,Q.y);pxmin=Q.x-3;sepx=6;pymin=-6;sepy=12;incremen=10^(-5);mmincre=10^4;aa=(fffx(Q.x+incremen,Q.y)-fffx(Q.x,Q.y))*mmincre;bb=(fffx(Q.x,Q.y+incremen)-fffx(Q.x,Q.y))*mmincre;cc=(fffy(Q.x+incremen,Q.y)-fffy(Q.x,Q.y))*mmincre;dd=(fffy(Q.x,Q.y+incremen)-fffy(Q.x,Q.y))*mmincre;deter=aa*dd-bb*cc;deter=(abs(deter)<incremen)?0:deter;resultado=(deter<0)?&squot;PUNTO DE SILLA&squot;:&squot;DUDA&squot;;resultado=((deter>0)&(aa>0))?&squot;MÍNIMO&squot;:resultado;resultado=((deter>0)&(aa<0))?&squot;MÁXIMO&squot;:resultado;resultado=(abs(deter)==0)?&squot;DUDA&squot;:resultado;textoResul=(deter<0)?&squot;La matriz hessiana es indefinida&squot;:&squot;&squot;;textoResul=((deter>0)&(aa>0))?&squot;La matriz hessiana es definida positiva&squot;:textoResul;textoResul=((deter>0)&(aa<0))?&squot;La matriz hessiana es definida negativa&squot;:textoResul;' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Puntos críticos' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(20,65,E1._w-40,85)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[40,85]' texto='Dada una función \serif{\b{\${f(x,y)}}} definida en un dominio \serif{\b{\${D}}} y \serif{\b{\${P}}} un punto de \serif{\b{\${D}}} se dice que es un \color{e30000}{\b{punto crítico}} si cumple una de las tres afirmaciones siguientes:' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(70,220-40,E1._w-90,80)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_05" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(70,220,0.4,0.4)' archivo='images/caso1.png' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[140,205]' texto='\serif{\b{\${P}}} está situado en el contorno de \serif{\b{\${D}}}, en este caso se dice que \serif{\b{\${P}}} es un \color{e30000}{\b{punto frontera}}.' decimales='2' fijo='sí' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(70,340-40,E1._w-90,80)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_08" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(70,340,0.4,0.4)' archivo='images/caso2.png' rotini='0' opacidad='1' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[140,325]' texto='el gradiente de \serif{\b{\${f}}} en el punto \serif{\b{\${P}}} es cero, en este caso se dice que \serif{\b{\${P}}} es un \color{e30000}{\b{punto estacionario}}.' decimales='2' fijo='sí' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_10" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(70,460-40,E1._w-90,80)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_11" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(70,460,0.4,0.4)' archivo='images/caso3.png' rotini='0' opacidad='1' ">
+      <param name="G_12" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[140,435]' texto='no existe la derivada parcial de \serif{\b{\${f}}} respecto de \serif{\b{\${x}}} o respecto de \serif{\b{\${y}}} en el punto \serif{\b{\${P}}}, en este caso se dice que \serif{\b{\${P}}} es un \color{e30000}{\b{punto singular}}.' decimales='2' fijo='sí' ancho='E1._w-180' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_13" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(20,E1._h-80-20,E1._w-40,80)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_14" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[40,E1._h-40]' texto='Si \serif{\b{\${z = f(x, y)}}} es una función diferenciable en \serif{\b{\${D}}} entonces es condición necesaria para la existencia del extremo relativo de \serif{\b{\${f}}} en \serif{\b{\${P}}} que sea un punto estacionario, es decir, \serif{\b{\${P}}} es un punto donde las derivadas parciales primeras son cero.' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_bottom_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

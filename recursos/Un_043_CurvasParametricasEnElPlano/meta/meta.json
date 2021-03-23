@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría analítica"
+  ], 
+  "titulo": "Curvas paramétricas en el plano", 
+  "descripcion": "El objetivo de esta unidad didáctica es mostrar al estudiante cómo se genera la gráfica de algunas curvas cíclicas como la trayectoria de un cuerpo en movimiento y como generalización de las Cicloides, Epicicloides e Hipocicloides: Trocoides, Epitrocoides e Hipotrocoides.",
+  "resena": "Generalización de diversas curvas paramétricas en el plano.",
+  "id": "_Un_043_CurvasParametricasEnElPlano"
+}

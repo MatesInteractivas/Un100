@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_101_CalculoIntegral" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Cálculo, Análisis" 
+	plataforma="HTML 5" 
+	ver="Beta"
+	>
+	<titulo><![CDATA[
+		Cálculo integral 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+      La determinación de la recta tangente a una curva y el cálculo de áreas son dos problemas que han ido
+      resolviéndose históricamente por caminos diferentes y, a priori, parecen no tener relación.  Pero el Cálculo
+      Diferencial permitió mostrar que, ambos, no son más que dos caras de la misma moneda. 
+      Adicionalmente, la autoría de éste cálculo fue muy disputada entre Newton y Leibniz y ello dio base a 
+      establecer que la  misma queda asociada a la fecha de publicación.  Newton y Leibniz fueron dos genios, 
+      mal avenidos, pero ciertamente ambos llegaron a ver más no sólo por ir a hombros de gigantes, sino porque
+      ambos supieron mirar muy lejos.
+      En esta unidad se:
+        a) Formula el Teorema fundamental del Calculo Integral que relaciona a la función área con la derivación
+        b) Se enunciar la Regla de Barrow que permite el cálculo de la integral definida en base a las primitivas de
+             una función y consecuentemten establece la necesidad de cálcular dichas primitivas.
+        c) Aprender a calcular primitivas por diferentes métodos. 
+        d) Aplicación al cálculo de áreas de trapecios mixtilíneos y área encerrada entre dos curvas.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

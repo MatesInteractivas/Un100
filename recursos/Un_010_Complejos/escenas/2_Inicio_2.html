@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='90' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E3' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_04" value="tipo='R2' id='Covertura' x='0' y='0' ancho='100%' alto='100%' dibujar-si='!infor||!histo' fijo='sí' escala='48' O.x='0' O.y='0' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='55273c75' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_05" value="tipo='R2' id='HISTO' x='(E1._w-750)/2' y='(E1._h-490)/2' ancho='750' alto='490' dibujar-si='histo==0' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='cerrarHisto' interfaz='botón' tipo='numérico' región='interior' espacio='HISTO' expresión='(HISTO._w-35,0,35,35)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='histo=1' ">
+      <param name="C_02" value="id='info' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w-55,20,35,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_top_left' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' imagen='images/info.svg' acción='calcular' parámetro='histo=0' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='histo=0;infor=1;' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Definición de número complejo' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='HISTO' tipo='rectángulo' fondo='sí' color='273c75' coord_abs='sí' expresión='(1,1,HISTO._w-3,HISTO._h-3)' ancho='3' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='HISTO' tipo='rectángulo' fondo='sí' color='20303a' coord_abs='sí' expresión='(0,0,HISTO._w,35)' relleno='273c75' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_04" value="espacio='HISTO' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,50]' texto='¿Cómo definir los números complejos?' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='HISTO' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[20,90]' texto='El número \serif{\b{\${x}}} cuyo cuadrado es \serif{\b{\${-1}}} no puede estar en la recta real porque está completa, debe estar fuera. Dibujemos para ello un eje perpendicular al eje real y coloquémos ahí el número que verifica que su cuadrado es \serif{\b{\${-1}}}. Denotemos por \serif{\b{\${i}}} a dicho número.' decimales='2' fijo='sí' ancho='HISTO._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='HISTO' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[20,190]' texto='En este eje se puede representar \serif{\b{\${i}}}, \serif{\b{\${2i}}}, \serif{\b{\${3i}}}, ... de la misma forma que se representan los números reales en el \b{\color{0000b9}{eje real}}. \n\nA todos estos números los llamaremos \b{imaginarios} y el eje vertical en el que se pueden representar \b{\color{ff9600}{eje imaginario}.' decimales='2' fijo='sí' ancho='420' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='HISTO' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[20,415]' texto='Estos números imaginarios forman parte de un conjunto mayor que llamaremos \b{números complejos}. Vamos a ver cómo definir este conjunto.' decimales='2' fijo='sí' ancho='HISTO._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_08" value="espacio='HISTO' tipo='imagen' fondo='no' coord_abs='sí' expresión='(500,180)' archivo='images/ejes.svg' rotini='0' opacidad='1' ">
+      <param name="G_09" value="espacio='E2' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='(20,20)' texto='Consideramos el plano cartesiano, es decir, el conjunto de puntos \serif{\b{\${(a, b)}}} con \serif{\b{\${a}}} y \serif{\b{\${b}}} números reales. En este conjunto se definen las operaciones:\n\n\b{\color{ac0000}{Suma}}\n    \serif{\b{\${(a, b) + (c, d) = (a+b, c+d)}}}\n\n\b{\color{ac0000}{Producto}}\n    \serif{\b{\${(a, b) * (c, d) = (ac-bd, ad+bc)}}}\n\n\nAl conjunto de pares ordenados con estas operaciones, suma y producto, se les denomina conjunto de números complejos, \serif{\b{\${ℂ}}}.\n' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_10" value="espacio='E3' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(60,20)' texto='Identificamos el número real \serif{\b{\${a}}} con el par \serif{\b{\${(a, 0)}}}. Y llamamos \serif{\b{\${i = (0, 1)}}}.\n\n\nSe cumple \serif{\b{\${i^2 = −1}}}.\n\n        \serif{\b{\${i^2 ≡ (0, 1)*(0, 1) = (0*0 − 1*1, 0*1 + 1*0)}}}\n           \serif{\b{\${≡ (−1, 0) ≡ −1}}}\n\n\nLa suma y el producto definido en el conjunto de números complejos extiende a las definidas en el de los números reales.\n\nSi \serif{\b{\${a}}} y \serif{\b{\${b}}} son números reales, entonces:\n\n        \serif{\b{\${a + b ≡ (a, 0)+(b, 0) = (a+b, 0)}}}\n\n        \serif{\b{\${a * b ≡ (a, 0)*(b, 0) = }}}\n           \serif{\b{\${= (a*b − 0*0, a*0 + b*0) ≡ (a*b, 0)}}}' decimales='2' fijo='sí' ancho='E3._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E3' tipo='punto' fondo='sí' color='2980b9' coord_abs='sí' expresión='(32,30)' decimales='2' fijo='sí' tamaño='12' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_12" value="espacio='E3' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='(32,30)' texto='1' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_13" value="espacio='E3' tipo='punto' fondo='sí' color='2980b9' coord_abs='sí' expresión='(32,132)' decimales='2' fijo='sí' tamaño='12' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_14" value="espacio='E3' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='(32,132)' texto='2' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_15" value="espacio='E3' tipo='punto' fondo='sí' color='2980b9' coord_abs='sí' expresión='(32,282)' decimales='2' fijo='sí' tamaño='12' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_16" value="espacio='E3' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='(32,282)' texto='3' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

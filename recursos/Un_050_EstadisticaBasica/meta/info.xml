@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_050_EstadisticaBasica" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Estadística" 
+	plataforma="HTML 5" 
+	ver="Beta"
+	>
+	<titulo><![CDATA[
+		Estadística básica 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+      La estadistica  básica  es muy  útil  para resumir información, especialmente  en  las medidas  de 
+      tendencia central y  variabilidad. Se utilizan en encuestas, indicadores económicos, predicciones 
+      económicas, tomas  de  decisión. Permiten presentar la información de una forma clara y facil de
+      interpretar.
+ 
+      En esta unidad se busca el logro de los siguientes objetivos.
+
+      * Distinguir entre variables cualitativas y cuantitativas
+      * Calcular las medidas de tendencia central. Media, mediana y moda.
+      * Construir tablas de frecuencia.  
+      * Costruir gráficos de frecuencia. 	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

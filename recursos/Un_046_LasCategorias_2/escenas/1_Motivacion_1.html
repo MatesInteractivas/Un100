@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Motivación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='96' O.x='0' O.y='15' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='460' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='a1' tipo='audio' espacio='E1' expresión='((E1._w-300)/2,E1._h-75,300,35)' archivo='audio/motivacion.mp3' ">
+      <param name="A_01" value="id='img' vector='sí' evaluar='una-sola-vez' tamaño='50' expresión='&squot;C1-StateDiagram.jpg&squot;;&squot;C10-SmallCat.jpg&squot;;&squot;C11-NatTransf.jpg&squot;;&squot;C12-Morphisms.jpg&squot;;&squot;C13-NatTransf.jpg&squot;;&squot;C14-NatTransfComp.jpg&squot;;&squot;C15-NatTransfComp.jpg&squot;;&squot;C16-CoProduct.jpg&squot;;&squot;C17-Morphisms.jpg&squot;;&squot;C2-SimplexMorphism.jpg&squot;;&squot;C3-SetMorphisms.jpg&squot;;&squot;C4-SetMorphisms.jpg&squot;;&squot;C5-Product.jpg&squot;;&squot;C6-Pullback.jpg&squot;;&squot;C7-CommCube.jpg&squot;;&squot;C8-Pullback.jpg&squot;;&squot;C9-StateDiagram.jpg&squot;;&squot;S1-E8LieGroup.jpg&squot;;&squot;S2-AmplituHedron.jpg&squot;;&squot;S3-GravityCurves.jpg&squot;;&squot;S4-InfiniteStairs.jpg&squot;;&squot;S5Molecules.jpg&squot;;&squot;S6-Paraboles.jpg&squot;;&squot;S7-Escher.jpg&squot;;&squot;S8-Escher.jpg&squot;' tipo='vector' ">
+      <param name="A_02" value="id='LineParam()' algoritmo='sí' expresión='x' hacer='m=(ent(rnd+.5)=0)?-m:m;b=(ent(rnd+.5)=0)?-b:b' tipo='función' ">
+      <param name="A_03" value="id='nxt()' algoritmo='sí' expresión='n' local='i' inicio='i=0' hacer='i=(i>500)?0:i+1;n=(i>500)?n+1:0' mientras='1' tipo='función' ">
+      <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='X=100*coords.x;Y=-100*coords.y;;aux=(t=0)?LineParam():&squot;&squot;' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='De la Teoría de Conjuntos a la Teoría de Categorías' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E2' tipo='imagen' fondo='no' coord_abs='no' expresión='(2.0,0.0,(t%200)/200,(t%200)/200)' archivo='[&squot;images/motivacion/&squot;+img[img2ix]]' rotini='0' opacidad='1' ">
+      <param name="G_03" value="espacio='E2' tipo='imagen' fondo='no' coord_abs='no' expresión='((t/10)%12-6,0,0.4+0.4*((t%150)/150),0.4+0.4*((t%150)/150))' archivo='[&squot;images/motivacion/&squot;+img[imgix]]' rotini='0' opacidad='1' ">
+      <param name="G_04" value="espacio='E2' tipo='imagen' fondo='no' coord_abs='no' expresión='(-2.0,0.0,1-(t%200)/200,1-(t%200)/200)' archivo='[&squot;images/motivacion/&squot;+img[img1ix]]' rotini='0' opacidad='1' ">
+      <param name="Animación" value="pausa='10' controles='no' auto='sí' repetir='no' inicio='t=0' hacer='t=t+1;imgix=((t%120)==0)?ent(img.long*rnd):imgix;img1ix=((t%100)==0)?(img1ix+1)%img.long:img1ix;img2ix=((t%100)==0)?ent(img.long*rnd):img2ix;' mientras='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

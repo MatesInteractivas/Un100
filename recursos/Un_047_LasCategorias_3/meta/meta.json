@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Teoría de categorías", 
+    "Fundamentos"
+  ], 
+  "titulo": "Las Categorías 3", 
+  "descripcion": "El objetivo de esta unidad interactiva es continuar con el estudio de las categorías, functores y transformaciones naturales. En esta lección introducimos el concepto de composición de morfismos en las categorías, el cual es el último ingrediente en la definicion de éstas.",
+  "resena": "Continuación de las categorías. Papel de la composición en las mismas.",
+  "id": "_Un_047_LasCategorias_3"
+}

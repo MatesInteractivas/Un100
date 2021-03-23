@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometría</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+</head>
+
+<body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '1'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '-3.84,4.31,1.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '1,0' />
+<objeto  nombre = 'x'  tipo = 'recta'  constructor = '151'  parametros = '0.00,1.00,-4.31'  objRef = '0'  formulas = '0 ; 1 ; -C.y ' visible = '1'  ancho = '1'  color = '#c0c0c0,#c0c0c0'  etiqueta = '0,1' />
+<objeto  nombre = 'y'  tipo = 'recta'  constructor = '151'  parametros = '1.00,0.00,3.84'  objRef = '0'  formulas = '1 ; 0 ; -C.x ' visible = '1'  ancho = '1'  color = '#c0c0c0,#c0c0c0'  etiqueta = '0,2' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '150'  parametros = '16.16,4.31,0.00'  objRef = '0'  formulas = 'C.x+20 ; C.y ' visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'V1'  tipo = 'punto'  constructor = '6'  parametros = '0.01,4.31,1.00,16.15,3.85'  objRef = '0,3'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '0,-1' />
+<objeto  nombre = 'F1'  tipo = 'punto'  constructor = '6'  parametros = '-1.38,4.31,1.00,17.54,2.46'  objRef = '0,3'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '0,5' />
+<objeto  nombre = 'F2'  tipo = 'punto'  constructor = '150'  parametros = '-6.30,4.31,1.00'  objRef = '0,5'  formulas = '2*C.x-F1.x ; C.y ' visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '0,6' />
+<objeto  nombre = 'a'  tipo = 'escalar'  constructor = '81'  parametros = '3.85,2.18'  objRef = '0,4'  etiqueta = '0,7' />
+<objeto  nombre = 'con'  tipo = 'conica'  constructor = '104'  parametros = '-0.59,-0.00,-1.00,-2.27,4.31,-18.52,-0.07,-9.80,5.80,-2.27,2.55,0.59,5.21'  objRef = '5,6,7'  visible = '1,0,0,0,0,0'  ancho = '2,2,1,2,1,1'  color = '#ff,#c0c0c0,#ff,#c0c0c0,#ff,#c0c0c0,#c0c0c0,#c0c0c0,#ff0000'  etiqueta = '1,13' />
+<objeto  nombre = 'O'  tipo = 'punto'  constructor = '0'  parametros = '0.00,0.00,1.00'  visible = '0'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,9' />
+<objeto  nombre = 'b'  tipo = 'escalar'  constructor = '97'  parametros = '2.96,0.00'  objRef = '8'  etiqueta = '0,-1' />
+<objeto  nombre = 'c'  tipo = 'escalar'  constructor = '98'  parametros = '2.46,4.31'  objRef = '8'  etiqueta = '0,-1' />
+<objeto  nombre = 'e'  tipo = 'escalar'  constructor = '99'  parametros = '0.64,4.31'  objRef = '8'  etiqueta = '0,-1' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-7.16,8.84,0.00'  visible = '1'  ancho = '3'  color = '#0,#8000'  etiqueta = '0,-1' />
+
+<nota texto="<p>Cuando una elipse o una hipérbola no está centrada en el orígen y su eje focal es horizontal, en su ecuación general</p>
+<p align='center' style='font-family:descartesJS_serif;'>Ax<sup>2</sup> + Bxy + Cy<sup>2</sup> + Dx + Ey + F = 0</p>
+<p>el coeficiente <mt>B</mt> vale cero, es decir, la ecuación no tiene término en <mt>xy</mt>.</p> 
+<p align='center' style='font-family:descartesJS_serif;'>Ax<sup>2</sup> + Cy<sup>2</sup>  + Dx + Ey + F = 0</p>
+<p>Arrastra el centro de la cónica hacia el origen y observa que los coeficientes de <mt>x</mt> y de <mt>y</mt> se hacen pequeños, y como la forma de la cónica no cambia, los parámetros <mt>a</mt>, <mt>b</mt>, <mt>c</mt>, <mt>e</mt> no cambian.</p>
+<p align='center' style='font-family:descartesJS_serif;'>a = $a$, b = $b$, c = $c$, e = $e$</p>
+<p>Algebraicamente, esta transformación se logra completando los trinomios cuadrados perfectos en la ecuación general</p>
+<p style='font-family:descartesJS_serif;'> A(x<sup>2</sup> + D/A x + ____) + C(y<sup>2</sup> + E/C y + ____) + F = 0 + ____</p>
+<p>Para obtener una ecuación de la forma</p>
+<p align='center' style='font-family:descartesJS_serif;'>A(x-h)<sup>2</sup> + C(y-k)<sup>2</sup> + F = 0</p>"/>
+
+<table align='center'>  
+<tr>
+	<td width ='482px' height='540px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="482" height="540">
+			</canvas>
+		</td>
+    
+    <td width ='20px'></td>
+    
+    <td width ='482px' height="540px" valign='middle' class="celda_derecha">
+    
+		<p id="cuaderno" >Este es un p&aacute;rrafo</p>
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

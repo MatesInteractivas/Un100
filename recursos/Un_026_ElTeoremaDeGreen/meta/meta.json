@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Cálculo vectorial"
+  ], 
+  "titulo": "El teorema de Green y el planímetro", 
+  "descripcion": "En esta unidad se desarrollará el Teorema de Green desde un punto de vista geométrico y, mediante ejemplos, se mostrará su aplicación a distintos problemas, en particular, al funcionamiento de un planímetro, el cual es un instrumento mecánico que permite calcular el área delimitada por una curva plana cerrada.",
+  "resena": "El teorema de Green como la relación entre la integral de línea y la doble integral sobre la porción encerrada y diversas aplicaciones.",
+  "id": "_Un_026_ElTeoremaDeGreen"
+}

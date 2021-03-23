@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='4' discreto='no' decimales='0' fijo='sí' visible='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Evoluta' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 5' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='[20,20]' texto='La evoluta es el lugar geométrico de los centros de los círculos tangentes a una curva dada. Constituye un método para obtener una nueva curva basada en esta curva dada.\n\nTambién puede ser vista como el lugar geométrico de los centros de curvatura de una curva y como la envolvente de las rectas normales a la curva en el punto de tangencia. Se puede observar que la intersección entre la tangente y la normal coincide con el punto generador de la epicicloide (extremo del radio del círculo generador).\n\nLa idea de esta curva aparece en una primera forma en el Libro V de las Cónicas de Apolonio. Aparece en su forma presente en el trabajo de Huygens al rededor de 1673.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='[20,20]' texto='La evoluta de una nefroide es una nefroide' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==1' coord_abs='no' expresión='(0,0,0.7,0.7)' archivo='images/evoluta1.jpg' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='[20,20]' texto='La evoluta de una cardioide es una cardioide' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==2' coord_abs='no' expresión='(0,0,0.7,0.7)' archivo='images/evoluta2.jpg' rotini='0' opacidad='1' ">
+      <param name="G_08" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==3' coord_abs='sí' expresión='[20,20]' texto='La cicloide y su evoluta' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==3' coord_abs='no' expresión='(0,0,0.7,0.7)' archivo='images/evoluta3.jpg' rotini='0' opacidad='1' ">
+      <param name="G_10" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==4' coord_abs='sí' expresión='[20,20]' texto='Una hipotrocoide (en rojo) y su evoluta (en negro)' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_11" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==4' coord_abs='no' expresión='(0,0,0.7,0.7)' archivo='images/evolute4.jpg' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Algoritmos"
+  ], 
+  "titulo": "El teorema de Pick", 
+  "descripcion": "Presentar un resultado poco conocido para el cálculo del área de polígonos simples cuyos vértices se encuentran en coordenadas enteras: el Teorema de Pick. Se trata de una herramienta muy útil que es, además, fácil de utilizar y aprender.",
+  "resena": "Aplicación del teorema de Pick para el cálculo de areas de polígonos con vértices en coordenadas enteras.",
+  "id": "_Un_082_TeoremaDePick"
+}

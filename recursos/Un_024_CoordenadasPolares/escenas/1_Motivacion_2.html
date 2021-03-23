@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Motivación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='EspacioMapa' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E2' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='pista' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Siguiente pista ►' expresión='(200,440,160,30)' valor='0' color='ffffff' borderColor='no' color-int='ffffff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' imagen='images/btn160.png' acción='calcular' parámetro='paso=paso+1' dibujar-si='paso<5' ">
+      <param name="C_02" value="id='paso' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='5' discreto='no' decimales='2' fijo='sí' visible='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='mapaImg' vector='sí' evaluar='una-sola-vez' tamaño='6' expresión='&squot;images/mapa.png&squot;;&squot;images/mapa1.png&squot;;&squot;images/mapa2.png&squot;;&squot;images/mapa3.png&squot;;&squot;images/mapa4.png&squot;;&squot;images/mapa4.png&squot;;' tipo='vector' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Encontrando el tesoro' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='EspacioMapa' tipo='imagen' fondo='no' coord_abs='sí' expresión='(EspacioMapa._w/2,EspacioMapa._h/2,1,1)' archivo='[mapaImg[paso]]' rotini='0' opacidad='1' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[paso+1] / 6' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='paso==0' coord_abs='sí' expresión='(20,20)' texto='\b{Búsqueda del tesoro}\n\nPara encontrar el tesoro se deberá seguir las instrucciones que se irán descubriendo, siguiendo las pistas indicadas...' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='paso==1' coord_abs='sí' expresión='(20,20)' texto='\b{Pista 1}\n\nAvanzar 40 metros en la dirección del puerto de la bahía de la \i{Ciudad Desconocida}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='paso==2' coord_abs='sí' expresión='(20,20)' texto='\b{Pista 2}\n\nAvanzar 30 metros en dirección a la \i{Palmera Gigante}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='paso==3' coord_abs='sí' expresión='(20,20)' texto='\b{Pista 3}\n\nAvanzar 90 metros en dirección a \i{Roca Calavera}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='paso==4' coord_abs='sí' expresión='(20,20)' texto='\b{Pista 4}\n\nAvanzando 45 metros en dirección al lago podrá encontrar el tesoro.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='paso==5' coord_abs='sí' expresión='(20,20)' texto='Las coordenadas polares son útiles cuando se trabaja con información relativa a \b{distancias} y \b{ángulos}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

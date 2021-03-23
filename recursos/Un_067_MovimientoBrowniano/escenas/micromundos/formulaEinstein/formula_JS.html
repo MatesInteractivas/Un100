@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+<div align="center">
+  <ajs name="Descartes" width="550" height="550" code="Descartes.class" codebase="http://arquimedes.matem.unam.mx/Descartes5/" archive="lib/Descartes5.jar" mayscript="">
+   <param name="tamaño" value="550x550">
+   <param name="decimal_symbol" value=",">
+   <param name="expand" value="fit">
+   <param name="editable" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.5">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='retro' x='75' y='120' ancho='400' alto='250' dibujar-si='evaluado' fijo='sí' imagen='images/fondoRetro.png' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='405860'">
+   <param name="C_01" value="id='mm1' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(76,389,75,26)' decimales='0' fijo='sí' visible='no' opciones='menor,mayor' activo-si='(!solucion)&amp;&amp;(!acierto)'">
+   <param name="C_02" value="id='mm2' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(76,422,75,26)' decimales='0' fijo='sí' visible='no' opciones='menor,mayor' activo-si='(!solucion)&amp;&amp;(!acierto)'">
+   <param name="C_03" value="id='mm3' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(76,454,75,26)' decimales='0' fijo='sí' visible='no' opciones='menor,mayor' activo-si='(!solucion)&amp;&amp;(!acierto)'">
+   <param name="C_04" value="id='mm4' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(76,486,75,26)' decimales='0' fijo='sí' visible='no' opciones='menor,mayor' activo-si='(!solucion)&amp;&amp;(!acierto)'">
+   <param name="C_05" value="id='verificar' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(430,360)' fijo='sí' visible='sí' imagen='images/bt_verificar.png' acción='calcular' parámetro='evaluar()' activo-si='(!solucion)&amp;&amp;(!acierto)' pos_mensajes='centro'">
+   <param name="C_06" value="id='cerrar' tipo='numérico' interfaz='botón' región='interior' espacio='retro' expresión='(315,8)' fijo='sí' visible='sí' imagen='images/btCerrar.png' acción='calcular' parámetro='evaluado=0' pos_mensajes='centro'">
+   <param name="A_01" value="id='evaluar()' algoritmo='sí' algoritmo='sí' hacer='acierto=((mm1=1)&amp;&amp;(mm2=0)&amp;&amp;(mm3=1)&amp;&amp;(mm4=0));error=!acierto?error+1:error;intentos=acierto?intentos:intentos+1;solucion=intentos>2?1:0;mostrarSolucion=solucion?showSolucion():0;finalActividad=(acierto|solucion)?parent.set(&amp;squot;respuesta&amp;squot;,&amp;squot;[Actividad terminada]&amp;squot;):0;evaluado=1'">
+   <param name="A_02" value="id='showSolucion()' algoritmo='sí' algoritmo='sí' hacer='mm1=1;mm2=0;mm3=1;mm4=0'">
+   <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='error=0;evaluado=0;acierto=0;solucion=0;intentos=0'">
+   <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='imagen' expresión='(-.4,4.7)' archivo='images/recorrido3D.png' info='recorrido 3D'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' expresión='(-4.8,5.4)' archivo='images/fondoFormula.png' info='fondo fórmula'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' expresión='(-5.45,-1.4)' archivo='images/fondoTxt.png' info='fondo actividad'">
+   <param name="G_04" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[47,32]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs34\b\i{\*\mjaformula (x{\supix 2}){\subix m} = {\fraction{\num RT}{\den 3\u960  \u951 aN{\subix A} }} t}\f2\fs30\b0\i0}' fuente='Serif,BOLD+ITALIC,17' fijo='sí' info='fórmula'">
+   <param name="G_05" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[12,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs26 El t\u233 rmino a la izquierda de la igualdad\par expresa el desplazamiento cuadr\u225 tico\par medio de la part\u237 cula, una medida del\par mayor desplazamiento posible de la\par part\u237 cula.\f2\fs30}' fuente='SansSerif,PLAIN,13' fijo='sí' info='explicación'">
+   <param name="G_06" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[12,195]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}\f1\fs26 Del lado derecho tenemos:\par \par       \u10146 \b   R \b0  = constante de los gases\par       \u10146 \b   T\b0   =  temperatura del fluido\par       \u10146 \f3\fs30\b\i   \u951 \f1\fs26\b0\i0   = viscosidad del fluido\par       \u10146  \b  a\b0   = radio de la part\u237 cula\par       \u10146 \b  {\*\mjaformula N{\subix A}}\b0  = n\u250 mero de Avogadro\par       \u10146  \b  t \b0  =  tiempo transcurrido\f4\fs30}' fuente='SansSerif,PLAIN,13' fijo='sí' info='explicación 2'">
+   <param name="G_07" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[26,360]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs26 De acuerdo con esta f\u243 rmula:\par \fs30   \fs26\par \u8226  entre                              sea el tiempo transcurrido, \par \fs30   \fs26\par \u8226  entre                              sea la viscosidad del fluido,\par \fs30     \fs26\par \u8226  entre                              sea la temperatura del fluido,\par \fs30   \fs26\par \u8226  entre                              sea el radio de la part\u237 cula,\f3\fs30}' fuente='SansSerif,PLAIN,13' fijo='sí' info='De acuerdo con esta fórmula...'">
+   <param name="G_08" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[385,430]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}\f1\fs26\b mayor\b0  ser\u225  el posible\par desplazamiento de la\par part\u237 cula.\fs28}' fuente='SansSerif,BOLD,13' fijo='sí' info='mayor será el posible desplazamiento de la partícula.'">
+   <param name="G_09" value="espacio='E1' tipo='imagen' expresión='(1.6,-2.3)' archivo='images/llave.png' info='llave'">
+   <param name="G_10" value="espacio='retro' tipo='texto' coord_abs='sí'  dibujar-si='(error=1)&amp;(!acierto)' expresión='[28,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red68\green68\blue68;\red32\green48\blue58;}\f1\fs28\cf0 Averigua si las variables en cuesti\u243 n se encuentran\par en el divisor o el dividendo de la divisi\u243 n. \par \par Luego vuelve a intentarlo.\f2\fs30\cf1}' fuente='SansSerif,PLAIN,14' fijo='sí' info='retro error 1'">
+   <param name="G_11" value="espacio='retro' tipo='texto' coord_abs='sí'  dibujar-si='(error=2)&amp;(!acierto)' expresión='[30,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}\f1\fs28 Cuando una variable est\u225  en el \b dividendo\b0  de una \par divisi\u243 n (la parte de arriba), entre \i mayor\i0  sea su\par valor, \i mayor \i0 ser\u225  el valor del cociente y viceversa.\par \par Cuando se encuentra en el \b divisor\b0  (la parte debajo\par de la l\u237 nea) entre \i mayor\i0  sea su valor, \i menor\i0  ser\u225 \par el valor del cociente. \par \par \u191 Entonces?\f4\fs30}' fuente='SansSerif,PLAIN,14' fijo='sí' info='retro error 2'">
+   <param name="G_12" value="espacio='retro' tipo='texto' coord_abs='sí'  dibujar-si='acierto' expresión='[30,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs28 Se dice que el desplazamiento cuadr\u225 tico medio es\par \b\i inversamente proporcional\b0\i0  a la viscosidad del fluido\par y el radio de la part\u237 cula y que es \b\i directamente pro-\par porcional\b0\i0  a la temperatura del fluido y el tiempo\par transcurrido. \u161 Bien!}' fuente='SansSerif,PLAIN,14' fijo='sí' info='retro acierto'">
+   <param name="G_13" value="espacio='retro' tipo='texto' coord_abs='sí'  dibujar-si='solucion' expresión='[30,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs28 Observa la soluci\u243 n.\par \par Se dice que el desplazamiento cuadr\u225 tico medio es\par \b\i inversamente proporcional\b0\i0  a la viscosidad del fluido\par y el radio de la part\u237 cula y que es \b\i directamente pro-\par porcional\b0\i0  a la temperatura del fluido y el tiempo\par transcurrido.}' fuente='SansSerif,PLAIN,14' fijo='sí' info='retro solución'">
+</ajs>
+</div>
+</body>
+</html>

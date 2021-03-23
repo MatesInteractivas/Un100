@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Motivación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R3' R3='sí' id='faro' x='670' y='145' ancho='335' alto='345' dibujar-si='1' fijo='no' escala='50' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' despliegue='orden' cortar='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='link' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='https://www.youtube.com/watch?v=QIsWT7gE8Vw' expresión='(30+(610-350)/2,E1._h-50,350,20)' valor='0' color='0652dd' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='sí' font_family='SansSerif' fuente puntos='15' imagen='vacio.gif' acción='abrir URL' parámetro='https://www.youtube.com/watch?v=QIsWT7gE8Vw' ">
+      <param name="C_02" value="id='video' tipo='video' espacio='E1' expresión='(30,155,610,345)' archivo='http://prometeo.matem.unam.mx/recursos/Licenciatura/Un100/videos/_Un_035_RectaPlanoTangente/video2.mp4' ">
+      <param name="C_03" value="id='alfa' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' nombre='Girar' expresión='(670,515,faro._w,35)' valor='0' incr='5' discreto='no' decimales='2' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="C_04" value="id='autogiro' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Giro automático' expresión='(670,570,faro._w,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='animar' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="A_01" value="id='f1(x)' algoritmo='no' expresión='x' tipo='función' ">
+      <param name="A_02" value="id='tf1(x)' algoritmo='no' expresión='f1(coche1.x)+1*(x-coche1.x)' dominio='(x>coche1.x)&(x<=coche1.x+1.5)' tipo='función' ">
+      <param name="A_03" value="id='f2(x)' algoritmo='no' expresión='0.25*x^2-1.5' tipo='función' ">
+      <param name="A_04" value="id='tf2(x)' algoritmo='no' expresión='f2(coche2.x)+0.5*coche2.x*(x-coche2.x)' dominio='(x>coche2.x)&(x<=coche2.x+1)' tipo='función' ">
+      <param name="A_05" value="id='f3(x)' algoritmo='no' expresión='0.1*x^3' tipo='función' ">
+      <param name="A_06" value="id='tf3(x)' algoritmo='no' expresión='f3(coche3.x)+0.3*(coche3.x^2)*(x-coche3.x)' dominio='(x>coche3.x)&(x<=coche3.x+1)' tipo='función' ">
+      <param name="A_07" value="id='f4(x)' algoritmo='no' expresión='sen(x)' tipo='función' ">
+      <param name="A_08" value="id='tf4(x)' algoritmo='no' expresión='f4(coche4.x)+cos(coche4.x)*(x-coche4.x)' dominio='(x>coche4.x)&(x<coche4.x+1)' tipo='función' ">
+      <param name="A_09" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='faro.rot.y=45;faro.rot.z=0' ">
+      <param name="A_10" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='El plano tangente' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[20,65]' texto='Observando  la luz de un  faro en  la noche podemos contemplar que, al girar, determina un plano  ¿tiene ese plano  alguna particularidad respecto a la superficie terrestre?' decimales='2' fijo='sí' ancho='E1._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_03" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ff000000' coord_abs='sí' expresión='(20,145,630,E1._h-145-20)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' info='Panel fondo video' ">
+      <param name="S_01" value="nombre='tierra' espacio='faro' tipo='esfera' fondo='no' color='9fb90000' color_reverso='9fb90000' expresión='Esfera' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='rue' modelo='luz' ancho='4' Nu='16' Nv='32' ">
+      <param name="S_02" value="nombre='faro' espacio='faro' tipo='segmento' fondo='no' color='ff0000' expresión='(0,0,2)(0,0,2.25)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='4' Nu='1' ">
+      <param name="S_03" value="nombre='sombra-faro' espacio='faro' tipo='superficie' fondo='no' color='53ffc800' color_reverso='55ffc800' expresión='x=2*v*cos(u*(alfa%360)*pi/180) y=2*v*sen(u*(alfa%360)*pi/180) z=2.2' rotini='(0,0,-45)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='luz' Nu='64' Nv='1' ">
+      <param name="S_04" value="nombre='luz-faro' espacio='faro' tipo='segmento' fondo='no' color='naranja' expresión='(0,0,2.2)(2*cos((alfa%360)*pi/180),2*sen((alfa%360)*pi/180),2.2)' rotini='(0,0,-45)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='4' Nu='1' ">
+      <param name="Animación" value="pausa='100' controles='no' auto='no' repetir='no' inicio='alfa=0' hacer='alfa=alfa+5' mientras='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

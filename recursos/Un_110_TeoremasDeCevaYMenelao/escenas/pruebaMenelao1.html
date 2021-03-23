@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometría</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</head>
+ <body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '0'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '0'  parametros = '-3.54,4.49,-3.380843063978213892000000000000000000000e+221'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,0' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '3.30,-1.76,-3.380843063978213892000000000000000000000e+221'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,1' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-8.46,-1.56,-3.380843063978213892000000000000000000000e+221'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,2' />
+<objeto  nombre = 'a'  tipo = 'recta'  constructor = '38'  parametros = '0.02,1.00,1.70'  objRef = '1,2'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,3' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '38'  parametros = '0.78,-0.63,5.58'  objRef = '2,0'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,4' />
+<objeto  nombre = 'c'  tipo = 'recta'  constructor = '38'  parametros = '-0.67,-0.74,0.93'  objRef = '0,1'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,5' />
+<objeto  nombre = 'N'  tipo = 'punto'  constructor = '6'  parametros = '-5.27,2.36,1.00,-2.30,-1.25'  objRef = '0,2'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,6' />
+<objeto  nombre = 'L'  tipo = 'punto'  constructor = '6'  parametros = '5.55,-1.80,1.00,-1.99,12.39'  objRef = '2,1'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,7' />
+<objeto  nombre = 'r'  tipo = 'recta'  constructor = '31'  parametros = '-0.36,-0.93,0.31'  objRef = '6,7'  visible = '1'  ancho = '2'  color = '#ff,#edededed'  etiqueta = '0,8' />
+<objeto  nombre = 'M'  tipo = 'punto'  constructor = '1'  parametros = '1.74,-0.34,1.00'  objRef = '8,5'  visible = '1'  ancho = '2'  color = '#0,#c0c0c0'  etiqueta = '2,9' />
+<objeto  nombre = 'rM'  tipo = 'escalar'  constructor = '86'  parametros = '0.30,-3.380843063978213892000000000000000000000e+221'  objRef = '9,1,0'  etiqueta = '0,-1' />
+<objeto  nombre = 'rL'  tipo = 'escalar'  constructor = '86'  parametros = '-6.24,-3.380843063978213892000000000000000000000e+221'  objRef = '7,2,1'  etiqueta = '0,-1' />
+<objeto  nombre = 'rN'  tipo = 'escalar'  constructor = '86'  parametros = '0.54,-3.380843063978213892000000000000000000000e+221'  objRef = '6,0,2'  etiqueta = '0,-1' />
+<objeto  nombre = 'x'  tipo = 'escalar'  constructor = '154'  parametros = '-1.00,-3.380843063978213892000000000000000000000e+221'  objRef = '10,11,12'  formulas = 'rM*rL*rN ' etiqueta = '0,13' />
+<objeto  nombre = 'Q'  tipo = 'punto'  constructor = '2'  parametros = '-6.73,2.93,0.93'  objRef = '2,8'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'P'  tipo = 'punto'  constructor = '2'  parametros = '-4.48,2.06,0.93'  objRef = '0,8'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'R'  tipo = 'punto'  constructor = '2'  parametros = '3.58,-1.04,0.31'  objRef = '1,8'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'd'  tipo = 'recta'  constructor = '38'  parametros = '0.93,-0.36,7.34'  objRef = '2,14'  visible = '1,0'  ancho = '1,1'  color = '#c0c0c0,#c0c0c0,#0'  etiqueta = '0,-1' />
+<objeto  nombre = 'e'  tipo = 'recta'  constructor = '38'  parametros = '0.93,-0.36,4.92'  objRef = '15,0'  visible = '1,0'  ancho = '1,1'  color = '#c0c0c0,#c0c0c0,#0'  etiqueta = '0,-1' />
+<objeto  nombre = 'f'  tipo = 'recta'  constructor = '38'  parametros = '0.93,-0.36,-3.72'  objRef = '1,16'  visible = '1,0'  ancho = '1,1'  color = '#c0c0c0,#c0c0c0,#0'  etiqueta = '0,-1' />
+<objeto  nombre = 'D'  tipo = 'poligono'  constructor = '200'  objRef = '2,6,14'  visible = '1'  ancho = '1'  color = '#80ffff,#80ffff'  etiqueta = '0,-1' />
+<objeto  nombre = 'E'  tipo = 'poligono'  constructor = '200'  objRef = '15,0,6'  visible = '1'  ancho = '1'  color = '#80ffff,#80ffff'  etiqueta = '0,-1' />
+
+<nota texto=""  />
+
+
+
+<table align='center'>  
+<tr>
+	<td width ='482px' height='540px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="482" height="540">
+			</canvas>
+		</td>
+    
+    <td width ='20px'></td>
+    
+    <td width ='482px' height="540px" valign='middle' class="celda_derecha">
+    
+	<div class="cuaderno2">
+<p>Trazamos desde \(A\), \(B\) y \(C\), las rectas \(AP\), \(BQ\) y \(CR\), perpendiculares a la recta \(NML\). </p>
+<p>Los triángulos \(ANP\) y \(BNQ\) son semejantes, así que 
+\[
+\frac{AN}{NB}=\frac{AP}{QB}
+\]
+Similarmente, los triángulos \(BLQ\) y \(CLR\) son semejantes, así que
+\[
+\frac{BL}{LC}=\frac{QB}{CR}
+\]
+Finalmente, los triángulos \(APM\) y \(CRM\) son semejantes, luego,
+\[
+\frac{CM}{MA}=\frac{RC}{AP}
+\]
+(si en una fracción el sentido de recorrido del numerador es diferente al del denominador, el signo de la fracción es negativo)</p>
+<p>Entonces,
+\[
+\frac{AN}{NB}\frac{BL}{LC}\frac{CM}{MA}=\frac{AP}{QB}\frac{QB}{CR}\frac{RC}{AP}=-1
+\]
+Observa que hay un cambio de sentido, por eso el signo el negativo.</p>
+
+<p>El recíproco se prueba de manera similar al teorema de Ceva. Se supone que la recta que pasa por \(M\) y \(N\) corta
+al lado \(BC\) en un punto \(L'\), y usando la primera parte del teorema, se prueba que \(L\) y \(L'\) deben ser el mismo punto.</p>
+
+<p id="cuaderno">This is a paragraph.</p></div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

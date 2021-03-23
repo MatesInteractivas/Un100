@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Probabilidad", 
+    "Ley de los Grandes Números"
+  ], 
+  "titulo": "Probabilidad", 
+  "descripcion": "Dirigido a futuros maestros de educación básica y estudiantes de bachillerato y licenciatura para ayudarles a comprender la relación entre probabilidad teórica y probabilidad empírica.",
+  "resena": "Probabilidad teórica y experimental en el ámbito de la ley débil de los grandes números.",
+  "id": "_Un_008_Probabilidad"
+}

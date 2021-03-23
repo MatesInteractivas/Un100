@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_093_DifraccionDeBragg" 
+	nivel="Licenciatura, Bachillerato" 
+	area="Física, Mecánica,Óptica, Física Moderna" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Difraccion De Bragg 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+	En esta unidad didáctica el estudiante conocerá las propiedades y
+        la forma en la que se crean los rayos X,además conocerá los tipos
+        de estructura que tienen los materiales especialmente la de los
+        cristales que tienen tamaños similares a la longitud de onda de
+        los rayos X. Finalmente entenderá la ley de Bragg y conocerá su
+        utilidad en la cristalografía.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

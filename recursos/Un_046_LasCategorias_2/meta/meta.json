@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Teoría de categorías", 
+    "Fundamentos"
+  ], 
+  "titulo": "Las Categorías 2", 
+  "descripcion": "El objetivo de esta unidad interactiva es continuar con el estudio de las categorías, functores y transformaciones naturales. En esta lección introducimos el concepto de identidad en las categorías, el cual es un ingrediente esencial en la definición de éstas.",
+  "resena": "Continuación de categorías. Papel de la identidad en las mismas.",
+  "id": "_Un_046_LasCategorias_2"
+}

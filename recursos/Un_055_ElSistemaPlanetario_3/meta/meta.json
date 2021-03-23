@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Física", 
+    "Dinámica Celeste"
+  ], 
+  "titulo": "El Sistema planetario: Areas iguales en tiempos iguales. Segunda ley de Kepler.", 
+  "descripcion": "El objetivo de esta unidad es presentar la Segunda Ley de Kepler que dice que los radios vectores, i.e.los segmentos del Sol a cada planeta, barren áreas iguales en tiempos iguales. Se discute el significado de esta ley y se muestran sus implicaciones en la capacidad de predecir la posición de todos los planetas en todo momento a partir de las de un momento dado. La unidad presenta una escena que hace precisamente eso.",
+  "resena": "Barrido areal constante por los radiovectores en la trayectoria planetaria.",
+  "id": "_Un_055_ElSistemaPlanetario_3"
+}

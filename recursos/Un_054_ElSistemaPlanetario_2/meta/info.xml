@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_054_ElSistemaPlanetario_2" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Física, Dinámica Celeste" 
+	plataforma="HTML 5"
+        ver="Beta"
+	>
+	<titulo><![CDATA[
+		El Sistema planetario: Trayectorias elípticas. Primera ley de Kepler.
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+      Se presentan los parámetros keplerianos que se utilizan para definir una trayectoria elíptica en el espacio.
+      En particular se explican los conceptos de equinoxio vernal, período, excentricidad, semieje mayor, 
+      perihelio, afelio, longitud del nodo ascendente, longitud de periapsis y anomalía verdadera. 
+      Se explica la Primera ley de Kepler que consiste en que todos los planetas siguen trayectorias del tipo 
+      descrito y se presentan los valores característicos de la órbita de cada uno de los planetas. Se discuten 
+      brevemente las diferencias entre ellos.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Cálculo integral", 
+    "Cálculo numérico"
+  ], 
+  "titulo": "Integración numérica", 
+  "descripcion": "En esta unidad se pretende: - aproximar una integral definida utilizando la regla del trapecio - aproximar una integral definida utilizando la regla de Simpson - analizar los errores de aproximación en la regla del trapecio y en la regla de Simpson",
+  "resena": "Análisis de la precisión al estimar integrales por diversos métodos numéricos de integración, como el trapecio y Simpson.",
+  "id": "_Un_025_IntegracionNumerica"
+}

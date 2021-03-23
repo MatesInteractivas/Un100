@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría"
+  ], 
+  "titulo": "Geometrías no euclídeas: Disco de Poincaré", 
+  "descripcion": "Se plantea el modelo geométrico bidimensional denominado El disco de Poincaré: interior del círculo, en el que las geodésicas son arcos de circunferencias euclídeas ortogonales a su frontera. Se muestran los objetos básicos en el disco de Poincaré: los segmentos, circunferencias, ángulos y sus particularidades para el observador euclídeo. Se comprueba que la suma de los ángulos de un triángulo en el disco de Poincaré es inferior a 180º Finalmente se muestra que la geometráa del disco de Poincaré no es una  geometría euclídea, es decir, hay otras geometrías.",
+  "resena": "El disco de Poincaré como ejemplo de geometría no euclidiana para mostrar las diferencias con la euclidiana.",
+  "id": "_Un_017_DiscoDePoincare"
+}

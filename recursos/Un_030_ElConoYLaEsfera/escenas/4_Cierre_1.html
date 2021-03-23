@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cierre 1</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='3' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Superficie de un sector cónico' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 4' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='Un cono circular recto se caracteriza por tener una base circular y el vértice sobre la perpendicular a la base que pasa por el centro. La arista de estos conos tienen todas la misma longitud. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEn esta lección sólo hablaremos de conos circulares rectos.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==0' coord_abs='no' expresión='(0,0.5,0.5,0.5)' archivo='images/4_Cierre_1_1.png' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='Un cono circular recto de lado \serif{\b{\${L}}} puede construirse a partir de un sector circular de radio \serif{\b{\${L}}} y por tanto su área es igual a la del sector circular, o sea la mitad del perímetro por el radio. Como el perímetro es \serif{\b{\${2πr}}} y el lado es \serif{\b{\${L}}}, resulta que el área del cono es: \n\c{\serif{\b{\${A = π r L}}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==1' coord_abs='no' expresión='(0,0,0.5,0.5)' archivo='images/4_Cierre_1_2.png' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='(20,20)' texto='Un sector de cono circular recto es la parte del cono comprendida entre dos planos paralelos a su base.\n\nEl área de un sector de cono con radio medio \serif{\b{\${r}}} y ancho \serif{\b{\${ΔL}}} es igual al perímetro de la circunferencia por el ancho, es decir,\n\c{\serif{\b{\${A = 2 π r ΔL}}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_08" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==2' coord_abs='no' expresión='(0,-1,0.5,0.5)' archivo='images/4_Cierre_1_3.png' rotini='0' opacidad='1' ">
+      <param name="G_09" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==3' coord_abs='sí' expresión='(20,20)' texto='Este resultado puede obtenerse sumando las áreas de una infinidad de trapecios de ancho infinitesimal y altura \serif{\b{\${ΔL}}}, o bien, tomando la diferencia de las áreas de dos conos, uno con base de radio \serif{\b{\${r + \frac{Δr}{2}}}} y lado \serif{\b{\${L + \frac{ΔL}{2}}}} y el otro con base de radio \serif{\b{\${r - \frac{Δr}{2}}}} y lado \serif{\b{\${L - \frac{ΔL}{2}}}}. Lo haremos de la segunda manera.\n\nAplicando la fórmula para el área del cono y tomando la diferencia se obtiene: \c{\serif{\b{\${A = π (r + \frac{Δr}{2})(L + \frac{ΔL}{2}) - π(r - \frac{Δr}{2})(L - \frac{ΔL}{2})}}}}\n\nSimplificando: \c{\serif{\b{\${A = π (2 L \frac{Δr}{2} + 2 r \frac{ΔL}{2}) = π (L Δr + r ΔL)}}}}\n\nPor triángulos semejantes tenemos que \serif{\b{\${\frac{Δr}{ΔL} = \frac{r}{L}}}} y por tanto \serif{\b{\${A = 2 π r Δ}}}, como queríamos demostrar.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

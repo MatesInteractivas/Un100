@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R3' R3='sí' id='E4' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='no' escala='30' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' despliegue='pintor' cortar='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='Animar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Animar' expresión='(522+(482-100)/2,E1._h-40-35,100,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='animar' dibujar-si='(paso=0)&(a=0)' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_02" value="id='Continuar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Continuar' expresión='(522+(482-100)/2,E1._h-40-35,100,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='paso=paso+1;a=0;b=2' dibujar-si='((paso=0)&(a=2))|((paso>0)&(paso<2))' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_03" value="id='a' tipo='numérico' interfaz='pulsador' región='interior' espacio='E4' expresión='(10,(E4._h-70)/2,35,70)' valor='0' incr='0.5' min='0' max='2' discreto='no' decimales='1' fijo='no' visible='no' dibujar-si='paso>0' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='v_left' ">
+      <param name="C_04" value="id='b' tipo='numérico' interfaz='pulsador' región='interior' espacio='E4' expresión='((E4._w-70)/2,E4._h-45,70,35)' valor='2' incr='0.1' min='1' max='5' discreto='no' decimales='1' fijo='no' visible='no' dibujar-si='paso>0' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="C_05" value="id='f' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E4' nombre='f(x)=' expresión='(10,10,E4._w-20,35)' valor='&squot;2*sqrt(x)&squot;' discreto='no' decimales='2' fijo='sí' visible='sí' dibujar-si='paso=2' evaluar='no' respuesta='krypto_j' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="A_01" value="id='f2(x)' algoritmo='no' expresión='x/3.4' tipo='función' ">
+      <param name="A_02" value="id='f1(x)' algoritmo='no' expresión='_Eval_(f)' tipo='función' ">
+      <param name="A_03" value="id='f3(x)' algoritmo='no' expresión='0' tipo='función' ">
+      <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=1' hacer='c2=1;yt=450;E4.rot.y=15;E4.rot.z=-30;paso=0' ">
+      <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="A_06" value="id='e10' evento='sí' condición='c2=1' acción='calcular' parámetro='a=0\nb=5\nnj=8\nmuestra=1\n' ejecución='alternar' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Generando volúmenes de revolución' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(522,65,482,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=0' coord_abs='sí' expresión='[542,85]' texto='\b{Cuerpos o volúmenes de revolución}\n\nUn volumen de revolución se genera cuando una sección rota alrededor de un eje. \n\nEn la figura de la izquierda, la región de color naranja la vamos a rotar alrededor del eje \serif{\b{\${x}}}. \n\nHaz clic en el botón “Animar” y observa cómo se genera el volumen de revolución.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=1' coord_abs='sí' expresión='[542,85]' texto='Ahora, usa los controles para que generes el volumen manualmente.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=2' coord_abs='sí' expresión='[542,85]' texto='Ahora, puedes cambiar la función, digítala en el cuadro de texto y presiona la tecla intro.\n\nCon el clic izquierdo sostenido, puedes rotar le volumen. Con clic derecho sostenido, cambiar su tamaño. ' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="S_01" value="espacio='E4' tipo='curva' fondo='no' color='0000ff' expresión='U=5*u y=U x=0 z=f1(U)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='3' Nu='15' ">
+      <param name="S_02" value="espacio='E4' tipo='curva' fondo='no' color='verde' expresión='U=5*u y=U x=0 z=f3(U)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='3' Nu='15' ">
+      <param name="S_03" value="espacio='E4' tipo='superficie' fondo='no' color='51ff0000' color_reverso='51ff0000' dibujar-si='a>0' expresión='U=u V=b*v z=f1(V)*cos(a*pi*U) x=f1(V)*sen(a*pi*U) y=V' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='metal' Nu='15' Nv='15' ">
+      <param name="S_04" value="espacio='E4' tipo='superficie' fondo='no' color='naranja' color_reverso='naranja' expresión='U=u V=b*v z=f3(V)*cos(a*pi*U) x=f3(V)*sen(a*pi*U) y=V' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='metal' Nu='15' Nv='15' ">
+      <param name="S_05" value="espacio='E4' tipo='superficie' fondo='no' color='naranja' color_reverso='naranja' expresión='V=f3(b)+(f1(b)-f3(b))*v U=-u*pi*a x=V*cos(U) y=0 z=V*sen(U)' rotini='(0,-90,0)' posini='(0,b,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='sí' aristas='no' modelo='metal' Nu='15' Nv='1' ">
+      <param name="S_06" value="espacio='E4' tipo='segmento' fondo='no' color='000000' expresión='(0,0,0)(8,0,0)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='1' ">
+      <param name="S_07" value="espacio='E4' tipo='segmento' fondo='no' color='000000' expresión='(0,0,0)(0,7,0)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='1' ">
+      <param name="S_08" value="espacio='E4' tipo='segmento' fondo='no' color='000000' expresión='(0,0,0)(0,0,4)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='1' ">
+      <param name="S_09" value="espacio='E4' tipo='punto' fondo='no' color='000000' color_reverso='ffafaf' expresión='(0,7,0)' rotini='(0,0,0)' posini='(0,0,0.8)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='x' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+      <param name="S_10" value="espacio='E4' tipo='superficie' fondo='no' color='naranja' color_reverso='naranja' expresión='U=b*u V=f3(b*u)+(f1(b*u)-f3(b*u))*v x=0 y=U z=V' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='metal' Nu='15' Nv='1' ">
+      <param name="S_11" value="espacio='E4' tipo='superficie' fondo='no' color='naranja' color_reverso='naranja' expresión='U=b*u V=f3(b*u)+(f1(b*u)-f3(b*u))*v x=0 y=U z=V' rotini='(0,a*180,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='metal' Nu='15' Nv='1' ">
+      <param name="S_12" value="espacio='E4' tipo='segmento' fondo='no' color='000000' dibujar-si='a=0' expresión='(0,b,-3)(0,b,4.55)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='1' ">
+      <param name="S_13" value="espacio='E4' tipo='punto' fondo='no' color='000000' color_reverso='ffafaf' dibujar-si='a=0' expresión='(0,b,4.7)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='\${x = [b]}' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' decimales='2' fijo='no' ancho='0' offset_dist='10' offset_angle='90' ">
+      <param name="Animación" value="pausa='40' controles='no' auto='no' repetir='no' inicio='a=0' hacer='a=a+.1' mientras='a<2' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

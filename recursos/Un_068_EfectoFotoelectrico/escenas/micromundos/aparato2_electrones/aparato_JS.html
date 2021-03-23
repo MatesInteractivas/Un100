@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+<div align="center">
+  <ajs name="Descartes" width="550" height="550" code="Descartes.class" codebase="http://arquimedes.matem.unam.mx/Descartes5/" archive="lib/Descartes5.jar" mayscript="">
+   <param name="tamaño" value="550x550">
+   <param name="decimal_symbol" value=",">
+   <param name="expand" value="fit">
+   <param name="editable" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.5">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' O.x='-40' O.y='-90' imagen='images/fondo.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='onda' x='364' y='415' ancho='168' alto='88' fijo='sí' O.x='-80' imagen='images/fondoOnda.png' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='mensaje' x='150' y='280' ancho='250' alto='150' dibujar-si='(frecuencia>8)&amp;&amp;(!cerrado)&amp;&amp;0' fijo='sí' imagen='images/fondoMensaje.png' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='metal' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(418,290,90,28)' valor='metal' decimales='0' fijo='sí' visible='no' opciones='Aluminio,Cobre,Sodio' acción='calcular' parámetro='checkCurrent()'">
+   <param name="C_02" value="id='intensidad' tipo='numérico' interfaz='barra' región='interior' espacio='E1' expresión='(246,427,100,28)' valor='intensidad' incr='1' min='1' max='7' decimales='0' fijo='sí' visible='no' acción='calcular' parámetro='checkCurrent()'">
+   <param name="C_03" value="id='frecuencia' tipo='numérico' interfaz='barra' región='interior' espacio='E1' expresión='(246,470,100,28)' valor='frecuencia' incr='1' min='4' max='12' decimales='0' fijo='sí' visible='no' acción='calcular' parámetro='long=v/frecuencia\ncerrado=(frecuencia<=8)?0:cerrado\ncheckCurrent()'">
+   <param name="C_04" value="id='long' tipo='numérico' región='exterior' espacio='E1' nombre='long' valor='long' min='2.8' max='8.5' decimales='1' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_05" value="id='btCerrar' tipo='numérico' interfaz='botón' región='interior' espacio='mensaje' expresión='(98,115,53,20)' fijo='sí' visible='sí' imagen='images/btCerrar.png' acción='calcular' parámetro='cerrado=1' pos_mensajes='centro'">
+   <param name="C_06" value="id='btInfo' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(500,20,35,35)' fijo='sí' visible='sí' imagen='images/btInfo.png' acción='calcular' parámetro='info=1' dibujar-si='!info' pos_mensajes='centro'">
+   <param name="C_07" value="id='cerrarInfo' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(410,32,53,20)' fijo='sí' visible='sí' imagen='images/btCerrar.png' acción='calcular' parámetro='info=0' dibujar-si='info' pos_mensajes='centro'">
+   <param name="A_01" value="id='clrsMetales' vector='sí' matriz='sí' evaluar='una-sola-vez' expresión='clrsMetales[0,0]=0.6;clrsMetales[0,1]=0.6;clrsMetales[0,2]=0.6;clrsMetales[1,0]=0.9;clrsMetales[1,1]=0.5;clrsMetales[1,2]=0.1;clrsMetales[2,0]=0.8;clrsMetales[2,1]=0.8;clrsMetales[2,2]=0.8;'">
+   <param name="A_02" value="id='Rojo(long)' expresión='rI*exp(-(long-r0)*(long-r0)/dr2)+vI*exp(-(long-v0)*(long-v0)/dv2)'">
+   <param name="A_03" value="id='Verde(long)' expresión='gI*exp(-(long-g0)*(long-g0)/dg2)'">
+   <param name="A_04" value="id='Azul(long)' expresión='bI*exp(-(long-b0)*(long-b0)/db2)'">
+   <param name="A_05" value="id='checkCurrent()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='fuAlOK=((metal==0)&amp;&amp;(frecuencia>=fuAl))?1:0;fuCuOK=((metal==1)&amp;&amp;(frecuencia>=fuCu))?1:0;fuNaOK=((metal==2)&amp;&amp;(frecuencia>=fuNa))?1:0;fuOK=(fuAlOK|fuCuOK|fuNaOK);difAl=fuAlOK?(frecuencia-fuAl):0;difCu=fuCuOK?(frecuencia-fuCu):0;difNa=fuNaOK?(frecuencia-fuNa):0;dif=difAl+difCu+difNa;xAmp=fuOK?(xAmp0+(dif*0.02)+(intensidad*0.04)):xAmp0'">
+   <param name="A_06" value="id='electrones' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='8' filas='2' expresión='electrones[0,0]=0;electrones[0,1]=-1.8;;electrones[1,0]=0;electrones[1,1]=-2.1;;electrones[2,0]=0;electrones[2,1]=-2;;electrones[3,0]=0;electrones[3,1]=-2.3;;electrones[4,0]=0;electrones[4,1]=-1.9;;electrones[5,0]=0;electrones[5,1]=-2.2;;electrones[6,0]=0;electrones[6,1]=-1.7;;electrones[7,0]=0;electrones[7,1]=-2.05'">
+   <param name="A_07" value="id='mueve(i)' algoritmo='sí' expresión='x' algoritmo='sí' hacer='electrones[i,0]=(electrones[i,0]+.1)%2'">
+   <param name="A_08" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=0;metal=0;intensidad=5;frecuencia=11;fuOK=0;v=30;xAmp0=-.98;cerrado=1;reset=0' hacer='long=v/frecuencia;fuNa=5.9;fuAl=9.8;fuCu=11.4;xAmp=xAmp0;rI=1.0;r0=6.7;dr=1.1;dr2=dr*dr;gI=1.0;g0=5.4;dg=1.0;dg2=dg*dg;bI=1.0;b0=4.1;db=0.9;db2=db*db;vI=0.35;v0=3.5;dv=0.7;dv2=dv*dv;;checkCurrent()'">
+   <param name="A_09" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='rojo=Rojo(long);verde=Verde(long);azul=Azul(long)'">
+   <param name="A_10" value="id='reiniciar' evento='sí' condición='reset' acción='inicio' ejecución='alternar' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E1' tipo='imagen' expresión='(-2.08,-1.1)' archivo='images/tubo.png' info='tubo'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' expresión='(-4.2,-4)' archivo='images/fuenteDeLuz.png' info='fuente de luz'">
+   <param name="G_03" value="espacio='E1' tipo='polígono' expresión='(0,1)(3.3,1)(3.3,0)' ancho='2' info='amperimetro - generador'">
+   <param name="G_04" value="espacio='E1' tipo='polígono' expresión='(4,-.7)(4,-2)(0.7,-2)' ancho='2' info='generador - tubo'">
+   <param name="G_05" value="espacio='E1' tipo='polígono' expresión='(-1.6,-2)(-3.2,-2)(-3.2,1)(-1.8,1)' ancho='2' info='tubo - amperímetro'">
+   <param name="G_06" value="espacio='E1' tipo='imagen' expresión='(-2,2)' archivo='images/amperimetro_analogo.png' info='Amperímetro'">
+   <param name="G_07" value="espacio='E1' tipo='imagen' expresión='(2.5,.3)' archivo='images/generadorDeVoltaje.png' info='Generador de voltaje'">
+   <param name="G_08" value="espacio='E1' tipo='polígono' dibujar-si='0' expresión='(1,-2.5)(1,-3.5)(-3,-3.5)' ancho='2' info='tubo'">
+   <param name="G_09" value="espacio='E1' tipo='polígono' color='(rojo,verde,azul,1-intensidad*0.1)' expresión='(0.69,-2.5)(0.69,-1.5)(-2.5,-4.2)(-2.2,-4.5)(0.69,-2.5)' relleno='(rojo,verde,azul,1-intensidad*0.1)' ancho='0' info='haz'">
+   <param name="G_10" value="espacio='E1' tipo='segmento' color='(clrsMetales[metal,0],clrsMetales[metal,1],clrsMetales[metal,2],00)' expresión='(0.7,-2.5)(0.7,-1.5)' decimales='0' fijo='sí' tamaño='1' ancho='4' info='ánodo'">
+   <param name="G_11" value="espacio='E1' tipo='segmento' expresión='(-1.6,-2.3)(-1.6,-1.7)' decimales='0' fijo='sí' tamaño='1' ancho='4' info='cátodo'">
+   <param name="G_12" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[290,252]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\b +\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí' info='+'">
+   <param name="G_13" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[115,254]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\b -\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí' info='-'">
+   <param name="G_14" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[17,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs28 Explora qu\u233  sucede con la corriente al cambiar los valores de \b intensidad\b0\par y\b  frecuencia\b0  de la luz, as\u237  como el \b metal\b0  del que est\u225  hecho el \u225 nodo.\f3\fs30}' fuente='SansSerif,PLAIN,14' fijo='sí' info='Instrucción'">
+   <param name="G_15" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[235,105]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red86\green86\blue86;\red32\green48\blue58;}\f1\fs28\b\i\cf0 Amper\u237 metro\f2\fs30\b0\i0\cf1}' fuente='SansSerif,BOLD+ITALIC,14' fijo='sí' info='Amperímetro'">
+   <param name="G_16" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[410,134]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red86\green86\blue86;\red32\green48\blue58;}\f1\fs28\b\i\cf0 Generador \par de voltaje\f2\fs30\b0\i0\cf1}' fuente='SansSerif,BOLD+ITALIC,14' fijo='sí' info='Generador de voltaje'">
+   <param name="G_17" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[165,218]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red86\green86\blue86;\red32\green48\blue58;}\f1\fs28\b\i\cf0 Tubo de vac\u237 o\f2\fs30\b0\i0\cf1}' fuente='SansSerif,BOLD+ITALIC,14' fijo='sí' info='Tubo de vacío'">
+   <param name="G_18" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[145,395]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red86\green86\blue86;\red32\green48\blue58;}\f1\fs28\b\i\cf0 Fuente de luz\f2\fs30\b0\i0\cf1}' fuente='SansSerif,BOLD+ITALIC,14' fijo='sí' info='Fuente de luz'">
+   <param name="G_19" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[295,294]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b Metal del \u225 nodo:\f2\fs30\b0}' fuente='SansSerif,BOLD,14' fijo='sí' info='Metal del ánodo:'">
+   <param name="G_20" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[155,430]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b Intensidad:\f2\fs30\b0}' fuente='SansSerif,BOLD,14' fijo='sí' info='Intensidad'">
+   <param name="G_21" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[155,473]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b Frecuencia:\f2\fs30\b0}' fuente='SansSerif,BOLD,14' fijo='sí' info='Frecuencia'">
+   <param name="G_22" value="espacio='onda' tipo='ecuación' color='(rojo,verde,azul,0)' expresión='y=(4.7*intensidad)*sen((2*pi/((long-2)/3))*x+1)/onda.escala' ancho='2'">
+   <param name="G_23" value="espacio='E1' tipo='segmento' color='ff2124' expresión='(-.98,0.88)(xAmp,1.4)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_24" value="espacio='mensaje' tipo='texto' coord_abs='sí'  expresión='[12,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red157\green87\blue58;\red32\green48\blue58;}\f1\fs26\i\cf0 A partir de esta frecuencia (8*10{\*\mjaformula{\supix 14}}\par Hz) la onda ya no es visible, pero su\par frecuencia puede seguir aumentando\par y ser detectada por otros medios\par que no sean la simple vista.\f2\fs30\i0\cf1}' fuente='SansSerif,ITALIC,13' fijo='sí'">
+   <param name="G_25" value="espacio='E1' tipo='punto' color='(clrsMetales[metal,0],clrsMetales[metal,1],clrsMetales[metal,2],00)' dibujar-si='(fuOK)&amp;&amp;(_e0)&amp;&amp;((((dif*0.02)+(intensidad*0.04))*20)>0)' expresión='(0.5-electrones[0,0],electrones[0,1])' fijo='sí' info='electron 0'">
+   <param name="G_26" value="espacio='E1' tipo='punto' color='(clrsMetales[metal,0],clrsMetales[metal,1],clrsMetales[metal,2],00)' dibujar-si='(fuOK)&amp;&amp;(_e1)&amp;&amp;((((dif*0.02)+(intensidad*0.04))*20)>1)' expresión='(0.5-electrones[1,0],electrones[1,1])' fijo='sí' info='electron 1'">
+   <param name="G_27" value="espacio='E1' tipo='punto' color='(clrsMetales[metal,0],clrsMetales[metal,1],clrsMetales[metal,2],00)' dibujar-si='(fuOK)&amp;&amp;(_e2)&amp;&amp;((((dif*0.02)+(intensidad*0.04))*20)>2)' expresión='(0.5-electrones[2,0],electrones[2,1])' fijo='sí' info='electron 2'">
+   <param name="G_28" value="espacio='E1' tipo='punto' color='(clrsMetales[metal,0],clrsMetales[metal,1],clrsMetales[metal,2],00)' dibujar-si='(fuOK)&amp;&amp;(_e3)&amp;&amp;((((dif*0.02)+(intensidad*0.04))*20)>3)' expresión='(0.5-electrones[3,0],electrones[3,1])' fijo='sí' info='electron 3'">
+   <param name="G_29" value="espacio='E1' tipo='punto' color='(clrsMetales[metal,0],clrsMetales[metal,1],clrsMetales[metal,2],00)' dibujar-si='(fuOK)&amp;&amp;(_e4)&amp;&amp;((((dif*0.02)+(intensidad*0.04))*20)>4)' expresión='(0.5-electrones[4,0],electrones[4,1])' fijo='sí' info='electron 4'">
+   <param name="G_30" value="espacio='E1' tipo='punto' color='(clrsMetales[metal,0],clrsMetales[metal,1],clrsMetales[metal,2],00)' dibujar-si='(fuOK)&amp;&amp;(_e5)&amp;&amp;((((dif*0.02)+(intensidad*0.04))*20)>5)' expresión='(0.5-electrones[5,0],electrones[5,1])' fijo='sí' info='electron 5'">
+   <param name="G_31" value="espacio='E1' tipo='punto' color='(clrsMetales[metal,0],clrsMetales[metal,1],clrsMetales[metal,2],00)' dibujar-si='(fuOK)&amp;&amp;(_e6)&amp;&amp;((((dif*0.02)+(intensidad*0.04))*20)>6)' expresión='(0.5-electrones[6,0],electrones[6,1])' fijo='sí' info='electron 6'">
+   <param name="G_32" value="espacio='E1' tipo='punto' color='(clrsMetales[metal,0],clrsMetales[metal,1],clrsMetales[metal,2],00)' dibujar-si='(fuOK)&amp;&amp;(_e7)&amp;&amp;((((dif*0.02)+(intensidad*0.04))*20)>7)' expresión='(0.5-electrones[7,0],electrones[7,1])' fijo='sí' info='electron 7'">
+   <param name="G_33" value="espacio='E1' tipo='imagen' dibujar-si='info' expresión='(-3.7,3.5)' archivo='images/fondoTxt.png' info='Fondo descripción aparato'">
+   <param name="G_34" value="espacio='E1' tipo='texto' coord_abs='sí'  dibujar-si='info' expresión='[85,70]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs26 Nuestro aparato consiste en:\par \par \u8226  dos electrodos con tensi\u243 n el\u233 ctrica dentro de un tubo de\par    vac\u237 o de cuarzo;\par \u8226  una fuente de luz de distintas intensidades y frecuencias. \par \par La luz incide sobre el \u225 nodo, el cual puede ser de distintos\par metales (sodio, cobre, aluminio). El c\u225 todo est\u225  cargado\par negativamente y conectado a un circuito el\u233 ctrico con un\par amper\u237 metro para medir la corriente. \f2\fs30}' fuente='SansSerif,PLAIN,13' fijo='sí' info='Descripción aparato'">
+   <param name="Animación" value="pausa='100' controles='no' auto='sí' inicio='t=0;' hacer='_e0=(t>3)?1:0;_e1=(t>12)?1:0;_e2=(t>8)?1:0;_e3=(t>19)?1:0;_e4=(t>15)?1:0;_e5=(t>6)?1:0;_e6=(t>17)?1:0;_e7=(t>1)?1:0;;_tt=(t>3)?mueve(0):0;_tt=(t>12)?mueve(1):0;_tt=(t>8)?mueve(2):0;_tt=(t>19)?mueve(3):0;_tt=(t>15)?mueve(4):0;_tt=(t>6)?mueve(5):0;_tt=(t>17)?mueve(6):0;_tt=(t>1)?mueve(7):0;;t=t+1' mientras='1'">
+</ajs>
+</div>
+</body>
+</html>

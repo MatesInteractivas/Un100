@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometría</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '0'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '0'  parametros = '-1.17,6.77,-3.380843063978213892000000000000000000000e+221'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,0' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '4.76,2.09,-3.380843063978213892000000000000000000000e+221'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,1' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '-5.38,-3.07,-3.380843063978213892000000000000000000000e+221'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,2' />
+<objeto  nombre = 'a'  tipo = 'recta'  constructor = '38'  parametros = '-0.45,0.89,0.29'  objRef = '1,2'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,3' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '38'  parametros = '0.92,-0.39,3.74'  objRef = '2,0'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,4' />
+<objeto  nombre = 'c'  tipo = 'recta'  constructor = '38'  parametros = '-0.62,-0.78,4.59'  objRef = '0,1'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,5' />
+<objeto  nombre = 'L'  tipo = 'punto'  constructor = '3'  parametros = '-0.31,-0.49,3.28'  objRef = '1,2'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'd'  tipo = 'recta'  constructor = '38'  parametros = '-0.99,-0.12,-0.37'  objRef = '0,6'  visible = '1,0'  ancho = '1,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,-1' />
+<objeto  nombre = 'T1'  tipo = 'poligono'  constructor = '200'  objRef = '2,6,0'  visible = '1'  ancho = '1'  color = '#8000,#ff80'  etiqueta = '0,-1' />
+<objeto  nombre = 'T2'  tipo = 'poligono'  constructor = '200'  objRef = '6,1,0'  visible = '1'  ancho = '1'  color = '#8000,#ff'  etiqueta = '0,-1' />
+<objeto  nombre = 'D'  tipo = 'punto'  constructor = '2'  parametros = '1.94,0.66,0.13'  objRef = '0,3'  visible = '0'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'e'  tipo = 'recta'  constructor = '38'  parametros = '-0.89,-0.45,2.03'  objRef = '0,10'  visible = '0,0'  ancho = '1,1'  color = '#ff0080,#c0c0c0,#0'  etiqueta = '0,-1' />
+
+<nota texto=""/>
+
+<table align='center'>  
+<tr>
+	<td width ='482px' height='540px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="482" height="540">
+			</canvas>
+		</td>
+    
+    <td width ='20px'></td>
+    
+    <td width ='482px' height="540px" valign='middle' class="celda_derecha">
+        
+	<div class="cuaderno2">
+    
+   <p>Una <resalta>mediana</resalta> de un triángulo es la recta que pasa por uno de los vértices y por el punto medio del lado opuesto.</p>
+   <p>La mediana divide al triángulo <mt>ABC</mt> en los triángulos verde y rojo.</p>	
+   <p>¿Qué relación hay entre las áreas de estos dos triángulos? Mueve los vértices del triángulo y analiza lo que pasa</p>
+	<p>La altura desde el vértice <mt>A</mt> del triángulo <mt>ABL</mt> es la misma que la de <mt>ALC</mt>. Como el punto <mt>L</mt> es el punto medio de <mt>BC</mt> entonces las longitudes <mt>BL</mt> y <mt>LC</mt> son iguales.</p>
+    <p>Al tener a misma altura y la misma longitud de la base, las áreas de estos dos triángulos son iguales.</p>
+	<p>Así que aunque los triángulos verde y rojo tengan forma muy distinta, su área es la misma, es decir, la mediana de un triángulo divide a éste en dos triángulos que tienen la misma área.</p>
+
+	<p id="cuaderno">Este es un p&aacute;rrafo 	</p> </div>
+	
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

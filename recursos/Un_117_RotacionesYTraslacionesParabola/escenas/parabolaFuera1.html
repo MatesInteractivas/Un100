@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometría</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+</head>
+
+<body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '1'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'V'  tipo = 'punto'  constructor = '0'  parametros = '-5.00,4.00,1.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,0' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '150'  parametros = '15.00,4.00,0.00'  objRef = '0'  formulas = 'V.x+20 ; V.y ' visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '1,1' />
+<objeto  nombre = 'x'  tipo = 'recta'  constructor = '151'  parametros = '0.00,1.00,-4.00'  objRef = '0'  formulas = '0 ; 1 ; -V.y ' visible = '1'  ancho = '1'  color = '#c0c0c0,#c0c0c0'  etiqueta = '0,2' />
+<objeto  nombre = 'F'  tipo = 'punto'  constructor = '6'  parametros = '-3.04,4.00,1.00,18.04,1.96'  objRef = '0,1'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,3' />
+<objeto  nombre = 'D'  tipo = 'punto'  constructor = '150'  parametros = '-6.96,4.00,1.00'  objRef = '0,3'  formulas = '2*V.x-F.x ; V.y ' visible = '0'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,4' />
+<objeto  nombre = 'y'  tipo = 'recta'  constructor = '151'  parametros = '1.00,0.00,6.96'  objRef = '4'  formulas = '1 ; 0 ; -D.x ' visible = '1'  ancho = '1'  color = '#ff0000,#c0c0c0'  etiqueta = '0,5' />
+<objeto  nombre = 'con'  tipo = 'conica'  constructor = '107'  parametros = '0.00,0.00,-1.00,3.93,4.00,23.26,-39.26,15.70,-15.41,3.93,0.00,-0.00,15.41'  objRef = '3,5'  visible = '1,0,0,0,0,0'  ancho = '2,2,1,2,1,1'  color = '#ff,#c0c0c0,#ff,#c0c0c0,#ff,#c0c0c0,#c0c0c0,#c0c0c0,#ff0000'  etiqueta = '1,7' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-5.94,8.37'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '0,7' />
+<objeto  nombre = 'p'  tipo = 'escalar'  constructor = '96'  parametros = '1.96,4.00'  objRef = '6'  etiqueta = '0,-1' />
+
+<nota texto="<p>Cuando el vértice de una parábola no está en el orígen y su eje focal es horizontal, en su ecuación general</p>
+<p align='center' style='font-family:descartesJS_serif;'>Ax<sup>2</sup> + Bxy + Cy<sup>2</sup> + Dx + Ey + F = 0</p>
+<p>los coeficientes <mt>A</mt> y <mt>B</mt> valen cero, es decir, la ecuación no tiene término en <mt>x<sup>2</sup></mt> ni en <mt>xy</mt>, y como el coeficiente, <mt>C</mt>, de <mt>y<sup>2</sup></mt> es distinto de cero, se puede dividir toda la ecuación entre <mt>C</mt> y se obtiene</p> 
+<p align='center' style='font-family:descartesJS_serif;'>y<sup>2</sup> + Dx + Ey + F = 0</p>
+<p>Arrastra el vértice de la parábola hacia el origen y observa que el coeficiente de <mt>y</mt> se hace pequeño y el de <mt>x</mt> no cambia, y como la forma de la parábola no cambia, su parámetro <mt>p</mt> no debe cambiar. </p>
+<p align='center' style='font-family:descartesJS_serif;'>p = $p$</p>
+<p>Algebraicamente, esta traslación se logra completando el cuadrado perfecto de los términos en <mt>y</mt> en la ecuación general</p>
+<p align = 'center' style='font-family:descartesJS_serif;'>(y<sup>2</sup> + E y + ____)= -D x -F +  ____</p>
+<p>para obtener una ecuación de la forma</p>
+<p align='center' style='font-family:descartesJS_serif;'>(y-k)<sup>2</sup> = -D x -F +  ____</p>
+<p'>y en el lado derecho, se factoriza el coeficiente de <mt>x</mt>.</p>
+<p align='center' style='font-family:descartesJS_serif;'>(y-k)<sup>2</sup> = -D(x - h)</p>"/>
+	
+<table align='center'>  
+	<tr>
+		<td width ='482px' height='540px' valign='middle' class="celda_izquierda">
+			<canvas id="pizarron" width="482" height="540"></canvas>
+		</td>
+    
+    <td width ='20px'></td>
+    
+    <td width ='482px' height="540px" valign='middle' class="celda_derecha">
+    
+		<p id="cuaderno" >Este es un p&aacute;rrafo</p>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_030_ElConoYLaEsfera" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Geometría, Cálculo" 
+	plataforma="HTML 5"
+        ver="Beta"
+	>
+	<titulo><![CDATA[
+		El cono y la esfera según Arquímedes. 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+	En esta unidad se presentan la esfera y los sectores de un 
+        cono circular recto que forman una cubierta ajustada de la esfera.
+        Se evidencia que al hacer dichas secciones más finas, éstas se 
+        ajustan muy precisamente a la esfera, por lo que el cálculo de 
+        la superficie de la esfera puede hacerse utilizando las 
+        secciones del cono cuya área puede calcularse. 
+        Adicionalmente, se hace la observación de que los sectores 
+        cónicos comparten el área de un cilindro con igual altura y 
+        un radio igual al radio medio del sector, así pudiendo 
+        relacionar el área de la esfera con la del mínimo cilindro que 
+        la contiene, que por cierto es el resultado del cual Arquímedes
+        se sentía más orgulloso.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

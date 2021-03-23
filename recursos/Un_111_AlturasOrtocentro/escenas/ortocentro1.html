@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometría</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+</head>
+
+<body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '5'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '0'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '0'  parametros = '4.07,3.51,6.10'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,0' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-4.67,6.39,6.10'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,1' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '-1.53,-2.74,6.10'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,2' />
+<objeto  nombre = 'a'  tipo = 'recta'  constructor = '38'  parametros = '-0.95,-0.33,-2.33'  objRef = '1,2'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '2,3' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '38'  parametros = '0.74,-0.67,-0.69'  objRef = '2,0'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '2,4' />
+<objeto  nombre = 'c'  tipo = 'recta'  constructor = '38'  parametros = '0.31,0.95,-4.61'  objRef = '0,1'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '2,5' />
+<objeto  nombre = 'D'  tipo = 'punto'  constructor = '2'  parametros = '-2.86,1.13,0.00'  objRef = '0,3'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,6' />
+<objeto  nombre = 'E'  tipo = 'punto'  constructor = '2'  parametros = '1.61,0.76,0.00'  objRef = '1,4'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,7' />
+<objeto  nombre = 'F'  tipo = 'punto'  constructor = '2'  parametros = '0.88,4.56,0.00'  objRef = '2,5'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,8' />
+<objeto  nombre = 'ha'  tipo = 'recta'  constructor = '38'  parametros = '-0.33,0.95,-1.99'  objRef = '0,6'  visible = '1,1'  ancho = '1,1'  color = '#f000,#c0c0c0,#0'  etiqueta = '0,-1' />
+<objeto  nombre = 'hb'  tipo = 'recta'  constructor = '38'  parametros = '-0.67,-0.74,1.64'  objRef = '1,7'  visible = '1,1'  ancho = '1,1'  color = '#f000,#c0c0c0,#0'  etiqueta = '0,-1' />
+<objeto  nombre = 'hc'  tipo = 'recta'  constructor = '38'  parametros = '0.95,-0.31,0.59'  objRef = '2,8'  visible = '1,1'  ancho = '1,1'  color = '#f000,#c0c0c0,#0'  etiqueta = '0,-1' />
+<objeto  nombre = 'H'  tipo = 'punto'  constructor = '1'  parametros = '0.08,2.14,-1.73'  objRef = '9,10'  visible = '1'  ancho = '3'  color = '#0,#c0c0c0'  etiqueta = '2,12' />
+
+<nota texto="
+<p>En el triángulo de la izquierda hemos trazado las tres alturas del triángulo</p> 
+<p>Observa que tres alturas se cortan en un punto, llamado <resalta>ortocentro</resalta>.
+<br>
+<p>Antes de probar este resultado, piensa en las siguientes preguntas, arrastra los  vértices del triángulo para tratar de encontrar las respuestas.
+<ul>
+<li>¿Puede caer el ortocentro fuera del triángulo?</li>
+<li>¿Puede caer el ortocentro en un lado del triángulo?</li>
+<li>¿Puede caer el ortocentro en un vértice del triángulo?</li>
+<li>¿Cómo es el triángulo ( observa sus ángulos ) cuando el ortocentro está en un vértice de él?</li>
+<li>Cuando el ortocentro está en un lado, ¿en qué punto del lado está?</li>
+<li>Cómo es el triángulo ( observa sus ángulos ) cuando el ortocentro está fuera del triángulo?</li>
+<li>¿Cuál es el ortocentro del triángulo formado por dos vértices del triángulo original y su ortocentro?</li>
+<li>¿Por qué son concurrentes las tres alturas? es decir, ¿por qué se cortan en un punto?
+</ul>
+"/>
+
+<table align='center'>  
+<tr>
+	<td width ='482px' height='540px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="482" height="540">
+			</canvas>
+		</td>
+    
+    <td width ='20px'></td>
+    
+    <td width ='482px' height="540px" valign='middle' class="celda_derecha">
+	
+	 
+	<p id="cuaderno" >Este es un p&aacute;rrafo 	</p>
+	
+	</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

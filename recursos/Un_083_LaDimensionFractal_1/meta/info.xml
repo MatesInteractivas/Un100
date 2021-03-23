@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_083_LaDimensionFractal_1" 
+	nivel="Licenciatura" 
+	area="Matem&aacute;ticas, Geometr&iacute;a, C&aacute;lculo"
+	plataforma="HTML 5"
+        ver="En desarrollo"
+	>
+	<titulo><![CDATA[
+		La dimensi&oacuten fractal: fractales generados por algoritmos no aleatorios
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		En esta unidad se presentan principalmente los fractales de Koch, Hilbert, y la isla de Gosper con el objeto de introducir al alumno las dos propiedades de los fractales: autosimilitud e invarianza de escala. Adicionalmente, se analiza la divergencia de la longitud de las curvas si se consideran s&oacute;lo unidimensionales, justificando as&iacute; la necesidad de considerar dimensiones distintas para la curva, que no necesariamente han de ser enteras. A pesar de considerarse s&oacute;lo fractales diseñados, se deja abierta la posibilidad de considerar dimensi&oacute;n fractal para fractales experimentales, mismos que se abordan en otra unidad.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

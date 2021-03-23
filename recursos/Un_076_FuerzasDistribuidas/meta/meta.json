@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Fìsica", 
+    "Mecánica", 
+    "Estática"
+  ], 
+  "titulo": "Fuerzas distribuidas", 
+  "descripcion": "El objetivo de esta unidad es aprender a reducir una o más fuerzas distribuidas a una fuerza puntual resultante.",
+  "resena": "Reducción de varias fuerzas aplicadas a una sola aplicada en un punto determinado.",
+  "id": "_Un_076_FuerzasDistribuidas"
+}

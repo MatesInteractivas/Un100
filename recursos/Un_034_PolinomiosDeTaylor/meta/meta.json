@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Cálculo"
+  ], 
+  "titulo": "Polinomios de Taylor", 
+  "descripcion": "El objetivo  de esta unidad  es conocer  y aplicar el polinomio de  Taylor  para  la aproximación  local  de funciones y medir el error de esa aproximación; observando la incidencia que tiene en esta medida el grado del polinomio utilizado y la cercanía al punto en el que se hace el desarrollo.",
+  "resena": "Polinomio de Taylor para aproximar funciones localmente. El error como función del grado y la cercanía del punto.",
+  "id": "_Un_034_PolinomiosDeTaylor"
+}

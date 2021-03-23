@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Física", 
+    "Mecánica", 
+    "Física Moderna"
+  ], 
+  "titulo": "Decaimiento Nuclear", 
+  "descripcion": "En esta unidad didáctica el estudiante comprenderá el comportamiento del decaimiento radiactivo mediante la determinación de la vida media de una muestra radiactiva.",
+  "resena": "Decaimiento radiactivo y el concepto de vida media de una muestra radiactiva.",
+  "id": "_Un_069_DecaimientoNuclear"
+}

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_037_OperacionesConMatrices" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Algebra, Algebra lineal" 
+	plataforma="HTML 5" 
+	ver="Beta"
+	>
+	<titulo><![CDATA[
+		Operaciones con matrices
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+	En muchas áreas del conocimiento se maneja información que es almacenada con diferentes tipos 
+      de datos, los cuales deben  ser procesados para  obtener otra información. Las matrices, permiten
+      el almacenamiento de grandes cantidades de datos que, con el uso de los computadores, han
+      permitido  realizar cálculos o procesamientos que manualmente demandaban mucho tiempo.      
+
+      Los objetivos de esta unidad son:
+      
+      * Reconocer los elementos y el tamaño de una matriz.
+      * Realizar operaciones con matrices.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

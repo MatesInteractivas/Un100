@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Equilibrio cuerpo rígido", 
+  "descripcion": "Toda estructura se encuentra soportada por uno o más apoyos, para su análisis es importante determinar las fuerzas o reacciones que generan estos apoyos, puesto  que son  ellos  los que garantizan el equilibrio global de la estructura. Los objetivos de esta unidad son: * Dibujar el diagrama de cuerpo libre de un cuerpo rígido. * Determinar las reacciones de un cuerpo rígido, usando las ecuaciones de equilibrio.",
+  "resena": "Estudio de fuerzas de apoyo en un objeto no puntual en equilibrio mecánico y sus representaciones.",
+  "id": "_Un_077_EquilibrioCuerpoRigido"
+}
