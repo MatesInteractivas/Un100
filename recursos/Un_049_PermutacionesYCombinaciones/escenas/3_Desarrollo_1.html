@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Desarrollo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='1' O.x='-485' O.y='-275' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='200' O.x='0' O.y='-60' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='TOTAL' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E2' nombre='Entre el total' expresión='(20,300,E2._w-40,35)' valor='&squot;&squot;' discreto='no' decimales='0' fijo='sí' visible='sí' acción='calcular' parámetro='correcto=(TOTAL=total)?1:2;otro=1' activo-si='otro=0' evaluar='no' respuesta='krypto_d' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_02" value="id='otro' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='Otro Ejercicio' expresión='((E2._w-160)/2,E2._h-55,160,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='otro=0;n=ent(rnd*5)+2;tipo=(tipo=3)?1:tipo+1;n1=(tipo=1)?2:6;n2=(tipo=1)?2:6;n3=(tipo=1)?2:6;n4=(tipo=1)?2:6;n5=(tipo=1)?2:6;n6=(tipo=1)?2:6;n1=(tipo<3)?n1:ent(rnd*6+2);n2=(tipo<3)?n2:ent(rnd*6+2);n3=(tipo<3)?n3:ent(rnd*6+2);n4=(tipo<3)?n4:ent(rnd*6+2);n5=(tipo<3)?n5:ent(rnd*6+2);n6=(tipo<3)?n6:ent(rnd*6+2);n=(tipo=3)?3:n;total=(tipo=1)?2^n:6^n;total=(tipo=3)?n1*n2*n3:total;correcto=0;TOTAL=&squot;&squot;' dibujar-si='correcto>0' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="A_01" value="id='f(x)' algoritmo='no' expresión='_Eval_(F)' tipo='función' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='n=ent(rnd*5)+2;tipo=ent(rnd*3)+1;n1=(tipo=1)?2:6;n2=(tipo=1)?2:6;n3=(tipo=1)?2:6;n4=(tipo=1)?2:6;n5=(tipo=1)?2:6;n6=(tipo=1)?2:6;n1=(tipo<3)?n1:ent(rnd*6+2);n2=(tipo<3)?n2:ent(rnd*6+2);n3=(tipo<3)?n3:ent(rnd*6+2);n4=(tipo<3)?n4:ent(rnd*6+2);n5=(tipo<3)?n5:ent(rnd*6+2);n6=(tipo<3)?n6:ent(rnd*6+2);n=(tipo=3)?3:n;total=(tipo=1)?2^n:6^n;total=(tipo=3)?n1*n2*n3:total;bw=126;bh=50;bx=539;by=456;info=1;dx=0.3;dy=0.5;ndx=60;ndy=230;' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(tipo=1)' coord_abs='sí' expresión='[20,20]' texto='Si se lanzan \serif{\b{\${[n]}}} monedas ¿de cuantas formas distintas pueden caer?' decimales='2' fijo='no' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(tipo=2)' coord_abs='sí' expresión='[20,20]' texto='Si se lanzan \serif{\b{\${[n]}}} dados ¿de cuantas formas distintas pueden caer?' decimales='2' fijo='no' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(tipo=3)' coord_abs='sí' expresión='[20,20]' texto='María tiene \serif{\b{\${[n1]}}} blusas, \serif{\b{\${[n2]}}} pares de zapatos y \serif{\b{\${[n3]}}} faldas ¿De cuántas formas distintas se puede vestir María?' decimales='2' fijo='no' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>1)&(tipo=1)' coord_abs='no' expresión='(-1,dy)' archivo='images/zacara.png' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>1)&(tipo=1)' coord_abs='no' expresión='(-1+dx,dy)' archivo='images/zacara.png' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>2)&(tipo=1)' coord_abs='no' expresión='(-1+2dx,dy)' archivo='images/zacara.png' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>3)&(tipo=1)' coord_abs='no' expresión='(-1+3dx,dy)' archivo='images/zacara.png' rotini='0' opacidad='1' ">
+      <param name="G_08" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>4)&(tipo=1)' coord_abs='no' expresión='(-1+4dx,dy)' archivo='images/zacara.png' rotini='0' opacidad='1' ">
+      <param name="G_09" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>5)&(tipo=1)' coord_abs='no' expresión='(-1+5dx,dy)' archivo='images/zacara.png' rotini='0' opacidad='1' ">
+      <param name="G_10" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>1)' coord_abs='no' expresión='(-1,dy-dx)' archivo='images/flecha.png' rotini='0' opacidad='1' ">
+      <param name="G_11" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>1)' coord_abs='no' expresión='(-1+dx,dy-dx)' archivo='images/flecha.png' rotini='0' opacidad='1' ">
+      <param name="G_12" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>2)' coord_abs='no' expresión='(-1+2dx,dy-dx)' archivo='images/flecha.png' rotini='0' opacidad='1' ">
+      <param name="G_13" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>3)' coord_abs='no' expresión='(-1+3dx,dy-dx)' archivo='images/flecha.png' rotini='0' opacidad='1' ">
+      <param name="G_14" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>4)' coord_abs='no' expresión='(-1+4dx,dy-dx)' archivo='images/flecha.png' rotini='0' opacidad='1' ">
+      <param name="G_15" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>5)' coord_abs='no' expresión='(-1+5dx,dy-dx)' archivo='images/flecha.png' rotini='0' opacidad='1' ">
+      <param name="G_16" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(n>1)' coord_abs='sí' expresión='[15+40,ndy]' texto='\${[n1]}' decimales='2' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_17" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(n>1)' coord_abs='sí' expresión='[15+40+ndx,ndy]' texto='\${[n2]}' decimales='2' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_18" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(n>2)' coord_abs='sí' expresión='[15+40+2ndx,ndy]' texto='\${[n3]}' decimales='2' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_19" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(n>3)' coord_abs='sí' expresión='[15+40+3ndx,ndy]' texto='\${[n4]}' decimales='2' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_20" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(n>4)' coord_abs='sí' expresión='[15+40+4ndx,ndy]' texto='\${[n5]}' decimales='2' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_21" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(n>5)' coord_abs='sí' expresión='[15+40+5ndx,ndy]' texto='\${[n6]}' decimales='2' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_22" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(correcto>0)' coord_abs='sí' expresión='[20,350]' texto='El total de formas distintas posibles son: \serif{\b{\${[total]}}}' decimales='2' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_23" value="espacio='E2' tipo='texto' fondo='no' color='27ae60' dibujar-si='correcto=1' coord_abs='sí' expresión='[E2._w/2,400]' texto='Muy bien' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_24" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='correcto=2' coord_abs='sí' expresión='[E2._w/2,400]' texto='Lo siento' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_25" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>1)&(tipo=2)' coord_abs='no' expresión='(-1,dy)' archivo='images/dado.png' rotini='0' opacidad='1' ">
+      <param name="G_26" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>1)&(tipo=2)' coord_abs='no' expresión='(-1+dx,dy)' archivo='images/dado.png' rotini='0' opacidad='1' ">
+      <param name="G_27" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>2)&(tipo=2)' coord_abs='no' expresión='(-1+2dx,dy)' archivo='images/dado.png' rotini='0' opacidad='1' ">
+      <param name="G_28" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>3)&(tipo=2)' coord_abs='no' expresión='(-1+3dx,dy)' archivo='images/dado.png' rotini='0' opacidad='1' ">
+      <param name="G_29" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>4)&(tipo=2)' coord_abs='no' expresión='(-1+4dx,dy)' archivo='images/dado.png' rotini='0' opacidad='1' ">
+      <param name="G_30" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>5)&(tipo=2)' coord_abs='no' expresión='(-1+5dx,dy)' archivo='images/dado.png' rotini='0' opacidad='1' ">
+      <param name="G_31" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>1)&(tipo=3)' coord_abs='no' expresión='(-1,dy)' archivo='images/blusa.png' rotini='0' opacidad='1' ">
+      <param name="G_32" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>1)&(tipo=3)' coord_abs='no' expresión='(-1+dx,dy)' archivo='images/zapato.png' rotini='0' opacidad='1' ">
+      <param name="G_33" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(n>2)&(tipo=3)' coord_abs='no' expresión='(-1+2dx,dy)' archivo='images/falda.png' rotini='0' opacidad='1' ">
+      <param name="G_34" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Regla de la multiplicación' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_35" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(522,65,482,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_36" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[542,85]' texto='En esta escena se vamos a estudiar el número de posibles resultados que se pueden obtener al lanzar varias monedas, al lanzar varios dados y las diferentes formas que pueden combinarse blusas, zapatos y faldas.\n\nPartiendo del principio fundamental del conteo: \n\nSi en un proceso de \serif{\b{\${k}}} niveles el número de resultados posibles de cada uno de ellos tiene \serif{\b{\${n1}}}, \serif{\b{\${n2}}}, \serif{\b{\${n3}}}, \serif{\b{\${n4}}}, \serif{\b{\${...}}}, \serif{\b{\${nk}}} resultados posibles entonces el número total de resultados posibles es: \n\c{\serif{\b{\${n1 × n2 × n3 × n4 × ... × nk}}}}\n\nEste principio también se conoce como \b{Regla de la multiplicación}.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "El círculo, un enfoque vectorial", 
+  "descripcion": "Con lo anterior se plantean los siguientes objetivos en la presente unidad didactica: 1. Explicar de manera didáctica, el concepto matemático de círculo, y en particular su forma vectorial. 2. Revisar y distinguir las formas de representar este lugar geométrico: la ecuación ordinaria, paramétrica y vectorial. 3. Comprender la relación que hay entre las variables involucradas en este lugar geométrico. 4. Ofrecer los instrumentos teóricos necesarios para la resolución de problemas que involucran problemas asociados con el círculo en su forma vectorial. 5. Interpretar gráficamente cada uno de los parámetros y su vínculo con el círculo.",
+  "resena": "Representaciones matemáticas del círculo - ecuación ordinaria, paramétrica y vectorial.",
+  "id": "_Un_015_ElCirculoUnEnfoqueVectorial"
+}

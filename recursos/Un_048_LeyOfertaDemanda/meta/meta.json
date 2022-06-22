@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Ley de la oferta y la demanda", 
+  "descripcion": "La ley de la Oferta y la Demanda es un modelo económico, matemático, del comportamiento del mercado en el que se establece una relación entre el número de unidades producidas de un producto y el precio abonado por ellas. Estas cantidades van ajustándose progresivamente hasta alcanzar un precio de equilibrio en el que todo lo producido se vende y a la vez la demanda queda completamente satisfecha.",
+  "resena": "Relación entre las unidades ofertadas de un objeto de venta y el precio, y su ajuste progresivo al equilibro.",
+  "id": "_Un_048_LeyOfertaDemanda"
+}

@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Sistemas Dinámicos", 
+    "Caos"
+  ], 
+  "titulo": "Caos Determinista", 
+  "descripcion": "Se introducirá al alumno al tema de Caos. Se desarrollará el tema desde el ámbito de los mapeos discretos unidimensionales, en especial el mapeo logístico, para que el alumno conozca las principales características del caos, y algunos métodos de observación y cuantificación.",
+  "resena": "Mapelos discretos como el logístico y la manifestación del caos en el mismo. ¿Qué es el caos?, ¿Cómo se calcula?",
+  "id": "_Un_086_CaosDeterminista"
+}

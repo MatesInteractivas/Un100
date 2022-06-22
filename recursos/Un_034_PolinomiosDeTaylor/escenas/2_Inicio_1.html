@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='graf1' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='no' escala='32' O.x='0' O.y='16' despl_imagen='arr-izq' fondo='f0f8fa' red='e0ecf0' red10='cedade' ejes='405860' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='expli1' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='graf1.escala' tipo='numérico' interfaz='pulsador' región='interior' espacio='graf1' expresión='(graf1._w-40,graf1._h-70,30,60)' valor='40' incr='20' min='20' max='120' discreto='no' decimales='2' fijo='no' visible='no' image_inc='images/zoom_in.svg' image_dec='images/zoom_out.svg' btn_pos='v_left' ">
+      <param name="C_02" value="id='p' tipo='numérico' interfaz='pulsador' región='interior' espacio='expli1' nombre='Grado del polinomio' expresión='((expli1._w-280)/2,expli1._h-35-20,280,35)' valor='1' incr='1' min='1' max='4' discreto='no' decimales='0' fijo='sí' visible='sí' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='fmcd(x,y)' algoritmo='sí' expresión='x2=0?1:x2' inicio='x1=min(x,y);x2=max(x,y)' hacer='resto=x1=0?0:x2%x1;x2=x1;x1=resto;;;;' mientras='resto#0' tipo='función' ">
+      <param name="A_02" value="id='fmcm(x,y)' algoritmo='sí' expresión='mcm' hacer='mcm=x*y/fmcd(x,y);' tipo='función' ">
+      <param name="A_03" value="id='fact(x)' algoritmo='sí' expresión='xfac' inicio='i=1;xfac=1' hacer='xfac=xfac*(i);i=i+1' mientras='i<=x' tipo='función' ">
+      <param name="A_04" value="id='a' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='a[0]=0;a[1]=0;a[2]=0' tipo='vector' ">
+      <param name="A_05" value="id='b' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='a[0]=0;a[1]=0;a[2]=0' tipo='vector' ">
+      <param name="A_06" value="id='f(x)' algoritmo='no' expresión='e^x' tipo='función' ">
+      <param name="A_07" value="id='f1(x)' algoritmo='no' expresión='e^x' tipo='función' ">
+      <param name="A_08" value="id='f2(x)' algoritmo='no' expresión='e^x' tipo='función' ">
+      <param name="A_09" value="id='f3(x)' algoritmo='no' expresión='e^x' tipo='función' ">
+      <param name="A_10" value="id='f4(x)' algoritmo='no' expresión='e^x' tipo='función' ">
+      <param name="A_11" value="id='P(x)' algoritmo='no' expresión='a[0]+a[1]*(x-a)+a[2]*(x-a)^2+a[3]*(x-a)^3+a[4]*(x-a)^4+a[5]*(x-a)^5' tipo='función' ">
+      <param name="A_12" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='a=0;;;;' ">
+      <param name="A_13" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='graf1.Oy=graf1.escala;a[0]=(p>0)?f(a):0;a[1]=(p>0)?f1(a):0;a[2]=(p>1)?f2(a)/2:0;a[3]=(p>2)?f3(a)/6:0;a[4]=(p>3)?f4(a)/24:0;;;;;;' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Aproximando una función' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='graf1' tipo='ecuación' fondo='no' color='c0b6b6' coord_abs='no' expresión='y=a[0]+a[1]*x' rastro='c0b6b6' ancho='1' visible='no' editable='no' ">
+      <param name="G_03" value="espacio='graf1' tipo='ecuación' fondo='no' color='c0b6b6' coord_abs='no' expresión='y=a[0]+a[1]*x+a[2]*x^2' rastro='c0b6b6' ancho='1' visible='no' editable='no' ">
+      <param name="G_04" value="espacio='graf1' tipo='ecuación' fondo='no' color='c0b6b6' coord_abs='no' expresión='y=a[0]+a[1]*x+a[2]*x^2+a[3]*x^3' rastro='c0b6b6' ancho='1' visible='no' editable='no' ">
+      <param name="G_05" value="espacio='graf1' tipo='ecuación' fondo='no' color='c0b6b6' coord_abs='no' expresión='y=a[0]+a[1]*x+a[2]*x^2+a[3]*x^3+a[4]*x^4' rastro='c0b6b6' ancho='1' visible='no' editable='no' ">
+      <param name="G_06" value="espacio='graf1' tipo='ecuación' fondo='no' color='cc0000' coord_abs='no' expresión='y=P(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_07" value="espacio='graf1' tipo='ecuación' fondo='no' color='2045c7' coord_abs='no' expresión='y=f(x)' ancho='2' visible='no' editable='no' ">
+      <param name="G_08" value="espacio='graf1' tipo='punto' fondo='no' color='cc0000' coord_abs='no' expresión='(a,f(a))' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_09" value="espacio='graf1' tipo='punto' fondo='no' color='2045c7' coord_abs='no' expresión='(a,f(a))' decimales='2' fijo='sí' tamaño='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_10" value="espacio='expli1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[20,20]' texto='Consideremos, por ejemplo, la función exponencial: \n\serif{\b{\${f(x) = e^x}}} y el punto \serif{\b{\${x_0 = 0}}}.\nSe sabe que si una función es continua y derivable en un punto, la recta más parecida a la función en un entorno del punto es la recta tangente, de ecuación:\n\serif{\b{\${y = f(x_0) + f&squot;(x_0)(x - x_0)}}} en nuestro caso \serif{\b{\${y = 1 + x}}}\n\nEsta recta es una función polinómica de primer grado que coincide con la función en su valor y en el valor de la derivada en el punto. Es una aproximación lineal.\nSi se aumenta el grado del polinomio manteniendo las condiciones, es decir que además de coincidir con la función en el punto y la primera derivada, tomen igual valor en la segunda, en la tercera, ... derivada, se van obteniendo polinomios cada vez más parecidos a \serif{\b{\${f(x)}}}:' decimales='2' fijo='sí' ancho='expli1._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_11" value="espacio='expli1' tipo='texto' fondo='no' color='000000' dibujar-si='p==1' coord_abs='sí' expresión='[expli1._w/2,425]' texto='\${P_1(x) = [a[0]=0?&squot;&squot;:a[0]][(a[0]=0)&(a[1]>=0)?&squot;&squot;:(a[1]>0?&squot; + &squot;:&squot; - &squot;)][(a[1]=0)|(abs(a[1])=1)?&squot;&squot;:abs(a[1])][a[1]=0?&squot;&squot;:&squot;x&squot;]}' decimales='2' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' ">
+      <param name="G_12" value="espacio='expli1' tipo='texto' fondo='no' color='000000' dibujar-si='p==2' coord_abs='sí' expresión='[expli1._w/2,415]' texto='\${P_2(x) = [a[0]=0?&squot;&squot;:a[0]][(a[0]=0)&(a[1]>=0)?&squot;&squot;:(a[1]>0?&squot; + &squot;:&squot; - &squot;)][(a[1]=0)|(abs(a[1])=1)?&squot;&squot;:abs(a[1])][a[1]=0?&squot;&squot;:&squot;x&squot;][(a[2]=0)?&squot;&squot;:(a[2]>0?&squot; + &squot;:&squot; - &squot;)]\frac{[abs(f2(a))/fmcd(abs(f2(a)),2)]}{[2/fmcd(abs(f2(a)),2)]}[a[2]=0?&squot;&squot;:&squot;x&squot;]^{[a[2]=0?&squot;&squot;:2]}}' decimales='2' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' ">
+      <param name="G_13" value="espacio='expli1' tipo='texto' fondo='no' color='000000' dibujar-si='p==3' coord_abs='sí' expresión='[expli1._w/2,415]' texto='\${P_3(x) = [a[0]=0?&squot;&squot;:a[0]][(a[0]=0)&(a[1]>=0)?&squot;&squot;:(a[1]>0?&squot; + &squot;:&squot; - &squot;)][(a[1]=0)|(abs(a[1])=1)?&squot;&squot;:abs(a[1])][a[1]=0?&squot;&squot;:&squot;x&squot;][(a[2]=0)?&squot;&squot;:(a[2]>0?&squot; + &squot;:&squot; - &squot;)]\frac{[abs(f2(a))/fmcd(abs(f2(a)),2)]}{[2/fmcd(abs(f2(a)),2)]}[a[2]=0?&squot;&squot;:&squot;x&squot;]^{[a[2]=0?&squot;&squot;:2]} [(a[3]=0)?&squot;&squot;:(a[3]>0?&squot; + &squot;:&squot; - &squot;)]\frac{[abs(f3(a))/fmcd(abs(f3(a)),6)]}{[6/fmcd(abs(f3(a)),6)]}[a[3]=0?&squot;&squot;:&squot;x&squot;]^{[a[3]=0?&squot;&squot;:3]}}' decimales='2' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' ">
+      <param name="G_14" value="espacio='expli1' tipo='texto' fondo='no' color='000000' dibujar-si='p==4' coord_abs='sí' expresión='[expli1._w/2,415]' texto='\${P_4(x) = [a[0]=0?&squot;&squot;:a[0]][(a[0]=0)&(a[1]>=0)?&squot;&squot;:(a[1]>0?&squot; + &squot;:&squot; - &squot;)][(a[1]=0)|(abs(a[1])=1)?&squot;&squot;:abs(a[1])][a[1]=0?&squot;&squot;:&squot;x&squot;][(a[2]=0)?&squot;&squot;:(a[2]>0?&squot; + &squot;:&squot; - &squot;)]\frac{[abs(f2(a))/fmcd(abs(f2(a)),2)]}{[2/fmcd(abs(f2(a)),2)]}[a[2]=0?&squot;&squot;:&squot;x&squot;]^{[a[2]=0?&squot;&squot;:2]} [(a[3]=0)?&squot;&squot;:(a[3]>0?&squot; + &squot;:&squot; - &squot;)]\frac{[abs(f3(a))/fmcd(abs(f3(a)),6)]}{[6/fmcd(abs(f3(a)),6)]}[a[3]=0?&squot;&squot;:&squot;x&squot;]^{[a[3]=0?&squot;&squot;:3]} [(a[4]=0)?&squot;&squot;:(a[4]>0?&squot; + &squot;:&squot; - &squot;)]\frac{[abs(f4(a))/fmcd(abs(f4(a)),24)]}{[24/fmcd(abs(f4(a)),24)]}[a[4]=0?&squot;&squot;:&squot;x&squot;]^{[a[4]=0?&squot;&squot;:4]}}' decimales='2' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

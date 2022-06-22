@@ -1,0 +1,11 @@
+@import url(fonts.css);
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #ecf0f1;
+}
+
+.DescartesAppContainer {
+  background-color: #2980b9;
+}

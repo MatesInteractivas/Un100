@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Física", 
+    "Fisicoquímica", 
+    "Termodinámica"
+  ], 
+  "titulo": "Entropía", 
+  "descripcion": "A través de una conversación con un tutor digital y la observación y/o manipulación simultánea de modelos y ejemplos interactivos, el estudiante conocerá y entenderá el concepto de entropía y la segunda ley de la termodinámica.",
+  "resena": "La segunda ley de la termodinámica. El crecimiento de la entropía como única opción en sistemas termodinámicos.",
+  "id": "_Un_066_SegundaLeyDeLaTermodinamica"
+}

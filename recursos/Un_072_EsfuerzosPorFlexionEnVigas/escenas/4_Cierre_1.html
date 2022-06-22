@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cierre</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R3' R3='sí' id='E1' x='40' y='240' ancho='482' alto='290' dibujar-si='1' fijo='no' escala='10' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='130f40' despliegue='pintor' cortar='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='b' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' nombre='b' expresión='(20,E2._h-55,250,35)' valor='10' incr='0.5' min='5' max='25' discreto='no' decimales='0' fijo='sí' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="C_02" value="id='h' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' nombre='h' expresión='(290,E2._h-55,250,35)' valor='20' incr='0.5' min='5' max='35' discreto='no' decimales='0' fijo='sí' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="C_03" value="id='nervios' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' nombre='        Número de nervios        ' expresión='(560,E2._h-55,405,35)' valor='4' incr='1' min='2' max='6' discreto='no' decimales='0' fijo='sí' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='18' negrita='no' cursiva='no' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='paso=5;nervios=4;;E1.rot.y=20;E1.rot.z=0' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='b1=b/10;h1=h/10;D=3/(nervios-1)*0.05*2400+b*h*2400/(10000)+110*3/(nervios-1)+180*3/(nervios-1);L=200*3/(nervios-1);q=(1.7*L+1.4*D)*6/nervios;Mmax=q/2;s=b*h^2/6;esf=Mmax*100/s' ">
+      <param name="G_01" value="espacio='E0' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E0._w/2,20]' texto='Conclusiones' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[20,15]' texto='El esfuerzo por flexión se determina con la expresión \serif{\b{\${σ = -\frac{My}{I}}}} en compresión y \serif{\b{\${σ = \frac{My}{I}}}} en tracción. En secciones rectangulares, el valor de \serif{\b{\${y}}} (a tracción) es \serif{\b{\${-\frac{h}{2}}}}, luego \serif{\b{\${σ = \frac{6M}{bh^2}}}}. En este tipo de secciones se suele trabajar con el módulo dado por la expresión \serif{\b{\${s = \frac{bh^2}{6}}}}, entonces \serif{\b{\${σ = \frac{M}{s}}}}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[530,170]' texto='Una aplicación sencilla es el cálculo de esfuerzos en nervios o viguetas. La losa que mostramos es de \serif{\b{\${2m × 3m}}}, soportada por \serif{\b{\${[nervios]}}} nervios, el valor de \serif{\b{\${M_{máx}}}} en cada nervio es \serif{\b{\${[Mmax]kgf*m}}}.\n\nEl valor de \serif{\b{\${s}}} es \serif{\b{\${[s]cm^3}}}, luego: \n\serif{\b{\${σ = \frac{[Mmax]*100}{[s]} = [esf] \frac{kgf}{cm^2}}}}' decimales='2' fijo='no' ancho='432' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="S_01" value="espacio='E1' tipo='paralelepípedo' fondo='no' color='c0c0c0' color_reverso='c0c0c0' expresión='Paralelepípedo' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='sí' aristas='rue' modelo='luz' ancho='20' largo='30' alto='.5' ">
+      <param name="S_02" value="espacio='E1' tipo='paralelepípedo' fondo='no' color='grisClaro' color_reverso='grisClaro' expresión='Paralelepípedo' familia='s' s.intervalo='[-7.5+b1/4,7.5-b1/4]' s.pasos='nervios-1' rotini='(0,0,0)' posini='(0,2*s,-h1/2-.25)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='sí' aristas='808080' modelo='luz' ancho='20' largo='b1' alto='h1' ">
+      <param name="S_03" value="espacio='E1' tipo='superficie' fondo='no' color='verde' color_reverso='verde' dibujar-si='0' expresión='x=20*u-10 y=30*v-15 z=0' rotini='(0,0,0)' posini='(0,0,.5)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='808080' modelo='luz' Nu='5' Nv='7' ">
+      <param name="S_04" value="espacio='E1' tipo='paralelepípedo' fondo='no' color='f87e00' color_reverso='rosa' dibujar-si='paso>3' expresión='Paralelepípedo' familia='s' s.intervalo='[1,5]' s.pasos='4' rotini='(0,0,0)' posini='(0,-14.5,s-.2)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='808080' modelo='luz' ancho='20' largo='1' alto='1' ">
+      <param name="S_05" value="espacio='E1' tipo='paralelepípedo' fondo='no' color='f87e00' color_reverso='rosa' dibujar-si='paso>3' expresión='Paralelepípedo' familia='s' s.intervalo='[1,5]' s.pasos='4' rotini='(0,0,0)' posini='(0,14.5,s-.2)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='808080' modelo='luz' ancho='20' largo='1' alto='1' ">
+      <param name="S_06" value="espacio='E1' tipo='paralelepípedo' fondo='no' color='f87e00' color_reverso='rosa' dibujar-si='paso>3' expresión='Paralelepípedo' familia='s' s.intervalo='[1,5]' s.pasos='4' rotini='(0,0,0)' posini='(-9.5,0,s-.2)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='808080' modelo='luz' ancho='1' largo='28' alto='1' ">
+      <param name="S_07" value="espacio='E1' tipo='segmento' fondo='no' color='ffffff' expresión='(12,-15+b1/2,-h1)(12,-15+(30-b1)/(nervios-1)+b1/2,-h1)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='2' Nu='1' ">
+      <param name="S_08" value="espacio='E1' tipo='punto' fondo='no' color='ffffff' color_reverso='ffafaf' expresión='(12,-18+((30-b1)/(nervios-1)+b1/2)/2,-h1-1)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='\serif{\b{\${[300/(nervios-1)]cm}}}' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' decimales='2' fijo='no' ancho='0' offset_dist='10' offset_angle='270' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

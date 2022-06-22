@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+<div align="center">
+  <ajs name="Descartes" width="500" height="500" code="Descartes.class" codebase="http://arquimedes.matem.unam.mx/Descartes5/" archive="lib/Descartes5.jar" mayscript="">
+   <param name="tamaño" value="500x500">
+   <param name="decimal_symbol" value=",">
+   <param name="expand" value="fit">
+   <param name="editable" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.5">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' O.x='-125' O.y='-120' imagen='images/fondo.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='particulas' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(268,47,125,28)' valor='particulas' decimales='0' fijo='sí' visible='no' opciones='polen vivo,polen muerto,hollín' acción='calcular' parámetro='setPosParticulas()\nresetFctrX()\nresetFctrY()'">
+   <param name="A_01" value="id='posParticulas' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='5' filas='2' expresión='posParticulas[0,0]=0;posParticulas[0,1]=0;;posParticulas[1,0]=0;posParticulas[1,1]=0;;posParticulas[2,0]=0;posParticulas[2,1]=0;;posParticulas[3,0]=0;posParticulas[3,1]=0;;posParticulas[4,0]=0;posParticulas[4,1]=0'">
+   <param name="A_02" value="id='fctrX' vector='sí' evaluar='una-sola-vez' tamaño='5' expresión='fctrX[0]=0;fctrX[1]=0;fctrX[2]=0;fctrX[3]=0;fctrX[4]=0'">
+   <param name="A_03" value="id='fctrY' vector='sí' evaluar='una-sola-vez' tamaño='5' expresión='fctrY[0]=0;fctrY[1]=0;fctrY[2]=0;fctrY[3]=0;fctrY[4]=0'">
+   <param name="A_04" value="id='setPosParticulas()' algoritmo='sí' algoritmo='sí' hacer='posParticulas[0,0]=(rnd*4)+0.2;posParticulas[0,1]=(posParticulas[0,0]<2)?(rnd*-2)-2:(rnd*-4)-0.2;;posParticulas[1,0]=(rnd*4)+0.2;posParticulas[1,1]=(posParticulas[1,0]<2)?(rnd*-2)-2:(rnd*-4)-0.2;;posParticulas[2,0]=(rnd*4)+0.2;posParticulas[2,1]=(posParticulas[2,0]<2)?(rnd*-2)-2:(rnd*-4)-0.2;;posParticulas[3,0]=(rnd*4)+0.2;posParticulas[3,1]=(posParticulas[3,0]<2)?(rnd*-2)-2:(rnd*-4)-0.2;;posParticulas[4,0]=(rnd*4)+0.2;posParticulas[4,1]=(posParticulas[4,0]<2)?(rnd*-2)-2:(rnd*-4)-0.2'">
+   <param name="A_05" value="id='brinco(x)' algoritmo='sí' expresión='x' algoritmo='sí' hacer='rndXY=rnd;rndPosNeg=rnd;;dir=(rndXY<.51)?-1:1;pasoX=(rndPosNeg<.51)?.01:0;pasoY=(rndPosNeg>.50)?.01:0;;fctrX[x]=((posParticulas[x,0]+fctrX[x]<5.3)&amp;&amp;(posParticulas[x,0]+fctrX[x]>=0))?(fctrX[x]+(pasoX*dir)):fctrX[x];fctrY[x]=((posParticulas[x,0]+fctrY[x]<5.3)&amp;&amp;(posParticulas[x,0]+fctrY[x]>=0))?fctrY[x]+(pasoY*dir):fctrY[x]'">
+   <param name="A_06" value="id='resetFctrX(x)' algoritmo='sí' expresión='x' algoritmo='sí' hacer='fctrX[0]=0;fctrX[1]=0;fctrX[2]=0;fctrX[3]=0;fctrX[4]=0'">
+   <param name="A_07" value="id='resetFctrY(x)' algoritmo='sí' expresión='x' algoritmo='sí' hacer='fctrY[0]=0;fctrY[1]=0;fctrY[2]=0;fctrY[3]=0;fctrY[4]=0'">
+   <param name="A_08" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='particulas=0' hacer='setPosParticulas()'">
+   <param name="A_09" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='arco' color='abffff' dibujar-si='0' radio='2.5' fin='360' fijo='sí' relleno='abffff' info='agua'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' expresión='(-.15,.15)' archivo='images/agua.png' info='agua'">
+   <param name="G_03" value="espacio='E1' tipo='punto' dibujar-si='0' expresión='(posParticulas[s,0]+fctrX[s],posParticulas[s,1]+fctrY[s])' familia='s' s.intervalo='[0,4]' s.pasos='5' fijo='sí' info='particulas'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' dibujar-si='particulas=0' expresión='(posParticulas[s,0]+fctrX[s],posParticulas[s,1]+fctrY[s])' familia='s' s.intervalo='[0,4]' s.pasos='5' archivo='images/polenVivo.png' info='partículas polen vivo'">
+   <param name="G_05" value="espacio='E1' tipo='imagen' dibujar-si='particulas=1' expresión='(posParticulas[s,0]+fctrX[s],posParticulas[s,1]+fctrY[s])' familia='s' s.intervalo='[0,4]' s.pasos='5' archivo='images/polenMuerto.png' info='partículas polen muerto'">
+   <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='particulas=2' expresión='(posParticulas[s,0]+fctrX[s],posParticulas[s,1]+fctrY[s])' familia='s' s.intervalo='[0,4]' s.pasos='5' archivo='images/hollin.png' info='partículas hollín'">
+   <param name="G_07" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[130,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red119\green119\blue102;\red32\green48\blue58;}\f1\fs30\b\cf0 Tipo de part\u237 cula:\cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,15' fijo='sí'">
+   <param name="Animación" value="pausa='100' controles='no' auto='sí' inicio='t=0' hacer='brinco(0);brinco(1);brinco(2);brinco(3);brinco(4);' mientras='1'">
+</ajs>
+</div>
+</body>
+</html>

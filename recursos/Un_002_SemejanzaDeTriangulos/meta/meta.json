@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Geometría clásica"
+  ], 
+  "titulo": "Semejanza de triángulos", 
+  "descripcion": "El objetivo de esta unidad es mostrar gráficamente al estudiante la semejanza de triángulos cuando comparten 1) un mínimo de 2 ángulos o, 2) cuando comparten un ángulo y sus lados adyacentes son proporcionales entre sí. Se demuestra que los triángulos semejantes tienen sus lados proporcionales. La presentación de esta unidad es equivalente a la teoría de las proporciones de Eudoxo que se encuentra en el libro V de Los Elementos de Euclides.", 
+  "resena": "Relación entre semejanza de triángulos y proporcionalidad de lados.",
+  "id": "_Un_002_SemejanzaDeTriangulos"
+}

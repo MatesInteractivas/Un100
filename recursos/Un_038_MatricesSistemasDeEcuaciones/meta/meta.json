@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Algebra", 
+    "Algebra lineal"
+  ], 
+  "titulo": "Matrices sistemas de ecuaciones", 
+  "descripcion": "Los objetivos de esta unidad son: * Calcular la matriz inversa. * Resolver un sistema lineal de ecuaciones, usando la matriz inversa. * Resolver un sistema lineal de ecuaciones, usando el metódo de eliminación gaussiana.", 
+  "resena": "Resolución de sistemas de ecuaciones usando matrices, mediante inversión de la misma y por eliminación gaussiana.",
+  "id": "_Un_038_MatricesSistemasDeEcuaciones"
+}

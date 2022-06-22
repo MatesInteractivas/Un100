@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='Covertura' x='0' y='0' ancho='100%' alto='100%' dibujar-si='info' fijo='sí' escala='48' O.x='0' O.y='0' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='55273c75' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='INFO' x='(E1._w-700)/2' y='(E1._h-490)/2' ancho='700' alto='490' dibujar-si='info' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='cerrarInfo' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' expresión='(INFO._w-35,0,35,35)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='info=0' ">
+      <param name="C_02" value="id='info' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w-55,15,35,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_top_left' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' imagen='images/info.svg' acción='calcular' parámetro='info=1' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_03" value="id='otro' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' expresión='((E1._w-120)/2,E1._h-55,120,30)' valor='0' incr='1' min='0' max='5' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='info=1;' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='273c75' coord_abs='sí' expresión='(1,1,INFO._w-3,INFO._h-3)' ancho='3' border_radius='0' lineDash='solid' ">
+      <param name="G_02" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='20303a' coord_abs='sí' expresión='(0,0,INFO._w,35)' relleno='273c75' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='INFO' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(20,50)' texto='\b{Introducción}\n\nEn esta escena, reconocerás los principales apoyos o soportes utilizados en el análisis de estructuras. Por otra parte, se muestran algunas estructuras apoyadas y los diagramas de cuerpo libre de las mismas.' decimales='2' fijo='sí' ancho='INFO._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='INFO' tipo='imagen' fondo='sí' coord_abs='no' expresión='(0,-2,.65,.65)' archivo='images/fondo_07.jpg' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Diagrama de cuerpo libre' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(20,65,984,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E1._w/2,E1._h-42)' texto='[otro+1] / 6' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(otro=0)&(info=0)' coord_abs='sí' expresión='[40,85]' texto='La armadura de la figura, está soportada por dos apoyos. El primero de ellos es una articulación que restringe el movimiento en las direcciones \serif{\b{\${x}}} y \serif{\b{\${y}}}, el segundo es un rodillo que impide el desplazamiento vertical. \n\nEn el diagrama de cuerpo libre, se eliminan los apoyos sustituyédolos por las reacciones.' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_09" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(otro=0)&(info=0)' coord_abs='no' expresión='(-0.5,-1.5,0.6,0.6)' archivo='images/cl1.png' rotini='0' opacidad='1' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='otro=1' coord_abs='sí' expresión='[40,85]' texto='Un apoyo simple, se idealiza al afirmar que no hay restricción al movimiento horizontal, pues existe una fuerza de rozamiento o de fricción que se opone al movimiento; sin embargo, por el tipo de apoyo (rodillo, por ejemplo), se puede aceptar esta premisa.\n\nEn la figura, recordamos este tipo de fuerzas en el clásico bloque sobre una superficie inclinada. Observa las fuerzas en el diagrama de cuerpo libre.' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='otro=1' coord_abs='no' expresión='(0,-2,0.6,0.6)' archivo='images/cl2.png' rotini='0' opacidad='1' ">
+      <param name="G_12" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='otro=2' coord_abs='sí' expresión='[40,85]' texto='En el video de motivación, decíamos que un apoyo tipo empotramiento, tiene restricciones al desplazamiento horizontal y vertical, e igualmente al giro; es decir, existen tres reacciones.\n\nSin embargo, en ausencia de fuerzas horizontales actuando sobre la estructura, podemos omitir la reacción horizontal en el diagrama de cuerpo libre (observa la figura).' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_13" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='otro=2' coord_abs='no' expresión='(0,-2,0.5,0.5)' archivo='images/cl3.png' rotini='0' opacidad='1' ">
+      <param name="G_14" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='otro=3' coord_abs='sí' expresión='[40,85]' texto='En la figura, puedes observar una armadura con una apoyo tipo articulación y otro de rodillo.\n\nEn este caso, al existir una fuerza horizontal de \serif{\b{\${800 lb}}}, es necesario que incluyamos la reacción horizontal en el diagrama de cuerpo libre.' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_15" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='otro=3' coord_abs='no' expresión='(0,-1.25,0.4,0.4)' archivo='images/cl4.png' rotini='0' opacidad='1' ">
+      <param name="G_16" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='otro=4' coord_abs='sí' expresión='[40,85]' texto='Con el tiempo, y después de mucha práctica, puedes omitir el diagrama de cuerpo libre, dibujando las reacciones directamente sobre la estructura, tal como se observa en la figura.' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_17" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='otro=4' coord_abs='no' expresión='(0,-1,0.6,0.6)' archivo='images/cl5.png' rotini='0' opacidad='1' ">
+      <param name="G_18" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='otro=5' coord_abs='sí' expresión='[40,85]' texto='En la figura, resumimos los apoyos y diagramas de cuerpo libre, que usaremos en esta unidad.' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_19" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='otro=5' coord_abs='no' expresión='(0,-0.5,0.55,0.55)' archivo='images/cl6.png' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

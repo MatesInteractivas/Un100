@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría"
+  ], 
+  "titulo": "Curvas cíclicas en forma paramétrica", 
+  "descripcion": "El objetivo de esta unidad didáctica es mostrar al estudiante cómo se genera la gráfica de algunas curvas cíclicas como la trayectoria de un cuerpo en movimiento: Cicloides, Epicicloides e Hipocicloides.",
+  "resena": "Curvas generadas por el movimiento cíclico de un cuerpo y su parametrización.",
+  "id": "_Un_042_CurvasCiclicasEnFormaParametrica"
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='n' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' nombre='Factorial de  ' expresión='(20,20,E2._w-40,35)' valor='1' incr='1' min='0' discreto='no' decimales='0' fijo='sí' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='a' expresión='fn/10^s' tipo='variable' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=1' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="A_04" value="id='pi' expresión='3.1416' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_05" value="id='fn' algoritmo='sí' evaluar='siempre' inicio='fn=1;i=1' hacer='fn=fn*i;i=i+1' mientras='i<=n' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Factorial' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E2' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(130,300,0.6,0.6)' archivo='images/E2_factoria1.png' rotini='0' opacidad='1' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[E2._w/2,250]' texto='El factorial de este \nnúmero es:' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='20' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='n>1' coord_abs='sí' expresión='[E2._w/2,140]' texto='El producto de todos los números naturales desde \serif{\b{\${1}}} hasta el número del factorial \serif{\b{\${[n]}}}' decimales='0' fijo='sí' ancho='221' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='0000ff' dibujar-si='n=0' coord_abs='sí' expresión='[E2._w/2,70]' texto='\${0! = 1}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E2' tipo='texto' fondo='no' color='0000ff' dibujar-si='n=1' coord_abs='sí' expresión='[E2._w/2,70]' texto='\${1! = 1}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='E2' tipo='texto' fondo='no' color='0000ff' dibujar-si='n=2' coord_abs='sí' expresión='[E2._w/2,70]' texto='\${[n]! = 2 × 1 = [fn]}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_08" value="espacio='E2' tipo='texto' fondo='no' color='0000ff' dibujar-si='n=3' coord_abs='sí' expresión='[E2._w/2,70]' texto='\${[n]! = 3 × 2 × 1 = [fn]}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_09" value="espacio='E2' tipo='texto' fondo='no' color='0000ff' dibujar-si='n=4' coord_abs='sí' expresión='[E2._w/2,70]' texto='\${[n]! = 4 × 3 × 2 × 1 = [fn]}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_10" value="espacio='E2' tipo='texto' fondo='no' color='0000ff' dibujar-si='n=5' coord_abs='sí' expresión='[E2._w/2,70]' texto='\${[n]! = 5 × 4 × 3 × 2 × 1 = [fn]}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E2' tipo='texto' fondo='no' color='0000ff' dibujar-si='n=6' coord_abs='sí' expresión='[E2._w/2,70]' texto='\${[n]! = 6 × 5 × 4 × 3 × 2 × 1 = [fn]}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_12" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(522,65,482,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_13" value="espacio='E2' tipo='texto' fondo='no' color='0000ff' dibujar-si='n=7' coord_abs='sí' expresión='[E2._w/2,70]' texto='\${[n]! = 7 × 6 × 5 × 4 × 3 × 2 × 1 = [fn]}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_14" value="espacio='E2' tipo='texto' fondo='no' color='0000ff' dibujar-si='n>7' coord_abs='sí' expresión='[E2._w/2,70]' texto='\${[n]! = [n] × [n-1] × [n-2] × ... × 3 × 2 × 1}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_15" value="espacio='E2' tipo='texto' fondo='no' color='1e8214' dibujar-si='(n>18)&(a>1)&(a<10)' coord_abs='sí' expresión='[E2._w/2,340]' familia='s' s.intervalo='[0,306]' s.pasos='306' texto='\${[n]! = [a] × 10^{[s]}}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_16" value="espacio='E2' tipo='texto' fondo='no' color='1e8214' dibujar-si='(n>7)&(n<=18)' coord_abs='sí' expresión='[E2._w/2,340]' texto='\${[n]! = [fn]}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_17" value="espacio='E2' tipo='texto' fondo='no' color='1e8214' dibujar-si='n=1' coord_abs='sí' expresión='[E2._w/2,340]' texto='\${[n]! = 1}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_18" value="espacio='E2' tipo='texto' fondo='no' color='1e8214' dibujar-si='(n>=2)&&(n<=7)' coord_abs='sí' expresión='[E2._w/2,340]' texto='\${[n]! = [fn]}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_19" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[542,85]' texto='Un \b{factorial} se designa con un número natural positivo seguido por un signo de exclamación por ejemplo \serif{\b{\${7!}}}\n\n\serif{\b{\${7! = 1 × 2 × 3 × 4 × 5 × 6 × 7 = 5040}}}\n\nEl valor de un factorial es el producto de todos los números desde \serif{\b{\${1}}} hasta el número del factorial. \n\nLos factoriales se utilizan para determinar las cantidades de combinaciones y permutaciones, así como para averiguar probabilidades.\n\n\b{Ingresa un número y observa su factorial.}' decimales='2' fijo='no' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

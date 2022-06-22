@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' ancho='100%' alto='100%' fijo='sí' escala='43' O.x='-130' O.y='30' fondo='2980b9' red='no' red10='no' ejes='no' ">
+      <param name="E_02" value="tipo='R2' id='Covertura' ancho='100%' alto='100%' dibujar-si='explica' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='55273c75' red='no' red10='no' ejes='no' ">
+      <param name="E_03" value="tipo='R2' id='E2' x='(1024-680)/2' y='(625-420)/2' ancho='680' alto='420' dibujar-si='explica' fijo='sí' red='no' red10='no' ejes='no' ">
+      <param name="C_01" value="id='A' tipo='gráfico' espacio='E1' color='222222' color-int='ffffff' tamaño='7' expresión='(1,3.5)' ">
+      <param name="C_02" value="id='C' tipo='gráfico' espacio='E1' color='222222' color-int='ffffff' tamaño='7' expresión='(2,0)' ">
+      <param name="C_03" value="id='explicar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w-55,15,35,35)' color='ffffff' color-int='fa983a' image_align='a_top_left' negrita='sí' fuente puntos='18' imagen='images/info.svg' acción='calcular' parámetro='explica=1-explica' activo-si='status==0' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_04" value="id='caso' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(20,280,120,35)' valor='1' decimales='0' fijo='no' visible='no' opciones='Caso 0,Caso 1,Caso 2,Caso 3,Caso 4' acción='calcular' parámetro='A.x=(caso>0)?B.x+(caso-1+0.25+rnd/2)*BC:C.x;' ">
+      <param name="C_05" value="id='cortar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Cortar' expresión='(20,470,120,35)' color='ffffff' color-int='fa983a' negrita='sí' fuente puntos='18' acción='calcular' parámetro='cortar=1;status=1' dibujar-si='(status==0)&(caso>0)' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_06" value="id='animar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Trasladar' expresión='(20,535,120,35)' color='ffffff' color-int='fa983a' negrita='sí' fuente puntos='18' acción='animar' dibujar-si='status==1' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_07" value="id='unir' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Reducir' expresión='(500,535,120,35)' color='ffffff' color-int='fa983a' negrita='sí' fuente puntos='18' acción='calcular' parámetro='unir()' dibujar-si='status==3' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_08" value="id='cerrar' interfaz='botón' tipo='numérico' región='interior' espacio='E2' expresión='(E2._w-35,0,35,35)' color='ffffff' color-int='ffffff' fuente puntos='18' imagen='images/cerrar.svg' acción='calcular' parámetro='explica=0' ">
+      <param name="A_01" value="id='texto' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión='&squot;Este paralelogramo es un rectángulo de lados \serif{\b{\${b}}} y \serif{\b{\${h}}}.&squot;;&squot;\serif{\b{\${HCD}}} a la izquierda, transforma el paralelogramo \serif{\b{\${ABCD}}} en un rectángulo de lados \serif{\b{\${b}}} y \serif{\b{\${h}}}.&squot;;&squot;el triángulo \serif{\b{\${ACD}}} a la izquierda, reduce al caso anterior&squot;' tipo='vector' ">
+      <param name="A_02" value="id='Calculos()' algoritmo='sí' expresión='x' inicio='H.x=-4' hacer='C.x=min(max(B.x+1,C.x),B.x+4);BC=C.x-B.x;A.x=min(max(A.x,B.x),B.x+4*BC);A.y=max(min(A.y,4),-4);H.y=A.y;signo=(H.y<0)-(H.y>=0);Base.y=2*signo;B.x=-1;B.y=0;C.y=0;D.x=A.x+BC;D.y=H.y;A.y=H.y;caso=(A.x>B.x)?1+ent((A.x-B.x)/BC):0;;' tipo='función' ">
+      <param name="A_03" value="id='unir()' algoritmo='sí' expresión='x' hacer='t=0;A.x=A.x-BC;cortar=0;status=0;;' tipo='función' ">
+      <param name="A_04" value="id='Guardar()' algoritmo='sí' expresión='x' hacer='A0.x=A.x;A0.y=A.y;B0.x=B.x;B0.y=B.y;C0.x=C.x;C0.y=C.y;D0.x=D.x;D0.y=D.y;' tipo='función' ">
+      <param name="A_05" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='explica=1' ">
+      <param name="A_06" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='Calculos();;' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='El área de cualquier paralelogramo de base \serif{\b{\${b}}} y altura \serif{\b{\${h}}} es igual a la de un rectángulo de lados \serif{\b{\${b}}} y \serif{\b{\${h}}}.' ancho='1' fuente puntos='21' align='a_center' anchor='a_top_center' info='Texto instrucción' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ff000000' coord_abs='sí' expresión='(20,65,984,70)' relleno='ffffff' ancho='1' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[40,75]' texto='Esto puede demostrarse por disección, reduciendo cada caso a uno anterior, hasta llegar al rectángulo. Elija un caso, realice las acciones de \b{Cortar}, \b{Trasladar} y \b{Reducir} y repita hasta llegar al rectángulo.' decimales='0' fijo='no' ancho='E1._w-80' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[20,150]' texto='Puede cambiar el \nparalelogramo \narrastrando los \npuntos \serif{\b{\${A}}} y \serif{\b{\${C}}}.' decimales='0' fijo='no' ancho='1' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E1' tipo='segmento' color='000000' coord_abs='no' expresión='(H.x,H.y)(H.x,0)' tamaño='3' ancho='2' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='20' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='(H.x+0.2,H.y/2)' texto='altura = h' ancho='2' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_center_left' ">
+      <param name="G_07" value="espacio='E1' tipo='segmento' color='000000' coord_abs='no' expresión='(B.x,Base.y)(C.x,Base.y)' tamaño='3' ancho='2' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='20' info='base = b' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='((B.x+C.x)/2,Base.y-0.1)' texto='base = b' ancho='2' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' ">
+      <param name="G_09" value="espacio='E1' tipo='segmento' color='8020303a' coord_abs='no' expresión='(H.x,s*H.y)(B.x+s*(A.x-B.x),s*H.y)' familia='s' s.intervalo='[0,1]' s.pasos='1' tamaño='0' ancho='1' ">
+      <param name="G_10" value="espacio='E1' tipo='segmento' color='8020303a' coord_abs='no' expresión='(B.x+s*BC,0)(B.x+s*BC,Base.y)' familia='s' s.intervalo='[0,1]' s.pasos='1' tamaño='0' ancho='1' ">
+      <param name="G_11" value="espacio='E1' tipo='polígono' color='20303a' dibujar-si='!cortar' coord_abs='no' expresión='(A.x,A.y)(B.x,B.y)(C.x,C.y)(D.x,D.y)(A.x,A.y)' relleno='ffdd59' ancho='0' ">
+      <param name="G_12" value="espacio='E1' tipo='polígono' color='20303a' dibujar-si='cortar&(caso==1)' coord_abs='no' expresión='(A.x,H.y)(B.x,B.y)(C.x,C.y)(C.x,H.y)(A.x,H.y)' relleno='ffdd59' ancho='0' ">
+      <param name="G_13" value="espacio='E1' tipo='polígono' color='20303a' dibujar-si='cortar&(caso==1)' coord_abs='no' expresión='(C.x-t*BC,H.y)(C.x-t*BC,C.y)(D.x-t*BC,D.y)(C.x-t*BC,H.y)' relleno='ffdd59' ancho='2' ">
+      <param name="G_14" value="espacio='E1' tipo='polígono' color='20303a' dibujar-si='cortar&(caso>1)' coord_abs='no' expresión='(A.x,A.y)(B.x,B.y)(C.x,C.y)(A.x,A.y)' relleno='ffdd59' ancho='0' ">
+      <param name="G_15" value="espacio='E1' tipo='polígono' color='20303a' dibujar-si='cortar&(caso>1)' coord_abs='no' expresión='(A.x-t*BC,A.y)(C.x-t*BC,C.y)(D.x-t*BC,D.y)(A.x-t*BC,A.y)' relleno='ffdd59' ancho='2' ">
+      <param name="G_16" value="espacio='E1' tipo='polígono' color='20303a' coord_abs='no' expresión='(B.x,H.y)(B.x,B.y)(C.x,C.y)(C.x,H.y)(B.x,H.y)' ancho='1' ">
+      <param name="G_17" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(t==0)' coord_abs='no' expresión='(A.x,A.y-0.4*signo)' texto='A' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_center_center' info='Punto A' ">
+      <param name="G_18" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(t==0)' coord_abs='no' expresión='(B.x,B.y+0.4*signo)' texto='B' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_center_center' info='Punto B' ">
+      <param name="G_19" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(t==0)' coord_abs='no' expresión='(C.x,C.y+0.4*signo)' texto='C' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_center_center' info='Punto C' ">
+      <param name="G_20" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(t==0)' coord_abs='no' expresión='(D.x,D.y-0.4*signo)' texto='D' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_center_center' info='Punto D' ">
+      <param name="G_21" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(t==0)&(caso==1)&cortar' coord_abs='no' expresión='(C.x,H.y-0.4*signo)' texto='H' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_center_center' info='Punto H' ">
+      <param name="G_22" value="espacio='E1' tipo='texto' color='ffffff' dibujar-si='status==1' coord_abs='sí' expresión='[160,540]' texto='[texto[min(caso,2)]]' decimales='0' fijo='no' ancho='1' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_23" value="espacio='E1' tipo='texto' color='ffffff' dibujar-si='(status==3)' coord_abs='sí' expresión='[220,540]' texto='Así el caso [caso] se reduce al caso [caso-1]' decimales='0' fijo='no' ancho='1' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_24" value="espacio='E1' tipo='texto' color='ffffff' dibujar-si='(status==0)&(caso==0)' coord_abs='sí' expresión='[E1._w/2,580]' texto='Seleccione un caso distinto del 0 o pase a la siguiente escena' decimales='0' fijo='no' ancho='1' fuente puntos='19' align='a_left' anchor='a_top_center' ">
+      <param name="G_25" value="espacio='E2' tipo='rectángulo' fondo='sí' color='273c75' coord_abs='sí' expresión='(1,1,E2._w-2,E2._h-2)' ancho='3' ">
+      <param name="G_26" value="espacio='E2' tipo='rectángulo' fondo='sí' color='20303a' coord_abs='sí' expresión='(0,0,E2._w,35)' relleno='273c75' ancho='0' ">
+      <param name="G_27" value="espacio='E2' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,50]' texto='En esta sección se verá que la fórmula del área del triángulo:\n\c{\serif{\b{\${\frac{base × altura}{2}}}}}\n\nse obtiene fácilmente de la del paralelogramo:\n\c{\serif{\b{\${base × altura}}}}\n\nque tiene su origen en la Proposición 35 del Libro I de \b{\i{Los Elementos}}. \n\nMostramos que la fórmula del área del paralelogramos puede obtenerse usando disección de figuras planas lineales, o sea, uniones de polígonos ajenos (que no se tocan), excepto tal vez en sus fronteras (orillas).' fijo='no' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="Animación" value="pausa='40' controles='no' auto='no' repetir='no' inicio='t=0;dt=0.0625;status=2' hacer='t=min(1,t+dt);animando=(t<1);status=(t==1)?3:2;;;' mientras='animando' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

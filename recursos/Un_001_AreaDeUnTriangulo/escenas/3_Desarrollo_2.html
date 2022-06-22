@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Desarrollo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' ancho='100%' alto='100%' fijo='sí' escala='30' O.x='-280' O.y='30' fondo='2980b9' red='no' red10='no' ejes='no' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='E1._w/2+10' y='65' ancho='482' alto='540' fijo='sí' red='no' red10='no' ejes='no' ">
+      <param name="C_01" value="id='A' tipo='gráfico' espacio='E1' color='222222' color-int='804488ff' tamaño='6' expresión='(6,-2)' dibujar-si='0' ">
+      <param name="C_02" value="id='B' tipo='gráfico' espacio='E1' color='222222' color-int='804488ff' tamaño='6' expresión='(-1,4)' dibujar-si='0' ">
+      <param name="C_03" value="id='C' tipo='gráfico' espacio='E1' color='222222' color-int='804488ff' tamaño='6' expresión='(-4,-3)' dibujar-si='0' ">
+      <param name="C_04" value="id='scroll' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' nombre='_nada_' expresión='((E2._w-120)/2,E2._h-35,120,30)' incr='1' min='0' max='4' visible='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='dist(x1,y1,x2,y2)' algoritmo='no' expresión='sqrt(abs((x2-x1)^2+(y2-y1)^2))' tipo='función' ">
+      <param name="A_02" value="id='Pn' vector='sí' evaluar='una-sola-vez' tamaño='20' tipo='vector' ">
+      <param name="A_03" value="id='Px' vector='sí' evaluar='una-sola-vez' tamaño='20' tipo='vector' ">
+      <param name="A_04" value="id='Py' vector='sí' evaluar='una-sola-vez' tamaño='20' tipo='vector' ">
+      <param name="A_05" value="id='defPoints()' algoritmo='sí' expresión='x' inicio='nP=0' hacer='Pn[nP]=&squot;A&squot;;Px[nP]=A.x;Py[nP]=A.y;nP=nP+1;Pn[nP]=&squot;B&squot;;Px[nP]=B.x;Py[nP]=B.y;nP=nP+1;Pn[nP]=&squot;C&squot;;Px[nP]=C.x;Py[nP]=C.y;nP=nP+1;Pn[nP]=&squot;P&squot;;Px[nP]=HC.x;Py[nP]=HC.y;nP=nP+1;Pn[nP]=&squot;c&squot;;Px[nP]=(A.x+B.x)/2;Py[nP]=(A.y+B.y)/2;nP=nP+1;Pn[nP]=&squot;a&squot;;Px[nP]=(B.x+C.x)/2;Py[nP]=(B.y+C.y)/2;nP=nP+1;Pn[nP]=&squot;b&squot;;Px[nP]=(C.x+A.x)/2;Py[nP]=(C.y+A.y)/2;nP=nP+1;Pn[nP]=&squot;x&squot;;Px[nP]=(HC.x+B.x)/2;Py[nP]=(HC.y+B.y)/2;nP=nP+1;Pn[nP]=&squot;h&squot;;Px[nP]=(HC.x+C.x)/2;Py[nP]=(HC.y+C.y)/2;nP=nP+1' tipo='función' ">
+      <param name="A_06" value="id='move_scroll()' algoritmo='sí' expresión='0' local='pos_scroll; lim_max_1; lim_max_2' inicio='min_s=-26; max_s=-scroll_s._h-minino_s+27' hacer='scroll_g.y=scroll_s.mouse_y;scroll_g.y=max(max_s, min(min_s,scroll_g.y));;pos_scroll=abs(scroll_g.y-min_s);;lim_max_1=abs(max_s - min_s);lim_max_2=abs(-1450 - 0);scroll=-pos_scroll*lim_max_2/lim_max_1' tipo='función' ">
+      <param name="A_07" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_08" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='a=dist(B.x,B.y,C.x,C.y);b=dist(C.x,C.y,A.x,A.y);c=dist(A.x,A.y,B.x,B.y);tC=((C.x-A.x)*(B.x-A.x)+(C.y-A.y)*(B.y-A.y))/c^2;HC.x=A.x+(B.x-A.x)*tC;HC.y=A.y+(B.y-A.y)*tC;defPoints();step=(scroll<0)?1:step;_step=(scroll<-1250)?0:step;;(scroll_s.mouse_pressed||scroll_g.activo)?move_scroll():&squot;&squot;;' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='La \b{Fórmula de Herón}. El área de un triángulo a partir de sus lados.' ancho='1' fuente puntos='21' align='a_center' anchor='a_top_center' info='Texto instrucción' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='e7000000' coord_abs='sí' expresión='(20,65,E2._w-1,95)' relleno='ffffff' ancho='1' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[45,80]' texto='\b{\i{\color{07295e}{Fórmula de Herón}}}\n\serif{\b{\${A = \sqrt{}{s(s − a)(s − b)(s − c)}}}}, donde \serif{\b{\${s = \frac{a + b + c}{2}}}}' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E1' tipo='rectángulo' fondo='sí' color='e7000000' coord_abs='sí' expresión='(20,E1._h-95-20,E2._w-1,95)' relleno='ffffff' ancho='1' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[40,E1._h-100]' texto='\b{\i{\color{07295e}{Fórmula de Herón}}} (bis)\n\serif{\b{\${A = \frac{1}{4} \sqrt{}{2 (a^2 b^2 + a^2 c^2 + b^2 c^2) − (a^4 + b^4 + c^4)}}}}  ' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E1' tipo='polígono' color='000000' coord_abs='no' expresión='(A.x,A.y)(B.x,B.y)(C.x,C.y)(A.x,A.y)' relleno='ff2255' ancho='2' ">
+      <param name="G_07" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='scroll>0' coord_abs='no' expresión='(C.x,C.y)(HC.x,HC.y)' tamaño='3' ancho='2' ">
+      <param name="G_08" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='scroll>0' coord_abs='no' expresión='(B.x,B.y)(HC.x,HC.y)' tamaño='2' ancho='1' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='scroll>0' coord_abs='no' expresión='(Px[s],Py[s])' familia='s' s.intervalo='[0,nP-1]' s.pasos='nP-1' texto='[Pn[s]]' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_center_center' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='scroll==0' coord_abs='no' expresión='(Px[s],Py[s])' familia='s' s.intervalo='[0,2]' s.pasos='2' texto='[Pn[s]]' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_center_center' ">
+      <param name="G_11" value="espacio='E2' tipo='texto' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[scroll+1] / 5' decimales='0' ancho='1' negrita='sí' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_12" value="espacio='E2' tipo='rectángulo' fondo='sí' color='ff000000' coord_abs='sí' expresión='(0,0, E2._w-1, E2._h-1)' ancho='1' ">
+      <param name="G_13" value="espacio='E2' tipo='texto' color='000000' dibujar-si='scroll==0' coord_abs='sí' expresión='[20,15]' texto='\b{Demostración}\n\nSean \serif{\b{\${a}}}, \serif{\b{\${b}}}, \serif{\b{\${c}}} los lados del \serif{\b{\${∆ ABC}}}. Llamemos \serif{\b{\${h}}} a la altura correspondiente a la base \serif{\b{\${c}}}. Sea \serif{\b{\${x}}} la distancia del punto \serif{\b{\${B}}} al pié \serif{\b{\${P}}} de \serif{\b{\${h}}}.\n\nAplicando el \b{\i{\color{07295e}{Teorema de Pitágoras}}} al \serif{\b{\${∆ CPB}}} : \n\c{\serif{\b{\${x^2 + h^2 = a^2}}}}\n\nAplicando el \b{\i{\color{07295e}{Teorema de Pitágoras}}} al \serif{\b{\${∆ APC}}} :\n\c{\serif{\b{\${(c − x)^2 + h^2 = b^2}}}}\n\nRestando la segunda ecuación de la primera se tiene\n\c{\serif{\b{\${x^2 − (c − x)^2 = a^2 − b^2}}}}' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_14" value="espacio='E2' tipo='texto' color='000000' dibujar-si='scroll==1' coord_abs='sí' expresión='[20,15]' texto='Simplificando se llega a:\n\c{\serif{\b{\${2 c x = a^2 − b^2 + c^2}}}}\n\nDividiendo ambos miembros por \serif{\b{\${2 c}}} : \n\c{\serif{\b{\${x = \frac{a^2 − b^2 + c^2}{2 c}}}}}\n\nDespejando \serif{\b{\${h}}} de la primera ecuación y sustituyendo \serif{\b{\${x}}} : \n\c{\serif{\b{\${h = \sqrt{}{a^2 − (\frac{a^2 − b^2 + c^2}{2 c})^2}}}}}' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_15" value="espacio='E2' tipo='texto' color='000000' dibujar-si='scroll==2' coord_abs='sí' expresión='[20,15]' texto='El área del triángulo es entonces:\n\c{\serif{\b{\${A = \frac{h c}{2} = \frac{1}{4} \sqrt{}{4 a^2 c^2 − (a^2 − b^2 + c^2)^2}}}}}\n\nDesarrollando el trinomio cuadrado dentro del radical y simplificando:\n\n\serif{\b{\${A = \frac{1}{4} \sqrt{}{2 (a^2b^2 + a^2c^2 + b^2c^2) − (a^4 + b^4 + c^4)}}}}\n\nÉsta es ya la Fórmula de Herón, pero hay otra manera de escribirla que es más conocida y fácil de recordar. Para llegar a ella hay que justificar las siguientes igualdades.' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_16" value="espacio='E2' tipo='texto' color='000000' dibujar-si='scroll==3' coord_abs='sí' expresión='[20,15]' texto='\serif{\b{\${A = \frac{1}{4} \sqrt{}{(a^2+b^2)c^2 + (a^2+b^2)c^2 − (a^4+b^4+c^4)}}}}\n\n\serif{\b{\${A = \frac{1}{4} \sqrt{}{(a+b)^2c^2 + (a−b)^2c^2 + 2abc^2 − a^4 − b^4 − c^4)}}}}\n\n\serif{\b{\${A = \frac{1}{4} \sqrt{}{(a+b)^2c^2 + (a−b)^2c^2 − (a+b)^2(a−b)^2 − c^4)}}}}\n\n\serif{\b{\${A = \frac{1}{4} \sqrt{}{((a+b)^2 − c^2)(c^2 − (a−b)^2)}}}}\n\n\serif{\b{\${A = \frac{1}{4} \sqrt{}{(a+b+c)(−a+b+c)(a−b+c)(a+b−c)}}}}' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_17" value="espacio='E2' tipo='texto' color='000000' dibujar-si='scroll==4' coord_abs='sí' expresión='[20,15]' texto='Ahora, definiendo el semiperímetro:\n\c{\serif{\b{\${s = \frac{a + b + c}{2}}}}}\n\nse obtiene la famosa \b{\i{\color{07295e}{Fórmula de Herón}}}:\n\c{\serif{\b{\${A = \sqrt{}{s (s − a)(s − b)(s − c)}}}}}' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

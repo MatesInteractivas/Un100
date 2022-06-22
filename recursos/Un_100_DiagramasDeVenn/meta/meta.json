@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Conjuntos", 
+    "Lógica"
+  ], 
+  "titulo": "Diagramas de Venn", 
+  "descripcion": "Los Diagramas de Venn son representaciones usadas en la rama de la lógica matemática conocida como teoría de conjuntos. Estos diagramas se usan para representar la agrupación de los elementos en conjuntos y las diferentes combinaciones lógicas en uno o más atributos. Los objetivos a lograr en esta unidad son: * Representar, en un diagrama de Venn, uno, dos o tres atributos. * Representar, en un diagrama de Venn, las operaciones entre conjuntos. * Demostrar, gráficamente, las leyes de Morgan", 
+  "resena": "Combinaciones lógicas de atributos mediante diagramas usados en teoría de conjuntos. Operaciones entre conjuntos.",
+  "id": "_Un_100_DiagramasDeVenn"
+}

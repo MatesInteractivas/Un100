@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Algebra", 
+    "Geometría"
+  ], 
+  "titulo": "El caleidoscopio y la Teoría de Grupos", 
+  "descripcion": "Se presenta la geometría del caleidoscopio y se exploran las transformaciones (reflexiones, traslaciones, rotaciones y pasos) involucradas en la producción de las imágenes de un caleidoscopio por medio de la reflexión respecto a los tres lados de un triángulo equilátero. Esto se hace con el objeto de llevar al estudiante a descubrir y conocer las transformaciones lineales isométricas del plano y, a través de ellas, el origen de la Teoría de Grupos.",
+  "resena": "Transformaciones lineales isométricas y la teoría de grupos a través del ejemplo del caleidoscopio.",
+  "id": "_Un_040_CaleidoscopioYTeoriaDeGrupos"
+}

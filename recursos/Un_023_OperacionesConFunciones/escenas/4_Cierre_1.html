@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cierre</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='INFO' x='20' y='65' ancho='984' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='ninfo' tipo='numérico' interfaz='pulsador' región='interior' espacio='INFO' expresión='((INFO._w-120)/2,INFO._h-35,120,30)' valor='0' incr='1' min='0' max='2' discreto='no' decimales='0' fijo='sí' visible='no' acción='calcular' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=1' hacer='ninfo=0;Ninfos=3' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Las operaciones con funciones y sus gráficas' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='INFO' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(INFO._w/2,INFO._h-22)' texto='[ninfo+1] / 3' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_03" value="espacio='INFO' tipo='texto' fondo='no' color='000000' dibujar-si='ninfo==0' coord_abs='sí' expresión='[20,20]' texto='\b{Conclusiones}\n\nPara funciones lineales:\n\n• La suma de dos funciones lineales es lineal con pendiente igual a la suma de las pendientes y ordenada al origen igual a la suma de las ordenadas al origen.\n\n• La diferencia de dos funciones lineales es lineal con pendiente igual a la diferencia de las pendientes y ordenada al origen igual a la diferencia de las ordenadas al origen.\n\n• El producto de dos funciones lineales en una función cuadrática. Su gráfica es una parábola.\n\n• El cociente de dos funciones lineales tiene una singularidad en el cero del denominador y la gráfica es una hipérbola.' decimales='2' fijo='sí' ancho='INFO._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='INFO' tipo='texto' fondo='no' color='000000' dibujar-si='ninfo==1' coord_abs='sí' expresión='[20,20]' texto='\b{Conclusiones}\n\n• La composición de funciones lineales \serif{\b{\${f(g(x))}}} es lineal, la pendiente es la de \serif{\b{\${f}}} y la ordenada al origen es la suma de las ordenada al origen es el valor de \serif{\b{\${f}}} en la ordenada al origen de \serif{\b{\${g}}}, es decir \serif{\b{\${f(g(d))}}}.\n\nPara funciones no lineales en general:\n\n• Los ceros de una función que aparece como denominador en el cociente, es decir, los ceros de \serif{\b{\${g(x)}}} en \serif{\b{\${h(x) = f(x) / g(x)}}} o los de \serif{\b{\${f(x)}}} en \serif{\b{\${h = g(x) / f(x)}}}, se convierten en singularidades de la función \serif{\b{\${h(x)}}}.' decimales='2' fijo='sí' ancho='INFO._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='INFO' tipo='imagen' fondo='no' dibujar-si='ninfo==1' coord_abs='no' expresión='(0,-2.25,0.5,0.5)' archivo='images/ejemplo00.png' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='INFO' tipo='texto' fondo='no' color='000000' dibujar-si='ninfo==2' coord_abs='sí' expresión='[20,20]' texto='\b{Conclusiones}\n\nAlgunos ejemplos interesantes:\n\n• Cuando \serif{\b{\${f(x) = a*sen(b*(x-c))}}}, \serif{\b{\${g(x) = d*sen(q*(x-e))}}} y \serif{\b{\${h(x)=f(x)*g(x)}}}, puede observarse la imagen típica de una onda con amplitud modulada.\n\n• Cambiado \serif{\b{\${f}}} a \b{f(x)=a*exp(-((x-c)/b)^2)} y manteniendo \serif{\b{\${g}}} y \serif{\b{\${h}}} como en el punto anterior, se observa lo que podría llamarse un paquete de onda; \serif{\b{\${c}}} representa la velocidad del paquete y \serif{\b{\${q}}} la frecuencia de la onda transportada por el paquete.' decimales='2' fijo='sí' ancho='INFO._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='INFO' tipo='imagen' fondo='no' dibujar-si='ninfo==2' coord_abs='no' expresión='(-5,-2.5,0.5,0.5)' archivo='images/ejemplo01.png' rotini='0' opacidad='1' ">
+      <param name="G_08" value="espacio='INFO' tipo='imagen' fondo='no' dibujar-si='ninfo==2' coord_abs='no' expresión='(5,-2.5,0.5,0.5)' archivo='images/ejemplo02.png' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Teoría de categorías", 
+    "Fundamentos"
+  ], 
+  "titulo": "Las Categorías 1", 
+  "descripcion": "Se introduce el estudio de las categorías, functores y transformaciones naturales. Para esto se presenta el concepto de categoría que es una generalización de la teoría de conjuntos clásica y se demuestra su aplicabilidad y la conveniencia de aprenderlas.",
+  "resena": "Categorías como generalización de la teoría de conjuntos. Aplicaciones de las mismas.",
+  "id": "_Un_045_LasCategorias_1"
+}

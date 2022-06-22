@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Derivada direccional", 
+  "descripcion": "Se introduce el concepto de derivada direccional. Asimismo, se muestran sus propiedades y su relación con el gradiente.",
+  "resena": "Generalización de la derivada a funciones multivariadas y usos del gradiente.",
+  "id": "_Un_033_DerivadaDireccional"
+}

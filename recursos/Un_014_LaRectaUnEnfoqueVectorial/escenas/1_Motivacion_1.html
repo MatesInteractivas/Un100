@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Motivación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E3' x='(E1._w-860)/2' y='75' ancho='860' alto='475' dibujar-si='1' fijo='sí' escala='55' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='f0f8fa' red='b8c4c8' red10='889498' ejes='405860' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='play' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='((E1._w-35)/2,E1._h-65,35,35)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/play.svg' acción='calcular' parámetro='t=0;playing=1;audio.play()' dibujar-si='playing==0' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022' ">
+      <param name="C_02" value="id='stop' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='((E1._w-35)/2,E1._h-65,35,35)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/stop.svg' acción='calcular' parámetro='playing=0;audio.stop()' dibujar-si='playing==1' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022' ">
+      <param name="C_03" value="id='audio' tipo='audio' espacio='E1' expresión='(0,0)' dibujar-si='0' archivo='audio/recta.ogg' ">
+      <param name="A_01" value="id='aleatorio(x)' algoritmo='sí' expresión='aleatorio' inicio='x=rnd' hacer='aleatorio=(x<0.5)?-rnd:aleatorio;aleatorio=(x=0.5)?0:aleatorio;aleatorio=(x>0.5)?rnd:aleatorio' tipo='función' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='v4=3*aleatorio(x);v5=3*aleatorio(x);' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';' ">
+      <param name="A_04" value="id='animar' evento='sí' condición='playing' acción='animar' ejecución='alternar' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='La recta, un enfoque vectorial' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' info='Texto instrucción' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ff000000' coord_abs='sí' expresión='((E1._w-880)/2,45+20,880,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' info='Panel fondo video' ">
+      <param name="G_03" value="espacio='E3' tipo='punto' fondo='no' color='ff00ff' dibujar-si='(t>=5)&(t<15)' coord_abs='no' expresión='(s,v4*s)' familia='s' s.intervalo='[-pi,pi]' s.pasos='10' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_04" value="espacio='E3' tipo='punto' fondo='no' color='0000ff' dibujar-si='(t>=15)&(t<25)' coord_abs='no' expresión='(2*sin(s),2*cos(s))' familia='s' s.intervalo='[-pi,pi]' s.pasos='10' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_05" value="espacio='E3' tipo='punto' fondo='no' color='00ffff' dibujar-si='(t>=25)&(t<35)' coord_abs='no' expresión='(s,0.5*s^2-2)' familia='s' s.intervalo='[-pi,pi]' s.pasos='18' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_06" value="espacio='E3' tipo='punto' fondo='no' color='00ff00' dibujar-si='(t>=35)&(t<45)' coord_abs='no' expresión='(3*sin(s),1.5*cos(s))' familia='s' s.intervalo='[-pi,pi]' s.pasos='18' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_07" value="espacio='E3' tipo='punto' fondo='no' color='808080' dibujar-si='(t>=45)&(t<55)' coord_abs='no' expresión='(sec(s),tan(s))' familia='s' s.intervalo='[-5,5]' s.pasos='18' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_08" value="espacio='E3' tipo='punto' fondo='no' color='ffc800' dibujar-si='(t>=55)&(t<65)' coord_abs='no' expresión='(s,exp(s)-3)' familia='s' s.intervalo='[-4,4]' s.pasos='18' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_09" value="espacio='E3' tipo='punto' fondo='no' color='ffafaf' dibujar-si='(t>=65)&(t<80)' coord_abs='no' expresión='(cos(0.5*s)-cos(s),sin(0.5*s)-sin(s))' familia='s' s.intervalo='[-2*pi,2*pi]' s.pasos='36' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_10" value="espacio='E3' tipo='curva' fondo='no' color='20303a' dibujar-si='t>80' coord_abs='no' expresión='(t,v4*t)' parámetro='t' t.intervalo='[-2*pi,2*pi]' t.pasos='8' ancho='2' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_11" value="espacio='E3' tipo='punto' fondo='no' color='ff00ff' dibujar-si='t>=80' coord_abs='no' expresión='(s,v4*s)' familia='s' s.intervalo='[-pi,pi]' s.pasos='10' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_12" value="espacio='E3' tipo='punto' fondo='no' color='20303a' dibujar-si='t<5' coord_abs='no' expresión='(v4,v5)' decimales='2' fijo='sí' tamaño='15' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="Animación" value="pausa='500' controles='no' auto='sí' repetir='no' inicio='t=0' hacer='t=t+1;playing=(t<240)?playing:0;' mientras='playing' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

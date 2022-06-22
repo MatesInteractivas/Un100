@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Motivación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='menu' tipo='numérico' interfaz='menú' región='interior' espacio='E2' nombre='  Simetría  ' expresión='((E2._w-300)/2,E2._h-55,300,35)' valor='0' decimales='2' fijo='sí' visible='no' opciones='radial,birradial,tetrarradial,pentarradial,otros ejemplos' dibujar-si='(av>0)&(av<3)' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_02" value="id='av' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' expresión='(703,570,120,30)' valor='0' incr='1' min='0' max='3' discreto='no' decimales='2' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(av==0)' coord_abs='no' expresión='(0,0,0.5,0.5)' archivo='images/planosAnatomicos.jpg' rotini='0' opacidad='1' ">
+      <param name="G_02" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(menu==0)&(av>0)&(av<3)' coord_abs='no' expresión='(0,0.5,0.4,0.4)' archivo='images/bilateral.jpg' rotini='0' opacidad='1' ">
+      <param name="G_03" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(menu==1)&(av>0)&(av<3)' coord_abs='no' expresión='(0,0.5,0.4,0.4)' archivo='images/birradial.jpg' rotini='0' opacidad='1' ">
+      <param name="G_04" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(menu==2)&(av>0)&(av<3)' coord_abs='no' expresión='(0,0.5,0.4,0.4)' archivo='images/tetrarradial.jpg' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(menu==3)&(av>0)&(av<3)' coord_abs='no' expresión='(0,0.5,0.4,0.4)' archivo='images/pentarradial.jpg' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(menu==4)&(av>0)&(av<3)' coord_abs='no' expresión='(0,0.5,0.4,0.4)' archivo='images/otros.jpg' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(av==3)' coord_abs='no' expresión='(0,0,0.6,0.6)' archivo='images/simetriaImperfecta.jpg' rotini='0' opacidad='1' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='La simetría en la naturaleza' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_09" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(20+E2._w+20,65,482,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(763,583)' texto='[av+1] / 4' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='av==0' coord_abs='sí' expresión='[E2._w+60,85]' texto='En la naturaleza podemos observar infinidad de ejemplos de simetría. En animales y plantas en general se observa la simetría bilateral (respecto al plano sagital). \n\nLos humanos son un claro ejemplo de este tipo de simetría, así como muchas otras especies animales. ' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_12" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='av==1' coord_abs='sí' expresión='[E2._w+60,85]' texto='Sin embargo hay organismos que tienen también otras simetrías. En biología se habla de simetría radial o bilateral, birradial, tetrarradial o pentarradial. En las imágenes puedes ver ejemplos de cada una. \n\nLa simetría radial sería lo que llamamos simetría axial en matemáticas, que es la simetría respecto a una recta: una figura \serif{\b{\${A}}} es simétrica con respecto a una recta \serif{\b{\${L}}} si para cualquier punto \serif{\b{\${P}}} en \serif{\b{\${A}}}, el punto \serif{\b{\${P&squot;}}} tal que \serif{\b{\${L&squot;}}} es la perpendicular en el punto medio de \serif{\b{\${PP&squot;}}} y también está en \serif{\b{\${A}}}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_13" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='av==2' coord_abs='sí' expresión='[E2._w+60,85]' texto='Observa que en todos los ejemplos, estos organismos son simétricos respecto a una recta para algunos planos perpendiculares al eje, pero no para cualquier plano que lo intersecte. \n\nEn realidad los organismos son simétricos con respecto a planos de simetría, no a ejes. Una figura \serif{\b{\${A}}} es simétrica con respecto a un plano \serif{\b{\${P}}} si para cada punto \serif{\b{\${S}}} en \serif{\b{\${A}}}, el punto \serif{\b{\${S&squot;}}} tal que \serif{\b{\${P}}} es perpendicular al segmento \serif{\b{\${SS&squot;}}} en su punto medio, pertenece también a \serif{\b{\${A}}}. Se dice que \serif{\b{\${P}}} es un plano de simetría de \serif{\b{\${A}}}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_14" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='av==3' coord_abs='sí' expresión='[E2._w+60,85]' texto='Todos estos son ejemplos de la importancia que tiene la simetría en la configuración de nuestro universo, pero como habrás notado, la simetría en la naturaleza es una simetría imperfecta, siempre podemos encontrar pequeñas diferencias entre un lado y otro del plano de simetría. En cambio la simetría de figuras geométricas es una simetría perfecta.\n\nEn esta unidad didáctica hablaremos sólo de las simetrías de curvas generadas por la gráfica de una función, ya sea en el plano cartesiano o en el plano polar.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

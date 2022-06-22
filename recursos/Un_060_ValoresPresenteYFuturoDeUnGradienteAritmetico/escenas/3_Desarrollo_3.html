@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E3' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='1' discreto='no' decimales='0' fijo='sí' visible='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='xi=0;yi=0;otro=1' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='A.x=(A.x<-.8)?-.8:A.x;B.x=(B.x<-.8)?-.8:B.x;C.x=(C.x<-.8)?-.8:C.x;A.x=(A.x>9.5)?9.5:A.x;B.x=(B.x>9.5)?9.5:B.x;C.x=(C.x>9.5)?9.5:C.x;A.y=(A.y<-.7)?-.7:A.y;B.y=(B.y<-.7)?-.7:B.y;C.y=(C.y<-.7)?-.7:C.y;A.y=(A.y>8.5)?8.5:A.y;B.y=(B.y>8.5)?8.5:B.y;C.y=(C.y>8.5)?8.5:C.y' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Ejemplos resueltos de gradientes Aritméticos' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 2' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='\b{Problema 1:} Se calcula que una empresa que está comenzando tendrá costos fijos de \serif{\b{\${$400.000}}} mensuales y costos variables de \serif{\b{\${$100}}} por unidad. Una vez comienza, y mientras se hacen los ajustes y pruebas, transcurren cuatro meses.\n\nEn el quinto mes, comenzará la producción, con \serif{\b{\${500}}} unidades mensuales que irán aumentando en \serif{\b{\${200}}} cada mes hasta llegar a \serif{\b{\${2500}}} unidades, momento a partir del cual la producción seguirá estable. Si se espera vender la fábrica transcurridos tres años, ¿cuál será el costo de la producción, en dinero de hoy por los tres años de funcionamiento? La tasa de interés es del \serif{\b{\${3%}}} mensual.\n\n\b{Análisis:} El diagrama de flujo de caja es:' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==0' coord_abs='no' expresión='(0,-3.8,0.6,0.6)' archivo='images/3_desarrollo_3_1.svg' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E3' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='\b{Solución:}\n• Hallamos el valor presente de los costos fijos:\n\serif{\b{\${P_1 = 400.000 \frac{(1.03)^{36}} - 1}{0.03(1.03)^{36}} = $8.732.901}}}\n• Hallamos el valor presente del gradiente de los costos variables:\n\serif{\b{\${P_2 = \[50.000 (\frac{(1.03)^{11} - 1}{0.03(1.03)^{11}}) + \frac{20.000}{0.03} (\frac{(1.03)^{11} - 1}{0.03(1.03)^{11}} -}}}\n       \serif{\b{\${- \frac{11}{(1.03)^{11}})\] \frac{1}{(1.03)^4} = $1.184.612}}}\n• Hallamos el valor presente de los costos variables con producción estable:\n\serif{\b{\${P_3 = 250.000 (\frac{(1.03)^{21} - 1}{0.03(1.03)^{21}}) (\frac{1}{(1.03)^{15}}) = $2.473.579.4}}}\nLos costos totales a precios de hoy son:\n\serif{\b{\${P_1 + P_2 + P_3 = $8.732.901 + $1.184.612 + $2.473.579.4}}}\n                           \serif{\b{\${ = $12.391.092.4}}}' decimales='2' fijo='sí' ancho='E3._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='\b{Problema 2:} Una fábrica se comprometió a entregar \serif{\b{\${200}}} unidades de su producto al principio de cada mes y durante un año. El precio por unidad del artículo es de \serif{\b{\${$3.000}}} el primer mes y aumenta \serif{\b{\${$50}}} cada mes. Si la empresa ahorra la mitad de sus ingresos en una cuenta que paga el \serif{\b{\${2.5%}}} al final de cada mes, ¿cuánto tendrá ahorrado al final del año?\n\n\b{Análisis:} El valor de lo vendido al inicio del primer mes es: \serif{\b{\${$200×3.000 = 600.000}}}; el valor de lo vendido al inicio del segundo mes es: \serif{\b{\${$200×3.050 = 610.000}}}; el valor de lo vendido al inicio del tercer mes es: \serif{\b{\${$200×3.100 = 620.000}}}. Y así continúa, de modo que si consigna la mitad, el diagrama de flujo de caja sería: ' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==1' coord_abs='no' expresión='(0,-3.7,0.75,0.75)' archivo='images/3_desarrollo_3_2.svg' rotini='0' opacidad='1' ">
+      <param name="G_08" value="espacio='E3' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='\b{Solución:}\n• Hallamos el valor presente de los costos fijos:\n\serif{\b{\${F_1 = 300.000 \frac{(1.025)^{12} - 1}{0.025} =}}}\n• Hallamos el valor presente del gradiente:\n\serif{\b{\${F_2 = \frac{5.000}{0.025} \[\frac{(1.025)^{12} - 1}{0.025} - 12\] = $359.110.6}}}\nEl valor futuro entonces de ambas series será la suma de cada una de ellas:\n\serif{\b{\${F = $4.138.665.9 + $359.110.6 = $4.497.776.5}}}\n\nSin embargo, como las consignaciones se realizaron al principio de cada mes, la serie corresponde a un gradiente anticipado en una cuota, por lo que es necesario proyectar este futuro un mes adelante para hallar el valor al final del año:\n\serif{\b{\${F = \[$4.697.776.5\](1.025) = $4.610.221}}}\nque es el valor ahorrado a fin de año.' decimales='2' fijo='sí' ancho='E3._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

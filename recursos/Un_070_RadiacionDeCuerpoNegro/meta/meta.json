@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Física", 
+    "termodinámica", 
+    "Física Moderna"
+  ], 
+  "titulo": "Radiación de cuerpo negro", 
+  "descripcion": "En esta unidad didáctica el estudiante conocerá las teorías que se desarrollaron con la intención de darle solución al problema de la radiación del cuerpo negro. Además conocerá el proceso para encontrar el valor de la constante de Planck por medio de el efecto fotoeléctrico.",
+  "resena": "Teorías para explicar la radiación de cuerpo negro. Cálculo de las cte de Planck en el efecto fotoeléctrico.",
+  "id": "_Un_070_RadiacionDeCuerpoNegro"
+}

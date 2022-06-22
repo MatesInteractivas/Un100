@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes.class" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='20' O.y='-30' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E3' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R3' R3='sí' id='E2' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='-30' despl_imagen='expand.' fondo='ffffffff' despliegue='pintor' cortar='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='avanza' tipo='numérico' interfaz='pulsador' región='interior' espacio='E3' expresión='((E3._w-120)/2,E3._h-35,120,30)' valor='0' incr='1' min='0' max='1' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="C_02" value="id='teta' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' nombre='Ángulo' expresión='((E2._w-220)/2,E2._h-55,220,35)' valor='90' incr='10' min='90' max='270' discreto='no' decimales='0' fijo='sí' visible='sí' dibujar-si='avanza' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='18' negrita='no' cursiva='no' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='f1(x)' algoritmo='sí' expresión='sqrt(1-x^2)' dominio='x>cos(ang)' tipo='función' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='teta=90;E2.rot.z=-90;E2.rot.y=10+20;A=2;B=2;avanza=0;;' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='C=A*B*sin(teta*pi/180);ang=teta*pi/180' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='ffffff' dibujar-si='t<20' coord_abs='sí' expresión='[E1._w/2,20]' texto='Regla de la mano derecha' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(522,65,482,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='C>0' coord_abs='no' expresión='(4.9,-0.3,0.5,0.5)' archivo='images/mano.png' rotini='0' opacidad='1' ">
+      <param name="G_04" value="espacio='E3' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E3._w/2,E3._h-22)' texto='[avanza+1] / 2' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_05" value="espacio='E3' tipo='texto' fondo='no' color='000000' dibujar-si='avanza=0' coord_abs='sí' expresión='[20,20]' texto='De acuerdo a la definición del producto vectorial, el momento \serif{\b{\${M_{o} = r × F}}} es perpendicular al plano que contiene a los vectores \serif{\b{\${r}}} y \serif{\b{\${F}}}.\n\nLa dirección del momento se define por el sentido de rotación que se genera al llevar el vector \serif{\b{\${r}}} a la posición del vector \serif{\b{\${F}}}. Si esta rotación, observada desde la punta de \serif{\b{\${M_{o}}}}, es en sentido antihorario, decimos que el momento es positivo, en caso contrario, lo asumiremos negativo.\n\nOtra forma, es usar la regla de la mano derecha. Curve sus dedos, simulando el giro que se genera al llevar \serif{\b{\${r}}} a \serif{\b{\${F}}}. La dirección del pulgar indica el sentido del momento.' decimales='2' fijo='sí' ancho='E3._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E3' tipo='texto' fondo='no' color='000000' dibujar-si='avanza=1' coord_abs='sí' expresión='[20,20]' texto='Observa la siguiente imagen, en la que los dedos siguen la dirección del vector \serif{\b{\${r}}} hacia el vector \serif{\b{\${p}}}, el pulgar señala la dirección del vector resultante del producto vectorial, que para la imagen es \serif{\b{\${L}}}. \n\n\n\n\n\n\n\n\n\n\nAhora, interactúa con la imagen del lado derecho,cambiando los valores del ángulo que forman los dos vectores \serif{\b{\${r}}} y \serif{\b{\${F}}}, observa cómo cambia el valor y la dirección del momento.' decimales='2' fijo='sí' ancho='E3._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='E3' tipo='imagen' fondo='no' dibujar-si='avanza' coord_abs='no' expresión='(-1,0.5,0.55,0.55)' archivo='images/mano2.png' rotini='0' opacidad='1' ">
+      <param name="G_08" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='C<0' coord_abs='no' expresión='(4.9,-0.9,0.5,0.5)' archivo='images/mano.png' rotini='180' opacidad='1' ">
+      <param name="S_01" value="espacio='E2' tipo='segmento' fondo='no' color='0000ff' expresión='(0,0,0)(A,A,0)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='4' Nu='1' ">
+      <param name="S_02" value="espacio='E2' tipo='segmento' fondo='no' color='009600' expresión='(0,0,0)(B,B,0)' rotini='(0,0,teta)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='4' Nu='1' ">
+      <param name="S_03" value="espacio='E2' tipo='segmento' fondo='no' color='rojo' expresión='(0,0,0)(0,0,C)' rotini='(0,0,90)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='4' Nu='1' ">
+      <param name="S_04" value="espacio='E2' tipo='superficie' fondo='no' color='a890908b' color_reverso='a890908b' expresión='x=6*u-3 y=6*v-3 z=0' rotini='(0,0,0)' posini='(0,0,-0.01)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='color' Nu='1' Nv='1' ">
+      <param name="S_05" value="espacio='E2' tipo='curva' fondo='no' color='negro' dibujar-si='(teta<180)&(teta>90)' expresión='x=u y=sqrt(1-u^2) z=0' rotini='(0,0,teta-45)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='2' Nu='20' ">
+      <param name="S_06" value="espacio='E2' tipo='curva' fondo='no' color='negro' dibujar-si='(teta<180)' expresión='x=u y=f1(u) z=0' rotini='(0,0,45)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='2' Nu='20' ">
+      <param name="S_07" value="espacio='E2' tipo='curva' fondo='no' color='negro' dibujar-si='(teta>180)' expresión='x=u y=sqrt(1-u^2) z=0' rotini='(0,0,teta+45)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='2' Nu='20' ">
+      <param name="S_08" value="espacio='E2' tipo='curva' fondo='no' color='negro' dibujar-si='(teta>180)' expresión='x=u y=-f1(u) z=0' rotini='(0,0,45)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='2' Nu='20' ">
+      <param name="S_09" value="espacio='E2' tipo='segmento' fondo='no' color='azul' expresión='(A-.2,A,0)(A,A,0)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='4' Nu='1' ">
+      <param name="S_10" value="espacio='E2' tipo='segmento' fondo='no' color='azul' expresión='(A,A-.2,0)(A,A,0)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='4' Nu='1' ">
+      <param name="S_11" value="espacio='E2' tipo='segmento' fondo='no' color='009600' expresión='(B,B-.2,0)(B,B,0)' rotini='(0,0,teta)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='4' Nu='1' ">
+      <param name="S_12" value="espacio='E2' tipo='segmento' fondo='no' color='009600' expresión='(B-.2,B,0)(B,B,0)' rotini='(0,0,teta)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' ancho='4' Nu='1' ">
+      <param name="S_13" value="espacio='E2' tipo='cono' fondo='no' color='rojo' color_reverso='94ff0000' dibujar-si='C>0' expresión='Cono' rotini='(0,180,0)' posini='(0,0,C)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='metal' ancho='.3' largo='.3' alto='.3' Nu='7' Nv='7' ">
+      <param name="S_14" value="espacio='E2' tipo='cono' fondo='no' color='rojo' color_reverso='94ff0000' dibujar-si='C<=0' expresión='Cono' rotini='(0,0,0)' posini='(0,0,C)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='metal' ancho='.3' largo='.3' alto='.3' Nu='7' Nv='7' ">
+      <param name="S_15" value="espacio='E2' tipo='punto' fondo='no' color='000000' color_reverso='6090a0' expresión='(A,A,0)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='r' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+      <param name="S_16" value="espacio='E2' tipo='punto' fondo='no' color='000000' color_reverso='6090a0' expresión='(B,B,0)' rotini='(0,0,teta)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='F' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+      <param name="S_17" value="espacio='E2' tipo='punto' fondo='no' color='000000' color_reverso='6090a0' dibujar-si='C>0' expresión='(-1,0,C)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='\${M = r × F}' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+      <param name="S_18" value="espacio='E2' tipo='punto' fondo='no' color='000000' color_reverso='6090a0' dibujar-si='C<=0' expresión='(-1,0,C)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='(0,0,0)' posfin='(0,0,0)' cortar='no' texto='\${M = -r × F}' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' decimales='2' fijo='sí' ancho='0' offset_dist='10' offset_angle='270' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

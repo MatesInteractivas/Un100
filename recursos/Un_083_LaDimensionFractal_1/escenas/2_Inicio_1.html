@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Desarrollo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='PanIzq' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='Koch' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='350' O.x='-200' O.y='50' despl_imagen='arr-izq' fondo='f0f8fa' red='b8c4c8' red10='889498' ejes='405860' texto='no' números='sí' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='zoom' tipo='numérico' interfaz='pulsador' región='interior' espacio='Koch' nombre='Escala' expresión='(Koch._w-40,Koch._h-70,30,60)' valor='1' incr='1' min='1' max='50' discreto='no' decimales='0' fijo='sí' visible='no' acción='calcular' parámetro='Koch.escala=400+zoom*80;ShwBt=1' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/zoom_in.svg' image_dec='images/zoom_out.svg' btn_pos='v_left' ">
+      <param name="A_01" value="id='Gen0' matriz='sí' evaluar='una-sola-vez' columnas='2' filas='2' expresión='Gen0[0,0]=0;Gen0[0,1]=0;Gen0[1,0]=1;Gen0[1,1]=0' tipo='matriz' ">
+      <param name="A_02" value="id='Gen1' matriz='sí' evaluar='una-sola-vez' columnas='5' filas='2' expresión='Gen1[0,0]=0;Gen1[0,1]=0;Gen1[1,0]=1/3;Gen1[1,1]=0;Gen1[2,0]=(1/3)*(1+cos(pi/3));Gen1[2,1]=(1/3)*sin(pi/3);Gen1[3,0]=2/3;Gen1[3,1]=0;Gen1[4,0]=1;Gen1[4,1]=0;' tipo='matriz' ">
+      <param name="A_03" value="id='Gen2' matriz='sí' evaluar='una-sola-vez' columnas='17' filas='2' expresión=';' tipo='matriz' ">
+      <param name="A_04" value="id='Gen3' matriz='sí' evaluar='una-sola-vez' columnas='65' filas='2' expresión=';' tipo='matriz' ">
+      <param name="A_05" value="id='Gen4' matriz='sí' evaluar='una-sola-vez' columnas='257' filas='2' expresión=';' tipo='matriz' ">
+      <param name="A_06" value="id='Gen5' matriz='sí' evaluar='una-sola-vez' columnas='1025' filas='2' expresión=';' tipo='matriz' ">
+      <param name="A_07" value="id='_Ini()' algoritmo='sí' expresión='x' inicio='_iIni=0' hacer='Gen2[_iIni,0]=0;Gen2[_iIni,1]=0;_iIni=_iIni+1' mientras='_iIni<17' tipo='función' ">
+      <param name="A_08" value="id='nSeg(x)' algoritmo='no' expresión='4^x' tipo='función' ">
+      <param name="A_09" value="id='tSeg(x)' algoritmo='no' expresión='1/(3^x)' tipo='función' ">
+      <param name="A_10" value="id='Fn2()' algoritmo='sí' expresión='x' inicio='seg=0' hacer='sseg=seg/4;;dx=Gen1[sseg+1,0]-Gen1[sseg,0];dy=Gen1[sseg+1,1]-Gen1[sseg,1];a=atan(dy/dx);;Gen2[seg,0]=Gen1[sseg,0];Gen2[seg,1]=Gen1[sseg,1];;Gen2[seg+1,0]=Gen1[sseg,0]+tSg*cos(a);Gen2[seg+1,1]=Gen1[sseg,1]+tSg*sin(a);;Gen2[seg+2,0]=Gen2[seg+1,0]+tSg*cos(a+(pi/3));Gen2[seg+2,1]=Gen2[seg+1,1]+tSg*sin(a+(pi/3));;Gen2[seg+3,0]=Gen1[sseg,0]+2*tSg*cos(a);Gen2[seg+3,1]=Gen1[sseg,1]+2*tSg*sin(a);;Gen2[seg+4,0]=Gen1[sseg,0]+3*tSg*cos(a);Gen2[seg+4,1]=Gen1[sseg,1]+3*tSg*sin(a);;seg=seg+4' mientras='seg<16' tipo='función' ">
+      <param name="A_11" value="id='Fn3()' algoritmo='sí' expresión='x' inicio='seg=0' hacer='sseg=seg/4;;dx=Gen2[sseg+1,0]-Gen2[sseg,0];dy=Gen2[sseg+1,1]-Gen2[sseg,1];a=(dx>=0)?atan(dy/dx):atan(dy/dx)+pi;;Gen3[seg,0]=Gen2[sseg,0];Gen3[seg,1]=Gen2[sseg,1];;Gen3[seg+1,0]=Gen2[sseg,0]+tSg*cos(a);Gen3[seg+1,1]=Gen2[sseg,1]+tSg*sin(a);;Gen3[seg+2,0]=Gen3[seg+1,0]+tSg*cos(a+(pi/3));Gen3[seg+2,1]=Gen3[seg+1,1]+tSg*sin(a+(pi/3));;Gen3[seg+3,0]=Gen2[sseg,0]+2*tSg*cos(a);Gen3[seg+3,1]=Gen2[sseg,1]+2*tSg*sin(a);;Gen3[seg+4,0]=Gen2[sseg,0]+3*tSg*cos(a);Gen3[seg+4,1]=Gen2[sseg,1]+3*tSg*sin(a);;seg=seg+4' mientras='seg<64' tipo='función' ">
+      <param name="A_12" value="id='Fn4()' algoritmo='sí' expresión='x' inicio='seg=0' hacer='sseg=seg/4;;dx=Gen3[sseg+1,0]-Gen3[sseg,0];dy=Gen3[sseg+1,1]-Gen3[sseg,1];a=(dx>=0)?atan(dy/dx):atan(dy/dx)+pi;;Gen4[seg,0]=Gen3[sseg,0];Gen4[seg,1]=Gen3[sseg,1];;Gen4[seg+1,0]=Gen3[sseg,0]+tSg*cos(a);Gen4[seg+1,1]=Gen3[sseg,1]+tSg*sin(a);;Gen4[seg+2,0]=Gen4[seg+1,0]+tSg*cos(a+(pi/3));Gen4[seg+2,1]=Gen4[seg+1,1]+tSg*sin(a+(pi/3));;Gen4[seg+3,0]=Gen3[sseg,0]+2*tSg*cos(a);Gen4[seg+3,1]=Gen3[sseg,1]+2*tSg*sin(a);;Gen4[seg+4,0]=Gen3[sseg,0]+3*tSg*cos(a);Gen4[seg+4,1]=Gen3[sseg,1]+3*tSg*sin(a);;seg=seg+4' mientras='seg<256' tipo='función' ">
+      <param name="A_13" value="id='Fn5()' algoritmo='sí' expresión='x' inicio='seg=0' hacer='sseg=seg/4;;dx=Gen4[sseg+1,0]-Gen4[sseg,0];dy=Gen4[sseg+1,1]-Gen4[sseg,1];a=(dx>=0)?atan(dy/dx):atan(dy/dx)+pi;;Gen5[seg,0]=Gen4[sseg,0];Gen5[seg,1]=Gen4[sseg,1];;Gen5[seg+1,0]=Gen4[sseg,0]+tSg*cos(a);Gen5[seg+1,1]=Gen4[sseg,1]+tSg*sin(a);;Gen5[seg+2,0]=Gen5[seg+1,0]+tSg*cos(a+(pi/3));Gen5[seg+2,1]=Gen5[seg+1,1]+tSg*sin(a+(pi/3));;Gen5[seg+3,0]=Gen4[sseg,0]+2*tSg*cos(a);Gen5[seg+3,1]=Gen4[sseg,1]+2*tSg*sin(a);;Gen5[seg+4,0]=Gen4[sseg,0]+3*tSg*cos(a);Gen5[seg+4,1]=Gen4[sseg,1]+3*tSg*sin(a);;seg=seg+4' mientras='seg<1024' tipo='función' ">
+      <param name="A_14" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='_Ini();tSg=1;nSg=1;paso=0;Expl=0;calcGen=0;Koch.escala=400+zoom*80' hacer='tSg=tSeg(calcGen);nSg=nSeg(calcGen);bla=(calcGen==1)?Fn1():bla;bla=(calcGen==2)?Fn2():bla;bla=(calcGen==3)?Fn3():bla;bla=(calcGen==4)?Fn4():bla;bla=(calcGen==5)?Fn5():bla;calcGen=calcGen+1' mientras='calcGen<8' ">
+      <param name="A_15" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Autosimilitud e invariancia de escala' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='0' coord_abs='sí' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;}\f1\fs30 g3.x=\f2\fs34\i{\*\mjaformula{\expr E1._w/2+g3.x*E1.escala\decimals 2\fixed1}}\f1\fs30\i0 =\f2\fs34\i{\*\mjaformula{\expr g3.x\decimals 2\fixed1}}\f1\fs30\i0\par g3.y=\f2\fs34\i{\*\mjaformula{\expr E1._h/2-g3.y*E1.escala\decimals 2\fixed1}}\f1\fs30\i0 =\f2\fs34\i{\*\mjaformula{\expr g3.y\decimals 2\fixed1}}\f1\fs30\i0\par \f2\fs34\i Koch.escala=\fs38{\*\mjaformula{\expr Koch.escala\decimals 4\fixed1}}\f1\fs30\i0\par calcGen=\f2\fs34\i{\*\mjaformula{\expr calcGen\decimals 0\fixed1}}\f1\fs30\i0}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='left' anchor='top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_03" value="espacio='Koch' tipo='curva' fondo='no' color='214cff' coord_abs='no' expresión='(Gen5[t,0],Gen5[t,1]+0.01)' parámetro='t' t.intervalo='[0,1023]' t.pasos='1024' ancho='1' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_04" value="espacio='PanIzq' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[20,20]' texto='Observa el fractal de Koch. El que tienes a tu derecha es dicho fractal desarrollado hasta la 7a generación. Posteriormente verás cómo se desarrolla dicho fractal en cada nueva generación.\n\nPor el momento, observa como al aumentar la escala del plano, se obtiene una versión del mismo fractal que ves originalmente pero en pequeño. Igualmente, al reducir la escala, el patrón también se puede observar.\n\nEl hecho de que al aumentar o reducir la escala se recupera el mismo patrón muestra 2 características de los fractales:\n\n\b{1.} Autosimilitud: El fragmento del fractal es una representación del fractal completo.\n\b{2.} Invariancia: (o invariancia de escala). Acercando o alejando (esto es, a una particular escala distinta) se obtiene una representación del fractal completo.' decimales='2' fijo='sí' ancho='PanIzq._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

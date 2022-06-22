@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Geometría clásica"
+  ], 
+  "titulo": "Medianas y gravicentro de un triángulo", 
+  "descripcion": "En un triángulo podemos distinguir cuatro centros: ortocentro, circuncentro, baricentro, incentro; que son los puntos de intersección de cuatro grupos de rectas notables: alturas, mediatrices, medianas, bisectrices. En este interactivo estudiamos las medianas y el gravicentro, probamos, usando el Teorema de Ceva que las medianas de un triángulo son concurrentes.",
+  "resena": "Existencia del punto de concurrencia de las medianas (gravicentro o baricentro) de un triángulo por teorema de Ceva.",
+  "id": "_Un_112_MedianasyGravicentro"
+}

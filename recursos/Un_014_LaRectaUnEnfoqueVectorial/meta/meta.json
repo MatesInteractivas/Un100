@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría Analítica", 
+    "Vectores"
+  ], 
+  "titulo": "La recta, un enfoque vectorial", 
+  "descripcion": "La intención de esta unidad didáctica  es mostrar al usuario cómo a partir de operaciones entre vectores se puede definir una recta y se puede obtener información de la misma a través de los elementos que conforman su ecuación vectorial. El enfoque vectorial permite estudiar aplicaciones directas de la recta como la distancia de un punto a una recta, identificación de rectas paralelas y perpendiculares, obtención del punto de intersección entre dos rectas  y también la obtención del ángulo entre dos rectas",
+  "resena": "Representación y manipulación de una recta a partir de operaciones entre vectores.",
+  "id": "_Un_014_LaRectaUnEnfoqueVectorial"
+}

@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Física", 
+    "Fisicoquímica", 
+    "Termodinámica"
+  ], 
+  "titulo": "Conceptos básicos de la termodinámica", 
+  "descripcion": "A través de una conversación con un tutor digital y la observación y/o manipulación simultánea de modelos interactivos, el estudiante se familiarizará con algunos conceptos básicos de la termodinámica, como el calor, la temperatura, el equilibrio térmico y el concepto cero de la termodinámica.", 
+  "resena": "Diálogo interactivo sobre conceptos básicos de termodinámica, como calor, temperatura equilibrio térmico y la ley zero.",
+  "id": "_Un_062_TermodinamicaConceptosBasicos"
+}

@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Valor promedio de una función", 
+  "descripcion": "En esta unidad se presenta el Teorema del Valor Medio para integrales y en consecuencia el concepto de valor medio o promedio de una función. Como objetivos específicos se plantean: •  Conocer el Teorema del Valor Medio integral y comprobarlo en diversos casos prácticos. •  Dar una interpretación geométrica. •  Calcular el valor medio de una función y el punto en el que se alcanza.",
+  "resena": "Teorema del valor medio en cálculo integral con algunas comprobaciones y aplicaciones.",
+  "id": "_Un_020_ValorPromedioDeUnaFuncion"
+}

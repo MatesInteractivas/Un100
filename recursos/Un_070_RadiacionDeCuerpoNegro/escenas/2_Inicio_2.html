@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E1' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='40' O.x='-200' O.y='120' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='1' discreto='no' decimales='0' fijo='sí' visible='no' acción='calcular' parámetro='fase=steps' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="C_02" value="id='T' tipo='numérico' interfaz='barra' región='interior' espacio='E1' expresión='(20,E1._h-55,E1._w-40,35)' valor='T' incr='1' min='300' max='6000' discreto='sí' decimales='40' fijo='sí' visible='no' acción='calcular' parámetro='calcwien()' dibujar-si='(fase=1)' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="A_01" value="id='init()' algoritmo='sí' expresión='x' hacer='xv=(10^14);h=10.626*(10^(-34));c=3*(10^(8));k=1.32*(10^(-23));T=10;calcwien();fase=0' tipo='función' ">
+      <param name="A_02" value="id='frecuencias4' vector='sí' evaluar='una-sola-vez' tamaño='500' tipo='vector' ">
+      <param name="A_03" value="id='densidades4' vector='sí' evaluar='una-sola-vez' tamaño='500' tipo='vector' ">
+      <param name="A_04" value="id='calcwien()' algoritmo='sí' expresión='x' inicio='v=.01' hacer='frecuencias4[(v*100)-1]=v;densidades4[(v*100)-1]=(2*pi*h*((v*xv)^3)*exp(((-1)*h*v*xv*(10^20))/((k*T)*(10^20))))/(c^2)*(10^(-7.9));v=v+.01' mientras='v<30' tipo='función' ">
+      <param name="A_05" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='init()' ">
+      <param name="A_06" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E0' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E0._w/2,20]' texto='Cuerpo negro' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 2' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='\b{¿Qué es un cuerpo negro?}\n\nCuando se desea estudiar únicamente la emisión propia de un cuerpo es preciso aislar al cuerpo, esto se logra si el cuerpo absorbe toda la radiación que recibe. No todas las superficies emiten o absorben la misma cantidad de energía radiante cuando se calientan a la misma temperatura. \nUn cuerpo que absorba o emita a una temperatura determinada la máxima cantidad de energía se denomina superficie negra o simplemente cuerpo negro. Éste es el modelo de cuerpo negro ideal: una cavidad de paredes muy absorbentes con una pequeña abertura en una de sus paredes. Cualquier radiación que entre en la cavidad será, casi con toda certeza, absorbida por las paredes antes de que pueda salir de ella. De este modo, se puede asegurar que la radiación que salga por la abertura tiene su origen en las paredes de la cavidad, esto es, se trata de emisión propia.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='A continuación se muestra la distribución para el espectro de emisión del cuerpo negro a diferentes temperaturas, que son las que indican qué tipo de radiación y con qué intensidad emite un cuerpo, la cual tiene una forma característica, para el problema de la catástrofe ultravioleta lo que se buscaban era encontrar la expresión matemática que explicara ese comportamiento.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='fase=0' coord_abs='sí' expresión='(E1._w/2,E1._h/2,0.8,0.8)' archivo='images/cuerpo_negro.png' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(fase=1)' coord_abs='sí' expresión='[20,20]' texto='Espectro de radiación del cuerpo negro' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(fase=1)' coord_abs='no' expresión='(1.6,3.1,1.7,.66)' archivo='images/espectro2.jpg' rotini='0' opacidad='1' ">
+      <param name="G_08" value="espacio='E1' tipo='punto' fondo='no' color='e90000' dibujar-si='((frecuencias4[s]*4)<10)&(fase=1)' coord_abs='no' expresión='(frecuencias4[s]*4,densidades4[s]*(10^18))' familia='s' s.intervalo='[0,280]' s.pasos='280' decimales='2' fijo='sí' tamaño='1.5' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' ">
+      <param name="G_09" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' dibujar-si='(fase=1)' coord_abs='no' expresión='(0,0)(10,0)' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_10" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' dibujar-si='(fase=1)' coord_abs='no' expresión='(0,0)(0,6)' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(fase=1)' coord_abs='no' expresión='[0,6.5]' texto='Intensidad' decimales='2' fijo='sí' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='12' align='a_left' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_12" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(fase=1)' coord_abs='no' expresión='[10,-0.2]' texto='Frecuencia' decimales='2' fijo='sí' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='12' align='a_left' anchor='a_top_right' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_13" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='((frecuencias4[s]*4)<10)&(fase=1)' coord_abs='no' expresión='(frecuencias4[18]*4,densidades4[18]*(10^18)-0.1)' texto='\${T(°K) = [T]}' decimales='0' fijo='no' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

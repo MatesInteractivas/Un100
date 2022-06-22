@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Geometría clásica"
+  ], 
+  "titulo": "Círculo, potencia, eje radical", 
+  "descripcion": "La potencia de un punto respecto a un círculo es una propiedad que tiene que ver con la distancia de él a dicho círculo, pero da más información, por lo cual es posible hacer construcciones y obtener resultados interesantes a partir de ella. En particular, se puede definir la recta radical de dos círculos, que generaliza a la recta que pasa por los puntos de interseccion, aún en el caso en el que los círculos no se corten. La idea de este interactivo es mostrar las construcciones de potencia de un punto y eje radical y algunas propiedades de ellos.",
+  "resena": "Potencia y punto potencia de un círculo. Eje radical como recta cuyos puntos tienen la misma potencia respecto a dos círculos.",
+  "id": "_Un_115_CirculoPotenciaEjeRadical"
+}

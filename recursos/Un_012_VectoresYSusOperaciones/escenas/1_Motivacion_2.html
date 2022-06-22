@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Motivación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R3' R3='sí' id='Grafico' x='20' y='65' ancho='984' alto='435' dibujar-si='1' fijo='no' escala='55' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' despliegue='pintor' cortar='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='Algebra' x='(E1._w-700)/2' y='500' ancho='700' alto='50' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='a3' tipo='audio' espacio='E1' expresión='((E1._w-300)/2,E1._h-75,300,35)' archivo='audios/Motiv2.ogg' ">
+      <param name="A_01" value="id='Phi(x,y,z)' algoritmo='sí' expresión='phi' hacer='phi=(abs(x)>epsilon)?atan(abs(y)/abs(x)):pi/2;phi=((x<0)&(y>0))?pi-phi:phi;phi=((x<0)&(y<0))?pi+phi:phi;phi=((x>0)&(y<0))?2*pi-phi:phi' tipo='función' ">
+      <param name="A_02" value="id='Theta(x,y,z)' algoritmo='sí' expresión='theta' hacer='theta=(abs(z)>epsilon)?atan(sqrt(x^2+y^2)/abs(z)):pi/2;theta=(z<0)?pi+theta:theta' tipo='función' ">
+      <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='v.x=2.5*rnd;v.y=2.5*rnd;v.z=2.5*rnd;epsilon=0.000001;;Grafico.rot.z=5;Grafico.rot.y=20' ">
+      <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Las coordenadas cartesianas son las más conocidas para vectores en ℝ³ pero existen otros sistemas' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='Algebra' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[Algebra._w/2,12]' texto='\serif{\b{\${v = ([v.x], [v.y], [v.z])}}};      \serif{\b{\${v = [sqrt(v.x^2+v.y^2+v.z^2)]}}};      \serif{\b{\${ϕ = [Phi(v.x,v.y,v.z)*180/pi]°}}};      \serif{\b{\${θ = [Theta(v.x,v.y,v.z)*180/pi]°}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="S_01" value="espacio='Grafico' tipo='superficie' fondo='no' color='ae6090a0' color_reverso='ae6090a0' expresión='x=5*(u-0.5) y=5*(v-0.5) z=0' rotini='(0,0,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='color' Nu='7' Nv='7' ">
+      <param name="S_02" value="espacio='Grafico' tipo='superficie' fondo='no' color='ae6090a0' color_reverso='ae6090a0' expresión='x=5*(u-0.5) y=5*(v-0.5) z=0' rotini='(0,90,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='color' Nu='7' Nv='7' ">
+      <param name="S_03" value="espacio='Grafico' tipo='superficie' fondo='no' color='ae6090a0' color_reverso='ae6090a0' expresión='x=5*(u-0.5) y=5*(v-0.5) z=0' rotini='(90,0,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' aristas='no' modelo='color' Nu='7' Nv='7' ">
+      <param name="S_04" value="espacio='Grafico' tipo='segmento' fondo='no' color='naranja' expresión='(0,0,0)(v.x,v.y,v.z)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' ancho='2.5' Nu='7' ">
+      <param name="S_05" value="espacio='Grafico' tipo='segmento' fondo='no' color='negro' expresión='(-2.5,0,0)(2.5,0,0)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='7' ">
+      <param name="S_06" value="espacio='Grafico' tipo='segmento' fondo='no' color='negro' expresión='(0,0,-2.5)(0,0,2.5)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='7' ">
+      <param name="S_07" value="espacio='Grafico' tipo='segmento' fondo='no' color='negro' expresión='(0,-2.5,0)(0,2.5,0)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' ancho='1' Nu='7' ">
+      <param name="S_08" value="espacio='Grafico' tipo='segmento' fondo='no' color='verde' expresión='(0,0,0)(v.x,0,0)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' ancho='2.5' Nu='7' ">
+      <param name="S_09" value="espacio='Grafico' tipo='segmento' fondo='no' color='verde' expresión='(0,0,0)(0,v.y,0)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' ancho='2.5' Nu='7' ">
+      <param name="S_10" value="espacio='Grafico' tipo='segmento' fondo='no' color='verde' expresión='(0,0,0)(0,0,v.z)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' ancho='2.5' Nu='7' ">
+      <param name="S_11" value="espacio='Grafico' tipo='segmento' fondo='no' color='azul' expresión='(0,0,0)(v.x,v.y,o)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' ancho='2.5' Nu='7' ">
+      <param name="S_12" value="espacio='Grafico' tipo='curva' fondo='no' color='negro' expresión='x=0.5*sin(Theta(v.x,v.y,v.z)*u)*cos(Phi(v.x,v.y,v.z)) y=0.5*sin(Theta(v.x,v.y,v.z)*u)*sin(Phi(v.x,v.y,v.z)) z=0.5*cos(Theta(v.x,v.y,v.z)*u)' rotini='(0,0,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' ancho='1.5' Nu='36' ">
+      <param name="S_13" value="espacio='Grafico' tipo='curva' fondo='no' color='negro' expresión='x=0.5*cos(Phi(v.x,v.y,v.z)*u) y=0.5*sen(Phi(v.x,v.y,v.z)*u) z=0' rotini='(0,0,0)' posini='(0,0,0)' rotfin='Euler(20,0,0)' posfin='(0,0,0)' cortar='no' ancho='1.5' Nu='36' ">
+      <param name="Animación" value="pausa='2000' controles='no' auto='sí' repetir='no' inicio='t=0' hacer='t=(t+1)%30;x=rnd;y=rnd;z=rnd;v.x=(x<0.5)?-2.5*rnd:v.x;v.x=(x=0.5)?0:v.x;v.x=(x>0.5)?2.5*rnd:v.x;v.y=(y<0.5)?-2.5*rnd:v.y;v.y=(y=0.5)?0:v.y;v.y=(y>0.5)?2.5*rnd:v.y;v.z=(z<0.5)?-2.5*rnd:v.z;v.z=(z=0.5)?0:v.z;v.z=(z>0.5)?2.5*rnd:v.z' mientras='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

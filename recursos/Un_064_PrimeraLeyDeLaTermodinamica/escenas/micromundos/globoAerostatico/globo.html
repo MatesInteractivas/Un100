@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Globo</title>
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+<div align="center">
+  <ajs name="Descartes" width="533" height="545" code="Descartes.class" codebase="../" archive="lib/Descartes5.jar,lib/Descartes5_Sonido.jar,lib/Descartes5_Algebra.jar" mayscript="">
+   <param name="tamaño" value="533x545">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=",">
+   <param name="expand" value="fit">
+   <param name="editable" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.5">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='btVerificar' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(400,492,105,33)' fijo='sí' visible='sí' imagen='images/bt_verificar.png' acción='calcular' parámetro='res=opciones[cmp1]+&amp;squot; &amp;squot;+opciones[cmp2]+&amp;squot; &amp;squot;+opciones[cmp3]\nparent.set(&amp;squot;respuesta&amp;squot;,res)' dibujar-si='(cmp1!=0)&amp;(cmp2!=0)&amp;(cmp3!=0)'">
+   <param name="C_02" value="id='cmp1' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(240,489,40,25)' decimales='0' fijo='sí' visible='no' opciones='__,0,+,-' pos_mensajes='centro'">
+   <param name="C_03" value="id='cmp2' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(285,489,40,25)' decimales='0' fijo='sí' visible='no' opciones='__,0,+,-' pos_mensajes='centro'">
+   <param name="C_04" value="id='cmp3' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(330,489,40,25)' decimales='0' fijo='sí' visible='no' opciones='__,0,+,-' pos_mensajes='centro'">
+   <param name="C_05" value="id='btReiniciar' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(10,505,105,33)' fijo='sí' visible='sí' imagen='images/bt_reiniciar.png' acción='calcular' parámetro='x_globo=-6\ny_globo=3.5' dibujar-si='y_globo>5'">
+   <param name="A_01" value="id='opciones' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='opciones[0]=&amp;squot;_&amp;squot;;opciones[1]=&amp;squot;0&amp;squot;;opciones[2]=&amp;squot;+&amp;squot;;opciones[3]=&amp;squot;-&amp;squot;'">
+   <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='res=&amp;squot;&amp;squot;;x_globo=-6;y_globo=3.5;animar=1'">
+   <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='imagen' expresión='(x_globo,y_globo)' archivo='images/globo.png'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' expresión='(-4.6,5.2)' archivo='images/fondo_txt.png'">
+   <param name="G_03" value="espacio='E1' tipo='texto' coord_abs='sí'  expresión='[81,48]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs30 Llena el espacio debajo de cada s\u237 mbolo de la siguiente\par manera: \u8220 0\u8221  para indicar que no hubo cambio, \u8220 \u8211 \u8221  para\par un cambio negativo y \u8220 +\u8221  para un cambio positivo.}' fuente='SansSerif,PLAIN,15' decimales='0' fijo='sí'">
+   <param name="Animación" value="controles='no' auto='sí' inicio='x_globo=-6;y_globo=3.5' hacer='x_globo=x_globo<0?x_globo+0.01:x_globo;y_globo=y_globo<7?y_globo+0.02:y_globo' mientras='animar'">
+</ajs>
+</div>
+</body>
+</html>

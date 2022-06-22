@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='2' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='IMG1' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='IMG1[0]=&squot;images/i1.svg&squot;;IMG1[1]=&squot;images/i2.svg&squot;;IMG1[2]=&squot;images/i3.svg&squot;;IMG1[3]=&squot;images/i4.svg&squot;;IMG1[4]=&squot;images/i5.svg&squot;;IMG1[5]=&squot;images/i6.svg&squot;;IMG1[6]=&squot;images/i7.svg&squot;;IMG1[7]=&squot;images/i8.svg&squot;;IMG1[8]=&squot;images/i9.svg&squot;;IMG1[9]=&squot;images/i10.svg&squot;;' tipo='vector' ">
+      <param name="A_02" value="id='IMG2' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='IMG2[0]=&squot;images/j1.svg&squot;;IMG2[1]=&squot;images/j6.svg&squot;;IMG2[2]=&squot;images/j9.svg&squot;;IMG2[3]=&squot;images/j17.svg&squot;;IMG2[4]=&squot;images/j22.svg&squot;;IMG2[5]=&squot;images/j33.svg&squot;;IMG2[6]=&squot;images/j11.svg&squot;;IMG2[7]=&squot;images/j61.svg&squot;;IMG2[8]=&squot;images/j19.svg&squot;;IMG2[9]=&squot;images/j27.svg&squot;' tipo='vector' ">
+      <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Algunos diagramas de Venn' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 3' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(E2._w/2,20)' texto='Algunos diagramas de Venn para dos atributos' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==0' coord_abs='sí' expresión='(120+(s%5)*185,200+ent(s/5)*150,0.32,0.32)' familia='s' s.intervalo='[0,10]' s.pasos='10' archivo='IMG1[s]' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(E2._w/2,20)' texto='Algunos diagramas de Venn para tres atributos' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==1' coord_abs='sí' expresión='(120+(s%5)*185,180+ent(s/5)*180,0.32,0.32)' familia='s' s.intervalo='[0,10]' s.pasos='10' archivo='IMG2[s]' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='(E2._w/2,20)' texto='Una de las leyes de Morgan' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_08" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==2' coord_abs='no' expresión='(0,0,1.4,1.4)' archivo='images/morgan1.svg' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

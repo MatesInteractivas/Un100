@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cierre</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='ninfo' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='2' discreto='no' decimales='0' fijo='sí' visible='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=1' hacer='ninfo=0;Ninfos=4' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Áreas iguales en tiempos iguales. La Segunda Ley de Kepler' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[ninfo+1] / 3' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='ninfo==0' coord_abs='sí' expresión='[20,20]' texto='\b{Conclusiones}\n\nKepler descubrió sus dos primeras leyes estudiando con mucho detalle las trayectorias de los planetas en el espacio a partir de las observaciones de Tycho Brahe, que consistían esencialmente de ángulos a los que en ciertas fechas podían verse algunos planetas. \n\nLlegar a establecer las órbitas planetarias primero como simples posiciones en el espacio y luego comprobar que éstas correspondían a elipses y determinar las características de cada una, fue un trabajo monumental por el que Kepler tiene una fama muy merecida. \n\nLa segunda ley va íntimamente ligada a la primera pues el hecho de que los movimientos de los planetas no correspondían a movimientos circulares uniformes fue un hecho esencial en el descubrimiento de las órbitas elípticas. \n\nLa Segunda ley de Kepler representa lo que pudo conservarse de la idea del movimiento circular uniforme, ya no con la uniformidad del cambio en el ángulo, sino con la de cambio en el área barrida por el radio vector. \n' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='ninfo==1' coord_abs='sí' expresión='[20,20]' texto='Pero lo más importante de la Segunda ley es que permite saber en qué posición va a estar cada planeta en cualquier tiempo futuro, y en dónde estuvo en cualquier tiempo pasado. Esto es gracias a que esta ley hace posible conocer el ángulo recorrido en cualquier tiempo mediante un proceso de aproximación utilizando incrementos pequeños de tiempo y estimando, dada la distancia al Sol, el ángulo recorrido en esos incrementos de tiempo. \n\nEs un proceso laborioso que en la época de Kepler requería muchos cálculos, pero se podía hacer. Hoy en día es fácil hacerlo con una computadora. En unos cuantos segundos se pueden calcular las trayectorias de todos los planetas con gran detalle y a partir de ellas realizar las predicciones como se hizo en la escena del Desarrollo.\n\nSeguramente Kepler no sospechó que su Segunda ley era equivalente a uno de los principios de conservación de la mecánica: la del momento angular y en realidad se aplica a cuerpos que se mueven sujetos a cualquier fuerza central, es decir, siempre dirigida a un punto. ' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='ninfo==2' coord_abs='sí' expresión='[20,20]' texto='En el Desarrollo se presentó una escena en la que se muestran los Planetas del sistema solar en cualquier momento entre digamos, 1900 y 2100. \n\nEsto pudo hacerse gracias al conocimiento de la Segunda ley de Kepler y los datos que el mismo Kepler recopiló sobre los planetas conocidos en su época mas los que fueron descubiertos y estudiados posteriormente. Los datos están basados en las posiciones de los planetas el 1º de Enero del año 2000, y a partir de eso, es posible realizar con increíble precisión la posición de los planetas por muchos años antes y después de esa fecha. \n\nEste logro, conocido y comprobado ya en vida de Kepler, abrió las puertas a la Ciencia para descubrir las primeras leyes fundamentales de la Física, como son las tres leyes del movimiento de Newton y su famosa Ley de la Gravitación Universal. Aunque no hay que olvidar que en esto también fue determinante la Tercera ley de Kepler, que es objeto de otra unidad de esta serie. ' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

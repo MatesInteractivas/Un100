@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Física", 
+    "Fisicoquímica", 
+    "Electromagnetismo"
+  ], 
+  "titulo": "Efecto fotoeléctrico", 
+  "descripcion": "A través de una conversación con un tutor digital y la observación y/o manipulación simultánea de modelos y simuladores, el estudiante conocerá y entenderá el efecto fotoeléctrico, así como las aplicaciones tecnológicas que tiene.",
+  "resena": "Diálogo interactivo sobre la importancia del efecto fotoeléctrico en la mecánica cuántica y sus aplicaciones tecnológicas.",
+  "id": "_Un_068_EfectoFotoelectrico"
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Desarrollo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' ancho='100%' alto='100%' fijo='sí' escala='23' O.x='-250' O.y='40' fondo='2980b9' red='no' red10='no' ejes='no' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='E1._w/2+10' y='65' ancho='482' alto='540' fijo='sí' red='no' red10='no' ejes='no' ">
+      <param name="C_01" value="id='C' tipo='gráfico' espacio='E1' color='222222' color-int='ffffff' tamaño='7' expresión='(2,sqrt(25-4))' constricción='x^2+y^2=25' ">
+      <param name="C_02" value="id='scroll' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' incr='1' min='0' max='8' visible='no' acción='calcular' parámetro='step=scroll' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='Px' vector='sí' evaluar='una-sola-vez' tamaño='20' tipo='vector' ">
+      <param name="A_02" value="id='Py' vector='sí' evaluar='una-sola-vez' tamaño='20' tipo='vector' ">
+      <param name="A_03" value="id='Pn' vector='sí' evaluar='una-sola-vez' tamaño='20' tipo='vector' ">
+      <param name="A_04" value="id='definePoints()' algoritmo='sí' expresión='x' inicio='nP=0' hacer='Pn[nP]=&squot;A&squot;;Px[nP]=1.15*C.x-0.6;Py[nP]=C.y+0.6;nP=nP+1;Pn[nP]=&squot;B&squot;;Px[nP]=A.x-1.4;Py[nP]=A.y-1.1;nP=nP+1;Pn[nP]=&squot;G&squot;;Px[nP]=B.x-0.3;Py[nP]=B.y-1.1;nP=nP+1;Pn[nP]=&squot;Z&squot;;Px[nP]=Z.x-1.5;Py[nP]=Z.y-0.3;nP=nP+1;Pn[nP]=&squot;D&squot;;Px[nP]=D.x-1;Py[nP]=D.y-1;nP=nP+1;Pn[nP]=&squot;L&squot;;Px[nP]=L.x-1;Py[nP]=L.y-1;nP=nP+1;Pn[nP]=&squot;E&squot;;Px[nP]=E.x-1;Py[nP]=E.y-1;nP=nP+1;Pn[nP]=&squot;K&squot;;Px[nP]=K.x;Py[nP]=K.y-0.3;nP=nP+1;;' tipo='función' ">
+      <param name="A_05" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='A.x=-5;A.y=0;B.x=5;B.y=0;L.y=-10;' ">
+      <param name="A_06" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='C.y=max(C.y,0);L.x=C.x;Z.x=A.x-(C.y-A.y);Z.y=A.y+(C.x-A.x);D.x=A.x+(B.y-A.y);D.y=A.y-(B.x-A.x);K.x=B.x+(C.y-B.y);K.y=B.y-(C.x-B.x);E.x=B.x-(A.y-B.y);E.y=B.y+(A.x-B.x);definePoints();xtra=5-30*(min(max(0,step-1),6)^2)/5;;' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='\b{Teorema de Pitágoras}. Demostración de Euclides, \i{Los Elementos}, Libro I, Proposición 47.' ancho='1' fuente puntos='21' align='a_center' anchor='a_top_center' info='Texto instrucción' ">
+      <param name="G_02" value="espacio='E1' tipo='polígono' color='000000' coord_abs='no' expresión='(A.x,A.y)(B.x,B.y)(C.x,C.y)(A.x,A.y)' ancho='2' ">
+      <param name="G_03" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='(step>2)' coord_abs='no' expresión='(A.x,A.y)(C.x,C.y)(C.x+Z.x-A.x,C.y+Z.y-A.y)(Z.x,Z.y)(A.x,A.y)' relleno='40ffff80' ancho='2' info='a cuadrado' ">
+      <param name="G_04" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='step>4' coord_abs='no' expresión='(A.x,A.y)(D.x,D.y)(L.x,L.y)(A.x+L.x-D.x,A.y+L.y-D.y)(A.x,A.y)' relleno='40ffff80' ancho='2' info='rectángulo BL' ">
+      <param name="G_05" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='(step==3)|(step==4)|(step==5)' coord_abs='no' expresión='(A.x,A.y)(Z.x,Z.y)(B.x,B.y)(A.x,A.y)' relleno='a0ee1122' ancho='2' info='ZBG' ">
+      <param name="G_06" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='(step==4)|(step==5)' coord_abs='no' expresión='(C.x,C.y)(A.x,A.y)(D.x,D.y)(C.x,C.y)' relleno='a0ee1122' ancho='2' info='ABD' ">
+      <param name="G_07" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='(step>5)' coord_abs='no' expresión='(C.x,C.y)(B.x,B.y)(K.x,K.y)(C.x+K.x-B.x,C.y+K.y-B.y)(C.x,C.y)' relleno='4040a0ff' ancho='2' info='b cuadrado' ">
+      <param name="G_08" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='(step>5)' coord_abs='no' expresión='(L.x,L.y)(E.x,E.y)(B.x,B.y)(B.x+(L.x-E.x),B.y+(L.y-E.y))(L.x,L.y)' relleno='4040a0ff' ancho='2' info='rectángulo LG' ">
+      <param name="G_09" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='step>0' coord_abs='no' expresión='(A.x,A.y)(C.x,C.y)(C.x-(C.y-A.y),C.y+(C.x-A.x))(A.x-(C.y-A.y),A.y+(C.x-A.x))(A.x,A.y)' ancho='2' ">
+      <param name="G_10" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='step>0' coord_abs='no' expresión='(A.x,A.y)(B.x,B.y)(B.x+(B.y-A.y),B.y-(B.x-A.x))(A.x+(B.y-A.y),A.y-(B.x-A.x))(A.x,A.y)' ancho='2' ">
+      <param name="G_11" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='step>0' coord_abs='no' expresión='(B.x,B.y)(C.x,C.y)(C.x+(C.y-B.y),C.y-(C.x-B.x))(B.x+(C.y-B.y),B.y-(C.x-B.x))(B.x,B.y)' ancho='2' ">
+      <param name="G_12" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='(step>2)&(step<7)' coord_abs='no' expresión='(Z.x,Z.y)(B.x,B.y)' tamaño='2' ancho='1' ">
+      <param name="G_13" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='(step>3)&(step<7)' coord_abs='no' expresión='(D.x,D.y)(C.x,C.y)' tamaño='2' ancho='1' ">
+      <param name="G_14" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='(step>4)&(step<7)' coord_abs='no' expresión='(K.x,K.y)(A.x,A.y)' tamaño='2' ancho='1' ">
+      <param name="G_15" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='(step>4)&(step<7)' coord_abs='no' expresión='(E.x,E.y)(C.x,C.y)' tamaño='2' ancho='1' ">
+      <param name="G_16" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='(step==2)' coord_abs='no' expresión='(Z.x,Z.y)(B.x,B.y)' tamaño='2' ancho='1' info='ZG' ">
+      <param name="G_17" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='(step>7)' coord_abs='no' expresión='(A.x,A.y)(C.x,C.y)(C.x+Z.x-A.x,C.y+Z.y-A.y)(Z.x,Z.y)(A.x,A.y)' relleno='22e090' ancho='1' info='a cuadrado' ">
+      <param name="G_18" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='(step>7)' coord_abs='no' expresión='(C.x,C.y)(B.x,B.y)(K.x,K.y)(C.x+K.x-B.x,C.y+K.y-B.y)(C.x,C.y)' relleno='22e090' ancho='1' info='b cuadrado' ">
+      <param name="G_19" value="espacio='E1' tipo='polígono' color='000000' dibujar-si='(step>7)' coord_abs='no' expresión='(A.x,A.y)(D.x,D.y)(E.x,E.y)(B.x,B.y)(A.x,A.y)' relleno='22e090' ancho='1' info='c cuadrado' ">
+      <param name="G_20" value="espacio='E1' tipo='segmento' color='000000' dibujar-si='(step>1)&(step<8)' coord_abs='no' expresión='(L.x,L.y)(C.x,C.y)' tamaño='0' ancho='1' info='AL' ">
+      <param name="G_21" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(step<2)|(step>7)' coord_abs='no' expresión='(Px[s]+0.7,Py[s]+0.35)' familia='s' s.intervalo='[0,2]' s.pasos='2' texto='[Pn[s]]' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_center_center' ">
+      <param name="G_22" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(step>1)&(step<8)' coord_abs='no' expresión='(Px[s]+0.7,Py[s]+0.35)' familia='s' s.intervalo='[0,nP-1]' s.pasos='nP-1' texto='[Pn[s]]' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_center_center' ">
+      <param name="G_23" value="espacio='E2' tipo='rectángulo' fondo='sí' color='e7000000' coord_abs='sí' expresión='(0,0,E2._w-1,E2._h-1)' ancho='1' ">
+      <param name="G_24" value="espacio='E2' tipo='texto' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[scroll+1] / 9' decimales='0' ancho='1' negrita='sí' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_25" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(step>=0)&&(step<6)' coord_abs='sí' expresión='[20,15]' texto='Sea \serif{\b{\${ABG}}} un triángulo rectángulo cualquiera. Sean \serif{\b{\${a = AB}}}, \serif{\b{\${b = GA}}} los catetos y \serif{\b{\${c = BG}}} la hipotenusa. Demostraremos que: \c{\serif{\b{\${a^2 + b^2 = c^2}}}}' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_26" value="espacio='E2' tipo='texto' color='2980b9' dibujar-si='(step==0)' coord_abs='sí' expresión='[E2._w/2-10,340]' texto='Avance paso a paso estudiando los cambios al esquema y leyendo cuidadosamente los detalles de la demostración.' ancho='250' negrita='sí' align='a_justify' anchor='a_top_center' ">
+      <param name="G_27" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(step>0)&&(step<6)' coord_abs='sí' expresión='[20,130]' texto='Construimos cuadrados sobre los catetos y sobre la hipotenusa, todos exteriores al triángulo.' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_28" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(step>1)&&(step<6)' coord_abs='sí' expresión='[20,198]' texto='Damos nombres a algunos puntos de la figura y trazamos los segmentos \serif{\b{\${ZG}}} y \serif{\b{\${AL ⊥ BG}}}.' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_29" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(step>2)&&(step<6)' coord_abs='sí' expresión='[20,265]' texto='El área del triángulo \serif{\b{\${ZBG}}} es la mitad de \serif{\b{\${a^2}}} porque su base \serif{\b{\${ZB}}} y su altura \serif{\b{\${BA}}} son ambas iguales a \serif{\b{\${a}}}.' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_30" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(step>3)&&(step<6)' coord_abs='sí' expresión='[20,335]' texto='Los triángulos \serif{\b{\${ZBG}}} y \serif{\b{\${ABD}}} son congruentes porque \serif{\b{\${∢ ZBG = ∢ ABD}}} y tienen lados adyacentes iguales: \serif{\b{\${ZB = AB = a}}} y \serif{\b{\${BG = BD = c}}}.' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_31" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(step>4)&&(step<6)' coord_abs='sí' expresión='[20,428]' texto='Así que el área del \serif{\b{\${∆ ABD}}} es igual a la del \serif{\b{\${∆ ZBG}}} y por tanto \serif{\b{\${BD · DL = a^2}}}' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_32" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(step>5)' coord_abs='sí' expresión='[20,15]' texto='Análogamente, partiendo de que los triángulos \serif{\b{\${∆ BGK}}} y \serif{\b{\${∆ EGA}}} son congruentes, se demuestra que \serif{\b{\${LE · EG = b^2}}} ' ancho='E2._w-40' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_33" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(step>6)' coord_abs='sí' expresión='[20,120]' texto='Es claro que \serif{\b{\${BD · DL + LE · EG = c^2}}}.\n\nPor lo tanto: \c{\serif{\b{\${a^2 + b^2 = c^2}}}}\n\nque es lo que queríamos demostrar.' ancho='1' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_34" value="espacio='E2' tipo='texto' color='000000' dibujar-si='(step>7)' coord_abs='sí' expresión='[E2._w-20,300]' texto='Q.E.D.' ancho='1' negrita='sí' fuente puntos='19' align='a_left' anchor='a_top_right' ">
+      <param name="Animación" value="pausa='100' controles='no' auto='sí' repetir='no' inicio='step=0' hacer='step=step+1;seguir=(step<9);step=(seguir)?step:0' mientras='seguir' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

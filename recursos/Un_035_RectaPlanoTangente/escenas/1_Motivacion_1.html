@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Motivación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='coche' x='670' y='200' ancho='335' alto='335' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='000000' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='link' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='https://www.youtube.com/watch?v=ZkMJZpY3ELo' expresión='(30+(610-350)/2,E1._h-50,350,20)' valor='0' color='0652dd' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='sí' font_family='SansSerif' fuente puntos='15' imagen='vacio.gif' acción='abrir URL' parámetro='https://www.youtube.com/watch?v=ZkMJZpY3ELo' ">
+      <param name="C_02" value="id='video' tipo='video' espacio='E1' expresión='(30,155,610,345)' archivo='http://prometeo.matem.unam.mx/recursos/Licenciatura/Un100/videos/_Un_035_RectaPlanoTangente/video1.mp4' ">
+      <param name="C_03" value="id='carretera' tipo='numérico' interfaz='menú' región='interior' espacio='E1' nombre='carretera      ' expresión='(670,145,coche._w,35)' valor='0' decimales='2' fijo='sí' visible='no' opciones='Lineal [1],Cuadrática[2],Cúbica[3],Senoidal[4],Circular[5]' ">
+      <param name="C_04" value="id='coche1' tipo='gráfico' espacio='coche' color='ff0000' color-int='f0f8ff' tamaño='6' expresión='(-3,-3)' constricción='y=f1(x)' dibujar-si='carretera=1' ">
+      <param name="C_05" value="id='coche.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='coche.x' expresión='(0,0)' valor='0' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' btn_pos='v_left' ">
+      <param name="C_06" value="id='coche.y' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='coche.y' expresión='(0,0)' valor='0' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' btn_pos='v_left' ">
+      <param name="C_07" value="id='coche2' tipo='gráfico' espacio='coche' color='ff0000' color-int='f0f8ff' tamaño='6' expresión='(-3,0.25*9-1.5)' constricción='y=f2(x)' dibujar-si='carretera=2' ">
+      <param name="C_08" value="id='coche3' tipo='gráfico' espacio='coche' color='ff0000' color-int='f0f8ff' tamaño='6' expresión='(-3,-0.1*27)' constricción='y=f3(x)' dibujar-si='carretera=3' ">
+      <param name="C_09" value="id='coche4' tipo='gráfico' espacio='coche' color='ff0000' color-int='f0f8ff' tamaño='6' expresión='(-3,-0.1*27)' constricción='y=f4(x)' dibujar-si='carretera=4' ">
+      <param name="C_10" value="id='coche5' tipo='gráfico' espacio='coche' color='ff0000' color-int='f0f8ff' tamaño='6' expresión='(-2,0)' constricción='x^2+y^2=4' dibujar-si='carretera=5' ">
+      <param name="A_01" value="id='f1(x)' algoritmo='no' expresión='x' tipo='función' ">
+      <param name="A_02" value="id='tf1(x)' algoritmo='no' expresión='f1(coche1.x)+1*(x-coche1.x)' dominio='(x>coche1.x)&(x<=coche1.x+1.5)' tipo='función' ">
+      <param name="A_03" value="id='f2(x)' algoritmo='no' expresión='0.25*x^2-1.5' tipo='función' ">
+      <param name="A_04" value="id='tf2(x)' algoritmo='no' expresión='f2(coche2.x)+0.5*coche2.x*(x-coche2.x)' dominio='(x>coche2.x)&(x<=coche2.x+1)' tipo='función' ">
+      <param name="A_05" value="id='f3(x)' algoritmo='no' expresión='0.1*x^3' tipo='función' ">
+      <param name="A_06" value="id='tf3(x)' algoritmo='no' expresión='f3(coche3.x)+0.3*(coche3.x^2)*(x-coche3.x)' dominio='(x>coche3.x)&(x<=coche3.x+1)' tipo='función' ">
+      <param name="A_07" value="id='f4(x)' algoritmo='no' expresión='sen(x)' tipo='función' ">
+      <param name="A_08" value="id='tf4(x)' algoritmo='no' expresión='f4(coche4.x)+cos(coche4.x)*(x-coche4.x)' dominio='(x>coche4.x)&(x<coche4.x+1)' tipo='función' ">
+      <param name="A_09" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_10" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='La recta tangente.' decimales='2' fijo='sí' ancho='E1._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_justify' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[20,65]' texto='Cuando nos desplazamos en auto de noche los faros proyectan su luminosidad en línea recta ¿tiene esa línea recta alguna particularidad respecto a la carretera?' decimales='2' fijo='sí' ancho='E1._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_justify' anchor='a_top_left' ">
+      <param name="G_03" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ff000000' coord_abs='sí' expresión='(20,145,630,E1._h-145-20)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' info='Panel fondo video' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='(670,555)' texto='Mueve el punto para observar el recorrido que realiza la luz.' decimales='2' fijo='sí' ancho='coche._w' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='coche' tipo='ecuación' fondo='no' color='20303a' dibujar-si='carretera=5' coord_abs='no' expresión='x^2+y^2=4' ancho='8' visible='no' editable='no' ">
+      <param name="G_06" value="espacio='coche' tipo='ecuación' fondo='no' color='20303a' dibujar-si='carretera=1' coord_abs='no' expresión='y=f1(x)' ancho='12' visible='no' editable='no' ">
+      <param name="G_07" value="espacio='coche' tipo='ecuación' fondo='no' color='ffff00' dibujar-si='carretera=1' coord_abs='no' expresión='y=tf1(x)' ancho='4' visible='no' editable='no' ">
+      <param name="G_08" value="espacio='coche' tipo='ecuación' fondo='no' color='20303a' dibujar-si='carretera=2' coord_abs='no' expresión='y=f2(x)' ancho='8' visible='no' editable='no' ">
+      <param name="G_09" value="espacio='coche' tipo='ecuación' fondo='no' color='ffff00' dibujar-si='carretera=2' coord_abs='no' expresión='y=tf2(x)' ancho='4' visible='no' editable='no' ">
+      <param name="G_10" value="espacio='coche' tipo='ecuación' fondo='no' color='20303a' dibujar-si='carretera=3' coord_abs='no' expresión='y=f3(x)' ancho='8' visible='no' editable='no' ">
+      <param name="G_11" value="espacio='coche' tipo='ecuación' fondo='no' color='ffff00' dibujar-si='carretera=3' coord_abs='no' expresión='y=tf3(x)' ancho='4' visible='no' editable='no' ">
+      <param name="G_12" value="espacio='coche' tipo='ecuación' fondo='no' color='20303a' dibujar-si='carretera=4' coord_abs='no' expresión='y=f4(x)' ancho='8' visible='no' editable='no' ">
+      <param name="G_13" value="espacio='coche' tipo='ecuación' fondo='no' color='ffff00' dibujar-si='carretera=4' coord_abs='no' expresión='y=tf4(x)' ancho='4' visible='no' editable='no' ">
+      <param name="G_14" value="espacio='coche' tipo='segmento' fondo='no' color='ffff00' dibujar-si='carretera=5' coord_abs='no' expresión='(coche5.x,coche5.y)(coche5.x+coche5.y,coche5.y-coche5.x)' decimales='2' fijo='sí' tamaño='0' ancho='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="Animación" value="pausa='100' controles='no' auto='no' repetir='no' inicio='alfa=0' hacer='alfa=alfa+5' mientras='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

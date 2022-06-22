@@ -1,1 +1,0 @@
-@java -cp c:/Descartes/Descartes.jar -ms64M -mx256M Descartes %1 %2 %3

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometría</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+</head>
+
+<body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '1'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'x'  tipo = 'recta'  constructor = '30'  parametros = '0.00,1.00,0.00'  visible = '0'  ancho = '1'  color = '#ff0000,#c0c0c0'  etiqueta = '0,0' />
+<objeto  nombre = 'F'  tipo = 'punto'  constructor = '28'  parametros = '2.03,-0.00,0.00'  objRef = '0'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '1,1' />
+<objeto  nombre = 'F2'  tipo = 'punto'  constructor = '150'  parametros = '-2.03,0.00,0.00'  objRef = '1'  formulas = '-F.x ; 0 ' visible = '0'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,2' />
+<objeto  nombre = 'd'  tipo = 'recta'  constructor = '34'  parametros = '1.00,-0.00,2.03'  objRef = '0,2'  visible = '1'  ancho = '1'  color = '#ff0000,#c0c0c0'  etiqueta = '1,7' />
+<objeto  nombre = 'con'  tipo = 'conica'  constructor = '107'  parametros = '0.00,-0.00,-1.00,4.06,-0.00,0.00,-0.00,0.00,-16.48,4.06,0.00,-0.00,16.48'  objRef = '1,3'  visible = '1,0,0,0,0,0'  ancho = '2,2,1,2,1,1'  color = '#ff,#c0c0c0,#ff,#c0c0c0,#ff,#c0c0c0,#c0c0c0,#c0c0c0,#ff0000'  etiqueta = '1,5' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-8.13,8.76,0.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '0,5' />
+<objeto  nombre = 'p'  tipo = 'escalar'  constructor = '96'  parametros = '2.03,1.00'  objRef = '4'  etiqueta = '0,-1' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '28'  parametros = '-2.03,7.13,-2.03'  objRef = '3'  visible = '1'  ancho = '1'  color = '#0,#ffff00'  etiqueta = '0,-1' />
+
+<nota texto="<p>A diferencia de la elipse y la hipérbola, la parábola no tiene centro, y tiene un sólo vértice y un sólo foco. Decimos que una parábola está en el origen si su vértice está en él.</p>
+<p>Decimos que la parábola es horizontal, si su eje, la recta que une al vértice y al foco es horizontal, y decimos que es vertical si dicha recta lo es.</p>
+<p>Si una parábola horizontal está en el origen, su ecuación general es muy simple. Sólo tiene términos en <mt>y<sup>2</sup></mt>, y en <mt>x</mt>.</p>
+<p align='center' style='font-family:descartesJS_serif;'>Cy<sup>2</sup> + Dx + F = 0</p>
+<p>Para encontrar los elementos de la parábola, transformamos esta ecuación general a la ecuación estándar</p>
+<p align='center' style='font-family:descartesJS_serif;'>y<sup>2</sup> =  +- 4px </p>
+<p>en este caso</p>
+<p align='center' style='font-family:descartesJS_serif;'>y<sup>2</sup> =  +- 4($p$)x </p>
+<p>Si la parábola abre hacia la derecha, consideramos el signo positivo, si abre hacia la izquierda, consideramos el signo negativo.</p>
+<p>El parámetro de la parábola es <mt>p = $p$</mt> y la ecuación de la directriz es</p>
+<p align='center' style='font-family:descartesJS_serif;'>x = $-d.C/d.A$.</p>
+"/>
+
+<table align='center'>  
+<tr>
+	<td width ='482px' height='540px' valign='middle' class="celda_izquierda">
+			<canvas id="pizarron" width="482" height="540"></canvas>
+		</td>
+    
+    <td width ='20px'></td>
+    
+    <td width ='482px' height="540px" valign='middle' class="celda_derecha">
+    
+		<p id="cuaderno" >Este es un p&aacute;rrafo</p>
+	</td>
+	</tr>
+</table>
+  
+</body>
+</html>

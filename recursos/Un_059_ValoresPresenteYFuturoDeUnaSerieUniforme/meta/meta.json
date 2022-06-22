@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Algebra", 
+    "Finanzas"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Valores presente y futuro de una serie uniforme", 
+  "descripcion": "Identificar y aplicar los conceptos relacionados con el cálculo de una operación financiera que tiene como característica pagos uniformes iguales y periódicos, utilizando para ello videos, actividades interactivas y solución de problemas.",
+  "resena": "Cálculo de operaciones financieras dadas por pagos uniformes iguales y periódicos.",
+  "id": "_Un_059_ValoresPresenteYFuturoDeUnaSerieUniforme"
+}

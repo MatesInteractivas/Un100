@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Doctorado", 
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Análisis", 
+    "Variedades lineales"
+  ], 
+  "titulo": "m-Volumen en Rn", 
+  "descripcion": "Se presentan la generalización de la fórmula de Herón y del Teorema de Pitágoras a m vectores en R^(n). Se pretende que el lector se familiarice con estas fórmulas y su significado geométrico.",
+  "resena": "Significado geométrico de fórmulas para cálculo de volúmenes dados por m vectores en R^(n).",
+  "id": "_Un_031_mVolumenEnRn"
+}

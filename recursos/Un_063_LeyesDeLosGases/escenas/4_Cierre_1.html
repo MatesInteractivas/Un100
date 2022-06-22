@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=",">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='20' ancho='984' alto='585' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' imagen='images/fondo_cierre.png' despl_imagen='expand.' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='btIni' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='¿Cómo funciona?' expresión='((E2._w-150)/2,E2._h-35-20,150,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='iniciado=1;t=1' dibujar-si='iniciado=0' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022' ">
+      <param name="C_02" value="id='btSig' interfaz='botón' tipo='numérico' región='interior' espacio='E2' expresión='(E2._w/2+20,E2._h-40-15,60,40)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/bt_siguiente.png' acción='calcular' parámetro='t=t+1' dibujar-si='(iniciado)&(t<6)' ">
+      <param name="C_03" value="id='btAnt' interfaz='botón' tipo='numérico' región='interior' espacio='E2' expresión='(E2._w/2-20-60,E2._h-40-15,60,40)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/bt_anterior.png' acción='calcular' parámetro='t=t-1' dibujar-si='(iniciado)&(t>1)' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='iniciado=0;t=0;ok=0' hacer='t=6' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='(t=0)||(t=6)' coord_abs='no' expresión='(-4.8,5.1)' archivo='images/img0.png' rotini='0' opacidad='1' ">
+      <param name="G_02" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='t=1' coord_abs='no' expresión='(-4.8,5.1)' archivo='images/img1.png' rotini='0' opacidad='1' ">
+      <param name="G_03" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='t=2' coord_abs='no' expresión='(-4.8,5.1)' archivo='images/img2.png' rotini='0' opacidad='1' ">
+      <param name="G_04" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='t=3' coord_abs='no' expresión='(-4.8,5.1)' archivo='images/img3.png' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='t=4' coord_abs='no' expresión='(-4.8,5.1)' archivo='images/img4.png' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='t=5' coord_abs='no' expresión='(-4.8,5.1)' archivo='images/img5.png' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='0' coord_abs='no' expresión='(-5.2,5.55)' archivo='images/fondo_txt.png' rotini='0' opacidad='1' info='(iniciado)&(t<6)' ">
+      <param name="G_08" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='0' coord_abs='no' expresión='(-8,5.55)' archivo='images/fondo_txt_gr.png' rotini='0' opacidad='1' info='(iniciado)&(t=6)' ">
+      <param name="G_09" value="espacio='E2' tipo='rectángulo' fondo='no' color='ee000000' dibujar-si='t>0' coord_abs='sí' expresión='(10,10,E2._w-20,70+(((t==2)||(t==4))?25:0)+(t==6)*120)' relleno='33ffffff' ancho='1' border_radius='5' lineDash='solid' ">
+      <param name="G_10" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='t=1' coord_abs='sí' expresión='[20,20]' texto='\b{1.} Al cerrar la olla, ésta contiene básicamente dos sustancias: \b{agua} y \b{aire} (además de los alimentos que se le hayan puesto).' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_11" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='t=2' coord_abs='sí' expresión='[20,20]' texto='\b{2.} Cuando se prende la estufa, ambas sustancias empiezan a calentarse y suceden dos cosas. Por un lado, el \b{agua} comienza a evaporarse, por lo que incrementa la cantidad de gas en la olla. Por otro lado, el \b{aire} se calienta y naturalmente querrá expandirse.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='t=3' coord_abs='sí' expresión='[20,20]' texto='\b{3.} Sin embargo, la \b{válvula} de la olla no permite que se escape ni el vapor de agua ni el aire caliente, hasta haberse alcanzado una presión determinada (suficiente para empujar hacia arriba la válvula y dejar escapar los gases).' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_13" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='t=4' coord_abs='sí' expresión='[20,20]' texto='\b{4.} Recuerda ahora la fórmula de la \b{ley general de los gases}: \serif{\b{\${PV = knT}}}. Tanto \serif{\b{\${n}}} (la cantidad de gas) como \serif{\b{\${T}}} (la temperatura) aumentan, mientras que \serif{\b{\${V}}} (el volumen) permanece igual. Por tanto, la presión en la olla (\serif{\b{\${P}}}) incrementará sustancialmente.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_14" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='t=5' coord_abs='sí' expresión='[20,20]' texto='\b{5.} La elevada presión en la olla hace que la \b{temperatura de ebullición} del agua (normalmente de \serif{\b{\${100 °C}}}) aumenta a unos \serif{\b{\${130 °C}}}, por lo que los alimentos se cocinan mucho más rápido.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_15" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='t=6' coord_abs='sí' expresión='[20,20]' texto='Ahora ya sabes cómo se comportan los gases y qué sucede cuando los calentamos o comprimimos, ya sea a temperatura constante o no. \n\nAhora bien, no es fácil mantener constante la temperatura de un gas al comprimirlo. Para que ocurra eso, se tienen que cumplir una serie de condiciones que se desmenuzarán en el diálogo sobre los conceptos básicos de la termodinámica.\n\nTe invitamos a que lo estudies a continuación.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Geometría Analítica"
+  ], 
+  "titulo": "Lugares Geométricos - Recta", 
+  "descripcion": "El objetivo de esta serie de interactivos es estudiar ejemplos planteados que cuentan con condiciones que debe cumplir un punto del plano para poder ser considerado un elemento del lugar geométrico. Una vez establecida las condiciones,  procederemos a encontrar la ecuación que debe satisfacerse para identificar la curva. En este caso, se plantea una condición que genera una recta.",
+  "resena": "Propiedades geométricas y algebraicas del conjunto de puntos que corresponden a una recta.",
+  "id": "_Un_120_LugaresGeometricosRecta"
+}

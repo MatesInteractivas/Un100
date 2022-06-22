@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Cálculo"
+  ], 
+  "titulo": "La dimensión fractal: fractales generados por algoritmos no aleatorios", 
+  "descripcion": "En esta unidad se presentan principalmente los fractales de Koch, Hilbert, y la isla de Gosper con el objeto de introducir al alumno las dos propiedades de los fractales: autosimilitud e invarianza de escala. Adicionalmente, se analiza la divergencia de la longitud de las curvas si se consideran sólo unidimensionales, justificando así la necesidad de considerar dimensiones distintas para la curva, que no necesariamente han de ser enteras. A pesar de considerarse sólo fractales diseñados, se deja abierta la posibilidad de considerar dimensión fractal para fractales experimentales, mismos que se abordan en otra unidad.",
+  "resena": "Fractales diseñados matemáticamente y el concepto de dimensión fractal para los mismos.",
+  "id": "_Un_083_LaDimensionFractal_1"
+}

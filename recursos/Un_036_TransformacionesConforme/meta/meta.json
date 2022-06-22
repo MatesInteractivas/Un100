@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Análisis", 
+    "Mapeo conforme"
+  ], 
+  "titulo": "Transformaciones conforme", 
+  "descripcion": "Se estudian las aplicaciones del plano que preservan el ángulo de intersección entre dos curvas, esto es, aquellas que transforman dos curvas que se cortan en un punto con un determinado ángulo en otras dos curvas que se cortan con el mismo ángulo. Estas transformaciones se utilizan en problemas de física matemática gobernados por la ecuación de Laplace ya que permiten convertir un problema de contorno en el plano XY en uno más simple en el plano UV.",
+  "resena": "Transformaciones que preservan ángulos con ejemplos y aplicaciones.",
+  "id": "_Un_036_TransformacionesConforme"
+}

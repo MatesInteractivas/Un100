@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cierre 2</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='2' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Superficies del cilindro y la esfera' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 3' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='Para calcular el área de una superficie esférica, Arquímedes de Siracusa recurrió a un método de aproximaciones que le llevó a un resultado exacto en términos del número \serif{\b{\${π}}}. El argumento se basa en la fórmula para el área de un sector cónico \serif{\b{\${A = 2π r ΔL}}}, donde \serif{\b{\${r}}} es el radio medio del sector cónico y \serif{\b{\${ΔL}}} es su anchura, y en la siguiente observación: si un sector cónico de radio medio \serif{\b{\${r}}} y anchura \serif{\b{\${ΔL}}} es tangente a una esfera de radio \serif{\b{\${R}}} a lo largo de la circunferencia de radio \serif{\b{\${r}}}, entonces el área del sector cónico es igual a \serif{\b{\${A = 2π R Δh}}}, donde \serif{\b{\${Δh}}} es la altura del sector. Para demostrar este resultado basta ver que, por semejanza de triángulos, \serif{\b{\${\frac{r}{R} = \frac{Δh}{ΔL}}}} y, por lo tanto, \serif{\b{\${r · ΔL = R · Δh}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==0' coord_abs='no' expresión='(0,-1.5,0.5,0.5)' archivo='images/4_Cierre_2_1.png' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='Cubriremos ahora la esfera con sectores cónicos tangentes a ella como se ilustra en la siguiente figura.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==1' coord_abs='sí' expresión='(205,220,0.5,0.5)' archivo='images/4_Cierre_2_2.png' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(415,70)' texto='Como todos los sectores cónicos son tangentes a la esfera de radio \serif{\b{\${R}}}, sus áreas son \serif{\b{\${A_i = 2π R Δh_i}}}, donde \serif{\b{\${Δh_i}}} son las diferentes alturas de los sectores. La suma de todas las áreas es igual a \c{\serif{\b{\${\sum{i}{}{A_i} = π R H}}}\ndonde \serif{\b{\${H}}} es la altura total de los sectores y \serif{\b{\${2R < H}}}. Pero con una cubierta suficientemente fina, \serif{\b{\${H}}} puede hacerse tan cerca a \serif{\b{\${2R}}} como se quiera. Por tanto el área de la esfera \serif{\b{\${A}}} es menor o igual que \serif{\b{\${4πR^2}}} es decir: \c{\serif{\b{\${A ≤ 4πR^2}}}}' decimales='2' fijo='sí' ancho='E2._w-415-20' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_08" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='(20,20)' texto='De manera análoga, inscribiendo en la esfera sectores cónicos, puede demostrarse que \serif{\b{\${4πR^2 ≤ A}}}, por tanto se cumple la igualdad: \serif{\b{\${A = 4πR^2}}}\n\nEn otras palabras, el área de la esfera es igual al cuádruple del área de uno de sus círculos máximos.\n\nOtra manera de interpretar el resultado es decir que el área de la esfera es igual a la del mínimo cilindro que la contiene, como muestra en la siguiente figura.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_09" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==2' coord_abs='no' expresión='(0,-1.5,0.5,0.5)' archivo='images/4_Cierre_2_3.png' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

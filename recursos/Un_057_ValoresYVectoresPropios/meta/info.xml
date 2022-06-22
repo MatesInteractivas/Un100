@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_057_ValoresYVectoresPropios" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Algebra lineal" 
+	plataforma="HTML 5"
+	ver="Beta" 
+	>
+	<titulo><![CDATA[
+		Valores y vectores propios
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+      En diversos campos de la ingeniería y las matemáticas es necesario calcular los valores y vectores
+      propios de una matríz cuadrada. Algunos campos de aplicación son las Ecuaciones diferenciales, 
+      los Sistemas eléctricos y el Análisis de estructuras en ingeniería civil.
+      
+       En esta unidad se busca el logro de los siguientes objetivos.
+
+      * Encontrar el polinimio característico de una matríz.
+      * Encontrar valores y vectores propios de una matríz.
+      * Diagonalizar matrices.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

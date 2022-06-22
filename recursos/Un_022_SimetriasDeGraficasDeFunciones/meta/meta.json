@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría."
+  ], 
+  "titulo": "Simetrías de Gráficas de Funciones", 
+  "descripcion": "El objetivo de esta unidad es adquirir los conceptos de simetría con respecto a una recta y con respecto a un punto en el plano cartesiano y definir los criterios algebraicos que caracterizan dichas simetrías, tanto en coordenadas cartesianas como en coordenadas polares, haciéndo énfasis en las funciones trigonométricas.",
+  "resena": "Simetría de curvas cartesianas y polares respecto a diversas rectas y puntos, y su significado matemático.",
+  "id": "_Un_022_SimetriasDeGraficasDeFunciones"
+}

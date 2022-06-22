@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Física", 
+    "Mecánica", 
+    "Estática"
+  ], 
+  "titulo": "Centroides de áreas planas", 
+  "descripcion": "En esta esta unidad didáctica el estudiante puede aprender a localizar los centroides de secciones geométricas simples, compuestas y complejas.",
+  "resena": "Cálculo de los centros de masas de figuras planas diversas.",
+  "id": "_Un_071_CentroidesDeAreasPlanas"
+}

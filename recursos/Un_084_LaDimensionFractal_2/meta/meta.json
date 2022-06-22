@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "La dimensión fractal: fractales generados por algoritmos aleatorios", 
+  "descripcion": "Continuando el tema introducido en la unidad La dimensión fractal: fractales generados por algoritmos no aleatorios, la presente unidad lidia con fractales generados por algoritmos que involucran aleatoriedad, en particular el generado mediante agregación limitada por difusión (DLA, por sus siglas en inglés de Diffusion Limited Aggregation). Se estudia otra forma de cálculo de la dimensión fractal para ellos (una forma de conteo de celdas conocido en inglés como box counting method), y se pone en relación con el ejemplo del fractal de Hilbert de la unidad previa. Adicionalmente, se hace una asociación con los fractales presentes en la naturaleza y se sugiere a la dimensión fractal como una huella digital del algoritmo de formación de dichos fractales, misma que compartirán todos con un algoritmo semejante.",
+  "resena": "La dimensión fractal en fractales generados por algoritmos aleatorios como una huella digital del proceso de formación.",
+  "id": "_Un_084_LaDimensionFractal_2"
+}

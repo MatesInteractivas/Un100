@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E1' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='40' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='2' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="C_02" value="id='V' tipo='numérico' interfaz='barra' región='interior' espacio='E1' expresión='(20,E1._h-105,250,35)' valor='1' incr='0.1' min='1' max='100' discreto='no' decimales='1' fijo='sí' visible='no' acción='calcular' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_03" value="id='f' tipo='numérico' interfaz='barra' región='interior' espacio='E1' expresión='(20,E1._h-55,250,35)' valor='1000' incr='1' min='375' max='1000' discreto='no' decimales='0' fijo='sí' visible='no' acción='calcular' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="A_01" value="id='init()' algoritmo='sí' expresión='x' hacer='fT=4' tipo='función' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='init();dispY=120' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='Ek=(6.626*(f/100)/1.6)-fT;' ">
+      <param name="G_01" value="espacio='E0' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E0._w/2,20]' texto='Obtención de la constante de Planck a partir del efecto fotoeléctrico' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='sí' expresión='(230,140+dispY,1,1)' archivo='images/fotoelectrico.png' rotini='0' opacidad='1' ">
+      <param name="G_03" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='37.4-ent(Ek)>ent(V)' coord_abs='sí' expresión='(130+t,100+dispY)' archivo='images/electron.png' rotini='0' opacidad='1' ">
+      <param name="G_04" value="espacio='E1' tipo='curva' fondo='no' color='20303a' coord_abs='sí' expresión='(133+((sen(t*f)*(f/600))*6),t+7+dispY)' parámetro='t' t.intervalo='[0,100]' t.pasos='100' ancho='1' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[300,E1._h-105]' texto='\${V = [V/10] v}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[300,E1._h-55]' texto='\${λ = [f/1000] Å}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[20,20]' texto='Encuentra los valores de \serif{\b{\${V_0}}} para las diferentes frecuencias' decimales='2' fijo='sí' ancho='E1._w-40' color_borde_texto='ffffff' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_08" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 3' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_09" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='\b{Implicaciones de la ley de radiación de Planck, efecto fotoeléctrico}\n\nAlbert Einstein publicó en 1905 varios artículos entre los cuales uno trataba del efecto fotoeléctrico y por el cual recibió el premio Nobel de Física en 1922. Mucho antes, en 1900, Max Planck había explicado el fenómeno de la radiación del cuerpo negro sugiriendo que la energía estaba cuantizada, pero Einstein llegó aún más lejos explicando de acuerdo a los cuantos de Planck que no solo la energía sino también la materia son discontinuas.\n\nEl efecto fotoeléctrico es el fenómeno mediante el cual a una placa de zinc cargada negativamente se le expone a luz ultravioleta dichos fotones impactan con los electrones de la placa, dando origen a una corriente eléctrica.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_10" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='Hacía finales del siglo diecinueve se probó que el efecto fotoeléctrico sucede también con otros materiales, pero el proceso de emisión depende de la frecuencia de la luz incidente y para cada metal existe una frecuencia crítica tal que la luz de frecuencia más alta siempre lo logra. De hecho, para frecuencias mayores que la crítica, conforme se aumenta la frecuencia, la energía cinética de los electrones emitidos aumenta en forma lineal. Por otra parte, el número de electrones emitidos es proporcional a la intensidad de la radiación incidente.\n\nSi la frecuencia de la luz incidente es \serif{\b{\${v}}}, se tiene que: \c{\serif{\b{\${hv = \frac{1}{2}mv^2 + φ = E_c + φ}}}}\nDonde \serif{\b{\${h}}} es la constante de Planck, \serif{\b{\${v}}} la frecuencia de la luz incidente, \serif{\b{\${Ec}}} es la energía cinética de los electrones y \serif{\b{\${φ}}} es la función de trabajo del metal, esta es la energía de amarre de los electrones a la red.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='(20,20)' texto='En este experimento se mide la energía cinética de los fotoelectrones emitidos por el cátodo de un fototubo contra la frecuencia de la luz incidente, por el método de un potencial retardador. Se aplica una diferencia de potencial \serif{\b{\${V}}} para frenar el movimiento de los fotoelectrones emitidos, para un voltaje \serif{\b{\${V_0}}} determinado el amperímetro no marca el paso de corriente, lo que significa que ni aún los electrones más rápidos llegan a la placa \serif{\b{\${C}}}, en ese momento, la energía potencial de los electrones se hace igual a la energía cinética, De esta forma teniendo que \serif{\b{\${E_k = eV_0}}}, y con la ecuación anterior obtenemos: \c{\serif{\b{\${V_0 = \frac{h}{e}v - \frac{φ}{e}}}}}\n\nSi graficamos \serif{\b{\${V_0}}} vs \serif{\b{\${v}}} tenemos que \serif{\b{\${m = h/e}}} y \serif{\b{\${b = φ/e}}} por lo que podemos obtener la constante de Planck a partir de graficar estos datos.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="Animación" value="pausa='40' controles='no' auto='sí' repetir='no' inicio='t=0' hacer='t=t+37.41-Ek;t=(t<160)?t:0' mientras='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

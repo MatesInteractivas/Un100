@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Algebra", 
+    "Finanzas"
+  ], 
+  "titulo": "Valores presente y futuro de un gradiente aritmético", 
+  "descripcion": "Identificar y aplicar los conceptos relacionados con el cálculo de una operación financiera que tiene como característica pagos periódicos que aumentan o disminuyen de manera uniforme, utilizando para ello videos, actividades interactivas y solución de problemas.",
+  "resena": "Cálculo de operaciones financieras dadas por pagos con cambios uniformes.",
+  "id": "_Un_060_ValoresPresenteYFuturoDeUnGradienteAritmetico"
+}

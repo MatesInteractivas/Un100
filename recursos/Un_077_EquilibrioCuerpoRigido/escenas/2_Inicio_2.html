@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='paso' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' expresión='((E1._w-120)/2,E1._h-55,120,30)' valor='0' incr='1' min='0' max='4' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="C_02" value="id='n5' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E1' nombre='    ¿Cuanto vale la reacción \serif{\b{\${A_y}}}?    ' expresión='(40,230,442,35)' valor='&squot;&squot;' discreto='no' decimales='1' fijo='sí' visible='sí' dibujar-si='paso=4' activo-si='n5=&squot;&squot;' evaluar='no' respuesta='krypto_2' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='18' negrita='no' cursiva='no' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='paso=0' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Ecuaciones de equilibrio' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(20,65,984,540)' relleno='ffffff' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E1._w/2,E1._h-42)' texto='[paso+1] / 5' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_04" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='no' expresión='(4.8,3,0.45,0.45)' archivo='images/cl7.png' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso<2' coord_abs='sí' expresión='(E1._w/2,450)' texto='\serif{\b{\${^{+→}ΣF_x = 0}}}        \serif{\b{\${^{+↑}ΣF_y = 0}}}        \serif{\b{\${^{+↶}ΣM_o = 0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='30' align='a_left' anchor='a_top_center' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=0' coord_abs='sí' expresión='[40,85]' texto='Partiendo de la armadura de la figura, presentada en su diagrama de cuerpo libre, estableceremos las ecuaciones que garantizan el equilibrio de la estructura.\n\nTodo cuerpo cuando está sometido a un sistema de fuerzas, que se encuentran en el plano \serif{\b{\${XY}}}, puede representarse con las fuerzas descompuestas en sus componentes \serif{\b{\${x}}} y \serif{\b{\${y}}}. Permitiendo garantizar las siguientes condiciones de equilibrio en dos dimensiones:' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=1' coord_abs='sí' expresión='[40,85]' texto='Observa que hemos asumido una convención de signos positivos en cada ecuación. Puedes asumir otra convención, lo importante es que la sepas interpretar en los resultados de los análisis en esta unidad.\n\nLas ecuaciones de equilibrio, nos servirán para calcular las reacciones de la estructura.\n\nIniciemos, entonces, con el cálculo de reacciones.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=2' coord_abs='sí' expresión='[40,85]' texto='\ts{30}{\serif{\b{\${^{+→}ΣF_x = 0}}}}\n\nLa ecuación de equilibrio para fuerzas horizontales, con algunas excepciones, nos permite hallar las reacciones en la dirección \serif{\b{\${x}}}. Apliquemos la ecuación teniendo en cuenta la convención de signos:\n\n\serif{\b{\${800 - A_x = 0}}}    \serif{\b{\${A_x = 800 lb}}}\n\nEste resultado, nos dice que la reacción \serif{\b{\${A_x}}} tiene un valor de \serif{\b{\${800 lb}}} y su dirección es contraria a la mostrada en el diagrama de cuerpo libre.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=2' coord_abs='sí' expresión='[E1._w/2+10,450]' texto='Para un uso más simplificado de las ecuaciones, usa las mismas unidades de fuerza y de longitud. Así, puedes omitir su escritura en las ecuaciones.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=3' coord_abs='sí' expresión='[40,85]' texto='\ts{30}{\serif{\b{\${^{+↶}ΣM_o = 0}}}}\n\nObserva que no usamos, aún, la ecuación para fuerza verticales, pues tendríamos dos incógnitas. Una ecuación de equilibrio bastante útil es la de momentos, que podemos aplicar en cualquier punto de la estructura.\n\nSi lo hacemos con respecto a \serif{\b{\${A}}}:\n\n\serif{\b{\${D_y(12) - 800(3) - 500(8) = 0}}}\n\serif{\b{\${D_y = 533.3 lb}}}\n\nQue confirma la dirección asumida en el diagrama de cuerpo libre.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=4' coord_abs='sí' expresión='[40,85]' texto='\ts{30}{\serif{\b{\${^{+↑}ΣF_y = 0}}}}\n\nTeniendo en cuenta los resultados anteriores y la convención de signos, responde:' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(paso=4)&(n5=-33.3)' coord_abs='sí' expresión='[40,300]' texto='\color{00a100}{\b{¡Eso es correcto!}}\n\n\serif{\b{\${A_y + D_y - 500 = 0}}}\n\serif{\b{\${A_y = 500 - 533.3 = -33.3 lb}}}\n\nEn este caso, la dirección de \serif{\b{\${A_y}}} es hacia abajo.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_13" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(paso=4)&(n5!=-33.3)&(n5!=&squot;&squot;)' coord_abs='sí' expresión='[40,300]' texto='\color{ff0000}{\b{¡Repasa desde el principio, lo necesitas!}}\n\n\serif{\b{\${A_y + D_y - 500 = 0}}}\n\serif{\b{\${A_y = 500 - 533.3 = -33.3 lb}}}\n\nEn este caso, la dirección de \serif{\b{\${A_y}}} es hacia abajo.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_14" value="espacio='E1' tipo='texto' fondo='no' color='404040' dibujar-si='(paso=4)&(n5=&squot;&squot;)' coord_abs='sí' expresión='[40,300]' texto='Escribe solo el número en la respuesta, ya sabemos que el resultado es en \serif{\b{\${lb}}}.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

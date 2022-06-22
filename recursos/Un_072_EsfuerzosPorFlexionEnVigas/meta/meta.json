@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Física", 
+    "Mecánica", 
+    "Estática"
+  ], 
+  "titulo": "Esfuerzos por flexión en vigas", 
+  "descripcion": "Una viga es un elemento estructural que se somete a cargas que actúan transversalmente al eje longitudinal, originando deformaciones y esfuerzos internos.  Es importante, para el diseño de estos elementos, comprender el concepto de flexión, la curva elástica generada y cómo se determinan las deformaciones y esfuerzos internos. En esta unidad puede ayudar a comprender el concepto de flexión en una viga sometida a cargas externas y a calcular los esfuerzos por flexión.",
+  "resena": "Flexión como resultado de fuerzas externas de una viga y su importancia en diseño estructural.",
+  "id": "_Un_072_EsfuerzosPorFlexionEnVigas"
+}

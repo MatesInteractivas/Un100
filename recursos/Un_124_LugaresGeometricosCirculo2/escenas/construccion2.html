@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometría</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+
+<body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '1'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'a'  tipo = 'escalar'  constructor = '80'  parametros = '3.00,0.00'  etiqueta = '0,0' />
+<objeto  nombre = 'u'  tipo = 'escalar'  constructor = '80'  parametros = '10.00,0.00'  etiqueta = '0,1' />
+<objeto  nombre = 'v'  tipo = 'escalar'  constructor = '80'  parametros = '10.00,0.00'  etiqueta = '0,2' />
+<objeto  nombre = 'o1'  tipo = 'escalar'  constructor = '80'  parametros = '0.00,0.00'  etiqueta = '0,3' />
+<objeto  nombre = 'o2'  tipo = 'escalar'  constructor = '80'  parametros = '0.00,0.00'  etiqueta = '0,4' />
+<objeto  nombre = 'O'  tipo = 'punto'  constructor = '150'  parametros = '0.00,0.00,0.00'  objRef = '3,4'  formulas = 'o1 ; o2 ' visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,5' />
+<objeto  nombre = 'U'  tipo = 'punto'  constructor = '150'  parametros = '10.00,0.00,0.00'  objRef = '1,4'  formulas = 'u ; o2 ' visible = '0'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,6' />
+<objeto  nombre = 'V'  tipo = 'punto'  constructor = '150'  parametros = '0.00,10.00,0.00'  objRef = '2,3'  formulas = 'o1 ; v ' visible = '0'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,7' />
+<objeto  nombre = 'eX'  tipo = 'recta'  constructor = '31'  parametros = '0.00,-1.00,0.00'  objRef = '5,6'  visible = '0'  ancho = '1'  color = '#ff0000,#c0c0c0'  etiqueta = '0,8' />
+<objeto  nombre = 'eY'  tipo = 'recta'  constructor = '31'  parametros = '1.00,0.00,-0.00'  objRef = '5,7'  visible = '0'  ancho = '1'  color = '#ff0000,#c0c0c0'  etiqueta = '0,9' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '150'  parametros = '3.00,0.00,-0.00'  objRef = '0,4'  formulas = 'a ; o2 ' visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,10' />
+<objeto  nombre = 'r'  tipo = 'escalar'  constructor = '80'  parametros = '5.00,0.00'  etiqueta = '0,11' />
+<objeto  nombre = 'cir1'  tipo = 'circulo'  constructor = '61'  parametros = '3.00,0.00,5.00,0.00'  objRef = '10,11'  visible = '1,1'  ancho = '2,2'  color = '#80ff,#c0c0c0,#ff0000,#c0c0c0'  etiqueta = '0,12' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '7'  parametros = '7.45,-2.27,5.00'  objRef = '12'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,13' />
+<objeto  nombre = 'D'  tipo = 'funcionRigida'  constructor = '124'  parametros = '0.00,-1.00,0.00,1.00,0.00,0.00,0.00,0.00,1.00,0.00,1.00,0.00,-1.00,0.00,0.00,0.00,0.00,1.00'  objRef = '23,17'  etiqueta = '0,-1' />
+<objeto  nombre = 'A1'  tipo = 'punto'  constructor = '20'  parametros = '2.27,7.45,1.00'  objRef = '13,14'  visible = '0'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,15' />
+<objeto  nombre = 'OA'  tipo = 'recta'  constructor = '38'  parametros = '-0.29,-0.96,0.00'  objRef = '5,13'  visible = '1,0'  ancho = '3,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,16' />
+<objeto  nombre = 'l1'  tipo = 'recta'  constructor = '34'  parametros = '0.96,-0.29,0.00'  objRef = '16,5'  visible = '1'  ancho = '1'  color = '#c0c0c0,#c0c0c0'  etiqueta = '0,17' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '9'  parametros = '1.45,4.75,-0.00'  objRef = '17,12,15'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'AB'  tipo = 'recta'  constructor = '38'  parametros = '0.76,0.65,-4.19'  objRef = '13,18'  visible = '1,0'  ancho = '3,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,19' />
+<objeto  nombre = 'OB'  tipo = 'recta'  constructor = '38'  parametros = '0.96,-0.29,0.00'  objRef = '5,18'  visible = '1,0'  ancho = '3,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,20' />
+<objeto  nombre = 'M'  tipo = 'punto'  constructor = '3'  parametros = '4.45,1.24,0.00'  objRef = '13,18'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,21' />
+<objeto  nombre = 'cir2'  tipo = 'circulo'  constructor = '152'  parametros = '1.50,0.00,3.20,0.00'  objRef = '0,4,11'  formulas = 'a/2 ; o2 ; sqrt(2*r*r-a*a)/2 ' visible = '1,1'  ancho = '2,2'  color = '#ff00ff,#c0c0c0,#ff0000,#c0c0c0'  etiqueta = '0,22' />
+<objeto  nombre = 'l2'  tipo = 'recta'  constructor = '31'  parametros = '-0.29,-0.96,0.00'  objRef = '5,13'  visible = '1'  ancho = '1'  color = '#c0c0c0,#c0c0c0'  etiqueta = '0,23' />
+
+<nota texto="" />
+<table align='center'>  
+<tr>
+	<td width ='482px' height='540px' valign='middle' class="celda_izquierda">
+			<canvas id="pizarron" width="482" height="540"></canvas>
+		</td>
+    
+    <td width ='20px'></td>
+    
+    <td width ='482px' height="540px" valign='middle' class="celda_derecha">
+
+		<div class="cuaderno2">
+			<p>Sea \(a=OC,\) entonces la ecuación del círculo está dada por
+			\[
+			(x-a)^{2}+y^{2}=R^{2},
+			\]
+			donde \(R\) es el radio del círculo.</p>
+			<p>Sean \(A=(x_{1},y_{1})\) y \(B=(x_{2},y_{2}).\) Como \(A,B\) están en el círculo, entonces:
+			\begin{eqnarray}
+			(x_{1}-a)^{2}+(y_{1})^{2} &=& R^{2}\\
+			(x_{2}-a)^{2}+(y_{2})^{2} &=&R^{2}
+			\end{eqnarray}
+			</p>
+			<p>\(OA\) y \(OB\) son perpendiculares entre sí, entonces el producto punto entre los vectores \(A\) y \(B\) es cero, es decir, 
+			\begin{eqnarray}
+			(x_{1},y_{1})\cdot (x_{2},y_{2}) &=&0
+			\\
+			x_{1}x_{2}+y_{1}y_{2} &=&0.
+			\end{eqnarray}
+			</p>
+			<p>Por otra parte, las coordenadas del punto \(M,\) por ser punto medio de \(A\) y \(B\):
+
+			\begin{eqnarray}
+			2x &=&x_{1}+x_{2} \\
+			2y &=&y_{1}+y_{2}.
+			\end{eqnarray}
+			</p>
+
+			<p id="cuaderno">Este es un p&aacute;rrafo</p>
+		</div>
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

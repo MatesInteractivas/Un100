@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Física", 
+    "Dinámica Celeste"
+  ], 
+  "titulo": "El Sistema planetario: Modelos geocéntrico y heliocéntrico", 
+  "descripcion": "El propósito de esta unidad es profundizar en los conocimientos considerados elementales sobre el sistema planetario, pero que en realidad muy pocos han revisado en detalle y con la profundidad necesaria para poder comprender a fondo el contenido y significado de las leyes de Kepler. La unidad pretende preparar al estudiante para el estudio profundo y detallado de las trayectorias planetarias según Johannes Kepler.",
+  "resena": "Análisis de las ventajas del modelo heliocéntrico. Introductorio para preparar hacia las leyes de Kepler.",
+  "id": "_Un_053_ElSistemaPlanetario_1"
+}

@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Geometría clásica"
+  ], 
+  "titulo": "Los teoremas de Ceva y Menelao", 
+  "descripcion": "Se estudian los teoremas de Ceva y Menelao y algunas de sus aplicaciones, por ejemplo: la existencia del ortocentro, incentro y gravicentro de un triangulo. Los teoremas de Ceva y Menelao están separados 15 siglos en la historia, sin embargo, se estudian juntos ya que uno es el dual del otro. El teorema de Ceva da condiciones para que tres puntos que están en los lados de un triángulo sean colineales y el de Menelao dice cuándo tres rectas que pasan por los vértices de un triángulo son concurrentes.",
+  "resena": "Los teoremas duales de Ceva y Menelao, y su uso para analizar la existencia de puntos notables de los triángulos.",
+  "id": "_Un_110_TeoremasDeCevaYMenelao"
+}

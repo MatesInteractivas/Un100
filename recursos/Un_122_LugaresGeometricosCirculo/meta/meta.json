@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Geometría Analítica"
+  ], 
+  "titulo": "Lugares Geométricos - Círculo", 
+  "descripcion": "El objetivo de esta serie de interactivos es estudiar ejemplos planteados que cuentan con condiciones que debe cumplir un punto del plano para poder ser considerado un elemento del lugar geométrico. Una vez establecidas las condiciones,  procederemos a encontrar la ecuación que debe satisfacerse para identificar la curva. En este caso, se plantea una condición que genera un círculo.",
+  "resena": "Condiciones de puntos en el plano para que pertenezcan a un círculo, así como la ecuación correspondiente.",
+  "id": "_Un_122_LugaresGeometricosCirculo"
+}

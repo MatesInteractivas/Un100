@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='100' O.x='-485' O.y='-275' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='120' ancho='482' alto='485' dibujar-si='(!pol)' fijo='no' escala='60' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='405860' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E3' x='20' y='120' ancho='482' alto='485' dibujar-si='(pol)' fijo='no' escala='90' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='889498' ejes='405860' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_04" value="tipo='R2' id='Covertura' x='0' y='0' ancho='100%' alto='100%' dibujar-si='info' fijo='sí' escala='48' O.x='0' O.y='0' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='55273c75' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_05" value="tipo='R2' id='INFO' x='(E1._w-500)/2' y='(E1._h-245)/2' ancho='500' alto='245' dibujar-si='info' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='cerrarInfo' interfaz='botón' tipo='numérico' región='interior' espacio='INFO' expresión='(INFO._w-35,0,35,35)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='info=0' ">
+      <param name="C_02" value="id='plano2' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Plano Cartesiano' expresión='(20,65,231,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='pol=0' activo-si='pol' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|inactiveColor=27ae60|overColor=e5760d|downColor=b15804' ">
+      <param name="C_03" value="id='plano' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Plano Polar' expresión='(271,65,231,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='pol=1' activo-si='!pol' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|inactiveColor=27ae60|overColor=e5760d|downColor=b15804' ">
+      <param name="C_04" value="id='c0' tipo='gráfico' espacio='E2' color='222222' color-int='f0f8ff' tamaño='4' expresión='(0,0)' constricción='y=0' ">
+      <param name="C_05" value="id='c1' tipo='gráfico' espacio='E3' color='222222' color-int='f0f8ff' tamaño='4' expresión='(fun(4*pi/3)*cos(4*pi/3),fun(4*pi/3)*sen(4*pi/3))' constricción='y^2+x^2=1' ">
+      <param name="A_01" value="id='f(y)' algoritmo='no' expresión='y^2-3' tipo='función' ">
+      <param name="A_02" value="id='angulo()' algoritmo='sí' expresión='x' hacer='beta=acos(c1.x);_beta=(c1.y>0)?beta:_beta;_beta=(c1.y<0)?pi+(pi-beta):_beta' tipo='función' ">
+      <param name="A_03" value="id='fun(x)' algoritmo='sí' expresión='1-cos(x)' hacer='fun=2*cos(2*x);fun=sen(2*x);fun=1-cos(3*x/2);fun=2*cos(2*x);fun=2.5*sen(2*x);fun=1-cos(x)' tipo='función' ">
+      <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='info=1;pol=0;' ">
+      <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='angulo()' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Simetría con respecto al eje \serif{\b{\${X}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(20+E2._w+20,65,482,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='!pol' coord_abs='sí' expresión='[E2._w+60,85]' texto='Una curva en el plano cartesiano es simétrica con respecto al eje \serif{\b{\${X}}} si para cualquier punto sobre la curva con coordenadas \serif{\b{\${(x, y)}}}, el punto \serif{\b{\${(x, -y)}}} también está en la curva. \n\nAnálogamente, en el plano polar si los puntos \serif{\b{\${(r, α)}}} y \serif{\b{\${(r, -α)}}} están ambos en la curva, ésta es simétrica con respecto al eje \serif{\b{\${X}}}.\n\nConviene aclarar que la curva en el ejemplo es la gráfica de una función \serif{\b{\${x = f(y)}}}, pues no puede ser la gráfica de una función \serif{\b{\${y = f(x)}}}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='pol' coord_abs='sí' expresión='[E2._w+60,85]' texto='Una curva en el plano cartesiano es simétrica con respecto al eje \serif{\b{\${X}}} si para cualquier punto sobre la curva con coordenadas \serif{\b{\${(x, y)}}}, el punto \serif{\b{\${(x, -y)}}} también está en la curva. \n\nAnálogamente, en el plano polar si los puntos \serif{\b{\${(r, α)}}} y \serif{\b{\${(r, -α)}}} están ambos en la curva, ésta es simétrica con respecto al eje \serif{\b{\${X}}}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(20,20)' texto='\${x = y^2 - 3}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E2' tipo='ecuación' fondo='no' color='20303a' coord_abs='no' expresión='x=f(y)' ancho='2' visible='no' editable='no' ">
+      <param name="G_07" value="espacio='E2' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(c0.x,sqrt(c0.x+3))(c0.x,-sqrt(c0.x+3))' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_08" value="espacio='E2' tipo='punto' fondo='no' color='a30000' coord_abs='no' expresión='(c0.x,sqrt(c0.x+3))' texto='\${(x, y)}' decimales='2' fijo='sí' tamaño='3' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_09" value="espacio='E2' tipo='punto' fondo='no' color='a30000' coord_abs='no' expresión='(c0.x,-sqrt(c0.x+3))' texto='\${(x, -y)}' decimales='2' fijo='sí' tamaño='3' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_10" value="espacio='E3' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(20,20)' texto='\${r = 1 - cos(α)}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='left' anchor='top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E3' tipo='arco' fondo='no' color='20303a' coord_abs='no' centro='(0,0)' radio='.5' inicio='_(1,0)' fin='(c1.x,c1.y)' vectores='sí' texto='α' decimales='2' fijo='sí' relleno='7bffff80' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' lineDash='solid' ">
+      <param name="G_12" value="espacio='E3' tipo='flecha' fondo='no' color='20303a' coord_abs='no' expresión='(0,0)(c1.x,c1.y)' decimales='2' fijo='sí' ancho='1' punta='3' flecha='ee0022' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_13" value="espacio='E3' tipo='ecuación' fondo='no' color='c0c0c0' coord_abs='no' expresión='y^2+x^2=1' ancho='1' visible='no' editable='no' ">
+      <param name="G_14" value="espacio='E3' tipo='curva' fondo='no' color='20303a' coord_abs='no' expresión='(fun(t)*cos(t),fun(t)*sen(t))' parámetro='t' t.intervalo='[0,2*pi]' t.pasos='200' ancho='2' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_15" value="espacio='E3' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(fun(_beta)*cos(_beta),fun(_beta)*sen(_beta))(fun(_beta)*cos(_beta),-fun(_beta)*sen(_beta))' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_16" value="espacio='E3' tipo='punto' fondo='no' color='a30000' coord_abs='no' expresión='(fun(_beta)*cos(_beta),fun(_beta)*sen(_beta))' texto='(r, α)' decimales='2' fijo='sí' tamaño='3' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_17" value="espacio='E3' tipo='punto' fondo='no' color='a30000' coord_abs='no' expresión='(fun(_beta)*cos(_beta),-fun(_beta)*sen(_beta))' texto='(r, -α)' decimales='2' fijo='sí' tamaño='3' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_18" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='20303a' coord_abs='sí' expresión='(0,0,INFO._w,35)' relleno='273c75' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_19" value="espacio='INFO' tipo='rectángulo' fondo='sí' color='273c75' coord_abs='sí' expresión='(1,1,INFO._w-3,INFO._h-3)' ancho='3' border_radius='0' lineDash='solid' ">
+      <param name="G_20" value="espacio='INFO' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,50]' texto='\b{Introducción}\n\nEn esta sección se plantearán los conceptos de simetría con respecto a los ejes \serif{\b{\${X}}} y \serif{\b{\${Y}}} y con respecto al origen \serif{\b{\${O}}} del plano cartesiano, así como los criterios algebraicos que caractericen a estas simetrías, tanto en coordenadas cartesianas como en coordenadas polares.' decimales='2' fijo='sí' ancho='INFO._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

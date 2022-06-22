@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<link rel="stylesheet" type="text/css" href="css/dialogo.css" />
+
+	<script type='text/javascript' src='lib/jquery.min.js'></script>
+	<!--Para termodinamica3-->
+	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+
+	<script type="text/javascript" src="json/dialogo.json"></script>
+	<script type="text/javascript" src="json/definiciones.json"></script>
+	<script type="text/javascript" src="json/diccionario.json"></script>
+	<script type="text/javascript" src="json/silabas.json"></script>
+
+	<script type="text/javascript" src="lib/dialogo_funciones.js"></script>
+	<script type="text/javascript" src="lib/dialogo_main.js"></script>
+	<script type="text/javascript" src="lib/dialogo_nodo.js"></script>
+	<script type="text/javascript" src="lib/dialogo_micromundo.js"></script>
+	<script type="text/javascript" src="lib/dialogo_getLemas.js"></script>
+	<script type="text/javascript" src="lib/dialogo_arbol.js"></script>
+	<script type="text/javascript" src="lib/dialogo_arbol_nodo.js"></script>
+	<script type="text/javascript" src="lib/dialogo_scroll.js"></script>
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+
+	<title>Termodinámica: Leyes de los gases</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+
+</head>
+
+<body onload="iniciar();">
+
+	<div id="contenedor" >
+		<table id="tablaPrincipal">
+			<tr>
+				<td id="td_micromundo"> <div id="micromundo" align="center"> </div>
+				</td>
+				<td id="td_chat">
+					<div id="chat"> <div id="chat_globos"></div> </div>
+					<div id="chat_campo">
+						<textarea id="input" onmousedown="mouseDown(event)"
+							onkeyup="keypressed(event)">Escribe tus respuestas aquí, luego pulsa ENTER.</textarea>
+					</div>
+					<div id="chat_scroll">
+						<div id="scroll_flecha_arriba"></div>
+						<div id="scroll_barra"></div>
+						<div id="scroll_flecha_abajo"></div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+
+</html>

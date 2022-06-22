@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Motivación</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' ancho='100%' alto='100%' fijo='sí' fondo='2980b9' red='no' red10='no' ejes='no' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='92' ancho='984' alto='513' fijo='sí' escala='36' O.y='20' red='bdc3c7' red10='no' ejes='no' ">
+      <param name="C_01" value="id='otro' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='Otro triángulo' expresión='(E2._w-180,E2._h-45,170,35)' color='ffffff' color-int='fa983a' negrita='sí' fuente puntos='18' acción='calcular' parámetro='Otro()' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="A_01" value="id='dist(x1,y1,x2,y2)' algoritmo='no' expresión='sqrt(abs((x2-x1)^2+(y2-y1)^2))' tipo='función' ">
+      <param name="A_02" value="id='Otro()' algoritmo='sí' expresión='x' inicio='t=0' hacer='A.x=ent(16*rnd-8);A.y=ent(8*rnd-4);B.x=ent(16*rnd-8);B.y=ent(8*rnd-4);C.x=ent(16*rnd-8);C.y=ent(8*rnd-4);a=dist(B.x,B.y,C.x,C.y);b=dist(A.x,A.y,C.x,C.y);c=dist(B.x,B.y,A.x,A.y);a2=(abs(a)>epsilon)?a*a:1;tA=((A.x-B.x)*(C.x-B.x)+(A.y-B.y)*(C.y-B.y))/a2;HA.x=B.x+(C.x-B.x)*tA;HA.y=B.y+(C.y-B.y)*tA;h=dist(A.x,A.y,HA.x,HA.y);;' mientras='(a<3)|(b<3)|(c<3)|(h<2)' tipo='función' ">
+      <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='margen=20;Otro();;' ">
+      <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Cualquier lado puede tomarse como base. \nLa \i{altura} es la perpendicular del vértice opuesto a la base. El \i{pie} de la altura no siempre está sobre la base.' ancho='E1._w-2*margen' fuente puntos='21' align='a_center' anchor='a_top_center' info='Texto instrucción' ">
+      <param name="G_02" value="espacio='E2' tipo='rectángulo' fondo='sí' color='bdc3c7' coord_abs='sí' expresión='(10,10,200,60)' relleno='ffffff' ancho='1' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' color='000000' coord_abs='sí' expresión='[20,15]' texto='\${\color{c00020}{base:        b = [a]}}\n\${\color{2030be}{altura:    h = [h]}}' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='rectángulo' fondo='sí' color='bdc3c7' coord_abs='sí' expresión='(E2._w-500,10,490,60)' relleno='ffffff' ancho='1' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' color='000000' coord_abs='sí' expresión='[E2._w-245,18]' texto='\serif{\b{\${Área: A = \frac{\color{c00020}{b} × \color{2030be}{h}}{2} = \frac{\color{c00020}{[a]} × \color{2030be}{[h]}}{2} = \frac{[a*h]}{2} = [a*h/2]}}}' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' ">
+      <param name="G_06" value="espacio='E2' tipo='segmento' color='4020303a' coord_abs='no' expresión='(HA.x,HA.y)(B.x,B.y)' tamaño='2' ancho='1' ">
+      <param name="G_07" value="espacio='E2' tipo='polígono' color='008040' coord_abs='no' expresión='(A.x,A.y)(B.x,B.y)(C.x,C.y)(A.x,A.y)' relleno='803df180' ancho='1' ">
+      <param name="G_08" value="espacio='E2' tipo='segmento' color='c00020' coord_abs='no' expresión='(B.x,B.y)(C.x,C.y)' tamaño='4' ancho='3' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='20' ">
+      <param name="G_09" value="espacio='E2' tipo='segmento' color='2030be' coord_abs='no' expresión='(A.x,A.y)(HA.x,HA.y)' tamaño='4' ancho='3' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='20' ">
+      <param name="G_10" value="espacio='E2' tipo='texto' color='c00020' coord_abs='no' expresión='((B.x+C.x)/2,(B.y+C.y)/2)' texto='\${b}' decimales='0' fijo='no' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_center' anchor='a_center_center' ">
+      <param name="G_11" value="espacio='E2' tipo='texto' color='2030be' coord_abs='no' expresión='((A.x+HA.x)/2,(A.y+HA.y)/2)' texto='\${h}' decimales='0' fijo='no' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_center' anchor='a_center_center' ">
+      <param name="G_12" value="espacio='E2' tipo='rectángulo' fondo='sí' color='e7000000' coord_abs='sí' expresión='(0,0,E2._w-1,E2._h-1)' ancho='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Desarrollo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='GRAF' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='405860' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E2' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='GRAF.escala' tipo='numérico' interfaz='pulsador' región='interior' espacio='GRAF' expresión='(GRAF._w-40,10,30,60)' valor='40' incr='1' min='1' max='1000000' discreto='no' decimales='6' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/zoom_in.svg' image_dec='images/zoom_out.svg' btn_pos='v_left' ">
+      <param name="C_02" value="id='GRAF.Ox' tipo='numérico' interfaz='pulsador' región='interior' espacio='GRAF' expresión='((GRAF._w-70)/2,10,70,35)' valor='-10' incr='10' discreto='no' decimales='6' fijo='no' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/derecha.svg' image_dec='images/izquierda.svg' btn_pos='h_left_right' ">
+      <param name="C_03" value="id='GRAF.Oy' tipo='numérico' interfaz='pulsador' región='interior' espacio='GRAF' expresión='(GRAF._w-45,(GRAF._h-70)/2,36,70)' valor='0' incr='10' discreto='no' decimales='6' fijo='no' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/arriba.svg' image_dec='images/abajo.svg' btn_pos='v_left' ">
+      <param name="C_04" value="id='t' tipo='numérico' interfaz='pulsador' región='interior' espacio='GRAF' nombre='t' expresión='(10,GRAF._h-90,147,35)' valor='0' incr='0.02' min='0' max='20' discreto='no' decimales='2' fijo='sí' visible='no' activo-si='!info' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="C_05" value="id='a' tipo='numérico' interfaz='pulsador' región='interior' espacio='GRAF' nombre='a' expresión='(10,GRAF._h-45,147,35)' valor='r' incr='0.1' discreto='no' decimales='2' fijo='no' visible='sí' activo-si='!info' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="C_06" value="id='R' tipo='numérico' interfaz='pulsador' región='interior' espacio='GRAF' nombre='R' expresión='((GRAF._w-147)/2,GRAF._h-45,147,35)' valor='r' incr='0.1' min='0' discreto='no' decimales='2' fijo='no' visible='sí' acción='calcular' parámetro='teta=0' activo-si='0' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="C_07" value="id='r' tipo='numérico' interfaz='pulsador' región='interior' espacio='GRAF' nombre='r' expresión='(GRAF._w-147-10,GRAF._h-45,147,35)' valor='1' incr='0.1' min='0' discreto='no' decimales='2' fijo='no' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="C_08" value="id='av' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='1' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='Rr' expresión='R+r' tipo='variable' ">
+      <param name="A_02" value="id='T' expresión='2*pi*t' tipo='variable' ">
+      <param name="A_03" value="id='T2' expresión='(1+R/r)*T' tipo='variable' ">
+      <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='av=0;R=1;A=1.5;B=2.5' ">
+      <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='GRAF.escala=((r!=rA)|(a!=aA))?GRAF.escala+0.000001:GRAF.escala;t=((r!=rA)|(a!=aA))?0:t;scroll=((t>=0.1)&(tA!=t)&(scroll>-75))?-75:scroll;scroll=((t>=1.0)&(tA!=t)&(scroll>-15*12-10))?-15*12-10:scroll;rA=r;aA=a;tA=t;R=r' ">
+      <param name="G_01" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[av+1] / 2' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='av==0' coord_abs='sí' expresión='[20,20]' texto='El caracol de Pascal, o Limacon de Pascal, es un caso especial de epitrocoide. Este nombre corresponde no a una curva, sino a una familia de curvas que se genera cuando \serif{\b{\${R}}} y \serif{\b{\${r}}}, es decir el radio de la circunferencia de base y el de la circunferencia generatriz, son iguales. \n\nEsta curva fue estudiada por Dürer en 1525 (bajo el nombre de arachnée) Étienne Pascal y Roberval en 1650. Éste último le dió el nombre de Limacon de Pascal en honor a Étienne Pascal (1588 -1651), magistrado y matemático amateur y padre del matemático, físico y filósofo Blaise Pascal.\n' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_03" value="espacio='GRAF' tipo='curva' fondo='no' color='164ca3' coord_abs='no' expresión='(Rr*cos(T)+a*cos(T2),Rr*sen(T)+a*sen(T2))' parámetro='t' t.intervalo='[0,tA]' t.pasos='ent(100*tA)' ancho='2' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_04" value="espacio='GRAF' tipo='arco' fondo='no' color='e00022' dibujar-si='!curva' coord_abs='no' centro='(0,0)' radio='R' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' ancho='3' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' lineDash='solid' info='círculo radio R' ">
+      <param name="G_05" value="espacio='GRAF' tipo='arco' fondo='no' color='e00022' dibujar-si='!curva' coord_abs='no' centro='(Rr*cos(T),Rr*sen(T))' radio='abs(r)' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' ancho='3' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' lineDash='solid' info='círculo radio r' ">
+      <param name="G_06" value="espacio='GRAF' tipo='arco' fondo='no' color='9be00022' dibujar-si='(!curva)&(av>0)' coord_abs='no' centro='(Rr*cos(0),Rr*sen(0))' radio='abs(r)' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='Monospaced' fuente puntos='12' lineDash='solid' info='círculo radio r' ">
+      <param name="G_07" value="espacio='GRAF' tipo='punto' fondo='no' color='000000' dibujar-si='(!curva)&(av>0)&(t>0)' coord_abs='no' expresión='(Rr*cos(T)+a*cos(T2),Rr*sen(T)+a*sen(T2))' texto='\${P_t}' decimales='2' fijo='sí' tamaño='3' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' info='Pt' ">
+      <param name="G_08" value="espacio='GRAF' tipo='segmento' fondo='no' color='0000c2' dibujar-si='(!curva)&(av>0)' coord_abs='no' expresión='(0,0)(Rr*cos(T),Rr*sen(T))' texto='R' decimales='2' fijo='sí' tamaño='2' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' lineDash='solid' ">
+      <param name="G_09" value="espacio='GRAF' tipo='segmento' fondo='no' color='0000c2' dibujar-si='!curva' coord_abs='no' expresión='(Rr*cos(T),Rr*sen(T))(Rr*cos(T)+a*cos(T2),Rr*sen(T)+a*sen(T2))' texto='a' decimales='2' fijo='sí' tamaño='3' ancho='2' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' lineDash='solid' ">
+      <param name="G_10" value="espacio='GRAF' tipo='punto' fondo='no' color='000090' dibujar-si='(t==0)&(av>0)' coord_abs='no' expresión='(Rr*cos(T)+a*cos(T2),Rr*sen(T)+a*sen(T2))' texto='\${P_0}' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' info='P0' ">
+      <param name="G_11" value="espacio='GRAF' tipo='punto' fondo='no' color='000090' dibujar-si='(t==0)&(av>0)' coord_abs='no' expresión='(Rr*cos(T),Rr*sen(T))' texto='\n\${C_0}' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' info='C0' ">
+      <param name="G_12" value="espacio='GRAF' tipo='punto' fondo='no' color='000090' dibujar-si='(av==1)&(t>0)' coord_abs='no' expresión='(Rr*cos(T),Rr*sen(T))' texto='\${C_t}' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' info='Ct' ">
+      <param name="G_13" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='El caracol de Pascal' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_14" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='av==1' coord_abs='sí' expresión='[20,20]' texto='La cardioide y la trisectriz son casos especiales de Limacon, que se generan cuando \serif{\b{\${a}}} es igual o mayor a \serif{\b{\${r}}} respectivamente.\n\nIntenta generar las curvas de la imagen de abajo.\n' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_15" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='av==1' coord_abs='no' expresión='(0,-0.9,0.5,0.5)' archivo='images/limaconOfPascal.png' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

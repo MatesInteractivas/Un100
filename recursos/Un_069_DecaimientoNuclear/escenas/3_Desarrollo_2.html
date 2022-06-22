@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='-50%' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E1' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='40' O.x='-200' O.y='100' despl_imagen='arr-izq' fondo='ecf0f1' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='3' discreto='no' decimales='0' fijo='sí' visible='no' acción='calcular' parámetro='E2.Oy=(steps>1)?-550:0' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='init()' algoritmo='sí' expresión='x' hacer='dx1=15+ent(rnd*50);dx2=15+ent(rnd*50);dx3=15+ent(rnd*50);dx4=15+ent(rnd*50)' tipo='función' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='init()' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E0' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E0._w/2,20]' texto='Tipos de decaimiento beta' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='sí' expresión='(200+(25*s)+5*sen(t+(dx1*s)),200+(25*s)+5*cos(t+(dx1*s)))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/proton.png' rotini='0' opacidad='1' ">
+      <param name="G_03" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='sí' expresión='(180+(25*s)+5*sen(t+(dx2*s)),180+(25*s)+5*cos(t+(dx2*s)))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/neutron.png' rotini='0' opacidad='1' ">
+      <param name="G_04" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='sí' expresión='(200+(25*s)+5*sen(t-(dx3*s)),200+(25*s)+5*cos(t-(dx3*s)))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/proton.png' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='((s=0)|((s=1)&(t<50)&(t%2!=0)))&(E2.Oy>-550)' coord_abs='sí' expresión='(180+(25*s)+5*sen(t-(dx4*s)),180+(25*s)+5*cos(t-(dx4*s)))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/neutron.png' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t>49)&(E2.Oy>-550)' coord_abs='sí' expresión='(215-((t-50)*5),215-((t-50)*5))' archivo='images/electron.png' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t>49)&(E2.Oy>-550)' coord_abs='sí' expresión='(205+5*sen(t-dx4),205+5*cos(t-(dx4)))' archivo='images/proton.png' rotini='0' opacidad='1' ">
+      <param name="G_08" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t>49)&(E2.Oy<-549)' coord_abs='sí' expresión='(215+((t-50)*5),215-((t-50)*5))' archivo='images/positron.png' rotini='0' opacidad='1' ">
+      <param name="G_09" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t>49)&(E2.Oy>-550)' coord_abs='sí' expresión='(215+((t-50)*5),215+((t-50)*5))' archivo='images/neutrino.png' rotini='0' opacidad='1' ">
+      <param name="G_10" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t>49)&(E2.Oy<-449)' coord_abs='sí' expresión='(160-((t-50)*5),190+((t-50)*5))' archivo='images/neutrino.png' rotini='-90' opacidad='1' ">
+      <param name="G_11" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t>49)&(E2.Oy<-549)' coord_abs='sí' expresión='(205+5*sen(t-dx4),205+5*cos(t-(dx4)))' archivo='images/neutron.png' rotini='0' opacidad='1' ">
+      <param name="G_12" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='((s=0)|((s=1)&(t<50)&(t%2!=0)))&(E2.Oy<-549)' coord_abs='sí' expresión='(180+(25*s)+5*sen(t-(dx4*s)),180+(25*s)+5*cos(t-(dx4*s)))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/proton.png' rotini='0' opacidad='1' ">
+      <param name="G_13" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='sí' expresión='(50,330,.5,.5)' archivo='images/proton.png' rotini='0' opacidad='1' ">
+      <param name="G_14" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='sí' expresión='(160,330,.5,.5)' archivo='images/neutron.png' rotini='0' opacidad='1' ">
+      <param name="G_15" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='sí' expresión='(270,330,.5,.5)' archivo='images/electron.png' rotini='0' opacidad='1' ">
+      <param name="G_16" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='sí' expresión='(380,330,.5,.5)' archivo='images/positron.png' rotini='0' opacidad='1' ">
+      <param name="G_17" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='E2.Oy<-549' coord_abs='sí' expresión='[E2._w/2,20]' texto='Decaimiento beta mas' decimales='2' fijo='sí' ancho='1' color_borde_texto='ecf0f1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' ">
+      <param name="G_18" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='E2.Oy>-550' coord_abs='sí' expresión='[E2._w/2,20]' texto='Decaimiento beta menos' decimales='2' fijo='sí' ancho='1' color_borde_texto='ecf0f1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' ">
+      <param name="G_19" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[20,350]' texto='Protón              Neutrón            Electrón           Positrón' decimales='2' fijo='sí' ancho='1' color_borde_texto='ecf0f1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_20" value="espacio='E0' tipo='texto' fondo='no' color='000000' dibujar-si='0' coord_abs='sí' expresión='[20,70]' texto='t=[t]\nE2.Oy=[E2.Oy]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='left' anchor='top_left' ">
+      <param name="G_21" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 4' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_22" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='\b{Decaimiento beta (\serif{\b{\${β}}})}\n\nExisten dos tipos de decaimiento beta, el de la partícula negativa y el de la positiva. La partícula \b{beta negativa} es un electrón igual que los electrones de las capas atómicas con la única diferencia que provienen del núcleo atómico. El núcleo no contiene electrones, por lo que esta emisión se da cuando un neutrón del núcleo se convierte en un protón y un electrón; el protón se queda en el núcleo debido a la fuerza nuclear, y el electrón escapa como partícula beta. El número de masa del núcleo se conserva pero su número atómico aumenta en uno:' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_23" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(E2._w/2,360)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs38\i\b \b0\i0\i\b{\*\mjaformula{\matrix\type 5\rows 2\columns 1{\element\i\b A\b0\i0}{\element\i\b Z\b0\i0}}\i\b X → \b0\i0{\matrix\type 5\rows 2\columns 1{\element\i\b A\b0\i0}{\element\i\b Z + 1\b0\i0}}\i\b Y + β\b0\i0{\supix\i\b -\b0\i0}\i\b  + v\b0\i0}\b0\i0\i\b \b0\i0}' decimales='2' fijo='sí' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' ">
+      <param name="G_24" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='Debido a la conservación de leptones en los dos tipos de decaimiento beta se emite también un neutrino, esta partícula no tiene carga ni masa pero se lleva parte de la energía total disponible en el proceso, quedando la partícula beta con sólo una parte de ésta.\n\nA continuación analizamos la energía \serif{\b{\${Q}}} de liberación:\n\n\serif{\b{\${Q_{β-} = \[M_P - (M_D + m_e)\] c^2}}}\n\nCambiamos masas atómicas y nos queda:\n\n  \serif{\b{\${=\[(M_P - Zm_e) - ((M_D - ((Z + 1)m_e)) + m_e)\] c^2}}}\n  \serif{\b{\${=\[M_P - Zm_e - M_D + Zm_e + m_e - m_e\] c^2}}}\n\serif{\b{\${Q_{β-} = \[M_P - M_D\] c^2}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_25" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='(20,20)' texto='En el otro tipo de decaimiento beta el núcleo emiten partículas \b{beta positivas} (positrones), que tienen la misma masa que los electrones pero carga \serif{\b{\${+e}}}.\n\nEstas partículas son las antipartículas de los electrones. Se crean en el núcleo cuando un protón se convierte en un neutrón. El nuevo neutrón permanece en el núcleo, el positrón junto con un neutrino son emitidos. En consecuencia, el núcleo pierde una carga positiva, como se muestra a continuación:' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_26" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='(E2._w/2,290)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs38 {\*\mjaformula{\matrix\type 5\rows 2\columns 1{\element\i\b A\b0\i0}{\element\i\b Z\b0\i0}}\i\b X → \b0\i0{\matrix\type 5\rows 2\columns 1{\element\i\b A\b0\i0}{\element\i\b Z - 1\b0\i0}}\i\b Y + β\b0\i0{\supix\i\b +\b0\i0}\i\b  + v\b0\i0}}' decimales='2' fijo='sí' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' ">
+      <param name="G_27" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==3' coord_abs='sí' expresión='(20,20)' texto='A continuación analizamos la energía \serif{\b{\${Q}}} de liberación:\n\n\serif{\b{\${Q_{β+} = \[M_P - (M_D + m_e)\] c^2}}}\n\nCambiamos masas atómicas y nos queda:\n  \serif{\b{\${= \[(M_P - Zm_e) - ((M_D - ((Z - 1)m_e)) + m_e)\] c^2}}}\n  \serif{\b{\${= \[M_P - Zm_e - M_D + Zm_e - m_e - m_e] c^2}}}\n\serif{\b{\${Q_{β+} = \[M_P - M_D - 2m_e\] c^2}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="Animación" value="pausa='40' controles='no' auto='sí' repetir='no' inicio='t=0' hacer='t=t+1;t=(t<100)?t:0' mientras='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

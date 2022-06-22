@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='15%' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='sigue' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Fuerza resultante' expresión='(20+(482-180)/2,E1._h-75,180,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='muestra=1' dibujar-si='(se==2)&(muestra==0)' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_02" value="id='Inicio' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Inicio' expresión='(20+(482-100)/2,E1._h-75,100,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='inicio' parámetro='muestra=1' dibujar-si='muestra' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_03" value="id='f1' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='4' expresión='(-7.6,0.42)' imagen='images/fuerza1.png' ">
+      <param name="C_04" value="id='f2' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='4' expresión='(-7.56,1.79)' imagen='images/fuerza2.png' ">
+      <param name="C_05" value="id='f3' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='4' expresión='(-7.12,1.31)' imagen='images/fuerza3.png' ">
+      <param name="C_06" value="id='fR' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='4' expresión='(x1,y1)' imagen='images/fuerzaR.png' dibujar-si='muestra' activo-si='hh' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='e1=(f1.x<f2.x)&(abs(abs(f1.x-f2.x)-1.02)<0.05)&(abs(abs(f1.y-f2.y)-0.71)<0.05);e2=(f2.x<f3.x)&(abs(abs(f2.x-f3.x)-1.56)<0.05)&(abs(abs(f2.y-f3.y)-0.89)<0.05);e3=(f1.x<f3.x)&(abs(abs(f1.x-f3.x)-1.5)<0.05)&(abs(abs(f1.y-f3.y)-0.25)<0.05);e4=(f2.x<f1.x)&(abs(abs(f2.x-f1.x)-1.07)<0.05)&(abs(abs(f2.y-f1.y)-0)<0.05);e5=(f3.x<f1.x)&(abs(abs(f3.x-f1.x)-1.46)<0.05)&(abs(abs(f3.y-f1.y)-0.48)<0.05);e6=(f3.x<f2.x)&(abs(abs(f3.x-f2.x)-1.51)<0.05)&(abs(abs(f3.y-f2.y)-0.91)<0.05);se=e1+e2+e3+e4+e5+e6+e7+e8;fR.x=(f1.x<f2.x)&(f1.x<f3.x)?f1.x+1.51:fR.x;fR.y=(f1.x<f2.x)&(f1.x<f3.x)?f1.y+1.27:fR.y;fR.x=(f2.x<f1.x)&(f2.x<f3.x)?f2.x+1.45:fR.x;fR.y=(f2.x<f1.x)&(f2.x<f3.x)?f2.y-0.12:fR.y;;fR.x=(f3.x<f1.x)&(f3.x<f2.x)?f3.x+1.02:fR.x;fR.y=(f3.x<f1.x)&(f3.x<f2.x)?f3.y+0.36:fR.y;' ">
+      <param name="A_03" value="id='e3' evento='sí' condición='paso=4' acción='animar' ejecución='alternar' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Suma de varias fuerzas − Método del polígono' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(20+502*s,65,482,540)' familia='s' s.intervalo='[0,1]' s.pasos='1' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='no' expresión='(-9.4,1.5)' archivo='images/pasador4.png' rotini='-90' opacidad='1' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='muestra==0' coord_abs='sí' expresión='[542,85]' texto='En general, podemos sumar dos o más fuerzas, así:\n\nConstruímos una poligonal con todas las fuerzas, de tal forma que unamos la cabeza de una fuerza con la cola de otra.\n\nLuego unimos la primera cola con la última cabeza, obteniendo la fuerza resultante.\n\c{\b{Cabeza y cola es la clave}}' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='muestra==1' coord_abs='sí' expresión='[542,85]' texto='\b{¡Muy bien!}\n\nPuedes practicar para diferentes polígonales y la resultante será siempre la misma ¿por qué?, la respuesta la encontrarás en la primera escena de desarrollo.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[40,85]' texto='Arrastra las fuerzas para constuir la poligonal.' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='se==1' coord_abs='sí' expresión='[261,150]' texto='Llevas dos fuerzas' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='se==2' coord_abs='sí' expresión='[261,150]' texto='¡Excelente!' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_09" value="espacio='E1' tipo='flecha' fondo='no' color='20303a' dibujar-si='muestra&(se=2)' coord_abs='no' expresión='(fR.x-2.1,fR.y-.7)(fR.x+1.82,fR.y+.5)' decimales='2' fijo='sí' ancho='2' punta='7' flecha='000000' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="Animación" value="pausa='40' controles='no' auto='no' repetir='no' inicio='t=0' hacer='t=t+.1;x1=t*cos(ang2);y1=t*sen(ang2);' mientras='t<2.1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

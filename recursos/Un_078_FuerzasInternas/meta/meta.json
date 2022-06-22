@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Fuerzas internas", 
+  "descripcion": "Todo elemento estructural sometido a fuerzas externas reacciona con otras fuerzas internas, las cuales permiten conocer si el elemento está en capacidad de resistir dichas fuerzas. El diseño de un elemento estructural depende de las propiedades del material y de la determinación de las fuerzas internas del elemento. Así las cosas, en esta unidad, tendremos como objetivos: Determinar las fuerzas internas que actúan en un punto cualquiera de un elemento estructural. Elaborar los diagramas de fuerza cortante y de momento flector.",
+  "resena": "Efecto de fuerzas externas sobre un objeto y la respuesta de sus fuerzas internas. Resistencia de estructuras.",
+  "id": "_Un_078_FuerzasInternas"
+}

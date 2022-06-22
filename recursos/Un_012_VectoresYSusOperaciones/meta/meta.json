@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Vectores y sus operaciones", 
+  "descripcion": "En esta unidad didáctica se busca la comprensión del concepto de vector desde el punto de vista de la Física, así como de las siguientes operaciones y su aplicación: * Suma * Producto por escalar * Diferencia * Producto punto * Producto cruz",
+  "resena": "Operaciones entre vectores, incluyendo producto cruz y punto, y sus aplicaciones en la física.",
+  "id": "_Un_012_VectoresYSusOperaciones"
+}

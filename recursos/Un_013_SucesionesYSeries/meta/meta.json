@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Cálculo"
+  ], 
+  "titulo": "Sucesiones y series", 
+  "descripcion": "El objetivo de esta unidad es introducir al alumno al concepto de sucesión. Para ello, se proporciona una ecuación inicial, cuyos parámetros pueden modificarse. El alumno puede editar la ecuación misma para probar ecuaciones de su elección. La sucesión se calcula paso a paso para observar cómo cambia respecto al parámetro n. Es posible observar, en caso de que la haya, que la sucesión tiene una cota que no es rebasada, y ésta es gráficamente representada por una recta para introducir el concepto de asíntota. Lo mismo se hace con sucesiones generadas mediante la aplicación recursiva de una función y las sucesiones correspondientes a una serie.",
+  "resena": "Sucesiones mediante ecuaciones. Ausencia o presencia de cotas y asíntotas.",
+  "id": "_Un_013_SucesionesYSeries"
+}

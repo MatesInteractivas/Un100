@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometría</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '5'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '0'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '0'  parametros = '-1.17,6.77,-3.38'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,0' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-6.53,2.77,-3.38'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,1' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '3.13,-1.56,-3.38'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,2' />
+<objeto  nombre = 'a'  tipo = 'recta'  constructor = '38'  parametros = '-0.41,-0.91,-0.14'  objRef = '1,2'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,3' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '38'  parametros = '0.89,0.46,-2.06'  objRef = '2,0'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,4' />
+<objeto  nombre = 'c'  tipo = 'recta'  constructor = '38'  parametros = '-0.60,0.80,-6.13'  objRef = '0,1'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,5' />
+<objeto  nombre = 'L'  tipo = 'punto'  constructor = '3'  parametros = '-1.70,0.61,3.28'  objRef = '1,2'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,6' />
+<objeto  nombre = 'd'  tipo = 'recta'  constructor = '38'  parametros = '-1.00,0.09,-1.75'  objRef = '0,6'  visible = '1,1'  ancho = '2,1'  color = '#ff,#c0c0c0,#0'  etiqueta = '0,7' />
+<objeto  nombre = 'M'  tipo = 'punto'  constructor = '3'  parametros = '0.98,2.61,0.00'  objRef = '2,0'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'N'  tipo = 'punto'  constructor = '3'  parametros = '-3.85,4.77,0.00'  objRef = '0,1'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'e'  tipo = 'recta'  constructor = '38'  parametros = '0.67,0.74,-0.95'  objRef = '2,9'  visible = '1,1'  ancho = '2,1'  color = '#ff,#c0c0c0,#0'  etiqueta = '0,-1' />
+<objeto  nombre = 'f'  tipo = 'recta'  constructor = '38'  parametros = '0.02,1.00,-2.63'  objRef = '8,1'  visible = '1,1'  ancho = '2,1'  color = '#ff,#c0c0c0,#0'  etiqueta = '0,-1' />
+<objeto  nombre = 'G'  tipo = 'punto'  constructor = '1'  parametros = '-1.53,2.66,1.95'  objRef = '7,10'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+
+<nota texto=""/>
+
+<table align='center'>  
+<tr>
+	<td width ='482px' height='540px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="482" height="540"></canvas>
+		</td>
+    
+    <td width ='20px'></td>
+    
+    <td width ='482px' height="540px" valign='middle' class="celda_derecha">
+    
+	<div class="cuaderno2">
+<p>Usaremos el teorema de Ceva, que vimos en otro interactivo, que afirma que si \(N\), \(L\) y \(N\)  son puntos en
+los lados \(AB\), \(BC\) y \(CA\) de un triángulo \(ABC\) y se satisface 
+\[
+\frac{AN}{NB}\frac{BL}{LC}\frac{CM}{MA}=1
+\]
+entonces las rectas \(AL\) \(BM\) y \(CN\) son concurrentes.</p>
+
+<p>En este caso es muy sencillo verificar la condición anterior, ya que como \(N\) es el punto medio de \(AB\), entonces
+\[
+\frac{AN}{NB}=1
+\]
+Similarmente
+\[ 
+\frac{BL}{LC}=1 \quad \rm{y} \quad \frac{CM}{MA}=1 
+\]
+Así que
+\[
+\frac{AN}{NB}\frac{BL}{LC}\frac{CM}{MA}=1 \times 1 \times 1 = 1
+\]
+Por lo tanto, las medianas son concurrentes. El punto donde se cortan es el <resalta>gravicentro</resalta>.</p>
+<p id="cuaderno">Este es un párrafo</p></div>
+</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

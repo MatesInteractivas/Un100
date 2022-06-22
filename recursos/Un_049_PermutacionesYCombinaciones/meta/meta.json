@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Algebra", 
+    "Combinatoria"
+  ], 
+  "titulo": "Permutaciones y combinaciones", 
+  "descripcion": "El análisis combinatorio es utilizado en áreas donde tengan relevancia las distintas formas de contar o agrupar  elementos. Se  ha  utilizado en  la  teoría de juegos, en  problemas computacionales, en la teoría de la probabilidad, en juegos de ingenio y mucho más. En esta unidad se busca el logro de los siguientes objetivos: * Manejar  la regla de la multiplicación y aplicarla en algunos ejercicios. * Manejar  las reglas de permutaciones y aplicarlas en algunos ejercicios. * Manejar  las reglas de combinaciones y aplicarlas en algunos ejercicios.",
+  "resena": "Teoría y aplicaciones del conteo en teoría de juegos, probabilidad, etc.",
+  "id": "_Un_049_PermutacionesYCombinaciones"
+}

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_125_LugaresGeometricosHiperbola" 
+	nivel="Licenciatura, Bachillerato" 
+	area="Matemáticas, Geometría, Geometría Analítica"
+	plataforma="HTML 5" 
+	versión="Beta
+	>
+	<titulo><![CDATA[
+		Lugares Geométricos - Hipérbola 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+    El objetivo de esta serie de interactivos es estudiar ejemplos planteados que cuentan con condiciones que debe
+    cumplir un punto del plano para poder ser considerado un elemento del lugar geométrico. Una vez establecida 
+    las condiciones,  procederemos a encontrar la ecuación que debe satisfacerse para identificar la curva.
+	En este caso, se hace una construccion del lugar geométrico que describe un punto M cuando un vértice de un triángulo
+	se mueven sobre una recta de manera que el área de dicho triángulo sea constante.  
+	Se prueba que dicho lugar geométrico es una hipérbola.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

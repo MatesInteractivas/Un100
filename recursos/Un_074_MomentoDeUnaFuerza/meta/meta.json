@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Fìsica", 
+    "Mecánica", 
+    "Estática"
+  ], 
+  "titulo": "Momento de una fuerza con respecto a un punto", 
+  "descripcion": "Con esta unidad didáctica el estudiante podrá comprender y aplicar el concepto de  momento  de  una fuerza con respecto a  un punto, a  través  de vídeos, objetos interactivos de aprendizaje y la solución varios de problemas propuestos.",
+  "resena": "Concepto de torca o momento de torsión en mecánica newtoniana.",
+  "id": "_Un_074_MomentoDeUnaFuerza"
+}

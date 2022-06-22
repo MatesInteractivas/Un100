@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='graf1' x='20' y='65' ancho='482' alto='260' dibujar-si='explica=0' fijo='sí' escala='40' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='f0f8fa' red='e0ecf0' red10='ccd8dc' ejes='405860' texto='no' números='sí' eje-x='X' eje-y='Y' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='graf2' x='20' y='345' ancho='482' alto='260' dibujar-si='explica=0' fijo='sí' escala='100' O.x='0' O.y='40' despl_imagen='arr-izq' fondo='f0f8fa' red='e0ecf0' red10='ccd8dc' ejes='405860' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_04" value="tipo='R2' id='ejem' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='graf1.escala' tipo='numérico' interfaz='pulsador' región='interior' espacio='graf1' expresión='(10,graf1._h-70,30,60)' valor='40' incr='20' min='20' max='80' discreto='sí' decimales='2' fijo='no' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/zoom_in.svg' image_dec='images/zoom_out.svg' btn_pos='v_left' ">
+      <param name="C_02" value="id='graf2.escala' tipo='numérico' interfaz='pulsador' región='interior' espacio='graf2' expresión='(10,graf2._h-70,30,60)' valor='80' incr='40' min='40' max='320' discreto='sí' decimales='2' fijo='no' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/zoom_in.svg' image_dec='images/zoom_out.svg' btn_pos='v_left' ">
+      <param name="C_03" value="id='g' tipo='gráfico' espacio='graf2' color='ff207045' color-int='cc20cc45' tamaño='10' expresión='(0.5,0)' dibujar-si='bien=1' ">
+      <param name="C_04" value="id='g' tipo='gráfico' espacio='graf2' color='207045' color-int='20cc45' tamaño='4' expresión='(0.5,0)' dibujar-si='bien=1' ">
+      <param name="C_05" value="id='cotax' tipo='numérico' interfaz='menú' región='interior' espacio='ejem' expresión='(285,33,100,30)' valor='0' decimales='2' fijo='sí' visible='no' opciones='0.01[1],0.0001[2],0.000001[3]' acción='calcular' parámetro='n=&squot;&squot;;bien=0;h=1' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_06" value="id='n' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='ejem' expresión='(218,420,70,35)' valor='&squot;&squot;' min='1' max='15' discreto='no' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='bien=(n=grado)?1:0' activo-si='!bien' evaluar='no' respuesta='krypto_l' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="A_01" value="id='fmcd(x,y)' algoritmo='sí' expresión='x2=0?1:x2' inicio='x1=min(x,y);x2=max(x,y)' hacer='resto=x1=0?0:x2%x1;x2=x1;x1=resto;;;;' mientras='resto#0' tipo='función' ">
+      <param name="A_02" value="id='fmcm(x,y)' algoritmo='sí' expresión='mcm' hacer='mcm=x*y/fmcd(x,y);' tipo='función' ">
+      <param name="A_03" value="id='fact(x)' algoritmo='sí' expresión='xfac' inicio='i=1;xfac=1' hacer='xfac=xfac*(i);i=i+1' mientras='i<=x' tipo='función' ">
+      <param name="A_04" value="id='f(x)' algoritmo='no' expresión='e^x' tipo='función' ">
+      <param name="A_05" value="id='a(n)' algoritmo='no' expresión='e^x' tipo='función' ">
+      <param name="A_06" value="id='a' vector='sí' evaluar='una-sola-vez' tamaño='20' expresión='a[0]=0;a[1]=0;a[2]=0' tipo='vector' ">
+      <param name="A_07" value="id='T(x,n)' algoritmo='sí' expresión='Tn' inicio='Tn=f(a);i=1' hacer='Tn=Tn+a[i]*(x-a)^i;i=i+1' mientras='i<=n' tipo='función' ">
+      <param name="A_08" value="id='R(x)' algoritmo='no' expresión='abs(f(x)-T(x,n))' tipo='función' ">
+      <param name="A_09" value="id='H(x)' algoritmo='no' expresión='abs((e^x)*((xx-a)^(n+1))/fact(n+1))' tipo='función' ">
+      <param name="A_10" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='a=0;xx=1;grado=1;h=1' ">
+      <param name="A_11" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='graf1.Oy=graf1.escala;graf1.Ox=-a*graf1.escala;graf2.Oy=40;graf2.Ox=-0.5*(a+xx)*graf2.escala;g.y=0;g.x=(g.x<a)?a:(g.x>xx?xx:g.x);;a[0]=f(a);a[1]=a(1)/1;a[2]=a(2)/2;a[3]=a(3)/fact(3);a[4]=a(4)/fact(4);a[5]=a(5)/fact(5);a[6]=a(6)/fact(6);a[7]=a(7)/fact(7);a[8]=a(8)/fact(8);a[9]=a(9)/fact(9);a[10]=a(10)/fact(10);a[11]=a(11)/fact(11);a[12]=a(12)/fact(12);a[13]=a(13)/fact(13);a[14]=a(14)/fact(14);a[15]=a(15)/fact(15);cota=3/fact(n+1);dec=(cotax=1)?2:(cotax=2?4:6);h=(bien=1)?10^dec:h;;grado=(dec=2)?5:(dec=4?7:9);;' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Se estropeó la calculadora' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='graf1' tipo='ecuación' fondo='no' color='2045aa' coord_abs='no' expresión='y=f(x)' ancho='2' visible='no' editable='no' ">
+      <param name="G_03" value="espacio='graf1' tipo='ecuación' fondo='no' color='aa0000' coord_abs='no' expresión='y=T(x,n)' ancho='1' visible='no' editable='no' ">
+      <param name="G_04" value="espacio='ejem' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[10,10]' texto='Mediante el polinomio de Taylor queremos estimar el número \serif{\b{\${e}}} con un error menor que\n\n● ¿Qué grado debe tener como mínimo el polinomio?\nAl desarrollar \serif{\b{\${f(x) = e^x}}} mediante un polinomio de Taylor degrado \serif{\b{\${n}}}, en \serif{\b{\${a = 0}}} (o de Maclaurin en este caso), obtenemos:\n\serif{\b{\${e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + ... + \frac{x^n}{n!} + R_n(x)}}}\ndonde \serif{\b{\${R_n(x) = \frac{e^c}{(n+1)!} x^{n+1}}}} con \serif{\b{\${0 < c < 1}}}\nen \serif{\b{\${x = 1}}} resulta: \serif{\b{\${e = 1 + 1 + \frac{1}{2!} + \frac{1}{3!} + ... + \frac{1}{n!} + R_{n}(1)}}}\nSabemos que \serif{\b{\${e < 3}}} y como \serif{\b{\${0< c < 1}}} será \serif{\b{\${e^c < 3}}}, \npor lo que: \serif{\b{\${R_n(1) = \frac{e^c}{(n+1)!} < \frac{3}{(n+1)!} < 10^{[-dec]}}}}\n\nEntonces basta tomar \serif{\b{\${n =}}}' decimales='2' fijo='no' ancho='ejem._w-20' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='graf1' tipo='punto' fondo='no' color='aa0000' coord_abs='no' expresión='(a,0)' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_06" value="espacio='graf1' tipo='segmento' fondo='no' color='2045aa' coord_abs='no' expresión='(a,0)(a,f(a))' decimales='2' fijo='sí' tamaño='3' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_07" value="espacio='graf1' tipo='punto' fondo='no' color='2045aa' coord_abs='no' expresión='(xx,0)' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_08" value="espacio='graf1' tipo='segmento' fondo='no' color='ff7000' coord_abs='no' expresión='(xx,T(xx,n))(xx,f(xx))' decimales='2' fijo='sí' tamaño='4' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_09" value="espacio='graf1' tipo='segmento' fondo='no' color='aa0000' coord_abs='no' expresión='(xx,0)(xx,T(xx,n))' decimales='2' fijo='sí' tamaño='3' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_10" value="espacio='ejem' tipo='texto' fondo='no' color='000000' dibujar-si='bien=1' coord_abs='sí' expresión='[10,470]' texto='con lo que: \serif{\b{\${e = [T(xx,n)]}}} con un error menor que \serif{\b{\${10^{[-dec]}}}}' decimales='2' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='graf1' tipo='punto' fondo='no' color='2045cc' coord_abs='no' expresión='(xx,f(xx))' decimales='2' fijo='sí' tamaño='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_12" value="espacio='ejem' tipo='texto' fondo='no' color='ff7000' dibujar-si='(bien=0)&(n#&squot;&squot;)' coord_abs='sí' expresión='[300,420]' texto='Cuidado, es [(n < grado)?&squot;mayor&squot;:&squot;menor&squot;]' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_13" value="espacio='ejem' tipo='texto' fondo='no' color='ff7000' dibujar-si='(bien=1)' coord_abs='sí' expresión='[300,420]' texto='CORRECTO' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_14" value="espacio='graf2' tipo='texto' fondo='no' color='20303a' coord_abs='no' expresión='(s,-10/graf2.escala)' familia='s' s.intervalo='[1,6]' s.pasos='5' texto='[s]' decimales='2' fijo='no' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_15" value="espacio='graf2' tipo='texto' fondo='no' color='20303a' dibujar-si='s#0' coord_abs='no' expresión='(0.1,s)' familia='s' s.intervalo='[0,2]' s.pasos='2' texto='[s/h]' decimales='2' fijo='no' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_center_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_16" value="espacio='graf2' tipo='ecuación' fondo='no' color='ff8000' dibujar-si='(x>=a)&(x<=xx)' coord_abs='no' expresión='y=h*R(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_17" value="espacio='graf2' tipo='ecuación' fondo='no' color='208045' dibujar-si='(x>=a)&(x<=xx)&(bien=1)' coord_abs='no' expresión='y=h*cota' ancho='1' visible='no' editable='no' ">
+      <param name="G_18" value="espacio='graf2' tipo='ecuación' fondo='no' color='20cc45' dibujar-si='(x>=a)&(x<=xx)&(bien=1)' coord_abs='no' expresión='y=h*H(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_19" value="espacio='graf2' tipo='punto' fondo='no' color='aa0000' coord_abs='no' expresión='(xx,h*R(xx))' decimales='2' fijo='sí' tamaño='4' negrita='sí' cursiva='sí' font_family='SansSerif' fuente puntos='14' ">
+      <param name="G_20" value="espacio='graf2' tipo='punto' fondo='no' color='aa0000' dibujar-si='bienb=0' coord_abs='no' expresión='(xx,h*R(xx))' texto='\serif{\b{\${R_{[n=&squot;&squot;?1:n]}[&squot;(&squot;+xx+&squot;)&squot;]}}}' decimales='2' fijo='no' tamaño='0' negrita='sí' cursiva='sí' font_family='SansSerif' fuente puntos='19' ">
+      <param name="G_21" value="espacio='graf2' tipo='segmento' fondo='no' color='ff9000' coord_abs='no' expresión='(xx,0)(xx,h*R(xx))' decimales='2' fijo='sí' tamaño='3' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_22" value="espacio='graf2' tipo='segmento' fondo='no' color='20cc45' dibujar-si='bien=1' coord_abs='no' expresión='(g.x,0)(g.x,h*H(g.x))' decimales='2' fijo='sí' tamaño='3' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_23" value="espacio='graf2' tipo='punto' fondo='no' color='208045' dibujar-si='bien=1' coord_abs='no' expresión='(xx,h*cota-6/graf2.escala)' texto='[cota]' decimales='dec+1' fijo='no' tamaño='0' negrita='sí' cursiva='sí' font_family='SansSerif' fuente puntos='19' ">
+      <param name="G_24" value="espacio='graf2' tipo='punto' fondo='no' color='208045' dibujar-si='bien=1' coord_abs='no' expresión='(g.x-5/graf2.escala,-15/graf2.escala)' texto='c' decimales='2' fijo='sí' tamaño='0' negrita='sí' cursiva='sí' font_family='SansSerif' fuente puntos='19' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

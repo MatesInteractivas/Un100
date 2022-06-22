@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Desarrollo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='5' discreto='no' decimales='0' fijo='sí' visible='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Casos especiales para gradientes Aritméticos' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 6' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='[20,20]' texto='\b{Caso 1:} Desplazada en el tiempo\n\nCorresponde al caso en el cual la primera cuota del gradiente no se encuentra en la cuota dos. El desplazamiento es hacia el futuro, puesto que si fuera hacia el presente, simplemente se estaría aumentando el valor de la cuota de la serie uniforme. El diagrama de flujo de caja corresponde con una figura semejante a la siguiente:\n\n\n\n\n\n\n\n\n\n\n\nComo se puede observar, la primera cuota del gradiente se encuentra en un punto \serif{\b{\${d}}}, mayor a \serif{\b{\${2}}}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==0' coord_abs='no' expresión='(0,0,1.1,1.1)' archivo='images/3_desarrollo_2_1.svg' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='[20,20]' texto='Si hallamos el valor presente en este caso, como la fórmula nos sirve para hallar el valor a partir de \serif{\b{\${1}}}, nos dará un valor presente desplazado, asi:\n\n\n\n\n\n\n\n\n\n\nNo se está tomando en cuenta en esta demostración la serie uniforme, puesto que su comportamiento no influye en el resultado final para este caso.\n\nPor tanto, debemos utilizar además la fórmula de pago único para hallar el valor presente en cero, sabiendo que el punto \serif{\b{\${d - 1}}} es equivalente al cero de la fórmula básica:  \serif{\b{\${P = \frac{G}{i} \[\frac{(1 + i)^n - 1}{i(1 + i)^n} - \frac{n}{(1 + i)^n}\] \frac{1}{(1 + i)^{(d-1)}}}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==1' coord_abs='no' expresión='(0,2,1.1,1.1)' archivo='images/3_desarrollo_2_2.svg' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='[20,20]' texto='\b{Caso 2}: Sin incluir serie uniforme\n\nSiempre que el valor inicial ubicado en la cuota \serif{\b{\${1}}} es mayor que cero, se asume que se está en presencia de una serie gradiente acompañada de una serie uniforme.\n\nPuede ocurrir sin embargo que el valor de la cuota de la serie uniforme sea igual al valor del gradiente o que éste comience a partír de la cuota \serif{\b{\${2}}}, sin haber cuota de la serie uniforme.\n\nAmbos casos se muestran a continuación:' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==2' coord_abs='no' expresión='(-5,-2,1.1,1.1)' archivo='images/3_desarrollo_2_3.svg' rotini='0' opacidad='1' ">
+      <param name="G_09" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==2' coord_abs='no' expresión='(5,-2,1.1,1.1)' archivo='images/3_desarrollo_2_4.svg' rotini='0' opacidad='1' ">
+      <param name="G_10" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==3' coord_abs='sí' expresión='[20,20]' texto='En estos dos casos es de vital importancia recordar que cuando se demostró la fórmula para hallar el valor presente del gradiente, éste se encontraba en la cuota dos y su valor presente fue llevado a cero.\n\nPor tanto, en el primer caso, si se aplica la fórmular de gradiente para hallar su valor presente, tomando el valor de la cuota \serif{\b{\${A}}} como el primer valor del gradiente, el valor presente se hallará desplazado una cuota a la izquierda, es decir, una cuota antes del cero y por tanto, para llevarla a cero será necesario multiplicarla por el valor futuro de la fórmula de pago único, con un \serif{\b{\${n = 1}}}:\n\n\serif{\b{\${P = \frac{G}{i} \[\frac{(1 + i)^n - 1}{i(1 + i)^n} - \frac{n}{(1 + i)^n}\] (1 + i)}}}\n\nPara el caso de la opción dos, si se observa con detenimiento se concluye que corresponde al caso anterior, tomando en cuenta las dos cuotas que se desplaza el valor presente del gradiente:\n\n\serif{\b{\${P = \frac{G}{i} \[\frac{(1 + i)^n - 1}{i(1 + i)^n} - \frac{n}{(1 + i)^n}\] \[\frac{1}{(1 + i)^{d-2}}\]}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_11" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==4' coord_abs='sí' expresión='[20,20]' texto='\b{Caso 3}: Gradiente decreciente\n\nCuando el gradiente es decreciente, las cuotas van disminuyendo en el tiempo por un valor igual, tal como se observa en el siguiente diagrama de flujo de caja:\n\nAmbos casos se muestran a continuación:' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==4' coord_abs='no' expresión='(0,-0.5,1.1,1.1)' archivo='images/3_desarrollo_2_5.svg' rotini='0' opacidad='1' ">
+      <param name="G_13" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==5' coord_abs='sí' expresión='[20,20]' texto='Es decir, las cuotas quedan viéndose de la siguiente manera:\n\n\n\n\n\n\n\n\n\n\nAsí, sólo es restar de la cuota (tomada como el valor máximo), el valor del\ngradiente, es decir:\n\n\serif{\b{\${P = P_A - P_G}}}\n\nY por tanto, \serif{\b{\${P = A \[\frac{(1 + i)^n - 1}{i(1 + i)^n}\] - \frac{G}{i} \[\frac{(1 + i)^n - 1}{i(1 + i)^n} - \frac{n}{(1 + i)^n}\]}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_14" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='steps==5' coord_abs='no' expresión='(0,2.75,1.1,1.1)' archivo='images/3_desarrollo_2_5.svg' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

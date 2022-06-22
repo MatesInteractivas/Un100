@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Geometría clásica"
+  ], 
+  "titulo": "Mediatrices y circuncentro de un triángulo", 
+  "descripcion": "En un triángulo podemos distinguir cuatro centros: ortocentro, circuncentro, baricentro, incentro; que son los puntos de intersección de cuatro grupos de rectas notables: alturas, mediatrices, medianas, bisectrices. En este interactivo estudiamos las mediatrices y el circuncentro, probamos que las mediatrices de un triángulo son concurrentes.",
+  "resena": "Concurrencia de las mediatrices de un triángulo y existencia del punto de concurrencia (circuncentro).",
+  "id": "_Un_113_MediatricesCircuncentro"
+}

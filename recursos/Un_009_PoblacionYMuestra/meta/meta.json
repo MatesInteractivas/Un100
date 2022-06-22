@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Estadística", 
+    "Muestreo"
+  ], 
+  "titulo": "Estadística: Población y muestra", 
+  "descripcion": "Dirigido a futuros maestros de educación básica y estudiantes de bachillerato y licenciatura para ayudarles a comprender la importancia de las muestras al estudiar las características de una población, así como el cuidado que debe ponerse al seleccionar una muestra.",
+  "resena": "Concepto de muestra estadística e importancia de su selección.",
+  "id": "_Un_009_PoblacionYMuestra"
+}

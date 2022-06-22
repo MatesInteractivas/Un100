@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='90' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E3' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_04" value="tipo='R2' id='PLANO' x='522' y='65' ancho='482' alto='365' dibujar-si='1' fijo='no' escala='39' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='no' ejes='808080' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='1' border_color='bdc3c7' border_radius='0' ">
+      <param name="E_05" value="tipo='R2' id='Covertura' x='0' y='0' ancho='100%' alto='100%' dibujar-si='histo==0' fijo='sí' escala='48' O.x='0' O.y='0' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='55273c75' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_06" value="tipo='R2' id='HISTO' x='(E1._w-600)/2' y='(E1._h-525)/2' ancho='600' alto='525' dibujar-si='histo=0' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='cerrarHisto' interfaz='botón' tipo='numérico' región='interior' espacio='HISTO' expresión='(HISTO._w-35,0,35,35)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/cerrar.svg' acción='calcular' parámetro='histo=1' ">
+      <param name="C_02" value="id='Ejemplos' interfaz='botón' tipo='numérico' región='interior' espacio='E3' nombre='Otro ejemplo' expresión='((E3._w-150)/2,E3._h-45,150,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='NEjemplo()' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_03" value="id='P' tipo='gráfico' espacio='PLANO' color='ffc800' color-int='f0f8ff' tamaño='7' expresión='(3,3)' ">
+      <param name="C_04" value="id='info' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w-55,20,35,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_top_left' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' imagen='images/info.svg' acción='calcular' parámetro='histo=0' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="A_01" value="id='alea(nn)' algoritmo='sí' expresión='num' hacer='num=rnd<1/2?ent(rnd*nn):-ent(rnd*nn)' tipo='función' ">
+      <param name="A_02" value="id='mcd(xx,yy)' algoritmo='sí' expresión='xx' hacer='cociente=(yy#0)?ent(xx/yy):xx;resto=xx-cociente*yy;xx=yy;yy=resto' mientras='resto#0' tipo='función' ">
+      <param name="A_03" value="id='escribir(xx,yy)' algoritmo='sí' expresión='auxi' hacer='aau=mcd(xx,yy);aa1=xx/aau;bb1=yy/aau;auxi=aa1;auxi=(bb1=1)?auxi:(auxi+&squot;/&squot;+bb1)' tipo='función' ">
+      <param name="A_04" value="id='eC(xx,yy)' algoritmo='sí' expresión='aux' hacer='aux1=(xx==0)?&squot;&squot;:toFixed(xx,2);aux2=(yy==0)?&squot;&squot;:((yy<0)?&squot; - &squot;:&squot; + &squot;);aux3=(abs(yy)==1)?&squot;&squot;:toFixed(abs(yy),2);aux=(yy==0)?aux1+aux2:aux1+aux2+aux3+&squot; i&squot;;aux=((xx==0)&(yy==0))?0:aux' tipo='función' ">
+      <param name="A_05" value="id='nuD' vector='sí' evaluar='una-sola-vez' tamaño='5' expresión='nuD[0]=2;nuD[1]=3;nuD[2]=4;nuD[3]=6;nuD[4]=1' tipo='vector' ">
+      <param name="A_06" value="id='NEjemplo()' algoritmo='sí' expresión='x' hacer='a=alea(2);b=nuD[ent(rnd*5)];modu=ent(rnd*4)+2;P.x=modu*cos((a/b)*pi);P.y=modu*sin((a/b)*pi);argu=(a/b)*180' tipo='función' ">
+      <param name="A_07" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='histo=0;valor=0;a=1;b=4;modu=sqrt(18);argu=pi/4;' ">
+      <param name="A_08" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Forma binómica. Definiciones' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='PLANO' tipo='segmento' fondo='no' color='ffc67a' coord_abs='no' expresión='(0,0)(P.x,P.y)' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_03" value="espacio='PLANO' tipo='arco' fondo='no' color='ff6f00' coord_abs='no' centro='(0,0)' radio='0.8' inicio='0' fin='argu' vectores='no' texto='φ' decimales='2' fijo='sí' relleno='ffc67a' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' lineDash='solid' ">
+      <param name="G_04" value="espacio='PLANO' tipo='punto' fondo='no' color='0090cb' coord_abs='no' expresión='(P.x,-P.y)' texto='\o{z}' decimales='2' fijo='sí' tamaño='4' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_05" value="espacio='PLANO' tipo='punto' fondo='no' color='00aca1' coord_abs='no' expresión='(-P.x,-P.y)' texto='-z' decimales='2' fijo='sí' tamaño='4' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_06" value="espacio='PLANO' tipo='segmento' fondo='no' color='0090cb' coord_abs='no' expresión='(0,0)(P.x,-P.y)' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_07" value="espacio='PLANO' tipo='segmento' fondo='no' color='00aca1' coord_abs='no' expresión='(0,0)(-P.x,-P.y)' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_08" value="espacio='PLANO' tipo='punto' fondo='no' color='ffc800' coord_abs='no' expresión='(P.x,P.y)' texto='\color{c20000}{z}' decimales='2' fijo='sí' tamaño='7' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' ">
+      <param name="G_09" value="espacio='HISTO' tipo='rectángulo' fondo='sí' color='273c75' coord_abs='sí' expresión='(1,1,HISTO._w-3,HISTO._h-3)' ancho='3' border_radius='0' lineDash='solid' ">
+      <param name="G_10" value="espacio='HISTO' tipo='rectángulo' fondo='sí' color='20303a' coord_abs='sí' expresión='(0,0,HISTO._w,35)' relleno='273c75' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_11" value="espacio='HISTO' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,50]' texto='\b{Forma binómica}\n\nEl número complejo \serif{\b{\${(a, b)}}} se puede escribir como:\n\c{\serif{\b{\${(a, b) = (a, 0) + (0, 1)*(b, 0) ≡ \color{ac0000}{a + bi}}}}}\n\nEsta expresión recibe el nombre de \b{\color{ac0000}{forma binómica del número complejo}}. De esta manera la suma y el producto se pueden realizar en la forma habitual teniendo en cuenta que \serif{\b{\${i^2 = -1}}}. \n\c{\serif{\b{\${(a + bi) + (c + di) = (a + b) + (c + d)i}}}}\n\c{\serif{\b{\${(a + bi) * (c + di) = (ac - bd) + (ad + bc)i}}}}\n\nDado el número complejo \serif{\b{\${z = a + bi}}} se llama:\n    • \b{\color{ac0000}{parte real}} al número \serif{\b{\${a}}}. Se representa como \serif{\b{\${Re(z)}}}.\n    • \b{\color{ac0000}{parte imaginaria}} al número \serif{\b{\${b}}}. Se representa como \serif{\b{\${Im(z)}}}.' decimales='2' fijo='sí' ancho='HISTO._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_12" value="espacio='E2' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(20,20)' texto='Dado el número complejo \serif{\b{\${z = a + bi}}} se puede representar en el plano por el punto \serif{\b{\${(a, b)}}}. Este punto recibe el nombre de \b{\color{ac0000}{afijo de \serif{\${z}}}}.\n\nEl \b{\color{ac0000}{opuesto de \serif{\${z}}}} se define como \serif{\b{\${−z = −a − bi}}}. Representa el simétrico de \serif{\b{\${z}}} respecto al origen.\n\nEl \b{\color{ac0000}{conjugado de \serif{\${z}}}}, que se representa por \serif{\o{\b{\${z}}}}, se define como \serif{\b{\${\o{z} = a − bi}}}. Es el simétrico de \serif{\b{\${z}}} respecto al eje de abscisas.\n\nEl \b{\color{ac0000}{módulo de \serif{\${z}}}}, que se denota por \serif{\b{\${|z|}}}, es la distancia del afijo de \serif{\b{\${z}}} al origen \c{\serif{\b{\${|z| = \sqrt{}{a^2 + b^2}}}}} \nEl \b{\color{ac0000}{argumento de \serif{\${z}}}}, que se denota por \serif{\b{\${arg(z)}}}, se define como el ángulo \serif{\b{\${φ}}}, medido en radianes que cumple:\c{\serif{\b{\${cos(φ) = \frac{a}{|z|}        sen(φ) = \frac{b}{|z|}}}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_13" value="espacio='E3' tipo='texto' fondo='no' color='000000' dibujar-si='!valor' coord_abs='sí' expresión='(20,385)' texto='\serif{\b{\${\color{ac0000}{z = [eC(P.x,P.y)]}}}}    \serif{\b{\${Re(z) = [P.x]}}}    \serif{\b{\${Im(z) = [P.y]}}}\n\serif{\b{\${|z| = [modu]}}}         \serif{\b{\${arg(z) = φ = [escribir(a,b)]π}}}\nEl opuesto de z            \serif{\b{\${-z = [eC(-P.x,-P.y)]}}}\nEl conjugado de z          \serif{\b{\${ z = [eC(P.x,-P.y)]}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas"
+  ], 
+  "titulo": "Volúmenes de revolución", 
+  "descripcion": "Una de las aplicaciones de la integral definida es el cálculo del volumen de un sólido de revolución, que se obtiene al rotar una región del plano alrededor de una recta de ese mismo plano. En esta unidad se busca el logro del siguiente objetivo: Calcular volúmenes de revolución generado por el giro alrededor del eje OX de la región limitada por una o dos funciones.",
+  "resena": "Cálculo de volúmenes obtenidos al rotar figuras geométricas.",
+  "id": "_Un_056_VolumenesDeRevolucion"
+}

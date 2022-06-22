@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Algebra", 
+    "Algebra lineal"
+  ], 
+  "titulo": "Operaciones con matrices", 
+  "descripcion": "En muchas áreas del conocimiento se maneja información que es almacenada con diferentes tipos de datos, los cuales deben  ser procesados para  obtener otra información. Las matrices, permiten el almacenamiento de grandes cantidades de datos que, con el uso de los computadores, han permitido  realizar cálculos o procesamientos que manualmente demandaban mucho tiempo. Los objetivos de esta unidad son: * Reconocer los elementos y el tamaño de una matriz. * Realizar operaciones con matrices.",
+  "resena": "Concepto de matriz y operaciones entre ellas. Utilidad y aplicaciones.",
+  "id": "_Un_037_OperacionesConMatrices"
+}

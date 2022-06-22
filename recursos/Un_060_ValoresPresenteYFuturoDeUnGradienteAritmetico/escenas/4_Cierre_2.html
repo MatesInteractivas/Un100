@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cierre</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='984' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='HTMLIFrame' id='E3' x='200' y='300' ancho='260' alto='156' dibujar-si='(otro=2)' archivo='images/copia.gif' ">
+      <param name="C_01" value="id='n3' tipo='numérico' interfaz='menú' región='interior' espacio='E2' nombre='Respuesta' expresión='((E2._w-250)/2,380,250,35)' valor='0' decimales='2' fijo='sí' visible='no' opciones=' Elige, 70.066, 40.623, 55.092' dibujar-si='otro=1' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_02" value="id='n6' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E2' nombre='P = ' expresión='(E2._w/2+20,230,200,35)' valor='0' discreto='no' decimales='2' fijo='sí' visible='sí' dibujar-si='otro=2' evaluar='no' respuesta='krypto_d' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' ">
+      <param name="C_03" value="id='n7' tipo='numérico' interfaz='menú' región='interior' espacio='E2' nombre='Respuesta' expresión='(280,220,250,35)' valor='0' decimales='2' fijo='sí' visible='no' opciones='Elige, A, B, C, D' dibujar-si='(otro>2)&(otro<4)' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_04" value="id='otro' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='1' incr='1' min='1' max='3' discreto='no' decimales='0' fijo='sí' visible='no' acción='calcular' parámetro='n6=&squot;&squot;;n7=&squot;&squot;' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otro=1' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Ejercicios de cierre' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[otro] / 3' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_03" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='otro=1' coord_abs='sí' expresión='[20,20]' texto='\b{Ejercicio 1}\n\nPara el flujo de caja que se muestra en la figura, el valor de la primera cuota que se muestra como \serif{\b{\${A}}}, será:' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='otro=1' ">
+      <param name="G_04" value="espacio='E2' tipo='imagen' fondo='no' dibujar-si='otro=1' coord_abs='no' expresión='(0,1,1.2,1.2)' archivo='images/4_cierre_2_1.svg' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(n3=2)&(otro=1)' coord_abs='sí' expresión='[E2._w/2,440]' texto='\b{¡Incorrecto!} No tomaste en cuenta el desplazamiento inicial.' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(n3=1)&(otro=1)' coord_abs='sí' expresión='[E2._w/2,440]' texto='\b{¡Incorrecto!} No tomaste en cuenta la cuota inicial.' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(n3=3)&(otro=1)' coord_abs='sí' expresión='[E2._w/2,440]' texto='¡Excelente!' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_08" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='otro=2' coord_abs='sí' expresión='[20,20]' texto='\b{Ejercicio 2}\n\nSe compra un equipo de fotocopiado y se calcula que irá aumentando mensualmente la utilidad que produce durante el primer año.\n\nPor esto, se financia su compra de \serif{\b{\${$2.500.000}}} a un año en cuotas mensuales que irán disminuyendo cada mes en \serif{\b{\${$15.000}}} a una tasa del \serif{\b{\${3.5%}}} mensual. Halle el valor de la cuota de la serie uniforme.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='otro=2' ">
+      <param name="G_09" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(otro=2)&(n6=6982)' coord_abs='sí' expresión='[E2._w/2+20,290]' texto='¡Excelente!' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_10" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(otro=2)&((n6>6982)|(n6<6982))&(n6>0)' coord_abs='sí' expresión='[E2._w/2+20,290]' texto='\b{¡Incorrecto!} Revisa tus cálculos.' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='otro=3' coord_abs='sí' expresión='[20,20]' texto='\b{Ejercicio 3}\n\n¿En cuánto tiempo podría recuperarse una inversión de \serif{\b{\${$15.000}}} si las ganancias esperadas anuales son de \serif{\b{\${$2.000}}} en el año 1, \serif{\b{\${$2.500}}} en el año 2, \serif{\b{\${$3.000}}} en el tres y así con aumentos iguales, si se tiene una tasa del \serif{\b{\${25%}}} anual?\n\nSelecciona una de las opciones que se muestran.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='otro=3' ">
+      <param name="G_12" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='otro=3' coord_abs='sí' expresión='[100,220]' texto='\b{A.} No se recupera\n\n\b{B.} \serif{\b{\${6.91}}} años\n\n\b{C.} \serif{\b{\${7.11}}} años\n\n\b{D.} \serif{\b{\${7.52}}} años' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_13" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='((n7=1)||(n7==2)||(n7==4))&(otro=3)' coord_abs='sí' expresión='[E2._w/2,440]' texto='¡Incorrecto!' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_14" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='(n7=3)&(otro=3)' coord_abs='sí' expresión='[E2._w/2,440]' texto='¡Excelente!' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

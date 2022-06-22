@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría analítica"
+  ], 
+  "titulo": "Introducción a la geometría analítica", 
+  "descripcion": "El objetivo de esta unidad es familiarizar al alumno con las curvas básicas de la geometría analítica, así como mostrar gráficamente que provienen de cortar un cono con un plano (a lo cual se debe el nombre 'secciones cónicas'). En una de las escenas el usuario puede manipular la apertura, inclinación y posición del cono para hacer evidente que es posible construir las cuatro secciones (circunferencia, elipse, parábola e hipérbola) con cortes del cono. Se muestra la equivalencia entre las secciones cónicas y la ecuación general de segundo grado en dos variables.",
+  "resena": "Las curvas cónicas como cortes de un cono circular recto y su relación con la ecuación general de segundo grado.",
+  "id": "_Un_003_IntroduccionALaGeometriaAnalitica"
+}

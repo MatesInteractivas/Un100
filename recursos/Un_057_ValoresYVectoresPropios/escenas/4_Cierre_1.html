@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='n4' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Otra matriz' expresión='((E1._w-120)/2,E1._h-35-40,120,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='otra()' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="A_01" value="id='A' matriz='sí' evaluar='una-sola-vez' columnas='2' filas='2' expresión='A[0,0]=0;A[1,0]=0;A[2,0]=0;A[0,1]=0;A[1,1]=0;A[2,1]=0;A[0,2]=0;A[1,2]=0;A[2,2]=0;' tipo='matriz' ">
+      <param name="A_02" value="id='AT' matriz='sí' evaluar='una-sola-vez' columnas='2' filas='2' expresión='AT[0,0]=0;AT[1,0]=0;AT[2,0]=0;AT[0,1]=0;AT[1,1]=0;AT[2,1]=0;AT[0,2]=0;AT[1,2]=0;AT[2,2]=0;' tipo='matriz' ">
+      <param name="A_03" value="id='Ajusta_texto()' algoritmo='sí' expresión='x' inicio='i=0;j=-1' hacer='i=i+(j=1);j=(j=1)?0:j+1;AT[i,j]=(A[i,j]>0)|(A[i,j]=0)?&squot; &squot;+A[i,j]:&squot;&squot;+A[i,j]' mientras='i<2' tipo='función' ">
+      <param name="A_04" value="id='otra()' algoritmo='sí' expresión='x' hacer='A[0,0]=ent(rnd*10)*(1-ent(3*rnd));A[0,0]=(A[0,0]=0)?3:A[0,0];A[0,1]=ent(rnd*10)*(1-ent(3*rnd));A[1,0]=ent(rnd*10)*(1-ent(3*rnd));A[1,1]=ent(rnd*10)*(1-ent(3*rnd));A[1,1]=(A[1,1]=0)?-2:A[1,1];Ajusta_texto()' tipo='función' ">
+      <param name="A_05" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='info=0;A[0,0]=4;A[0,1]=-5;A[1,0]=2;A[1,1]=-3;Ajusta_texto();paso=4' ">
+      <param name="A_06" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='a=1;b=-(A[1,1]+A[0,0]);bt=(b>0)?&squot; + &squot;+b:((b=0)?&squot;  &squot;:&squot; - &squot;+abs(b));c=A[0,0]*A[1,1]-A[0,1]*A[1,0];ct=(c>0)?&squot; + &squot;+c:((c=0)?&squot;  &squot;:&squot; - &squot;+abs(c));disc=b^2-4*a*c;L1=(disc>0)|(disc=0)?(-b+sqrt(disc))/2:1000;L2=(disc>0)|(disc=0)?(-b-sqrt(disc))/2:1000;t=A[0,1]*A[1,0];v1y1=(A[0,0]-L1)/(-A[0,1]);v1y2=(A[1,0])/(-A[0,1]+L1);v1y=(-A[0,1]/(A[0,0]-L1))*((A[1,0])/(-A[0,1]+L1));v1y=(v1y1=v1y2)?v1y1:v1y;' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Conclusiones de la unidad' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(20,65,984,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[40,85]' texto='\b{Determinate de una matriz}\n\nEl determinante de una matriz \serif{\b{\${n × n}}}, se puede calcular de la siguiente forma:\n\nSea una matriz \serif{\b{\${A}}} cuadrada de orden \serif{\b{\${2}}}:\n\n\n' decimales='2' fijo='sí' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[E1._w/2,225]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40 {\*\mjaformula\i\b A = \b0\i0{\matrix\type 1\rows 2\columns 2{\element\i\b  a\b0\i0{\subix\i\b 11\b0\i0}\i\b  \b0\i0}{\element\i\b  a\b0\i0{\subix\i\b 12\b0\i0}\i\b  \b0\i0}{\element\i\b  a\b0\i0{\subix\i\b 21\b0\i0}\i\b  \b0\i0}{\element\i\b  a\b0\i0{\subix\i\b 22\b0\i0}\i\b  \b0\i0}}\i\b  ⇒ det A = a\b0\i0{\subix\i\b 11\b0\i0}\i\b a\b0\i0{\subix\i\b 22\b0\i0}\i\b  - a\b0\i0{\subix\i\b 12\b0\i0}\i\b a\b0\i0{\subix\i\b 21\b0\i0}}}' decimales='2' fijo='sí' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[40,350]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs48 {\*\mjaformula\i\b A = \b0\i0{\matrix\type 0\rows 2\columns 2{\element\i\b  \b0\i0\i\b{\expr AT[0,0]\decimals 2\fixed0}\b0\i0\i\b  \b0\i0}{\element\i\b  \b0\i0\i\b{\expr AT[0,1]\decimals 2\fixed0}\b0\i0\i\b  \b0\i0}{\element\i\b  \b0\i0\i\b{\expr AT[1,0]\decimals 2\fixed0}\b0\i0\i\b  \b0\i0}{\element\i\b  \b0\i0\i\b{\expr AT[1,1]\decimals 2\fixed0}\b0\i0\i\b  \b0\i0}}\i\b  = (\b0\i0\i\b{\expr A[0,0]\decimals 2\fixed0}\b0\i0\i\b )(\b0\i0\i\b{\expr A[1,1]\decimals 2\fixed0}\b0\i0\i\b ) - (\b0\i0\i\b{\expr A[1,0]\decimals 2\fixed0}\b0\i0\i\b )(\b0\i0\i\b{\expr A[0,1]\decimals 2\fixed0}\b0\i0\i\b )\b0\i0}\par\f0\fs48 \par\f0\fs48 {\*\mjaformula\i\b det A = \b0\i0\i\b{\expr A[0,0]*A[1,1]-A[0,1]*A[1,0]\decimals 2\fixed0}\b0\i0}}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='24' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[E1._w/2,450]' texto='\b{Recuerda:} El determinante de una matriz nos ayudará a encontrar el polinómio característico.' decimales='2' fijo='sí' ancho='E1._w/2-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Fìsica", 
+    "Mecánica", 
+    "Estática"
+  ], 
+  "titulo": "Estática de una partícula", 
+  "descripcion": "En la estática de una partícula, son varios los objetivos de aprendizaje a lograr. Un primer objetivo es determinar la  resultante de varias  fuerzas coplanares, con el  método  gráfico o el analítico. Un segundo objetivo, es hallar el valor de una fuerza, considerando las ecuaciones de equilibrio de la partícula.",
+  "resena": "Métodos de estudio de resultantes de fuerzas coplanares. Cálculo de fuerzas dadas las ecuaciones de equilibrio.",
+  "id": "_Un_075_EstaticaDeUnaParticula"
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E2' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E1' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='50' O.x='70' O.y='-50' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='n7' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='interior' espacio='E1' expresión='((E1._w-100)/2,390,100,35)' valor='&squot;&squot;' discreto='no' decimales='0' fijo='no' visible='sí' acción='calcular' parámetro='rta=1' evaluar='no' respuesta='krypto_l' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_02" value="id='n6' interfaz='botón' tipo='numérico' región='interior' espacio='E2' nombre='Otro ejercicio' expresión='(E2._w-160-40,E2._h-35-40,160,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='inicio' dibujar-si='(n7!=&squot;&squot;)|(n7=0)' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="A_01" value="id='A' matriz='sí' evaluar='una-sola-vez' columnas='9' filas='9' expresión='A[0,0]=0;A[1,0]=0;A[2,0]=0;A[0,1]=0;A[1,1]=0;A[2,1]=0;A[0,2]=0;A[1,2]=0;A[2,2]=0;' tipo='matriz' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=1' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="A_04" value="id='dim' expresión='ent(rnd*6)+4' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_05" value="id='c' expresión='ent(rnd*dim*dim)' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_06" value="id='a2' algoritmo='sí' evaluar='una-sola-vez' inicio='I=0;J=0' hacer='A[I,J]=ent(rnd*15*(1-ent(3*rnd)));J=J+1;J=(I<(dim-1))?J-1:J;I=(I<(dim-1))?I+1:0' mientras='J<dim' ">
+      <param name="A_07" value="id='a5' algoritmo='sí' evaluar='una-sola-vez' hacer='fil=ent(c/dim);col=c%dim;i=fil+1;j=col+1' ">
+      <param name="G_01" value="espacio='E2' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E2._w/2,20]' texto='Elementos de una matriz' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[25,85+(dim-5)*10]' texto='A =' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_03" value="espacio='E1' tipo='polígono' fondo='no' color='000000' coord_abs='no' expresión='(-4.7,4)(-5,4)(-5,.8+.6*(5-dim))(-4.7,.8+.6*(5-dim))' ancho='2' lineDash='solid' ">
+      <param name="G_04" value="espacio='E1' tipo='polígono' fondo='no' color='000000' coord_abs='no' expresión='(-1.1-.6*(5-dim),4)(-.9-.6*(5-dim),4)(-.9-.6*(5-dim),.8+.6*(5-dim))(-1.1-.6*(5-dim),.8+.6*(5-dim))' ancho='2' lineDash='solid' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[87+(s%dim)*35,40+ent(s/dim)*30]' familia='s' s.intervalo='[0,dim*dim-1]' s.pasos='dim*dim-1' texto='\${[A[s%dim,ent(s/dim)]]}' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='17' align='a_left' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='ff0000' dibujar-si='rta=1' coord_abs='sí' expresión='[87+(c%dim)*35,40+ent(c/dim)*30]' texto='\${[A[col,fil]]}' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='17' align='a_left' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='pdto=0' coord_abs='sí' expresión='[E1._w/2,350]' texto='¿Cuál es el valor de \serif{\b{\${a_{[i] [j]}}}}?' decimales='0' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_08" value="espacio='E2' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(522,65,482,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(n7=A[col,fil])&(rta=1)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Muy bien! \serif{\b{\${a_{[i] [j]}}}}es igual a \serif{\b{\${[A[col,fil]]}}}' decimales='2' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_bottom_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(n7!=A[col,fil])&(rta=1)' coord_abs='sí' expresión='[E1._w/2,E1._h-20]' texto='¡Oh no! \serif{\b{\${a_{[i] [j]}}}} es igual a \serif{\b{\${[A[col,fil]]}}}' decimales='2' fijo='no' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_bottom_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E2' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[E2._w/2+30,85]' texto='Una matriz es una tabla rectangular de datos ordenados en filas y columnas. Si una matriz tiene \serif{\b{\${m}}} filas y \serif{\b{\${n}}} columnas,decimos que la matriz es de orden \serif{\b{\${m×n}}}.\n\nTodos los elementos de las matrices se denotan con subindices \serif{\b{\${a_{i j}}}}, el valor de \serif{\b{\${i}}} representa la fila y el valor de \serif{\b{\${j}}} la columna.\n\nLos valores de \serif{\b{\${i}}} van de \serif{\b{\${1}}} a \serif{\b{\${m}}} y los valores de \serif{\b{\${j}}} van de \serif{\b{\${1}}} a \serif{\b{\${n}}}.\n\n\serif{\b{\${a_{i j}}}} es el elemento de la fila \serif{\b{\${i}}} y la columna \serif{\b{\${j}}}.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

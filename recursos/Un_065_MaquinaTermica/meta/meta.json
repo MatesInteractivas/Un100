@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Física", 
+    "Fisicoquímica", 
+    "Termodinámica"
+  ], 
+  "titulo": "Máquina térmica", 
+  "descripcion": "A través de una conversación con un tutor digital y la observación y el análisis simultáneos de una máquina térmica, el estudiante revisará algunas leyes fundamentales de la termodinámica y de los gases ideales.", 
+  "resena": "Diálogo interactivo sobre el funcionamiento de una máquina térmica como motivo de estudio de leyes termodinámicas.",
+  "id": "_Un_065_MaquinaTermica"
+}

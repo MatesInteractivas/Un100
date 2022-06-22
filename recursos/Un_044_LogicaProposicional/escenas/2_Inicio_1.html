@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='40' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='n4' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='[(activo)?&squot;Activado&squot;:&squot;Desactivado&squot;]' expresión='(285,btn.y-5,160,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='activo=1-activo' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_02" value="id='n6' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='[(bov)?&squot;Perturbada&squot;:&squot;No Perturbada&squot;]' expresión='(285,btn.y-5+45,160,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='bov=1-bov' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_03" value="id='n8' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='[(puerta)?&squot;Abierta&squot;:&squot;Cerrada&squot;]' expresión='(285,btn.y-5+2*45,160,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='puerta=1-puerta' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="C_04" value="id='n10' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='[(sw1)?&squot;Cerrado&squot;:&squot;Abierto&squot;]' expresión='(285,btn.y-5+3*45,160,35)' valor='0' color='ffffff' borderColor='no' color-int='fa983a' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='sw1=1-sw1' extra_style='flat=1|border=1|borderRadius=3|borderColor=00000022|overColor=e5760d|downColor=b15804' ">
+      <param name="A_01" value="id='V1' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='&squot;Conmutador maestro:&squot;;&squot;Puerta de la bóveda:&squot;;&squot;Puerta del banco:&squot;;&squot;Interruptor especial:&squot;' tipo='vector' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='btn.y=400' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='Q=(activo=1)&((bov=1)|((puerta=1)&(sw1=1)));' ">
+      <param name="A_04" value="id='e3' evento='sí' condición='Q=1' acción='reproducir' parámetro='audio/alarma.mp3' ejecución='alternar' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Lógica proposicional' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(20,65,984,540)' relleno='ffffff' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[40,85]' texto='En un banco un sistema de alarma contra robo funcionará sólo si se activa el conmutador maestro de la estación de policía y se cumplen otras condiciones: \n\n• La alarma sonará si la puerta de la bóveda es perturbada o si la puerta del banco se abre, a menos que se opere un interruptor especial, utilizando las llaves del celador.\n• La puerta de la bóveda está equipada con un sensor que hará que se cierre el interruptor cuando se perturbe dicha puerta.\n• El interruptor se montará sobre la puerta del banco, de tal manera, que se cerrara, siempre que la puerta del banco se abra.\n\nExplora las variables y descubre la \b{expresión lógica} que describe el problema.' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[100,btn.y+45*s]' familia='s' s.intervalo='[0,3]' s.pasos='3' texto='[V1[s]]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_05" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(716,477,0.5,0.5)' archivo='images/banco.png' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='Q=1' coord_abs='no' expresión='(4.25,-.65,0.75,0.75)' archivo='images/sonido.png' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

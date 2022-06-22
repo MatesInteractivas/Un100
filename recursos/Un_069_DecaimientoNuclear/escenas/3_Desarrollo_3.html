@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='-50%' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E1' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='40' O.x='-200' O.y='100' despl_imagen='arr-izq' fondo='ecf0f1' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='1' discreto='no' decimales='0' fijo='sí' visible='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='init()' algoritmo='sí' expresión='x' tipo='función' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='init()' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E0' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E0._w/2,20]' texto='Decaimiento gamma y captura electrónica' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t<100)' coord_abs='sí' expresión='(170+(t%2),150+(t%2))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/neutron.png' rotini='0' opacidad='1' ">
+      <param name="G_03" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t<100)' coord_abs='sí' expresión='(200-(16*s)+(t%2),140+(5*s)+(t%2))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/proton.png' rotini='0' opacidad='1' ">
+      <param name="G_04" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t<100)' coord_abs='sí' expresión='(200+(5*s)+(t%2),156-(5*s)+(t%2))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/neutron.png' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t<25)' coord_abs='sí' expresión='(170+(150*sen(t*180/pi)),150+((100-t*4)*cos(t*180/pi)))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/electron.png' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='t<25' coord_abs='sí' expresión='(200+(t%2),170+(t%2))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/proton.png' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t>24)&(t<100)' coord_abs='sí' expresión='(200+(t%2),170+(t%2))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/neutron.png' rotini='0' opacidad='1' ">
+      <param name="G_08" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t>35)&(t<70)' coord_abs='sí' expresión='(-450+(t*10),1000-(t*12))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/electron.png' rotini='0' opacidad='1' ">
+      <param name="G_09" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t>69)&(t<100)' coord_abs='sí' expresión='(170+(120*sen(t*180/pi)),170+(120*cos(t*180/pi)))' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/electron.png' rotini='0' opacidad='1' ">
+      <param name="G_10" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='(t>65)&(t<100)' coord_abs='sí' expresión='(260+((t-80)*5),310+((t-80)*5))' archivo='images/neutrino.png' rotini='0' opacidad='1' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='(t>99)' coord_abs='sí' expresión='[E1._w/2,E1._h/2]' texto='Captura electrónica' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_center_center' ">
+      <param name="G_12" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 2' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_13" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='(20,20)' texto='\b{Decaimiento gamma (\serif{\b{\${γ}}})}\n\nLos rayos gamma son fotones, es decir radiación electromagnética, como la luz visible, la ultravioleta, la infrarroja, los rayos X, las microondas y las ondas de radio. No tienen masa ni carga, y solamente constituyen energía emitida en forma de onda. Cuando un núcleo emite un rayo gamma, no cambia la \serif{\b{\${N}}} del núcleo lo que significa que se conserva el tipo de núcleo pero en un estado de menor energía.\n\nLa energía del decaimiento \serif{\b{\${γ}}} esta dado como se muestra:\n\serif{\b{\${Q_γ = E_γ + K_D}}} dado que \serif{\b{\${P_D = P_γ}}} y \serif{\b{\${P_D = M_DV_D}}}, \serif{\b{\${P_γ = E_γ/c}}}\n\serif{\b{\${M_DV_D = E_γ/c}}},    \serif{\b{\${E_γ = P_Dc}}}\n\serif{\b{\${K_D = M_DV_D^2/2 = E_γ^2/2M_DC^2}}}\n\serif{\b{\${Q_γ = E_γ(1 + (E_γ/2M_DC^2))}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_14" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='(20,20)' texto='\b{La captura electrónica}\n\nLa captura electrónica es posible en ciertos núclidos. El núcleo captura un electrón orbital, y uno de sus protones se transforma en un neutrón, disminuyendo su número atómico. Generalmente el electrón atrapado por el núcleo proviene de la capa \serif{\b{\${K}}}, dejando una vacancia. Para llenar esta vacancia, cae un electrón de una capa exterior, emitiendo de manera simultánea un fotón de rayos X. El proceso total se identifica por los rayos X emitidos al final, que son característicos del nuevo átomo, se muestra:' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="Animación" value="pausa='40' controles='no' auto='sí' repetir='no' inicio='t=100' hacer='t=t+1;t=(t<120)?t:0' mientras='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

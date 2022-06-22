@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Desarrollo</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='1' O.x='-485' O.y='-275' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='btnp' interfaz='botón' tipo='numérico' región='interior' espacio='E2' expresión='(190,50,77,37)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='[(p)?img_on:img_off]' acción='calcular' parámetro='p=1-p' ">
+      <param name="C_02" value="id='btnq' interfaz='botón' tipo='numérico' región='interior' espacio='E2' expresión='(350,50,77,37)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='[(q)?img_on:img_off]' acción='calcular' parámetro='q=1-q' ">
+      <param name="A_01" value="id='V1' vector='sí' evaluar='una-sola-vez' tamaño='3' expresión='&squot;\b{p}&squot;;&squot;\b{q}&squot;;&squot;\b{p∧q}&squot;;&squot;V&squot;;&squot;V&squot;;&squot;V&squot;;&squot;V&squot;;&squot;F&squot;;&squot;F&squot;;&squot;F&squot;;&squot;V&squot;;&squot;F&squot;;&squot;F&squot;;&squot;F&squot;;&squot;F&squot;' tipo='vector' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='bw=126;bh=50;bx=539;by=456;;tbl.w=50;tbl.h=30;tbl.x=E2._w/2-1.5*tbl.w;tbl.y=E2._h/2-3*tbl.h;;img_on=&squot;images/on.svg&squot;;img_off=&squot;images/off.svg&squot;' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='La conjunción' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(522,65,482,540)' relleno='ffffff' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[542,85]' texto='La conjunción es un conectivo lógico que opera sobre dos valores de verdad, típicamente los valores de verdad de dos proposiciones, devolviendo el valor de verdad verdadero cuando ambas proposiciones son verdaderas y falso en cualquier otro caso.\n\nLa conjunción de dos proposiciones \serif{\b{\${p}}} y \serif{\b{\${q}}}, se simboliza como \serif{\b{\${p∧q}}}.\n\nEl circuito de la izquierda simula el resultado lógico de la conjunción.' decimales='2' fijo='sí' ancho='442' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='punto' fondo='no' color='ffff00' dibujar-si='p&&q' coord_abs='sí' expresión='(440,195)' decimales='2' fijo='sí' tamaño='25' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_05" value="espacio='E2' tipo='punto' fondo='no' color='bdc3c7' dibujar-si='!(p&&q)' coord_abs='sí' expresión='(440,195)' decimales='2' fijo='sí' tamaño='25' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_06" value="espacio='E2' tipo='imagen' fondo='no' coord_abs='no' expresión='(0,0,1,1)' archivo='images/conjuncion.svg' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E2' tipo='rectángulo' fondo='no' color='ffffff' dibujar-si='p&&q' coord_abs='sí' expresión='(tbl.x,tbl.y+1*tbl.h,tbl.w*3,tbl.h)' relleno='ffff00' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_08" value="espacio='E2' tipo='rectángulo' fondo='no' color='ffffff' dibujar-si='p&&!q' coord_abs='sí' expresión='(tbl.x,tbl.y+2*tbl.h,tbl.w*3,tbl.h)' relleno='bdc3c7' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_09" value="espacio='E2' tipo='rectángulo' fondo='no' color='ffffff' dibujar-si='!p&&q' coord_abs='sí' expresión='(tbl.x,tbl.y+3*tbl.h,tbl.w*3,tbl.h)' relleno='bdc3c7' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_10" value="espacio='E2' tipo='rectángulo' fondo='no' color='ffffff' dibujar-si='!p&&!q' coord_abs='sí' expresión='(tbl.x,tbl.y+4*tbl.h,tbl.w*3,tbl.h)' relleno='bdc3c7' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_11" value="espacio='E2' tipo='rectángulo' fondo='no' color='000000' coord_abs='sí' expresión='(tbl.x+(s%3)*tbl.w,tbl.y+ent(s/3)*tbl.h,tbl.w,tbl.h)' familia='s' s.intervalo='[0,14]' s.pasos='14' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_12" value="espacio='E2' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(tbl.x+tbl.w/2+tbl.w*(s%3),tbl.y+tbl.h/2+tbl.h*ent(s/3))' familia='s' s.intervalo='[0,14]' s.pasos='14' texto='[V1[s]]' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_center_center' ">
+      <param name="G_13" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(133,70)' texto='p' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_14" value="espacio='E2' tipo='segmento' fondo='no' color='000000' dibujar-si='p' coord_abs='sí' expresión='(143,99.5)(185,99.5)' decimales='2' fijo='sí' tamaño='0' ancho='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_15" value="espacio='E2' tipo='segmento' fondo='no' color='000000' dibujar-si='!p' coord_abs='sí' expresión='(143,99.5)(173,70)' decimales='2' fijo='sí' tamaño='0' ancho='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_16" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(283,70)' texto='q' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_17" value="espacio='E2' tipo='segmento' fondo='no' color='000000' dibujar-si='q' coord_abs='sí' expresión='(293,99.5)(335,99.5)' decimales='2' fijo='sí' tamaño='0' ancho='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_18" value="espacio='E2' tipo='segmento' fondo='no' color='000000' dibujar-si='!q' coord_abs='sí' expresión='(293,99.5)(293+30,99.5-29.5)' decimales='2' fijo='sí' tamaño='0' ancho='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

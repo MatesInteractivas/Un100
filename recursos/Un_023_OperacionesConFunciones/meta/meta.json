@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Cálculo", 
+    "Funciones"
+  ], 
+  "titulo": "Operaciones con funciones y sus gráficas", 
+  "descripcion": "Se estudia el resultado gráfico de una operación con dos funciones f(x) y g(x). Específicamente las operaciones de suma  f(x) +g(x), diferencia  f(x)-g(x), producto  f(x)*g(x), los cocientes  f(x)/g(x)  y  g(x)/f(x)  y las composiciones f(g(x))  y  g(f(x)). Primero el estudio se hace con funciones f(x) y g(x) lineales y luego con funciones más generales, en particular con polinomios, senoides y campanas de Gauss.",
+  "resena": "Análisis del comportamiento entre funciones generales operadas por, por ejemplo, suma, resta, y hasta composición, etc.",
+  "id": "_Un_023_OperacionesConFunciones"
+}

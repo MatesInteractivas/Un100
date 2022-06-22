@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E0' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E1' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='40' O.x='-200' O.y='70' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='l' tipo='numérico' interfaz='barra' región='interior' espacio='E1' expresión='(20,20,30,100)' valor='10' incr='.1' min='10' max='50' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_02" value="id='d' tipo='numérico' interfaz='barra' región='interior' espacio='E1' expresión='(20,200,30,100)' valor='10' incr='.1' min='10' max='60' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_03" value="id='ang' tipo='numérico' interfaz='barra' región='interior' espacio='E1' expresión='(160,120,150,30)' valor='10' incr='1' min='10' max='60' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="C_04" value="id='n' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' nombre='n' expresión='(220,E1._h-55,200,35)' valor='1' incr='1' min='1' max='3' discreto='no' decimales='0' fijo='sí' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='Serif' fuente puntos='18' negrita='sí' cursiva='sí' image_inc='images/spinner_plus.svg' image_dec='images/spinner_minus.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='init()' algoritmo='sí' expresión='x' tipo='función' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='init()' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E0' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E0._w/2,20]' texto='Verificación de la ley de Bragg' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[60,30]' texto='\${λ = [l/10] Å}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_03" value="espacio='E1' tipo='curva' fondo='no' color='20303a' coord_abs='sí' expresión='(150+t,35+(sen(t/l)*20))' parámetro='t' t.intervalo='[0,200]' t.pasos='200' ancho='1' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_04" value="espacio='E1' tipo='punto' fondo='no' color='20303a' coord_abs='sí' expresión='(85+(70*(s%5)),200+(d*ent(s/5)))' familia='s' s.intervalo='[0,14]' s.pasos='14' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_05" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' coord_abs='sí' expresión='(225,200)(225-(100/tan(ang*pi/180)),100)' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_06" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' coord_abs='sí' expresión='(225,200)(225+(100/tan(ang*pi/180)),100)' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_07" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' coord_abs='sí' expresión='(225,200+d)(225-(100/tan(ang*pi/180)),100+d)' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_08" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' coord_abs='sí' expresión='(225,200+d)(225+(100/tan(ang*pi/180)),100+d)' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[E1._w/2,155]' texto='\${θ = [ang]º}' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[60,230]' texto='\${d = [d/100]nm}' decimales='2' fijo='sí' ancho='1' color_borde_texto='ffffff' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[20,E1._h-20]' texto='\${2d senθ = [2*(d/10)*sen(ang*pi/180)] Ǻ}\n\${nλ = [n*l/10] Ǻ}' decimales='1' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_bottom_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_12" value="espacio='E2' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='(20,20)' texto='\b{Difracción de Bragg}\n\nLa difracción de Bragg esta generalmente asociada con la difracción de rayos X por cristales donde las longitudes de onda son del orden de las distancias interatómicas en los sólidos (aprox. \serif{\b{\${1 Å}}}).\n\nCon la siguiente interacción y conociendo la ecuación de Bragg \serif{\b{\${2d senθ = nλ}}}, \serif{\b{\${d = 0.282 nm}}}, (la distancia entre los átomos de cristal) y modificando \serif{\b{\${θ}}} que es el ángulo con el que inciden los rayos, verifica que los ángulos a los cuales la interferencia es constructiva son:\n\n\serif{\b{\${Θ_1 = 16}}},    \serif{\b{\${θ_2 = 33}}},    \serif{\b{\${θ_3 = 55}}}  para  \serif{\b{\${λ = 0.154×10^{-9}m}}}\n\serif{\b{\${Θ_1 = 14}}},    \serif{\b{\${θ_2 = 29}}},    \serif{\b{\${θ_3 = 47}}}  para  \serif{\b{\${λ = 0.138×10^{-9}m}}}' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="Animación" value="pausa='40' controles='no' auto='sí' repetir='no' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

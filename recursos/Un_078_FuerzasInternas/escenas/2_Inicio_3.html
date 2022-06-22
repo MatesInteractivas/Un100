@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='-30' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='paso' tipo='numérico' interfaz='pulsador' región='interior' espacio='E1' expresión='((E1._w-120)/2,E1._h-55,120,30)' valor='0' incr='1' min='0' max='4' discreto='no' decimales='0' fijo='sí' visible='no' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='paso=0' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Análisis de un elemento estructural' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ffffff' coord_abs='sí' expresión='(20,65,984,540)' relleno='ffffff' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E1._w/2,E1._h-42)' texto='[paso+1] / 5' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' info='Pasos ' ">
+      <param name="G_04" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='no' expresión='(0,.5,1.2,1.2)' archivo='images/viga.png' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='no' expresión='(-4.2,0,1,1)' archivo='images/apoyo1.png' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='no' expresión='(4.2,0,1,1)' archivo='images/apoyo2.png' rotini='0' opacidad='1' ">
+      <param name="G_07" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='paso=1' coord_abs='no' expresión='(0,-4,0.7,0.7)' archivo='images/corte1.png' rotini='0' opacidad='1' ">
+      <param name="G_08" value="espacio='E1' tipo='flecha' fondo='no' color='ff0000' coord_abs='no' expresión='(-2,2)(-2,1)' decimales='2' fijo='sí' ancho='0' punta='4' flecha='ee0022' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_09" value="espacio='E1' tipo='flecha' fondo='no' color='ff0000' coord_abs='no' expresión='(2,2)(2,1)' decimales='2' fijo='sí' ancho='0' punta='4' flecha='ee0022' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=0' coord_abs='sí' expresión='[40,85]' texto='Para el análisis de un elemento estructural, como el de la figura, se recurre a dividir el elemento en secciones. Para este caso, podemos hacerlo en tre partes: antes de la primera carga, entre las dos cargas y después de la segunda carga.' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=1' coord_abs='sí' expresión='[40,85]' texto='Si hacemos un corte en la mitad del elemento, podemos hacer un diagrama de cuerpo libre, en el que representamos las fuerzas externas e internas, como se observa en la figura de abajo, tanto para la sección izquierda del corte, como para la derecha.' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_12" value="espacio='E1' tipo='flecha' fondo='no' color='ff0000' dibujar-si='paso=1' coord_abs='no' expresión='(-2,-2.3)(-2,-3.3)' decimales='2' fijo='sí' ancho='0' punta='4' flecha='ee0022' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_13" value="espacio='E1' tipo='flecha' fondo='no' color='ff0000' dibujar-si='paso=1' coord_abs='no' expresión='(2,-2.3)(2,-3.3)' decimales='2' fijo='sí' ancho='0' punta='4' flecha='ee0022' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_14" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='paso=2' coord_abs='no' expresión='(0,-3.5,0.7,0.7)' archivo='images/corte4.png' rotini='0' opacidad='1' ">
+      <param name="G_15" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=2' coord_abs='sí' expresión='[40,85]' texto='Es importante establecer una convención de signos para las fuerzas internas. En esta unidad, definimos la cortante positiva, tal como se observa en la figura. Es decir, para un corte a la derecha, la cortante es positiva si la dirección es hacia abajo y, para el corte a la izquierda, es positiva si la dirección es hacia arriba.' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_16" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='paso=3' coord_abs='no' expresión='(0,-3.5,0.7,0.7)' archivo='images/corte5.png' rotini='0' opacidad='1' ">
+      <param name="G_17" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=3' coord_abs='sí' expresión='[40,85]' texto='Para el caso de los momentos, lo definimos positivos, para el corte a la derecha, si el giro es contrario al sentido del movimiento de las manecillas del reloj. Para el corte a la izquierda, el momento es positivo, si su dirección es en el sentido del movimiento de las manecillas del reloj.' decimales='2' fijo='sí' ancho='E1._w-80' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_18" value="espacio='E1' tipo='texto' fondo='no' color='000000' dibujar-si='paso=4' coord_abs='sí' expresión='[E1._w/2,85]' texto='Recuerda esta convención de signos' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_center' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_19" value="espacio='E1' tipo='imagen' fondo='no' dibujar-si='paso=4' coord_abs='no' expresión='(0,-3,0.5,0.5)' archivo='images/corte8.png' rotini='0' opacidad='1' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Cálculo"
+  ], 
+  "titulo": "Sucesiones Numéricas", 
+  "descripcion": "Se presentan algunos conceptos relacionados con las sucesiones, y dos tipos especiales de ellas: las aritméticas y las geométricas. Asimismo, se estudia el problema del límite de una sucesión, mostrando gráficamente el significado de convergencia a un número real, y de divergencia a infinito.",
+  "resena": "Sucesiones aritméticas y geométricas. Concepto de convergencia y divergencia.",
+  "id": "_Un_005_Sucesiones"
+}

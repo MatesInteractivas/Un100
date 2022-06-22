@@ -1,0 +1,13 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Cálculo"
+  ], 
+  "titulo": "Series", 
+  "descripcion": "Los objetivos de la unidad son los siguientes: - introducir el concepto de convergencia de una serie - analizar la convergencia de algunas series notables como son las geométricas y las armónicas",
+  "resena": "Series armónicas y geométricas, y su convergencia.",
+  "id": "_Un_006_Series"
+}

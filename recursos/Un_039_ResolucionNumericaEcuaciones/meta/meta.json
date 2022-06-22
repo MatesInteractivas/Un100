@@ -1,0 +1,14 @@
+{
+  "nivel": [
+    "Licenciatura"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Cálculo", 
+    "Funciones"
+  ], 
+  "titulo": "Resolución numérica de ecuaciones", 
+  "descripcion": "Resolver una ecuación f(x)=0 es determinar aquellos valores que verifican esa igualdad. La teoría de Galois muestra cómo las ecuaciones polinómicas --las que podemos considerar como las más sencillas al intervenir sólo sumas, restas y multiplicaciones-- de grado mayor o igual que cinco no son resolubres por radicales, es decir, que no puede encontrarse una expresión algebráica que permita calcular sus raíces. Por tanto sólo sabemos cómo resolver unos pocos tipos de una infinidad de ecuaciones. Es necesario proceder a determinar soluciones aproximadas con una precisión deseada y para ello se utilizan metodos iterativos que a partir de un valor inicial se construye una sucesión de valores que converja a una solución. En esta unidad se busca aprender los siguientes métodos iterativos para la resolución de ecuaciones: a) Método de la bisección b) Método de la Secante c) Método de la Regula Falsi d) Método de Newton",
+  "resena": "Métodos iterativos para resolver aproximar valores a una resolución de una ecuación.",
+  "id": "_Un_039_ResolucionNumericaEcuaciones"
+}

@@ -1,0 +1,15 @@
+{
+  "nivel": [
+    "Licenciatura", 
+    "Bachillerato"
+  ], 
+  "area": [
+    "Matemáticas", 
+    "Geometría", 
+    "Geometría Analítica"
+  ], 
+  "titulo": "Lugares Geométricos - Segmento", 
+  "descripcion": "El objetivo de esta serie de interactivos es estudiar ejemplos planteados que cuentan con condiciones que debe cumplir un punto del plano para poder ser considerado un elemento del lugar geométrico. Una vez establecida las condiciones,  procederemos a encontrar la ecuación que debe satisfacerse para identificar la curva. En este caso, se plantea encontrar el lugar geométrico de los puntos medios de ciertos rectángulos inscritos en un triángulo.",
+  "resena": "Condiciones de puntos en el plano para que pertenezcan a un segmento, así como sus ecuaciones.",
+  "id": "_Un_121_LugaresGeometricosSegmento"
+}

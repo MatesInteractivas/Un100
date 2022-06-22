@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='EIMG' x='20' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E2' x='522' y='65' ancho='482' alto='540' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='steps' tipo='numérico' interfaz='pulsador' región='interior' espacio='E2' expresión='((E2._w-120)/2,E2._h-35,120,30)' valor='0' incr='1' min='0' max='5' discreto='no' decimales='0' fijo='sí' visible='no' acción='calcular' parámetro='video.stop()' image_inc='images/next_step.svg' image_dec='images/prev_step.svg' btn_pos='h_left_right' ">
+      <param name="C_02" value="id='link' interfaz='botón' tipo='numérico' región='interior' espacio='EIMG' nombre='https://www.youtube.com/watch?v=ZkASqor3zr8' expresión='((EIMG._w-350)/2,EIMG._h-50,350,20)' valor='0' color='0652dd' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='sí' font_family='SansSerif' fuente puntos='15' imagen='vacio.gif' acción='abrir URL' parámetro='https://www.youtube.com/watch?v=ZkASqor3zr8' dibujar-si='steps==4' ">
+      <param name="C_03" value="id='video' tipo='video' espacio='EIMG' expresión='(20,20,442,335)' dibujar-si='steps==4' archivo='http://prometeo.matem.unam.mx/recursos/Licenciatura/Un100/videos/_Un_058_TiposDeDatosYVariables/video2.mp4' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Estructura de la Información' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_02" value="espacio='EIMG' tipo='imagen' fondo='no' dibujar-si='steps==0' coord_abs='no' expresión='(0,0,0.75,0.75)' archivo='images/fondo_08.jpg' rotini='0' opacidad='1' ">
+      <param name="G_03" value="espacio='EIMG' tipo='imagen' fondo='no' dibujar-si='steps==1' coord_abs='no' expresión='(0,0,1,1)' archivo='images/grafica.png' rotini='0' opacidad='1' ">
+      <param name="G_04" value="espacio='EIMG' tipo='imagen' fondo='no' dibujar-si='(steps==2)||(steps==3)' coord_abs='no' expresión='(0,0,1,1,)' archivo='images/alturas.png' rotini='0' opacidad='1' ">
+      <param name="G_05" value="espacio='EIMG' tipo='imagen' fondo='no' dibujar-si='steps==5' coord_abs='no' expresión='(0,0,0.5,0.5)' archivo='images/variable.png' rotini='0' opacidad='1' ">
+      <param name="G_06" value="espacio='E2' tipo='texto' fondo='no' color='2c3e50' coord_abs='sí' expresión='(E2._w/2,E2._h-22)' texto='[steps+1] / 6' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_center_center' info='Pasos ' ">
+      <param name="G_07" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==0' coord_abs='sí' expresión='[20,20]' texto='\b{Introducción}\n\nEn esta escena, reconocerás los principales componentes que fundamentan la estructura de la información, desde la definición de un atributo hasta la conceptualización de las bases de datos y su funcionalidad.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==1' coord_abs='sí' expresión='[20,20]' texto='Cuando nos referimos a un objeto o persona, usualmente hacemos comentarios respecto a su imagen o apariencia a primera vista, que es alto, bajo, gordo, flaco, hombre, mujer, entre otros, esto lo llamamos “\b{ATRIBUTO}”, siendo este una característica identificativa de un ente informático. \n\n¿Y qué es un ente informático? Es todo aquello que podemos describir a través de características.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==2' coord_abs='sí' expresión='[20,20]' texto='El atributo tiene dos particularidades:\n\n\b{a)} Obedece a una serie de razonamientos humanos; \n\b{b)} es muy relativo. \n\nSi en tu ciudad una persona que mide 1.70cm se considera alta, y si luego se traslada a occidente puede no ser una persona realmente alta, si vive en Europa sería una persona baja y si vive en Oriente sería una persona realmente alta. Los atributos siempre van a estar sujetos a la relatividad del prisma con que la observe quien vaya a dar concepto. Igual es el caso de atributos como la belleza, depende mucho del observador que lo esté manejando.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_10" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==3' coord_abs='sí' expresión='[20,20]' texto='Los atributos deben ser tasados a través de una escala ya que esto los hace manejables y no relativos, esto genera un \b{Dato}: un atributo “codificado” en términos entendibles a un sistema de información, en condiciones manejables y comparables y de manera casi absoluta.\n\nQue un atributo sea “codificado” significa que ha sido convertido a una escala para poder ser mas manejable, lo cual indica que lo podemos operar con otros atributos de la misma escala, es decir, podemos realizar comparaciones y obtener resultados y respuestas.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_11" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==4' coord_abs='sí' expresión='[20,20]' texto='Tenemos identificada información clave sobre Diana: su nombre, su género y su estatura, representados en \b{Campos}. En un conjunto de campos en donde cada campo tiene consignado un dato y todos los datos pertenecen o describen a un mismo ente informático, se genera un \b{Registro} que en este caso podemos llamar \b{Persona}.\n\nSi generamos varios campos, formando un conjunto de registros que tienen la misma estructura y puede ser manejado como una sola unidad, almacenamos la información en un \b{Archivo}.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='steps==5' coord_abs='sí' expresión='[20,20]' texto='\b{Variable} es un campo de memoria al que se le puede cambiar el contenido cuantas veces sea necesario. \n\nUn \b{campo de memoria} es un pedacito de la memoria principal del ordenador donde podemos guardar un \b{dato}. La información se almacena en variables, esto nos indica que es a través de variables como se puede utilizar la memoria del computador. Estas son como unas cajitas de diferentes tamaños y por ello se deben declarar previamente para que el ordenador las dimensione de acuerdo a las necesidades.' decimales='2' fijo='sí' ancho='E2._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
