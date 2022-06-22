@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+	
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>microMundo6</title>
+	
+
+	<style type="text/css">
+		body {
+			background-color: black;
+			color: white;
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+		}
+		/*canvas {
+			-ms-touch-action: none;
+		}*/
+	</style>
+	
+	<script>
+	
+	// funcion para recibir los mensajes del padre
+	function receiveMessage(evt) {
+	  // mensaje tipo set
+	  if (evt.data && evt.data.type === "set") {
+	    if(evt.data.name=="cmp1" && evt.data.value==0){
+		document.getElementById("cmp1").value = "trabajo";
+	    } else if(evt.data.name=="cmp2" && evt.data.value==1){
+		document.getElementById("cmp2").value = "calor";
+	    }
+	  }
+    
+	}
+	window.addEventListener("message", receiveMessage, false);
+	
+    </script>
+	
+
+</head> 
+ 
+<body> 
+	<div id="fb-root"></div>
+	<div style="text-align: center;">
+
+
+		<div id="c2canvasdiv" style="width: 550px; height: 550px; background-image:url('images/fondo.png');">
+			
+			<img src="images/bt_verificar.png" id="btAnterior" style="position:absolute; top:100px; left:410px; cursor:pointer; "  onclick="verificar()" onmouseover="src='images/bt_verificar_over.png'"  onmouseout="src='images/bt_verificar.png'"/>
+			<img src="images/texto.png" style="position:absolute; top:20px; left:10px;">
+			<input type="text" id="cmp1" style="position:absolute; top:55px; left:385px; width: 52px; " onclick="this.focus()" />
+			<input type="text" id="cmp2" style="position:absolute; top:55px; left:465px; width: 52px; " onclick="this.focus()" />
+
+		</div>
+	</div>
+	
+	
+	
+	
+	<script src="js/jquery-2.0.0.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+    <!--<script>
+		function updateCanvasSize()
+		{
+			var w = jQuery(window).width();
+			var h = jQuery(window).height();
+			cr_sizeCanvas(w, h);
+		};
+		
+		var resizeIntervalId = -1;
+		
+		jQuery(window).resize(function() {
+			if (window.c2resizestretchmode === 1)
+			{
+				window.c2resizestretchmode = 2;		
+				var canvas = document.getElementById("c2canvas");
+				window.c2oldcanvaswidth = canvas.width;
+				window.c2oldcanvasheight = canvas.height;
+				window.c2eventtime = Date.now();
+				updateCanvasSize();
+				
+				
+				
+				
+				resizeIntervalId = setInterval(updateCanvasSize, 250);
+				setTimeout(function () {
+					clearInterval(resizeIntervalId);
+					resizeIntervalId = -1;
+				}, 1600);
+			}
+			else if (window.c2resizestretchmode === 2)
+			{
+				
+				
+				if (resizeIntervalId === -1)
+				{
+					window.c2resizestretchmode = 0;
+					cr_sizeCanvas(window.c2oldcanvaswidth, window.c2oldcanvasheight);
+				}
+			}
+		});
+	
+		
+		jQuery(document).ready(function ()
+		{
+			
+			cr_createRuntime("c2canvas");
+		});
+		
+		
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+    </script>-->
+    
+    <script>
+    
+    function verificar(){
+	var padre = window.parent;
+	if(document.getElementById("cmp1").value=="" || document.getElementById("cmp2").value == ""){
+	    alert("Llena ambos campos antes de verificar.");
+	} else {
+	    var res = document.getElementById("cmp1").value+" - "+document.getElementById("cmp2").value;
+	    var mensajeTipoSet = { type: "set", name: "respuesta", value: res };
+	    padre.postMessage(mensajeTipoSet, "*");
+	}
+    }
+	
+    </script>
+    
+</body> 
+</html> 

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_014_LaRectaUnaEnfoqueVectorial" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Geometría Analítica, Vectores" 
+	plataforma="HTML 5" 
+	ver="Beta"
+	>
+	<titulo><![CDATA[
+		La recta, un enfoque vectorial
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+      La intención de esta unidad didáctica  es mostrar al usuario cómo a partir de operaciones entre
+      vectores se puede definir una recta y se puede obtener información de la misma a través de 
+      los elementos que conforman su ecuación vectorial.
+      El enfoque vectorial permite estudiar aplicaciones directas de la recta como la distancia de
+      un punto a una recta, identificación de rectas paralelas y perpendiculares, obtención del punto de 
+      intersección entre dos rectas  y también la obtención del ángulo entre dos rectas
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

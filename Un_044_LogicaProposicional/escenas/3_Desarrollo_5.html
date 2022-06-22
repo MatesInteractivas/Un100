@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='1' O.x='-485' O.y='-275' imagen='images/fondo_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='55' y='100' ancho='425' alto='400' fijo='sí' escala='200' O.y='-90' despl_imagen='arr-izq' fondo='d5f3ff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,4);\nparent.update()'">
+   <param name="C_02" value="id='goTo6' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,6);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='p' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='off' expresión='(230,28,30,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn030.png' acción='calcular' parámetro='p=1' dibujar-si='p=0' pos_mensajes='centro'">
+   <param name="C_04" value="id='p2' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='on' expresión='(230,28,30,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn030.png' acción='calcular' parámetro='p=0' dibujar-si='p=1' pos_mensajes='centro'">
+   <param name="C_05" value="id='q' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='on' expresión='(230,130,30,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn030.png' acción='calcular' parámetro='q=1' dibujar-si='q=0' pos_mensajes='centro'">
+   <param name="C_06" value="id='q2' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='off' expresión='(230,130,30,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn030.png' acción='calcular' parámetro='q=0' dibujar-si='q=1' pos_mensajes='centro'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;El condicional&squot;' hacer='bw=126;bh=50;bx=539;by=456;info=1'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' expresión='[560,125]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs40 La implicaci\u243 n &quote;si p entonces q&quote;\par es una proposici\u243 n que es falsa\par \u250 nicamente cuando p es verdadera\par y q es falsa, y es verdadera, en los\par dem\u225 s casos.\par \par El condicional se denota con p\u8594 q.\par En el condicional p es el antecedente\par (premisa o hip\u243 tesis), y la q es el\par consecuente (conclusi\u243 n o tesis).\par \par El circuito de la izquierda simula el\par resultado l\u243 gico del condicional.\par Observa en la tabla la equivalencia\par l\u243 gica entre p\u8594 q y ~p\u8744 q.}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_03" value="espacio='E2' tipo='polígono' dibujar-si='(p=1)&(q=1)' expresión='(-0.52,-0.47)(0.53,-0.47)(0.53,-0.58)(-0.52,-0.58)' relleno='ffff80' ancho='0'">
+   <param name="G_04" value="espacio='E2' tipo='polígono' dibujar-si='(p=1)&(q=0)' expresión='(-0.52,-0.58)(0.53,-0.58)(0.53,-0.69)(-0.52,-0.69)' relleno='ffff80' ancho='0'">
+   <param name="G_05" value="espacio='E2' tipo='polígono' dibujar-si='(p=0)&(q=1)' expresión='(-0.52,-0.69)(0.53,-0.69)(0.53,-0.8)(-0.52,-0.8)' relleno='ffff80' ancho='0'">
+   <param name="G_06" value="espacio='E2' tipo='polígono' dibujar-si='(p=0)&(q=0)' expresión='(-0.52,-0.8)(0.53,-0.8)(0.53,-0.91)(-0.52,-0.91)' relleno='ffff80' ancho='0'">
+   <param name="G_07" value="espacio='E2' tipo='imagen' dibujar-si='(p=1)&(q=1)' expresión='(-1,0.6)' archivo='images/condvv.png'">
+   <param name="G_08" value="espacio='E2' tipo='imagen' dibujar-si='(p=1)&(q=0)' expresión='(-1,0.6)' archivo='images/condvf.png'">
+   <param name="G_09" value="espacio='E2' tipo='imagen' dibujar-si='(p=0)&(q=1)' expresión='(-1,0.6)' archivo='images/condfv.png'">
+   <param name="G_10" value="espacio='E2' tipo='imagen' dibujar-si='(p=0)&(q=0)' expresión='(-1,0.6)' archivo='images/condff.png'">
+   <param name="G_11" value="espacio='E2' tipo='imagen' dibujar-si='~(~p|q)' expresión='(0.73,-0.225)' archivo='images/apagado.png'">
+   <param name="G_12" value="espacio='E2' tipo='imagen' dibujar-si='(~p|q)' expresión='(0.73,-0.225)' archivo='images/prendido.png'">
+   <param name="G_13" value="espacio='E1' tipo='texto' dibujar-si='raro' expresión='[20,20]' texto='p=[p]  q=[q]' fijo='sí'">
+</ajs>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="340.30234"
+   height="632.63226"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Teoriaini2.svg"
+   inkscape:export-filename="C:\Users\DoktorWattie\Desktop\Escenas 2013\Un_015_Encargo_ElCirculoUnEnfoqueVectorial\escenas\images\Teoriaini1.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#f5f5f5"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageopacity="0.18039216"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1494636"
+     inkscape:cx="176.0682"
+     inkscape:cy="149.67042"
+     inkscape:document-units="cm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-bbox="false"
+     inkscape:bbox-paths="true"
+     inkscape:snap-to-guides="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-global="true"
+     units="cm"
+     showborder="true"
+     inkscape:showpageshadow="true"
+     objecttolerance="10000"
+     borderlayer="true">
+    <sodipodi:guide
+       id="guide2985"
+       orientation="0,345"
+       position="-100.64701,232.83069" />
+    <sodipodi:guide
+       id="guide2987"
+       orientation="1,0"
+       position="340.31748,-413.26657" />
+    <sodipodi:guide
+       id="guide2989"
+       orientation="0,1"
+       position="363.013,576.28262" />
+    <sodipodi:guide
+       id="guide2991"
+       orientation="1,0"
+       position="0.3174815,639.09562" />
+    <sodipodi:guide
+       position="131.68807,-573.27101"
+       orientation="0,350"
+       id="guide3969" />
+    <sodipodi:guide
+       position="347.86072,-720.75328"
+       orientation="-1355,0"
+       id="guide3971" />
+    <sodipodi:guide
+       position="408.46987,532.84602"
+       orientation="0,-350"
+       id="guide3973" />
+    <sodipodi:guide
+       position="-4.6825185,636.26702"
+       orientation="1355,0"
+       id="guide3975" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid4047"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="-4.6825185px"
+       originy="-718.73298px" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-10.072654,-6.4621749)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Capa 1">
+    <flowRoot
+       style="font-size:17px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot2993"
+       xml:space="preserve"><flowRegion
+         id="flowRegion2995"><rect
+           y="7.3621817"
+           x="5"
+           height="121.42857"
+           width="335"
+           id="rect2997" /></flowRegion><flowPara
+         id="flowPara2999" /></flowRoot>    <g
+       id="g13249"
+       transform="translate(4,0)">
+      <flowRoot
+         transform="matrix(0.99685784,0,0,1.0000173,1.0883652,-2.0225061)"
+         xml:space="preserve"
+         id="flowRoot3001"
+         style="font-size:17px;font-style:normal;font-weight:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><flowRegion
+           id="flowRegion3003"><rect
+             id="rect3005"
+             width="341.39014"
+             height="1345.3622"
+             x="5"
+             y="6.6478958"
+             style="font-style:normal;text-align:justify;text-anchor:start;-inkscape-font-specification:Sans" /></flowRegion><flowPara
+           id="flowPara3911"
+           style="fill:#0000ff">               Circunferencia cartesiana</flowPara><flowPara
+           style="fill:#0000ff"
+           id="flowPara4057">                   con centro en (<flowSpan
+   style="font-style:italic"
+   id="flowSpan4127">h,k</flowSpan>)</flowPara><flowPara
+           id="flowPara3963" /><flowPara
+           id="flowPara3965">Cuando el centro de la circunferencia se encuentra fuera del origen, es decir ya no en las cordenadas </flowPara><flowPara
+           id="flowPara4067" /><flowPara
+           id="flowPara4059"
+           style="fill:#0000ff">                               (0,0)</flowPara><flowPara
+           id="flowPara4071" /><flowPara
+           id="flowPara4073">y sí, en las coordenadas </flowPara><flowPara
+           id="flowPara4075" /><flowPara
+           id="flowPara4077"
+           style="fill:#0000ff">                               (h,k)</flowPara><flowPara
+           id="flowPara4079" /><flowPara
+           id="flowPara4081">Se dice que la circunferencia es una circunferencia de radio <flowSpan
+   style="font-style:italic;fill:#0000ff"
+   id="flowSpan4131">r</flowSpan>, con centro en (<flowSpan
+   style="font-style:italic;fill:#0000ff"
+   id="flowSpan4135">h, k</flowSpan>).</flowPara><flowPara
+           id="flowPara4085" /><flowPara
+           id="flowPara4061">Y de estos datos se puede deducr que la ecuación de la circunferencia es:</flowPara><flowPara
+           id="flowPara4089" /><flowPara
+           id="flowPara4091"
+           style="font-style:italic;fill:#0000ff">                    r<flowSpan
+   style="font-size:65.10162354%;font-style:italic;baseline-shift:super;fill:#0000ff"
+   id="flowSpan4097">2</flowSpan> = <flowSpan
+   style="font-style:normal"
+   id="flowSpan4139">(</flowSpan>x-h<flowSpan
+   style="font-style:normal"
+   id="flowSpan4141">)</flowSpan><flowSpan
+   style="font-size:65.10162354%;font-style:normal;baseline-shift:super;fill:#0000ff"
+   id="flowSpan4101">2</flowSpan> + <flowSpan
+   style="font-style:normal"
+   id="flowSpan4145">(</flowSpan>y-k<flowSpan
+   style="font-style:normal"
+   id="flowSpan4147">)</flowSpan><flowSpan
+   style="font-size:65.10162354%;font-style:normal;baseline-shift:super;fill:#0000ff"
+   id="flowSpan4099">2</flowSpan></flowPara><flowPara
+           id="flowPara4093" /><flowPara
+           id="flowPara4103">Y a esta última expresión se le conoce como la ecuación de la circunferencia de radio <flowSpan
+   style="font-style:italic;fill:#0000ff"
+   id="flowSpan4149">r</flowSpan>, con centro en las coordenadas (<flowSpan
+   style="font-style:italic"
+   id="flowSpan4153">h, k</flowSpan>).</flowPara><flowPara
+           id="flowPara3931">     También hay que tener presente que el radio <flowSpan
+   style="font-style:italic;fill:#0000ff"
+   id="flowSpan3947">r</flowSpan>, al igual que en la ecuación de la circunferencia con centro en el origen que, sólo tiene sentido en la geometría cartesiana para r≥0</flowPara><flowPara
+           id="flowPara3933" /></flowRoot>      <g
+         transform="matrix(0.8,0,0,0.8,88.455004,377.26291)"
+         id="g7849" />
+      <g
+         id="g11500"
+         transform="matrix(0.8,0,0,0.8,-19.206401,630.61338)" />
+      <g
+         id="g4487"
+         transform="matrix(0.8,0,0,0.8,-14.035418,450.37189)">
+        <g
+           word-spacing="normal"
+           letter-spacing="normal"
+           font-size-adjust="none"
+           font-stretch="normal"
+           font-weight="normal"
+           font-variant="normal"
+           font-style="normal"
+           stroke-miterlimit="10.433"
+           xml:space="preserve"
+           transform="matrix(0.49285714,0,0,-0.49285714,-86.25,1012.5)"
+           id="g4489"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />      </g>
+    </g>
+  </g>
+</svg>

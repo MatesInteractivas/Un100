@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_03" value="id='n3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Unir' expresión='(80,300,100,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn100.png' acción='animar' dibujar-si='t=0'">
+   <param name="C_04" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Regresar' expresión='(80,300,100,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='t=0\nh1=1.5\nh2=-2.5' dibujar-si='t>2.3'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Ley de DeMorgan para el complemento de la intersección&squot;' hacer='h1=1.5;h2=-3'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(15,90)' archivo='images/panel_940x445.png'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' expresión='(-2.5,-1,.5,.5)' archivo='images/i14.png'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' expresión='(5,h1,.5,.5)' archivo='images/i9.png'">
+   <param name="G_05" value="espacio='E1' tipo='imagen' expresión='(5,h2,.5,.5)' archivo='images/i10.png'">
+   <param name="G_06" value="espacio='E1' tipo='texto' expresión='[250,240]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48\b A\f2\fs30\b0}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='texto' expresión='[450,240]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48\b B\f2\fs30\b0}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='t>2.4' expresión='[610,240]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48\b A\f2\fs30\b0}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='t>2.4' expresión='[810,240]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48\b B\f2\fs30\b0}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='h1=1.5' expresión='(8.5,1.5,.8,.8)' archivo='images/f9.png'">
+   <param name="G_11" value="espacio='E1' tipo='imagen' dibujar-si='h1=1.5' expresión='(8.5,-3.5,.8,.8)' archivo='images/f10.png'">
+   <param name="G_12" value="espacio='E1' tipo='imagen' expresión='(-2.5,1.5,.8,.8)' archivo='images/f14.png'">
+   <param name="G_13" value="espacio='E1' tipo='imagen' dibujar-si='t>2.4' expresión='(5,1.5,.5,.5)' archivo='images/f17.png'">
+   <param name="G_14" value="espacio='E1' tipo='texto' dibujar-si='t=0' expresión='[40,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 El diagrama de la izquierda, representa el  complemento de la\par intersecci\u243 n de los conjuntos A y B. A la derecha, observamos\par los complementos de A y B. Une esto dos \u250 ltimos diagramas y\par observa qu\u233  ocurre.\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_15" value="espacio='E1' tipo='texto' dibujar-si='t>2.4' expresión='[40,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 Concluimos que el complemento de la intersecci\u243 n de A y B\par es igual a la uni\u243 n de los complementos de los dos conjuntos.\f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="Animación" value="controles='no' auto='no' inicio='h1=1.5;t=0;h2=-2.5' hacer='t=t+.1;h1=h1-.1;h2=h2+.06' mientras='t<2.5'">
+</ajs>
+
+</body>
+</html>

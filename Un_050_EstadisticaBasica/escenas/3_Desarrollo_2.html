@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_03" value="id='n3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Siguiente' expresión='(815,400,100,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='otro=otro+1' dibujar-si='otro=0'">
+   <param name="C_04" value="id='n3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Siguiente' expresión='(375,465,100,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='otro=otro+1' dibujar-si='(otro>0)&(otro<8)'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Tabla de frecuencia para datos agrupados&squot;' hacer='otro=0'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='otro<3' expresión='[540,110]' texto='Ahora la universidad esta interesada\nen conocer la estatura que tienen \nlos estudiantes de comunicación \nsocial.\nDe la encuesta se obtiene los \nsiguientes datos:' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' dibujar-si='otro=0' expresión='(3,-0.5)' archivo='images/tabla1in.png'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' dibujar-si='otro=0' expresión='(-4.7,-0.7,0.5,0.5)' archivo='images/estatura.png'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='otro=0' expresión='[55,110]' texto='Lo primero es ordenar los datos\npara visualizar mejor:' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='(otro>0)&(otro<3)' expresión='(5,-2.3,1.5,1.2)' archivo='images/tabla1inord.png'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='otro=1' expresión='[55,110]' texto='Hay demasiados datos distintos y no \nse lograría una simplificación de datos.' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='imagen' dibujar-si='otro=1' expresión='(-7.5,-5,1.5,1.2)' archivo='images/distintos.png'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='otro=1' expresión='[200,210]' texto='Es necesario crear \nunos intervalos para\nque resulten menos\nclases y se pueda\nsimplificar la información' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='texto' dibujar-si='otro=2' expresión='[55,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;\f5\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs36\b 1. Determinar el n\u250 mero de clases o \par intervalos.\par \par En este caso el ntama\u241 o de la muestra\par es \cf0 n=50 \cf1  \par \par Una f\u243 rmula para calcular este n\u250 mero\par es:\fs44\par \f3\fs48\b0\i\cf0{\*\mjaformula k=1+3.322*log(n)}\f2\fs44\b\i0\par \par \f3\fs48\b0\i{\*\mjaformula k=1+3.322*log(50)={\expr 6.643978\decimals 6\fixed1}}\cf1\f2\fs44\b\i0\par \par \fs36 Aproximando matematicamente al entero\par mas cercano se obtiene:\fs44\par \cf0\f3\fs48\b0\i k=7\cf1\f4\fs30\i0     \cf0\f5\fs36\b\i Deben ser 7 clases\f4\fs30\b0\i0\cf1}' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='texto' dibujar-si='otro=3' expresión='[540,110]' texto='Ahora se puede empezar a \nconstruir la tabla:\nSe deben tener 7 clases\npara los intervalos.' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='(otro>2)&(otro<5)' expresión='(.95,-0.55)' archivo='images/frec1ac.png'">
+   <param name="G_13" value="espacio='E1' tipo='texto' dibujar-si='otro=3' expresión='[55,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs36\b 2. Calcular la amplitud de clase para \par saber que tan amplios son los intervalos\par \par i) primero se calcula el rango \cf0 R\cf1 :\par   \cf0  R=(dato maximo) - (dato m\u237 nimo)\cf1\par    - El dato maximo es el mayor valor de \par    las edades, en este caso es: \cf0 194 cms.\cf1\par    - El dato m\u237 nimo es el menos valor de \par   las edades, en este caso es: \cf0 148 cms.\cf1\par       R=194 - 148 = 46       \cf0 R=46\cf1\par \par ii)Determinar la amplitud de clase: \cf0 h\fs44\cf1\par \fs36      \cf0 h=\f3\fs48\b0\i{\*\mjaformula{\fraction{\num R}{\den k}}={\fraction{\num 46}{\den 7}}={\expr 6.5714\decimals 4\fixed1}}\f1\fs36\b\i0  \cf1  Se aproxima\par por encima con la misma exactitud \par de los datos.  \cf0 h={\*\mjaformula 7}\fs44\cf1\par }' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_14" value="espacio='E1' tipo='texto' dibujar-si='otro=4' expresión='[540,110]' texto='Se tiene:\nNúmero de clases k=7\nRango R=46\nAmplitud de clase h=7' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_15" value="espacio='E1' tipo='texto' dibujar-si='otro=4' expresión='[55,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Arial;\f4\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs36\b 3. Determinar si los valores m\u225 ximo y\par m\u237 nimo cambian:\par \par i) Calcular el nuevo rango \f2\fs48\b0\i{\*\mjaformula R{\supix *}=h*k}\f3\fs44\b\i0\par \fs36   \cf0  {\*\mjaformula R{\supix *}=7*7=49}\par \cf1\par ii) Hallar la diferencia \cf0{\*\mjaformula a=R{\supix *}-R=49-46=3}\par \par \cf1 iii) El rango se amplia porque \f4\fs48{\*\mjaformula\cf0 a>0\cf1}\f3\fs44  \par \fs36 Nuevo dato m\u237 nimo ={\*\mjaformula\cf0 148-{\fraction{\num 3}{\den 2}}=146.5\cf1} \par Nuevo dato m\u225 ximo =194{\*\mjaformula\cf0 194-{\fraction{\num 3}{\den 2}}=195.5\cf1}\par \par \fs44}' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_16" value="espacio='E1' tipo='texto' dibujar-si='otro=5' expresión='[540,110]' texto='Se tiene:\nNúmero de clases k=7\nRango R=46\nAmplitud de clase h=7\nNuevo dato mínimo = 146.5\nNuevo dato máximo = 195.5' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_17" value="espacio='E1' tipo='texto' dibujar-si='otro=5' expresión='[55,110]' texto='4. Listar los valores inferiores y \nsuperiores de cada intervalo:\n\nAsí:\n      146.5 - 153.5\n      153.5 - 160.5\n      160.5 - 167.5\n      167.5 - 174.5\n      174.5 - 181.5\n      181.5 - 188.5\n      188.5 - 195.5\nEstos son los intervalos que se \ncolocan en la tabla.' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_18" value="espacio='E1' tipo='imagen' dibujar-si='(otro=5)' expresión='(1.2,-0.55)' archivo='images/dfrec1ac.png'">
+   <param name="G_19" value="espacio='E1' tipo='texto' dibujar-si='otro=6' expresión='[55,110]' texto='5. En cada intervalo determinar los \nlímites reales de clase (L.R.C.)\nComo los datos son número enteros:\nEn cada intervalo se suma 0.1 menos\nen el primer y último número.\nAsí:\n      146.5 - 153.6\n      153.6 - 160.6\n      160.6 - 167.6\n      167.6 - 174.6\n      174.6 - 181.6\n      181.6 - 188.6\n      188.6 - 195.5\nEstos son límites reales \nde clase (L.R.C.)' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_20" value="espacio='E1' tipo='imagen' dibujar-si='(otro=6)' expresión='(1.2,-0.55)' archivo='images/dfrec2ac.png'">
+   <param name="G_21" value="espacio='E1' tipo='texto' dibujar-si='otro=6' expresión='[540,110]' texto='Los límites reales de clase\nse colocan en la segunda \ncolumna:' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_22" value="espacio='E1' tipo='texto' dibujar-si='otro=7' expresión='[55,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs36\b 6. Calcular las marcas de clase Mi :\par \par M1 =(146.5 - 153.6){\*\mjaformula{\fraction{\num 146.5+153.6}{\den 2}}=150.1}\par M2 =(146.5 - 153.6){\*\mjaformula{\fraction{\num 153.6+160.6}{\den 2}}=157.1}\par M3 =(146.5 - 153.6){\*\mjaformula{\fraction{\num 160.6+167.6}{\den 2}}=164.1}\par M4 =(146.5 - 153.6){\*\mjaformula{\fraction{\num 167.6+174.6}{\den 2}}=171.1}\par M5 =(146.5 - 153.6){\*\mjaformula{\fraction{\num 174.6+181.6}{\den 2}}=178.1}\par M6 =(146.5 - 153.6){\*\mjaformula{\fraction{\num 181.6+188.6}{\den 2}}=185.1}\par M7 =(146.5 - 153.6){\*\mjaformula{\fraction{\num 188.6+195.6}{\den 2}}=192.1}\par       \fs44}' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_23" value="espacio='E1' tipo='texto' dibujar-si='otro=7' expresión='[535,110]' texto='Las marcas de clase se colocan en \nla tercera columna.\nEstos son los valores representantes\nde cada intervalo:' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_24" value="espacio='E1' tipo='imagen' dibujar-si='(otro=7)' expresión='(1.2,-0.55)' archivo='images/dfrec3ac.png'">
+   <param name="G_25" value="espacio='E1' tipo='texto' dibujar-si='otro=8' expresión='[55,110]' texto='7. Los demas valores se llenan como\nse hizo para los datos no agrupados' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_26" value="espacio='E1' tipo='imagen' dibujar-si='(otro=8)' expresión='(1.2,-0.55)' archivo='images/dtabla1inord.png'">
+   <param name="G_27" value="espacio='E1' tipo='texto' dibujar-si='otro=8' expresión='[535,110]' texto='Las frecuencias absolutas se \ncuentan de acuerdo al número \nde veces que aparezca el valor\nen el intervalo.\nVer colores.' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_28" value="espacio='E1' tipo='imagen' dibujar-si='(otro=8)' expresión='(-9,2)' archivo='images/completa.png'">
+   <param name="G_29" value="espacio='E1' tipo='texto' dibujar-si='otro=8' expresión='[55,410]' texto='Con esta tabla se pueden hacer los\nanálisis que se deseen.' fuente='SansSerif,BOLD,18' fijo='sí'">
+</ajs>
+
+</body>
+</html>

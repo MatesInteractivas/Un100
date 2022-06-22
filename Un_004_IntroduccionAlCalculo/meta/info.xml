@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_004_IntroduccionAlCalculo" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Cálculo, Cálculo diferencial e integral" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Introducción al cálculo 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		El objetivo de esta unidad es presentar al alumno los tres conceptos fundamentales del cálculo: el límite, la derivada y la integral, y el teorema fundamental del cálculo. El alumno podrá experimentar con los interactivos observando que el cálculo se basa en problemas de resolver límites, ya sea el límite de la suma de polígonos para el caso de la integral, o el límite de la pendiente de dos puntos arbitrariamente cercanos en una curva para la derivada. Se explica que el teorema fundamental del cálculo permite relacionar a la derivada e integral como funciones inversas.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

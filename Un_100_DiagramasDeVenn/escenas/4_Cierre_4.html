@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<title>les.</title>
+	<style>
+		*{
+		border:0;
+		margin:0;
+		padding:0;
+		}
+	</style>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body >
+
+<p align="left">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='35' O.x='-40%' O.y='55%' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_02" value="id='verificar' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Verificar' expresión='(430,485,140,30)' fijo='sí' visible='sí' color='blanco' color-int='ffffc800' fuente puntos='18' imagen='images/btn140.png' acción='calcular' parámetro='verifica=1\nmuestra=0' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='muestra&(verifica=0)'">
+   <param name="C_03" value="id='g1' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' fijo='sí' dibujar-si='pp' activo-si='muestra=0'">
+   <param name="C_04" value="id='g1.x' tipo='numérico' región='interior' espacio='E1' nombre='g1.x' expresión='(1110,0)' valor='2' min='8.2' max='14.8' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='g1.y' tipo='numérico' región='interior' espacio='E1' nombre='g1.y' expresión='(1110,0)' valor='2' incr='.1' min='4' max='11.5' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='g2' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' fijo='sí' dibujar-si='pp' activo-si='muestra=0'">
+   <param name="C_07" value="id='g2.x' tipo='numérico' región='interior' espacio='E1' nombre='g2.x' expresión='(1110,0)' valor='2' min='8.2' max='14.8' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_08" value="id='g2.y' tipo='numérico' región='interior' espacio='E1' nombre='g2.y' expresión='(1110,0)' valor='2' incr='.1' min='4' max='11.5' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_09" value="id='g3' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' fijo='sí' dibujar-si='pp' activo-si='muestra=0'">
+   <param name="C_10" value="id='g3.x' tipo='numérico' región='interior' espacio='E1' nombre='g3.x' expresión='(1110,0)' valor='2' min='8.2' max='14.8' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_11" value="id='g3.y' tipo='numérico' región='interior' espacio='E1' nombre='g3.y' expresión='(1110,0)' valor='2' incr='.1' min='4' max='11.5' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_12" value="id='g4' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' fijo='sí' dibujar-si='pp' activo-si='muestra=0'">
+   <param name="C_13" value="id='g4.x' tipo='numérico' región='interior' espacio='E1' nombre='g4.x' expresión='(1110,0)' valor='2' min='8.2' max='14.8' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_14" value="id='g4.y' tipo='numérico' región='interior' espacio='E1' nombre='g4.y' expresión='(1110,0)' valor='2' incr='.1' min='4' max='11.5' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_15" value="id='g5' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' fijo='sí' dibujar-si='pp' activo-si='muestra=0'">
+   <param name="C_16" value="id='g5.x' tipo='numérico' región='interior' espacio='E1' nombre='g5.x' expresión='(1110,0)' valor='2' min='8.2' max='14.8' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_17" value="id='g5.y' tipo='numérico' región='interior' espacio='E1' nombre='g5.y' expresión='(1110,0)' valor='2' incr='.1' min='4' max='11.5' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_18" value="id='g6' tipo='gráfico' espacio='E1' color='azul' color-int='rojo' fijo='sí' dibujar-si='pp' activo-si='muestra=0'">
+   <param name="C_19" value="id='g6.x' tipo='numérico' región='interior' espacio='E1' nombre='g6.x' expresión='(1110,0)' valor='2' min='8.2' max='14.8' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_20" value="id='g6.y' tipo='numérico' región='interior' espacio='E1' nombre='g6.y' expresión='(1110,0)' valor='2' incr='.1' min='4' max='11.5' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_21" value="id='n20' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='◄' expresión='(740,480,50,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' negrita='sí' fuente puntos='20' imagen='images/btn050.png' acción='calcular' parámetro='otro=otro-1\nverifica=0\nmuestra=0\ng1.x=8.2\ng2.x=8.2\ng3.x=8.2\ng4.x=8.2\ng5.x=8.2\ng6.x=8.2\ng1.y=11.5\ng2.y=10\ng3.y=8.5\ng4.y=7\ng5.y=5.5\ng6.y=4' parámetro.fuente='Monospaced,PLAIN,12' activo-si='otro>1'">
+   <param name="C_22" value="id='n21' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='►' expresión='(790,480,50,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' negrita='sí' fuente puntos='20' imagen='images/btn050.png' acción='calcular' parámetro='otro=otro+1\nverifica=0\nmuestra=0\ng1.x=8.2\ng2.x=8.2\ng3.x=8.2\ng4.x=8.2\ng5.x=8.2\ng6.x=8.2\ng1.y=11.5\ng2.y=10\ng3.y=8.5\ng4.y=7\ng5.y=5.5\ng6.y=4' parámetro.fuente='Monospaced,PLAIN,12' activo-si='otro<2'">
+   <param name="A_01" value="id='XG' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='XG[0]=0;XG[1]=0;XG[2]=0'">
+   <param name="A_02" value="id='YG' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='YG[0]=0;YG[1]=0;YG[2]=0'">
+   <param name="A_03" value="id='C' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='C[0]=0;C[1]=0;C[2]=0'">
+   <param name="A_04" value="id='P' vector='sí' evaluar='una-sola-vez' tamaño='37' expresión='P[0]=&squot;_ Ingresa  6 palabras origen y 6 de destino, luego la posición de las respuestas correctas_&squot;;P[1]=&squot;images/d01.png&squot;;P[2]=&squot;images/d02.png&squot;;P[3]=&squot;images/d03.png&squot;;P[4]=&squot;images/d04.png&squot;;P[5]=&squot;images/d05.png&squot;;P[6]=&squot;images/d06.png&squot;;P[7]=&squot;images/d012.png&squot;;P[8]=&squot;images/d011.png&squot;;P[9]=&squot;images/d07.png&squot;;P[10]=&squot;images/d09.png&squot;;P[11]=&squot;images/d08.png&squot;;P[12]=&squot;images/d010.png&squot;;P[13]=6;P[14]=5;P[15]=1;P[16]=3;P[17]=2;P[18]=4;P[19]=&squot;images/d013.png&squot;;P[20]=&squot;images/d014.png&squot;;P[21]=&squot;images/d015.png&squot;;P[22]=&squot;images/d016.png&squot;;P[23]=&squot;images/d017.png&squot;;P[24]=&squot;images/d018.png&squot;;P[25]=&squot;images/d023.png&squot;;P[26]=&squot;images/d024.png&squot;;P[27]=&squot;images/d021.png&squot;;P[28]=&squot;images/d019.png&squot;;P[29]=&squot;images/d022.png&squot;;P[30]=&squot;images/d020.png&squot;;P[31]=5;P[32]=6;P[33]=2;P[34]=4;P[35]=1;P[36]=3;'">
+   <param name="A_05" value="id='a5' algoritmo='sí' evaluar='siempre' hacer='XG[1]=g1.x;XG[2]=g2.x;XG[3]=g3.x;XG[4]=g4.x;XG[5]=g5.x;XG[6]=g6.x;YG[1]=g1.y;YG[2]=g2.y;YG[3]=g3.y;YG[4]=g4.y;YG[5]=g5.y;YG[6]=g6.y;dY=45;'">
+   <param name="A_06" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Tercer ejercicio - emparejamiento&squot;' hacer=';c2=0;otro=1;;;'">
+   <param name="A_07" value="id='e2' evento='sí' condición='c2=0' acción='calcular' parámetro='g1.x=8.2\ng2.x=8.2\ng3.x=8.2\ng4.x=8.2\ng5.x=8.2\ng6.x=8.2\ng1.y=11.5\ng2.y=10\ng3.y=8.5\ng4.y=7\ng5.y=5.5\ng6.y=4' parámetro.fuente='Monospaced,PLAIN,12' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_08" value="id='a3' algoritmo='sí' evaluar='siempre' hacer='g1.y=(g1.y>11.2)&(g1.x>14.5)?11.5:g1.y;g1.x=(g1.x>14.5)?14.8:g1.x;g2.x=(g2.x>14.5)?14.8:g2.x;g3.x=(g3.x>14.5)?14.8:g3.x;g4.x=(g4.x>14.5)?14.8:g4.x;g5.x=(g5.x>14.5)?14.8:g5.x;g6.x=(g6.x>14.5)?14.8:g6.x;g2.y=(g2.y>11.2)&(g2.x>14.5)?11.5:g2.y;g3.y=(g3.y>11.2)&(g3.x>14.5)?11.5:g3.y;g4.y=(g4.y>11.2)&(g4.x>14.5)?11.5:g4.y;g5.y=(g5.y>11.2)&(g5.x>14.5)?11.5:g5.y;g6.y=(g6.y>11.2)&(g6.x>14.5)?11.5:g6.y;g1.y=(g1.y<10.2)&(g1.y>9.7)?10:g1.y;g2.y=(g2.y<10.2)&(g2.y>9.7)?10:g2.y;g3.y=(g3.y<10.2)&(g3.y>9.7)?10:g3.y;g4.y=(g4.y<10.2)&(g4.y>9.7)?10:g4.y;g5.y=(g5.y<10.2)&(g5.y>9.7)?10:g5.y;g6.y=(g6.y<10.2)&(g6.y>9.7)?10:g6.y;g1.y=(g1.y<8.7)&(g1.y>8.2)?8.5:g1.y'">
+   <param name="A_09" value="id='a4' algoritmo='sí' evaluar='siempre' hacer='g1.y=(g1.y<8.7)&(g1.y>8.2)?8.5:g1.y;g2.y=(g2.y<8.7)&(g2.y>8.2)?8.5:g2.y;g3.y=(g3.y<8.7)&(g3.y>8.2)?8.5:g3.y;g4.y=(g4.y<8.7)&(g4.y>8.2)?8.5:g4.y;g5.y=(g5.y<8.7)&(g5.y>8.2)?8.5:g5.y;g6.y=(g6.y<8.7)&(g6.y>8.2)?8.5:g6.y;g1.y=(g1.y<7.2)&(g1.y>6.8)?7:g1.y;g2.y=(g2.y<7.2)&(g2.y>6.8)?7:g2.y;g3.y=(g3.y<7.2)&(g3.y>6.8)?7:g3.y;g4.y=(g4.y<7.2)&(g4.y>6.8)?7:g4.y;g5.y=(g5.y<7.2)&(g5.y>6.8)?7:g5.y;g6.y=(g6.y<7.2)&(g6.y>6.8)?7:g6.y;g1.y=(g1.y<5.7)&(g1.y>5.2)?5.5:g1.y;g2.y=(g2.y<5.7)&(g2.y>5.2)?5.5:g2.y;g3.y=(g3.y<5.7)&(g3.y>5.2)?5.5:g3.y;g4.y=(g4.y<5.7)&(g4.y>5.2)?5.5:g4.y;g5.y=(g5.y<5.7)&(g5.y>5.2)?5.5:g5.y;g6.y=(g6.y<5.7)&(g6.y>5.2)?5.5:g6.y;g1.y=(g1.y<4.2)?4:g1.y;g2.y=(g2.y<4.2)?4:g2.y;g3.y=(g3.y<4.2)?4:g3.y;g4.y=(g4.y<4.2)?4:g4.y;g5.y=(g5.y<4.2)?4:g5.y;g6.y=(g6.y<4.2)?4:g6.y;'">
+   <param name="A_10" value="id='a8' algoritmo='sí' evaluar='siempre' inicio='kk=0;d1=0;d2=0;d3=0;d4=0;d5=0;d6=0' hacer='kk=kk+1;d1=d1+(XG[kk]>14.5)&(YG[kk]=11.5);d2=d2+(XG[kk]>14.5)&(YG[kk]=10);d3=d3+(XG[kk]>14.5)&(YG[kk]=8.5);d4=d4+(XG[kk]>14.5)&(YG[kk]=7);d5=d5+(XG[kk]>14.5)&(YG[kk]=5.5);d6=d6+(XG[kk]>14.5)&(YG[kk]=4);error1=(d1>1)|(d2>1)|(d3>1)|(d4>1)|(d5>1)|(d6>1);muestra=(d1=1)&(d2=1)&(d3=1)&(d4=1)&(d5=1)&(d6=1)' mientras='kk<6'">
+   <param name="A_11" value="id='a9' algoritmo='sí' evaluar='siempre' hacer='r1=(g1.x>14.5)*((13-g1.y)/1.5);r2=(g2.x>14.5)*((13-g2.y)/1.5);r3=(g3.x>14.5)*((13-g3.y)/1.5);r4=(g4.x>14.5)*((13-g4.y)/1.5);r5=(g5.x>14.5)*((13-g5.y)/1.5);r6=(g6.x>14.5)*((13-g6.y)/1.5);'">
+   <param name="A_12" value="id='a12' algoritmo='sí' evaluar='siempre' hacer='C[1]=(r1=P[18*(otro-1)+13]);C[2]=(r2=P[18*(otro-1)+14]);C[3]=(r3=P[18*(otro-1)+15]);C[4]=(r4=P[18*(otro-1)+16]);C[5]=(r5=P[18*(otro-1)+17]);C[6]=(r6=P[18*(otro-1)+18]);rta=C[1]+C[2]+C[3]+C[4]+C[5]+C[6]'">
+   <param name="G_01" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(15,90)' archivo='images/panel_940x445.png'">
+   <param name="G_02" value="espacio='E1' tipo='texto' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='polígono' color='66808080' expresión='(1,12.1-(s-1)*1.5)(1,10.9-(s-1)*1.5)(8,10.9-(s-1)*1.5)(8,12.1-(s-1)*1.5)(1,12.1-(s-1)*1.5)' familia='s' s.intervalo='[1,6]' s.pasos='5' relleno='59c9ffff'">
+   <param name="G_04" value="espacio='E1' tipo='polígono' color='66808080' expresión='(15,12.1-(s-1)*1.5)(15,10.9-(s-1)*1.5)(22,10.9-(s-1)*1.5)(22,12.1-(s-1)*1.5)(15,12.1-(s-1)*1.5)' familia='s' s.intervalo='[1,6]' s.pasos='5' relleno='59c9ffff'">
+   <param name="G_05" value="espacio='E1' tipo='polígono' color='gris' expresión='(8,11.7-(s-1)*1.5)(8,11.3-(s-1)*1.5)(8.4,11.3-(s-1)*1.5)(8.4,11.7-(s-1)*1.5)(8,11.7-(s-1)*1.5)' familia='s' s.intervalo='[1,6]' s.pasos='5' relleno='59c9ffff'">
+   <param name="G_06" value="espacio='E1' tipo='polígono' color='gris' expresión='(15,11.7-(s-1)*1.5)(15,11.3-(s-1)*1.5)(14.6,11.3-(s-1)*1.5)(14.6,11.7-(s-1)*1.5)(15,11.7-(s-1)*1.5)' familia='s' s.intervalo='[1,6]' s.pasos='5' relleno='59c9ffff'">
+   <param name="G_07" value="espacio='E1' tipo='segmento' color='006b00' expresión='(8.2,11.5)(g1.x,g1.y)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4' ancho='2'">
+   <param name="G_08" value="espacio='E1' tipo='segmento' color='006b00' expresión='(8.2,10)(g2.x,g2.y)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4' ancho='2'">
+   <param name="G_09" value="espacio='E1' tipo='segmento' color='006b00' expresión='(8.2,8.5)(g3.x,g3.y)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4' ancho='2'">
+   <param name="G_10" value="espacio='E1' tipo='segmento' color='006b00' expresión='(8.2,7)(g4.x,g4.y)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4' ancho='2'">
+   <param name="G_11" value="espacio='E1' tipo='segmento' color='006b00' expresión='(8.2,5.5)(g5.x,g5.y)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4' ancho='2'">
+   <param name="G_12" value="espacio='E1' tipo='segmento' color='006b00' expresión='(8.2,4)(g6.x,g6.y)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4' ancho='2'">
+   <param name="G_13" value="espacio='E1' tipo='texto' dibujar-si='error1' expresión='[151,471]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs36          \cf0 TIENES UN DESTINO CON MAS DE UN ORIGEN\par A UN DESTINO S\u211 LO DEBE CORRESPONDER UN ORIGEN\cf1}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_14" value="espacio='E1' tipo='texto' dibujar-si='muestra=0' expresión='[20,510]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green255\blue255;\red0\green0\blue255;}\f1\fs36\cf0 Conexiones {\*\mjaformula{\expr (d1=1)+(d2=1)+(d3=1)+(d4=1)+(d5=1)+(d6=1)\decimals 0\fixed1}}\cf1\f2\fs24}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_15" value="espacio='E1' tipo='texto' expresión='[110,110]' texto='Une la columna izquierda con la columna derecha, arrastrando los punto verdes.' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_16" value="espacio='E1' tipo='texto' expresión='[760,512]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs30{\*\mjaformula{\expr otro\decimals 0\fixed1}} de {\*\mjaformula 2}\cf1\f2\fs24}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_17" value="espacio='E1' tipo='imagen' dibujar-si='C[s]&(verifica)' expresión='(7.4,11.8-1.5*(s-1))' familia='s' s.intervalo='[1,6]' s.pasos='5' archivo='images/bien.png'">
+   <param name="G_18" value="espacio='E1' tipo='imagen' dibujar-si='(C[s]=0)&(verifica)' expresión='(7.4,11.8-1.5*(s-1))' familia='s' s.intervalo='[1,6]' s.pasos='5' archivo='images/mal.png'">
+   <param name="G_19" value="espacio='E1' tipo='texto' dibujar-si='verifica&(rta<6)' expresión='[241,490]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red255\green0\blue0;}\f1\fs36\cf0\u161 TIENES {\*\mjaformula{\expr 6-rta\decimals 0\fixed1}} ERRORES! Contin\u250 a con otro ejercicio\fs44\b\cf1}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_20" value="espacio='E1' tipo='texto' dibujar-si='verifica&(rta=6)' expresión='[260,490]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red255\green0\blue0;}\cf0\f1\fs40\u161 EXCELENTE! Contin\u250 a con otro ejercicio\fs44\b\cf1}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_21" value="espacio='E1' tipo='imagen' expresión='(4.5,1.5*s+2.6,.5,.45)' familia='s' s.intervalo='[1,6]' s.pasos='5' archivo='P[18*(otro-1)+s]'">
+   <param name="G_22" value="espacio='E1' tipo='imagen' expresión='(18.5,1.5*s+2.6,.5,.45)' familia='s' s.intervalo='[1,6]' s.pasos='5' archivo='P[18*(otro-1)+6+s]'">
+</ajs></p>
+
+</body>
+</html>

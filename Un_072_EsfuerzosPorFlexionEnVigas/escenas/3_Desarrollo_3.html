@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' O.x='-15%' O.y='1%' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R3' id='E5' x='17' y='95' ancho='285' alto='180' escala='25' O.x='-60' imagen='images/fondo_suave3.jpg' despl_imagen='arr-izq' fondo='ff416d9f' despliegue='pintor' R3='sí'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(E1._w-55,22,45,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_03" value="id='L' tipo='numérico' interfaz='barra' región='interior' espacio='E1' nombre='Longitud de viga (L)' expresión='(10,460,300,25)' valor='6' incr='0.01' min='1' max='8' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_04" value="id='L2' tipo='numérico' región='interior' espacio='E1' nombre='Posición' expresión='(340,E1._h-110,290,40)' valor='3.4' min='0' max='L' decimales='1' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='q' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' nombre='Carga (q)' expresión='(340,E1._h-60,190,40)' valor='20' decimales='0' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='g1' tipo='gráfico' espacio='E1' tamaño='6' expresión='(9,2)' constricción='y=2' fijo='sí'">
+   <param name="C_07" value="id='g2' tipo='gráfico' espacio='E1' tamaño='6' expresión='(11,-1)' constricción='x=11' fijo='sí'">
+   <param name="A_01" value="id='centroide()' algoritmo='sí' algoritmo='sí' hacer='A1=a1*h1;A2=a2*h2;A=A1+A2;yc1=h2+h1/2;yc2=h2/2;yc=(A1*yc1+A2*yc2)/A;ycp=g2.y+((A1*yc1+A2*yc2)/A)/10'">
+   <param name="A_02" value="id='inercia()' algoritmo='sí' algoritmo='sí' hacer='I=a1*(h1^3)/12+a2*(h2^3)/12+A1*(yc1-yc)^2+A2*(yc2-yc)^2'">
+   <param name="A_03" value="id='esfuerzo()' algoritmo='sí' algoritmo='sí' hacer='S=Mmax*yc*1000/I'">
+   <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Segundo ejemplo de aplicación&squot;' hacer='E5.rot.z=-60;E6.rot.z=-60;;'">
+   <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='g1.x=(g1.x<8)?8:g1.x;g1.x=(g1.x>10)?10:g1.x;g2.y=(g2.y<-1.5)?-1.5:g2.y;g2.y=(g2.y>1)?1:g2.y;a1=ent(abs(20-2*g1.x+1)*10);h1=10;a2=10;h2=ent(abs(1-g2.y)*10);centroide();inercia();a=L-L2;b=L-a;Mmax=(q*b^2*(1-b/(2*L))^2)/2;R1=q*b^2/(2*L);R2=q*b*(a+b/2)/L;xmax=(L2^2)/(2*L)+L-L2;esfuerzo()'">
+   <param name="G_01" value="espacio='E1' tipo='texto' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(160+325*s,313,.85+(s%2)*.1,1)' familia='s' s.intervalo='[0,2]' s.pasos='2' archivo='images/panel_350x450.png'">
+   <param name="G_03" value="espacio='E1' tipo='polígono' color='grisObscuro' expresión='(0,3)(L,3)(L,2.8)(0,2.8)(0,3)' relleno='grisClaro'">
+   <param name="G_04" value="espacio='E1' tipo='polígono' expresión='(0,2.8)(.2,2.65)(-.2,2.65)(0,2.8)' relleno='amarillo'">
+   <param name="G_05" value="espacio='E1' tipo='polígono' expresión='(L,2.8)(L+.2,2.7)(L-.2,2.7)(L,2.8)' relleno='amarillo'">
+   <param name="G_06" value="espacio='E1' tipo='segmento' expresión='(L+.2,2.65)(L-.2,2.65)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='flecha' color='naranja' expresión='(0,2)(0,2.65)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f1\fs24\cf0 R1                                                                                R2}' fuente='SansSerif,PLAIN,12' fijo='sí' ancho='2' ancho='2' punta='3' flecha='naranja'">
+   <param name="G_08" value="espacio='E1' tipo='flecha' color='naranja' expresión='(L,2)(L,2.65)' fuente='Arial,PLAIN,12' fijo='sí' ancho='2' ancho='2' punta='3' flecha='naranja'">
+   <param name="G_09" value="espacio='E1' tipo='segmento' expresión='(0,-1)(L,-1)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='segmento' color='grisClaro' expresión='(0,2)(0,-5.2)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='segmento' color='grisClaro' expresión='(L,2)(L,-5.2)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='texto' expresión='[350,270]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs28\b M\f2\fs24\b0\par}' fuente='Times New Roman,BOLD,14' fijo='sí'">
+   <param name="G_13" value="espacio='E1' tipo='flecha' color='naranja' expresión='(s,3.8)(s,3)' familia='s' s.intervalo='[a,L]' s.pasos='3*L2' fuente='Times New Roman,PLAIN,12' fijo='sí' tamaño='1' ancho='1' punta='2' flecha='naranja'">
+   <param name="G_14" value="espacio='E1' tipo='segmento' expresión='(0,-4)(L,-4)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_15" value="espacio='E1' tipo='segmento' color='naranja' expresión='(a,3.8)(L,3.8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;\red255\green200\blue0;}\f1\fs30\b\cf0\par {\*\mjaformula{\expr q\decimals 1\fixed0}}kN/m\cf1\par \fs24}' fuente='Serif,BOLD,15' fijo='sí'">
+   <param name="G_16" value="espacio='E1' tipo='segmento' expresión='(a,2.2)(L,2.2)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_17" value="espacio='E1' tipo='punto' dibujar-si='(L2<L)&(L2>.1*L)' expresión='(a+L2/2,2.3)' texto='L2' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='.2'">
+   <param name="G_18" value="espacio='E1' tipo='punto' dibujar-si='L2=L' expresión='(a+L2/2,2.3)' texto='L2 = L' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='.2'">
+   <param name="G_19" value="espacio='E1' tipo='segmento' expresión='(0,1)(xmax,1)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_20" value="espacio='E1' tipo='punto' expresión='(xmax/2,1.1)' texto='xmax' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='.2'">
+   <param name="G_21" value="espacio='E1' tipo='segmento' color='naranja' expresión='(xmax,2)(xmax,-1)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_22" value="espacio='E1' tipo='relleno' color='verde' dibujar-si='0' expresión='(L/2,-0.98)'">
+   <param name="G_23" value="espacio='E1' tipo='segmento' color='verde' expresión='(s,-1)(s,(b^2*s/(2*L))/2.5-1)' familia='s' s.intervalo='[0,a]' s.pasos='40*a' fijo='sí' tamaño='.2' ancho='2'">
+   <param name="G_24" value="espacio='E1' tipo='segmento' color='verde' expresión='(s,-1)(s,(b^2*s/(2*L)-(s-a)^2/2)/2.5-1)' familia='s' s.intervalo='[a,L]' s.pasos='40*L2' fijo='sí' tamaño='.2' ancho='2'">
+   <param name="G_25" value="espacio='E1' tipo='ecuación' dibujar-si='(x>0)&(x<a)' expresión='y=(b^2*x/(2*L))/2.5-1' relleno+='00ff80' ancho='2'">
+   <param name="G_26" value="espacio='E1' tipo='ecuación' dibujar-si='(x>a)&(x<L)' expresión='y=(b^2*x/(2*L)-(x-a)^2/2)/2.5-1' ancho='2'">
+   <param name="G_27" value="espacio='E1' tipo='polígono' expresión='(11,1)(11,g2.y)(10,g2.y)(10,1)(11,1)' relleno='grisClaro'">
+   <param name="G_28" value="espacio='E1' tipo='polígono' expresión='(g1.x,g1.y)(11+(10-g1.x),g1.y)(11+(10-g1.x),1)(g1.x,1)(g1.x,g1.y)' relleno='grisClaro'">
+   <param name="G_29" value="espacio='E1' tipo='texto' expresión='[380,340]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula M{\subix m\u225 x}={\expr Mmax\decimals 1\fixed1}kN*m}\par \par {\*\mjaformula L={\expr L\decimals 0\fixed1}m}}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_30" value="espacio='E1' tipo='texto' expresión='[30,280]' texto='Sobre dos muros hay siete viguetas,\nque soportan una porción de losa.\nCada  vigueta, entonces, se somete\na una carga parcialmente distribuida,\ncomo se indica en el diagrama, en el\nque puedes  modificar la  longitud de \nla losa y el valor de la carga.\n\nLa sección, para efectos de cálculo,\nes en forma de T. Observa y analiza\nlos cambios en el esfuerzo máximo a\ntracción.' fuente='SansSerif,PLAIN,16' fijo='sí'">
+   <param name="G_31" value="espacio='E1' tipo='texto' dibujar-si='h2!=0' expresión='[700,350]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b{\*\mjaformula Alma de {\expr a2\decimals 0\fixed1}cm x {\expr h2\decimals 0\fixed1}cm }\f2\fs30\b0  }' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_32" value="espacio='E1' tipo='segmento' color='negro' expresión='(7,ycp)(12.5,ycp)' texto='plano neutro' fuente='Serif,PLAIN,16' fijo='sí' tamaño='.2' ancho='2'">
+   <param name="G_33" value="espacio='E1' tipo='texto' expresión='[700,385]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green255\blue0;}\f1\fs40\b\cf0 C\u225 lculos\par {\*\mjaformula y{\subix c}={\expr yc\decimals 1\fixed1}cm}\par {\*\mjaformula I={\expr I\decimals 1\fixed1}cm{\supix 4}}\par {\*\mjaformula\u963 {\subix m\u225 x c}={\expr S\decimals 1\fixed1}MPa}\cf1\f0\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_34" value="espacio='E1' tipo='texto' expresión='[701,141]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs36\b\cf0{\*\mjaformula Aleta de {\expr a1\decimals 0\fixed1}cm x {\expr h1\decimals 0\fixed1}cm }\f2\fs30\b0  \cf1}' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="S_01" value="espacio='E5' tipo='paralelepípedo' color='naranja' color_reverso='naranja' expresión='Paralelepípedo' cortar='sí' aristas='sí' ancho='.2' largo='6' alto='.5'">
+   <param name="S_02" value="espacio='E5' tipo='paralelepípedo' color='naranja' color_reverso='naranja' expresión='Paralelepípedo' posini='(0,0,-.5)' aristas='sí' ancho='.2' largo='6' alto='.5'">
+   <param name="S_03" value="espacio='E5' tipo='paralelepípedo' color='naranja' color_reverso='naranja' expresión='Paralelepípedo' posini='(0,0,-1)' aristas='sí' ancho='.2' largo='6' alto='.5'">
+   <param name="S_04" value="espacio='E5' tipo='paralelepípedo' color='naranja' color_reverso='naranja' expresión='Paralelepípedo' posini='(0,0,-1.5)' aristas='sí' ancho='.2' largo='6' alto='.5'">
+   <param name="S_05" value="espacio='E5' tipo='paralelepípedo' color='naranja' color_reverso='naranja' expresión='Paralelepípedo' posini='(0,0,-2)' aristas='sí' ancho='.2' largo='6' alto='.5'">
+   <param name="S_06" value="espacio='E5' tipo='paralelepípedo' color='naranja' color_reverso='naranja' expresión='Paralelepípedo' posini='(-5,0,-2)' aristas='sí' ancho='.2' largo='6' alto='.5'">
+   <param name="S_07" value="espacio='E5' tipo='paralelepípedo' color='naranja' color_reverso='naranja' expresión='Paralelepípedo' posini='(-5,0,0)' aristas='sí' ancho='.2' largo='6' alto='.5'">
+   <param name="S_08" value="espacio='E5' tipo='paralelepípedo' color='naranja' color_reverso='naranja' expresión='Paralelepípedo' posini='(-5,0,-.5)' aristas='sí' ancho='.2' largo='6' alto='.5'">
+   <param name="S_09" value="espacio='E5' tipo='paralelepípedo' color='naranja' color_reverso='naranja' expresión='Paralelepípedo' posini='(-5,0,-1)' aristas='sí' ancho='.2' largo='6' alto='.5'">
+   <param name="S_10" value="espacio='E5' tipo='paralelepípedo' color='naranja' color_reverso='naranja' expresión='Paralelepípedo' posini='(-5,0,-1.5)' aristas='sí' ancho='.2' largo='6' alto='.5'">
+   <param name="S_11" value="espacio='E5' tipo='paralelepípedo' color='grisClaro' color_reverso='grisClaro' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(-2.5,0,.41)' cortar='sí' aristas='sí' ancho='.2' largo='5.2' alto='.3'">
+   <param name="S_12" value="espacio='E5' tipo='paralelepípedo' color='grisClaro' color_reverso='grisClaro' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(-2.5,.8,.41)' cortar='sí' aristas='sí' ancho='.2' largo='5.2' alto='.3'">
+   <param name="S_13" value="espacio='E5' tipo='paralelepípedo' color='grisClaro' color_reverso='grisClaro' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(-2.5,1.6,.41)' cortar='sí' aristas='sí' ancho='.2' largo='5.2' alto='.3'">
+   <param name="S_14" value="espacio='E5' tipo='paralelepípedo' color='grisClaro' color_reverso='grisClaro' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(-2.5,-.8,.41)' cortar='sí' aristas='sí' ancho='.2' largo='5.2' alto='.3'">
+   <param name="S_15" value="espacio='E5' tipo='paralelepípedo' color='grisClaro' color_reverso='grisClaro' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(-2.5,-1.6,.41)' cortar='sí' aristas='sí' ancho='.2' largo='5.2' alto='.3'">
+   <param name="S_16" value="espacio='E5' tipo='paralelepípedo' color='grisClaro' color_reverso='grisClaro' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(-2.5,-2.4,.41)' cortar='sí' aristas='sí' ancho='.2' largo='5.2' alto='.3'">
+   <param name="S_17" value="espacio='E5' tipo='paralelepípedo' color='grisClaro' color_reverso='grisClaro' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(-2.5,2.4,.41)' cortar='sí' aristas='sí' ancho='.2' largo='5.2' alto='.3'">
+   <param name="S_18" value="espacio='E5' tipo='paralelepípedo' color='grisClaro' color_reverso='grisClaro' expresión='Paralelepípedo' posini='(-5+(5*L2/12),0,0.85)' cortar='sí' aristas='sí' ancho='5*L2/6' largo='6' alto='.5'">
+   <param name="S_19" value="espacio='E5' tipo='texto' color='negro' expresión='[120,270]' texto='Muéveme con el ratón' fuente='Monospaced,PLAIN,12' fijo='sí'">
+</ajs>
+
+</body>
+</html>

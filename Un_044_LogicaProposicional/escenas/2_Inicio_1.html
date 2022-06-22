@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_01.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='Covertura' dibujar-si='info' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='INFO' x='(970-490)/2' y='90' ancho='490' alto='400' dibujar-si='info' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='cerrarInfo' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(INFO._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='info=0'">
+   <param name="C_03" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Desactivado' expresión='(280,340,160,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn160.png' opciones='Activado[1] Desactivado [0]' acción='calcular' parámetro='activo=1' dibujar-si='activo=0'">
+   <param name="C_04" value="id='n5' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Activado' expresión='(280,340,160,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn160.png' opciones='Activado[1] Desactivado [0]' acción='calcular' parámetro='activo=0' dibujar-si='activo=1'">
+   <param name="C_05" value="id='n6' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='No Perturbada' expresión='(280,380,160,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn160.png' opciones='Activado[1] Desactivado [0]' acción='calcular' parámetro='bov=1' dibujar-si='bov=0'">
+   <param name="C_06" value="id='n7' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Perturbada' expresión='(280,380,160,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn160.png' opciones='Activado[1] Desactivado [0]' acción='calcular' parámetro='bov=0' dibujar-si='bov=1'">
+   <param name="C_07" value="id='n8' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Cerrada' expresión='(280,420,160,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn160.png' opciones='Activado[1] Desactivado [0]' acción='calcular' parámetro='puerta=1' dibujar-si='puerta=0'">
+   <param name="C_08" value="id='n9' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Abierta' expresión='(280,420,160,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn160.png' opciones='Activado[1] Desactivado [0]' acción='calcular' parámetro='puerta=0' dibujar-si='puerta=1'">
+   <param name="C_09" value="id='n10' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Abierto' expresión='(280,460,160,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn160.png' opciones='Activado[1] Desactivado [0]' acción='calcular' parámetro='sw1=1' dibujar-si='sw1=0'">
+   <param name="C_10" value="id='n11' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Cerrado' expresión='(280,460,160,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn160.png' opciones='Activado[1] Desactivado [0]' acción='calcular' parámetro='sw1=0' dibujar-si='sw1=1'">
+   <param name="C_11" value="id='n12' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Ver Condiciones' expresión='((E1._w-180)/2,210,180,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn180.png' acción='calcular' parámetro='info=1'">
+   <param name="A_01" value="id='V1' vector='sí' evaluar='una-sola-vez' expresión='V1[0]=0;V1[1]=&squot;../audio/alarma.mp3&squot;;'">
+   <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=0' hacer='titulo=&squot;Lógica proposicional&squot;'">
+   <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='Q=(activo=1)&((bov=1)|((puerta=1)&(sw1=1)));'">
+   <param name="A_04" value="id='e3' evento='sí' condición='Q=1' acción='reproducir' parámetro='V1[1]' ejecución='alternar' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='INFO' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(INFO._w/2,18,INFO._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_03" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_04" value="espacio='E1' tipo='texto' expresión='[60,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40 En un banco un sistema de alarma contra robo funcionar\u225  s\u243 lo si si se activa el conmutador \par maestro de la estaci\u243 n de polic\u237 a y se cumplen otras condiciones que puedes mirar m\u225 s abajo.\par Explora las variables y descubre la \b expresi\u243 n l\u243 gica\b0  que describe el problema.\f3\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='texto' expresión='[60,340]' texto='Conmutador maestro:' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' expresión='[60,380]' texto='Puerta de la bóveda:' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='texto' expresión='[60,420]' texto='Puerta del banco:' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='texto' expresión='[60,460]' texto='Interruptor especial:' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_09" value="espacio='E1' tipo='imagen' fondo='sí' expresión='(0.55,-0.5)' archivo='images/banco.png'">
+   <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='Q=1' expresión='(4.25,-.65,1.5,1.5)' archivo='images/sonido.png'">
+   <param name="G_11" value="espacio='E1' tipo='texto' fondo='sí' color='5566aa' dibujar-si='flash1=33' expresión='[400,400]' texto='Activo=[activo]  bóveda= [bov] Puerta= [puerta]  Interruptor=[sw1]' fijo='sí'">
+   <param name="G_12" value="espacio='INFO' tipo='texto' fondo='sí' color='blanco' expresión='[15,5]' texto='Condiciones' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_13" value="espacio='INFO' tipo='texto' fondo='sí' expresión='[15,50]' texto='La alarma sonará si la puerta de la bóveda\nes perturbada o si la puerta del banco se abre,\na menos que se opere un interruptor especial,\nutilizando las llaves del celador.\n\nLa puerta de la bóveda está equipada con un\nsensor que hará que se cierre el interruptor \ncuando se perturbe dicha puerta.\n\nEl interruptor se montará sobre la puerta del \nbanco, de tal manera, que se cerrara, siempre \nque la puerta del banco se abra.' fuente='SansSerif,PLAIN,21' fijo='sí'">
+</ajs>
+
+</body>
+</html>

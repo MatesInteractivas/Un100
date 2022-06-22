@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='40' y='90' ancho='890' alto='450' fijo='sí' imagen='images/panel2.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo5' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,5);\nparent.update()'">
+   <param name="C_02" value="id='goTo6' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,7);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='Continuar' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='Continuar' expresión='(E2._w-120,55,100,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='Paso=1' dibujar-si='Paso=0' pos_mensajes='centro'">
+   <param name="C_04" value="id='Continuar' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='Continuar' expresión='(E2._w-120,175,100,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='Paso=2' dibujar-si='(Paso=1)&(ta>=1.7)' pos_mensajes='centro'">
+   <param name="C_05" value="id='Continuar' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='Continuar' expresión='(E2._w-120,345,100,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='Paso=3' dibujar-si='(Paso=2)&(ta>=1.7)' pos_mensajes='centro'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Distancia entre dos planos de IR4&squot;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="A_03" value="id='Paso1' evento='sí' condición='Paso=1' acción='animar' ejecución='una-sola-vez' pos_mensajes='centro'">
+   <param name="A_04" value="id='Paso2' evento='sí' condición='Paso=2' acción='animar' ejecución='una-sola-vez' pos_mensajes='centro'">
+   <param name="A_05" value="id='Paso3' evento='sí' condición='Paso=3' acción='animar' ejecución='una-sola-vez' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs60 Distancia entre dos planos de IR{\*\mjaformula{\supix 4}}}' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E2' tipo='texto' expresión='[20,25]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f1\fs34\b\u928 \u8801 P\b0 (2, 1, 4, 5)+\b &lt;d1\b0 (1, 2, 1, 2), \b d2\b0 (0, 2, 0, 0 )\b &gt;\b0  y \b\u928 &squot;\u8801 P&squot;\b0 (2, 1, 4, 1)+\b &lt;d1&squot;\b0 (0, 0, 3, 2), \b d2&squot;\b0 (1, 2, 4, 4 )\b &gt;\b0\par \par vol{\*\mjaformula{\matrix\rows 4\columns 1{\element d1}{\element d2}{\element d1&squot;}{\element d2&squot;}}}=vol{\*\mjaformula{\matrix\rows 4\columns 4{\element 1}{\element 2}{\element 1}{\element 2}{\element 0}{\element 2}{\element 0}{\element 0}{\element 0}{\element 0}{\element 3}{\element 2}{\element 1}{\element 2}{\element 4}{\element 4}}}= {\*\mjaformula{\matrix\rows 2\columns 1{\element A la fila 4 se le }{\element resta la fila 1}}}=|det {\*\mjaformula{\matrix\rows 4\columns 4{\element 1}{\element 2}{\element 1}{\element 2}{\element 0}{\element 2}{\element 0}{\element 0}{\element 0}{\element 0}{\element 3}{\element 2}{\element 0}{\element 0}{\element 3}{\element 2}}}|=0.  Por tanto R={\*\mjaformula{\matrix\rows 3\columns 4{\element 1}{\element 2}{\element 1}{\element 2}{\element 0}{\element 2}{\element 0}{\element 0}{\element 0}{\element 0}{\element 3}{\element 2}}}\par \par \par d(\u928 , \u928 &squot;)={\*\mjaformula{\fraction{\num vol{\matrix\rows 2\columns 1{\element P-P&squot;}{\element R}}}{\den vol{\matrix\rows 1\columns 1{\element R}}}}}={\*\mjaformula{\fraction{\num vol{\matrix\rows 4\columns 4{\element 0}{\element 0}{\element 0}{\element 4}{\element 1}{\element 2}{\element 1}{\element 2}{\element 0}{\element 2}{\element 0}{\element 0}{\element 0}{\element 0}{\element 3}{\element 2}}}{\den vol\cf0{\matrix\rows 3\columns 4{\element 1}{\element 2}{\element 1}{\element 2}{\element 0}{\element 2}{\element 0}{\element 0}{\element 0}{\element 0}{\element 3}{\element 2}}}}}={\*\mjaformula{\fraction{\num |det{\matrix\rows 4\columns 4{\element 0}{\element 0}{\element 0}{\element 4}{\element 1}{\element 2}{\element 1}{\element 2}{\element 0}{\element 2}{\element 0}{\element 0}{\element 0}{\element 0}{\element 3}{\element 2}} |\cf0}{\den{\radical{\index}{\radicand (det{\matrix\rows 3\columns 3{\element 2}{\element 1}{\element 2}{\element 2}{\element 0}{\element 0}{\element 0}{\element 3}{\element 2}}){\supix 2}+(det{\matrix\rows 3\columns 3{\element 1}{\element 1}{\element 2}{\element 0}{\element 0}{\element 0}{\element 0}{\element 3}{\element 2}}){\supix 2}+(det{\matrix\rows 3\columns 3{\element 1}{\element 2}{\element 2}{\element 0}{\element 2}{\element 0}{\element 0}{\element 0}{\element 2}}){\supix 2}+(det{\matrix\rows 3\columns 3{\element 1}{\element 2}{\element 1}{\element 0}{\element 2}{\element 0}{\element 0}{\element 0}{\element 3}}){\supix 2}}}}}}\par \par \par \b d(\u928 , \u928 &squot;)=\b0{\*\mjaformula{\fraction{\num 4\u183 1\u183 2\u183 3}{\den{\radical{\index}{\radicand 8{\supix 2}+0{\supix 2}+4{\supix 2}+6{\supix 2}}}}}}={\*\mjaformula{\fraction{\num 24}{\den{\radical{\index}{\radicand 116}}}}}=\b{\*\mjaformula{\fraction{\num 12}{\den{\radical{\index}{\radicand 29}}}}.}Estos planos \b0 en {\*\mjaformula IR{\supix 4}}ni se cortan ni son paralelos, \b se cruzan\b0 .}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_03" value="espacio='E2' tipo='polígono' color='(20,30,3a,Paso<=1?ta/2:0.85)' coord_abs='sí' expresión='(15,50)(E2._w-15,50)(E2._w-15,165)(15,165)(15,50)' relleno='(c4,c6,ff,Paso<=1?ta/2:0.85)'">
+   <param name="G_04" value="espacio='E2' tipo='polígono' color='(20,30,3a,Paso=2?ta/2:(Paso<2?0:0.85))' coord_abs='sí' expresión='(15,170)(E2._w-15,170)(E2._w-15,335)(15,335)(15,170)' relleno='(dc,dc,da,Paso=2?ta/2:(Paso<2?0:0.85))'">
+   <param name="G_05" value="espacio='E2' tipo='polígono' color='(20,30,3a,Paso=3?ta/2:(Paso<3?0:0.85))' dibujar-si='Paso<=3' coord_abs='sí' expresión='(15,340)(E2._w-15,340)(E2._w-15,E2._h-10)(15,E2._h-10)(15,340)' relleno='(ff,90,90,Paso=3?ta/2:(Paso<3?0:0.85))'">
+   <param name="Animación" value="controles='no' auto='no' inicio='ta=0' hacer='ta=ta+0.05' mientras='ta<1.7'">
+</ajs>
+
+
+
+</body>
+
+</html>

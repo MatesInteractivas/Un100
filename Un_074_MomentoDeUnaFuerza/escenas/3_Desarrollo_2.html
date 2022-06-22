@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_desarrollo_1.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R3' id='E2' x='55' y='115' ancho='440' alto='390' dibujar-si='E3.Oy>-300' escala='60' despl_imagen='arr-izq' fondo='fbfadc' despliegue='pintor' R3='sí'">
+   <param name="E_03" value="tipo='R2' id='E3' x='520' y='115' ancho='400' alto='390' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='E4' x='55' y='115' ancho='440' alto='390' dibujar-si='E3.Oy<=-300' fijo='sí' escala='28' O.x='-20%' O.y='10' despl_imagen='arr-izq' fondo='fbfadc' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_03" value="id='E3.Oy' tipo='numérico' región='interior' espacio='E1' nombre='E3.Oy' expresión='(920,456,27,50)' incr='20' min='-804' max='0' decimales='0' fijo='sí' visible='no'">
+   <param name="C_04" value="id='ang' tipo='numérico' región='interior' espacio='E4' nombre='ang' expresión='(300,200,30,60)' valor='40' incr='1' min='0' max='130' fijo='sí' visible='sí'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Teorema de Varignon&squot;' hacer='L=3;a=L*sqrt(3)/3;E2.rot.z=-20;E2.Ox=-50;E2.Oy=60;ang=45'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='F1x=5*cos(ang*pi/180);F1y=5*sen(ang*pi/180);Mo=800*(600*sen(ang*pi/180))-400*(800+600*cos(ang*pi/180))'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E3' tipo='imagen' expresión='(0,-2.1,.9,.9)' archivo='images/desa1.png'">
+   <param name="G_03" value="espacio='E4' tipo='arco' centro='(3.07,1.86)' fin='ang' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34\b\par {\*\mjaformula{\expr ang\decimals 0\fixed1}{\supix 0}}\f2\fs30\b0}' fuente='SansSerif,BOLD,17' fijo='sí' relleno='ffff80'">
+   <param name="G_04" value="espacio='E4' tipo='imagen' expresión='(0,0,1,1)' archivo='images/caja.png'">
+   <param name="G_05" value="espacio='E4' tipo='punto' expresión='(-3.07,-1.85)' texto='O' fijo='sí' tamaño='4'">
+   <param name="G_06" value="espacio='E4' tipo='flecha' color='rojo' expresión='(3.07,1.86)(3.07+F1x,1.86+F1y)' texto='  F1=600N' fijo='sí' tamaño='1' ancho='2' ancho='2' punta='6'">
+   <param name="G_07" value="espacio='E4' tipo='flecha' color='rojo' expresión='(3.07,1.86)(9,1.86)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs30  \par    F2=800N}' fijo='sí' tamaño='1' ancho='2' ancho='2' punta='6'">
+   <param name="G_08" value="espacio='E4' tipo='segmento' expresión='(-3.07,-2.6)(3.07,-2.6)' texto='800mm' fijo='sí'">
+   <param name="G_09" value="espacio='E4' tipo='segmento' expresión='(-3.6,-1.85)(-3.6,1.89)' texto='400mm' fijo='sí'">
+   <param name="G_10" value="espacio='E4' tipo='texto' expresión='[10,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula Mo={\sum{\from}{\to}{\what}}(xFy-yFx)}}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_11" value="espacio='E4' tipo='texto' expresión='[10,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34\b{\*\mjaformula Mo=800(600sen({\expr ang\decimals 0\fixed1}{\supix 0}))-400(800+600cos({\expr ang\decimals 0\fixed1}{\supix 0}))}\f2\fs30\b0}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_12" value="espacio='E4' tipo='texto' dibujar-si='ang<=90' expresión='[10,330]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34\b{\*\mjaformula Mo=800({\expr 600*sen(a*pi/180)\decimals 1\fixed1})- 400(800+{\expr 600*cos(a*pi/180)\decimals 1\fixed1})}\f2\fs30\b0}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_13" value="espacio='E4' tipo='texto' dibujar-si='ang>90' expresión='[10,330]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34\b{\*\mjaformula Mo=800({\expr 600*sen(ang*pi/180)\decimals 1\fixed1})-400(800-{\expr abs(600*cos(ang*pi/180))\decimals 1\fixed1})}\f2\fs30\b0}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_14" value="espacio='E4' tipo='texto' expresión='[10,360]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs34\b\cf0{\*\mjaformula\f1\fs34\b{\expr Mo\decimals 1\fixed1}N*mm ={\expr Mo/1000\decimals 2\fixed1}N*m{\supix 2} }\cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_15" value="espacio='E3' tipo='imagen' expresión='(0,-14.5,.9,.9)' archivo='images/desa3.png'">
+   <param name="S_01" value="espacio='E2' tipo='segmento' color='36eeffaa' expresión='(0,0,0)(3,0,0)'">
+   <param name="S_02" value="espacio='E2' tipo='segmento' color='36eeffaa' expresión='(0,0,0)(0,3,0)'">
+   <param name="S_03" value="espacio='E2' tipo='segmento' color='36eeffaa' expresión='(0,0,0)(0,0,3)'">
+   <param name="S_04" value="espacio='E2' tipo='punto' color='negro' expresión='(3,0,0)' texto='z' fijo='sí'">
+   <param name="S_05" value="espacio='E2' tipo='punto' color='negro' expresión='(0,3,0)' texto='x' fijo='sí'">
+   <param name="S_06" value="espacio='E2' tipo='punto' color='negro' expresión='(0,0,3)' texto=' y' fijo='sí'">
+   <param name="S_07" value="espacio='E2' tipo='cono' expresión='Cono' rotini='(0,-90,0)' posini='(3,0,0)' modelo='metal' ancho='.2' largo='.2' alto='.2' Nu='20' Nv='1'">
+   <param name="S_08" value="espacio='E2' tipo='cono' expresión='Cono' rotini='(90,0,0)' posini='(0,3,0)' modelo='metal' ancho='.2' largo='.2' alto='.2' Nu='20' Nv='1'">
+   <param name="S_09" value="espacio='E2' tipo='cono' expresión='Cono' rotini='(0,180,0)' posini='(0,0,3)' modelo='metal' ancho='.2' largo='.2' alto='.2' Nu='20' Nv='1'">
+   <param name="S_10" value="espacio='E2' tipo='cubo' color='59ffffff' dibujar-si='ll' expresión='Cubo' posini='(a/2,a/2,a/2)' modelo='alambre' ancho='L'">
+   <param name="S_11" value="espacio='E2' tipo='segmento' color='verde' expresión='(0,0,0)(a,a,a)' ancho='2'">
+   <param name="S_12" value="espacio='E2' tipo='cono' color='verde' expresión='Cono' rotini='(135,45,0)' posini='(a,a,a)' modelo='metal' ancho='.2' largo='.2' alto='.2' Nu='20' Nv='1'">
+   <param name="S_13" value="espacio='E2' tipo='punto' color='verde' expresión='(a/2,a/2,a/2)' texto='r' fijo='sí'">
+   <param name="S_14" value="espacio='E2' tipo='segmento' color='rojo' expresión='(a,a,a)(a+1,a+1,a)' ancho='2'">
+   <param name="S_15" value="espacio='E2' tipo='cono' color='rojo' expresión='Cono' rotini='(45,-90,0)' posini='(a+1,a+1,a)' modelo='metal' ancho='.15' largo='.15' alto='.15' Nu='20' Nv='1'">
+   <param name="S_16" value="espacio='E2' tipo='punto' color='rojo' expresión='(a+1,a+1,a)' texto='F1' fijo='sí'">
+   <param name="S_17" value="espacio='E2' tipo='segmento' color='rojo' expresión='(a,a,a)(a,a+1,a+1)' ancho='2'">
+   <param name="S_18" value="espacio='E2' tipo='cono' color='rojo' expresión='Cono' rotini='(0,135,-90)' posini='(a,a+1,a+1)' modelo='metal' ancho='.15' largo='.15' alto='.15' Nu='20' Nv='1'">
+   <param name="S_19" value="espacio='E2' tipo='punto' color='rojo' expresión='(a,a+1,a+1)' texto='F2' fijo='sí'">
+   <param name="S_20" value="espacio='E2' tipo='segmento' color='rojo' expresión='(a,a,a)(a+1,a,a+1)' ancho='2'">
+   <param name="S_21" value="espacio='E2' tipo='cono' color='rojo' expresión='Cono' rotini='(180,45,0)' posini='(a+1,a,a+1)' modelo='metal' ancho='.15' largo='.15' alto='.15' Nu='20' Nv='1'">
+   <param name="S_22" value="espacio='E2' tipo='punto' color='rojo' expresión='(a+1,a,a+1)' texto=' F3' fijo='sí'">
+   <param name="S_23" value="espacio='E2' tipo='punto' color='blanco' expresión='(a,a,a)' texto='A' fijo='sí'">
+   <param name="S_24" value="espacio='E2' tipo='punto' color='blanco' expresión='(0,0,0)' texto='O' fijo='sí'">
+</ajs>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Cierre</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='conclu' x='E1._w/2-400' y='80' ancho='800' alto='130' fijo='sí' imagen='images/panel_800x150.png' despl_imagen='expand.' fondo='fbfadc' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='nota' x='10' y='215' ancho='950' alto='90' fijo='sí' imagen='images/panel_800x150.png' despl_imagen='expand.' fondo='d5f3ff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='formu' x='10' y='310' ancho='950' alto='235' fijo='sí' imagen='images/panel_800x150.png' despl_imagen='expand.' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='menu' tipo='numérico' interfaz='menú' región='interior' espacio='nota' nombre='Elige:' expresión='(20,20,200,25)' fijo='sí' visible='no' opciones='Fórmula del trapecio,Fórmula de Simpson'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Principales resultados&squot;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='formu' tipo='texto' dibujar-si='menu=0' expresión='[10,10]' texto='Fórmula del trapecio' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_03" value="espacio='nota' tipo='texto' dibujar-si='menu=0' expresión='[250,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs34 Se consideran nodos equiespaciados\fs30\b   a = x{\*\mjaformula{\subix o}}< x{\*\mjaformula{\subix 1}}<x{\*\mjaformula{\subix 2}}<...<x{\*\mjaformula{\subix n-2}}<x{\*\mjaformula{\subix n-1}}<x{\*\mjaformula{\subix n }} = b\f3\fs30\b0   \f2\fs30\b     }' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_04" value="espacio='conclu' tipo='texto' expresión='[20,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green81\blue0;\red32\green48\blue58;}\f1\fs34 En esta unidad hemos visto que:\par \cf0\u9642 \cf1  Se pueden obtener f\u243 rmulas de aproximaci\u243 n num\u233 rica de la integral utilizando polinomios que\par    interpolan a la funci\u243 n f. La f\u243 rmula de integraci\u243 n consiste entonces en integrar dicho polinomio.\par \cf0\u9642 \cf1  La f\u243 rmula de aproximaci\u243 n del trapecio es exacta para polinomios de grado 1 y la de Simpson\par    para polinomios de grado 2.\fs30}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_05" value="espacio='formu' tipo='texto' dibujar-si='menu=1' expresión='[10,10]' texto='Fórmula de Simpson' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_06" value="espacio='formu' tipo='texto' expresión='[30,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs34 Si f es continua en [a. b] en cada subintervalo se aproxima por \fs30}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_07" value="espacio='formu' tipo='imagen' dibujar-si='menu=0' coord_abs='sí' expresión='(500,38)' archivo='imagen/tfor1.png'">
+   <param name="G_08" value="espacio='formu' tipo='imagen' dibujar-si='menu=1' coord_abs='sí' expresión='(460,40)' archivo='imagen/sfor1.png'">
+   <param name="G_09" value="espacio='formu' tipo='texto' expresión='[30,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs34 Luego, \fs30}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_10" value="espacio='formu' tipo='imagen' dibujar-si='menu=0' coord_abs='sí' expresión='(80,90)' archivo='imagen/tfor2.png'">
+   <param name="G_11" value="espacio='nota' tipo='texto' dibujar-si='menu=1' expresión='[250,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs34 Se consideran nodos equiespaciados\fs30\b   a = x{\*\mjaformula{\subix o}}< x{\*\mjaformula{\subix 1}}<x{\*\mjaformula{\subix 2}}<...<x{\*\mjaformula{\subix n-2}}<x{\*\mjaformula{\subix n-1}}<x{\*\mjaformula{\subix n }} = b\f3\fs30\b0  \f1\fs34 siendo n par\fs30\b}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_12" value="espacio='nota' tipo='texto' expresión='[350,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs30\b h={\*\mjaformula{\fraction{\num b-a}{\den n}}}           x{\*\mjaformula{\subix i}}=a+i h    i=0, 1, 2,..., n             f{\*\mjaformula{\subix i}}=f(x{\*\mjaformula{\subix i}})}' fuente='SansSerif,BOLD,15' fijo='sí'">
+   <param name="G_13" value="espacio='formu' tipo='imagen' dibujar-si='menu=1' coord_abs='sí' expresión='(80,90)' archivo='imagen/sfor2.png'">
+   <param name="G_14" value="espacio='nota' tipo='texto' dibujar-si='menu=0' expresión='[30,65]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs30 En cada subintervalo \b [x{\*\mjaformula{\subix o}},x{\*\mjaformula{\subix 1}}], [x{\*\mjaformula{\subix 1}}, x{\*\mjaformula{\subix 2}}], ..., [x{\*\mjaformula{\subix n-1}}, x{\*\mjaformula{\subix n}}] \b0 puede aproximarse \b f\b0  por un polinomo de grado 1\b .}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_15" value="espacio='nota' tipo='texto' dibujar-si='menu=1' expresión='[30,65]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}\f1\fs34 En cada subintervalo\fs30  \b [x{\*\mjaformula{\subix o}},x{\*\mjaformula{\subix 2}}], [x{\*\mjaformula{\subix 2}}, x{\*\mjaformula{\subix 4}}], ..., [x{\*\mjaformula{\subix 2i-2}}, x{\*\mjaformula{\subix 2i}}], ..., [x{\*\mjaformula{\subix n-2}}, x{\*\mjaformula{\subix n}}] \fs34\b0 puede aproximarse f por un polinomo de grado 2.\fs30\b}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_16" value="espacio='formu' tipo='texto' expresión='[30,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}\f1\fs34 Desarrollando la expresi\u243 n anterior\f2\fs34\i}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_17" value="espacio='formu' tipo='imagen' dibujar-si='menu=0' coord_abs='sí' expresión='(80,170)' archivo='imagen/tfor3.png'">
+   <param name="G_18" value="espacio='formu' tipo='imagen' dibujar-si='menu=1' coord_abs='sí' expresión='(80,170)' archivo='imagen/sfor3.png'">
+   <param name="G_19" value="espacio='formu' tipo='texto' expresión='[660,105]' texto='Error de la aproximación' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_20" value="espacio='formu' tipo='texto' dibujar-si='menu=1' expresión='[640,125]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}\f1\fs34 Si f{\*\mjaformula{\supix iv}} est\u225  acotada  [a. b] por M, \par el error de la aproximaci\u243 n E cumple\fs30\par \b             | E | \u8804  {\*\mjaformula{\fraction{\num (b-a){\supix 5}}{\den 180n{\supix 4}}}}M}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_21" value="espacio='formu' tipo='texto' dibujar-si='menu=0' expresión='[640,125]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}\f1\fs34 Si f \u180 \u180  est\u225  acotada  [a. b] por M, \par el error de la aproximaci\u243 n E cumple\fs30\par \b             | E | \u8804  {\*\mjaformula{\fraction{\num (b-a){\supix 3}}{\den 12n{\supix 2}}}}M}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+</ajs>
+
+</body>
+</html>

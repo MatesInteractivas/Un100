@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inicio</title>
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="../lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E2' imagen='images/fondo_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E1' x='55' y='105' ancho='425' alto='400' fijo='s&iacute;' O.x='25%' O.y='5%' despl_imagen='arr-izq' fondo='azul' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo0' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E2' expresi&oacute;n='(60,22,30,30)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' imagen='images/retroceder.png' acci&oacute;n='calcular' par&aacute;metro='parent.set(&squot;scene&squot;,0);\nparent.update()' dibujar-si='0'">
+   <param name="C_02" value="id='goTo2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E2' expresi&oacute;n='(880,22,30,30)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' imagen='images/avanzar.png' acci&oacute;n='calcular' par&aacute;metro='parent.set(&squot;scene&squot;,2);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='n6' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='Otro ejercicio' expresi&oacute;n='(125,E1._h-35,160,30)' fijo='s&iacute;' visible='s&iacute;' color-int='ff25f280' negrita='s&iacute;' fuente puntos='20' imagen='images/btn160.png' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(n7!=&squot;&squot;)|(n7=0)' pos_mensajes='centro'">
+   <param name="C_04" value="id='n7' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(340,320,40,35)' valor='&squot;&squot;' decimales='0' fijo='no' visible='s&iacute;' imagen='_COLORES_25F280_000000_N_20' acci&oacute;n='calcular' par&aacute;metro='rta=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='A' vector='s&iacute;' matriz='s&iacute;' evaluar='una-sola-vez' columnas='9' filas='9' expresi&oacute;n='A[0,0]=0;A[1,0]=0;A[2,0]=0;A[0,1]=0;A[1,1]=0;A[2,1]=0;A[0,2]=0;A[1,2]=0;A[2,2]=0;'">
+   <param name="A_02" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='info=1' hacer='titulo=&squot;Elementos de una matriz&squot;'">
+   <param name="A_03" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre'">
+   <param name="A_04" value="id='dim' constante='s&iacute;' expresi&oacute;n='ent(rnd*6)+4' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='c' constante='s&iacute;' expresi&oacute;n='ent(rnd*dim*dim)' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='a2' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='I=0;J=0' hacer='A[I,J]=ent(rnd*15*(1-ent(3*rnd)));J=J+1;J=(I&lt;(dim-1))?J-1:J;I=(I&lt;(dim-1))?I+1:0' mientras='J&lt;dim'">
+   <param name="A_07" value="id='a5' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='fil=ent(c/dim);col=c%dim;i=fil+1;j=col+1'">
+   <param name="G_01" value="espacio='E2' tipo='pol&iacute;gono' fondo='s&iacute;' color='5566aa' coord_abs='s&iacute;' expresi&oacute;n='(0,0)(E2._w-1,0)(E2._w-1,E2._h-1)(0,E2._h-1)(0,0)' relleno='f05566aa'">
+   <param name="G_02" value="espacio='E2' tipo='texto' expresi&oacute;n='[(E2._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='texto' expresi&oacute;n='[25,85+(dim-5)*10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}{\colortbl\red255\green255\blue255;\red0\green0\blue255;}\f1\fs36\b\cf0 A =\cf1\f2\fs24\b0\par}' fuente='Times New Roman,BOLD,18' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='pol&iacute;gono' color='blanco' expresi&oacute;n='(-4.7,4)(-5,4)(-5,.8+.6*(5-dim))(-4.7,.8+.6*(5-dim))' ancho='2'">
+   <param name="G_05" value="espacio='E1' tipo='pol&iacute;gono' color='blanco' expresi&oacute;n='(-1.1-.6*(5-dim),4)(-.9-.6*(5-dim),4)(-.9-.6*(5-dim),.8+.6*(5-dim))(-1.1-.6*(5-dim),.8+.6*(5-dim))' ancho='2'">
+   <param name="G_06" value="espacio='E1' tipo='texto' expresi&oacute;n='[87+(s%dim)*35,40+ent(s/dim)*30]' familia='s' s.intervalo='[0,dim*dim-1]' s.pasos='dim*dim-1' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}{\colortbl\red255\green255\blue0;\red0\green0\blue255;}\f1\fs28\b\cf0{\*\mjaformula{\expr A[s%dim,ent(s/dim)]\decimals 0\fixed1}}\cf1\f2\fs24\b0\par}' fuente='Times New Roman,BOLD,14' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='pdto=0' expresi&oacute;n='[21,321]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs60\b\cf0\u191 Cu\u225 l es el valor de a\fs26{\*\mjaformula{\expr i\decimals 0\fixed1}{\expr j\decimals 0\fixed1}}\fs60 ?\cf1\f3\fs24\b0\par}' fuente='Times New Roman,BOLD,30' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='pdto=0' expresi&oacute;n='[20,320]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red255\green94\blue0;\red0\green255\blue0;\red0\green0\blue255;}\f1\fs60\b\cf0\u191 Cu\u225 l es el valor de\cf1  a\fs26{\*\mjaformula{\expr i\decimals 0\fixed1}{\expr j\decimals 0\fixed1}}\fs60\cf0 ?\cf2\f3\fs24\b0\par }' fuente='Serif,BOLD,30' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='rta=1' expresi&oacute;n='[87+(c%dim)*35,40+ent(c/dim)*30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs28\b{\*\mjaformula{\expr A[col,fil]\decimals 0\fixed1}}\f2\fs24\b0\par}' fuente='Times New Roman,BOLD,14' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E2' tipo='texto' dibujar-si='(n7!=A[col,fil])&amp;(rta=1)' expresi&oacute;n='[551,461]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs60\cf0\u161 Oh no! \fs76\i a\fs26\i0{\*\mjaformula{\expr i\decimals 0\fixed1}{\expr j\decimals 0\fixed1}}\fs60  es igual a {\*\mjaformula{\expr A[col,fil]\decimals 0\fixed1}}\cf1\f4\fs24\par }' fuente='Serif,PLAIN,30' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='E2' tipo='texto' dibujar-si='(n7=A[col,fil])&amp;(rta=1)' expresi&oacute;n='[551,461]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs60\cf0\u161 Muy bien! \fs72\i a\fs26\i0{\*\mjaformula{\expr i\decimals 0\fixed1}{\expr j\decimals 0\fixed1}}\fs60  es igual a {\*\mjaformula{\expr A[col,fil]\decimals 0\fixed1}}\cf1\f4\fs24\par }' fuente='Serif,PLAIN,30' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='E2' tipo='texto' dibujar-si='(n7!=A[col,fil])&amp;(rta=1)' expresi&oacute;n='[550,460]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;}\f1\fs60\cf0\u161 Oh no! \fs76\i a\fs26\i0{\*\mjaformula{\expr i\decimals 0\fixed1}{\expr j\decimals 0\fixed1}}\fs60  es igual a {\*\mjaformula{\expr A[col,fil]\decimals 0\fixed1}}\cf1\f4\fs24\par \cf2}' fuente='Serif,PLAIN,30' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='E2' tipo='texto' expresi&oacute;n='[540,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;\f4\fcharset0 Times New Roman;\f5\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;\red0\green0\blue0;\red0\green76\blue0;}\f1\fs38 Una  matriz es una  tabla  rectangular  de\par datos ordenados en filas y columnas. Si\par una  matriz  tiene  \cf0\b m\b0  \cf1  filas  y  \cf0\b n\cf1\b0  columnas,\par decimos que la matriz es de orden  \cf0\b mxn\cf1\b0\par Todos los elementos de las matrices se\par denotan con subindices \cf0\f3\fs44\b\i{\*\mjaformula a{\subix ij}}\f1\fs38\b0\i0\cf2 , el  valor  de\cf0\par \b i\cf2\b0  representa la fila y el valor de \b\cf0 j \b0\cf2 la columna.\par Los valores de \cf0\b i\cf2\b0  van de 1 a \cf0\b m\cf2\b0  y los valores\par de \cf0\b j \cf2\b0 van de 1 a \cf0\b n\cf2\b0 .\cf0\par \par \f4\fs42\b\i{\*\mjaformula a{\subix ij}}\cf2\f1\fs38\b0\i0 es el elemento de la fila \cf0\b i\cf2\b0  y la columna \cf0\b j\cf2\b0 .\cf0\fs40\par \par \fs38\cf3 Observa la matriz y responde la pregunta.\fs40\cf0}' fuente='SansSerif,PLAIN,19' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='E2' tipo='texto' dibujar-si='(n7=A[col,fil])&amp;(rta=1)' expresi&oacute;n='[550,460]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red0\green87\blue0;\red0\green0\blue255;}\f1\fs60\cf0\u161 Muy bien! \fs72\i a\fs26\i0{\*\mjaformula{\expr i\decimals 0\fixed1}{\expr j\decimals 0\fixed1}}\fs60  es igual a {\*\mjaformula{\expr A[col,fil]\decimals 0\fixed1}}\cf1\f4\fs24\par }' fuente='Serif,PLAIN,30' fijo='s&iacute;'">
+</ajs>
+
+</body>
+</html>

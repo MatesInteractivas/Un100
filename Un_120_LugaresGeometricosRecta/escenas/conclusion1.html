@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Geometr&iacute;a</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<script  SRC="lib/geolab.js"  type="text/javascript" ></script> 
+<style>
+.celda_izquierda{
+background-color:#d5f3ff;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white; 
+}
+.celda_derecha{
+background-color:#fbfadc;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white;
+}
+table{margin-top:25px}
+.cuaderno2{
+overflow:auto;
+height:390px;
+display:block;
+margin:0;
+}
+</style>
+</head>
+ <body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '1'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'a1'  tipo = 'escalar'  constructor = '80'  parametros = '5.00,0.00'  etiqueta = '0,0' />
+<objeto  nombre = 'a2'  tipo = 'escalar'  constructor = '80'  parametros = '0.00,0.00'  etiqueta = '0,1' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '150'  parametros = '5.00,0.00,0.00'  objRef = '0,1'  formulas = 'a1 ; a2 ' visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,2' />
+<objeto  nombre = 'b1'  tipo = 'escalar'  constructor = '80'  parametros = '0.00,0.00'  etiqueta = '0,3' />
+<objeto  nombre = 'b2'  tipo = 'escalar'  constructor = '80'  parametros = '4.00,0.00'  etiqueta = '0,4' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '150'  parametros = '0.00,4.00,0.00'  objRef = '3,4'  formulas = 'b1 ; b2 ' visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,5' />
+<objeto  nombre = 'o1'  tipo = 'escalar'  constructor = '80'  parametros = '0.00,0.00'  etiqueta = '0,6' />
+<objeto  nombre = 'o2'  tipo = 'escalar'  constructor = '80'  parametros = '0.00,0.00'  etiqueta = '0,7' />
+<objeto  nombre = 'O'  tipo = 'punto'  constructor = '150'  parametros = '0.00,0.00,0.00'  objRef = '6,7'  formulas = 'o1 ; o2 ' visible = '1'  ancho = '3'  color = '#0,#ffff80'  etiqueta = '2,8' />
+<objeto  nombre = 'eX'  tipo = 'recta'  constructor = '31'  parametros = '0.00,-1.00,0.00'  objRef = '8,2'  visible = '0'  ancho = '1'  color = '#ff0000,#c0c0c0'  etiqueta = '0,9' />
+<objeto  nombre = 'eY'  tipo = 'recta'  constructor = '31'  parametros = '1.00,0.00,-0.00'  objRef = '8,5'  visible = '0'  ancho = '1'  color = '#ff0000,#c0c0c0'  etiqueta = '0,10' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '6'  parametros = '6.98,0.00,-0.00,-1.98,6.98'  objRef = '8,2'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,11' />
+<objeto  nombre = 'OA'  tipo = 'recta'  constructor = '38'  parametros = '0.00,-1.00,0.00'  objRef = '8,2'  visible = '1,0'  ancho = '3,1'  color = '#ff,#c0c0c0,#0'  etiqueta = '0,12' />
+<objeto  nombre = 'OB'  tipo = 'recta'  constructor = '38'  parametros = '1.00,0.00,-0.00'  objRef = '8,5'  visible = '1,0'  ancho = '3,1'  color = '#ff,#c0c0c0,#0'  etiqueta = '0,13' />
+<objeto  nombre = 'l1'  tipo = 'recta'  constructor = '38'  parametros = '0.62,0.78,-3.12'  objRef = '2,5'  visible = '1,0'  ancho = '3,1'  color = '#ff,#c0c0c0,#0'  etiqueta = '0,14' />
+<objeto  nombre = 'parl1'  tipo = 'recta'  constructor = '32'  parametros = '0.62,0.78,-4.36'  objRef = '14,11'  visible = '1'  ancho = '2'  color = '#ff00ff,#c0c0c0'  etiqueta = '0,15' />
+<objeto  nombre = 'a'  tipo = 'escalar'  constructor = '80'  parametros = '0.00,0.78'  etiqueta = '0,16' />
+<objeto  nombre = 'D'  tipo = 'punto'  constructor = '1'  parametros = '0.00,5.58,-4.87'  objRef = '10,15'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,17' />
+<objeto  nombre = 'E'  tipo = 'escalar'  constructor = '80'  parametros = '0.00,6.24'  etiqueta = '0,18' />
+<objeto  nombre = 'l2'  tipo = 'recta'  constructor = '31'  parametros = '0.74,0.67,-3.72'  objRef = '2,17'  visible = '1'  ancho = '1'  color = '#ff0080,#c0c0c0'  etiqueta = '0,19' />
+<objeto  nombre = 'b'  tipo = 'escalar'  constructor = '80'  parametros = '0.00,0.63'  etiqueta = '0,20' />
+<objeto  nombre = 'l3'  tipo = 'recta'  constructor = '31'  parametros = '0.50,0.87,-3.47'  objRef = '11,5'  visible = '1'  ancho = '1'  color = '#ff0080,#c0c0c0'  etiqueta = '0,21' />
+<objeto  nombre = 'c'  tipo = 'escalar'  constructor = '80'  parametros = '0.00,0.89'  etiqueta = '0,22' />
+<objeto  nombre = 'M'  tipo = 'punto'  constructor = '1'  parametros = '2.91,2.33,-3.56'  objRef = '19,21'  visible = '1'  ancho = '3'  color = '#0,#c080ff'  etiqueta = '2,23' />
+<objeto  nombre = 'l4'  tipo = 'recta'  constructor = '151'  parametros = '4.00,-5.00,0.00'  objRef = '2,5'  formulas = 'B.y ; -A.x ; 0 ' visible = '1'  ancho = '2'  color = '#ff0000,#c0c0c0'  etiqueta = '0,24' />
+<nota  texto= "" />
+<table align='center'>  
+<tr>
+	<td width ='425px' height='410px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="425" height="400">
+			</canvas>
+		</td>
+    
+    <td width ='50px'></td>
+    
+    <td width ='375px' height="410px" valign='middle' class="celda_derecha">
+    
+	<div class="cuaderno2">
+<p>A partir de las condiciones geométricas del problema, podemos traducir al lenguage algebraico y mediante técnicas algebraicas habituales, como
+sustituciones, resolución de ecuaciones simultaneas, simplificaciones y obtener la ecuación del lugar geométrico propuesto. </p>
+	
+<p id="cuaderno">This is a paragraph.</p>	</div>	 	
+</td>
+</tr>
+</table>
+           
+
+</body>
+</html>

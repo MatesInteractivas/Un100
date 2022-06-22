@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='INFO' x='(970-490)/2' y='100' ancho='490' alto='400' dibujar-si='info' fijo='sí' imagen='images/retro_490x470.png' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='text' x='50' y='100' ancho='870' alto='90' despl_imagen='arr-izq' fondo='f0f0ea' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='graf' x='50' y='200' ancho='420' alto='320' fijo='sí' escala='25' despl_imagen='arr-izq' fondo='d0eaff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='solu' x='500' y='200' ancho='420' alto='320' escala='20' despl_imagen='arr-izq' fondo='f0f0ea' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='cerrarInfo' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(INFO._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='info=0' pos_mensajes='centro'">
+   <param name="C_03" value="id='otros' tipo='numérico' interfaz='botón' región='interior' espacio='solu' nombre='Otros datos' expresión='(solu._w-115,solu._h-45,100,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='ay=0;ca=&squot;&squot;;cC=&squot;&squot;;bien1=0;bien2=0;alfa=15+ent(rnd*10);d=1400+20*ent(rnd*10);v=940+2*ent(rnd*30);t=20+10*ent(rnd*4)' activo-si='(ay=1)|(bien1*bien2=1)'">
+   <param name="C_04" value="id='ca' tipo='numérico' interfaz='campo de texto' región='interior' espacio='solu' nombre='_._' expresión='(295,33,60+10*(a*100>999),36)' valor='&squot;&squot;' fijo='no' visible='sí' acción='calcular' parámetro='bien1=(abs(ca-100*a)<0.005)?1:0' dibujar-si='(ay=0)&(bien1=0)'">
+   <param name="C_05" value="id='cC' tipo='numérico' interfaz='campo de texto' región='interior' espacio='solu' nombre='_._' expresión='(315,93,55,36)' valor='&squot;&squot;' fijo='no' visible='sí' acción='calcular' parámetro='bien2=(abs(cC-(180-C))<0.005)?1:0' dibujar-si='(ay=0)&(bien2=0)'">
+   <param name="C_06" value="id='ay' tipo='numérico' interfaz='botón' región='interior' espacio='solu' expresión='(solu._w-45,188,30,30)' fijo='sí' visible='sí' imagen='images/ayuda.png' acción='calcular' parámetro='ay=1' dibujar-si='(ay=0)&(bien1*bien2=0)'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=0' hacer='titulo=&squot;La ruta del avión&squot;;d=1600;alfa=20;v=980;t=30;ay=0'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='alfar=alfa*pi/180;c=d/100;b=(v*t/60)/100;aux=asen(6/c);Ax=-0.5*c*cos(aux);Ay=-3;Bx=0.5*c*cos(aux);By=3;a=sqrt(b^2+c^2-2*b*c*cos(alfar));Cr=acos((a^2+b^2-c^2)/(2*a*b));C=Cr*180/pi;Cx=Ax+b*cos(aux+alfar);Cy=Ay+b*sen(aux+alfar);'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='INFO' tipo='texto' color='blanco' expresión='[10,5]' texto='Conclusiones' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_03" value="espacio='INFO' tipo='texto' color='negro' expresión='[10,50]' texto='Aquí se pueden escribir las conclusiones de \nlo que se aprendió en las escenas del \ndesarrollo.\n\nEl usuario pude realizar algunas actividades\npara reafirmar lo aprendido y se pueden\nplantear explicaciones y preguntas abiertas \npara motivar el estudio de otros temas.\n\nEsta ventana y otras similares pueden abrirse \nal hacer clic en algún botón.' fuente='SansSerif,PLAIN,21' fijo='sí'">
+   <param name="G_04" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_05" value="espacio='text' tipo='polígono' fondo='sí' color='blanco' coord_abs='sí' expresión='(0,0)(text._w-1,0)(text._w-1,text._h-1)(0,text._h-1)(0,0)' ancho='6'">
+   <param name="G_06" value="espacio='graf' tipo='polígono' fondo='sí' color='blanco' coord_abs='sí' expresión='(0,0)(graf._w-1,0)(graf._w-1,graf._h-1)(0,graf._h-1)(0,0)' ancho='6'">
+   <param name="G_07" value="espacio='solu' tipo='polígono' fondo='sí' color='blanco' coord_abs='sí' expresión='(0,0)(solu._w-1,0)(solu._w-1,solu._h-1)(0,solu._h-1)(0,0)' ancho='6'">
+   <param name="G_08" value="espacio='text' tipo='texto' expresión='[25,12]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 Cuando un avi\u243 n est\u225  a{\*\mjaformula{\expr d\decimals 2\fixed0} km,}en linea recta, de su destino, una tormenta lo desv\u237 a de su ruta un \par \u225 ngulo de{\*\mjaformula{\expr alfa\decimals 2\fixed0}\u186 .} Si se mantiene en esa direcci\u243 n durante{\*\mjaformula{\expr t\decimals 2\fixed0}}minutos  a  una  velocidad de{\*\mjaformula{\expr v\decimals 2\fixed0}}km/h, \par \u191 qu\u233  \u225 ngulo deber\u225  girar para llegar a su destino?, \u191 cu\u225 ntos km deber\u225  recorrer?   \f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_09" value="espacio='graf' tipo='polígono' expresión='(Ax,Ay)(Bx,By)(Cx,Cy)' relleno='45ffff80' ancho='0'">
+   <param name="G_10" value="espacio='graf' tipo='arco' color='ff9000' centro='(Cx,Cy)' radio='2' inicio='(Bx,By)' fin='(Ax+2*(Cx-Ax),Ay+2*(Cy-Ay))' fijo='sí' relleno='20ffaa00'">
+   <param name="G_11" value="espacio='graf' tipo='curva' color='667680' expresión='(Ax+t*cos(alfar+aux),Ay+t*sen(alfar+aux))' t.intervalo='[0,b+4]' t.pasos='1'">
+   <param name="G_12" value="espacio='graf' tipo='arco' color='ffaa00' centro='(Ax,Ay)' radio='2' inicio='(Bx,By)' fin='(Cx,Cy)' fijo='sí' relleno='45ffc800'">
+   <param name="G_13" value="espacio='graf' tipo='segmento' color='2045cc' expresión='(Ax,Ay)(Cx,Cy)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_14" value="espacio='graf' tipo='segmento' color='2045cc' expresión='(Ax,Ay)(Bx,By)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_15" value="espacio='graf' tipo='segmento' color='aa0000' expresión='(Cx,Cy)(Bx,By)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_16" value="espacio='graf' tipo='punto' expresión='(Ax-0.6,Ay-0.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 A\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_17" value="espacio='graf' tipo='punto' expresión='(Bx+0.2,By-0.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 B\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_18" value="espacio='graf' tipo='punto' expresión='(Cx-0.3,Cy+0.2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 C\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_19" value="espacio='graf' tipo='punto' expresión='(Ax+2*cos(aux+alfar/2),Ay+2*sen(aux+alfar/2))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36{\*\mjaformula{\expr alfa\decimals 2\fixed0}\u186 }\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_20" value="espacio='solu' tipo='texto' dibujar-si='ay=1' expresión='[10,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 Entre A y el punto de destino B hay c ={\*\mjaformula{\expr d\decimals 2\fixed0} km}\par A una velocidad de{\*\mjaformula{\expr v\decimals 2\fixed0} km/h}durante{\*\mjaformula{\expr t\decimals 2\fixed0}}\par minutos recorre: b ={\*\mjaformula{\expr b*100\decimals 2\fixed0} km}\par Por tanto la distancia que ha de recorrer para\par llegar a su destino es:\par    {\*\mjaformula a{\supix 2}}={\*\mjaformula{\expr b*100\decimals 2\fixed0}{\supix 2}+{\expr c*100\decimals 2\fixed0}{\supix 2}-2\u183 {\expr b*100\decimals 2\fixed0}\u183 {\expr c*100\decimals 2\fixed0}\u183 cos{\expr alfa\decimals 2\fixed0}\u186 }\par                             a ={\*\mjaformula{\expr a*100\decimals 2\fixed0} km}{\*\mjaformula{\supix}}\par     C = arccos{\*\mjaformula{\fraction{\num{\expr a*100\decimals 2\fixed0}{\supix 2}+{\expr b*100\decimals 2\fixed0}{\supix 2}-{\expr c*100\decimals 2\fixed0}{\supix 2}}{\den 2\u183 {\expr a*100\decimals 2\fixed0}\u183 {\expr b*100\decimals 2\fixed0}}}}={\*\mjaformula{\expr C\decimals 2\fixed0}\u186 }\par Y el \u225 ngulo que debe girar es el suplementario\par de C:         {\*\mjaformula 180\u186  -{\expr C\decimals 2\fixed0}\u186  ={\expr 180-C\decimals 2\fixed0}\u186 }\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_21" value="espacio='solu' tipo='texto' dibujar-si='ay=0' expresión='[15,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs36 Distancia que debe recorrer:   \fs38\b  a={\*\mjaformula{\expr a*100\decimals 2\fixed0}}km \f3\fs30\b0}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_22" value="espacio='graf' tipo='punto' expresión='((Cx+Bx)/2,0.3+(Cy+By)/2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 a\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_23" value="espacio='graf' tipo='punto' expresión='((Ax+Bx)/2,-0.6+(Ay+By)/2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 c\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_24" value="espacio='graf' tipo='punto' expresión='(-0.3+(Ax+Cx)/2,0.3+(Ay+Cy)/2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 b\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_25" value="espacio='solu' tipo='texto' dibujar-si='ay=0' expresión='[15,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs36\u193 ngulo que ha de girar:   \fs38\b  180\u186  - C ={\*\mjaformula{\expr 180-C\decimals 2\fixed0}{\expr &squot;\u186 &squot;\decimals 2\fixed0}} \f3\fs30\b0}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_26" value="espacio='solu' tipo='texto' color='negro' dibujar-si='(ay=0)&(bien1*bien2=0)' expresión='[15,185]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red32\green48\blue58;\red0\green0\blue0;}\f1\fs36\cf0 Introduce los resultados redondeados\par a cent\u233 simas, o pulsa en la ayuda para\par ver la soluci\u243 n.\cf1\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+</ajs>
+
+</body>
+</html>

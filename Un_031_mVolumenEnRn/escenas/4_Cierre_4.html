@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="editable" value="no">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_cierre_04.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='C1' x='201' y='76' ancho='374' alto='393' dibujar-si='0' fijo='sí' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_02" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()' dibujar-si='0' pos_mensajes='centro'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Resumen&squot;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='polígono' fondo='sí' color='ff20303a' coord_abs='sí' expresión='(10,75)(190,75)(190,E1._h-10)(10,E1._h-10)(10,75)' relleno='ffffffff'">
+   <param name="G_03" value="espacio='E1' tipo='polígono' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(200,75)(E1._w/2+90,75)(E1._w/2+90,E1._h-10)(200,E1._h-10)(200,75)' relleno='ffffffff'">
+   <param name="G_04" value="espacio='E1' tipo='polígono' fondo='sí' color='ff20303a' coord_abs='sí' expresión='(E1._w/2+100,75)(E1._w-10,75)(E1._w-10,E1._h-10)(E1._w/2+100,E1._h-10)(E1._w/2+100,75)' relleno='ffffffff'">
+   <param name="G_05" value="espacio='E1' tipo='texto' expresión='[30,89]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Arial;}\f1\fs34\b\par Una matriz A \par seg\u250 n las filas  \par o vectores que \par tenga, define \par una figura:\par \fs36\b0\par \fs34\par Si una fila,\par vector.\par \par Si dos filas,\par paralelogramo.\par \par Si tres filas,\par paralelep\u237 pedo.\par \par Si m filas,\par m-paralelep\u237 pedo.\fs36\par \fs44\par \par \fs30}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='0' expresión='[230,105]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}\f1\fs96{\*\mjaformula det(A\u183 A{\supix t})}\fs34\par \par Esta f\u243 rmula, seg\u250 n el n\u250 mero de filas \par que tenga A, nos dar\u225 :\par \par Si A tiene una fila, el cuadrado \par de la longitud del vector.\par \par Si A tiene dos filas, el cuadrado \par del \u225 rea del paralelogramo.\par \par Si A tiene tres filas, el cuadrado \par del volumen del paralelep\u237 pedo.\par \par Si A tiene m filas, el cuadrado \par del m-volumen del m-paralelep\u237 pedo.\par \par \b ESTO ES LA F\u211 RMULA DE HER\u211 N\par \par \par \f4\fs30\b0}' fuente='SansSerif,PLAIN,48' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='0' expresión='[E1._w/2+120,95]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f1\fs96{\*\mjaformula\u931 (men{\subix m}(A)){\supix 2}}\fs30\par \fs32\par \fs34\cf0}' fuente='SansSerif,PLAIN,48' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='0' expresión='[E1._w/2+130,186]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f1\fs34 Esta f\u243 rmula, seg\u250 n el n\u250 mero de filas \par que tenga A, nos dar\u225 :\par \par Si A tiene una fila, el cuadrado \par de la longitud del vector.\par \par Si A tiene dos filas, el cuadrado \par del \u225 rea del paralelogramo.\par \par Si A tiene tres filas, el cuadrado \par del volumen del paralelep\u237 pedo.\par \par Si A tiene m filas, el cuadrado \par del m-volumen del m-paralelep\u237 pedo.\par \par \b ESTO ES EL TEOREMA DE PIT\u193 GORAS\b0\par \cf0}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_09" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(215,80)' archivo='images/4_Cierre_4_text1.jpg'">
+   <param name="G_10" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(E1._w/2+110,85)' archivo='images/4_Cierre_4_text2.jpg'">
+   <param name="G_11" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(30,100)' archivo='images/4_Cierre_4_text0.jpg'">
+</ajs>
+
+</body>
+</html>

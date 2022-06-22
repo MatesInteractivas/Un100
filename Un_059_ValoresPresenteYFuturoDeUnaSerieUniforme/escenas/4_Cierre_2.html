@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Cierre</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_inicio.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='HTMLIFrame' id='E2' x='580' y='150' ancho='270' alto='350' dibujar-si='(otro=2)' despl_imagen='arr-izq' archivo='images/carrito.gif'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='n3' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(70,280,120,30)' fijo='sí' visible='no' opciones='Elige, 2.243.974.06, 8.889.621.25, 8.622.664' dibujar-si='otro=1'">
+   <param name="C_03" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Siguiente' expresión='(370,470,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='otro=otro+1\nn6=&squot;&squot;\nn7=&squot;&squot;' dibujar-si='otro<3'">
+   <param name="C_04" value="id='n5' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Anterior' expresión='(60,470,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='otro=otro-1\nn6=&squot;&squot;\nn7=&squot;&squot;' dibujar-si='otro>1'">
+   <param name="C_05" value="id='n6' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' nombre='P = ' expresión='(70,350,200,40)' fijo='sí' visible='sí' dibujar-si='otro=2'">
+   <param name="C_06" value="id='n7' tipo='numérico' interfaz='menú' región='interior' espacio='E1' expresión='(220,380,90,30)' fijo='sí' visible='no' opciones='Elige, A, B, C, D' dibujar-si='(otro>2)&(otro<4)'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Ejercicios de cierre&squot;' hacer='otro=1'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' dibujar-si='otro=1' expresión='(4.8,-.5,.9,.9)' archivo='images/flujo1.png'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='otro=1' expresión='[60,130]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40\b Ejercicio 1\b0\par \par Para el flujo de caja que se muestra en la \par figura, el valor presente ser\u225 :\par \f3\fs30}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='(n3=2)&(otro=1)' expresión='[60,400]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40\b\cf0\u161 Incorrecto! \cf1 No tomaste en cuenta el\par desplazamiento de las cuotas de la serie.\f2\fs40\b0\cf2}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='(n3=1)&(otro=1)' expresión='[60,400]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40\b\cf0\u161 Incorrecto! \cf1 No tomaste en cuenta la\par cuota extra al final del diagrama.\f2\fs40\b0\cf2}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='(n3=3)&(otro=1)' expresión='[60,400]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green192\blue0;\red32\green48\blue58;}\f1\fs40\b\cf0\u161 Excelente! \f2\fs40\b0\cf1}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='otro=2' expresión='[60,130]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40\b Ejercicio \b0 2\par \par Una persona compra un veh\u237 culo en $5.000 de\par contado y pagos anuales iguales durante seis\par a\u241 os, empezando tres a\u241 os despu\u233 s.\par \par \u191 Cu\u225 l ser\u225  el valor del carro, si el cr\u233 dito se\par realiza pactando un inter\u233 s del 8% anual?\par \par \f3\fs30}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='(otro=2)&(n6=6982)' expresión='[60,390]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green133\blue0;\red32\green48\blue58;}\f1\fs40\b\cf0\u161 EXCELENTE!\f2\fs30\b0\cf1}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='(otro=2)&((n6>6982)|(n6<6982))&(n6>0)' expresión='[60,390]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}{\colortbl\red255\green109\blue0;\red32\green48\blue58;}\f1\fs40\b\cf0\u161 INCORRECTO! Revisa tus\par c\u225 lculos.\f0\fs30\b0\cf1}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='texto' dibujar-si='otro=3' expresión='[60,130]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40\b Ejercicio 3\b0\par \par \u191 Cu\u225 nto deber\u225  despositarse anualmente\par en una cuenta de ahorros, al final de cada\par a\u241 o durante los pr\u243 ximos ocho a\u241 os si se\par desea hacer cinco retiros de $5.000 al\par final de cada a\u241 o, incluyendo el a\u241 o ocho?\par \par Selecciona una de las opciones que se\par muestran.\par \par \f3\fs30}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='texto' dibujar-si='otro=3' expresión='[600,180]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 A. $665.28\par \par B. $700.56\par \par C. $663.57\par \par D. $664.84\f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='texto' dibujar-si='(n7=1)&(otro=3)' expresión='[600,390]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\cf0\f1\fs40\b\u161 INCORRECTO! \f2\fs30\b0\cf1}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_13" value="espacio='E1' tipo='texto' dibujar-si='(n7=2)&(otro=3)' expresión='[600,390]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\cf0\f1\fs40\b\u161 INCORRECTO! \f2\fs30\b0\cf1}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_14" value="espacio='E1' tipo='texto' dibujar-si='(n7=3)&(otro=3)' expresión='[600,390]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green133\blue0;\red32\green48\blue58;}\f1\fs40\b\cf0\u161 EXCELENTE!\f2\fs30\b0\cf1}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_15" value="espacio='E1' tipo='texto' dibujar-si='(n7=4)&(otro=3)' expresión='[600,390]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f1\fs40\b\cf0\u161 INCORRECTO! \f2\fs30\b0\cf1}' fuente='SansSerif,BOLD,20' fijo='sí'">
+</ajs>
+
+</body>
+</html>

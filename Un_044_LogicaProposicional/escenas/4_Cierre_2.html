@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='43' O.x='-149' O.y='100' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo0' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='n99' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Comprobar' expresión='(120,480,120,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='mostrar=1\n'">
+   <param name="C_04" value="id='n1' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(428,339,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_05" value="id='n2' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(428,296,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_06" value="id='n3' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(428,253,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_07" value="id='n4' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(428,210,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_08" value="id='n5' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(471,339,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_09" value="id='n6' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(471,296,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_10" value="id='n7' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(471,253,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_11" value="id='n8' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(471,210,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_12" value="id='n9' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(535.5,339,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_13" value="id='n10' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(535.5,296,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_14" value="id='n11' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(535.5,253,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_15" value="id='n12' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(535.5,210,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_16" value="id='n13' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(645,339,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_17" value="id='n14' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(645,296,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_18" value="id='n15' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(645,253,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_19" value="id='n16' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(645,210,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_20" value="id='n17' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(817,339,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_21" value="id='n18' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(817,296,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_22" value="id='n19' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(817,253,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_23" value="id='n20' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(817,210,33,30)' valor='&squot;&squot;' fijo='sí' visible='sí'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=111' hacer='titulo=&squot;Ejercicio de Cierre&squot;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='n1=(n1=&squot;v&squot;)?&squot;V&squot;:n1;n2=(n2=&squot;v&squot;)?&squot;V&squot;:n2;n3=(n3=&squot;v&squot;)?&squot;V&squot;:n3;n4=(n4=&squot;v&squot;)?&squot;V&squot;:n4;n5=(n5=&squot;v&squot;)?&squot;V&squot;:n5;n6=(n6=&squot;v&squot;)?&squot;V&squot;:n6;n7=(n7=&squot;v&squot;)?&squot;V&squot;:n7;n8=(n8=&squot;v&squot;)?&squot;V&squot;:n8;n9=(n9=&squot;v&squot;)?&squot;V&squot;:n9;n10=(n10=&squot;v&squot;)?&squot;V&squot;:n10;n11=(n11=&squot;v&squot;)?&squot;V&squot;:n11;n12=(n12=&squot;v&squot;)?&squot;V&squot;:n12;n13=(n13=&squot;v&squot;)?&squot;V&squot;:n13;n14=(n14=&squot;v&squot;)?&squot;V&squot;:n14;n15=(n15=&squot;v&squot;)?&squot;V&squot;:n15;n16=(n16=&squot;v&squot;)?&squot;V&squot;:n16;n17=(n17=&squot;v&squot;)?&squot;V&squot;:n17;n18=(n18=&squot;v&squot;)?&squot;V&squot;:n18;n19=(n19=&squot;v&squot;)?&squot;V&squot;:n19;n20=(n20=&squot;v&squot;)?&squot;V&squot;:n20;;n1=(n1=&squot;f&squot;)?&squot;F&squot;:n1;n2=(n2=&squot;f&squot;)?&squot;F&squot;:n2;n3=(n3=&squot;f&squot;)?&squot;F&squot;:n3;n4=(n4=&squot;f&squot;)?&squot;F&squot;:n4;n5=(n5=&squot;f&squot;)?&squot;F&squot;:n5;n6=(n6=&squot;f&squot;)?&squot;F&squot;:n6;n7=(n7=&squot;f&squot;)?&squot;F&squot;:n7;n8=(n8=&squot;f&squot;)?&squot;F&squot;:n8;n9=(n9=&squot;f&squot;)?&squot;F&squot;:n9;n10=(n10=&squot;f&squot;)?&squot;F&squot;:n10;n11=(n11=&squot;f&squot;)?&squot;F&squot;:n11;n12=(n12=&squot;f&squot;)?&squot;F&squot;:n12;n13=(n13=&squot;f&squot;)?&squot;F&squot;:n13;n14=(n14=&squot;f&squot;)?&squot;F&squot;:n14;n15=(n15=&squot;f&squot;)?&squot;F&squot;:n15;n16=(n16=&squot;f&squot;)?&squot;F&squot;:n16;n17=(n17=&squot;f&squot;)?&squot;F&squot;:n17;n18=(n18=&squot;f&squot;)?&squot;F&squot;:n18;n19=(n19=&squot;f&squot;)?&squot;F&squot;:n19;n20=(n20=&squot;f&squot;)?&squot;F&squot;:n20;;;correcto1=(n1=&squot;V&squot;)&(n2=&squot;V&squot;)&(n3=&squot;F&squot;)&(n4=&squot;F&squot;);correcto2=(n5=&squot;V&squot;)&(n6=&squot;F&squot;)&(n7=&squot;V&squot;)&(n8=&squot;F&squot;);correcto3=(n9=&squot;F&squot;)&(n10=&squot;V&squot;)&(n11=&squot;V&squot;)&(n12=&squot;V&squot;);correcto4=(n13=&squot;V&squot;)&(n14=&squot;F&squot;)&(n15=&squot;F&squot;)&(n16=&squot;F&squot;);correcto5=(n17=&squot;F&squot;)&(n18=&squot;F&squot;)&(n19=&squot;F&squot;)&(n20=&squot;F&squot;);;suma=correcto1+correcto2+correcto3+correcto4+correcto5;;;;;;;'">
+   <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='siempre' inicio='info=111' hacer='r1=(n1!=&squot;&squot;);r2=(n2!=&squot;&squot;);r3=(n3!=&squot;&squot;);r4=(n4!=&squot;&squot;);r5=(n5!=&squot;&squot;);r6=(n6!=&squot;&squot;);r7=(n7!=&squot;&squot;);r8=(n8!=&squot;&squot;);r9=(n9!=&squot;&squot;);r10=(n10!=&squot;&squot;);r11=(n11!=&squot;&squot;);r12=(n12!=&squot;&squot;);r13=(n13!=&squot;&squot;);r14=(n14!=&squot;&squot;);r15=(n15!=&squot;&squot;);r16=(n16!=&squot;&squot;);r17=(n17!=&squot;&squot;);r18=(n18!=&squot;&squot;);r19=(n19!=&squot;&squot;);r20=(n20!=&squot;&squot;);;total=r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(15,90)' archivo='images/panel_cierre.png'">
+   <param name="G_03" value="espacio='E1' tipo='texto' expresión='[25,110]' texto='Construir la tabla de verdad de la proposición (P ∨Q)∧ \[(∼P) ∧ (∼Q)\]' fuente='SansSerif,BOLD,21' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='polígono' expresión='(0,0)(14,0)(14,5)(0,5)(0,0)' relleno='blanco' ancho='2'">
+   <param name="G_05" value="espacio='E1' tipo='imagen' expresión='(0,5)' archivo='images/tablas/tabla2.png'">
+   <param name="G_06" value="espacio='E1' tipo='segmento' expresión='(0,s)(14,s)' familia='s' s.intervalo='[s,5]' s.pasos='5' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_07" value="espacio='E1' tipo='segmento' expresión='(1,0)(1,5)' fijo='sí' ancho='2'">
+   <param name="G_08" value="espacio='E1' tipo='segmento' expresión='(2,0)(2,5)' fijo='sí' ancho='2'">
+   <param name="G_09" value="espacio='E1' tipo='segmento' expresión='(3,0)(3,5)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_10" value="espacio='E1' tipo='segmento' expresión='(4,0)(4,5)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_11" value="espacio='E1' tipo='segmento' expresión='(6,0)(6,5)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_12" value="espacio='E1' tipo='segmento' expresión='(9,0)(9,5)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_13" value="espacio='E1' tipo='polígono' dibujar-si='paso>0' expresión='(0,0)(14,0)(14,5)(0,5)(0,0)' ancho='3'">
+   <param name="G_14" value="espacio='E1' tipo='segmento' dibujar-si='(paso=2)&(g2.y!=-0.4)' expresión='(1.8,4)(g2.x,g2.y)' fijo='sí' tamaño='0'">
+   <param name="G_15" value="espacio='E1' tipo='segmento' dibujar-si='(paso=3)&(g3.y!=-0.4)' expresión='(3.8,4)(g3.x,g3.y)' fijo='sí' tamaño='0'">
+   <param name="G_16" value="espacio='E1' tipo='segmento' dibujar-si='(paso=4)&(g4.y!=-0.4)' expresión='(6.8,4)(g4.x,g4.y)' fijo='sí' tamaño='0'">
+   <param name="G_17" value="espacio='E1' tipo='segmento' dibujar-si='(paso=5)&(g5.y!=-0.4)' expresión='(10.8,4)(g5.x,g5.y)' fijo='sí' tamaño='0'">
+   <param name="G_18" value="espacio='E1' tipo='texto' dibujar-si='suma!=5' expresión='[25,160]' texto='Completa la tabla rellenando \nlas casillas con los valores \nde verdad correspondientes.\n\nPara verificar su respuesta\nhaga clic en el botón Comprobar.\n' fuente='SansSerif,PLAIN,19' fijo='sí'">
+   <param name="G_19" value="espacio='E1' tipo='texto' expresión='[350,213]' texto='V     V' fuente='SansSerif,BOLD,21' fijo='sí'">
+   <param name="G_20" value="espacio='E1' tipo='texto' expresión='[350,256]' texto='V     F' fuente='SansSerif,BOLD,21' fijo='sí'">
+   <param name="G_21" value="espacio='E1' tipo='texto' expresión='[350,299]' texto='F     V' fuente='SansSerif,BOLD,21' fijo='sí'">
+   <param name="G_22" value="espacio='E1' tipo='texto' expresión='[350,342]' texto='F     F' fuente='SansSerif,BOLD,21' fijo='sí'">
+   <param name="G_23" value="espacio='E1' tipo='texto' dibujar-si='(mostrar=1)&(suma!=5)&(total!=20)' expresión='[500,400]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f1\fs42           \fs56     \cf0  \u161 Lo siento!\par Revisa los valores de verdad \cf1\fs42}' fuente='SansSerif,PLAIN,21' fijo='sí'">
+   <param name="G_24" value="espacio='E1' tipo='texto' dibujar-si='(mostrar=1)&(total!=20)' expresión='[440,470]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f1\fs56\cf0\u161 Favor de rellenar todos los campos!\par \cf1\fs42}' fuente='SansSerif,PLAIN,28' fijo='sí'">
+   <param name="G_25" value="espacio='E1' tipo='texto' dibujar-si='(mostrar=1)&(suma=5)' expresión='[501,401]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red0\green0\blue0;\red32\green48\blue58;}\f1\fs42           \fs56     \cf0  \fs64\cf1\u161 EXCELENTE!\fs56\cf0\par \cf2\fs42}' fuente='SansSerif,PLAIN,21' fijo='sí'">
+   <param name="G_26" value="espacio='E1' tipo='texto' dibujar-si='(mostrar=1)&(suma=5)' expresión='[500,400]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red0\green188\blue0;\red32\green48\blue58;}\f1\fs42           \fs56     \cf0  \fs64\cf1\u161 EXCELENTE!\fs56\cf0\par \cf2\fs42}' fuente='SansSerif,PLAIN,21' fijo='sí'">
+   <param name="G_27" value="espacio='E1' tipo='texto' dibujar-si='(mostrar=1)&(suma!=5)' expresión='[25,160]' texto='Completa la tabla rellenando \nlas casillas con los valores \nde verdad correspondientes.\n\nPara verificar su respuesta\nhaga clic en el botón Comprobar.' fuente='SansSerif,PLAIN,19' fijo='sí'">
+   <param name="G_28" value="espacio='E1' tipo='texto' dibujar-si='(mostrar=1)&(suma=5)' expresión='[25,160]' texto='Una proposición es una \ncontradicción dado que todos \nlos valores de verdad de la \núltima columna son falsos.' fuente='SansSerif,PLAIN,19' fijo='sí'">
+</ajs>
+
+</body>
+</html>

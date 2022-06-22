@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" >
+<title>Hipérbola</title>
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<script  SRC="lib/geolab.js"  type="text/javascript" ></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<style>
+.celda_izquierda{
+background-color:#d5f3ff;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white; 
+}
+.celda_derecha{
+background-color:#fbfadc;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white;
+}
+table{margin-top:25px}
+.cuaderno2{
+overflow:auto;
+height:390px;
+display:block;
+margin:0;
+}
+</style> 
+</head>
+<body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fffff4'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '1'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'P'  tipo = 'punto'  constructor = '0'  parametros = '-7.45,4.96,0.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,0' />
+<objeto  nombre = 'r'  tipo = 'escalar'  constructor = '80'  parametros = '5.00,0.55'  etiqueta = '1,30' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '0'  parametros = '0.79,-1.26,4.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,2' />
+<objeto  nombre = 'B'  tipo = 'circulo'  constructor = '61'  parametros = '0.79,-1.26,5.00,0.00'  objRef = '2,1'  visible = '1,0'  ancho = '1,2'  color = '#ff,#c0c0c0,#ff0000,#c0c0c0'  etiqueta = '0,3' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '7'  parametros = '4.38,2.21,5.00'  objRef = '3'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,4' />
+<objeto  nombre = 'a'  tipo = 'recta'  constructor = '31'  parametros = '-0.23,-0.97,3.15'  objRef = '0,4'  visible = '1'  ancho = '2'  color = '#ff0000,#c0c0c0'  etiqueta = '0,5' />
+<objeto  nombre = 'D'  tipo = 'punto'  constructor = '10'  parametros = '-0.91,3.44,4.50'  objRef = '5,3,4'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,6' />
+<objeto  nombre = 'pd'  tipo = 'escalar'  constructor = '81'  parametros = '6.71,6.44'  objRef = '0,6'  etiqueta = '1,7' />
+<objeto  nombre = 'pc'  tipo = 'escalar'  constructor = '81'  parametros = '12.15,6.44'  objRef = '0,4'  etiqueta = '1,5' />
+<objeto  nombre = 'p'  tipo = 'escalar'  constructor = '154'  parametros = '81.56,6.21'  objRef = '7,8'  formulas = 'pc*pd ' etiqueta = '0,9' />
+<objeto  nombre = 'e'  tipo = 'escalar'  constructor = '83'  parametros = '81.56,5.94'  objRef = '0,3'  etiqueta = '0,10' />
+<objeto  nombre = 'r1'  tipo = 'escalar'  constructor = '154'  parametros = '9.03,5.94'  objRef = '10'  formulas = 'sqrt(e) ' etiqueta = '0,11' />
+<objeto  nombre = 'F'  tipo = 'circulo'  constructor = '61'  parametros = '-7.45,4.96,9.03,0.00'  objRef = '0,11'  visible = '0,0'  ancho = '1,2'  color = '#ff,#c0c0c0,#ff0000,#c0c0c0'  etiqueta = '0,12' />
+<objeto  nombre = 'E'  tipo = 'punto'  constructor = '12'  parametros = '1.49,3.69,-5.76'  objRef = '3,12,6'  visible = '0'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,13' />
+<objeto  nombre = 'f'  tipo = 'recta'  constructor = '38'  parametros = '-0.60,-0.80,-0.53'  objRef = '0,2'  visible = '1,0'  ancho = '1,1'  color = '#c0c0c0,#c0c0c0,#0'  etiqueta = '0,14' />
+<objeto  nombre = 'g'  tipo = 'recta'  constructor = '38'  parametros = '0.99,-0.14,-0.95'  objRef = '2,13'  visible = '0,0'  ancho = '1,1'  color = '#c0c0c0,#c0c0c0,#0'  etiqueta = '0,15' />
+<objeto  nombre = 'PA'  tipo = 'escalar'  constructor = '81'  parametros = '10.32,5.76'  objRef = '0,2'  etiqueta = '1,14' />
+<objeto  nombre = 'de'  tipo = 'escalar'  constructor = '81'  parametros = '9.03,5.76'  objRef = '0,13'  etiqueta = '1,17' />
+<objeto  nombre = 'ph'  tipo = 'escalar'  constructor = '81'  parametros = '5.97,5.94'  objRef = '0,23'  etiqueta = '1,28' />
+<objeto  nombre = 'pg'  tipo = 'escalar'  constructor = '81'  parametros = '13.67,5.94'  objRef = '0,21'  etiqueta = '1,29' />
+<objeto  nombre = 'PE'  tipo = 'recta'  constructor = '38'  parametros = '-0.14,-0.99,3.86'  objRef = '0,13'  visible = '0,0'  ancho = '1,1'  color = '#c0c0c0,#c0c0c0,#0'  etiqueta = '0,20' />
+<objeto  nombre = 'G'  tipo = 'punto'  constructor = '7'  parametros = '0.37,-6.24,5.29'  objRef = '3'  visible = '0'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,21' />
+<objeto  nombre = 'h'  tipo = 'recta'  constructor = '31'  parametros = '-0.82,-0.57,-3.27'  objRef = '0,21'  visible = '0'  ancho = '2'  color = '#ff80,#c0c0c0'  etiqueta = '0,22' />
+<objeto  nombre = 'H'  tipo = 'punto'  constructor = '10'  parametros = '-4.04,0.07,-2.14'  objRef = '22,3,21'  visible = '0'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,23' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '38'  parametros = '-0.73,0.68,-3.01'  objRef = '6,23'  visible = '0,0'  ancho = '1,1'  color = '#c0c0c0,#c0c0c0,#0'  etiqueta = '0,24' />
+<objeto  nombre = 'i'  tipo = 'recta'  constructor = '38'  parametros = '0.90,-0.43,-3.01'  objRef = '21,4'  visible = '0,0'  ancho = '1,1'  color = '#c0c0c0,#c0c0c0,#0'  etiqueta = '0,25' />
+<objeto  nombre = 'j'  tipo = 'recta'  constructor = '38'  parametros = '-0.23,-0.97,3.15'  objRef = '0,6'  visible = '1,0'  ancho = '1,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,26' />
+<objeto  nombre = 'k'  tipo = 'recta'  constructor = '38'  parametros = '-0.23,-0.97,3.15'  objRef = '6,4'  visible = '1,0'  ancho = '1,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,27' />
+<objeto  nombre = 'l'  tipo = 'recta'  constructor = '38'  parametros = '-0.82,-0.57,-3.27'  objRef = '0,23'  visible = '0,0'  ancho = '1,1'  color = '#ff00,#c0c0c0,#0'  etiqueta = '0,28' />
+<objeto  nombre = 'm'  tipo = 'recta'  constructor = '38'  parametros = '-0.82,-0.57,-3.27'  objRef = '23,21'  visible = '0,0'  ancho = '1,1'  color = '#ff00,#c0c0c0,#0'  etiqueta = '0,29' />
+<objeto  nombre = 'R'  tipo = 'recta'  constructor = '38'  parametros = '0.69,-0.72,-1.45'  objRef = '2,4'  visible = '1,0'  ancho = '1,1'  color = '#c0c0c0,#c0c0c0,#0'  etiqueta = '0,-1' />
+<nota texto="" />
+
+<table align='center'>  
+<tr>
+	<td width ='425px' height='410px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="425" height="400">
+			</canvas>
+		</td>
+    
+    <td width ='50px'></td>
+    
+    <td width ='375px' height="410px" valign='middle' class="celda_derecha">
+    
+	<div class="cuaderno2">	
+<p>
+Mueve el punto \(C\) hasta que coincida con el punto \(D\). <br>
+En este momento, la recta \(PC\) es tangente al círculo, así que es perpendicular al radio \(AC\), 
+luego, el triángulo \(\triangle PAC\) es un triángulo rectángulo.
+</p>
+<p>
+Por el Teorema de Pitágoras, tenemos que 
+\[
+(PC)^2  = (PA)^2 - (AC)^2
+\]
+y como en este momento, \(C = D\), y la potencia de \(P\) es \((PC)(PD)=(PC)^2\)
+</p>
+<p>
+entonces
+\[
+\text{Potencia de P } = (PA)^2 - (AC)^2
+\]
+</p>
+<p>Es decir, la potencia de un punto a un círculo es igual al cuadrado de su distancia al centro del círculo menos el radio del círculo.
+ 
+<p id="cuaderno">Este es un p&aacute;rrafo 	</p>
+
+
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

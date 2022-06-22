@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' imagen='images/fondo_06.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='tex1' x='60' y='110' ancho='410' alto='280' fijo='sí' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='gra1' x='545' y='110' ancho='365' alto='305' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='Convertura' dibujar-si='info' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='INFO' x='(970-490)/2' y='100' ancho='490' alto='400' dibujar-si='info' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='cerrarInfo' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(INFO._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='info=0' pos_mensajes='centro'">
+   <param name="C_04" value="id='a' tipo='numérico' región='interior' espacio='gra1' nombre='a' valor='1' fijo='no' visible='sí' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_05" value="id='d' tipo='numérico' región='interior' espacio='gra1' nombre='d' expresión='(100,0)' valor='1' fijo='no' visible='sí' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_06" value="id='na' tipo='numérico' región='interior' espacio='gra1' nombre='na' expresión='(0,60)' valor='6' incr='1' min='2' fijo='no' visible='sí' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_07" value="id='n' tipo='numérico' región='interior' espacio='tex1' nombre='n =' expresión='(5,5)' valor='1' incr='1' min='1' max='8' decimales='0' fijo='sí' visible='sí' acción='calcular' parámetro='aux=n-1' pos_mensajes='centro'">
+   <param name="C_08" value="id='bot1' tipo='numérico' interfaz='botón' región='interior' espacio='gra1' nombre='_._' expresión='(gra1._w-60,50,30,30)' fijo='sí' visible='sí' imagen='images/ayuda.png' acción='calcular' parámetro='bot1=(bot1=0)?1:0' dibujar-si='bot1=0' pos_mensajes='centro'">
+   <param name="C_09" value="id='bot2' tipo='numérico' interfaz='botón' región='interior' espacio='gra1' nombre='_._' expresión='(gra1._w-60,150,30,30)' fijo='sí' visible='sí' imagen='images/ayuda.png' acción='calcular' parámetro='bot2=(bot2=0)?1:0' dibujar-si='bot2=0' pos_mensajes='centro'">
+   <param name="C_10" value="id='bot3' tipo='numérico' interfaz='botón' región='interior' espacio='gra1' nombre='_._' expresión='(gra1._w-60,250,30,30)' fijo='sí' visible='sí' imagen='images/ayuda.png' acción='calcular' parámetro='bot3=(bot3=0)?1:0' dibujar-si='bot3=0' pos_mensajes='centro'">
+   <param name="C_11" value="id='cer1' tipo='numérico' interfaz='botón' región='interior' espacio='gra1' nombre='_._' expresión='(gra1._w-60,50,30,30)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='bot1=(bot1=0)?1:0' dibujar-si='bot1=1' pos_mensajes='centro'">
+   <param name="C_12" value="id='cer2' tipo='numérico' interfaz='botón' región='interior' espacio='gra1' nombre='_._' expresión='(gra1._w-60,150,30,30)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='bot2=(bot2=0)?1:0' dibujar-si='bot2=1' pos_mensajes='centro'">
+   <param name="C_13" value="id='cer3' tipo='numérico' interfaz='botón' región='interior' espacio='gra1' nombre='_._' expresión='(gra1._w-60,250,30,30)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='bot3=(bot3=0)?1:0' dibujar-si='bot3=1' pos_mensajes='centro'">
+   <param name="C_14" value="id='play' tipo='numérico' interfaz='botón' región='interior' espacio='tex1' nombre='_._' expresión='(30,50,20,20)' fijo='sí' visible='no' imagen='images/play.png' acción='animar' pos_mensajes='centro'">
+   <param name="A_01" value="id='escribir(xx)' algoritmo='sí' expresión='aux' algoritmo='sí' inicio='aux=&squot;&squot;' hacer='aux=(xx>0)?(&squot;+&squot;+xx):aux;aux=(xx<0)?(&squot;-&squot;+abs(xx)):aux'">
+   <param name="A_02" value="id='fila' vector='sí' evaluar='una-sola-vez' tamaño='8' expresión='fila[0]=comienzo;fila[1]=comienzo-alto;fila[2]=comienzo-alto*2;fila[3]=comienzo-alto*3;fila[4]=comienzo-alto*4;fila[5]=comienzo-alto*5;fila[6]=comienzo-alto*6;fila[7]=comienzo-alto*7'">
+   <param name="A_03" value="id='columna' vector='sí' evaluar='una-sola-vez' tamaño='8' expresión='columna[0]=final;columna[1]=final-ancho*1;columna[2]=final-ancho*2;columna[3]=final-ancho*3;columna[4]=final-ancho*4;columna[5]=final-ancho*5;columna[6]=final-ancho*6;columna[7]=final-ancho*7'">
+   <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=1' hacer='titulo=&squot;Sucesiones aritméticas&squot;;ancho=0.4;comienzo=2.5;alto=0.4;final=2;fila[0]=comienzo;fila[1]=comienzo-alto;fila[2]=comienzo-alto*2;fila[3]=comienzo-alto*3;fila[4]=comienzo-alto*4;fila[5]=comienzo-alto*5;fila[6]=comienzo-alto*6;fila[7]=comienzo-alto*7;columna[0]=final;columna[1]=final-ancho*1;columna[2]=final-ancho*2;columna[3]=final-ancho*3;columna[4]=final-ancho*4;columna[5]=final-ancho*5;columna[6]=final-ancho*6;columna[7]=final-ancho*7'">
+   <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='polígono' fondo='sí' color='5566aa' dibujar-si='0' coord_abs='sí' expresión='(0,0)(E1._w-1,0)(E1._w-1,E1._h-1)(0,E1._h-1)(0,0)' relleno='f05566aa'">
+   <param name="G_02" value="espacio='E1' tipo='texto' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_03" value="espacio='INFO' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(INFO._w/2,18,INFO._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_04" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_05" value="espacio='tex1' tipo='punto' color='ff8e00' dibujar-si='n>0' expresión='(fila[s],columna[0])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_06" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>1' expresión='(fila[s],columna[1])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' decimales='0' fijo='sí' tamaño='5'">
+   <param name="G_07" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>2' expresión='(fila[s],columna[2])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' decimales='0' fijo='sí' tamaño='5'">
+   <param name="G_08" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>3' expresión='(fila[s],columna[3])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' decimales='0' fijo='sí' tamaño='5'">
+   <param name="G_09" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>4' expresión='(fila[s],columna[4])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' decimales='0' fijo='sí' tamaño='5'">
+   <param name="G_10" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>5' expresión='(fila[s],columna[5])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_11" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>6' expresión='(fila[s],columna[6])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_12" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>7' expresión='(fila[s],columna[7])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_13" value="espacio='tex1' tipo='punto' color='ff8e00' dibujar-si='n>0' expresión='(fila[0],columna[s])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_14" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>1' expresión='(fila[1],columna[s])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_15" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>2' expresión='(fila[2],columna[s])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_16" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>3' expresión='(fila[3],columna[s])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_17" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>4' expresión='(fila[4],columna[s])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_18" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>5' expresión='(fila[5],columna[s])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_19" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>6' expresión='(fila[6],columna[s])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_20" value="espacio='tex1' tipo='punto' color='ff6600' dibujar-si='n>7' expresión='(fila[7],columna[s])' rastro='rojo' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_21" value="espacio='tex1' tipo='punto' color='ff8e00' expresión='(fila[n-1],columna[s])' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_22" value="espacio='tex1' tipo='punto' color='ff8e00' expresión='(fila[s],columna[n-1])' familia='s' s.intervalo='[0,aux]' s.pasos='aux' fijo='sí' tamaño='5'">
+   <param name="G_23" value="espacio='tex1' tipo='texto' expresión='[20,220]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 Analicemos con m\u225 s detalle el n\u250 mero de puntos\par que conforma cada una de las L&squot;s. En la primera hay \par 3 puntos, 5 en la segunda, 7 en la tercera, ...\f2\fs30}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_24" value="espacio='gra1' tipo='imagen' coord_abs='sí' expresión='(5,5)' archivo='imagen/ver1.png'">
+   <param name="G_25" value="espacio='gra1' tipo='texto' expresión='[50,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 Entre estos n\u250 meros que vamos encontrando\par \u191 observas alguna relaci\u243 n?\f2\fs30}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_26" value="espacio='gra1' tipo='texto' dibujar-si='bot1=1' expresión='[80,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue146;\red32\green48\blue58;}\f1\fs30\cf0 En cada L hay dos puntos m\u225 s\par que en la anterior.\cf1\f2\fs30}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_27" value="espacio='gra1' tipo='imagen' coord_abs='sí' expresión='(5,90)' archivo='imagen/ver2.png'">
+   <param name="G_28" value="espacio='gra1' tipo='texto' expresión='[50,95]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 Si se tuviera un cuadrado m\u225 s grande, \par \u191 podr\u237 as saber los puntos que constituir\u237 an \par la L n\u250 mero 39?\f2\fs30}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_29" value="espacio='gra1' tipo='texto' dibujar-si='bot2=1' expresión='[80,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue146;\red32\green48\blue58;}\f1\fs30\cf0 En la L n\u250 mero 39 hay\par 1+2*38 puntos\cf1\f2\fs30}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_30" value="espacio='E1' tipo='texto' expresión='[100,E1._h-70]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red179\green0\blue0;\red0\green188\blue0;\red32\green48\blue58;}\f1\fs30 Se denomina \b\cf0 sucesi\u243 n  aritm\u233 tica\cf1  \b0\cf2 a aquella sucesi\u243 n de n\u250 meros en la que cada t\u233 rmino se obtiene sumando \par una misma cantidad al t\u233 rmino anterior. Esa cantidad se denomina \cf0\b diferencia\cf2\b0 .\f3\fs30}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_31" value="espacio='gra1' tipo='imagen' coord_abs='sí' expresión='(5,195)' archivo='imagen/ver3.png'">
+   <param name="G_32" value="espacio='gra1' tipo='texto' expresión='[50,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30\u191 Podr\u237 as expresar los puntos que \par constituyen la L n\u250 mero 39 en funci\u243 n \par de los puntos de la segunda L?\f2\fs30}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_33" value="espacio='gra1' tipo='texto' dibujar-si='bot3=1' expresión='[80,260]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue146;\red32\green48\blue58;}\f1\fs30\cf0 (puntos de la segunda L)+37*2\cf1\f2\fs30}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_34" value="espacio='INFO' tipo='texto' fondo='sí' color='blanco' expresión='[10,7]' texto='Ejemplo de sucesión' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_35" value="espacio='INFO' tipo='texto' fondo='sí' expresión='[20,70]' texto='Consideremos ahora los números cuadrados \nrepresentados como lo hacían los pitagóricos \nmediante piedras o puntos. \n\nEn el gráfico que se mostrará al cerrar esta \nventana observa cómo se van obteniendo \nun número cuadrado a partir del anterior y \nfíjate en el número de puntos que se añade \nen cada paso (el número de puntos \nmarcado en rojo en forma de' fuente='SansSerif,PLAIN,21' fijo='sí'">
+   <param name="Animación" value="pausa='120' controles='no' auto='no' inicio='x=-1' hacer='x=x+1;n=x;aux=x-1' mientras='x<8'">
+</ajs>
+
+</body>
+</html>

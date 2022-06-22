@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='Covertura' dibujar-si='info' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='INFO' x='(970-490)/2' y='100' ancho='490' alto='400' dibujar-si='info' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='cerrarInfo' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(INFO._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='info=0'">
+   <param name="C_03" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Continuar' expresión='(810,470,100,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='otro=otro+1' dibujar-si='(otro<5)&(info=0)'">
+   <param name="C_04" value="id='n3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Atrás' expresión='(545,470,100,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='otro=otro-1' dibujar-si='otro>0'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=1' hacer='titulo=&squot;Diagrama de cuerpo libre&squot;;otro=0'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='INFO' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(INFO._w/2,18,INFO._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_03" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' dibujar-si='(otro=0)&(info=0)' expresión='(-5,-4.55,.7,.7)' archivo='images/cl1.png'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='(otro=0)&(info=0)' expresión='[545,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 La armadura de la figura, est\u225  soportada\par por dos apoyos. El primero de ellos es\par una articulaci\u243 n que restringe el\par movimiento en las direcciones \b\cf0 x\b0\cf1  y \b\cf0 y\b0\cf1 ,\par el segundo es un rodillo que impide el\par desplazamiento vertical. \par \par En el diagrama de cuerpo libre, se\par eliminan los apoyos sustituy\u233 dolos por\par las reacciones.\f3\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='otro=1' expresión='(-4.5,-.5,.65,.65)' archivo='images/cl2.png'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='otro=1' expresión='[545,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 Un apoyo simple, se idealiza al afirmar\par que no hay restricci\u243 n al movimiento\par horizontal, pues existe una fuerza de\par rozamiento o de fricci\u243 n que se opone\par al movimiento; sin embargo, por el tipo\par de apoyo (rodillo, por ejemplo), se\par puede aceptar esta premisa.\par \par En la figura, recordamos este tipo de\par fuerzas en el cl\u225 sico bloque sobre\par una superficie inclinada. Observa las\par fuerzas en el diagrama de cuerpo libre.\par \par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='imagen' dibujar-si='otro=2' expresión='(-4.5,-.5,.65,.65)' archivo='images/cl3.png'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='otro=2' expresión='[545,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 En el video de motivaci\u243 n, dec\u237 amos\par que un apoyo tipo empotramiento,\par tiene restricciones al desplazamiento\par horizontal y vertical, e igualmente al\par giro; es decir, existen tres reacciones.\par \par Sin embargo, en ausencia de fuerzas\par horizontales actuando sobre la \par estructura, podemos omitir la\par reacci\u243 n horizontal en el diagrama de\par cuerpo libre (observa la figura).\par \par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='otro=3' expresión='(-4.5,-.5,.65,.65)' archivo='images/cl4.png'">
+   <param name="G_11" value="espacio='E1' tipo='texto' dibujar-si='otro=3' expresión='[545,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 En la figura, puedes observar una\par armadura con una apoyo tipo\par articulaci\u243 n y otro de rodillo.\par \par En este caso, al existir una fuerza\par horizontal de 800 lb, es necesario que\par incluyamos la reacci\u243 n horizontal en el\par diagrama de cuerpo libre.\par \par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='otro=4' expresión='(-4.5,-.5,1,1)' archivo='images/cl5.png'">
+   <param name="G_13" value="espacio='E1' tipo='texto' dibujar-si='otro=4' expresión='[545,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 Con el tiempo, y despu\u233 s de mucha\par pr\u225 ctica, puedes omitir el diagrama de\par cuerpo libre, dibujando las reacciones\par directamente sobre la estructura, tal\par como se observa en la figura.\par \par \par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_14" value="espacio='E1' tipo='imagen' dibujar-si='otro=5' expresión='(-4.5,-.5,.75,.75)' archivo='images/cl6.png'">
+   <param name="G_15" value="espacio='E1' tipo='texto' dibujar-si='otro=5' expresión='[545,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 En la figura, resumimos los apoyos y\par diagramas de cuerpo libre, que usaremos\par en esta unidad.\par \par Algunos t\u233 rminos en ingl\u233 s, tendr\u225 n la\par siguiente traducci\u243 n:\par \par Beam: viga\par Hinged support: apoyo articulado\par Roller support: apoyo simple o de rodillo\par Fixed support: apoyo fijo o empotrado\par Roller tangent: balanc\u237 n\par \par \par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_16" value="espacio='INFO' tipo='texto' fondo='sí' color='blanco' dibujar-si='otro<5' expresión='[10,5]' texto='Introducción' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_17" value="espacio='INFO' tipo='texto' fondo='sí' dibujar-si='otro<5' expresión='[10,50]' texto='En  esta escena, reconocerás los principales\napoyos o soportes utilizados en el análisis de\nestructuras. Por otra parte, se muestran algunas\nestructuras apoyadas y los diagramas de cuerpo \nlibre de las mismas.' fuente='SansSerif,PLAIN,21' fijo='sí'">
+   <param name="G_18" value="espacio='INFO' tipo='imagen' fondo='sí' expresión='(0,-2,.65,.65)' archivo='images/fondo_07.jpg'">
+</ajs>
+
+</body>
+</html>

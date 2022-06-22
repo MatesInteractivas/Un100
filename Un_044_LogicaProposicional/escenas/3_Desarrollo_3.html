@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='1' O.x='-485' O.y='-275' imagen='images/fondo_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='55' y='100' ancho='425' alto='400' fijo='sí' escala='200' O.y='-90' despl_imagen='arr-izq' fondo='d5f3ff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='goTo4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,4);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='p' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='on' expresión='(180,35,30,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn030.png' acción='calcular' parámetro='p=1' dibujar-si='p=0'">
+   <param name="C_04" value="id='p2' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='off' expresión='(180,35,30,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn030.png' acción='calcular' parámetro='p=0' dibujar-si='p=1'">
+   <param name="C_05" value="id='q' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='on' expresión='(180,130,30,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn030.png' acción='calcular' parámetro='q=1' dibujar-si='q=0'">
+   <param name="C_06" value="id='q2' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='off' expresión='(180,130,30,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn030.png' acción='calcular' parámetro='q=0' dibujar-si='q=1'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;La disyunción exclusiva&squot;' hacer='bw=126;bh=50;bx=539;by=456;info=1'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='estado=((p=1)&(q=0)| (p=0)&(q=1))?1:0;'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' expresión='[560,125]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs40 El operador l\u243 gico disyunci\u243 n\par exclusiva, llamado tambi\u233 n &quote;o\par exclusivo&quote;, es un tipo de\par disyunci\u243 n l\u243 gica de dos\par proposiciones que es verdad\par si s\u243 lo una de las proposiciones\par es verdadera, pero no ambas.\par \par La disyunci\u243 n exclusiva se s\u237 mboliza \par con los s\u237 mbolos XOR, EOR o \u8853 . \par \par El circuito de la izquierda simula el\par resultado l\u243 gico de la disyunci\u243 n\par exclusiva. Explora la tabla activando \par y desactivando los dos interruptores. }' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_03" value="espacio='E2' tipo='polígono' dibujar-si='(p=1)&(q=1)&(estado=0)' expresión='(0.09,-0.69)(0.68,-0.69)(0.68,-0.8)(0.09,-0.8)' relleno='grisClaro' ancho='0'">
+   <param name="G_04" value="espacio='E2' tipo='polígono' dibujar-si='(p=1)&(q=0)&(estado=0)' expresión='(0.09,-0.8)(0.68,-0.8)(0.68,-0.91)(0.09,-0.91)' relleno='grisClaro' ancho='0'">
+   <param name="G_05" value="espacio='E2' tipo='polígono' dibujar-si='(p=0)&(q=1)&(estado=0)' expresión='(0.09,-0.91)(0.68,-0.91)(0.68,-1.02)(0.09,-1.02)' relleno='grisClaro' ancho='0'">
+   <param name="G_06" value="espacio='E2' tipo='polígono' dibujar-si='(p=0)&(q=0)&(estado=0)' expresión='(0.09,-1.14)(0.68,-1.14)(0.68,-1.03)(0.09,-1.03)' relleno='grisClaro' ancho='0'">
+   <param name="G_07" value="espacio='E2' tipo='ecuación' color='negro' dibujar-si='raro' expresión='y=f(x)' ancho='2'">
+   <param name="G_08" value="espacio='E2' tipo='polígono' dibujar-si='(p=1)&(q=1)&(estado=1)' expresión='(0.09,-0.69)(0.68,-0.69)(0.68,-0.8)(0.09,-0.8)' relleno='ffff80' ancho='0'">
+   <param name="G_09" value="espacio='E2' tipo='polígono' dibujar-si='(p=1)&(q=0)&(estado=1)' expresión='(0.09,-0.8)(0.68,-0.8)(0.68,-0.91)(0.09,-0.91)' relleno='ffff80' ancho='0'">
+   <param name="G_10" value="espacio='E2' tipo='polígono' dibujar-si='(p=0)&(q=1)&(estado=1)' expresión='(0.09,-0.91)(0.68,-0.91)(0.68,-1.02)(0.09,-1.02)' relleno='ffff80' ancho='0'">
+   <param name="G_11" value="espacio='E2' tipo='polígono' dibujar-si='(p=0)&(q=0)&(estado=1)' expresión='(0.09,-1.14)(0.68,-1.14)(0.68,-1.03)(0.09,-1.03)' relleno='ffff80' ancho='0'">
+   <param name="G_12" value="espacio='E2' tipo='imagen' dibujar-si='(p=1)&(q=1)' expresión='(-1,0.6)' archivo='images/disexcvv.png'">
+   <param name="G_13" value="espacio='E2' tipo='imagen' dibujar-si='(p=1)&(q=0)' expresión='(-1,0.6)' archivo='images/disexcvf.png'">
+   <param name="G_14" value="espacio='E2' tipo='imagen' dibujar-si='(p=0)&(q=1)' expresión='(-1,0.6)' archivo='images/disexcfv.png'">
+   <param name="G_15" value="espacio='E2' tipo='imagen' dibujar-si='(p=0)&(q=0)' expresión='(-1,0.6)' archivo='images/disexcff.png'">
+   <param name="G_16" value="espacio='E2' tipo='imagen' dibujar-si='estado=0' expresión='(0.7,-0.225)' archivo='images/apagado.png'">
+   <param name="G_17" value="espacio='E2' tipo='imagen' dibujar-si='estado=1' expresión='(0.7,-0.225)' archivo='images/prendido.png'">
+   <param name="G_18" value="espacio='E2' tipo='texto' expresión='[150,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42\b p\f2\fs30\b0}' fuente='SansSerif,BOLD,21' fijo='sí'">
+   <param name="G_19" value="espacio='E2' tipo='texto' expresión='[150,125]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs42\b q\f2\fs30\b0}' fuente='SansSerif,BOLD,21' fijo='sí'">
+</ajs>
+
+</body>
+</html>

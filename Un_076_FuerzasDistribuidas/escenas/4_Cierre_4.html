@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_inicio.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='55' y='115' ancho='440' alto='390' fijo='sí' O.x='-40%' O.y='30%' despl_imagen='arr-izq' fondo='dce9f8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E3' x='55' y='115' ancho='440' alto='390' dibujar-si='ver' fijo='sí' O.x='-40%' O.y='30%' despl_imagen='arr-izq' fondo='30dce9f8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_02" value="id='btn' tipo='gráfico' espacio='E2' expresión='(5,-.1)' constricción='y=-.1' imagen='images/botoncito.png' dibujar-si='pp'">
+   <param name="C_03" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='Verificar' expresión='(280,350,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='ver=1' dibujar-si='(ff!=&squot;&squot;)&(aa!=&squot;&squot;)'">
+   <param name="C_04" value="id='n5' tipo='numérico' interfaz='botón' región='interior' espacio='E3' nombre='Otro ejercicio' expresión='(280,350,150,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn150.png' acción='inicio' parámetro='ver=0'">
+   <param name="C_05" value="id='n6' tipo='numérico' interfaz='botón' región='interior' espacio='E3' nombre='Atrás' expresión='(10,350,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='ver=0'">
+   <param name="C_06" value="id='ff' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(720,180,65,30)' valor='&squot;&squot;' fijo='sí' visible='sí' dibujar-si='ver=0' activo-si='ff=&squot;&squot;'">
+   <param name="C_07" value="id='aa' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(720,245,65,30)' valor='&squot;&squot;' fijo='sí' visible='sí' dibujar-si='ver=0' activo-si='aa=&squot;&squot;'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Tercer ejercicio de cierre&squot;' hacer='aaa=ent(rnd*5)+3;q1=ent(300*rnd)+200;q2=ent(200*rnd)+100;q2=(q2>=q1)?q1-100:q2;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='btn.x=aaa;p1=q1*btn.x/2;p2=q2*btn.x/2;p=p1+p2;x1=btn.x/3;x2=btn.x-btn.x/3;correcto1=(ff=p);xR=(p1*x2+p2*x1)/p;correcto2=(aa-ent(xR*100+.5)/100<.05);correcto=correcto1+correcto2;'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E2' tipo='imagen' expresión='(-0.65,2)' archivo='images/apoyo1.png'">
+   <param name="G_03" value="espacio='E2' tipo='imagen' expresión='(6.35,2)' archivo='images/apoyo2.png'">
+   <param name="G_04" value="espacio='E2' tipo='imagen' expresión='(-.15,2.6)' archivo='images/viga.png'">
+   <param name="G_05" value="espacio='E2' tipo='flecha' color='rojo' expresión='(s,2.55+s/4+q1/400)(s,2.55)' familia='s' s.intervalo='[0,btn.x]' s.pasos='2*btn.x' fijo='sí' tamaño='1' ancho='0' ancho='0' punta='2'">
+   <param name="G_06" value="espacio='E2' tipo='segmento' color='rojo' expresión='(0,2.57+q1/400)(s,2.57+s/4+q1/400)' familia='s' s.intervalo='[0,btn.x]' s.pasos='btn.x-1' fijo='sí' tamaño='0'">
+   <param name="G_07" value="espacio='E2' tipo='segmento' dibujar-si='pp' expresión='(0,0)(7,0)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_08" value="espacio='E2' tipo='texto' dibujar-si='ver=0' expresión='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 Viga de longitud L = 7m\f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_09" value="espacio='E2' tipo='segmento' expresión='(0,.5)(btn.x,.5)' fijo='sí'">
+   <param name="G_10" value="espacio='E2' tipo='segmento' expresión='(0,0)(0,1)' fijo='sí' tamaño='0'">
+   <param name="G_11" value="espacio='E2' tipo='segmento' expresión='(btn.x,0)(btn.x,1)' fijo='sí' tamaño='0'">
+   <param name="G_12" value="espacio='E2' tipo='punto' dibujar-si='(ver=0)' expresión='(btn.x/2-.8,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36{\*\mjaformula{\expr btn.x\decimals 1\fixed1}m}}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_13" value="espacio='E2' tipo='punto' dibujar-si='ver=0' expresión='(btn.x-.5,2.8+q1/400+btn.x/4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36{\*\mjaformula{\expr q1\decimals 0\fixed1}}N/m\f0\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_14" value="espacio='E3' tipo='polígono' color='aa20303a' expresión='(0,2.55)(0,2.55+q1/400)(btn.x,2.55)(0,2.55)' relleno='a1ff0000'">
+   <param name="G_15" value="espacio='E3' tipo='polígono' color='aa20303a' expresión='(0,2.55+q1/400)(btn.x,2.55+btn.x/4+q1/400)(btn.x,2.55)(0,2.55+q1/400)' relleno='8b00ff00'">
+   <param name="G_16" value="espacio='E3' tipo='imagen' expresión='(-.15,2.6)' archivo='images/viga.png'">
+   <param name="G_17" value="espacio='E3' tipo='flecha' expresión='(xR,3.05+btn.x/3+q1/400)(xR,2.55)' familia='s' s.intervalo='[0,btn.x]' s.pasos='2*btn.x' fijo='sí' tamaño='1' ancho='1' punta='4' flecha='azul'">
+   <param name="G_18" value="espacio='E3' tipo='punto' expresión='(xR-.5,3.1+btn.x/3+q1/400)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs36\b\cf0{\*\mjaformula{\expr p\decimals 1\fixed1}N}\cf1\f0\fs30\b0}' fuente='SansSerif,BOLD,18' fijo='sí' tamaño='0'">
+   <param name="G_19" value="espacio='E3' tipo='segmento' expresión='(0,.5)(xR,.5)' fijo='sí'">
+   <param name="G_20" value="espacio='E3' tipo='segmento' expresión='(0,0.3)(0,.7)' fijo='sí' tamaño='0'">
+   <param name="G_21" value="espacio='E1' tipo='texto' dibujar-si='ver=0' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 En la viga AB se ha aplicado una \par carga en forma trapezoidal. Calcula:\par \par Fuerza resultante:                    N \par \par \par Posici\u243 n desde A:                    m\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_22" value="espacio='E2' tipo='punto' dibujar-si='ver=0' expresión='(-.6,2.8+q1/400)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36{\*\mjaformula{\expr q2\decimals 0\fixed1}}N/m\f0\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_23" value="espacio='E2' tipo='punto' expresión='(-0.5,1.8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs44\b A}' fuente='SansSerif,BOLD,22' fijo='sí' tamaño='0'">
+   <param name="G_24" value="espacio='E1' tipo='texto' dibujar-si='(ver=1)&(correcto=0)' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;\red0\green0\blue255;}\cf0\f1\fs36\u161 Ninguna respuesta correcta!\cf1\par \par La magnitud de la fuerza resultante\par es igual al \u225 rea del trapecio o, de otra\par forma, el \u225 rea de los dos tri\u225 ngulos,\par que hemos coloreado.\par \par \cf2{\*\mjaformula F{\subix R}={\fraction{\num ({\expr q1\decimals 1\fixed1}+{\expr q2\decimals 1\fixed1})*{\expr btn.x\decimals 0\fixed1}}{\den 2}}={\expr p\decimals 1\fixed1}N}\cf1\par \par Igualando los momentos de la fuerza\par resultante con los de las fuerzas de\par los tri\u225 ngulos, con respecto al punto A,\par obtenemos:\par \par \cf2{\*\mjaformula x={\fraction{\num{\expr p1\decimals 1\fixed1}*{\expr x2\decimals 1\fixed1}+{\expr p2\decimals 1\fixed1}*{\expr x1\decimals 1\fixed1}}{\den{\expr p\decimals 1\fixed1}}}={\expr xR\decimals 2\fixed1}m}\fs40\b\cf1\par \f3\fs30\b0}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_25" value="espacio='E2' tipo='punto' expresión='(7.2,1.8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs44\b B}' fuente='SansSerif,BOLD,22' fijo='sí' tamaño='0'">
+   <param name="G_26" value="espacio='E3' tipo='segmento' expresión='(xR,0.3)(xR,.7)' fijo='sí' tamaño='0'">
+   <param name="G_27" value="espacio='E3' tipo='punto' expresión='(xR/2-.5,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs36\cf0{\*\mjaformula{\expr xR\decimals 1\fixed1}m}\cf1}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_28" value="espacio='E3' tipo='flecha' color='rojo' expresión='(x1,2.55+btn.x/4+q1/400)(x1,2.55)' familia='s' s.intervalo='[0,btn.x]' s.pasos='2*btn.x' fijo='sí' tamaño='1' ancho='1' punta='4' flecha='rojo'">
+   <param name="G_29" value="espacio='E3' tipo='punto' expresión='(x1-1.1,2.6+btn.x/4+q1/400)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f1\fs36\b\cf0{\*\mjaformula{\expr p2\decimals 1\fixed1}N}\cf1\f0\fs30\b0}' fuente='SansSerif,BOLD,18' fijo='sí' tamaño='0'">
+   <param name="G_30" value="espacio='E3' tipo='flecha' color='009900' expresión='(x2,2.55+btn.x/3+q1/400)(x2,2.55)' familia='s' s.intervalo='[0,btn.x]' s.pasos='2*btn.x' fijo='sí' tamaño='1' ancho='1' punta='4' flecha='009900'">
+   <param name="G_31" value="espacio='E3' tipo='punto' expresión='(x1+1,2.6+btn.x/3+q1/400)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green153\blue0;\red32\green48\blue58;}\f1\fs36\b\cf0{\*\mjaformula{\expr p1\decimals 1\fixed1}N}\cf1\f0\fs30\b0}' fuente='SansSerif,BOLD,18' fijo='sí' tamaño='0'">
+   <param name="G_32" value="espacio='E3' tipo='segmento' expresión='(0,1.8)(x2,1.8)' fijo='sí'">
+   <param name="G_33" value="espacio='E3' tipo='punto' expresión='(x2/2-.5,1.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green153\blue0;\red32\green48\blue58;}\f1\fs36\cf0{\*\mjaformula{\expr x2\decimals 1\fixed1}m}\cf1}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_34" value="espacio='E3' tipo='segmento' expresión='(0,1.1)(x1,1.1)' fijo='sí'">
+   <param name="G_35" value="espacio='E3' tipo='punto' expresión='(x1/2-.5,.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f1\fs36\cf0{\*\mjaformula{\expr x1\decimals 1\fixed1}m}\cf1}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_36" value="espacio='E1' tipo='texto' dibujar-si='(ver=1)&(correcto=1)' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green142\blue0;\red32\green48\blue58;\red0\green0\blue255;}\cf0\f1\fs36\u161 Una respuesta correcta!\cf1\par \par La magnitud de la fuerza resultante\par es igual al \u225 rea del trapecio o, de\par otra forma, el \u225 rea de los dos\par tri\u225 ngulos, que hemos coloreado.\par \par \cf2{\*\mjaformula F{\subix R}={\fraction{\num ({\expr q1\decimals 1\fixed1}+{\expr q2\decimals 1\fixed1})*{\expr btn.x\decimals 0\fixed1}}{\den 2}}={\expr p\decimals 1\fixed1}N}\cf1\par \par Igualando los momentos de la fuerza\par resultante con los de las fuerzas de\par los tri\u225 ngulos, con respecto al punto\par A, obtenemos:\par \par \cf2{\*\mjaformula x={\fraction{\num{\expr p1\decimals 1\fixed1}*{\expr x2\decimals 1\fixed1}+{\expr p2\decimals 1\fixed1}*{\expr x1\decimals 1\fixed1}}{\den{\expr p\decimals 1\fixed1}}}={\expr xR\decimals 2\fixed1}m}\fs40\b\cf1\par \f3\fs30\b0}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_37" value="espacio='E1' tipo='texto' dibujar-si='(ver=1)&(correcto=2)' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green159\blue0;\red32\green48\blue58;\red0\green0\blue255;}\cf0\f1\fs36\u161 Excelente!\cf1\par \par La magnitud de la fuerza resultante\par es igual al \u225 rea del trapecio o, de\par otra forma, el \u225 rea de los dos\par tri\u225 ngulos, que hemos coloreado.\par \par \cf2{\*\mjaformula F{\subix R}={\fraction{\num ({\expr q1\decimals 1\fixed1}+{\expr q2\decimals 1\fixed1})*{\expr btn.x\decimals 0\fixed1}}{\den 2}}={\expr p\decimals 1\fixed1}N}\cf1\par \par Igualando los momentos de la fuerza\par resultante con los de las fuerzas de\par los tri\u225 ngulos, con respecto al punto\par A, obtenemos:\par \par \cf2{\*\mjaformula x={\fraction{\num{\expr p1\decimals 1\fixed1}*{\expr x2\decimals 1\fixed1}+{\expr p2\decimals 1\fixed1}*{\expr x1\decimals 1\fixed1}}{\den{\expr p\decimals 1\fixed1}}}={\expr xR\decimals 2\fixed1}m}\cf1\par \cf0\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+</ajs>
+
+</body>
+</html>

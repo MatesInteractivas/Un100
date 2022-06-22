@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg3068"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="calculadora.svg"
+   inkscape:export-filename="C:\Users\mandus\Documents\mandus\lab_roja\UNADM\Descartes\UNIDADES\_Un_091_Encargo_EcuacionDeOnda1D\_Un_091_EcuacionDeOnda1D\escenas\calculadora\calculadora.png"
+   inkscape:export-xdpi="180"
+   inkscape:export-ydpi="180">
+  <defs
+     id="defs3070" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.7433145"
+     inkscape:cx="297.14444"
+     inkscape:cy="877.19362"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     showborder="false"
+     inkscape:showpageshadow="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false">
+    <sodipodi:guide
+       orientation="1,0"
+       position="499.47958,902.88244"
+       id="guide4113" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3073">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="rect4111"
+       width="476.20633"
+       height="236.31291"
+       x="23.273249"
+       y="38.484257"
+       inkscape:export-xdpi="180"
+       inkscape:export-ydpi="180" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Info"
+     style="display:inline">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3088"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       transform="matrix(0.43770465,0,0,0.43770465,57.249396,70.131654)"><flowRegion
+         id="flowRegion3090"><rect
+           id="rect3092"
+           width="799.42828"
+           height="129.0031"
+           x="58.637772"
+           y="57.47467"
+           style="fill:#ffffff" /></flowRegion><flowPara
+         id="flowPara3094"
+         style="font-size:24px;fill:#ffffff">(Energía de la partícula)            <flowSpan
+   style="fill:#00ff00"
+   id="flowSpan4115">E</flowSpan> =                 x10^                  joules</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3096"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       transform="matrix(1.0209958,0,0,1.0209958,-193.12524,-11.158939)"><flowRegion
+         id="flowRegion3098"><rect
+           id="rect3100"
+           width="660.65222"
+           height="258.98349"
+           x="235.52838"
+           y="56.497372"
+           style="fill:#ffffff" /></flowRegion><flowPara
+         id="flowPara3102"
+         style="font-size:16px;fill:#ffffff">Calcular la probabilidad de que se produzca el efecto túnel</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3088-8"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       transform="matrix(0.43770465,0,0,0.43770465,55.249396,95.432501)"><flowRegion
+         id="flowRegion3090-3"><rect
+           id="rect3092-9"
+           width="799.42828"
+           height="129.0031"
+           x="58.637772"
+           y="57.47467"
+           style="fill:#ffffff" /></flowRegion><flowPara
+         id="flowPara3094-2"
+         style="font-size:24px;fill:#ffffff">(Mas de la partícula)                  <flowSpan
+   style="fill:#00ff00"
+   id="flowSpan4117">m</flowSpan> =                 x10^                  kg</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3088-8-1"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       transform="matrix(0.43770465,0,0,0.43770465,38.102156,120.73333)"><flowRegion
+         id="flowRegion3090-3-0"><rect
+           id="rect3092-9-4"
+           width="799.42828"
+           height="129.0031"
+           x="58.637772"
+           y="57.47467"
+           style="fill:#ffffff" /></flowRegion><flowPara
+         id="flowPara3094-2-9"
+         style="font-size:24px;fill:#ffffff">(approaches  de altura del muro)   <flowSpan
+   style="fill:#00ff00"
+   id="flowSpan4119">Uo</flowSpan> =                 x10^                  joules</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3088-8-1-4"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       transform="matrix(0.43770465,0,0,0.43770465,55.249396,146.03421)"><flowRegion
+         id="flowRegion3090-3-0-3"><rect
+           id="rect3092-9-4-5"
+           width="799.42828"
+           height="129.0031"
+           x="58.637772"
+           y="57.47467"
+           style="fill:#ffffff" /></flowRegion><flowPara
+         id="flowPara3094-2-9-0"
+         style="font-size:24px;fill:#ffffff">(Espesor del muro)                     <flowSpan
+   style="fill:#00ff00"
+   id="flowSpan4121">d</flowSpan> =                 x10^                  m</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3088-8-7"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       transform="matrix(0.43770465,0,0,0.43770465,156.89422,183.3541)"
+       inkscape:export-filename="C:\Users\mandus\Documents\mandus\lab_roja\UNADM\Descartes\UNIDADES\_Un_091_Encargo_EcuacionDeOnda1D\_Un_091_EcuacionDeOnda1D\escenas\calculadora\flowRoot3088-8-1-4-9.png"
+       inkscape:export-xdpi="180"
+       inkscape:export-ydpi="180"><flowRegion
+         id="flowRegion3090-3-3"><rect
+           id="rect3092-9-1"
+           width="799.42828"
+           height="129.0031"
+           x="58.637772"
+           y="57.47467"
+           style="fill:#ffffff" /></flowRegion><flowPara
+         id="flowPara3094-2-1"
+         style="font-size:24px;fill:#ffffff">(Factor de atenuación)            <flowSpan
+   style="fill:#0000ff"
+   id="flowSpan4123">α</flowSpan> =                 x10^                 1/m</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3088-8-1-4-9"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       transform="matrix(0.43770465,0,0,0.43770465,60.526066,208.12757)"
+       inkscape:export-xdpi="180"
+       inkscape:export-ydpi="180"><flowRegion
+         id="flowRegion3090-3-0-3-9"><rect
+           id="rect3092-9-4-5-6"
+           width="918.68542"
+           height="122.45051"
+           x="58.637772"
+           y="57.47467"
+           style="fill:#ffffff" /></flowRegion><flowPara
+         id="flowPara3094-2-9-0-9"
+         style="font-size:24px;fill:#ffffff">(Probabilidad de producirse el efecto túnel)            <flowSpan
+   style="fill:#0000ff"
+   id="flowSpan4125">Ψ</flowSpan> =                 x10^               </flowPara></flowRoot>  </g>
+</svg>

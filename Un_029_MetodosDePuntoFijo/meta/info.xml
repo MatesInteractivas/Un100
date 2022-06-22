@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_029_MetodosDePuntoFijo" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Física" 
+	plataforma="HTML 5" 	ver="Beta"
+	>
+	<titulo><![CDATA[
+		M&eacute;todos de punto fijo 
+	]]></titulo>
+	<Descripcion><![CDATA[
+	Se introducen los m&eacute;todos iterativos para la resoluci&oacute;n de ecuaciones no lineales y se analiza c&oacute;mo pueden construirse.	Asimismo, se muestran ejemplos de convergencia mon&oacute;tona, convergencia oscilante, divergencia mon&oacute;tona y divergencia oscilante.	Por &uacute;ltimo, se presenta la generalizaci&oacute;n de la construcci&oacute;n de estos m&eacute;todos de punto fijo, y se comprueba que el de Newton es un caso particular de los mismos.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Geometr&iacute;a</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<script  SRC="lib/geolab.js"  type="text/javascript" ></script> 
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<style>
+.celda_izquierda{
+background-color:#d5f3ff;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white; 
+}
+.celda_derecha{
+background-color:#fbfadc;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white;
+}
+table{margin-top:25px}
+.cuaderno2{
+overflow:auto;
+height:390px;
+display:block;
+margin:0;
+}
+</style>
+</head>
+ <body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '0'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '0'  parametros = '-7.45,-0.70,-0.00'  visible = '1'  ancho = '2'  color = '#0,#ff'  etiqueta = '2,0' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '5.29,-3.72,-0.00'  visible = '1'  ancho = '2'  color = '#0,#ff'  etiqueta = '2,1' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '1.20,3.99,-0.00'  visible = '1'  ancho = '2'  color = '#0,#ff'  etiqueta = '2,2' />
+<objeto  nombre = 'a'  tipo = 'recta'  constructor = '38'  parametros = '0.88,0.47,-2.93'  objRef = '1,2'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,3' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '38'  parametros = '-0.48,0.88,-2.93'  objRef = '2,0'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,4' />
+<objeto  nombre = 'c'  tipo = 'recta'  constructor = '38'  parametros = '-0.23,-0.97,-2.40'  objRef = '0,1'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,5' />
+<objeto  nombre = 'O'  tipo = 'punto'  constructor = '0'  parametros = '-0.64,1.11,0.00'  visible = '1'  ancho = '2'  color = '#0,#ff'  etiqueta = '2,6' />
+<objeto  nombre = 'l'  tipo = 'recta'  constructor = '31'  parametros = '0.26,-0.97,1.24'  objRef = '0,6'  visible = '1'  ancho = '1'  color = '#8000,#c0c0c0'  etiqueta = '0,-1' />
+<objeto  nombre = 'm'  tipo = 'recta'  constructor = '31'  parametros = '0.63,0.78,-0.46'  objRef = '1,6'  visible = '1'  ancho = '1'  color = '#ff,#c0c0c0'  etiqueta = '0,-1' />
+<objeto  nombre = 'n'  tipo = 'recta'  constructor = '31'  parametros = '-0.84,0.54,-1.14'  objRef = '2,6'  visible = '1'  ancho = '1'  color = '#ff,#c0c0c0'  etiqueta = '0,-1' />
+<objeto  nombre = 'L'  tipo = 'punto'  constructor = '1'  parametros = '2.31,1.89,-0.33'  objRef = '3,7'  visible = '1'  ancho = '2'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'M'  tipo = 'punto'  constructor = '1'  parametros = '-2.02,2.24,-0.33'  objRef = '4,8'  visible = '1'  ancho = '2'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'N'  tipo = 'punto'  constructor = '1'  parametros = '-2.54,-1.86,-0.33'  objRef = '9,5'  visible = '1'  ancho = '2'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'rn'  tipo = 'escalar'  constructor = '86'  parametros = '0.63,-0.21'  objRef = '12,0,1'  etiqueta = '0,-1' />
+<objeto  nombre = 'rl'  tipo = 'escalar'  constructor = '86'  parametros = '2.68,-0.70'  objRef = '10,1,2'  etiqueta = '0,-1' />
+<objeto  nombre = 'rm'  tipo = 'escalar'  constructor = '86'  parametros = '0.59,-0.70'  objRef = '11,2,0'  etiqueta = '0,-1' />
+<objeto  nombre = 'x'  tipo = 'escalar'  constructor = '154'  parametros = '1.00,-1.00'  objRef = '13,14,15'  formulas = 'rl*rn*rm ' etiqueta = '0,-1' />
+
+
+<nota  texto ="" />
+
+<table align='center'>  
+<tr>
+	<td width ='425px' height='410px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="425" height="400">
+			</canvas>
+		</td>
+    
+    <td width ='50px'></td>
+    
+    <td width ='375px' height="410px" valign='middle' class="celda_derecha">
+    
+	<div class="cuaderno2">
+<p>Suponemos ahora que 
+\[
+\frac{AN}{NB}\frac{BL}{LC}\frac{CM}{MA}=1
+\]
+y queremos ver que las tres rectas son concurrentes.</p>
+
+<p>Llamamos \(O\) a la intersección de \(BM\) y \(CN\)<br>
+Si la recta \(AO\) corta al lado \(BC\) en un punto \(L'\), por lo que ya demostramos del teorema, 
+\[
+\frac{AN}{NB}\frac{BL'}{L'C}\frac{CM}{MA}=1
+\]
+Así que 
+\[
+\frac{BL}{LC}=\frac{BL'}{L'C}
+\]
+entonces \(L\) coincide con \(L'\), es decir, \(AL\) también pasa por \(O\) como se quería demostrar.</p>
+
+
+
+
+<p id="cuaderno">This is a paragraph.</p></div>
+
+	
+	 	
+</td>
+</tr>
+</table>
+           
+</td>
+</tr>
+</table>
+
+</body>
+</html>

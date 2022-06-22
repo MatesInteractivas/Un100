@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' imagen='images/fondo_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='Covertura' dibujar-si='!infor||!histo' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='HISTO' x='(970-790)/2' y='50' ancho='790' alto='450' dibujar-si='histo=0' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='INFO' x='75' y='330' ancho='390' alto='170' dibujar-si='infor=0' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='cerrarHisto' tipo='numérico' interfaz='botón' región='interior' espacio='HISTO' expresión='(HISTO._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='histo=1' pos_mensajes='centro'">
+   <param name="C_04" value="id='cerrarInfo' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(INFO._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='infor=1' pos_mensajes='centro'">
+   <param name="C_05" value="id='verb' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Ver' expresión='(785,315,50,30)' fijo='sí' visible='sí' color='blanco' color-int='ff404040' fuente puntos='18' imagen='images/btn050.png' acción='calcular' parámetro='infor=0\npro=2' pos_mensajes='centro'">
+   <param name="C_06" value="id='verc' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Ver' expresión='(785,470,50,30)' fijo='sí' visible='sí' color='blanco' color-int='ff404040' negrita='sí' fuente puntos='18' imagen='images/btn050.png' acción='calcular' parámetro='infor=0\npro=3' pos_mensajes='centro'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Definición de número complejo&squot;' hacer='histo=0;infor=1'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='HISTO' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(HISTO._w/2,18,HISTO._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_03" value="espacio='HISTO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(HISTO._w-1,0)(HISTO._w-1,HISTO._h-1)(0,HISTO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_04" value="espacio='E1' tipo='texto' expresión='[80,140]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs30 Consideramos el plano cartesiano, es decir, el conjunto de \par puntos (a, b) con a y b n\u250 meros reales. En este conjunto se \par definen las operaciones:\f0\fs30}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='texto' expresión='[140,220]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red205\green0\blue0;\red32\green48\blue58;}\f1\fs30\b\cf0 Suma\b0\cf1\par        (a, b)+(c, d)=(a+b,c+d)\par \par \b\cf0 Producto\b0\cf1\par        (a,b)*(c,d)=(ac-bd,ad+bc)\f0\fs30}' fuente='SansSerif,BOLD,15' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(550,130)' archivo='imagen/ver1.png'">
+   <param name="G_07" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(600,130)' archivo='imagen/pro1.png'">
+   <param name="G_08" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(550,255)' archivo='imagen/ver2.png'">
+   <param name="G_09" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(600,255)' archivo='imagen/pro2.png'">
+   <param name="G_10" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(550,360)' archivo='imagen/ver3.png'">
+   <param name="G_11" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(600,360)' archivo='imagen/pro3.png'">
+   <param name="G_12" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(100,330)' archivo='imagen/comple.png'">
+   <param name="G_13" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(100,440)' archivo='imagen/imagi.png'">
+   <param name="G_14" value="espacio='INFO' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(INFO._w/2,18,INFO._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_15" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_16" value="espacio='HISTO' tipo='texto' color='blanco' expresión='[10,5]' texto='¿Cómo definir los números complejos?' fuente='SansSerif,PLAIN,22' fijo='sí'">
+   <param name="G_17" value="espacio='INFO' tipo='texto' dibujar-si='pro=2' expresión='[30,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs30 En efecto, \par \par \fs34\b      i{\*\mjaformula{\supix 2}}\u8801  (0,1)*(0,1) = (0*0-1*1,0*1+1*0) \par          = (-1, 0) \u8801  -1\par   \f3\fs30\b0}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_18" value="espacio='INFO' tipo='texto' dibujar-si='pro=3' expresión='[20,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;\f4\fcharset0 Courier New;}\f1\fs30 En efecto, si a y b son n\u250 meros reales\par \par \fs34\b      a+b \u8801  (a,0)+(b,0) = (a+b,0)\par      a*b \u8801  (a,0)*(b,0) = \par            = (a*b-0*0, a*0+b*0) =(a*b,0)\f3\fs30\par   \b0}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_19" value="espacio='HISTO' tipo='texto' color='blanco' expresión='[30,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue185;\red255\green150\blue0;}\cf0\f1\fs40     El n\u250 mero x cuyo cuadrado es -1 no puede estar en la recta real porque \par     est\u225  completa, debe estar fuera. Dibujemos para ello un eje perpendicular \par     al eje real y coloqu\u233 mos ah\u237  el n\u250 mero que verifica que su cuadrado es -1. \par     Denotemos por i a dicho n\u250 mero.\par  \par     En este eje se puede representar  i, 2i, \par     3i, ... de la misma forma que se representan \par     los n\u250 meros reales en el \cf1 EJE REAL\cf0 . \par \par     A todos estos n\u250 meros los llamaremos \par     \b imaginarios\b0  y el eje vertical en el que se \par     pueden representar \cf2 EJE IMAGINARIO\cf0 .\par \par Estos n\u250 meros imaginarios forman parte de un conjunto mayor que llamaremos \par \b n\u250 meros complejos\b0 . Vamos a ver c\u243 mo definir este conjunto.}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_20" value="espacio='HISTO' tipo='imagen' coord_abs='sí' expresión='(500,140)' archivo='imagen/ejes.png'">
+</ajs>
+
+</body>
+</html>

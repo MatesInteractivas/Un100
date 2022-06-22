@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" >
+<title>Elipse e hipérbola en el origen</title>
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<script  SRC="lib/geolab.js"  type="text/javascript" ></script>
+<style>
+.celda_izquierda{
+background-color:#d5f3ff;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white; 
+}
+.celda_derecha{
+background-color:#fbfadc;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white;
+}
+table{margin-top:25px}
+.cuaderno2{
+overflow:auto;
+height:390px;
+display:block;
+margin:0;
+}
+</style>
+</head>
+<body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '1'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'x'  tipo = 'recta'  constructor = '30'  parametros = '0.00,1.00,0.00'  visible = '0'  ancho = '1'  color = '#ff0000,#c0c0c0'  etiqueta = '0,0' />
+<objeto  nombre = 'V1'  tipo = 'punto'  constructor = '28'  parametros = '4.96,-0.00,0.00'  objRef = '0'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,1' />
+<objeto  nombre = 'F1'  tipo = 'punto'  constructor = '28'  parametros = '2.15,-0.00,0.00'  objRef = '0'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,2' />
+<objeto  nombre = 'F2'  tipo = 'punto'  constructor = '150'  parametros = '-2.15,0.00,0.00'  objRef = '2'  formulas = '-F1.x ; 0 ' visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,3' />
+<objeto  nombre = 'a'  tipo = 'escalar'  constructor = '154'  parametros = '4.96,1.00'  objRef = '1'  formulas = 'abs(V1.x) ' etiqueta = '0,-1' />
+<objeto  nombre = 'con'  tipo = 'conica'  constructor = '104'  parametros = '-0.81,-0.00,-1.00,0.00,0.00,20.02,-20.02,0.00,-16.27,0.00,0.00,0.81,16.27'  objRef = '2,3,4'  visible = '1,0,0,0,0,0'  ancho = '2,2,1,2,1,1'  color = '#ff,#c0c0c0,#ff,#c0c0c0,#ff,#c0c0c0,#c0c0c0,#c0c0c0,#ff0000'  etiqueta = '1,10' />
+<objeto  nombre = 'b'  tipo = 'escalar'  constructor = '97'  parametros = '4.47,1.00'  objRef = '5'  etiqueta = '0,6' />
+<objeto  nombre = 'c'  tipo = 'escalar'  constructor = '98'  parametros = '2.15,1.00'  objRef = '5'  etiqueta = '0,7' />
+<objeto  nombre = 'e'  tipo = 'escalar'  constructor = '99'  parametros = '0.43,1.00'  objRef = '5'  etiqueta = '0,8' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '24'  parametros = '0.00,0.00,0.00'  objRef = '5'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,9' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-8.13,8.76,0.00'  visible = '1'  ancho = '3'  color = '#0,#8000'  etiqueta = '0,10' />
+<nota texto="<p>Cuando una elipse o una hipérbola está centrada en el orígen y su eje 
+    focal coincide con el eje X, en su ecuación general</p>
+	<p align='center'>Ax<sup>2</sup> + Bxy + Cy<sup>2</sup> + Dx + Ey + F = 0</p>
+	<p>los coeficientes B, D y E valen cero, es decir, la ecuación no tiene términos en xy, x, y.</p> 
+	<p align='center'>Ax<sup>2</sup> + Cy<sup>2</sup> + F = 0</p>
+	 <p>Para encontrar los elementos de la cónica, transformamos la ecuación general a la ecuación estandar</p>
+	 <p align='center'> x<sup>2</sup>/a<sup>2</sup> +- y<sup>2</sup>/b<sup>2</sup> = 1 </p>
+	 <p>Y obtenemos la longitud del semieje transversal a = $a$, y la del semieje ortogonal o conjugado b = $b$. </p>
+	 <p>La distancia de los focos al centro de la cónica, c = $c$ se obtiene usando el teorema de Pitágoras, y la excentricidad (e), dividiendo</p>
+	<p align='center'>	 e = c/a = $e$</p>" />
+
+
+<table align='center'>  
+<tr>
+	<td width ='425px' height='410px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="425" height="400">
+			</canvas>
+		</td>
+    
+    <td width ='50px'></td>
+    
+    <td width ='375px' height="410px" valign='middle' class="celda_derecha">
+    
+	<div class="cuaderno2">
+	 
+	<p id="cuaderno" >Este es un p&aacute;rrafo 	</p>
+    
+    </div>
+	
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

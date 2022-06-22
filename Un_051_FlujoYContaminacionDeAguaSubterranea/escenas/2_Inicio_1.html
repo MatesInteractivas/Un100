@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='debug' dibujar-si='0' despl_imagen='arr-izq' red='b8c4c8' red10='889498' ejes='405860' texto='405860'">
+   <param name="E_02" value="tipo='R2' id='E1' fijo='sí' imagen='images/fyc_fondo_inicio_2.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E2' x='406' y='40' ancho='512' alto='452' fijo='sí' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='E3' x='50' y='138' ancho='335' alto='280' dibujar-si='0' despl_imagen='arr-izq' fondo='c000ff00' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='cortina' ancho='100%' alto='100%' dibujar-si='!empezar==1' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ff00343a' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_06" value="tipo='R2' id='intro' x='10%' y='60' ancho='790' alto='430' dibujar-si='!empezar==1' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='E2.0y' tipo='numérico' región='interior' espacio='E1' nombre='E2.0y' expresión='(920,442,27,50)' incr='5' min='-300' max='0' fijo='sí' visible='no' acción='calcular'">
+   <param name="C_02" value="id='L' tipo='numérico' región='interior' espacio='E1' nombre='L' expresión='(5,510,190,40)' incr='1' min='1' max='100' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_03" value="id='q' tipo='numérico' región='interior' espacio='E1' nombre='q[m/s]=' expresión='(200,510,190,40)' min='.1' max='10' fijo='sí' exponencial-si='2' visible='sí' pos_mensajes='centro'">
+   <param name="C_04" value="id='c' tipo='numérico' región='interior' espacio='E1' nombre='k[m/s]=' expresión='(395,510,190,40)' decimales='0' fijo='sí' visible='sí' opciones='arcilla,limos,arena,grava' acción='calcular' parámetro='conduct(c)' pos_mensajes='centro'">
+   <param name="C_05" value="id='p' tipo='numérico' región='interior' espacio='E1' nombre='p[%]=' expresión='(590,510,190,40)' min='.1' max='1' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_06" value="id='esc' tipo='numérico' región='interior' espacio='E1' nombre='-> escala' expresión='(785,510,190,40)' incr='5000' min='100' max='1000000' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_07" value="id='simular' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Simular' expresión='(160,450,100,30)' valor='1' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn100.png' acción='animar' pos_mensajes='centro'">
+   <param name="C_08" value="id='pregunta' tipo='texto' espacio='E2' expresión='(320,20,580,160)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs34 Un acu\u237 fero con permeabilidad de 10E-2 cm/s y una porosidad \par de 26% que en su superficie tiene un \u225 rea de 5000m y una \par profundidad de 10m.\par \par \u191 Cuanta agua puede transmitir si hay un gradiente hidr\u225 ulico \par de 5m de altura por cada 100m de desplazamiento?\f2\fs30}' respuesta='krypto_9vtjosu65vfqfrsgq2rjrqkuh1es0r8fvihrvlpjorflrdeq71kfp2fht58erdjnaoe8ejcecddshempg75f8vp3lsjmkf01r1kn4ltqkvquka5ffubagi77jd5nvuu0qn29bhnjntsm7sqtb3r5jjr7jf2rugpdcj7uo38gu6sf9ujfu8ks44td2mh9gi3lj797imrtijvsfi0tlj1uin1vu9gq5truumpmn6st3nvneneev0jr4rq7ebj6nuod3kvdori4ffumhircq72om2ktk7sinjqqj5fqkkraumb5v9gq27ngaeotfcnhrvhptkajn4mf7ebfjvijvqj51p60k7t2vlnsmenq2laingu4ual3j1eaf6nf8obc3esin2kt6gaagqcgugumhakb2mtakpoemhvsmbul863b4jf4l21ls5sibrodkl0rcdoaop3pfd7mr0qh8ulbe7ku6d9m7bk6nlq0kog74lk4ha2rffrrnvl6m73m12mnqobcrv9andk2bd3ddvpbvhoa1cnfglcrbmkip0liqi3oe0r39oaltiqatu2r7ou8r5uqnvoag9t3n97on9on64f2kj7ef1ovtg39ud03kes9iuq1piqoidbib1rfommmr7ot8th7m6eb45n5bgislf1ijiuec1fder5jr8m9qs6qsj7fvgem2ouqvl' dibujar-si='problema==1'">
+   <param name="C_09" value="id='problema' tipo='numérico' región='interior' espacio='E2' nombre='Problema' expresión='(550,170)' fijo='sí' visible='sí' dibujar-si='problema==0' pos_mensajes='centro'">
+   <param name="C_10" value="id='empezar' tipo='numérico' interfaz='botón' región='interior' espacio='intro' nombre='Empezar' expresión='(intro._w-105,intro._h-35,100,30)' valor='1' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn100.png' pos_mensajes='centro'">
+   <param name="A_01" value="id='dh' expresión='(L*q)/k'">
+   <param name="A_02" value="id='conduct(c)' algoritmo='sí' expresión='k' algoritmo='sí' inicio='k=0.000001' hacer='k=(c==0)?0.000001:k;k=(c==1)?0.0001:k;k=(c==2)?0.01:k;k=(c==3)?1:k'">
+   <param name="A_03" value="id='dialogo' expresión='0'">
+   <param name="A_04" value="id='just2(n)' algoritmo='sí' expresión='str' algoritmo='sí' inicio='str=&squot;&squot;+n' hacer='str=(n<10)?&squot;0&squot;+str:str'">
+   <param name="A_05" value="id='lim' expresión='138+((k/L)*1000*minutos)'">
+   <param name="A_06" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='k=0.000001'">
+   <param name="A_07" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='debug' tipo='texto' dibujar-si='t<20' expresión='[0,22]' texto='Primera pantalla del Inicio' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E2' tipo='imagen' coord_abs='sí' expresión='(5,E2.0y+5)' archivo='images/texto1.png'">
+   <param name="G_03" value="espacio='E1' tipo='texto' expresión='[55,380]' texto='Tiempo de transito\n[just2(ent(dias)%365)]:[just2(ent(horas)%24)]:[just2(ent(minutos)%60)]:[just2(ent(segundos)%60)]\n' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='polígono' coord_abs='sí' expresión='(138+((k/L)*1000*minutos),350)(138+((k/L)*1000*minutos),315)(135,315)(135,350)' relleno='540045a8' ancho='0'">
+   <param name="G_05" value="espacio='debug' tipo='polígono' coord_abs='sí' expresión='(300,350)(300,315)(135,315)(135,350)'">
+   <param name="G_06" value="espacio='intro' tipo='imagen' coord_abs='sí' expresión='(10,0)' archivo='images/texto2.png'">
+   <param name="Animación" value="pausa='50' controles='no' auto='no' inicio='milis=0' hacer='milis=milis+(esc*50);segundos=milis/1000;minutos=segundos/60;horas=minutos/60;dias=horas/24' mientras='lim<298'">
+</ajs>
+
+</body>
+</html>

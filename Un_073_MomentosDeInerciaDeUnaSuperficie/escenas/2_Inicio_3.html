@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo0' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='n4' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(790,165,70,35)' valor='&squot;&squot;' fijo='sí' visible='sí' dibujar-si='paso=2'">
+   <param name="C_03" value="id='n5' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Continuar' expresión='(820,490,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='paso=paso+1' dibujar-si='((paso!=2)|(n4!=&squot;&squot;))&(paso<3)'">
+   <param name="C_04" value="id='n6' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Inicio' expresión='(545,490,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='inicio' parámetro='paso=1\nn4=&squot;&squot;' dibujar-si='paso=3'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Momento de inercia de un círculo&squot;' hacer='paso=1'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='correcto=(n4=&squot;udu&squot;)'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' dibujar-si='(paso<3)' expresión='(-4.2,-.5,.6,.6)' archivo='images/deduce4.png'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='paso=1' expresión='[520,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 Una integral de gran importancia en problemas\par de  torsi\u243 n  de  ejes  cil\u237 ndricos  y  rotaci\u243 n  de\par placas es:\par \f2\fs44{\*\mjaformula J{\subix 0}={\integral{\from}{\to}{\what r{\supix 2}dA}}}\f1\fs40\par Esta integral es el momento polar de inercia de\par un \u225 rea con respecto al &squot;&squot;polo&squot;&squot; O. \par \par Como \f2\fs44{\*\mjaformula r{\supix 2}=x{\supix 2}+y{\supix 2}}\f1\fs40 , entonces:\par \f2\fs44{\*\mjaformula J{\subix 0}={\integral{\from}{\to}{\what r{\supix 2}dA}}={\integral{\from}{\to}{\what x{\supix 2}dA}}+{\integral{\from}{\to}{\what y{\supix 2}dA}}}\f1\fs40 , luego\par \cf0\f3\fs44\b{\*\mjaformula J{\subix 0}=I{\subix x}+I{\subix y}}\cf1\f1\fs40\b0\par \f4\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='paso=2' expresión='[520,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}\f1\fs40 Para hallar {\*\mjaformula J{\subix 0}={\integral{\from}{\to}{\what r{\supix 2}dA}}}, debemos determinar la\par una expresi\u243 n para  dA  = 2\f2\fs44\i\u960 \f1\fs40\i0         \par \fs32        Escribe la expresi\u243 n sin espacios\f4\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='(correcto=1)&(n4!=&squot;&squot;)&(paso=2)' expresión='[520,250]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green163\blue0;\red32\green48\blue58;\red0\green0\blue255;}\cf0\f1\fs40\b\u161 Excelente!\b0\cf1\par Entonces, {\*\mjaformula J{\subix 0}={\integral{\from 0}{\to r}{\what u{\supix 2}(2\u960 u du)}}=2\u960 {\integral{\from 0}{\to r}{\what u{\supix 3}du}}}\par \par Integrando obtenemos:  \par \par \cf2\b                 {\*\mjaformula J{\subix 0}={\fraction{\num\u960 }{\den 2}}r{\supix 4}}\cf1\b0\par \f3\fs30\par \par }' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='(correcto=0)&(n4!=&squot;&squot;)&(paso=2)' expresión='[520,250]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;\red0\green0\blue255;}\f1\fs40\b\cf0\u161 Incorrecto! \b0{\*\mjaformula dA=2\u960 u du}\cf1\par Entonces, {\*\mjaformula J{\subix 0}={\integral{\from 0}{\to r}{\what u{\supix 2}(2\u960 u du)}}=2\u960 {\integral{\from 0}{\to r}{\what u{\supix 3}du}}}\par \par Integrando obtenemos:  \par \par \cf2\b                 {\*\mjaformula J{\subix 0}={\fraction{\num\u960 }{\den 2}}r{\supix 4}}\cf1\b0\par \f3\fs30\par \par }' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='paso=3' expresión='(-5,-1,.6,.6)' archivo='images/circle2.png'">
+   <param name="G_08" value="espacio='E1' tipo='imagen' dibujar-si='paso=3' expresión='(-1.5,1.3,.6,.6)' archivo='images/circle2f.png'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='paso=3' expresión='[520,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 Por la simetr\u237 a del c\u237 rculo, podemos afirmar\par que \f2\fs44{\*\mjaformula I{\subix x}=I{\subix y}}\f1\fs40 , entonces:\par \par \f2\fs44{\*\mjaformula J{\subix 0}=I{\subix x}+I{\subix y}=2I{\subix x}}\f1\fs40\par \par As\u237  las cosas, \f2\fs44{\*\mjaformula I{\subix x}={\fraction{\num J{\subix o}}{\den 2}}}\f1\fs40 , luego el momento de\par inercia del c\u237 rculos es:\cf0\par                                    \f3\fs44\b{\*\mjaformula I{\subix x}={\fraction{\num\u960 }{\den 4}}r{\supix 4}}\cf1\f1\fs40\b0\par \par \par \par \par \f4\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(15,90)' archivo='images/panel_940x445.png'">
+</ajs>
+
+</body>
+</html>

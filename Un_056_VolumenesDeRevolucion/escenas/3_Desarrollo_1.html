@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+
+
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_desarrollo_01.jpg' despl_imagen='centrada' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R3' id='E2' x='30' y='170' ancho='300' alto='300' escala='60' O.x='-50' despl_imagen='arr-izq' fondo='ff000000' despliegue='pintor' R3='sí'">
+   <param name="E_03" value="tipo='R3' id='E3' x='330' y='170' ancho='300' alto='300' escala='60' O.x='-50' despl_imagen='arr-izq' fondo='fff1f1ff' R3='sí'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='paso1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Paso 1' expresión='(740,460,100,30)' fijo='sí' visible='no' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='animar' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='a=0'">
+   <param name="C_03" value="id='paso2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Paso 2' expresión='(740,460,100,30)' fijo='sí' visible='no' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='paso2=1' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='(a>1.8)&(paso2=0)&(E2.rot.z!=0)'">
+   <param name="C_04" value="id='paso3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Paso 3' expresión='(740,460,100,30)' fijo='sí' visible='no' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='paso3=1' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='(a>1.8)&(paso2=1)&(paso3=0)'">
+   <param name="C_05" value="id='n1' tipo='numérico' región='interior' espacio='E1' nombre='  número de discos  ' expresión='(210,480,250,40)' valor='2' incr='1' min='2' max='10' decimales='0' fijo='sí' visible='sí' acción='calcular' parámetro='paso3=1' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='(a>1.8)&(paso2=1)&(paso3=1)'">
+   <param name="C_06" value="id='ejeZ' tipo='gráfico' espacio='E1' color='grisClaro' color-int='azul' expresión='(0.48,-0.02)' constricción='(x/0.5)^2+(y/0.2)^2=1' dibujar-si='0' activo-si='paso=6'">
+   <param name="C_07" value="id='ejeY' tipo='gráfico' espacio='E1' color='grisClaro' color-int='ff5200' expresión='(0.2,0)' constricción='(y/0.5)^2+(x/0.2)^2=1' dibujar-si='0' activo-si='paso=6'">
+   <param name="A_01" value="id='pi' expresión='3.14159'">
+   <param name="A_02" value="id='f(x)' expresión='x+.5' dominio='x>=0'">
+   <param name="A_03" value="id='ang(x,y)' expresión='(x=0.5)?0:360/pi*acos(sgn(y)*sqrt((1+x/0.5)/2))'">
+   <param name="A_04" value="id='ang1(x,y)' expresión='(x=0.2)?0:360/pi*acos(sgn(y)*sqrt((1+x/0.2)/2))'">
+   <param name="A_05" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='titulo=&squot;Volúmenes de revolución&squot;;c2=1;yt=450;a1=0;b1=1.5;;'">
+   <param name="A_06" value="id='e10' evento='sí' condición='c2=1' acción='calcular' parámetro='a=0\nn1=2\n\n' parámetro.fuente='Monospaced,PLAIN,12' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_07" value="id='e9' evento='sí' condición='paso=1' acción='calcular' parámetro='E2.rot.z=-30' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_08" value="id='n1' constante='sí' expresión='2' evaluar='una-sola-vez'">
+   <param name="A_09" value="id='paso' constante='sí' expresión='0' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='e5' evento='sí' condición='paso1=1' acción='animar' parámetro.fuente='Monospaced,PLAIN,12' ejecución='una-sola-vez' pos_mensajes='centro'">
+   <param name="A_11" value="id='rot' algoritmo='sí' evaluar='siempre' hacer='angulo=ang(ejeZ.x,ejeZ.y);angulo1=ang1(ejeY.x,ejeY.y);'">
+   <param name="A_12" value="id='E2.rot.y' constante='sí' expresión='(ratón_apretado)?E2.rot.y+1:angulo' evaluar='siempre'">
+   <param name="A_13" value="id='E3.rot.y' constante='sí' expresión='(ratón_apretado)?E3.rot.y+1:angulo' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' color='amarillo' expresión='[680,105]' texto='Método de los discos' fuente='SansSerif,BOLD,21' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='(paso2=0)&(k=0)' expresión='[655,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red32\green48\blue80;\red32\green48\blue58;}\cf0\f1\fs40 Haz clic en el bot\u243 n &quote;paso 1&quote;,\par observa c\u243 mo se forma  el\par volumen de revoluci\u243 n. \cf1\fs44}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='(paso2=0)&(k>1.9)&(E2.rot.z<40)' expresión='[655,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red32\green48\blue80;\red0\green0\blue255;\red32\green48\blue58;}\cf0\f1\fs40 Muy bien, este volumen es un\par tronco de cono. Ahora rota\par el volumen con clic  sostenido,\par desplaza el eje x hacia ti...\par \par (\cf1 debes rotarlo para continuar\par   con el pr\u243 ximo paso\cf0 )\par \cf2\fs44}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='(paso2=0)&(E2.rot.z!=0)&(a=2)' expresión='[655,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red32\green48\blue80;\red32\green48\blue58;}\cf0\f1\fs40\u191 qu\u233  observas? ... \u161 Un c\u237 rculo! \par Esto significa que si  cortamos\par el s\u243 lido con planos \par perpendiculares al eje x,\par obtenemos rodajas de secci\u243 n\par circular. \par \par \cf1 Ahora haz clic en &quote;paso 2&quote;.\fs44}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='(paso2=1)&(paso3=0)' expresión='[655,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red32\green48\blue80;\red0\green0\blue255;\red32\green48\blue58;}\cf0\f1\fs40 Observa la rodaja formada a\par una distancia \cf1{\*\mjaformula x{\subix 1}}\cf0  del origen. \par Para distancias peque\u241 as\par (\cf1 dx\cf0 ) de los planos perpendi-\par culares, la rodaja es pr\u225 cti-\par camente un disco de altura\par \cf1 dx\cf0  y radio \cf1{\*\mjaformula f(x{\subix 1})}\cf0 . Rota la\par figura para observar el disco\par generado.\par \par Ha\cf2 z clic en &quote;paso 3&quote;.\fs44}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='(paso3=1)&(n1<6)' expresión='[655,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red32\green48\blue80;\red0\green0\blue255;\red32\green48\blue58;}\cf0\f1\fs40 El volumen de este disco o \par cilindro de espesor peque\u241 o\par (dx) es:\par \par \cf1           {\*\mjaformula V=\u960 [f(x1)]{\supix 2}dx}\cf0\par \par Ahora aumenta el n\u250 mero de\par discos para construir\par un s\u243 lido de 10 discos.\par \par \cf2\u191 Qu\u233  concluyes?\fs44}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='(paso3=1)&(n1>5)' expresión='[655,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 A mayor n\u250 mero de discos, el \par s\u243 lido se parece m\u225 s al \par original. Cuando este n\u250 mero\par tiende a un n\u250 mero muy \par grande el volumen de nuestro\par s\u243 lido ser\u225  cercano a la suma\par de todos los discos.\par \par Entonces:\par \par \cf0  {\*\mjaformula V = \u960 {\integral{\from a}{\to b}{\what [f(x)]{\supix 2}dx}}}\cf1\par \fs44}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="S_01" value="espacio='E2' tipo='superficie' color='55008500' color_reverso='55008500' expresión='U=-a*u V=v y=f(V)*cos(pi*U) x=f(V)*sen(pi*U) z=V' rotini='(-90,180,0)' cortar='sí' modelo='metal' Nu='20' Nv='1'">
+   <param name="S_02" value="espacio='E2' tipo='segmento' color='negro' expresión='(0,0,0)(0,3,0)' Nu='20'">
+   <param name="S_03" value="espacio='E2' tipo='segmento' color='negro' expresión='(0,0,0)(0,0,3)' Nu='20'">
+   <param name="S_04" value="espacio='E2' tipo='segmento' color='negro' expresión='(0,0,0)(3,0,0)' Nu='20'">
+   <param name="S_05" value="espacio='E2' tipo='superficie' color='negro' color_reverso='negro' expresión='U=b*u V=v y=f(V)*cos(pi*U) x=f(V)*sen(pi*U) z=V' rotini='(-90,180,0)' aristas='sí' modelo='luz' Nu='20' Nv='1'">
+   <param name="S_06" value="espacio='E2' tipo='polireg' color='9dff7600' color_reverso='9dff7600' dibujar-si='a>1.9' expresión='Polireg' rotini='(90,0,0)' ancho='1' largo='1' Nu='20'">
+   <param name="S_07" value="espacio='E2' tipo='polireg' color='9dff7600' color_reverso='9dff7600' dibujar-si='a>1.9' expresión='Polireg' rotini='(90,0,0)' posini='(0,1,0)' ancho='3' largo='3' Nu='20'">
+   <param name="S_08" value="espacio='E2' tipo='cilindro' color='ff7600' color_reverso='ff7600' dibujar-si='paso2=1' expresión='Cilindro' rotini='(-90,0,0)' posini='(0,.5,0)' cortar='sí' modelo='luz' ancho='f(1.5)' largo='f(1.5)' alto='.2' Nu='20' Nv='1'">
+   <param name="S_09" value="espacio='E2' tipo='polireg' color='ff7600' color_reverso='ff7600' dibujar-si='paso2=1' expresión='Polireg' rotini='(90,0,0)' posini='(0,.4,0)' cortar='sí' modelo='metal' ancho='f(1.5)' largo='f(1.5)' Nu='20'">
+   <param name="S_10" value="espacio='E2' tipo='polireg' color='ff7600' color_reverso='ff7600' dibujar-si='paso2=1' expresión='Polireg' rotini='(90,0,0)' posini='(0,.6,0)' cortar='sí' modelo='metal' ancho='f(1.5)' largo='f(1.5)' Nu='20'">
+   <param name="S_11" value="espacio='E3' tipo='segmento' color='negro' dibujar-si='n1>2' expresión='(0,0,0)(0,3,0)' Nu='20'">
+   <param name="S_12" value="espacio='E3' tipo='segmento' color='negro' dibujar-si='n1>2' expresión='(0,0,0)(0,0,3)' Nu='20'">
+   <param name="S_13" value="espacio='E3' tipo='segmento' color='negro' dibujar-si='n1>2' expresión='(0,0,0)(3,0,0)' Nu='20'">
+   <param name="S_14" value="espacio='E3' tipo='superficie' color='negro' color_reverso='negro' dibujar-si='n1>2' expresión='U=b*u V=v y=f(V)*cos(pi*U) x=f(V)*sen(pi*U) z=V' rotini='(-90,180,0)' aristas='sí' modelo='metal' Nu='20' Nv='1'">
+   <param name="S_15" value="espacio='E3' tipo='cilindro' color='9d008500' color_reverso='9d008500' dibujar-si='n1>2' expresión='Cilindro' familia='s' s.intervalo='[0,1-1/n1]' s.pasos='n1-1' rotini='(-90,0,0)' posini='(0,s+1/(2*n1),0)' aristas='sí' modelo='metal' ancho='f(s+1/n1)+s+.5' largo='f(s+1/n1)+s+.5' alto='1/n1' Nu='20' Nv='1'">
+   <param name="S_16" value="espacio='E2' tipo='punto' color_reverso='rosa' expresión='(0,3.2,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue255;}\cf0\f1\fs32\b x\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='sí' ancho='.1'">
+   <param name="S_17" value="espacio='E2' tipo='superficie' color='9d008500' color_reverso='9d008500' dibujar-si='paso2=0' expresión='x=u y=v*f(u) z=0' rotini='(90+a*180,0,90)' aristas='sí' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_18" value="espacio='E3' tipo='polireg' color='9d008500' color_reverso='9d008500' dibujar-si='n1>2' expresión='Polireg' familia='s' s.intervalo='[0,1-1/n1]' s.pasos='n1-1' rotini='(90,0,0)' posini='(0,s,0)' modelo='metal' ancho='f(s+1/n1)+s+.5' largo='f(s+1/n1)+s+.5' Nu='20'">
+   <param name="Animación" value="controles='no' auto='no' inicio='k=0' hacer='k=k+.1;a=a+.1' mientras='k<=2'">
+</ajs></body>
+</html>

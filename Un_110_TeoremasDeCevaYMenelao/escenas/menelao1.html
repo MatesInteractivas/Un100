@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Geometr&iacute;a</title>
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT> 
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<style>
+.celda_izquierda{
+background-color:#d5f3ff;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white; 
+}
+.celda_derecha{
+background-color:#fbfadc;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white;
+}
+table{margin-top:25px}
+.cuaderno2{
+overflow:auto;
+height:390px;
+display:block;
+margin:0;
+}
+</style>
+</head>
+ <body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '0'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '0'  parametros = '-3.54,4.49,-3.380843063978213892000000000000000000000e+221'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,0' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '3.30,-1.76,-3.380843063978213892000000000000000000000e+221'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,1' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-7.10,-1.64,-3.380843063978213892000000000000000000000e+221'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,2' />
+<objeto  nombre = 'a'  tipo = 'recta'  constructor = '38'  parametros = '0.01,1.00,1.73'  objRef = '1,2'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,3' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '38'  parametros = '0.87,-0.50,5.31'  objRef = '2,0'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,4' />
+<objeto  nombre = 'c'  tipo = 'recta'  constructor = '38'  parametros = '-0.67,-0.74,0.93'  objRef = '0,1'  visible = '1,1'  ancho = '2,1'  color = '#ff0000,#c0c0c0,#edededed'  etiqueta = '0,5' />
+<objeto  nombre = 'N'  tipo = 'punto'  constructor = '6'  parametros = '-4.90,2.15,1.00,-2.20,-1.36'  objRef = '0,2'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,6' />
+<objeto  nombre = 'L'  tipo = 'punto'  constructor = '6'  parametros = '5.29,-1.79,1.00,-1.99,12.39'  objRef = '2,1'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,7' />
+<objeto  nombre = 'r'  tipo = 'recta'  constructor = '31'  parametros = '-0.36,-0.93,0.24'  objRef = '6,7'  visible = '1'  ancho = '2'  color = '#ff,#edededed'  etiqueta = '0,8' />
+<objeto  nombre = 'M'  tipo = 'punto'  constructor = '1'  parametros = '1.89,-0.47,1.00'  objRef = '8,5'  visible = '1'  ancho = '2'  color = '#0,#c0c0c0'  etiqueta = '2,9' />
+<objeto  nombre = 'rM'  tipo = 'escalar'  constructor = '86'  parametros = '0.26,-3.380843063978213892000000000000000000000e+221'  objRef = '9,1,0'  etiqueta = '0,-1' />
+<objeto  nombre = 'rL'  tipo = 'escalar'  constructor = '86'  parametros = '-6.24,-3.380843063978213892000000000000000000000e+221'  objRef = '7,2,1'  etiqueta = '0,-1' />
+<objeto  nombre = 'rN'  tipo = 'escalar'  constructor = '86'  parametros = '0.62,-3.380843063978213892000000000000000000000e+221'  objRef = '6,0,2'  etiqueta = '0,-1' />
+<objeto  nombre = 'x'  tipo = 'escalar'  constructor = '154'  parametros = '-1.00,-3.380843063978213892000000000000000000000e+221'  objRef = '10,11,12'  formulas = 'rM*rL*rN ' etiqueta = '0,13' />
+
+<nota texto="<p align='center'>AN/NB = $rN$ <br>BL/LC = $rL$ <br>CM/MA = $rM$</p>
+		<p align='center'>(AN/NB)(BL/LC)(CM/MA)=($rN$)($rL$)($rM$) = $x$</p>
+"  />
+
+
+
+<table align='center'>  
+<tr>
+	<td width ='425px' height='410px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="425" height="400">
+			</canvas>
+		</td>
+    
+    <td width ='50px'></td>
+    
+    <td width ='375px' height="410px" valign='middle' class="celda_derecha">
+    
+	<div class="cuaderno2">
+<p>Si una recta corta a los lados \(BC\), \(CA\) y \(AB\) de un triángulo \(ABC\) en los puntos \(L\), \(M\) y \(N\), 
+respectivamente entonces
+\[
+\frac{AN}{NB}\frac{BL}{LC}\frac{CM}{MA}=-1
+\]
+(si en una fracción el sentido de recorrido del numerador es diferente al del denominador, el signo de la fracción es negativo)</p>
+<p>y recíprocamente, si \(L\), \(M\) y \(N\) son puntos en los lados \(BC\), \(CA\) y \(AB\) del triángulo \(ABC\) para el cual vale la
+relación anterior, entonces \(L\), \(M\) y \(N\) son colineales.</p>
+
+
+
+<p id="cuaderno">This is a paragraph.</p>	 </div>	
+</td>
+</tr>
+</table>
+
+</body>
+</html>

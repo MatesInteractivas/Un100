@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_078_FuerzasInternas" 
+	nivel="Licenciatura" 
+	area="Matemáticas" 
+	plataforma="HTML 5" 
+	ver="Beta"
+	>
+	<titulo><![CDATA[
+		Fuerzas internas
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+      Todo elemento estructural sometido a fuerzas externas reacciona con otras fuerzas internas, las cuales
+      permiten conocer si el elemento está en capacidad de resistir dichas fuerzas. El diseño de un elemento
+      estructural depende de las propiedades del material y de la determinación de las fuerzas internas del
+      elemento. Así  las cosas, en esta unidad, tendremos como objetivos:
+
+      Determinar las fuerzas internas que actúan en un punto cualquiera de un elemento estructural.
+      Elaborar los diagramas de fuerza cortante y de momento flector.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

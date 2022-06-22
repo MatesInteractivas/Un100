@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_023_OperacionesConFunciones" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Cálculo, Funciones" 
+	plataforma="HTML 5" 
+        ver="Beta"
+	>
+	<titulo><![CDATA[
+		Operaciones con funciones y sus gráficas 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+      Se estudia el resultado gráfico de una operación con dos funciones f(x) y g(x).
+      Específicamente las operaciones de suma  f(x) +g(x), diferencia  f(x)-g(x), 
+      producto  f(x)*g(x), los cocientes  f(x)/g(x)  y  g(x)/f(x)  y las composiciones  
+      f(g(x))  y  g(f(x)). Primero el estudio se hace con funciones f(x) y g(x) lineales
+      y luego con funciones más generales, en particular con polinomios, senoides y 
+      campanas de Gauss.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

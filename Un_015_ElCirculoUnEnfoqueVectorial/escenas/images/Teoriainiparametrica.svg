@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="340.30234"
+   height="632.63226"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Teoriainiparametrica.svg"
+   inkscape:export-filename="C:\Users\DoktorWattie\Desktop\Escenas 2013\Un_015_Encargo_ElCirculoUnEnfoqueVectorial\escenas\images\Teoriaini1.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#f5f5f5"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageopacity="0.18039216"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1494636"
+     inkscape:cx="176.0682"
+     inkscape:cy="237.67615"
+     inkscape:document-units="cm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-bbox="false"
+     inkscape:bbox-paths="true"
+     inkscape:snap-to-guides="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-global="true"
+     units="cm"
+     showborder="true"
+     inkscape:showpageshadow="true"
+     objecttolerance="20"
+     borderlayer="true">
+    <sodipodi:guide
+       id="guide2985"
+       orientation="0,345"
+       position="-78.297389,-0.86983757" />
+    <sodipodi:guide
+       id="guide2987"
+       orientation="1,0"
+       position="340.31748,-413.26643" />
+    <sodipodi:guide
+       id="guide2989"
+       orientation="0,1"
+       position="363.013,576.28276" />
+    <sodipodi:guide
+       id="guide2991"
+       orientation="1,0"
+       position="0.3174815,639.09576" />
+    <sodipodi:guide
+       position="131.68807,-573.27087"
+       orientation="0,350"
+       id="guide3969" />
+    <sodipodi:guide
+       position="347.86072,-720.75314"
+       orientation="-1355,0"
+       id="guide3971" />
+    <sodipodi:guide
+       position="408.46987,532.84616"
+       orientation="0,-350"
+       id="guide3973" />
+    <sodipodi:guide
+       position="-4.6825185,636.26716"
+       orientation="1355,0"
+       id="guide3975" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid4047"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="-4.6825185px"
+       originy="-718.73284px" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-10.072654,-6.4621749)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Capa 1">
+    <flowRoot
+       style="font-size:17px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot2993"
+       xml:space="preserve"><flowRegion
+         id="flowRegion2995"><rect
+           y="7.3621817"
+           x="5"
+           height="121.42857"
+           width="335"
+           id="rect2997" /></flowRegion><flowPara
+         id="flowPara2999" /></flowRoot>    <g
+       id="g13249"
+       transform="translate(4,0)">
+      <flowRoot
+         transform="matrix(0.99685784,0,0,1.0000173,1.0883652,-2.0225061)"
+         xml:space="preserve"
+         id="flowRoot3001"
+         style="font-size:17px;font-style:normal;font-weight:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><flowRegion
+           id="flowRegion3003"><rect
+             id="rect3005"
+             width="341.39014"
+             height="1345.3622"
+             x="5"
+             y="6.6478958"
+             style="font-style:normal;text-align:justify;text-anchor:start;-inkscape-font-specification:Sans" /></flowRegion><flowPara
+           id="flowPara4976"
+           style="fill:#0000ff">               Circunferencia paramétrica</flowPara><flowPara
+           id="flowPara4980"
+           style="fill:#0000ff">                   con centro en (0,0)</flowPara><flowPara
+           id="flowPara4982" /><flowPara
+           id="flowPara4984">Las coordenadas del centro de la circunferencia en la forma paramétrica se expresan como el par ordenado:</flowPara><flowPara
+           id="flowPara4986" /><flowPara
+           id="flowPara4990"
+           style="fill:#0000ff">                               (<flowSpan
+   style="font-style:italic"
+   id="flowSpan5056">a, b</flowSpan>)</flowPara><flowPara
+           id="flowPara4992" /><flowPara
+           id="flowPara4994">donde, si la circunferencia tiene su centro en el origen se simplifican estas coordenadas como:</flowPara><flowPara
+           id="flowPara4996" /><flowPara
+           id="flowPara5002"
+           style="fill:#0000ff">                          (<flowSpan
+   style="font-style:italic"
+   id="flowSpan5054">a, b</flowSpan>) = (0,0)</flowPara><flowPara
+           id="flowPara5004" /><flowPara
+           id="flowPara5008">y con radio <flowSpan
+   style="fill:#0000ff;font-style:italic"
+   id="flowSpan5050">c</flowSpan>.</flowPara><flowPara
+           id="flowPara5010" /><flowPara
+           id="flowPara5012">De este modo, bajo estos parámetros se obtiene que la ecuación de la circunferencia con centro en el origen se expresada como:</flowPara><flowPara
+           id="flowPara5014" /><flowPara
+           id="flowPara5016"
+           style="font-style:italic;fill:#0000ff">                            x = c cos(t)</flowPara><flowPara
+           id="flowPara5018"
+           style="font-style:italic;fill:#0000ff">                            y = c sen(t)</flowPara><flowPara
+           id="flowPara5020"
+           style="font-style:italic;fill:#0000ff" /><flowPara
+           id="flowPara5022">donde <flowSpan
+   style="font-style:italic;fill:#0000ff"
+   id="flowSpan5032">t</flowSpan> es el argumento válido para el intervalo que va desde 0 hasta 2π</flowPara><flowPara
+           id="flowPara5024">Es decir <flowSpan
+   style="font-style:italic"
+   id="flowSpan5030">t</flowSpan> ϵ [0, 2π]</flowPara><flowPara
+           id="flowPara5026" /><flowPara
+           id="flowPara5028" /></flowRoot>      <g
+         transform="matrix(0.8,0,0,0.8,88.455004,377.26291)"
+         id="g7849" />
+      <g
+         id="g11500"
+         transform="matrix(0.8,0,0,0.8,-19.206401,630.61338)" />
+      <g
+         id="g4487"
+         transform="matrix(0.8,0,0,0.8,-14.035418,450.37189)">
+        <g
+           word-spacing="normal"
+           letter-spacing="normal"
+           font-size-adjust="none"
+           font-stretch="normal"
+           font-weight="normal"
+           font-variant="normal"
+           font-style="normal"
+           stroke-miterlimit="10.433"
+           xml:space="preserve"
+           transform="matrix(0.49285714,0,0,-0.49285714,-86.25,1012.5)"
+           id="g4489"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />      </g>
+    </g>
+  </g>
+</svg>

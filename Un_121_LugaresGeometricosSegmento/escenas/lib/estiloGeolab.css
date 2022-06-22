@@ -1,0 +1,36 @@
+@CHARSET "ISO-8859-1";
+
+h1 {
+	font-family: Arial;
+	text-align: center;
+	color: #0000ee;	
+}
+h2 {
+	font-family: Arial;
+	text-align: center;
+	color: #0000ee;	
+}
+
+p {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+li {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+resalta {
+	font-family: Arial;
+	font-size: 14px;
+	font-style: italic;
+	color: #0000ee;	
+}
+
+pie {
+	font-family: Arial;
+	font-size: 9px;
+	text-align: center;
+
+}

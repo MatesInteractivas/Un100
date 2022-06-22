@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' O.y='15%' imagen='images/fondo_inicio.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='sigue' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Continúa' expresión='(370,470,120,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='paso=paso+1' dibujar-si='(paso<5)'">
+   <param name="C_03" value="id='atras' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Atrás' expresión='(60,470,120,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='x1=(paso<4)?0:x1\ny1=(paso<4)?0:y1\nt=(paso<4)?0:t\npaso=paso-1' dibujar-si='(paso>0)&(paso<5)'">
+   <param name="C_04" value="id='teta' tipo='numérico' región='interior' espacio='E1' nombre='n6' expresión='(60,420,40,80)' valor='45' incr='1' min='0' max='130' decimales='0' fijo='sí' visible='no' dibujar-si='paso=0'">
+   <param name="C_05" value="id='Inicio' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Inicio' expresión='(60,470,120,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn120.png' acción='inicio' parámetro='x1=(paso<5)?0:x1\ny1=(paso<5)?0:y1\nt=(paso<5)?0:t\npaso=paso-1' dibujar-si='paso=5'">
+   <param name="A_01" value="id='F' vector='sí' evaluar='una-sola-vez' tamaño='9' expresión='F[0]=0;F[1]=&squot;images/paso1.png&squot;;F[2]=&squot;images/paso2.png&squot;;F[3]=&squot;images/paso3.png&squot;;F[4]=&squot;images/paso4.png&squot;;F[5]=&squot;images/paso5.png&squot;;F[6]=&squot;images/paso6.png&squot;;F[7]=&squot;images/paso7.png&squot;;F[8]=&squot;images/paso8.png&squot;'">
+   <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Suma de dos fuerzas - Método del paralelogramo&squot;' hacer='paso=0;teta2=18;ang2=teta2*pi/180;d112=(1.55*cos(ang2));d2=3.45+d112-9;h2=-.5+1.55*sen(ang2);x1=0;y1=0;'">
+   <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='ang=teta*pi/180;d11=(1.55*cos(ang));d1=3.45+d11-9;h1=-.5+1.55*sen(ang);E1.escala=(paso=3)?80:E1.escala;E1.Ox=(paso=3)?130:E1.Ox;E1.escala=(paso<3)?50:E1.escala;E1.Ox=(paso<3)?10:E1.Ox;'">
+   <param name="A_04" value="id='e3' evento='sí' condición='paso=4' acción='animar' ejecución='alternar' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='polígono' dibujar-si='paso>3' expresión='(-5.56,-0.48)(-5.56+2.1*cos(ang),-0.48+2.1*sen(ang))(-5.56+2.1*cos(ang)+x1,-0.48+2.1*sen(ang)+y1)(-5.56+x1,-0.48+y1)(-5.56,-0.48)' relleno='turquesa'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' dibujar-si='paso<3' expresión='(d2,h2,0.3,0.3)' archivo='images/barra4.png'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' dibujar-si='paso<3' expresión='(d1,h1,0.3,0.3)' archivo='images/barra3.png' rotini='teta'">
+   <param name="G_05" value="espacio='E1' tipo='flecha' dibujar-si='paso>1' expresión='(-5.56,-0.48)(-5.56+2.1*cos(ang2),-0.48+2.1*sen(ang2))' fijo='sí' ancho='3' ancho='3' punta='4'">
+   <param name="G_06" value="espacio='E1' tipo='flecha' dibujar-si='paso=1' expresión='(-5.56+3.1*cos(ang2),-0.48+3.1*sen(ang2))(-5.56+5.1*cos(ang2),-0.48+5.1*sen(ang2))' fijo='sí' ancho='3' ancho='3' punta='4'">
+   <param name="G_07" value="espacio='E1' tipo='flecha' dibujar-si='paso=1' expresión='(-5.56+3.1*cos(ang),-0.48+3.1*sen(ang))(-5.56+5.1*cos(ang),-0.48+5.1*sen(ang))' fijo='sí' ancho='3' ancho='3' punta='4' flecha='amarillo'">
+   <param name="G_08" value="espacio='E1' tipo='flecha' dibujar-si='paso>1' expresión='(-5.56,-0.48)(-5.56+2.1*cos(ang),-0.48+2.1*sen(ang))' fijo='sí' ancho='3' ancho='3' punta='4' flecha='amarillo'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='paso=0' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40 En la  ventana izquierda, tenemos\par dos barras unidas por un pasador.\par \par Cambia el \u225 ngulo entre las barras,\par haciendo clic en la flecha azul o en\par la roja. Luego haz clic en  el bot\u243 n\par &squot;&squot;contin\u250 a&squot;&squot;.\fs44\par \par \par }' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='texto' dibujar-si='paso=1' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 Ahora, hay dos fuerzas aplicadas\par como lo indica la figura.\par \par Estas fuerzas est\u225 n en la direcci\u243 n\par de los ejes de las barras.\par \par Si  desplazamos  las  fuerzas  a  lo\par largo  de  sus  \cf0 l\u237 neas de acc\u237 on\cf1 , se\par encontrar\u225 n en el pasador.\par \par Haz clic en el bot\u243 n &squot;&squot;Contin\u250 a\fs44 &squot;&squot;\par \par \par }' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='texto' dibujar-si='paso=2' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 Cuando las fuerzas  concurren\par en un punto, decimos que son:\par \par \cf0\fs48\b  \u161 Fuerzas concurrentes!\fs40\b0\cf1\par \par Haz clic en el bot\u243 n &squot;&squot;Contin\u250 a\fs44 &squot;&squot;\par \par \par }' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='texto' dibujar-si='paso=3' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 Con las fuerzas aisladas, podr\u225 s\par observar c\u243 mo  se  determina  la\par resultante  de estas  dos fuerzas\par por el m\u233 todo del paralelogramo,\par tambi\u233 n conocido como:\par \par \b\cf0  LEY DEL PARALELOGRAMO\b0\cf1\par \par Haz clic en el bot\u243 n &squot;&squot;Contin\u250 a\fs44 &squot;&squot;\par \par \par }' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_13" value="espacio='E1' tipo='texto' dibujar-si='paso=4' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40 Construimos el paralelogramo, de\par tal  forma que  dos  de sus  lados\par sean las fuerzas.\par \par \par Haz clic en el bot\u243 n &squot;&squot;Contin\u250 a\fs44 &squot;&squot;\par \par \par }' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_14" value="espacio='E1' tipo='flecha' dibujar-si='paso=5' expresión='(-5.56,-0.48)(-5.56+2.1*cos(ang)+x1,-0.48+2.1*sen(ang)+y1)' fijo='sí' tamaño='1' ancho='2' ancho='2' punta='5' flecha='710000ff'">
+   <param name="G_15" value="espacio='E1' tipo='texto' dibujar-si='paso=5' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40 Finalmente, trazamos  la  fuerza\par resultante, la cual es una de las\par diagonales del paralelogramo.\par \par Puedes volver al inicio para que\par modifiques el \u225 ngulo.\fs44\par \par }' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="Animación" value="controles='no' auto='no' inicio='t=0' hacer='t=t+.1;x1=t*cos(ang2);y1=t*sen(ang2);' mientras='t<2.1'">
+</ajs>
+
+</body>
+</html>

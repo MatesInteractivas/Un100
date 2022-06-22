@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+
+<title>Motivación</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_motivacion_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='HTMLIFrame' id='Edocumenta' x='35' y='80' ancho='900' alto='450' dibujar-si='cdocumenta=1' despl_imagen='arr-izq' archivo='documenta1_2.htm'">
+   <param name="E_03" value="tipo='R3' id='E3' x='45' y='110' ancho='500' alto='390' dibujar-si='cdocumenta=0' O.y='25' despl_imagen='arr-izq' fondo='fff0f8fa' despliegue='pintor' cortar='sí' R3='sí'">
+   <param name="E_04" value="tipo='R2' id='E4' x='575' y='100' ancho='350' alto='250' dibujar-si='cdocumenta=0' fijo='sí' O.y='15' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='E5' x='575' y='375' ancho='350' alto='125' dibujar-si='cdocumenta=0' fijo='sí' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='cdocumenta' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='_._' expresión='(780,0,80,80)' fijo='sí' visible='sí' imagen='iconos/72documenta_c.png' acción='calcular' parámetro='cdocumenta=1' dibujar-si='cdocumenta=0' pos_mensajes='centro'">
+   <param name="C_03" value="id='cdocumenta' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='_._' expresión='(780,0,80,80)' fijo='sí' visible='sí' imagen='iconos/72documenta_a.png' acción='calcular' parámetro='cdocumenta=0' dibujar-si='cdocumenta=1' pos_mensajes='centro'">
+   <param name="C_04" value="id='v2' tipo='video' región='interior' espacio='E1' expresión='(185,105,600,400)' dibujar-si='0' archivo='http://arquimedes.matem.unam.mx/chile/videos/R4/video_1.mp4'">
+   <param name="C_05" value="id='subebaja' tipo='numérico' región='interior' espacio='E3' nombre='subebaja' expresión='(460,195,30,60)' incr='0.05' min='-3' max='3' fijo='sí' visible='no' pos_mensajes='centro'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Planilandia versus Espaciolandia&squot;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E4' tipo='texto' fondo='sí' expresión='[20,10]' texto='Visión cenital de la parte de la esfera\n   que está ubicada en Planilandia' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_03" value="espacio='E4' tipo='curva' color='rojo' expresión='(cos(t)*sqrt(2.25-subebaja^2),sen(t)*sqrt(2.25-subebaja^2))' t.intervalo='[0,2*pi]' t.pasos='64' ancho='3'">
+   <param name="G_04" value="espacio='E4' tipo='polígono' color='azul' expresión='(-3,-1)(-3,-2)(-2,-2)(-2,-1)(-3,-1)' ancho='2'">
+   <param name="G_05" value="espacio='E5' tipo='texto' expresión='[20,5]' texto='Vista observada por el Sr. Cuadrado' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_06" value="espacio='E4' tipo='punto' color='rojo' dibujar-si='(subebaja=-1.5)|(subebaja=1.5)' expresión='(0,0)' fijo='sí' tamaño='3'">
+   <param name="G_07" value="espacio='E5' tipo='ecuación' expresión='y=0'">
+   <param name="G_08" value="espacio='E5' tipo='segmento' color='rojo' expresión='(-sqrt(2.25-subebaja^2),0)(sqrt(2.25-subebaja^2),0)' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_09" value="espacio='E5' tipo='punto' color='rojo' dibujar-si='(subebaja=-1.5)|(subebaja=1.5)' expresión='(0,0)' fijo='sí' tamaño='3'">
+   <param name="S_01" value="espacio='E3' tipo='texto' color='20303a' expresión='[25,20]' texto='Nuestra visión espacial de Planilandia \n  con la Sra. Esfera y el Sr. Cuadrado' fuente='SansSerif,BOLD,23' fijo='sí'">
+   <param name="S_02" value="espacio='E3' tipo='cara' dibujar-si='0' expresión='(-5,5)(5,5)(5,-5)(-5,5)' modelo='metal'">
+   <param name="S_03" value="espacio='E3' tipo='polireg' dibujar-si='0' modelo='metal' ancho='5' largo='5' Nu='4'">
+   <param name="S_04" value="espacio='E3' tipo='superficie' color='a1ffffff' color_reverso='a1ffffff' expresión='x=8*u-4 y=8*v-4 z=0' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_05" value="espacio='E3' tipo='esfera' expresión='Esfera' posini='(0,0,subebaja)' modelo='luz' ancho='3' Nu='16' Nv='32'">
+   <param name="S_06" value="espacio='E3' tipo='curva' color='rojo' dibujar-si='(subebaja>-1.5)&(subebaja<1.5)' expresión='x=1.01*sqrt(2.25-subebaja^2)*cos(2*pi*(u-0.5)) y=1.01*sqrt(2.25-subebaja^2)*sen(2*pi*(u-0.5)) z=0' ancho='4' Nu='32'">
+   <param name="S_07" value="espacio='E3' tipo='polígono' color='azul' expresión='(1,-3,0)(1,-2,0)(2,-2,0)(2,-3,0)(1,-3,0)' ancho='2' Nu='1'">
+   <param name="S_08" value="espacio='E3' tipo='punto' color='rojo' color_reverso='rojo' dibujar-si='(subebaja=-1.5)|(subebaja=1.5)' expresión='(0,0,0)' fijo='sí' ancho='2'">
+</ajs>
+
+
+
+</body>
+
+</html>

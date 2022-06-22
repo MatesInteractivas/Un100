@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Motivación</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='590' y='180' ancho='300' alto='250' fijo='sí' despl_imagen='arr-izq' fondo='d5f3fe' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_03" value="id='down' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(705,440,70,70)' fijo='sí' visible='sí' imagen='images/abajo1.png' acción='calcular' parámetro='anima=1\nbaja=1\nsube=0\natras=0\nadelante=0' dibujar-si='(t=0)|(t=23)' activo-si='E2.Oy<275' pos_mensajes='centro'">
+   <param name="C_04" value="id='top' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(705,110,70,70)' fijo='sí' visible='sí' imagen='images/arriba1.png' acción='calcular' parámetro='anima=1\nbaja=0\nsube=1\natras=0\nadelante=0' dibujar-si='(t=0)|(t=23)' activo-si='E2.Oy>-275' pos_mensajes='centro'">
+   <param name="C_05" value="id='left' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(505,270,70,70)' fijo='sí' visible='sí' imagen='images/izquierda1.png' acción='calcular' parámetro='anima=1\nbaja=0\nsube=0\natras=1\nadelante=0' dibujar-si='(t=0)|(t=23)' activo-si='E2.Ox>-276' pos_mensajes='centro'">
+   <param name="C_06" value="id='right' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(905,270,70,70)' fijo='sí' visible='sí' imagen='images/derecha1.png' acción='calcular' parámetro='anima=1\nbaja=0\nsube=0\natras=0\nadelante=1' dibujar-si='(t=0)|(t=23)' activo-si='E2.Ox<276' pos_mensajes='centro'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Momento de una fuerza alrededor de un punto&squot;' hacer='titulo2=&squot;¡Dadme una palanca y moveré el mundo!&squot;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="A_03" value="id='e3' evento='sí' condición='anima' acción='animar' ejecución='alternar' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E1' tipo='texto' dibujar-si='t=0' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='t>0' expresión='[(E1._w-_AnchoDeCadena_(titulo2,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo2]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_03" value="espacio='E2' tipo='imagen' expresión='(0,0,1,1)' archivo='images/torque1.png'">
+   <param name="G_04" value="espacio='E2' tipo='imagen' expresión='(0,6,.9,.9)' archivo='images/torque2.png'">
+   <param name="G_05" value="espacio='E2' tipo='imagen' expresión='(0,-6,1,1)' archivo='images/torque3.jpg'">
+   <param name="G_06" value="espacio='E2' tipo='imagen' expresión='(-6,0,1,1)' archivo='images/torque4.jpg'">
+   <param name="G_07" value="espacio='E2' tipo='imagen' expresión='(-6,6,1,1)' archivo='images/torque5.gif'">
+   <param name="G_08" value="espacio='E2' tipo='imagen' expresión='(-6,-6,1,1)' archivo='images/torque6.jpg'">
+   <param name="G_09" value="espacio='E2' tipo='imagen' expresión='(6,0,1,1)' archivo='images/torque7.jpg'">
+   <param name="G_10" value="espacio='E2' tipo='imagen' expresión='(6,6,1,1)' archivo='images/torque8.png'">
+   <param name="G_11" value="espacio='E2' tipo='imagen' expresión='(6,-6,1,1)' archivo='images/torque9.png'">
+   <param name="G_12" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(0,0)' archivo='images/fondo_desarrollo_vacio.png'">
+   <param name="G_13" value="espacio='E1' tipo='texto' dibujar-si='(E2.Ox=0)&(E2.Oy=0)' expresión='[60,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 En muchas actividades de nuestra vida diaria,\par ejecutamos  acciones debemo aplicar algunas\par fuerzas para lograr nuestros prop\u243 sitos.\par \par En la imagen de la derecha, observamos una\par fuerza aplicada en el extremo de una llave, con\par el objeto de apretar un tuerca. El efecto sobre\par la tuerca se llama:\par \par                     \u161 MOMENTO TORQUE!\f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_14" value="espacio='E1' tipo='imagen' dibujar-si='(t!=0)&(t!=23)' expresión='(-8,3)' archivo='images/torque10.jpg'">
+   <param name="G_15" value="espacio='E1' tipo='texto' dibujar-si='(t!=0)&(t!=23)' expresión='[120,340]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\u161 DADME UNA PALANCA Y\par    MOVER\u201  EL MUNDO!\f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_16" value="espacio='E1' tipo='texto' dibujar-si='(E2.Ox=0)&(E2.Oy=-276)' expresión='[60,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40\par \par Esa fuerza llamada &squot;&squot;Momento&squot;&squot;, nos  permite\par apretar o desapretar objetos.\par \par En la imagen de la derecha, observamos una\par llave inglesa a la cual le aplicamos una fuerza\par en el extremo de una llave, con el objeto de:\par \par                    \b  \u161 DESAPRETAR!\b0\par \par \f3\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_17" value="espacio='E1' tipo='texto' dibujar-si='(E2.Ox=0)&(E2.Oy=276)' expresión='[60,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40 El  momento  que  aplicamos,  depende de \par varios factores: la  distancia  hacia el punto\par de aplicaci\u243 n y la direcci\u243 n de la fuerza.\par \par En la imagen de la derecha, observamos una\par barra articulada en uno de sus extremos, en\par el otro extremo aplicamos una fuerza.\par \par Observa:\par \par \b\u161 La posici\u243 n y l\u237 nea de acci\u243 n de la fuerza!\b0\par \par \f3\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_18" value="espacio='E1' tipo='texto' dibujar-si='(E2.Ox=276)&(E2.Oy=0)' expresión='[60,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40\par \par Recuerda en el v\u237 deo anterior, que una forma\par efectiva  de  desapretar  las  tuercas  de una\par llanta, es usando una palanca m\u225 s larga.\par \par Ahora, \u191 entiendes el mensaje de Arqu\u237 medes?\par \par \b   \u161 Dadme una palanca y mover\u233  el mundo!\b0\par \par \f3\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_19" value="espacio='E1' tipo='texto' dibujar-si='(E2.Ox=276)&(E2.Oy=276)' expresión='[60,140]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\par \par En  una  bicicleta, el  pedal  es  una  palanca\par sobre  la  que  ejercemos, con nuestros pies,\par una fuerza que genera el momento necesario\par para hacer rodar la bicicleta.\par \par \par \par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_20" value="espacio='E1' tipo='texto' dibujar-si='(E2.Ox=276)&(E2.Oy=-276)' expresión='[60,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\par En  esta unidad did\u225 ctica, comprenderemos \par la  importancia  de  la  l\u237 nea  de acci\u243 n de la\par fuerza para el c\u225 lculo del  momento que esa\par fuerza ejerce sobre un punto.\par \par Aprendremos las ecuaciones y las notaciones\par empleadas, tal  como se  obervan en la figura\par de la derecha.\par \par \par \par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_21" value="espacio='E1' tipo='texto' dibujar-si='(E2.Ox=-276)&(E2.Oy=0)' expresión='[60,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\par Ya puedes concluir:\par \par No  s\u243 lo  importa el valor de la fuerza, tambi\u233 n\par es importante la distancia de la l\u237 nea de acci\u243 n\par de  la  fuerza al  punto de aplicaci\u243 n que, en el\par caso de la imagen, es el pivote sobre el que se\par apoya la palanca.\par \par \par \par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_22" value="espacio='E1' tipo='texto' dibujar-si='(E2.Ox=-276)&(E2.Oy=-276)' expresión='[60,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\par Ya puedes concluir:\par \par No  s\u243 lo  importa el valor de la fuerza, tambi\u233 n\par es importante la distancia de la l\u237 nea de acci\u243 n\par de  la  fuerza al  punto de aplicaci\u243 n.\par \par En el caso de la imagen,  es  m\u225 s f\u225 cil empujar \par la puerta poniendo la mano lo m\u225 s l\u233 jos del eje\par de rotaci\u243 n.\par \par \par \par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_23" value="espacio='E1' tipo='texto' dibujar-si='(E2.Ox=-276)&(E2.Oy=276)' expresión='[60,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40  \par \par No olvides la ense\u241 anza del v\u237 deo de la escena\par anterior:\par \par Es  m\u225 s  f\u225 cil  desapretar o apretar una tuerca,\par si hacemos  palanca poniendo  la  mano lo m\u225 s\par l\u233 jos del eje de rotaci\u243 n.\par \par \par \par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_24" value="espacio='E1' tipo='texto' expresión='[60,480]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\b Haz clic sobre los botones de direcci\u243 n.\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_25" value="espacio='E2' tipo='polígono' fondo='sí' color='blanco' coord_abs='sí' expresión='(0,0)(E2._w-1,0)(E2._w-1,E2._h-1)(0,E2._h-1)(0,0)' ancho='5'">
+   <param name="Animación" value="controles='no' auto='no' inicio='t=0' hacer='anima=0;t=t+1;E2.Oy=(baja=1)?E2.Oy+t:E2.Oy;E2.Oy=(sube=1)?E2.Oy-t:E2.Oy;E2.Ox=(adelante=1)?E2.Ox+t:E2.Ox;E2.Ox=(atras=1)?E2.Ox-t:E2.Ox' mientras='t<23'">
+</ajs>
+
+</body>
+</html>

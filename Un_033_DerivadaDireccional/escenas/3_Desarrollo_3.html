@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="editable" value="no">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='1' O.x='-485' O.y='-275' imagen='images/fondo_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='BOTON' x='50' y='100' ancho='420' alto='120' O.x='-130' O.y='5' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R3' id='SUPER' x='55' y='200' ancho='425' alto='307' escala='20' despl_imagen='arr-izq' fondo='ffffffff' despliegue='pintor' R3='sí'">
+   <param name="E_04" value="tipo='R2' id='DATOS' x='550' y='110' ancho='355' alto='155' fijo='sí' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='PLANO' x='550' y='270' ancho='360' alto='240' escala='20' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='gris' texto='no'">
+   <param name="E_06" value="tipo='R2' id='OPCIO' x='50' y='105' ancho='433' alto='130' dibujar-si='opcio=1' fijo='sí' imagen='images/panel_940x445.png' despl_imagen='expand.' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_07" value="tipo='R2' id='Covertura' dibujar-si='info' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_08" value="tipo='R2' id='INFO' x='(970-410)/2' y='140' ancho='410' alto='300' dibujar-si='info' fijo='sí' despl_imagen='arr-izq' fondo='eeeef7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='goTo4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(E1._w-47,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_03" value="id='prec' tipo='numérico' región='exterior' espacio='SUPER' nombre='Num. puntos=' valor='15' incr='1' min='12' max='25' decimales='1' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='xmin' tipo='numérico' región='interior' espacio='OPCIO' nombre='xmin' expresión='(5,10)' valor='-4' max='xmax' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='xmax' tipo='numérico' región='interior' espacio='OPCIO' nombre='xmax' expresión='(200,10)' valor='4' min='xmin' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='ymin' tipo='numérico' región='interior' espacio='OPCIO' nombre='ymin' expresión='(5,50)' valor='-1' max='ymax' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_07" value="id='ymax' tipo='numérico' región='interior' espacio='OPCIO' nombre='ymax' expresión='(200,50)' valor='4' min='ymin' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_08" value="id='zmax' tipo='numérico' región='escenario' espacio='OPCIO' nombre='zmax' expresión='(0,0,0,0)' valor='valor+3' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_09" value="id='a' tipo='numérico' región='interior' espacio='DATOS' nombre='_._' expresión='(100,5,60,25)' valor='1' min='xmin' max='xmax' fijo='no' visible='sí' acción='calcular' parámetro='m=valorm' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_10" value="id='b' tipo='numérico' región='interior' espacio='DATOS' nombre='_._' expresión='(180,5,60,25)' valor='3' min='ymin' max='ymax' fijo='no' visible='sí' acción='calcular' parámetro='m=valorm' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_11" value="id='SUPER.escala' tipo='numérico' región='interior' espacio='BOTON' nombre='_._' expresión='(24,50,25,40)' valor='25' incr='0.1*SUPER.escala' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_12" value="id='SUPER.Ox' tipo='numérico' interfaz='barra' región='exterior' espacio='SUPER' nombre='Desplazar horizontal' incr='10' min='-200' max='200' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_13" value="id='SUPER.Oy' tipo='numérico' interfaz='barra' región='exterior' espacio='SUPER' nombre='Desplazar vertical' valor='90' incr='10' min='-200' max='200' decimales='0' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_14" value="id='func' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='BOTON' nombre='_._' expresión='(240,65,180,25)' valor='&squot;7-0.3*x^2-0.2*y^2&squot;' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_15" value="id='Solucion' tipo='numérico' interfaz='botón' región='interior' espacio='DATOS' nombre='Solucion' expresión='(130,210,70,20)' fijo='sí' visible='sí' acción='calcular' parámetro='m=valorm' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_16" value="id='ejeZ' tipo='gráfico' espacio='BOTON' color='naranja' color-int='ffab6a' expresión='(-0.4,-0.13)' constricción='(x/0.5)^2+(y/0.2)^2=1' fijo='sí'">
+   <param name="C_17" value="id='ejeZ.x' tipo='numérico' región='escenario' espacio='INFO' nombre='ejeZ.x' expresión='(0,0,0,0)' valor='0.46' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_18" value="id='ejeZ.y' tipo='numérico' región='escenario' espacio='INFO' nombre='ejeZ.y' expresión='(0,0,0,0)' valor='-0.08' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_19" value="id='abrirOpc' tipo='numérico' interfaz='botón' región='interior' espacio='BOTON' nombre='Opciones' expresión='(10,10,120,30)' fijo='sí' visible='sí' color='blanco' color-int='ff404040' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='opcio=1' pos_mensajes='centro'">
+   <param name="C_20" value="id='boton' tipo='numérico' interfaz='botón' región='interior' espacio='BOTON' nombre='Restablecer' expresión='(150,10,120,30)' fijo='sí' visible='sí' color='blanco' color-int='ff404040' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='SUPER.0x=90\nSUPER.0x=80\nejeZ.x=0.46\nejeZ.y=-0.08' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_21" value="id='cerrarOpc' tipo='numérico' interfaz='botón' región='interior' espacio='OPCIO' expresión='(OPCIO._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='opcio=0' pos_mensajes='centro'">
+   <param name="C_22" value="id='horiz' tipo='numérico' interfaz='menú' región='interior' espacio='OPCIO' nombre='_._' expresión='(110,90,55,20)' fijo='sí' visible='no' imagen='_._' opciones='Si,No' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_23" value="id='Verti' tipo='numérico' interfaz='menú' región='interior' espacio='OPCIO' nombre='_._' expresión='(300,90,55,20)' fijo='sí' visible='no' opciones='Si,No' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_24" value="id='Instrucciones' tipo='numérico' interfaz='botón' región='interior' espacio='BOTON' nombre='Explicación' expresión='(BOTON._w-130,10,120,30)' fijo='sí' visible='sí' color='blanco' color-int='ff404040' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='info=1' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_25" value="id='cerrarInfo' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(INFO._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='info=0' pos_mensajes='centro'">
+   <param name="C_26" value="id='cerrarExpli' tipo='numérico' interfaz='botón' región='interior' espacio='EXPLI' expresión='(EXPLI._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='expli=0' pos_mensajes='centro'">
+   <param name="A_01" value="id='xpin' expresión='xmax-xmin'">
+   <param name="A_02" value="id='ypin' expresión='ymax-ymin'">
+   <param name="A_03" value="id='f' expresión='_Eval_(func)'">
+   <param name="A_04" value="id='ff(aa,bb)' algoritmo='sí' expresión='f' algoritmo='sí' hacer='x=aa;y=bb;'">
+   <param name="A_05" value="id='fff(aa,bb)' algoritmo='sí' expresión='auxx2' algoritmo='sí' hacer='auxx=x;auxx1=y;x=aa;y=bb;auxx2=f;x=auxx;y=auxx1;'">
+   <param name="A_06" value="id='valor' expresión='fff(a,b)'">
+   <param name="A_07" value="id='posi' vector='sí' evaluar='una-sola-vez' expresión='posi[0]=0;posi[1]=0;posi[2]=-40;'">
+   <param name="A_08" value="id='pini' vector='sí' evaluar='una-sola-vez' expresión='pini[0]=0;pini[1]=0;pini[2]=0'">
+   <param name="A_09" value="id='mx' expresión='(ff(a+0.001,b)-ff(a,b))/0.001'">
+   <param name="A_10" value="id='my' expresión='(ff(a,b+0.001)-ff(a,b))/0.001'">
+   <param name="A_11" value="id='maximoP' expresión='(valor>0)?valor+3:zmax'">
+   <param name="A_12" value="id='minimoP' expresión='(valor>0)?-2:valor-3'">
+   <param name="A_13" value="id='ang(x,y)' algoritmo='sí' expresión='resul' algoritmo='sí' hacer='resul=(((x>0)&(y>=0))?(atan(y/x)*180/pi):resul);resul=(((x>0)&(y<0))?(atan(y/x)*180/pi+360):resul);resul=((x<0)?(atan(y/x)*180/pi+180):resul)'">
+   <param name="A_14" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;El gradiente es ortogonal a la curva de nivel&squot;' hacer='bw=126;bh=50;bx=539;by=456;info=1'">
+   <param name="A_15" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='rrr=max(xmax,ymax);aan=ang(ejeZ.x,ejeZ.y);angulo1=ang(ejeY.x,ejeY.y);SUPER.rot.z=aan;pi=3.141516;h=0.01;ux=(ff(a+h,b)-ff(a-h,b))/(2*h);uy=(ff(a,b+h)-ff(a,b-h))/(2*h);fab=ff(a,b)'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='INFO' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(INFO._w/2,18,INFO._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_03" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_04" value="espacio='PLANO' tipo='ecuación' color='ff6400' expresión='y=0'">
+   <param name="G_05" value="espacio='PLANO' tipo='punto' color='ff9d9b' dibujar-si='Paso>=2' expresión='(0,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24}' fuente='Serif,PLAIN,15' fijo='sí' tamaño='0'">
+   <param name="G_06" value="espacio='BOTON' tipo='texto' color='006699' expresión='[140,65]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 Superficie z=\par \f2\fs24}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_07" value="espacio='DATOS' tipo='texto' color='006699' expresión='[10,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 Punto  P = (                   ,                    )\par \f2\fs24}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_08" value="espacio='DATOS' tipo='texto' color='006699' expresión='[10,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green102\blue153;}\f1\fs32\b\cf0 El vector gradiente es:\cf1\par           \u8711 f{\*\mjaformula ({\expr a\decimals 2\fixed0},{\expr b\decimals 2\fixed0})}\f2\fs24\b0 =\f1\fs32\b{\*\mjaformula ({\expr ux\decimals 2\fixed0},{\expr uy\decimals 2\fixed0})}\f2\fs24\b0}' fuente='SansSerif,BOLD,16' fijo='sí'">
+   <param name="G_09" value="espacio='PLANO' tipo='texto' color='006699' expresión='[0,PLANO._h-20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;}\cf0\f1\fs30 Plano z=0\f2\fs24\par }' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_10" value="espacio='PLANO' tipo='ecuación' color='rojo' expresión='f=fab' ancho='2'">
+   <param name="G_11" value="espacio='BOTON' tipo='imagen' coord_abs='sí' expresión='(12,60,0.7,0.7)' archivo='imagenes_derdireccional/lupa.gif'">
+   <param name="G_12" value="espacio='BOTON' tipo='ecuación' color='grisClaro' expresión='(x/0.5)^2+(y/0.2)^2=1'">
+   <param name="G_13" value="espacio='OPCIO' tipo='texto' color='006699' expresión='[10,90]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34 Plano z = 0                         Plano vertical\f2\fs24\par }' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_14" value="espacio='DATOS' tipo='texto' color='006699' expresión='[10,90]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue0;\red0\green135\blue124;}\f1\fs32\b\cf0 La curva de nivel es \cf1\par     {\*\mjaformula{\expr func\decimals 2\fixed0}}={\*\mjaformula{\expr fab\decimals 2\fixed0}}\cf2\f2\fs24\b0}' fuente='SansSerif,BOLD,16' fijo='sí'">
+   <param name="G_15" value="espacio='PLANO' tipo='ecuación' color='ffa100' expresión='f=s' familia='s' s.intervalo='[fab-3,fab+3]' s.pasos='6'">
+   <param name="G_16" value="espacio='PLANO' tipo='flecha' color='006699' expresión='(a,b)(a+ux,b+uy)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs30}' fuente='Serif,PLAIN,15' fijo='sí' ancho='4' ancho='4' punta='4' flecha='006999'">
+   <param name="G_17" value="espacio='PLANO' tipo='flecha' color='rojo' expresión='(a,b)(a-uy,b+ux)' fijo='sí' ancho='4' ancho='4' punta='4' flecha='be0000'">
+   <param name="G_18" value="espacio='PLANO' tipo='punto' color='negro' expresión='(a,b)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs26\b P\f2\fs24\b0\par }' fuente='SansSerif,BOLD,13' fijo='sí' tamaño='5'">
+   <param name="G_19" value="espacio='PLANO' tipo='punto' color='ffa100' expresión='(a,b)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24}' fuente='Serif,PLAIN,15' fijo='sí' tamaño='3'">
+   <param name="G_20" value="espacio='PLANO' tipo='punto' expresión='(a+ux,b+uy)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green102\blue153;\red32\green48\blue58;}\cf0\f1\fs30\b\par \u8711 f\cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,15' fijo='sí' tamaño='0'">
+   <param name="G_21" value="espacio='INFO' tipo='texto' fondo='sí' color='blanco' expresión='[20,5]' texto='Gradiente y curvas de nivel' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_22" value="espacio='INFO' tipo='texto' fondo='sí' expresión='[30,70]' texto='Vamos a ver que el gradiente es ortogonal\na las curvas de nivel.\n\nIntroduce un punto P(a,b) y observa como\nla curva de nivel que pasa por P, esto es \nla curva z=f(a,b), es ortogonal al gradiente\nde f en dicho punto.' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="S_01" value="espacio='SUPER' tipo='segmento' color='gris' expresión='(0,0,0)(0,ymax+0.5,0)' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' cortar='sí' ancho='2' Nu='8'">
+   <param name="S_02" value="espacio='SUPER' tipo='segmento' color='gris' expresión='(0,0,0)(xmax+0.5,0,0)' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' cortar='sí' ancho='2' Nu='8'">
+   <param name="S_03" value="espacio='SUPER' tipo='segmento' color='gris' expresión='(0,0,0)(0,0,zmax+0.5)' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' cortar='sí' ancho='2' Nu='8'">
+   <param name="S_04" value="espacio='SUPER' tipo='punto' fondo='sí' color='negro' color_reverso='rosa' expresión='(xmax+0.5,0,0)' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' cortar='sí' texto='X' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='0'">
+   <param name="S_05" value="espacio='SUPER' tipo='punto' fondo='sí' color='negro' color_reverso='rosa' expresión='(0,ymax+0.5,0)' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' cortar='sí' texto='Y' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='0'">
+   <param name="S_06" value="espacio='SUPER' tipo='punto' fondo='sí' color='negro' color_reverso='rosa' expresión='(0,0,zmax+0.5)' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' cortar='sí' texto=' Z' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='0'">
+   <param name="S_07" value="nombre='PLAPI1' espacio='SUPER' tipo='superficie' color='875190cb' color_reverso='875190cb' dibujar-si='(Verti=si)' expresión='x=-6+12*u  y=-6+12*v  z=fab' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' cortar='sí' Nu='1' Nv='1'">
+   <param name="S_08" value="nombre='SUP1' espacio='SUPER' tipo='superficie' color='f8cbb1' color_reverso='f8cbb1' expresión='x=rrr*u*cos(v*2*pi) y=rrr*u*sin(v*2*pi) z=f' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' cortar='sí' aristas='sí' Nu='prec' Nv='prec'">
+   <param name="S_09" value="espacio='SUPER' tipo='segmento' color='ff6400' expresión='(a,b,0)(a,b,ff(a,b))' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' cortar='sí'">
+   <param name="S_10" value="espacio='SUPER' tipo='punto' color='negro' color_reverso='rosa' expresión='(a,b,0)' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' texto='P' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='4'">
+   <param name="S_11" value="espacio='SUPER' tipo='punto' color='negro' color_reverso='rosa' expresión='(a,b,ff(a,b))' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' texto='f(P)' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='4'">
+   <param name="S_12" value="espacio='SUPER' tipo='punto' color='negro' color_reverso='rosa' expresión='(0,ymax-2,-3)' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}\f0\fs24 Plano {\*\mjaformula\u928 }\par}' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='0'">
+   <param name="S_13" value="nombre='Z0' espacio='SUPER' tipo='superficie' color='aaffaeae' color_reverso='aaffaeae' dibujar-si='(horiz=si)' expresión='x=-10+20*u  y=-10+20*v  z=0' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' Nu='prec' Nv='prec'">
+   <param name="S_14" value="nombre='Z0' espacio='SUPER' tipo='superficie' color='aaffaeae' color_reverso='aaffaeae' dibujar-si='(horiz=si)' expresión='x=-10+20*u  y=-10+20*v  z=0' rotini='(posi[0],posi[1],posi[2])' posini='(pini[0],pini[1],pini[2])' modelo='alambre' Nu='prec' Nv='prec'">
+</ajs>
+
+</body>
+</html>

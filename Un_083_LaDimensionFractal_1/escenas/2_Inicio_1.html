@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='Koch' x='E1._w/2+20' y='110' ancho='450' alto='370' fijo='sí' escala='350' O.x='-200' O.y='50' despl_imagen='arr-izq' fondo='d5f3ff' red='b8c4c8' red10='889498' ejes='405860' texto='no' números='sí'">
+   <param name="E_03" value="tipo='R2' id='PanIzq' x='1.5%' y='20%' ancho='48%' alto='76%' fijo='sí' despl_imagen='arr-izq' fondo='fbfadc' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='PanEscala' x='830' y='485' ancho='120' alto='60' fijo='sí' despl_imagen='arr-izq' fondo='efefef' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='g3' tipo='gráfico' espacio='E1' expresión='(-2,0)' dibujar-si='0'">
+   <param name="C_02" value="id='zoom' tipo='numérico' región='interior' espacio='PanEscala' nombre='Escala' expresión='(PanEscala._w-32,PanEscala._h-55,27,50)' valor='1' incr='1' min='1' max='50' decimales='0' fijo='sí' visible='no' acción='calcular' parámetro='Koch.escala=400+zoom*80\nShwBt=1'">
+   <param name="C_03" value="id='siguiente' tipo='numérico' interfaz='botón' región='interior' espacio='PanIzq' nombre='Siguiente' expresión='(PanIzq._w-150,PanIzq._h-40,140,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn140.png' acción='calcular' parámetro='paso=paso+1' dibujar-si='(ShwBt==1)&(paso<1)'">
+   <param name="C_04" value="id='anterior' tipo='numérico' interfaz='botón' región='interior' espacio='PanIzq' nombre='Anterior' expresión='(10,PanIzq._h-40,140,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn140.png' acción='calcular' parámetro='paso=paso-1' dibujar-si='(ShwBt==1)&(paso>0)'">
+   <param name="A_01" value="id='Gen0' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='2' filas='2' expresión='Gen0[0,0]=0;Gen0[0,1]=0;Gen0[1,0]=1;Gen0[1,1]=0'">
+   <param name="A_02" value="id='Gen1' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='5' filas='2' expresión='Gen1[0,0]=0;Gen1[0,1]=0;Gen1[1,0]=1/3;Gen1[1,1]=0;Gen1[2,0]=(1/3)*(1+cos(pi/3));Gen1[2,1]=(1/3)*sin(pi/3);Gen1[3,0]=2/3;Gen1[3,1]=0;Gen1[4,0]=1;Gen1[4,1]=0;'">
+   <param name="A_03" value="id='Gen2' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='17' filas='2' expresión=';'">
+   <param name="A_04" value="id='Gen3' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='65' filas='2' expresión=';'">
+   <param name="A_05" value="id='Gen4' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='257' filas='2' expresión=';'">
+   <param name="A_06" value="id='Gen5' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='1025' filas='2' expresión=';'">
+   <param name="A_07" value="id='_Ini()' algoritmo='sí' algoritmo='sí' inicio='_iIni=0' hacer='Gen2[_iIni,0]=0;Gen2[_iIni,1]=0;_iIni=_iIni+1' mientras='_iIni<17'">
+   <param name="A_08" value="id='nSeg(x)' expresión='4^x'">
+   <param name="A_09" value="id='tSeg(x)' expresión='1/(3^x)'">
+   <param name="A_10" value="id='Fn2()' algoritmo='sí' algoritmo='sí' inicio='seg=0' hacer='sseg=seg/4;;dx=Gen1[sseg+1,0]-Gen1[sseg,0];dy=Gen1[sseg+1,1]-Gen1[sseg,1];a=atan(dy/dx);;Gen2[seg,0]=Gen1[sseg,0];Gen2[seg,1]=Gen1[sseg,1];;Gen2[seg+1,0]=Gen1[sseg,0]+tSg*cos(a);Gen2[seg+1,1]=Gen1[sseg,1]+tSg*sin(a);;Gen2[seg+2,0]=Gen2[seg+1,0]+tSg*cos(a+(pi/3));Gen2[seg+2,1]=Gen2[seg+1,1]+tSg*sin(a+(pi/3));;Gen2[seg+3,0]=Gen1[sseg,0]+2*tSg*cos(a);Gen2[seg+3,1]=Gen1[sseg,1]+2*tSg*sin(a);;Gen2[seg+4,0]=Gen1[sseg,0]+3*tSg*cos(a);Gen2[seg+4,1]=Gen1[sseg,1]+3*tSg*sin(a);;seg=seg+4' mientras='seg<16'">
+   <param name="A_11" value="id='Fn3()' algoritmo='sí' algoritmo='sí' inicio='seg=0' hacer='sseg=seg/4;;dx=Gen2[sseg+1,0]-Gen2[sseg,0];dy=Gen2[sseg+1,1]-Gen2[sseg,1];a=(dx>=0)?atan(dy/dx):atan(dy/dx)+pi;;Gen3[seg,0]=Gen2[sseg,0];Gen3[seg,1]=Gen2[sseg,1];;Gen3[seg+1,0]=Gen2[sseg,0]+tSg*cos(a);Gen3[seg+1,1]=Gen2[sseg,1]+tSg*sin(a);;Gen3[seg+2,0]=Gen3[seg+1,0]+tSg*cos(a+(pi/3));Gen3[seg+2,1]=Gen3[seg+1,1]+tSg*sin(a+(pi/3));;Gen3[seg+3,0]=Gen2[sseg,0]+2*tSg*cos(a);Gen3[seg+3,1]=Gen2[sseg,1]+2*tSg*sin(a);;Gen3[seg+4,0]=Gen2[sseg,0]+3*tSg*cos(a);Gen3[seg+4,1]=Gen2[sseg,1]+3*tSg*sin(a);;seg=seg+4' mientras='seg<64'">
+   <param name="A_12" value="id='Fn4()' algoritmo='sí' algoritmo='sí' inicio='seg=0' hacer='sseg=seg/4;;dx=Gen3[sseg+1,0]-Gen3[sseg,0];dy=Gen3[sseg+1,1]-Gen3[sseg,1];a=(dx>=0)?atan(dy/dx):atan(dy/dx)+pi;;Gen4[seg,0]=Gen3[sseg,0];Gen4[seg,1]=Gen3[sseg,1];;Gen4[seg+1,0]=Gen3[sseg,0]+tSg*cos(a);Gen4[seg+1,1]=Gen3[sseg,1]+tSg*sin(a);;Gen4[seg+2,0]=Gen4[seg+1,0]+tSg*cos(a+(pi/3));Gen4[seg+2,1]=Gen4[seg+1,1]+tSg*sin(a+(pi/3));;Gen4[seg+3,0]=Gen3[sseg,0]+2*tSg*cos(a);Gen4[seg+3,1]=Gen3[sseg,1]+2*tSg*sin(a);;Gen4[seg+4,0]=Gen3[sseg,0]+3*tSg*cos(a);Gen4[seg+4,1]=Gen3[sseg,1]+3*tSg*sin(a);;seg=seg+4' mientras='seg<256'">
+   <param name="A_13" value="id='Fn5()' algoritmo='sí' algoritmo='sí' inicio='seg=0' hacer='sseg=seg/4;;dx=Gen4[sseg+1,0]-Gen4[sseg,0];dy=Gen4[sseg+1,1]-Gen4[sseg,1];a=(dx>=0)?atan(dy/dx):atan(dy/dx)+pi;;Gen5[seg,0]=Gen4[sseg,0];Gen5[seg,1]=Gen4[sseg,1];;Gen5[seg+1,0]=Gen4[sseg,0]+tSg*cos(a);Gen5[seg+1,1]=Gen4[sseg,1]+tSg*sin(a);;Gen5[seg+2,0]=Gen5[seg+1,0]+tSg*cos(a+(pi/3));Gen5[seg+2,1]=Gen5[seg+1,1]+tSg*sin(a+(pi/3));;Gen5[seg+3,0]=Gen4[sseg,0]+2*tSg*cos(a);Gen5[seg+3,1]=Gen4[sseg,1]+2*tSg*sin(a);;Gen5[seg+4,0]=Gen4[sseg,0]+3*tSg*cos(a);Gen5[seg+4,1]=Gen4[sseg,1]+3*tSg*sin(a);;seg=seg+4' mientras='seg<1024'">
+   <param name="A_14" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='_Ini();tSg=1;nSg=1;paso=0;Expl=0;calcGen=0;Koch.escala=400' hacer='tSg=tSeg(calcGen);nSg=nSeg(calcGen);bla=(calcGen==1)?Fn1():bla;bla=(calcGen==2)?Fn2():bla;bla=(calcGen==3)?Fn3():bla;bla=(calcGen==4)?Fn4():bla;bla=(calcGen==5)?Fn5():bla;calcGen=calcGen+1' mientras='calcGen<8'">
+   <param name="A_15" value="id='INI2' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Autosimilitud e invariancia de escala&squot;'">
+   <param name="A_16" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='0' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;}\f1\fs30 g3.x=\f2\fs34\i{\*\mjaformula{\expr E1._w/2+g3.x*E1.escala\decimals 2\fixed1}}\f1\fs30\i0 =\f2\fs34\i{\*\mjaformula{\expr g3.x\decimals 2\fixed1}}\f1\fs30\i0\par g3.y=\f2\fs34\i{\*\mjaformula{\expr E1._h/2-g3.y*E1.escala\decimals 2\fixed1}}\f1\fs30\i0 =\f2\fs34\i{\*\mjaformula{\expr g3.y\decimals 2\fixed1}}\f1\fs30\i0\par \f2\fs34\i Koch.escala=\fs38{\*\mjaformula{\expr Koch.escala\decimals 4\fixed1}}\f1\fs30\i0\par calcGen=\f2\fs34\i{\*\mjaformula{\expr calcGen\decimals 0\fixed1}}\f1\fs30\i0}' fijo='sí'">
+   <param name="G_03" value="espacio='PanIzq' tipo='polígono' fondo='sí' color='blanco' coord_abs='sí' expresión='(0,0)(PanIzq._w-2,0)(PanIzq._w-2,PanIzq._h-2)(0,PanIzq._h-2)(0,0)' ancho='5'">
+   <param name="G_04" value="espacio='PanIzq' tipo='texto' dibujar-si='paso==0' expresión='[30,20]' texto='Observa el fractal de Koch.' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_05" value="espacio='PanIzq' tipo='texto' dibujar-si='paso==0' expresión='[30,75]' texto='El que tienes a tu derecha es dicho fractal\ndesarrollado hasta la 7a generación.\nPosteriormente verás cómo se desarrolla dicho\nfractal en cada nueva generación.' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_06" value="espacio='Koch' tipo='curva' color='214cff' expresión='(Gen5[t,0],Gen5[t,1]+0.01)' t.intervalo='[0,1023]' t.pasos='1024'">
+   <param name="G_07" value="espacio='PanEscala' tipo='polígono' fondo='sí' coord_abs='sí' expresión='(0,0)(PanEscala._w-2,0)(PanEscala._w-2,PanEscala._h-2)(0,PanEscala._h-2)(0,0)' ancho='2'">
+   <param name="G_08" value="espacio='PanEscala' tipo='texto' expresión='[5,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs44 Escala\f2\fs30}' fuente='SansSerif,PLAIN,22' fijo='sí'">
+   <param name="G_09" value="espacio='Koch' tipo='polígono' color='blanco' coord_abs='sí' expresión='(0,0)(Koch._w-2,0)(Koch._w-2,Koch._h-2)(0,Koch._h-2)(0,0)' ancho='5'">
+   <param name="G_10" value="espacio='PanIzq' tipo='texto' dibujar-si='paso==0' expresión='[30,200]' texto='Por el momento, observa como al aumentar la\nescala del plano (usando el pulsador &squot;Escala&squot;),\nse obtiene una versión del mismo fractal que\nves originalmente pero en pequeño. Igualmente,\nal reducir la escala, el patrón también se puede\nobservar.' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_11" value="espacio='PanIzq' tipo='texto' dibujar-si='paso==1' expresión='[30,20]' texto='El hecho de que al aumentar o reducir la escala\nse recupera el mismo patrón muestra 2\ncaracterísticas de los fractales:' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_12" value="espacio='PanIzq' tipo='texto' dibujar-si='paso==1' expresión='[30,100]' texto='1. Autosimilitud: El un fragmento del fractal es\n                          una representación del fractal\n                          completo.' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_13" value="espacio='PanIzq' tipo='texto' dibujar-si='paso==1' expresión='[30,180]' texto='2. Invariancia: (o invariancia de escala).\n                       Acercando o alejando (esto es,\n                       a una particular escala distinta)\n                       se obtiene una representación\n                       del fractal completo.' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_14" value="espacio='PanIzq' tipo='texto' dibujar-si='paso==1' expresión='[30,310]' texto='Como puedes notar, estos dos conceptos\nestán relacionados.' fuente='SansSerif,PLAIN,18' fijo='sí'">
+</ajs>
+
+</body>
+</html>

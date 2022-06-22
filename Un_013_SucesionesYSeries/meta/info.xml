@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_013_SucesionesYSeries" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Cálculo" 
+	plataforma="HTML 5"
+        ver="En desarrollo"
+	>
+	<titulo><![CDATA[
+		Sucesiones y series
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		El objetivo de esta unidad es introducir al alumno al concepto de sucesi&oacute;n. Para ello, se proporciona una ecuaci&oacute;n inicial, cuyos par&aacute;metros pueden modificarse. El alumno puede editar la ecuaci&oacute;n misma para probar ecuaciones de su elecci&oacute;n. La sucesi&oacute;n se calcula paso a paso para observar c&oacute;mo cambia respecto al par&aacute;metro n. Es posible observar, en caso de que la haya, que la sucesi&oacute;n tiene una cota que no es rebasada, y &eacute;sta es gr&aacute;ficamente representada por una recta para introducir el concepto de as&iacute;ntota. Lo mismo se hace con sucesiones generadas mediante la aplicaci&oacute;n recursiva de una funci&oacute;n y las sucesiones correspondientes a una serie.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

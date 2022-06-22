@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="Un_112_MedianasyGravicentro" 
+	nivel="Licenciatura, Bachillerato" 
+	area="Matemáticas, Geometría, Geometría clásica"
+	plataforma="HTML 5" 
+	versión="Beta"
+	>
+	<titulo><![CDATA[
+		Medianas y gravicentro de un triángulo 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+	En un triángulo podemos distinguir cuatro centros: ortocentro, circuncentro, baricentro, incentro; que son
+	los puntos de intersección de cuatro grupos de rectas notables: alturas, mediatrices, medianas, bisectrices.
+    En este interactivo estudiamos las medianas y el gravicentro, probamos, usando el Teorema de Ceva que
+	las medianas de un triángulo son concurrentes.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

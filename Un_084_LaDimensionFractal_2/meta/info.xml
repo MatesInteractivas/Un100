@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_084_LaDimensionFractal_2" 
+	nivel="Licenciatura" 
+	area="Matem&aacute;ticas" 
+	plataforma="HTML 5"
+        ver="En desarrollo"
+	>
+	<titulo><![CDATA[
+		La dimensi&oacute;n fractal: fractales generados por algoritmos aleatorios
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		Continuando el tema introducido en la unidad 'La dimensi&oacute;n fractal: fractales generados por algoritmos no aleatorios', la presente unidad lidia con fractales generados por algoritmos que involucran aleatoriedad, en particular el generado mediante agregaci&oacute;n limitada por difusi&oacute;n (DLA, por sus siglas en ingl&eacute;s de Diffusion Limited Aggregation). Se estudia otra forma de c&aacute;lculo de la dimensi&oacute;n fractal para ellos (una forma de conteo de celdas conocido en ingl&eacute;s como 'box counting method'), y se pone en relaci&oacute;n con el ejemplo del fractal de Hilbert de la unidad previa. Adicionalmente, se hace una asociaci&oacute;n con los fractales presentes en la naturaleza y se sugiere a la dimensi&oacute;n fractal como una "huella digital" del algoritmo de formaci&oacute;n de dichos fractales, misma que compartir&aacute;n todos con un algoritmo semejante.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

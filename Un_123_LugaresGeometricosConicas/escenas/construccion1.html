@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" >
+<title>Elipse e hipérbola en el origen</title>
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<script  SRC="lib/geolab.js"  type="text/javascript" ></script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<style>
+.celda_izquierda{
+background-color:#d5f3ff;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white; 
+}
+.celda_derecha{
+background-color:#fbfadc;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white;
+}
+table{margin-top:25px}
+.cuaderno2{
+overflow:auto;
+height:390px;
+display:block;
+margin:0;
+}
+</style> 
+</head>
+<body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '2'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '1'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '0'  parametros = '3.51,1.91'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,0' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-2.41,1.02'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,1' />
+<objeto  nombre = 'eX'  tipo = 'recta'  constructor = '30'  parametros = '0.00,1.00,0.00'  visible = '0'  ancho = '1'  color = '#ff0000,#c0c0c0'  etiqueta = '0,2' />
+<objeto  nombre = 'eY'  tipo = 'recta'  constructor = '30'  parametros = '1.00,0.00,0.00'  visible = '0'  ancho = '1'  color = '#ff0000,#c0c0c0'  etiqueta = '0,3' />
+<objeto  nombre = 'cir'  tipo = 'circulo'  constructor = '152'  parametros = '-2.00,1.00,2.00,0.00'  objRef = '1'  formulas = 'B.x ; B.y ; 2 ' visible = '0,0'  ancho = '1,2'  color = '#ff,#c0c0c0,#ff0000,#c0c0c0'  etiqueta = '0,4' />
+<objeto  nombre = 'Z'  tipo = 'punto'  constructor = '7'  parametros = '-1.11,2.79,0.00'  objRef = '4'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,5' />
+<objeto  nombre = 's'  tipo = 'recta'  constructor = '31'  parametros = '0.89,-0.45,2.24'  objRef = '1,5'  visible = '1'  ancho = '2'  color = '#8000ff,#c0c0c0'  etiqueta = '0,6' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '-8.00,9.00,0.00'  visible = '0'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,7' />
+<objeto  nombre = 'D'  tipo = 'punto'  constructor = '0'  parametros = '8.00,9.00,0.00'  visible = '0'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,8' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '38'  parametros = '0.00,-1.00,9.00'  objRef = '7,8'  visible = '0,0'  ancho = '1,1'  color = '#ff00,#c0c0c0,#0'  etiqueta = '0,9' />
+<objeto  nombre = 'K'  tipo = 'punto'  constructor = '6'  parametros = '6.00,9.00,9.00,2.00,14.00'  objRef = '7,8'  visible = '0'  ancho = '3'  color = '#0,#ff'  etiqueta = '0,10' />
+<objeto  nombre = 'mBM'  tipo = 'escalar'  constructor = '154'  parametros = '2.00,7.00'  objRef = '6'  formulas = '-s.A/s.B ' etiqueta = '0,11' />
+<objeto  nombre = 'k'  tipo = 'escalar'  constructor = '154'  parametros = '6.00,7.00'  objRef = '10'  formulas = 'K.x ' etiqueta = '1,12' />
+<objeto  nombre = 'mAM'  tipo = 'escalar'  constructor = '154'  parametros = '3.00,7.00'  objRef = '11,12'  formulas = 'k/mBM ' etiqueta = '0,13' />
+<objeto  nombre = 'g'  tipo = 'recta'  constructor = '29'  parametros = '0.95,-0.32,-3.16'  objRef = '0,13'  visible = '1'  ancho = '2'  color = '#80ff,#c0c0c0'  etiqueta = '0,14' />
+<objeto  nombre = 'M'  tipo = 'punto'  constructor = '1'  parametros = '15.00,35.00,1.00'  objRef = '6,14'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,15' />
+<objeto  nombre = 'a'  tipo = 'conica'  constructor = '153'  parametros = '1.00,-0.00,-0.17,-1.00,0.25,-8.33,1.33,-0.25,-9.33,-0.17,-0.25,-0.17,1.49'  objRef = '0,1,12'  formulas = '-k ; 0 ; 1 ; k*(A.x+B.x) ; -(A.y+B.y) ; A.y*B.y-k*A.x*B.x ' visible = '1,0,0,0,0,0'  ancho = '2,2,1,2,1,1'  color = '#a00000,#c0c0c0,#ff,#c0c0c0,#ff,#c0c0c0,#c0c0c0,#c0c0c0,#ff0000'  etiqueta = '0,16' />
+<objeto  nombre = 'prod'  tipo = 'escalar'  constructor = '154'  parametros = '6.00,0.00'  objRef = '11,13'  formulas = 'mBM*mAM ' etiqueta = '0,17' />
+<nota texto="" />
+<table align='center'>  
+<tr>
+	<td width ='425px' height='410px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="425" height="400">
+			</canvas>
+		</td>
+    
+    <td width ='50px'></td>
+    
+    <td width ='375px' height="410px" valign='middle' class="celda_derecha">
+    
+	<div class="cuaderno2">
+	
+<p>
+Si \(A\) y \(B\) son dos puntos cualesquiera, entonces el lugar geométrico 
+descrito por el punto \(M\) de tal manera que el producto de pendientes
+de las rectas \(AM\) y \(BM\) es igual a una constante \(K\) es una elipse o una
+hipérbola dependiendo del signo de \(K\).
+</p>
+
+<p>
+El producto de las pendientes de las rectas rosa y naranjada es constante.
+</p>
+<p>Gira el punto \(Z\) alrededor de \(B\) para observar que el punto \(M\) de desplaza
+sobre la cónica.</p>
+<p>
+Puedes mover los puntos \(A\) y \(B.\)
+</p>
+<p>
+En este caso la constante \(K\) es positiva.
+</p>
+ 
+<p id="cuaderno">Este es un p&aacute;rrafo 	</p>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

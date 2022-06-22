@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hielo en el desierto</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script>
+    
+    var clicked = false;
+    
+    function cerrar(){
+      document.getElementById("info").style.display="none";
+      document.getElementById("bt").style.display="block";
+    }
+    
+    function abrir(){
+      document.getElementById("info").style.display="block";
+      document.getElementById("bt").style.display="none";
+    }
+    
+    function nextQuestion(){
+      if(!clicked){
+        var padre = window.parent;
+        var mensajeTipoSet = { type: "set", name: "question", value: "next" };
+        padre.postMessage(mensajeTipoSet, "*");
+        document.getElementById("liga").disabled = "disabled";
+        clicked=true;
+      }
+    }
+
+    </script>
+  </head>
+
+  <body style="overflow: hidden; ">
+    <div id="contenedorPrincipal" align="center" style="width: 477px; height: 471px; background-image: url('images/etapa1_1.png'); position: relative; overflow: hidden; ">
+      
+      <div id="info" style="width: 370px; height: 250px; background-image: url('images/fondoTxtEstadoInicial.png'); position: absolute; top: 75px; left: 48px; overflow: hidden; ">
+          
+          <p style="font-family:Arial; font-size: 13px; text-align: justify; color: #666666; margin: 18px; margin-top: 25px;">
+          
+             Estás viendo el estado inicial del sistema,
+             <br>con las temperaturas T<sub>1</sub> y T<sub>2</sub> de las fuentes de frío y calor, y la temperatura T del gas relacionándose de la siguiente manera: <b>T<sub>2</sub> > T > T<sub>1</sub></b>.
+             Ahora imagínate que ya no estamos ante una máquina ideal, con fuentes de calor y frío inagotables, sino que ambas sufren las consecuencias naturales de ceder y recibir calor, como ocurre en cualquier sistema aislado. 
+            <br><br>
+            ¿Qué crees que terminaría sucediendo con los ladrillos que se montan sobre el pistón y a qué se debería?
+            <br><br>
+            Pulsa <a href="#" id="liga" onclick="nextQuestion()">aquí</a> para contestar la pregunta en el <i>chat</i>.
+          </p>
+          
+          <input type="button" value="x" style="position:absolute; top:12px; right:12px; cursor:pointer;" onclick="cerrar()"/>
+          
+      </div>
+      
+      <img id="bt" src="images/btInfo.png" style="position:absolute; top:5px; left:15px; cursor:pointer; display:none; " onclick="abrir()" /> 
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='Covertura' dibujar-si='info' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='INFO' x='(970-430)/2' y='100' ancho='430' alto='340' dibujar-si='info' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='cerrarInfo' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(INFO._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='info=0' pos_mensajes='centro'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=1' hacer='titulo=&squot;Resumen&squot;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='INFO' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(INFO._w/2,18,INFO._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_03" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(120,35)' archivo='imagen/resumen.png'">
+   <param name="G_05" value="espacio='E1' tipo='texto' fondo='sí' expresión='[150,100]' texto='                                 Extremos relativos\n\n         Condición necesaria.Si z= f(x,y) es una función diferenciable\nen D, la condición necesaria para la existencia de extremo relativo\nde f en P es que sea un punto con derivadas parciales primeras cero.\n\nTeorema del Hessiano. Sea f una función diferenciable en (a,b)\ncumpliendo que fx(a,b)=fy(a,b)=0\nSe define la matriz hessiana como:\n\n\n\n\nEntonces,\nSi det(H(a,b))>0 y fxx(a,b)>0 entonces (a,b) es un Mínimo para f\nSi det(H(a,b))>0 y fxx(a,b)<0 entonces (a,b) es un Máximo para f\nSi det(H(a,b))<0, (a,b) es un Punto Silla para f.' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_06" value="espacio='INFO' tipo='texto' color='blanco' expresión='[10,5]' texto='Conclusiones' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_07" value="espacio='INFO' tipo='texto' expresión='[30,60]' texto='En este apartado se resumen los principales\nresultados obtenidos sobre extremos de\nfunciones de dos variables.\n\nEn esta unidad se ha extendido este \nconcepto a las funciones de dos variables \ny se han analizado los:\n\n    - Extremos relativos y absolutos\n    - Extremos condicionados' fuente='SansSerif,PLAIN,18' fijo='sí'">
+</ajs>
+
+</body>
+</html>

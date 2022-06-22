@@ -1,0 +1,671 @@
+var dialogo = {
+    
+    title: "termodinamica2",
+    spellcheck: "auto",
+    autoresize: false,
+    delay: 60,
+    withAudio: false,
+    tts: false,
+    withoutServer: true,
+    styleBalloons: "img",
+    
+    questions: [
+      {
+        id: "mec1",
+        text: "Primero, retomemos brevemente algunos conceptos de la <a href='#' onclick='define(\"Mecánica\")'>mecánica</a>.<br><br>Recordarás que al aplicar una fuerza sobre un objeto (llamado “cuerpo” en la física), éste cambia su estado de reposo o de movimiento y, por ende, adquiere o pierde <b>energía cinética</b>. La magnitud de la energía cinética (K) de un cuerpo depende de su masa (m) y de su velocidad (v), de acuerdo con la siguiente fórmula: <b>K = m*v<sup>2</sup>/2</b>. Escribe con tus palabras lo que dice esta expresión matemática.",
+        display: "mecanica",
+        answers: [
+          {
+            RADialKey: "(volumen)",
+            feedback: "Mencionas el <i>volumen</i>. Sin embargo, el símbolo <i>v</i> en esta expresión representa la <i>velocidad</i> del cuerpo, no su volumen."
+          },
+          {
+            RADialKey: "(((mitad)SEG((producto)OR(multiplicar,multiplicación))SEG(masa,peso)SEG((velocidad)AND(cuadrado)))OR(((producto)OR(multiplicar,multiplicación))SEG(masa,peso)SEG((velocidad)AND(cuadrado))SEG(dividir,entre)SEG(dos,2))OR((masa,peso)SEG(multiplicar,multiplicación)SEG((velocidad)AND(cuadrado))SEG(dividir,entre)SEG(dos,2))OR((mitad)SEG(masa,peso)SEG(multiplicar,multiplicación)SEG((velocidad)AND(cuadrado))))",
+            feedback: "En efecto, esta expresión establece que la energía cinética es igual a la mitad del producto de la masa por el cuadrado de la velocidad. Esto significa que entre mayor sea la velocidad (y la masa) del cuerpo, mayor será su energía cinética.",
+            nextQuestion: "mec2"
+          },
+          {
+            RADialKey: "(masa,peso)AND(velocidad)",
+            feedback: "Reconociste correctamente los símbolos <i>m</i> (masa) y <i>v</i> (velocidad) en la fórmula. Sin embargo, te falta indicar cómo están relacionadas exactamente estas magnitudes. Inténtalo nuevamente."
+          },
+          { feedback: "Ya sabes que el símbolo <i>m</i> representa la masa y que la velocidad se expresa como <i>v</i>. Ahora intenta nuevamente, empezando con 'La energía cinética es igual a...'." },
+          {
+            feedback: "La expresión <b>K = m*v<sup>2</sup>/2</b> establece que la energía cinética es igual a la mitad del producto de la masa por el cuadrado de la velocidad. Esto significa que entre mayor sea la velocidad (y la masa) del cuerpo, mayor será su energía cinética.",
+            nextQuestion: "mec2"
+          }
+        ]
+      },
+      {
+        id: "mec2",
+        text: "Veamos un ejemplo.  La animación a la izquierda muestra un “carrito” (el punto rojo) recorriendo un tramo de una montaña rusa. Reproduce la animación y observa la gráfica que representa la energía cinética del carrito. Después contesta: ¿Qué valor tiene la energía cinética en los puntos más altos del recorrido? En la gráfica se representan como <i>p1</i> y <i>p2</i>.",
+        display: "montanyaRusa1",
+        answers: [
+          {
+            RADialKey: "(cero,0)OR(NEG(haber,existir))OR(desaparecer,extinguir,anular,perder)",
+            feedback: "En efecto, en los puntos <i>p1</i> y <i>p2</i>, el valor de la energía cinética del carrito se anula, lo que significa que ahí se detiene por completo. En cambio, en el punto <i>e</i>, que corresponde al punto más bajo del recorrido, adquiere la velocidad más alta de todo el tramo.",
+            nextQuestion: "mec3"
+          },
+          {
+            RADialKey: "(disminuir,reducir,bajar)OR((menorOR(menosSEGgrande)OR(másSEGpequeño)))",
+            feedback: "En efecto, la energía cinética del carrito disminuyó en estos puntos. Pero no sólo disminuyó, sino ¡se redujo a 0! ",
+            nextQuestion: "mec2_R2"
+          },
+          {
+            RADialKey: "((aumentar,incrementar,subir,elevar,crecer,aumento,mayorOR(menosSEGpequeño)OR(másSEGalto)OR(másSEGgrande)))",
+            feedback: "¡No te confundas! Estamos analizando la gráfica de la energía cinética del carrito y no su posición en el espacio. Fíjate que cuanto más alto se encuentre, más baja es el valor de su energía cinética y viceversa. Observa nuevamente la animación con la gráfica y contesta: ¿qué sucede con la energía cinética del carrito en los puntos <i>p1</i> y <i>p2</i>?"
+          },
+          {
+            feedback: "En los puntos <i>p1</i> y <i>p2</i>, el valor de la energía cinética del carrito es igual a 0.",
+            nextQuestion: "mec2_R2"
+          }
+        ]
+      },
+      {
+        id: "mec2_R2",
+        text: "¿Qué significa eso?",
+        answers: [
+          {
+            RADialKey: "((NEG(mover,desplazar,movimiento,velocidad,avanzar,avanza))OR(detener,parar,frenar,detenimiento,reposo)OR(dejarAND(mover,desplazar,movimiento,velocidad,avanzar,avanza)))",
+            feedback: "Es correcto, cuando la energía cinética de un cuerpo se anula, ese cuerpo no tiene velocidad, es decir: se encuentra en estado de reposo.",
+            nextQuestion: "mec3"
+          },
+          {
+            feedback: "Cuando la energía cinética de un cuerpo se anula, ese cuerpo no tiene velocidad, es decir: se encuentra en estado de reposo.",
+            nextQuestion: "mec3"
+          }
+        ]
+      },
+      {
+        id: "mec3",
+        text: "Pero… ¡espera un momento! Acabamos de ver que el carrito va ganando y perdiendo energía cinética en las distintas fases de su trayectoria. ¿Cómo es posible eso, si la ley de la conservación de la energía nos dice que la energía no se crea ni se destruye?",
+        answers: [
+          {
+            RADialKey: "((NEG(aislar,aislamiento,cerrar))OR((otro,distinto,diferente,más)SEG(fuerza,influencia))OR(fricción,rozamiento,frotamiento,riel,aire,rozar,frotar))",
+            bestAnswer: "Se ejercen otras fuerzas sobre el carrito, como la fricción del aire y de los rieles.",
+            feedback: "Tienes toda la razón en señalar que se están ejerciendo otras fuerzas sobre el carrito. Sin embargo en este momento no las vamos a tomar en cuenta; se trata de un modelo ideal."
+          },
+          {
+            RADialKey: "(energíaSEGpotencial)",
+            bestAnswer: "La energía cinética se transforma en energía potencial.",
+            feedback: "¡Claro! En la primera mitad de la trayectoria, la energía del carrito se va <i>transformando</i> de <b>energía potencial</b> (la energía vinculada a la <b>posición</b> de un cuerpo) en <b>energía cinética</b> (la energía derivada del <b>movimiento</b>); en la segunda mitad, sucede al revés.<br><br>En mecánica clásica, la <b>energía total</b> es la suma de la energía cinética (K) y la energía potencial (V): E = K + V.",
+            nextQuestion: "mec3_b"
+          },
+          {
+            RADialKey: "(transformar,alterar,cambiar,alternar,cambio,modificación,trasmutar,transmutar,transmudar,transformación,transformamiento,modificar)OR((diferente,distinto,otro)AND(tipo,variante,clase,índole,naturaleza))",
+            feedback: "En efecto, la energía  cinética se transforma en otro tipo de energía.",
+            nextQuestion: "mec3_R3"
+          },
+          {
+            RADialKey: "(gravedad)OR((atracción)AND(tierra,suelo,piso,abajo,bajo))",
+            bestAnswer: "En la primera mitad del tramo, el carrito gana energía por la gravedad, después la vuelve a perder.",
+            feedback: "Te diste cuenta de que la gravedad tiene algo que ver con la energía del carrito, bien. Sin embargo, en toda su trayectoria, el carrito nunca pierde ni gana energía; su energía <i>total</i> permanece constante. ¿Por qué es eso?"
+          },
+          {
+            RADialKey: "(desaparecer,esfumar,extinguir,perder)OR((ir)SEG(otro)SEG(lado,parte,lugar))",
+            feedback: "Recuerda lo que dice la ley de la conservación de la energía: la energía nunca se pierde. Aquí tampoco se va a otro lado, sino siempre está presente en el sistema, es decir, el carrito. La pregunta es: ¿en qué forma?"
+          }
+        ]
+      },
+      {
+        id: "mec3_R3",
+        text: "¿Sabes cuál?",
+        answers: [
+            {
+                RADialKey: "(potencial)",
+                feedback: "¡Exacto! En la primera mitad de la trayectoria, la energía del carrito se va <i>transformando</i> de <b>energía potencial</b> (la energía vinculada a la <b>posición</b> de un cuerpo) en <b>energía cinética</b> (la energía derivada del <b>movimiento</b>); en la segunda mitad, sucede al revés.<br><br>En mecánica clásica, la <b>energía total</b> es la suma de la energía cinética (K) y la energía potencial (V): E = K + V.",
+                nextQuestion: "mec3_b"
+            },
+            {
+                feedback: "En la primera mitad de la trayectoria, la energía del carrito se va <i>transformando</i> de <b>energía potencial</b> (la energía vinculada a la <b>posición</b> de un cuerpo) en <b>energía cinética</b> (la energía derivada del <b>movimiento</b>); en la segunda mitad, sucede al revés.<br><br>En mecánica clásica, la <b>energía total</b> es la suma de la energía cinética (K) y la energía potencial (V): E = K + V.",
+                nextQuestion: "mec3_b"
+            }
+        ]
+      },
+      {
+         id: "mec3_b",
+         text: "Reproduce nuevamente la animación para ver cómo la energía cinética (K) y la energía potencial (V) se van compensando mutuamente de modo que la energía total (E) se mantiene constante.<br><br>Luego escribe 'Listo' para seguir.",
+         display: "montanyaRusa2",
+         answers: [
+            {
+                RADialKey: "",
+                feedback: "Bien.",
+                nextQuestion: "mec4"
+            }
+         ]
+      },
+      {
+        id: "mec4",
+        text: "Puedes ver que cuando el carrito se encuentra en los puntos más altos en el espacio ( <i>p1</i> y <i>p2</i> en la gráfica), su energía cinética se anula, pero su <i>energía potencial</i>, en cambio, alcanza su nivel más elevado. ¿A qué crees que se debe eso? ",
+        answers: [
+          {
+            RADialKey: "(gravedad)OR((atracción)AND(tierra,suelo,piso,abajo))",
+            feedback: "Lo entendiste perfectamente bien. Al encontrarse más alto, el carrito (o cualquier cuerpo) tiene la capacidad de moverse con mayor velocidad (hacia abajo)… ¡gracias a la gravedad! De hecho, la fórmula matemática de la energía potencial de este sistema es V = mgh = masa*gravedad*altura.",
+            nextQuestion: "mec5"
+          },
+          {
+            RADialKey: "(alto,elevado,arriba,altura)",
+            feedback: "Ya habíamos establecido que la energía potencial es mayor debido a la mayor altura a la que se encuentra el carrito. Pero ¿<i>por qué</i> es así? "
+          },
+          {
+            feedback: "¿Por qué los objetos caen hacia abajo? ¿A qué fuerza se debe eso?",
+            nextQuestion: "mec4_R3"
+          }
+        ]
+      },
+      {
+        id: "mec4_R3",
+        text: "Piensa en el famoso científico Isaac Newton y la manzana…",
+        display: "manzana",
+        answers: [
+          {
+            RADialKey: "(gravedad)OR((atracción,atraer,caer,jalar)AND(tierra,suelo,piso,abajo))",
+            feedback: "¡Exacto! Al encontrarse más alto, el carrito (o cualquier cuerpo) tiene la capacidad de moverse con mayor velocidad (hacia abajo)… ¡gracias a la gravedad! Es sabido que la noción de la gravedad le asaltó la mente al científico británico Isaac Newton cuando estaba sentado bajo un manzano para reflexionar.",
+            nextQuestion: "mec5"
+          },
+          {
+            feedback: "Al encontrarse más alto, el carrito (o cualquier cuerpo) tiene la capacidad de moverse con mayor velocidad (hacia abajo)… ¡gracias a la <b>gravedad</b>! Es sabido que la noción de la gravedad le asaltó la mente al científico británico Isaac Newton cuando estaba sentado bajo un manzano para reflexionar.",
+            nextQuestion: "mec5"
+          }
+        ]
+      },
+      {
+        id: "mec5",
+        text: "Ahora haz clic en la liga de abajo y observa la animación. Luego reflexiona y contesta: ¿Cuál es la condición que se tiene que cumplir para que el carrito pueda recorrer la montaña completa y por qué?",
+        display: "montanyaRusa3",
+        answers: [
+          {
+            RADialKey: "(((superior,supremo,extremo,máximo,inicio,inicial)OR((más)SEG(alto,elevado))OR(((mayorOR(másANDgrande)))AND(altura,altitud,nivel,elevación)))CAU((suficiente,bastante)AND((energía)OR(velocidad,rapidez,rápido,veloz))))",
+            feedback: "En efecto, el carrito se tiene que colocar en el punto más alto de la montaña para tener suficiente energía para recorrerla completa. Si su posición inicial es más baja, ya no alcanzará la misma velocidad (energía cinética) al llegar al fondo del primer tramo y posteriormente, ya no llegará a la misma altura (energía potencial) tampoco.",
+            nextQuestion: "term1"
+          },
+          {
+            RADialKey: "((superior,supremo,extremo,máximo,inicio,inicial)OR((más)SEG(alto,elevado))OR(((mayorOR(másANDgrande)))AND(altura,altitud,nivel,elevación)))",
+            feedback: "En efecto, el carrito se tiene que colocar en el punto más alto de la montaña para poder recorrerla completa.",
+            nextQuestion: "mec5_R1b"
+          },
+          { feedback: "Para hallar la respuesta, imagínate que el carrito empezara a avanzar desde la mitad del primer tramo. Después reflexiona: ¿Hasta dónde llegaría? ¿Cuál debe ser su altura inicial y por qué?" },
+          {
+            feedback: "El carrito se tiene que colocar en el punto más alto de la montaña para tener suficiente energía para recorrerla completa. Si su posición inicial es más baja, ya no alcanzará la misma velocidad (energía cinética) al llegar al fondo del primer tramo y posteriormente, ya no llegará a la misma altura (energía potencial) tampoco.",
+            nextQuestion: "term1"
+          }
+        ]
+      },
+      {
+        id: "mec5_R1b",
+        text: "Pero ¿por qué es así?",
+        answers: [
+          {
+            RADialKey: "((suficiente,bastante)AND((energía)OR(velocidad,rapidez,rápido,veloz)))",
+            feedback: "En efecto, sólo así tendrá suficiente energía. Si su posición inicial es más baja, ya no alcanzará la misma velocidad (energía cinética) al llegar al fondo del primer tramo y posteriormente, ya no llegará a la misma altura (energía potencial) tampoco.",
+            nextQuestion: "term1"
+          },
+          {
+            feedback: "Sólo así tendrá suficiente energía. Si su posición inicial es más baja, ya no alcanzará la misma velocidad (energía cinética) al llegar al fondo del primer tramo y posteriormente, ya no llegará a la misma altura (energía potencial) tampoco.",
+            nextQuestion: "term1"
+          }
+        ]
+      },
+      {
+        id: "term1",
+        text: "Ahora bien, la energía mecánica no sólo puede alternar entre cinética y potencial, también puede convertirse en <a href='#' onclick='define(\"Energía calorífica\")'>energía calorífica</a> (y viceversa). De hecho, la termodinámica estudia las formas en que los distintos tipos de energía -como la cinética, la química, la eléctrica y la nuclear- se transforman en energía térmica y calor.<br><br>¿Recuerdas los conceptos de temperatura y calor del diálogo anterior?",
+        answers: [
+          {
+            RADialKey: "(SÍ)",
+            feedback: "¡Perfecto!",
+            nextQuestion: "term2"
+          },
+          {
+            RADialKey: "(NO)",
+            feedback: "¿No?",
+            nextQuestion: "term1_R2"
+          },
+          {
+            feedback: "¿No éstas seguro?",
+            nextQuestion: "term1_R2"
+          }
+        ]
+      },
+      {
+        id: "term1_R2",
+        text: "¿Qué concepto no recuerdas bien?",
+        answers: [
+          {
+            RADialKey: "(temperatura)",
+            feedback: "Te refrescamos la memoria. La <b>temperatura</b> de un sistema es una medida macroscópica (es decir, observable mediante nuestros cinco sentidos) de la energía cinética media de las partículas de dicho sistema. La energía cinética media es el promedio de la velocidad con la que se mueven las partículas y a nivel del sistema entero se observa como energía térmica. ",
+            nextQuestion: "term2"
+          },
+          {
+            RADialKey: "(calor)",
+            feedback: "Recuerda que el <b>calor</b> es la transferencia de energía de un sistema de mayor temperatura a uno de menor temperatura, siendo esta última una medida de la energía cinética media de las partículas del sistema.",
+            nextQuestion: "term2"
+          },
+          {
+            feedback: "Te refrescamos la memoria.<br><br>Recuerda que el <b>calor</b> es la transferencia de energía de un sistema de mayor temperatura a uno de menor temperatura. A su vez,  la <b>temperatura</b> de un sistema es una medida macroscópica (es decir, observable mediante nuestros cinco sentidos) de la energía cinética media de las partículas de dicho sistema. La energía cinética media es el promedio de la velocidad con la que se mueven las partículas y a nivel del sistema entero se observa como energía térmica.",
+            nextQuestion: "term2"
+          }
+        ]
+      },
+      {
+        id: "term2",
+        text: "Imagínate que estás preparando un rico chocolate de Oaxaca. Primero viertes la leche -que se encuentra a temperatura ambiente- en un recipiente y agregas unos pedacitos de chocolate. Después, según lo dicta la tradición, tomas un molinillo y le das vueltas entre ambas manos, ¡durante un buen rato!, hasta que el chocolate esté totalmente disuelto.<br><br>¿Qué crees que habrá pasado con la temperatura de la leche (ahora con chocolate disuelto) al cabo del tiempo que estuviste agitando el molinillo? ",
+        display: "chocolate",
+        answers: [
+          {
+            RADialKey: "(igual,mismo,idéntico)OR(NEG(cambiar,alterar,variar))OR(nada)",
+            bestAnswer: "Será la misma.",
+            feedback: "Cuando el molinillo da vueltas, sucederá algo similar a lo que atestiguaste en el diálogo anterior: gracias a su movimiento, las partículas de la leche empezarán a moverse con mayor velocidad. ¿Qué implica eso para la temperatura?"
+          },
+          {
+            RADialKey: "((bajar,descender,disminuir,reducir)OR((inferiorOR(másANDbajo))))",
+            bestAnswer: "Habrá bajado un poco.",
+            feedback: "Reflexiona: al darle vueltas al  molinillo, estás aplicando un trabajo mecánico a la leche. Y al realizar un trabajo sobre un sistema, siempre hay una transferencia de energía. ¿Entonces?"
+          },
+          {
+            RADialKey: "((subir,ascender,aumentar,incrementar,alzar,elevar,calentar)OR((más)SEG(alto,elevado,grande,caliente,calor))OR(mayor))",
+            bestAnswer: "Habrá subido un poco.",
+            feedback: "Así es: la temperatura de la leche habrá subido un poquito. Esto se debe a que, a través del molinillo, se realizó un <b>trabajo</b> sobre la leche, por lo que aumentó su energía interna. ",
+            nextQuestion: "term3"
+          }
+        ]
+      },
+      {
+        id: "term3",
+        text: "Lo que sucede aquí es muy similar a lo que observaste en el experimento de la compresión (no <a href='#' onclick='define(\"Isotérmico\")'>isotérmica</a>) del gas. ¿Lo recuerdas? Vuelve a reproducir la animación y contesta: ¿Qué transformación de energía tiene lugar al comprimir el gas? ¿Qué partes del sistema participan en ella?",
+        display: "compresionAdiabatica",
+        answers: [
+          {
+            RADialKey: "((((mover,movimiento,desplazar,desplazamiento,bajar,empujar,abajo,descender)AND(pistón,émbolo,tapa,mano))OR(mecánico,cinético,trabajar))MAS((((calentar,calentamientoOR(aumentarANDtemperatura)OR(mayorANDtemperatura)OR(másANDaltoANDtemperatura)OR(másANDcaliente)OR(subirANDtemperatura))))OR((energía)SEG(térmico,calorífico,calórico))))AND(NOT(calor))",
+            feedback: "Lo entendiste muy bien. Al bajar el pistón, éste realiza un <b>trabajo mecánico</b> sobre el gas, por lo que aumenta la energía interna de este último. Y esa energía adicional se refleja en un aumento en la temperatura del gas. En otras palabras, hubo una transformación de energía mecánica en térmica, al igual que cuando preparamos el chocolate.",
+            nextQuestion: "term4"
+          },
+          {
+            RADialKey: "((mecánico,trabajo,cinético)SEG(térmico,calorífico,calórico))",
+            feedback: "Se me hace que lo estás entendiendo muy bien, pero sé un poco más específico: ¿de dónde proviene la energía mecánica y en qué se refleja la mayor energía térmica? Vuelve a contestar con una oración completa."
+          },
+          {
+            RADialKey: "(((mover,movimiento,desplazar,desplazamiento,bajar,abajo,empujar,descender)AND(pistón,émbolo,tapa,mano))OR(mecánico,cinético,trabajar))AND(calor)",
+            feedback: "Entendiste bien que al bajar el pistón, se realizó un <b>trabajo mecánico</b> sobre el gas, por lo que aumentó su energía interna. Pero ten cuidado al elegir las palabras: la mayor energía del sistema se reflejó en una mayor <i>temperatura</i>, y no en más <i>calor</i>. Recuerda que el calor es <i>transferencia</i> de energía, la cual no se da en este caso. Hubo entonces una transformación de energía mecánica en térmica, al igual que cuando preparamos el chocolate.",
+            nextQuestion: "term4"
+          },
+          {
+            RADialKey: "(((gas)AND((calentar,calentamientoOR(aumentarANDtemperatura)OR(mayorANDtemperatura)OR(másANDaltoANDtemperatura)OR(másANDcaliente)OR(subirANDtemperatura))))OR((energía)SEG(térmico,calorífico,calórico))))AND(NOT(calor))",
+            feedback: "En efecto, la energía inyectada al sistema se convirtió en energía térmica, es decir, hubo un aumento en la temperatura del sistema.",
+            nextQuestion: "term3_R2"
+          },
+          {
+            RADialKey: "(((mover,movimiento,desplazar,desplazamiento,bajar)OR(mecánico,cinético,trabajar))AND(pistón))",
+            feedback: "Tienes razón, al bajar el pistón, se realizó un <b>trabajo mecánico</b> sobre el gas. ",
+            nextQuestion: "term3_R3"
+          },
+          {
+            RADialKey: "(calor)",
+            feedback: "¡Cuidado!, aquí no se genera <i>calor</i>, porque el calor es <i>transferencia</i> de energía, la cual no se da en este experimento."
+          },
+          {
+            feedback: "Se trata de una transformación de energía <i>mecánica</i> en <i>calorífica</i>.",
+            nextQuestion: "term3_R5"
+          }
+        ]
+      },
+      {
+        id: "term3_R2",
+        text: "Pero, ¿de dónde provino la energía agregada al sistema y en qué forma se presentó?",
+        answers: [
+          {
+            RADialKey: "(((mover,movimiento,desplazar,descender,bajar,desplazamiento,traslado,empujar,abajo)AND(pistón,émbolo,tapa,mano))OR(trabajo,mecánico))",
+            feedback: "Lo entendiste muy bien. Al bajar el pistón, se realizó un <b>trabajo mecánico</b> sobre el gas, por lo que aumentó su energía interna. Hubo entonces una transformación de energía mecánica en térmica, al igual que cuando preparamos el chocolate.",
+            nextQuestion: "term4"
+          },
+          {
+            feedback: "La respuesta es sencilla: al bajar el pistón, se realizó un <b>trabajo mecánico</b> sobre el gas, por lo que aumentó su energía interna. Hubo entonces una transformación de energía mecánica en térmica, al igual que cuando preparamos el chocolate.",
+            nextQuestion: "term4"
+          }
+        ]
+      },
+      {
+        id: "term3_R3",
+        text: "¿Y en qué se transformó ese trabajo?",
+        answers: [
+          {
+            RADialKey: "(((aumentar,incrementar,subir,elevar,crecer)OR((mayorOR(másANDalto))))AND((temperatura)OR((energía)AND(térmico,calorífico))))AND(NOT(calor))",
+            feedback: "Exactamente, la energía adicional proporcionada por el trabajo del émbolo se reflejó en un aumento en la temperatura del sistema, es decir, en una mayor energía térmica. Hubo entonces una transformación de energía mecánica en térmica, al igual que cuando preparamos el chocolate.",
+            nextQuestion: "term4"
+          },
+          {
+            RADialKey: "(calor)",
+            feedback: "¡Cuidado! Recuerda que el calor es energía en tránsito, la que se intercambia entre un sistema caliente y otro más frío.",
+            nextQuestion: "term3_R3_R2"
+          },
+          {
+            feedback: "La energía adicional proporcionada por el trabajo del émbolo se reflejó en un aumento en la temperatura del sistema, es decir, adquirió mayor energía térmica. Hubo entonces una transformación de energía mecánica en térmica, al igual que cuando preparamos el chocolate.",
+            nextQuestion: "term4"
+          }
+        ]
+      },
+      {
+        id: "term3_R3_R2",
+        text: "Entonces, aquí no podemos hablar de calor, sino de ¿…?",
+        answers: [
+          {
+            RADialKey: "((temperatura)OR((energía)AND(térmico,calorífico)))",
+            feedback: "Exactamente, la energía adicional proporcionada por el trabajo del émbolo se reflejó en un aumento en la temperatura del sistema, es decir, adquirió mayor energía térmica. En otras palabras, hubo una transformación de energía mecánica en térmica, al igual que cuando preparamos el chocolate.",
+            nextQuestion: "term4"
+          },
+          {
+            feedback: "La energía adicional proporcionada por el trabajo del émbolo se reflejó en un aumento en la temperatura del sistema, es decir, en una mayor energía térmica. En otras palabras, hubo una transformación de energía mecánica en térmica, al igual que cuando preparamos el chocolate.",
+            nextQuestion: "term4"
+          }
+        ]
+      },
+      {
+        id: "term3_R5",
+        text: "Ahora, ¿de dónde proviene la energía mecánica y en qué se refleja la mayor energía térmica?",
+        answers: [
+          {
+            RADialKey: " ((pistón,émbolo,tapa,mano)AND(temperatura))",
+            feedback: "Ya lo entendiste. Al bajar el pistón, éste realiza un <b>trabajo mecánico</b> sobre el gas, por lo que aumenta la energía interna de este último.  Y esa energía adicional se refleja en un aumento en la temperatura del gas. En otras palabras, hubo una transformación de energía mecánica en térmica, al igual que cuando preparamos el chocolate.",
+            nextQuestion: "term4"
+          },
+          {
+            feedback: "Al bajar el pistón, éste realiza un <b>trabajo mecánico</b> sobre el gas, por lo que aumenta la energía interna de este último.  Y esa energía adicional se refleja en un aumento en la temperatura del gas. En otras palabras, hubo una transformación de energía mecánica en térmica, al igual que cuando preparamos el chocolate.",
+            nextQuestion: "term4"
+          }
+        ]
+      },
+      {
+        id: "term4",
+        text: "Los dos casos anteriores (el chocolate y el gas) nos brindan ejemplos muy concretos del principio de la conservación de la energía (recuerda: <i>la energía no se pierde, sólo se transforma</i>), cuya ecuación general es:<p align='center'>∆E<sub>sistema</sub> = E<sub>entra</sub> - E<sub>sale</sub></p>¿Cómo leerías esta ecuación? Escríbela en tus palabras con la mayor precisión posible.",
+        answers: [
+          {
+            RADialKey: "((cambio,modificación,diferencia,variación,alteración)SEG(energía)SEG(sistema)SEG(igual,mismo,idéntico,equivaler,equivalente)SEG(diferencia,resta)SEG(energía)SEG(entrar)SEG(salir))OR((cambio,modificación,diferencia,variación,alteración)SEG(energía)SEG(sistema)SEG(igual,mismo,idéntico,equivaler,equivalente)SEG(energía)SEG(entrar)SEG(menos)SEG(salir))",
+            feedback: "¡Excelente!  Esta ecuación indica que cada cambio en la energía interna de un sistema es igual a la diferencia entre la energía que entra al sistema y la que sale del mismo.",
+            nextQuestion: "term5"
+          },
+          {
+            RADialKey: "((energía)SEG(sistema)SEG(igual,mismo,idéntico,equivaler,equivalente)SEG(diferencia,resta)SEG(energía)SEG(entrar)SEG(salir))OR((energía)SEG(sistema)SEG(igual,mismo,idéntico,equivaler,equivalente)SEG(energía)SEG(entrar)SEG(menos)SEG(salir))",
+            feedback: "Vas por muy buen camino pero te faltó un detalle. Fíjate en el signo delta (∆) al inicio de la ecuación.",
+            nextQuestion: "term4_R2"
+          },
+          {
+            RADialKey: "((energía)AND(diferencia,menos,restar)AND(entrar)AND(salir))",
+            feedback: "Parece que tienes algunas nociones sobre cómo interpretar esta fórmula, pero tienes que ser más preciso. Vuelve a intentarlo, tomando en cuenta que en física, el signo delta (∆) denota un <i>cambio</i> en la magnitud que le sigue."
+          },
+          {
+            feedback: "Los símbolos del lado izquierdo de la ecuación se leen así: 'un cambio en la energía interna de un sistema'.",
+            nextQuestion: "term4_R4"
+          }
+        ]
+      },
+      {
+        id: "term4_R2",
+        text: "¿Qué significa?",
+        answers: [
+          {
+            RADialKey: "(cambiar,alterar,variar,modificar,modificación,diferencia,variación,alteración)OR(NEG(constante,mismo,igual))",
+            feedback: "Así es, el signo delta denota un cambio en la magnitud que le sigue.",
+            nextQuestion: "term4_R2_2"
+          },
+          {
+            feedback: "El signo delta denota un <i>cambio</i> en la magnitud que le sigue.",
+            nextQuestion: "term4_R2_2"
+          }
+        ]
+      },
+      {
+        id: "term4_R2_2",
+        text: "Ahora vuelve a formular tu respuesta incluyendo este signo.",
+        answers: [
+          {
+            RADialKey: "((cambio,modificación,diferencia,variación,alteración)SEG(energía)SEG(sistema)SEG(igual,mismo,idéntico,equivaler,equivalente)SEG(diferencia,resta)SEG(energía)SEG(entrar)SEG(salir))OR((cambio,modificación,diferencia,variación,alteración)SEG(energía)SEG(sistema)SEG(igual,mismo,idéntico,equivaler,equivalente)SEG(energía)SEG(entrar)SEG(menos)SEG(salir))",
+            feedback: "¡Excelente! Esta ecuación indica que cada cambio en la energía interna de un sistema es igual a la diferencia entre la energía que entra al sistema y la que sale del mismo.",
+            nextQuestion: "term5"
+          },
+          {
+            feedback: "Esta ecuación indica que cada cambio en la energía interna de un sistema es igual a la diferencia entre la energía que entra al sistema y la que sale del mismo.",
+            nextQuestion: "term5"
+          }
+        ]
+      },
+      {
+        id: "term4_R4",
+        text: "Ahora complétala: <i>Un cambio en la energía interna de un sistema es igual a …</i>",
+        answers: [
+          {
+            RADialKey: "((diferencia,resta)SEG(energía)SEG(entrar)SEG(salir))OR((energía)SEG(entrar)SEG(menos)SEG(salir))",
+            feedback: "¡Excelente!  Esta ecuación indica que cada cambio en la energía interna de un sistema es igual a la diferencia entre la energía que entra al sistema y la que sale del mismo.",
+            nextQuestion: "term5"
+          },
+          {
+            feedback: "Esta ecuación indica que cada cambio en la energía interna de un sistema es igual a la diferencia (por eso el signo -) entre la energía que entra al sistema (E<sub>entra</sub>) y la que sale del mismo (E<sub>sale</sub>).",
+            nextQuestion: "term5"
+          }
+        ]
+      },
+      {
+        id: "term5",
+        text: "Ahora considera el caso de la compresión isotérmica del gas en el diálogo anterior. Recuerda que <i>isotérmico</i> quiere decir <i>sin aumento de temperatura</i>, lo que significa que en este caso la energía interna del gas no cambia (es decir: ∆E<sub>sistema</sub>  = 0).<br><br><a href='#' onclick='showMicroWorld(\"compresionIsotermica\")'>Vuelve a ver la animación</a> y escribe en los recuadros las palabras que pueden sustituir E<sub><i>entra</i></sub> y E<sub><i>sale</i></sub> en el caso particular de la compresión isotérmica.",
+        display: "cilindroEnTina",
+        answers: [
+          {
+            RADialKey: "(trabajoSEGcalor)",
+            feedback: "¡Muy bien!  En la compresión isotérmica del gas, la energía que entra al sistema mediante el trabajo realizado por el pistón se manifiesta como energía térmica y vuelve a salir en forma de calor absorbido por el agua circundante. La diferencia entre ambos valores es igual a cero, lo que significa que la energía interna se mantiene constante y por ende, la temperatura no cambia.",
+            nextQuestion: "term6"
+          },
+          {
+            RADialKey: "((mecánico)SEG(térmico,calorífico))",
+            feedback: "Estás en lo correcto. Ahora haz memoria y usa las palabras específicas."
+          },
+          {
+            RADialKey: "(calorSEGtrabajo)",
+            feedback: "Ten cuidado con el orden en que pones estas magnitudes. ¿Qué forma tiene la energía que entra y sale del sistema?"
+          },
+          {
+            RADialKey: "(calor,calorífico,térmico)",
+            feedback: "Te diste cuenta de que hay una transformación de la energía en calor. ¿Qué otra forma cobra la energía en este sistema? Intenta nuevamente."
+          },
+          {
+            RADialKey: "(trabajo,mecánico)",
+            feedback: "Te diste cuenta de que aquí se está realizando un trabajo. ¿Qué otra forma cobra la energía en este sistema? Intenta nuevamente."
+          },
+          { feedback: "Recuerda que este experimento es similar a la compresión no isotérmica de un gas (cuando sí aumenta su temperatura). La única diferencia es que aquí, la energía generada por la compresión se vuelve a salir del sistema a través del agua. Reflexiona y vuelve a intentar." },
+          { feedback: "Las palabras que se deben llenar en esta ecuación son <i>calor</i> y <i>trabajo</i>. ¿Dónde va cada una? " },
+          {
+            feedback: "En la compresión isotérmica de un gas, la <b>energía que entra</b> al sistema mediante el <b>trabajo</b> realizado por el pistón se manifiesta como energía térmica y <b>vuelve a salir en forma de calor</b> absorbido por el agua circundante. La diferencia entre ambos valores es igual a cero, lo que significa que la energía interna se mantiene constante y por ende, la temperatura no cambia.",
+            set: "cmp1:0+cmp2:1",
+            nextQuestion: "term6"
+          }
+        ]
+      },
+      {
+        id: "term6",
+        text: "Lo que acabamos de escribir es la fórmula de la <b>primera ley de la termodinámica</b>, que establece que si se realiza <b>trabajo</b> (W) sobre un sistema o éste intercambia <b>calor</b> (Q) con otro, la energía interna del sistema cambiará (∆U = ∆E<sub>sistema</sub>). Su ecuación es <b>∆U = W - Q</b>.<br><br>Observa que tanto el <b>trabajo</b> como el <b>calor</b> son, por definición, <b>energía en tránsito</b>: siempre que se realiza un trabajo sobre un sistema o que éste gana o pierde calor, su estado energético cambiará.<br><br>¿Te queda claro eso?",
+        answers: [
+          {
+            RADialKey: "(SÍ)",
+            feedback: "Perfecto, sigamos entonces. ",
+            nextQuestion: "term7"
+          },
+          {
+            RADialKey: "(NO)",
+            feedback: "¿No? ",
+            nextQuestion: "term6_R2"
+          },
+          {
+            feedback: "¿No? ",
+            nextQuestion: "term6_R2"
+          }
+        ]
+      },
+      {
+        id: "term6_R2",
+        text: "¿Qué es lo que no entendiste?",
+        answers: [
+          {
+            RADialKey: "(trabajo)",
+            feedback: "Cuando un sistema realiza un trabajo sobre otro, siempre hay una transferencia de energía, donde el sistema que realiza el trabajo pierde energía y el otro la gana. En el ejemplo del chocolate, el que realiza el trabajo eres tú y por eso perderás energía (¿verdad que si estuvieras batiendo el chocolate duranto mucho tiempo, podrías empezar a sentir hambre?). Y la energía que tú “perdiste” se habrá transferido al chocolate en forma de energía térmica o calorífica.",
+            nextQuestion: "term7"
+          },
+          {
+            RADialKey: "(calor)",
+            feedback: "Recuerda que el calor es transferencia de energía de un sistema caliente a otro más frío. Por eso, cuando un sistema transfiere calor a otro, perderá energía. Si pusiéramos nuestro chocolate en el refri, pasaría energía en forma de calor a… ¿qué? ¡Pues al aire frío del refri!",
+            nextQuestion: "term7"
+          },
+          {
+            feedback: "Ilustremos la primera ley y su ecuación con el caso del chocolate de Oaxaca. Al agitar el molinillo estás realizando un trabajo sobre la leche. Ese trabajo se representa con el símbolo W y tiene un valor positivo: equivale a la energía que entra al sistema (la leche con todo y chocolate). Por otro lado, la cantidad de calor (simbolizado aquí por <i>Q</i>) que la leche pasa al entorno es menor que el trabajo que tú estás haciendo, por lo que la energía interna de la leche aumentará.",
+            nextQuestion: "term7"
+          }
+        ]
+      },
+      {
+        id: "term7",
+        text: "Analicemos algunos ejemplos más de la primera ley de la termodinámica. Al lado se muestra un sistema muy cotidiano (una olla con agua calentándose) que sufre un cambio energético (∆U). ¿Se trata de un cambio energético positivo (el sistema gana energía) o negativo (el sistema pierde energía)? ¿Se debe a un intercambio de calor y/o a un trabajo mecánico?<br><br>Realiza la actividad.",
+        display: "estufa",
+        answers: [
+          {
+            regexKey: "\\+ 0 -",
+            feedback: "Perfecto, te diste cuenta de que no se realiza ningún trabajo mecánico sobre este sistema (W=0) y que, por ende, el aumento en la energía interna del agua (∆U>0) se debe a que entra más calor (por el fuego) del que sale (por el vapor). Por eso, el signo de Q debe ser negativo, para contrarrestar el signo - que le precede.",
+            nextQuestion: "term8"
+          },
+          {
+            regexKey: "\\+ 0 \\+",
+            feedback: "Vas por buen camino pero ten cuidado con el signo del calor. El símbolo Q es precedido por un signo -. Para que el valor del calor que entra al sistema sea positivo, ¿cuál debe ser el signo de Q? Corrige tu respuesta."
+          },
+          { feedback: "Recuerda que una mayor temperatura indica un aumento en la energía interna. También pregúntate: ¿se está realizando algún trabajo mecánico sobre este sistema? Intenta corregir tu respuesta." },
+          {
+            feedback: "No se está realizando ningún trabajo mecánico sobre el sistema, así que W=0. Por otro lado, sabemos que el cambio en la energía interna es positivo (∆U>0), ya que el agua va adquiriendo una mayor temperatura. Entonces, debe estar entrando más calor al agua (por el fuego) del que sale (por el vapor) y por eso el signo de Q debe ser negativo (así se anula el signo - que le precede: -(-Q) = +Q).",
+            nextQuestion: "term8",
+            set: "cmp1:2+cmp2:1+cmp3:3"
+          }
+        ]
+      },
+      {
+        id: "term8",
+        text: "Estudiemos otro ejemplo. A la izquierda ves un globo aerostático de aire caliente. Su funcionamiento es sencillo: para que esta aeronave suba, se calienta el aire a su interior con un quemador de butano o propano. Eso hace que el aire dentro del globo se vuelva menos denso que el aire alrededor y el globo empiece a elevarse.<br><br>En el momento en que eso sucede, ¿cómo se relacionan los valores de ∆U, W y Q del aire dentro del globo? ",
+        display: "globo",
+        answers: [
+          {
+            regexKey: "\\+ - -",
+            feedback: "Entendiste que el aire dentro del globo gana energía porque el quemador lo está calentando mucho más de lo que el aire alrededor lo pueda enfriar. También pierde un poco de energía por el trabajo mecánico que está realizando: elevar el globo. Sin embargo, en total gana energía interna. ¡Bien!",
+            nextQuestion: "cierre"
+          },
+          {
+            regexKey: ". . \\+",
+            feedback: "Recuerda: para dar un valor positivo al calor, se tiene que contrarrestar el signo - que le precede."
+          },
+          {
+            regexKey: ". \\+ .",
+            feedback: "Identificaste que se está realizando un trabajo, bien. Ahora piensa: ¿Quién está realizando el trabajo? ¿Qué signo debería de llevar entonces?"
+          },
+          { feedback: "Para encontrar la respuesta, considera que el aire está realizando un trabajo mecánico: elevar el globo. Con esta información, inténtalo otra vez." },
+          {
+            feedback: "Como el aire está realizando un trabajo mecánico sobre el globo al elevarlo, el valor de W es negativo (el aire dentro del globo pierde energía). Sin embargo, la energía que entra como calor gracias al quemador es mayor que la energía perdida por el trabajo mecánico, por lo que ∆U es positivo. Recuerda que, para que Q sea positivo, tiene que ir precedido de un doble signo - : -(-Q) = +Q.",
+            nextQuestion: "cierre",
+            set: "cmp1:2+cmp2:3+cmp3:3"
+          }
+        ]
+      },
+      {
+        id: "cierre",
+        text: "¡Ya llegaste al final de este diálogo! Avanza al cierre haciendo clic en el botón correspondiente.",
+        endDialogue: true,
+        answers: []
+      }
+    ],
+
+    microWorlds: [
+        {
+          id: "mecanica",
+          url: "globo_marcaDeAgua.png",
+          w: 426,
+          h: 437,
+          front: false,
+          textLink: ""
+        },
+        {
+          id: "montanyaRusa1",
+          url: "montanyaRusa1/montanyaRusa1.html",
+          w: 495,
+          h: 534,
+          front: false,
+          textLink: "Ver montaña rusa 1"
+        },
+        {
+          id: "montanyaRusa2",
+          url: "montanyaRusa2/montanyaRusa2.html",
+          w: 495,
+          h: 534,
+          front: false,
+          textLink: "Ver montaña rusa 2"
+        },
+        {
+          id: "montanyaRusa3",
+          url: "montanyaRusa3/montanyaRusa3.html",
+          w: 679,
+          h: 515,
+          front: true,
+          autoDisplay: false,
+          textLink: "Ver montaña rusa completa"
+        },
+        {
+          id: "manzana",
+          url: "newton.png",
+          w: 464,
+          h: 534,
+          front: false,
+          textLink: "Ver ilustración Isaac Newton"
+        },
+        {
+          id: "chocolate",
+          url: "chocolate.png",
+          w: 519,
+          h: 496,
+          front: false,
+          textLink: "Ver ilustración chocolate"
+        },
+        {
+          id: "compresionAdiabatica",
+          url: "compresionAdiabatica/index.html",
+          w: 550,
+          h: 560,
+          front: false,
+          textLink: "Ver compresión adiabática",
+          reset: true
+        },
+        {
+          id: "cilindroEnTina",
+          url: "cilindroEnTina/index.html",
+          w: 550,
+          h: 550,
+          front: false,
+          textLink: "Ver actividad compresión isotérmica",
+          deactivateChat: true
+        },
+        {
+          id: "compresionIsotermica",
+          url: "compresionIsotermica/index.html",
+          w: 550,
+          h: 560,
+          front: true,
+          reset: true
+        },
+        {
+          id: "estufa",
+          url: "ollaEnEstufa/ollaEnEstufa.html",
+          w: 548,
+          h: 560,
+          front: false,
+          textLink: "Ver actividad con estufa",
+          deactivateChat: true
+        },
+        {
+          id: "globo",
+          url: "globoAerostatico/globo.html",
+          w: 533,
+          h: 545,
+          front: false,
+          textLink: "Ver actividad con globo",
+          deactivateChat: true
+        }
+    ]
+    
+};

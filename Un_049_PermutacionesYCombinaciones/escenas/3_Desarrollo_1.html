@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='1' O.x='-485' O.y='-275' imagen='images/fondo_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='55' y='100' ancho='425' alto='400' fijo='sí' escala='200' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='TOTAL' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E2' nombre='ENTRE EL TOTAL' expresión='(50,270,190,30)' valor='&squot;&squot;' decimales='0' fijo='sí' visible='sí' acción='calcular' parámetro='correcto=(TOTAL=total)?1:2\notro=1' activo-si='otro=0'">
+   <param name="C_03" value="id='otro' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='Otro Ejercicio' expresión='(260,360,160,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn160.png' acción='calcular' parámetro='otro=0\nn=ent(rnd*5)+2\ntipo=(tipo=3)?1:tipo+1\nn1=(tipo=1)?2:6\nn2=(tipo=1)?2:6\nn3=(tipo=1)?2:6\nn4=(tipo=1)?2:6\nn5=(tipo=1)?2:6\nn6=(tipo=1)?2:6\nn1=(tipo<3)?n1:ent(rnd*6+2)\nn2=(tipo<3)?n2:ent(rnd*6+2)\nn3=(tipo<3)?n3:ent(rnd*6+2)\nn4=(tipo<3)?n4:ent(rnd*6+2)\nn5=(tipo<3)?n5:ent(rnd*6+2)\nn6=(tipo<3)?n6:ent(rnd*6+2)\nn=(tipo=3)?3:n\ntotal=(tipo=1)?2^n:6^n\ntotal=(tipo=3)?n1*n2*n3:total\ncorrecto=0\nTOTAL=&squot;&squot;' dibujar-si='correcto>0'">
+   <param name="A_01" value="id='f(x)' expresión='_Eval_(F)'">
+   <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Regla de la multiplicación&squot;' hacer='n=ent(rnd*5)+2;tipo=ent(rnd*3)+1;n1=(tipo=1)?2:6;n2=(tipo=1)?2:6;n3=(tipo=1)?2:6;n4=(tipo=1)?2:6;n5=(tipo=1)?2:6;n6=(tipo=1)?2:6;n1=(tipo<3)?n1:ent(rnd*6+2);n2=(tipo<3)?n2:ent(rnd*6+2);n3=(tipo<3)?n3:ent(rnd*6+2);n4=(tipo<3)?n4:ent(rnd*6+2);n5=(tipo<3)?n5:ent(rnd*6+2);n6=(tipo<3)?n6:ent(rnd*6+2);n=(tipo=3)?3:n;total=(tipo=1)?2^n:6^n;total=(tipo=3)?n1*n2*n3:total;bw=126;bh=50;bx=539;by=456;info=1;dx=0.3;dy=0.5;ndx=60;ndy=230;'">
+   <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' expresión='[555,115]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs34 En esta escena se vamos a estudiar el n\u250 mero\par de posibles resultados que se pueden obtener\par al lanzar varias monedas, al lanzar varios\par dados y las diferentes formas que pueden\par combinarse blusas, zapatos y faldas.\par \par Partiendo del principio fundamental del conteo:  \par \par Si en un proceso de k niveles el n\u250 mero de\par resultados posibles de cada uno de ellos tiene\par n1, n2, n3, n4, ..., nk resultados posibles \par entonces el n\u250 mero total de resultados posibles \par es:\par \par n1 \u215  n2 \u215  n3 \u215  n4 \u215  ... \u215  nk\par \par Este principio tambien se conoce como \par \par Regla de la multiplicaci\u243 n.\fs40}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_03" value="espacio='E2' tipo='texto' dibujar-si='(tipo=1)' expresión='[5,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 Si se lanzan{\*\mjaformula\cf0{\expr n\decimals 0\fixed1}\cf1}monedas \u191 de cuantas formas\par distintas pueden caer?\f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_04" value="espacio='E2' tipo='texto' dibujar-si='(tipo=2)' expresión='[5,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 Si se lanzan{\*\mjaformula\cf0{\expr n\decimals 0\fixed1}\cf1}dados \u191 de cuantas formas\par distintas pueden caer?\f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_05" value="espacio='E2' tipo='texto' dibujar-si='(tipo=3)' expresión='[5,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 Mar\u237 a tiene {\*\mjaformula\cf0{\expr n1\decimals 0\fixed1}\cf1}blusas, {\*\mjaformula\cf0{\expr n2\decimals 0\fixed1}\cf1}pares de zapatos\par y{\*\mjaformula\cf0{\expr n3\decimals 0\fixed1}\cf1} faldas \u191 De cu\u225 ntas formas distintas\par se puede vestir Mar\u237 a?\f2\fs30\i}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_06" value="espacio='E2' tipo='imagen' dibujar-si='(n>1)&(tipo=1)' expresión='(-1,dy)' archivo='images/zacara.png'">
+   <param name="G_07" value="espacio='E2' tipo='imagen' dibujar-si='(n>1)&(tipo=1)' expresión='(-1+dx,dy)' archivo='images/zacara.png'">
+   <param name="G_08" value="espacio='E2' tipo='imagen' dibujar-si='(n>2)&(tipo=1)' expresión='(-1+2dx,dy)' archivo='images/zacara.png'">
+   <param name="G_09" value="espacio='E2' tipo='imagen' dibujar-si='(n>3)&(tipo=1)' expresión='(-1+3dx,dy)' archivo='images/zacara.png'">
+   <param name="G_10" value="espacio='E2' tipo='imagen' dibujar-si='(n>4)&(tipo=1)' expresión='(-1+4dx,dy)' archivo='images/zacara.png'">
+   <param name="G_11" value="espacio='E2' tipo='imagen' dibujar-si='(n>5)&(tipo=1)' expresión='(-1+5dx,dy)' archivo='images/zacara.png'">
+   <param name="G_12" value="espacio='E2' tipo='imagen' dibujar-si='(n>1)' expresión='(-1,dy-dx)' archivo='images/flecha.png'">
+   <param name="G_13" value="espacio='E2' tipo='imagen' dibujar-si='(n>1)' expresión='(-1+dx,dy-dx)' archivo='images/flecha.png'">
+   <param name="G_14" value="espacio='E2' tipo='imagen' dibujar-si='(n>2)' expresión='(-1+2dx,dy-dx)' archivo='images/flecha.png'">
+   <param name="G_15" value="espacio='E2' tipo='imagen' dibujar-si='(n>3)' expresión='(-1+3dx,dy-dx)' archivo='images/flecha.png'">
+   <param name="G_16" value="espacio='E2' tipo='imagen' dibujar-si='(n>4)' expresión='(-1+4dx,dy-dx)' archivo='images/flecha.png'">
+   <param name="G_17" value="espacio='E2' tipo='imagen' dibujar-si='(n>5)' expresión='(-1+5dx,dy-dx)' archivo='images/flecha.png'">
+   <param name="G_18" value="espacio='E2' tipo='texto' dibujar-si='(n>1)' expresión='[15,ndy]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs44\b{\*\mjaformula\cf0{\expr n1\decimals 0\fixed1}\cf1}\f2\fs30\b0  }' fuente='SansSerif,BOLD,22' fijo='sí'">
+   <param name="G_19" value="espacio='E2' tipo='texto' dibujar-si='(n>1)' expresión='[15+ndx,ndy]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs44\b{\*\mjaformula\cf0{\expr n2\decimals 0\fixed1}\cf1}\f2\fs30\b0  }' fuente='SansSerif,BOLD,22' fijo='sí'">
+   <param name="G_20" value="espacio='E2' tipo='texto' dibujar-si='(n>2)' expresión='[15+2ndx,ndy]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs44\b{\*\mjaformula\cf0{\expr n3\decimals 0\fixed1}\cf1}\f2\fs30\b0  }' fuente='SansSerif,BOLD,22' fijo='sí'">
+   <param name="G_21" value="espacio='E2' tipo='texto' dibujar-si='(n>3)' expresión='[15+3ndx,ndy]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs44\b{\*\mjaformula\cf0{\expr n4\decimals 0\fixed1}\cf1}\f2\fs30\b0  }' fuente='SansSerif,BOLD,22' fijo='sí'">
+   <param name="G_22" value="espacio='E2' tipo='texto' dibujar-si='(n>4)' expresión='[15+4ndx,ndy]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs44\b{\*\mjaformula\cf0{\expr n5\decimals 0\fixed1}\cf1}\f2\fs30\b0  }' fuente='SansSerif,BOLD,22' fijo='sí'">
+   <param name="G_23" value="espacio='E2' tipo='texto' dibujar-si='(n>5)' expresión='[15+5ndx,ndy]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs44\b{\*\mjaformula\cf0{\expr n6\decimals 0\fixed1}\cf1}\f2\fs30\b0  }' fuente='SansSerif,BOLD,22' fijo='sí'">
+   <param name="G_24" value="espacio='E2' tipo='texto' dibujar-si='(correcto>0)' expresión='[15,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs44 El total de formas distintas posibles\par son: {\*\mjaformula\cf0{\expr total\decimals 0\fixed1}\cf1} \f2\fs30}' fuente='SansSerif,PLAIN,22' fijo='sí'">
+   <param name="G_25" value="espacio='E2' tipo='texto' dibujar-si='correcto=1' expresión='[50,365]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\cf0\f1\fs40 Muy bien \cf1\par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_26" value="espacio='E2' tipo='texto' dibujar-si='correcto=2' expresión='[50,365]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\cf0\f1\fs40 Lo siento \cf1\par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_27" value="espacio='E2' tipo='imagen' dibujar-si='(n>1)&(tipo=2)' expresión='(-1,dy)' archivo='images/dado.png'">
+   <param name="G_28" value="espacio='E2' tipo='imagen' dibujar-si='(n>1)&(tipo=2)' expresión='(-1+dx,dy)' archivo='images/dado.png'">
+   <param name="G_29" value="espacio='E2' tipo='imagen' dibujar-si='(n>2)&(tipo=2)' expresión='(-1+2dx,dy)' archivo='images/dado.png'">
+   <param name="G_30" value="espacio='E2' tipo='imagen' dibujar-si='(n>3)&(tipo=2)' expresión='(-1+3dx,dy)' archivo='images/dado.png'">
+   <param name="G_31" value="espacio='E2' tipo='imagen' dibujar-si='(n>4)&(tipo=2)' expresión='(-1+4dx,dy)' archivo='images/dado.png'">
+   <param name="G_32" value="espacio='E2' tipo='imagen' dibujar-si='(n>5)&(tipo=2)' expresión='(-1+5dx,dy)' archivo='images/dado.png'">
+   <param name="G_33" value="espacio='E2' tipo='imagen' dibujar-si='(n>1)&(tipo=3)' expresión='(-1,dy)' archivo='images/blusa.png'">
+   <param name="G_34" value="espacio='E2' tipo='imagen' dibujar-si='(n>1)&(tipo=3)' expresión='(-1+dx,dy)' archivo='images/zapato.png'">
+   <param name="G_35" value="espacio='E2' tipo='imagen' dibujar-si='(n>2)&(tipo=3)' expresión='(-1+2dx,dy)' archivo='images/falda.png'">
+</ajs>
+
+</body>
+</html>

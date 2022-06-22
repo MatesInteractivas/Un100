@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='55' y='100' ancho='425' alto='405' dibujar-si='paso>0' fijo='sí' escala='35' O.x='-45%' O.y='5%' despl_imagen='arr-izq' fondo='4e6689' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E3' x='540' y='105' ancho='375' alto='400' dibujar-si='paso>0' fijo='sí' O.x='-130' O.y='5%' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo0' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='continuar' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Continuar' expresión='(820,515,100,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='paso=paso+1' dibujar-si='paso<1'">
+   <param name="C_03" value="id='atras' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Atrás' expresión='(535,515,100,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='paso=paso-1\n' dibujar-si='paso>10'">
+   <param name="C_04" value="id='L' tipo='numérico' interfaz='barra' región='interior' espacio='E3' nombre='L' expresión='(5,370,210,25)' valor='10' min='2.3' max='10' decimales='1' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_05" value="id='q' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E2' nombre='Carga (p)' expresión='(270,370,130,30)' valor='80' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='paso>0' pos_mensajes='centro'">
+   <param name="C_06" value="id='L2' tipo='numérico' interfaz='barra' región='interior' espacio='E2' nombre='a' expresión='(5,370,250,30)' valor='6.3' min='1.7' max='10' decimales='1' fijo='no' visible='no' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='paso>0' pos_mensajes='centro'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Viga empotrada con carga puntual&squot;' hacer='E5.rot.z=-60;L=10;paso=1'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='R2=q*(L2)^2/(3*L);R1=q*(L2)/2-R2'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='paso=0' expresión='[545,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 Algunas estructuras est\u225 n sometidas a \par cargas con distribuci\u243 n tri\u225 ngular,\par trapezoidal, parab\u243 lica, etc. Por ejemplo,\par las cargas distribuidas originadas por las\par presiones sobre una presa.\par \par En este ejemplo, calcularemos las\par reacciones de una viga con carga\par triangular, como la mostrada en la figura.\par  \par \par \f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_03" value="espacio='E2' tipo='imagen' expresión='(5.2,-2.2,1,.5)' archivo='images/viga.png'">
+   <param name="G_04" value="espacio='E2' tipo='segmento' color='e9e7e7' expresión='(0.4,2.4)(0.4,-3)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_05" value="espacio='E2' tipo='segmento' color='e9e7e7' expresión='(L2,2.7)(L2,-3)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_06" value="espacio='E2' tipo='segmento' color='e9e7e7' expresión='(L,2.4)(L,-3)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_07" value="espacio='E2' tipo='flecha' color='turquesa' expresión='(0.4,-3.2)(0.4,-2.4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green255\blue255;\red0\green255\blue0;}\f1\fs24\cf0\par    \fs36\b\cf1{\*\mjaformula R1}\cf2\f3\fs24\b0\par \par }' fuente='SansSerif,PLAIN,12' fijo='sí' ancho='2' ancho='2' punta='3' flecha='turquesa'">
+   <param name="G_08" value="espacio='E3' tipo='texto' dibujar-si='paso=1' expresión='[80,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40\b\cf0 C\u225 lculo de reacciones\f2\fs24\b0\cf1}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_09" value="espacio='E2' tipo='segmento' color='amarillo' expresión='(0.4,1.3)(L,1.3)' texto='L =[L]' decimales='1' fijo='sí'">
+   <param name="G_10" value="espacio='E2' tipo='flecha' color='verde' expresión='(L2,-.8)(L2,-1.9)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}{\colortbl\red0\green255\blue0;}\cf0\f1\fs24}' fuente='Serif,PLAIN,15' fijo='sí' ancho='2' ancho='2' punta='3' flecha='verde'">
+   <param name="G_11" value="espacio='E2' tipo='texto' expresión='[10+35*L2,225]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green255\blue0;\red32\green48\blue58;}\f1\fs32\b\cf0  \fs36{\*\mjaformula{\expr q\decimals 0\fixed1}}\cf1\f3\fs30\b0}' fuente='SansSerif,BOLD,16' decimales='0' fijo='sí'">
+   <param name="G_12" value="espacio='E2' tipo='segmento' color='amarillo' dibujar-si='L2<L' expresión='(0.4,-1.5)(L2,-1.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}{\colortbl\red255\green255\blue0;\red32\green48\blue58;}\f1\fs30\cf0 a={\*\mjaformula{\expr L2}}\cf1}' decimales='1' fijo='sí'">
+   <param name="G_13" value="espacio='E2' tipo='texto' expresión='[55,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\b Viga con la carga y el apoyo fijo\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_14" value="espacio='E2' tipo='texto' expresión='[56,21]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green118\blue0;\red32\green48\blue58;}\f1\fs40\b\cf0 Viga con la carga y el apoyo fijo\cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_15" value="espacio='E2' tipo='texto' expresión='[85,190]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\b Diagrama de cuerpo libre\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_16" value="espacio='E2' tipo='texto' expresión='[86,191]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red192\green192\blue192;\red32\green48\blue58;}\f1\fs40\b\cf0 Diagrama de cuerpo libre\cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_17" value="espacio='E3' tipo='texto' expresión='[10,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;\f4\fcharset0 Times New Roman;\f5\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;\red32\green48\blue58;}\f1\fs36 En este \u250 ltimo ejemplo, tenemos una viga\par viga empotrada con una carga\cf0  \b\cf1 p\b0\cf0  \cf2 a una\par distancia\cf0  \b\cf1 a\b0\cf0  \cf2 del apoyo fijo.\par En el diagrama de cuerpo libre, no hemos\par dibujado la reacci\u243 n horizontal, en tanto\par que no hay fuerzas en este sentido, \par aplicadas a la viga.\par \par En este tipo de viga, es muy sencillo hallar\par las reacciones:\cf0\par \par \b\cf1                    {\*\mjaformula R{\subix 1}-{\expr q\decimals 0\fixed1}=0   R{\subix 1}={\expr q\decimals 0\fixed1}}\cf0\b0  \cf2\f3\fs24\par \f1\fs36\par \f3\fs24\par \cf1\f2\fs36\b                    {\*\mjaformula M{\subix 1}-{\expr q\decimals 0\fixed1}({\expr L2\decimals 1\fixed1})=0  M{\subix 1}={\expr q*L2\decimals 1\fixed1}}\f4\fs28\b0\i\cf2  \par \cf1\f5\fs36\b  \cf2\f3\fs24\b0\i0\par }' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_18" value="espacio='E2' tipo='texto' color='verde' expresión='[10+L2*35,45]' texto='p =[q]' decimales='0' fijo='sí'">
+   <param name="G_19" value="espacio='E2' tipo='flecha' color='verde' expresión='(L2,4.5)(L2,3.15)' fuente='Times New Roman,PLAIN,12' fijo='sí' ancho='2' ancho='2' punta='3' flecha='verde'">
+   <param name="G_20" value="espacio='E2' tipo='segmento' color='amarillo' dibujar-si='L2=L' expresión='(.4,-1.5)(L2,-1.5)' texto='L' decimales='1' fijo='sí'">
+   <param name="G_21" value="espacio='E2' tipo='imagen' expresión='(5.2,2.9,1,.5)' archivo='images/viga.png'">
+   <param name="G_22" value="espacio='E2' tipo='imagen' expresión='(0,2.9,1,1)' archivo='images/apoyo3.png'">
+   <param name="G_23" value="espacio='E2' tipo='imagen' expresión='(0,-2,1,1)' archivo='images/M.png'">
+   <param name="G_24" value="espacio='E2' tipo='texto' expresión='[0,250]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green255\blue255;\red32\green48\blue58;}\f1\fs40\b\cf0{\*\mjaformula M{\subix 1}}\cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_25" value="espacio='E3' tipo='imagen' expresión='(-.3,-1.4,.2,.2)' archivo='images/ec2.png'">
+   <param name="G_26" value="espacio='E3' tipo='imagen' expresión='(-.2,-2.6,.2,.2)' archivo='images/ec3.png'">
+</ajs>
+
+</body>
+</html>

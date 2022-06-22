@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E0' fijo='sí' imagen='images/fondo_general.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E1' x='460' y='115' ancho='450' alto='400' fijo='sí' escala='40' O.x='-200' O.y='100' imagen='images/fondo1.png' despl_imagen='arr-izq' fondo='76c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E2' x='60' y='120' ancho='320' alto='390' fijo='sí' O.x='-50%' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E0' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='E2.Oy' tipo='numérico' interfaz='barra' región='interior' espacio='E0' expresión='(385,115,30,400)' valor='-200' incr='1' min='-800' max='-200' decimales='0' fijo='sí' visible='no' acción='calcular' pos_mensajes='centro'">
+   <param name="C_03" value="id='h' tipo='numérico' interfaz='barra' región='interior' espacio='E1' expresión='(100,310,220,25)' valor='h' incr='.1*(10^(-34))' min='1.626*(10^(-34))' max='10.626*(10^(-34))' discreto='sí' decimales='40' fijo='sí' visible='no' acción='calcular' parámetro='calculos()\ncalcwien()' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_04" value="id='T' tipo='numérico' interfaz='barra' región='interior' espacio='E1' expresión='(50,350,220,25)' valor='T' incr='1' min='200' max='1500' discreto='sí' decimales='40' fijo='sí' visible='no' acción='calcular' parámetro='calculos()\ncalcdatexp()\ncultravioleta()\ncalcwien()' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='init()' algoritmo='sí' algoritmo='sí' hacer='xv=(10^14);h=6.626*(10^(-34));c=3*(10^(8));k=1.32*(10^(-23));T=300;;calculos();calcdatexp();cultravioleta();calcwien()'">
+   <param name="A_02" value="id='frecuencias' vector='sí' evaluar='una-sola-vez' tamaño='500'">
+   <param name="A_03" value="id='densidades' vector='sí' evaluar='una-sola-vez' tamaño='500'">
+   <param name="A_04" value="id='frecuencias2' vector='sí' evaluar='una-sola-vez' tamaño='500'">
+   <param name="A_05" value="id='densidades2' vector='sí' evaluar='una-sola-vez' tamaño='500'">
+   <param name="A_06" value="id='frecuencias3' vector='sí' evaluar='una-sola-vez' tamaño='500'">
+   <param name="A_07" value="id='densidades3' vector='sí' evaluar='una-sola-vez' tamaño='500'">
+   <param name="A_08" value="id='frecuencias4' vector='sí' evaluar='una-sola-vez' tamaño='500'">
+   <param name="A_09" value="id='densidades4' vector='sí' evaluar='una-sola-vez' tamaño='500'">
+   <param name="A_10" value="id='calculos()' algoritmo='sí' algoritmo='sí' inicio='v=.01' hacer='frecuencias[(v*100)-1]=v;densidades[(v*100)-1]=(8*pi*h*((v*xv)^3))/((c^3)*(exp((h*v*xv*(10^20))/(k*T*(10^20)))-1));v=v+.01;' mientras='v<30'">
+   <param name="A_11" value="id='calcdatexp()' algoritmo='sí' algoritmo='sí' inicio='v=.01;h0=6.626*(10^(-34))' hacer='frecuencias2[(v*100)-1]=v;a0=ent(rnd*10);a=(-1+(((a0<8)&(v<25))?1:0))*(10^(-19));densidades2[(v*100)-1]=(8*pi*h0*((v*xv)^3))/((c^3)*(exp((h0*v*xv*(10^20))/(k*T*(10^20)))-1))+a;v=v+.08;' mientras='v<30'">
+   <param name="A_12" value="id='cultravioleta()' algoritmo='sí' algoritmo='sí' inicio='v=.01' hacer='frecuencias3[(v*100)-1]=v;densidades3[(v*100)-1]=((2*pi*(v^2)*k*T)/(c^2))*(10^20);v=v+.01;' mientras='v<30'">
+   <param name="A_13" value="id='calcwien()' algoritmo='sí' algoritmo='sí' inicio='v=.01' hacer='frecuencias4[(v*100)-1]=v;densidades4[(v*100)-1]=(2*pi*h*((v*xv)^5)*exp(((-1)*h*v*xv*(10^20))/((k*T)*(10^20))))/(c^4)*(10^(-16));v=v+.01' mientras='v<30'">
+   <param name="A_14" value="id='calcwien1()' algoritmo='sí' algoritmo='sí' inicio='v=.01' hacer='frecuencias4[(v*100)-1]=v;densidades4[(v*100)-1]=(2*pi*h*((v*xv)^3)*exp(((-1)*h*v*xv*(10^20))/((k*T)*(10^20))))/(c^2)*(10^(-7.9));v=v+.01' mientras='v<30'">
+   <param name="A_15" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Teorías&squot;' hacer='init()'">
+   <param name="A_16" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E0' tipo='texto' fondo='sí' expresión='[(E0._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E2' tipo='imagen' expresión='(0,0)' archivo='images/texto4.png'">
+   <param name="G_03" value="espacio='E2' tipo='imagen' expresión='(0,-10.9)' archivo='images/texto5.png'">
+   <param name="G_04" value="espacio='E1' tipo='segmento' expresión='(0,0)(10,0)' fijo='sí' tamaño='0'">
+   <param name="G_05" value="espacio='E1' tipo='segmento' expresión='(0,0)(0,6)' fijo='sí' tamaño='0'">
+   <param name="G_06" value="espacio='E1' tipo='texto' expresión='[7,45]' texto='      Densidad de\nenergía de radiación' fuente='SansSerif,PLAIN,12' fijo='sí' color_borde_texto='blanco'">
+   <param name="G_07" value="espacio='E1' tipo='texto' expresión='[150,310]' texto='Frecuencia' fuente='SansSerif,PLAIN,12' fijo='sí' color_borde_texto='blanco'">
+   <param name="G_08" value="espacio='E1' tipo='punto' color='00f600' dibujar-si='((frecuencias4[s]*4)<10)&(s>30)&(E2.Oy<-600)' expresión='(frecuencias4[s]*4,densidades4[s]*(10^18))' familia='s' s.intervalo='[0,280]' s.pasos='280' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1.5'">
+   <param name="G_09" value="espacio='E1' tipo='punto' color='negro' dibujar-si='0' expresión='(frecuencias[s]*4,densidades[s]*(10^18))' familia='s' s.intervalo='[0,280]' s.pasos='280' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1'">
+   <param name="G_10" value="espacio='E1' tipo='curva' color='negro' dibujar-si='0' expresión='(frecuencias[t]*4,densidades[t]*(10^18))' t.intervalo='[0,280]' t.pasos='280'">
+   <param name="G_11" value="espacio='E1' tipo='punto' color='rojo' dibujar-si='((frecuencias2[s]*4)<10)' expresión='(frecuencias2[s]*4,densidades2[s]*(10^18))' familia='s' s.intervalo='[0,280]' s.pasos='280' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1.5'">
+   <param name="G_12" value="espacio='E1' tipo='punto' color='5481c3' dibujar-si='((frecuencias3[s]*4)<10)' expresión='(frecuencias3[s]*4,densidades3[s]*(10^18))' familia='s' s.intervalo='[0,280]' s.pasos='280' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1.5'">
+   <param name="G_13" value="espacio='E1' tipo='texto' expresión='[200,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\f1\fs40\cf0 Datos experimentales\cf1\par Formula de Rayleigh Jeans\f2\fs24\par }' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_14" value="espacio='E1' tipo='texto' dibujar-si='E2.Oy<-600' expresión='[200,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red0\green240\blue21;}\f1\fs40\cf0\par \par \cf1 Ley de Wien\cf0\f2\fs24\par }' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_15" value="espacio='E1' tipo='texto' expresión='[310,350]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}\f1\fs40 T=\f2\fs44\i{\*\mjaformula{\expr T\decimals 0\fixed1}}\f1\fs40\i0\u176 K}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_16" value="espacio='E1' tipo='texto' dibujar-si='0' expresión='[200,220]' texto='Ecuación de Planck' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_17" value="espacio='E1' tipo='texto' color='negro' dibujar-si='0' expresión='[205,150]' texto='h=[h*(10^(34))] x10' fuente='Arial,PLAIN,18' decimales='3' fijo='sí' ancho='0'">
+   <param name="G_18" value="espacio='E1' tipo='texto' color='negro' dibujar-si='0' expresión='[310,135]' texto='-34' fuente='Arial,PLAIN,18' decimales='50' fijo='sí' ancho='0'">
+   <param name="Animación" value="controles='no' auto='sí'">
+</ajs>
+
+</body>
+</html>

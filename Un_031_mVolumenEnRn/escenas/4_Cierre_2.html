@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Cierre</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_cierre_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R3' id='Principal' x='41' y='261' ancho='397' alto='200' escala='30' O.y='40' despl_imagen='arr-izq' fondo='d5f3ff' R3='sí'">
+   <param name="E_03" value="tipo='R2' id='Controles' x='40' y='460' ancho='398' alto='75' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='E4' x='40' y='78' ancho='398' alto='178' fijo='sí' escala='22' O.x='-110' O.y='44' despl_imagen='arr-izq' fondo='ffffffff' red='b8c4c8' red10='no' ejes='405860' texto='405860'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_03" value="id='a1' tipo='numérico' región='interior' espacio='Controles' nombre='a1' expresión='(60,0,(Principal._w-60)/3,25)' incr='1' min='0' max='3' decimales='0' fijo='sí' visible='sí'">
+   <param name="C_04" value="id='a2' tipo='numérico' región='interior' espacio='Controles' nombre='a2' expresión='(60+(Principal._w-60)/3,0,(Principal._w-60)/3,25)' valor='-1' incr='1' min='-1' max='2' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_05" value="id='a3' tipo='numérico' región='interior' espacio='Controles' nombre='a3' expresión='(60+2*(Principal._w-60)/3,0,(Principal._w-60)/3,25)' valor='1' incr='1' min='0' max='2' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_06" value="id='b1' tipo='numérico' región='interior' espacio='Controles' nombre='b1' expresión='(60,25,(Principal._w-60)/3,25)' valor='-1' incr='1' min='-1' max='2' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_07" value="id='b2' tipo='numérico' región='interior' espacio='Controles' nombre='b2' expresión='(60+(Principal._w-60)/3,25,(Principal._w-60)/3,25)' valor='1' incr='1' min='0' max='3' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_08" value="id='b3' tipo='numérico' región='interior' espacio='Controles' nombre='b3' expresión='(60+2*(Principal._w-60)/3,25,(Principal._w-60)/3,25)' valor='1' incr='1' min='0' max='3' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_09" value="id='p1' tipo='numérico' región='interior' espacio='Controles' nombre='p1' expresión='(60,50,(Principal._w-60)/3,25)' valor='3' incr='1' min='0' max='3' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_10" value="id='p2' tipo='numérico' región='interior' espacio='Controles' nombre='p2' expresión='(60+(Principal._w-60)/3,50,(Principal._w-60)/3,25)' valor='3' incr='1' min='0' max='3' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_11" value="id='p3' tipo='numérico' región='interior' espacio='Controles' nombre='p3' expresión='(60+2*(Principal._w-60)/3,50,(Principal._w-60)/3,25)' valor='1' incr='1' min='0' max='3' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_12" value="id='Inicio' tipo='numérico' interfaz='botón' región='interior' espacio='Controles' nombre='Inicio' expresión='(0,25,60,30)' fijo='sí' visible='sí' color='blanco' fuente puntos='18' imagen='images/btn160.png' acción='calcular' parámetro='a1=0;a2=-1;a3=1;\nb1=-1;b2=1;b3=1;\np1=4;p2=3;p3=1;\n\n\nPrincipal.rot.z=-44'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='Principal.rot.z=-44' hacer=';;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='Ma=sqrt(a1^2+a2^2+a3^2);Mb=sqrt(b1^2+b2^2+b3^2);Mp=sqrt(p1^2+p2^2+p3^2);;Principal.escala=190/(Ma+Mb+Mp);'">
+   <param name="G_01" value="espacio='E1' tipo='texto' dibujar-si='t<20' expresión='[220,19]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs60 T. de Pit\u225 goras en R\u8319  o {\*\mjaformula\u931 (men{\subix m}(A)){\supix 2}}}' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='polígono' color='ffffffff' coord_abs='sí' expresión='(35,73)(935,73)(935,540)(35,540)(35,73)' relleno='ffe0e4e8'">
+   <param name="G_03" value="espacio='E1' tipo='polígono' color='ffb8c4c8' coord_abs='sí' expresión='(40,260)(438,260)(438,535)(40,535)(40,260)'">
+   <param name="G_04" value="espacio='E4' tipo='segmento' color='3f404040' expresión='(2,1)(10,5)' fijo='sí' tamaño='7' ancho='5'">
+   <param name="G_05" value="espacio='E4' tipo='segmento' color='347c3b' expresión='(0,5)(0,1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\b u2\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='0' ancho='5'">
+   <param name="G_06" value="espacio='E4' tipo='segmento' color='azul' expresión='(2,0)(10,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\b u1\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='0' ancho='5'">
+   <param name="G_07" value="espacio='E4' tipo='segmento' color='azul' expresión='(2,1)(2,0)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_08" value="espacio='E4' tipo='segmento' color='azul' expresión='(10,0)(10,5)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_09" value="espacio='E4' tipo='segmento' color='007836' expresión='(10,5)(0,5)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_10" value="espacio='E4' tipo='segmento' color='006200' expresión='(0,1)(2,1)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_11" value="espacio='E4' tipo='flecha' expresión='(2,1)(10,5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40\b u\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='1' flecha='grisClaro'">
+   <param name="G_12" value="espacio='E1' tipo='polígono' color='ffb8c4c8' coord_abs='sí' expresión='(442,79)(930,79)(930,255)(442,255)(442,79)' relleno='ffffffff'">
+   <param name="G_13" value="espacio='E1' tipo='polígono' color='ffb8c4c8' coord_abs='sí' expresión='(442,260)(930,260)(930,535)(442,535)(442,260)' relleno='ffffffff'">
+   <param name="G_14" value="espacio='E1' tipo='imagen' coord_abs='sí' expresión='(452,89)' archivo='images/4_Cierre_2_text2.jpg'">
+   <param name="G_15" value="espacio='E1' tipo='texto' expresión='[452,263]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs34\b Si {\*\mjaformula A={\matrix\rows 2\columns 3{\element{\expr a1\decimals 2\fixed0}}{\element{\expr a2\decimals 2\fixed0}}{\element{\expr a3\decimals 2\fixed0}}{\element{\expr b1\decimals 2\fixed0}}{\element{\expr b2\decimals 2\fixed0}}{\element{\expr b3\decimals 2\fixed0}}}}\b0 , \b{\*\mjaformula (\u225 rea(A)){\supix 2}=\u931 (men{\subix 2}(A)){\supix 2}}\b0  nos dice:}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_16" value="espacio='E1' tipo='texto' expresión='[452,310]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red128\green128\blue128;\red32\green48\blue58;}\f1\fs34\b\cf0{\*\mjaformula (\u193 rea{\matrix\rows 2\columns 3{\element{\expr a1\decimals 2\fixed0}}{\element{\expr a2\decimals 2\fixed0}}{\element{\expr a3\decimals 2\fixed0}}{\element{\expr b1\decimals 2\fixed0}}{\element{\expr b2\decimals 2\fixed0}}{\element{\expr b3\decimals 2\fixed0}}}){\supix 2}}\cf1 = \cf0 (\u193 rea del paralelogramo gris)\u178 =\cf1\b0}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_17" value="espacio='E1' tipo='texto' expresión='[452,360]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;\red0\green0\blue255;\red0\green98\blue0;}\f1\fs34\b  \cf0{\*\mjaformula (det{\matrix\rows 2\columns 2{\element{\expr a1\decimals 2\fixed0}}{\element{\expr a2\decimals 2\fixed0}}{\element{\expr b1\decimals 2\fixed0}}{\element{\expr b2\decimals 2\fixed0}}}){\supix 2}}\cf1 + \cf2{\*\mjaformula (det{\matrix\rows 2\columns 2{\element{\expr a1\decimals 2\fixed0}}{\element{\expr a3\decimals 2\fixed0}}{\element{\expr b1\decimals 2\fixed0}}{\element{\expr b3\decimals 2\fixed0}}}){\supix 2}}\cf1 + \cf3{\*\mjaformula (det{\matrix\rows 2\columns 2{\element{\expr a2\decimals 2\fixed0}}{\element{\expr a3\decimals 2\fixed0}}{\element{\expr b2\decimals 2\fixed0}}{\element{\expr b3\decimals 2\fixed0}}}){\supix 2}}\cf1\b0}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_18" value="espacio='E1' tipo='texto' expresión='[452,410]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}\f1\fs24{\*\mjaformula{\matrix\rows 2\columns 1{\element\u193 rea al cuadrado }{\element del paralelogramo rojo}}}\fs34\b +\fs24\b0{\*\mjaformula{\matrix\rows 2\columns 1{\element\u193 rea al cuadrado }{\element del paralelogramo azul}}}\fs34\b +\fs24\b0{\*\mjaformula{\matrix\rows 2\columns 1{\element\u193 rea al cuadrado }{\element del paralelogramo verde}}}\fs34}' fuente='SansSerif,PLAIN,12' fijo='sí'">
+   <param name="G_19" value="espacio='E1' tipo='texto' expresión='[452,460]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs24 El cuadrado del \u225 rea de un paralelogramo es la suma de los cuadrados\fs34}' fuente='SansSerif,PLAIN,12' fijo='sí'">
+   <param name="G_20" value="espacio='E1' tipo='texto' expresión='[452,474]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs24 de las \u225 reas de sus proyecciones en los planos x=0, y=0, z=0\fs34 .}' fuente='SansSerif,PLAIN,12' fijo='sí'">
+   <param name="G_21" value="espacio='E1' tipo='texto' expresión='[452,500]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs34\b{\*\mjaformula (vol(A)){\supix 2}=\u931 (men{\subix m}(A)){\supix 2}}\b0 es el \b T. de Pit\u225 goras mxn \b0}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="S_01" value="espacio='Principal' tipo='segmento' color='999999' expresión='(p1,p2,p3)(p1+a1-(min(sqrt(a1^2+a2^2+a3^2)/2,0.3*48/Principal.escala))/2*a1/sqrt(a1^2+a2^2+a3^2),p2+a2-(min(sqrt(a1^2+a2^2+a3^2)/2,0.3*48/Principal.escala))/2*a2/sqrt(a1^2+a2^2+a3^2),p3+a3-(min(sqrt(a1^2+a2^2+a3^2)/2,0.3*48/Principal.escala))/2*a3/sqrt(a1^2+a2^2+a3^2))' ancho='3'">
+   <param name="S_02" value="espacio='Principal' tipo='cono' color='999999' color_reverso='5ffaafff' expresión='Cono' rotini='(0,90+asen(a3/sqrt(a1^2+a2^2+a3^2))*180/pi,(a1#0)?90*(1+sgn(a1))+atan(a2/a1)*180/pi:90*-sgn(a2))' posini='(p1+a1-((min(sqrt(a1^2+a2^2+a3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*a1/sqrt(a1^2+a2^2+a3^2),p2+a2-((min(sqrt(a1^2+a2^2+a3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*a2/sqrt(a1^2+a2^2+a3^2),p3+a3-((min(sqrt(a1^2+a2^2+a3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*a3/sqrt(a1^2+a2^2+a3^2))' modelo='metal' ancho='0.2*48/Principal.escala' largo='0.2*48/Principal.escala' alto='min(sqrt(a1^2+a2^2+a3^2)/2,0.3*48/Principal.escala)' Nu='10' Nv='1'">
+   <param name="S_03" value="espacio='Principal' tipo='segmento' color='999999' expresión='(p1,p2,p3)(p1+b1-(min(sqrt(b1^2+b2^2+b3^2)/2,0.3*48/Principal.escala))/2*b1/sqrt(b1^2+b2^2+b3^2),p2+b2-(min(sqrt(b1^2+b2^2+b3^2)/2,0.3*48/Principal.escala))/2*b2/sqrt(b1^2+b2^2+b3^2),p3+b3-(min(sqrt(b1^2+b2^2+b3^2)/2,0.3*48/Principal.escala))/2*b3/sqrt(b1^2+b2^2+b3^2))' ancho='3'">
+   <param name="S_04" value="espacio='Principal' tipo='cono' color='999999' color_reverso='5ffaafff' expresión='Cono' rotini='(0,90+asen(b3/sqrt(b1^2+b2^2+b3^2))*180/pi,(b1#0)?90*(1+sgn(b1))+atan(b2/b1)*180/pi:90*-sgn(b2))' posini='(p1+b1-((min(sqrt(b1^2+b2^2+b3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*b1/sqrt(b1^2+b2^2+b3^2),p2+b2-((min(sqrt(b1^2+b2^2+b3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*b2/sqrt(b1^2+b2^2+b3^2),p3+b3-((min(sqrt(b1^2+b2^2+b3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*b3/sqrt(b1^2+b2^2+b3^2))' modelo='metal' ancho='0.2*48/Principal.escala' largo='0.2*48/Principal.escala' alto='min(sqrt(b1^2+b2^2+b3^2)/2,0.3*48/Principal.escala)' Nu='10' Nv='1'">
+   <param name="S_05" value="espacio='Principal' tipo='superficie' color='85be83' color_reverso='698e6d' expresión=' y=10*u z=10*v x=0' modelo='alambre' Nu='10' Nv='10'">
+   <param name="S_06" value="espacio='Principal' tipo='superficie' color='aeb1ff' color_reverso='30a1a1c0' expresión='x=10*v y=0 z=10*u' modelo='alambre' Nu='10' Nv='10'">
+   <param name="S_07" value="espacio='Principal' tipo='superficie' color='ff7a7a' color_reverso='c0a1a1' expresión='x=10*u y=10*v z=0' modelo='alambre' Nu='10' Nv='10'">
+   <param name="S_08" value="nombre='P' espacio='Principal' tipo='punto' color='negro' color_reverso='grisObscuro' expresión='(p1,p2,p3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34\b P\f2\fs30\b0}' fuente='SansSerif,BOLD,17' fijo='sí' ancho='4'">
+   <param name="S_09" value="nombre='P+A' espacio='Principal' tipo='punto' color='grisObscuro' color_reverso='grisObscuro' expresión='(p1+a1,p2+a2,p3+a3)' fijo='sí' ancho='4'">
+   <param name="S_10" value="nombre='P+B' espacio='Principal' tipo='punto' color='grisObscuro' color_reverso='grisObscuro' expresión='(p1+b1,p2+b2,p3+b3)' fijo='sí' ancho='4'">
+   <param name="S_11" value="nombre='P+A+B' espacio='Principal' tipo='punto' color='grisObscuro' color_reverso='grisObscuro' expresión='(p1+a1+b1,p2+a2+b2,p3+a3+b3)' fijo='sí' ancho='4'">
+   <param name="S_12" value="espacio='Principal' tipo='superficie' color='33c0c0c0' color_reverso='339f9d9f' expresión='x=p1+a1*u+b1*v y=p2+a2*u+b2*v z=p3+a3*u+b3*v' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_13" value="espacio='Principal' tipo='superficie' color='489648' color_reverso='489648' expresión=' y=p2+a2*u+b2*v z=p3+a3*u+b3*v x=0' Nu='1' Nv='1'">
+   <param name="S_14" value="espacio='Principal' tipo='superficie' color='484aee' color_reverso='484a94' expresión=' x=p1+a1*u+b1*v z=p3+a3*u+b3*v y=0' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_15" value="espacio='Principal' tipo='superficie' color='ff4a4a' color_reverso='c44a4a' expresión=' x=p1+a1*u+b1*v y=p2+a2*u+b2*v z=0' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_16" value="espacio='Principal' tipo='superficie' color='bbbbffbe' color_reverso='a1a1d8a1' expresión=' y=10*u z=10*v x=0' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_17" value="espacio='Principal' tipo='superficie' color='aaffaeae' color_reverso='b5d6a1a1' expresión=' x=10*u y=10*v z=0' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_18" value="espacio='Principal' tipo='superficie' color='aeaeb1ff' color_reverso='a1a1a1c0' expresión='x=10*v y=0 z=10*u' Nu='10' Nv='10'">
+   <param name="S_19" value="espacio='Principal' tipo='segmento' color='008e00' expresión='(p1,p2,p3)(0,p2,p3)' ancho='2'">
+   <param name="S_20" value="espacio='Principal' tipo='segmento' color='rojo' expresión='(p1,p2,p3)(p1,p2,0)' ancho='2'">
+   <param name="S_21" value="espacio='Principal' tipo='segmento' color='azul' expresión='(p1,p2,p3)(p1,0,p3)' ancho='2'">
+   <param name="S_22" value="espacio='Principal' tipo='segmento' color='008e00' expresión='(p1+b1,p2+b2,p3+b3)(0,p2+b2,p3+b3)' ancho='2'">
+   <param name="S_23" value="espacio='Principal' tipo='segmento' color='rojo' expresión='(p1+b1,p2+b2,p3+b3)(p1+b1,p2+b2,0)' ancho='2'">
+   <param name="S_24" value="espacio='Principal' tipo='segmento' color='azul' expresión='(p1+b1,p2+b2,p3+b3)(p1+b1,0,p3+b3)' ancho='2'">
+   <param name="S_25" value="espacio='Principal' tipo='segmento' color='008e00' expresión='(p1+a1,p2+a2,p3+a3)(0,p2+a2,p3+a3)' ancho='2'">
+   <param name="S_26" value="espacio='Principal' tipo='segmento' color='rojo' expresión='(p1+a1,p2+a2,p3+a3)(p1+a1,p2+a2,0)' ancho='2'">
+   <param name="S_27" value="espacio='Principal' tipo='segmento' color='azul' expresión='(p1+a1,p2+a2,p3+a3)(p1+a1,0,p3+a3)' ancho='2'">
+   <param name="S_28" value="espacio='Principal' tipo='segmento' color='008e00' expresión='(p1+a1+b1,p2+a2+b2,p3+a3+b3)(0,p2+a2+b2,p3+a3+b3)' ancho='2'">
+   <param name="S_29" value="espacio='Principal' tipo='segmento' color='rojo' expresión='(p1+a1+b1,p2+a2+b2,p3+a3+b3)(p1+a1+b1,p2+a2+b2,0)' ancho='2'">
+   <param name="S_30" value="espacio='Principal' tipo='segmento' color='azul' expresión='(p1+a1+b1,p2+a2+b2,p3+a3+b3)(p1+a1+b1,0,p3+a3+b3)' ancho='2'">
+</ajs>
+
+</body>
+</html>

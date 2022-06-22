@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Geometr&iacute;a</title>
+
+<link rel="StyleSheet" href="lib/estiloGeolab.css" type="text/css">
+<SCRIPT  SRC="lib/geolab.js"  type="text/javascript" ></SCRIPT>
+<style>
+.celda_izquierda{
+background-color:#d5f3ff;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white; 
+}
+.celda_derecha{
+background-color:#fbfadc;
+box-shadow:0px 30px 30px -30px #000000;
+border:5px solid white;
+}
+table{margin-top:25px}
+.cuaderno2{
+overflow:auto;
+height:390px;
+display:block;
+margin:0;
+}
+</style> 
+</head>
+ <body onload="init();">
+<ambiente  ventana = '-10.00,-10.00,10.00,10.00'  colorFondo = '#fff3d5'  decimales = '5'  enRadianes = '1'  enRejilla = '0'  tipoRejilla = '0'  conEjes = '0'  colorEjes = '#0'  colorNumeros = '#ff'  colorReticula = '#ff00' />
+<objeto  nombre = 'A'  tipo = 'punto'  constructor = '0'  parametros = '-6.62,7.96,0.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,-1' />
+<objeto  nombre = 'B'  tipo = 'punto'  constructor = '0'  parametros = '-6.92,0.37,0.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,-1' />
+<objeto  nombre = 'C'  tipo = 'punto'  constructor = '0'  parametros = '-0.67,5.59,0.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,-1' />
+<objeto  nombre = 'D'  tipo = 'punto'  constructor = '0'  parametros = '-1.11,-5.29,0.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,-1' />
+<objeto  nombre = 'E'  tipo = 'punto'  constructor = '0'  parametros = '6.77,-1.79,0.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,-1' />
+<objeto  nombre = 'F'  tipo = 'punto'  constructor = '0'  parametros = '0.81,1.44,0.00'  visible = '1'  ancho = '3'  color = '#0,#ff'  etiqueta = '2,-1' />
+<objeto  nombre = 'G'  tipo = 'poligono'  constructor = '200'  objRef = '0,1,2'  visible = '1'  ancho = '1'  color = '#8000,#aeff93'  etiqueta = '0,-1' />
+<objeto  nombre = 'H'  tipo = 'punto'  constructor = '0'  parametros = '-5.97,4.67,0.00'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'a'  tipo = 'recta'  constructor = '31'  parametros = '-0.98,-0.19,-4.95'  objRef = '0,7'  visible = '1'  ancho = '2'  color = '#ff0000,#c0c0c0'  etiqueta = '0,-1' />
+<objeto  nombre = 'b'  tipo = 'recta'  constructor = '31'  parametros = '0.98,-0.22,6.84'  objRef = '1,7'  visible = '1'  ancho = '2'  color = '#ff0000,#c0c0c0'  etiqueta = '0,-1' />
+<objeto  nombre = 'c'  tipo = 'recta'  constructor = '31'  parametros = '-0.17,0.99,-5.62'  objRef = '2,7'  visible = '1'  ancho = '2'  color = '#ff0000,#c0c0c0'  etiqueta = '0,-1' />
+<objeto  nombre = 'd'  tipo = 'recta'  constructor = '38'  parametros = '-0.96,0.28,0.39'  objRef = '5,3'  visible = '1,1'  ancho = '1,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,-1' />
+<objeto  nombre = 'e'  tipo = 'recta'  constructor = '38'  parametros = '0.41,-0.91,-4.38'  objRef = '3,4'  visible = '1,1'  ancho = '1,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,-1' />
+<objeto  nombre = 'f'  tipo = 'recta'  constructor = '38'  parametros = '0.48,0.88,-1.65'  objRef = '4,5'  visible = '1,1'  ancho = '1,1'  color = '#ff0000,#c0c0c0,#0'  etiqueta = '0,-1' />
+<objeto  nombre = 'g'  tipo = 'recta'  constructor = '30'  parametros = '0.17,-0.98,-1.45'  visible = '1'  ancho = '2'  color = '#ff,#c0c0c0'  etiqueta = '0,-1' />
+<objeto  nombre = 'I'  tipo = 'poligono'  constructor = '200'  objRef = '5,3,4'  visible = '1'  ancho = '1'  color = '#8000,#8484ff'  etiqueta = '0,-1' />
+<objeto  nombre = 'J'  tipo = 'punto'  constructor = '1'  parametros = '-0.02,-1.47,0.00'  objRef = '11,14'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'K'  tipo = 'punto'  constructor = '1'  parametros = '4.66,-0.65,0.00'  objRef = '14,13'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+<objeto  nombre = 'L'  tipo = 'punto'  constructor = '1'  parametros = '12.43,0.72,0.00'  objRef = '14,12'  visible = '1'  ancho = '3'  color = '#0,#ffff00'  etiqueta = '2,-1' />
+
+<nota texto="" />
+
+<table align='center'>  
+<tr>
+	<td width ='425px' height='410px' valign='middle' class="celda_izquierda">
+		
+			<canvas id="pizarron" width="425" height="400">
+			</canvas>
+		</td>
+    
+    <td width ='50px'></td>
+    
+    <td width ='375px' height="410px" valign='middle' class="celda_derecha">
+    
+	<div class="cuaderno2">
+<p><resalta>Menelao de Alejandría</resalta> vivió entre los años 70 y 140 de nuestra era.<br>
+Fué matemático y astrónomo. Existe una traducción árabe de su libro Sphaerica, que trata temas de geometría esférica y sus aplicaciones a la astronomía.<br>
+El libro introduce el concepto de triángulo esférico, un triángulo construido en una esfera cuyos lados son geodésicas y prueba el 
+teorema que lleva su nombre, sobre la colinearidad de puntos en los lados de un triángulo y su análogo
+para triángulos esféricos.</p>
+
+<p><resalta>Giovanni Ceva </resalta>(1647-1734)  fue un matemático italiano, conocido por el teorema que lleva su nombre, que da una
+condición necesaria y suficiente para que tres rectas que pasan por los vértices de un triángulo sean concurrentes.<br>
+
+Ceva redescubrió y publicó el teorema de Menelao y enunció el suyo como un resultado dual del Teorema
+de Menelao, es decir, intercambió los tres puntos colineales en los lados de un triángulo del teorema 
+de Menelao por tres rectas concurrentes que pasan por los vértices.
+Ceva publicó Geometria Motus en el que anticipa el cálculo infinitesimal y De Re Nummeraria que es uno
+de los primeros libros en economía matemática.	</p>
+	 
+	<p id="cuaderno">Este es un p&aacute;rrafo 	</p></div>
+	</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

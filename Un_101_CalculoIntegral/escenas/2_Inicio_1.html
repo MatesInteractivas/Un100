@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Motivación</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='HTMLIFrame' id='E2' x='25' y='100' ancho='325' alto='425' despl_imagen='arr-izq' archivo='documenta-TFC.pdf'">
+   <param name="E_03" value="tipo='R2' id='E3' x='375' y='100' ancho='575' alto='425' escala='48' O.y='-30' imagen='images/panel_550x435.png' despl_imagen='expand.' red='no' red10='no' ejes='405860' texto='405860' números='sí' eje-x='x' eje-y='y'">
+   <param name="E_04" value="tipo='R2' id='controles' x='375' y='425' ancho='575' alto='100' imagen='images/panel_800x150.png' despl_imagen='expand.' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='E3.escala' tipo='numérico' región='interior' espacio='E3' nombre='escala' expresión='(5,5,100,40)' valor='50' incr='0.1*E3.escala' min='0.000001' max='1000000' decimales='(E3.escala<0.01)+(E3.escala<0.1)+(E3.escala<1)+(E3.escala<10)+(E3.escala<100)+(E3.escala<1000)+(E3.escala<10000)+(E3.escala<100000)' fijo='sí' visible='no'">
+   <param name="C_02" value="id='a' tipo='numérico' interfaz='campo de texto' región='interior' espacio='controles' nombre='a' expresión='(5,5,100,40)' valor='-2' decimales='1' fijo='sí' visible='sí'">
+   <param name="C_03" value="id='b' tipo='numérico' interfaz='campo de texto' región='interior' espacio='controles' nombre='b' expresión='(110,5,100,40)' valor='1.5' decimales='1' fijo='sí' visible='sí'">
+   <param name="C_04" value="id='x0' tipo='numérico' región='interior' espacio='controles' nombre='x' expresión='(245,5,100,40)' incr='hh' min='a' max='b' discreto='sí' fijo='sí' visible='sí' dibujar-si='teorema=1'">
+   <param name="C_05" value="id='dec' tipo='numérico' región='interior' espacio='controles' nombre='decimales' expresión='(395,5,160,40)' valor='12' incr='1' min='0' max='12' discreto='sí' decimales='0' fijo='sí' visible='sí' dibujar-si='0'">
+   <param name="C_06" value="id='funcion' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='controles' nombre='f(x)' expresión='(5,55,250,40)' valor='&squot;x^2&squot;' fijo='sí' visible='sí'">
+   <param name="C_07" value="id='teorema' tipo='numérico' interfaz='menú' región='interior' espacio='E3' nombre='_._' expresión='(370,5,200,40)' valor='1' fijo='sí' visible='no' opciones='Primer Teorema [1],Primitivas [2],Segundo Teorema[3]'">
+   <param name="C_08" value="id='tp' tipo='gráfico' espacio='E3' tamaño='6' expresión='(a,0)' constricción='x=a' dibujar-si='teorema>1'">
+   <param name="A_01" value="id='hh' expresión='0.05'">
+   <param name="A_02" value="id='nn' expresión='(b-a)/hh'">
+   <param name="A_03" value="id='mm' expresión='(x0-a)/hh'">
+   <param name="A_04" value="id='f(x)' expresión='_Eval_(funcion)' dominio='(a<=x)&(x<=b)'">
+   <param name="A_05" value="id='faux(x)' expresión='_Eval_(funcion)' dominio='(a<=x)&(x<=x0)'">
+   <param name="A_06" value="id='simpsonc(as,bs,ns)' algoritmo='sí' expresión='I' algoritmo='sí' Local='as;bs;ns;j;' inicio='h=(bs-as)/(2*ns);I=0;j=1;' hacer='I=I+h*(f(as+(j-1)*h)+4*f(as+j*h)+f(as+(j+1)*h))/3;j=j+2' mientras='j<=2*ns'">
+   <param name="A_07" value="id='simpson(xa,xb)' expresión='(xb-xa)*(f(xa)+4f(0.5*(xa+xb))+f(xb))/6'">
+   <param name="A_08" value="id='xint' vector='sí' evaluar='una-sola-vez' tamaño='nn+1' expresión='xint[0]=0;xint[1]=0;xint[2]=0'">
+   <param name="A_09" value="id='int' vector='sí' evaluar='una-sola-vez' tamaño='nn+1' expresión='int[0]=0;int[1]=0;int[2]=0'">
+   <param name="A_10" value="id='cint()' algoritmo='sí' expresión='0' algoritmo='sí' inicio='xint[0]=a;int[0]=0;k=1' hacer='xint[k]=a+k*hh;int[k]=int[k-1]+simpson(a+(k-1)*hh,a+k*hh);k=k+1' mientras='k<=nn'">
+   <param name="A_11" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Teorema Fundamental del Cálculo Integral&squot;' hacer='aaux=a;baux=b;faux=funcion;cint()'">
+   <param name="A_12" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='otroej=((a#aaux)|(b#baux)|(funcion#faux))?1:0;rr=(otroej)?cint():0;cint();aaux=(a=aaux)?aaux:a;baux=(b=baux)?baux:b;faux=(funcion=faux)?faux:funcion;;pendiente=f(x0);;stb=tp.y+int[nn];sta=tp.y+int[0];;;'">
+   <param name="A_13" value="id='otroejemplo' evento='sí' condición='otroej' acción='calcular' parámetro='x=a\naaux=a\nbaux=b\nfaux=funcion\notroej=0' ejecución='siempre' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='controles' tipo='texto' dibujar-si='0' expresión='[340,2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;}{\colortbl\red255\green0\blue0;}\f1\fs36\i    \cf0\fs32\b\i0\u193 rea({\*\mjaformula{\expr a\decimals 2\fixed1}, {\expr x0\decimals 2\fixed1}})={\*\mjaformula{\expr int[mm]\decimals 2\fixed0}}\fs36\b0}' fuente='Serif,ITALIC,18' decimales='dec' fijo='no'">
+   <param name="G_03" value="espacio='E3' tipo='segmento' color='azul' dibujar-si='teorema=1' expresión='(a,0)(a,f(a))' fijo='sí' tamaño='0'">
+   <param name="G_04" value="espacio='E3' tipo='segmento' color='azul' dibujar-si='teorema=1' expresión='(b,0)(b,f(b))' fijo='sí' tamaño='0'">
+   <param name="G_05" value="espacio='E3' tipo='segmento' color='00d100' dibujar-si='teorema=1' expresión='(a,0)(x0,0)' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_06" value="espacio='E3' tipo='segmento' color='00d100' dibujar-si='teorema=1' expresión='(x0,0)(x0,f(x0))' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_07" value="espacio='E3' tipo='ecuación' expresión='y=f(x)'">
+   <param name="G_08" value="espacio='E3' tipo='ecuación' dibujar-si='teorema=2' expresión='y=f(x)' ancho='4'">
+   <param name="G_09" value="espacio='E3' tipo='ecuación' dibujar-si='teorema=3' expresión='y=f(x)' relleno+='00ff80' relleno-='00ff80' ancho='4'">
+   <param name="G_10" value="espacio='E3' tipo='ecuación' dibujar-si='teorema=1' expresión='y=faux(x)' relleno+='00ff80' relleno-='00ff80' ancho='4'">
+   <param name="G_11" value="espacio='E3' tipo='ecuación' color='naranja' dibujar-si='((0<mm)&(mm<nn))&(teorema=1)' expresión='y=int[mm]+pendiente*(x-x0)'">
+   <param name="G_12" value="espacio='controles' tipo='texto' dibujar-si='teorema=1' expresión='[340,2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;}{\colortbl\red255\green0\blue0;}\f1\fs36\i    \cf0\fs32\b\i0 F({\*\mjaformula{\expr x0\decimals 2\fixed1}})={\*\mjaformula{\integral{\from{\expr a\decimals 1\fixed0}}{\to{\expr x0\decimals 2\fixed1}}{\what f(t)dt}}={\expr int[nn]\decimals 2\fixed0}}\fs36\b0}' fuente='Serif,ITALIC,18' decimales='dec' fijo='no'">
+   <param name="G_13" value="espacio='controles' tipo='texto' color='naranja' dibujar-si='teorema=1' expresión='[300,55]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;}{\colortbl\red255\green0\blue0;\red0\green0\blue0;}\f1\fs36\i   \fs32\b\i0{\*\mjaformula{\fraction{\num dF}{\den dx}}({\expr x0\decimals 2\fixed1})={\expr f(x0)\decimals 2\fixed1}}\fs36\b0\i  \cf0\i0  \fs32\b\cf1{\*\mjaformula f({\expr x0\decimals 2\fixed1})={\expr f(x0)\decimals 2\fixed1}}\cf0\fs36\b0}' fuente='Serif,ITALIC,18' decimales='dec' fijo='no'">
+   <param name="G_14" value="espacio='E3' tipo='segmento' color='rojo' dibujar-si='(nn>0)&(teorema=1)' expresión='(xint[s-1],int[s-1])(xint[s],int[s])' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0'">
+   <param name="G_15" value="espacio='E3' tipo='segmento' color='rojo' dibujar-si='(mm>0)&(teorema=1)' expresión='(xint[s-1],int[s-1])(xint[s],int[s])' familia='s' s.intervalo='[1,mm]' s.pasos='mm-1' fijo='sí' tamaño='0' ancho='4'">
+   <param name="G_16" value="espacio='E3' tipo='segmento' color='c20000' dibujar-si='(nn>0)&(teorema>=2)' expresión='(xint[s-1],int[s-1])(xint[s],int[s])' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0'">
+   <param name="G_17" value="espacio='E3' tipo='segmento' color='c20000' dibujar-si='(nn>0)&(teorema>=2)' expresión='(xint[s-1],int[s-1]+1)(xint[s],int[s]+1)' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0'">
+   <param name="G_18" value="espacio='E3' tipo='segmento' color='c20000' dibujar-si='(nn>0)&(teorema>=2)' expresión='(xint[s-1],int[s-1]+2)(xint[s],int[s]+2)' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0'">
+   <param name="G_19" value="espacio='E3' tipo='segmento' color='c20000' dibujar-si='(nn>0)&(teorema>=2)' expresión='(xint[s-1],int[s-1]+3)(xint[s],int[s]+3)' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0'">
+   <param name="G_20" value="espacio='E3' tipo='segmento' color='c20000' dibujar-si='(nn>0)&(teorema>=2)' expresión='(xint[s-1],int[s-1]+4)(xint[s],int[s]+4)' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0'">
+   <param name="G_21" value="espacio='E3' tipo='segmento' color='c20000' dibujar-si='(nn>0)&(teorema>=2)' expresión='(xint[s-1],int[s-1]+5)(xint[s],int[s]+5)' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0'">
+   <param name="G_22" value="espacio='E3' tipo='segmento' color='c20000' dibujar-si='(nn>0)&(teorema>=2)' expresión='(xint[s-1],int[s-1]-1)(xint[s],int[s]-1)' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0'">
+   <param name="G_23" value="espacio='E3' tipo='segmento' color='c20000' dibujar-si='(nn>0)&(teorema>=2)' expresión='(xint[s-1],int[s-1]-2)(xint[s],int[s]-2)' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0'">
+   <param name="G_24" value="espacio='E3' tipo='segmento' color='c20000' dibujar-si='(nn>0)&(teorema>=2)' expresión='(xint[s-1],int[s-1]-3)(xint[s],int[s]-3)' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0'">
+   <param name="G_25" value="espacio='E3' tipo='segmento' color='c20000' dibujar-si='(nn>0)&(teorema>=2)' expresión='(xint[s-1],int[s-1]-4)(xint[s],int[s]-4)' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0'">
+   <param name="G_26" value="espacio='E3' tipo='segmento' color='c20000' dibujar-si='(nn>0)&(teorema>=2)' expresión='(xint[s-1],int[s-1]-5)(xint[s],int[s]-5)' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0'">
+   <param name="G_27" value="espacio='E3' tipo='segmento' color='rojo' dibujar-si='(nn>0)&(teorema>=2)' expresión='(xint[s-1],int[s-1]+tp.y)(xint[s],int[s]+tp.y)' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' fijo='sí' tamaño='0' ancho='4'">
+   <param name="G_28" value="espacio='E3' tipo='ecuación' color='magenta' dibujar-si='teorema=3' expresión='y=sta+0*x'">
+   <param name="G_29" value="espacio='E3' tipo='ecuación' color='magenta' dibujar-si='teorema=3' expresión='y=stb' relleno-='naranja'">
+   <param name="G_30" value="espacio='E3' tipo='polígono' dibujar-si='teorema=3' expresión='(tp.x-0.5,tp.y+int[0])(tp.x-1.5,tp.y+int[0])(tp.x-1.5,tp.y+int[nn])(tp.x-0.5,tp.y+int[nn])(tp.x-0.5,tp.y+int[0])' relleno='00ff80'">
+   <param name="G_31" value="espacio='controles' tipo='texto' dibujar-si='teorema=3' expresión='[250,2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;}{\colortbl\red255\green0\blue0;}\f1\fs36\i    \cf0\fs32\b\i0                     F({\*\mjaformula{\expr b\decimals 2\fixed1}})={\*\mjaformula{\integral{\from{\expr a\decimals 1\fixed0}}{\to{\expr b\decimals 2\fixed1}}{\what f(t)dt}}={\expr int[nn]\decimals 2\fixed1}}\fs36\b0\par }' fuente='Serif,ITALIC,18' decimales='dec' fijo='no'">
+   <param name="G_32" value="espacio='controles' tipo='texto' dibujar-si='teorema=3' expresión='[225,62]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;}{\colortbl\red255\green0\blue0;}\cf0\f1\fs36\b              \fs32 F({\*\mjaformula{\expr b\decimals 2\fixed1}})-F({\*\mjaformula{\expr a\decimals 2\fixed0}})={\*\mjaformula{\expr int[nn]+tp.y\decimals 2\fixed1}-{\expr (int[0]+tp.y<0)?&squot;(&squot;:&squot;&squot;\decimals 0\fixed0}{\expr int[0]+tp.y\decimals 2\fixed0}{\expr (int[0]+tp.y<0)?&squot;)&squot;:&squot;&squot;\decimals 0\fixed0}={\expr int[nn]-int[0]\decimals 2\fixed1}}\fs36\b0}' fuente='Serif,BOLD,18' decimales='dec' fijo='no'">
+   <param name="Animación" value="pausa='1000' controles='no' auto='sí' inicio='t=0' hacer='t=t+1' mientras='1'">
+</ajs>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_110_TeoremasDeCevaYMenelao" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Geometría, Geometría clásica" 
+	plataforma="HTML 5" 
+	versión="Beta"
+	>
+	<titulo><![CDATA[
+		Los teoremas de Ceva y Menelao 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+      Se estudian los teoremas de Ceva y Menelao y algunas de sus aplicaciones, por ejemplo: la existencia del
+      ortocentro, incentro y gravicentro de un triangulo.
+      Los teoremas de Ceva y Menelao están separados 15 siglos en la historia, sin embargo, se estudian juntos 
+      ya que uno es el dual del otro. El teorema de Ceva da condiciones para que tres puntos que están en los 
+      lados de un triángulo sean colineales y el de Menelao dice cuándo tres rectas que pasan por los vértices
+      de un triángulo son concurrentes.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

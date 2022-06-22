@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="340.32718"
+   height="1272.0009"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Teoriadesarrollovectorial0.svg"
+   inkscape:export-filename="C:\Users\DoktorWattie\Desktop\Escenas 2013\Un_015_Encargo_ElCirculoUnEnfoqueVectorial\escenas\images\Teoriaini1.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#f5f5f5"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageopacity="0.18039216"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1494636"
+     inkscape:cx="176.09302"
+     inkscape:cy="181.02098"
+     inkscape:document-units="cm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-bbox="false"
+     inkscape:bbox-paths="true"
+     inkscape:snap-to-guides="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-global="true"
+     units="cm"
+     showborder="true"
+     inkscape:showpageshadow="true"
+     objecttolerance="20"
+     borderlayer="true">
+    <sodipodi:guide
+       id="guide2985"
+       orientation="0,345"
+       position="-78.272565,638.49884" />
+    <sodipodi:guide
+       id="guide2987"
+       orientation="1,0"
+       position="340.3423,226.10224" />
+    <sodipodi:guide
+       id="guide2989"
+       orientation="0,1"
+       position="363.03782,1215.6514" />
+    <sodipodi:guide
+       id="guide2991"
+       orientation="1,0"
+       position="0.3423049,1278.4644" />
+    <sodipodi:guide
+       position="131.71289,66.097792"
+       orientation="0,350"
+       id="guide3969" />
+    <sodipodi:guide
+       position="347.88554,-81.384478"
+       orientation="-1355,0"
+       id="guide3971" />
+    <sodipodi:guide
+       position="408.49469,1172.2148"
+       orientation="0,-350"
+       id="guide3973" />
+    <sodipodi:guide
+       position="-4.6576951,1275.6358"
+       orientation="1355,0"
+       id="guide3975" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid4047"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="-4.6576951px"
+       originy="-79.364178px" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-10.04783,-6.4621749)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Capa 1">
+    <flowRoot
+       style="font-size:17px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot2993"
+       xml:space="preserve"><flowRegion
+         id="flowRegion2995"><rect
+           y="7.3621817"
+           x="5"
+           height="121.42857"
+           width="335"
+           id="rect2997" /></flowRegion><flowPara
+         id="flowPara2999" /></flowRoot>    <g
+       id="g13249"
+       transform="translate(4,0)">
+      <flowRoot
+         transform="matrix(0.99685784,0,0,1.0000173,1.0883652,-2.0225061)"
+         xml:space="preserve"
+         id="flowRoot3001"
+         style="font-size:17px;font-style:normal;font-weight:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><flowRegion
+           id="flowRegion3003"><rect
+             id="rect3005"
+             width="341.39014"
+             height="1345.3622"
+             x="5"
+             y="6.6478958"
+             style="font-style:normal;text-align:justify;text-anchor:start;-inkscape-font-specification:Sans" /></flowRegion><flowPara
+           id="flowPara4735"
+           style="fill:#0000ff">               Circunferencia vectorial</flowPara><flowPara
+           id="flowPara4737"
+           style="fill:#0000ff" /><flowPara
+           id="flowPara4739"
+           style="fill:#0000ff" /><flowPara
+           id="flowPara4741">En los paratados anteriores pudiste corroborar cuánd dos vectores generan una circunferencia. También pudiste interactuar con los controles verificando cómo los parámetros inciden en la generación de dicho lugar geométrico.</flowPara><flowPara
+           id="flowPara5122" /><flowPara
+           id="flowPara5117">Ahora sabes que, si el centro de la circunferencia en su forma vectorial está fuera del origen se dice que su centro está determinado por un vector <flowSpan
+   style="font-weight:bold;fill:#0000ff"
+   id="flowSpan4835">C</flowSpan>, y que dicha circunferecncia está determinada también por la diferencia entre el vector <flowSpan
+   style="font-weight:bold;fill:#0000ff"
+   id="flowSpan4831">C</flowSpan> y el vector <flowSpan
+   style="font-weight:bold;fill:#0000ff"
+   id="flowSpan4827">P</flowSpan>. Esto es:</flowPara><flowPara
+           id="flowPara4743" /><flowPara
+           id="flowPara4745"
+           style="fill:#0000ff"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan4821">                           r</flowSpan> = |<flowSpan
+   style="font-weight:bold"
+   id="flowSpan4823">P</flowSpan> - <flowSpan
+   style="font-weight:bold"
+   id="flowSpan4825">C</flowSpan>|</flowPara><flowPara
+           id="flowPara4747" /><flowPara
+           id="flowPara4749">Lo que significa que la diferencia vectorial entre el vector C y P siempre es una constante y es el radio del círculo.</flowPara><flowPara
+           id="flowPara4751" /><flowPara
+           id="flowPara4753">Y para encontrar la diferencia entre los  vectores <flowSpan
+   style="font-weight:bold;fill:#0000ff"
+   id="flowSpan4843">P</flowSpan> y <flowSpan
+   style="font-weight:bold;fill:#0000ff"
+   id="flowSpan4839">C</flowSpan> se puede usar el método de suma (o resta) de vectores. En el que se suman (o se restan) los componentes de los vectores involucrados</flowPara><flowPara
+           id="flowPara4755" /><flowPara
+           id="flowPara4757">Es decir, en el caso del vector P sus componentes son:</flowPara><flowPara
+           id="flowPara4759" /><flowPara
+           id="flowPara4761"
+           style="font-weight:normal;fill:#0000ff"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan4853">        P</flowSpan> = (P<flowSpan
+   style="font-size:65.10162354%;baseline-shift:sub"
+   id="flowSpan4971">x</flowSpan>, P<flowSpan
+   style="font-size:65.10162354%;baseline-shift:sub"
+   id="flowSpan4973">x</flowSpan>) =  (Pcos(φ), Psen(φ))</flowPara><flowPara
+           id="flowPara4763" /><flowPara
+           id="flowPara4765">Esto también quiere decir que el vector P se puede escribir de la siguiente manera:</flowPara><flowPara
+           id="flowPara4767" /><flowPara
+           id="flowPara4769"><flowSpan
+             style="font-weight:bold;fill:#0000ff"
+             id="flowSpan4855">                P</flowSpan><flowSpan
+             style="fill:#0000ff"
+             id="flowSpan4861"> = Pcos(φ)<flowSpan
+   style="font-style:italic"
+   id="flowSpan4981">i</flowSpan> + Psen(φ)<flowSpan
+   style="font-style:italic"
+   id="flowSpan4983">j</flowSpan></flowSpan></flowPara><flowPara
+           id="flowPara4771" /><flowPara
+           id="flowPara4773">Y para el vector <flowSpan
+   style="font-weight:bold;fill:#0000ff"
+   id="flowSpan4863">C</flowSpan></flowPara><flowPara
+           id="flowPara4775" /><flowPara
+           id="flowPara4777"
+           style="fill:#0000ff"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan4867">       C</flowSpan> = (C<flowSpan
+   style="font-size:65.10162354%;baseline-shift:sub"
+   id="flowSpan4969">x</flowSpan>, C<flowSpan
+   style="font-size:65.10162354%;baseline-shift:sub"
+   id="flowSpan4967">y</flowSpan>) = (Ccos(β), Csen(β))</flowPara><flowPara
+           id="flowPara4779" /><flowPara
+           id="flowPara4781">O lo que es lo mismo:</flowPara><flowPara
+           id="flowPara4783" /><flowPara
+           id="flowPara4785"
+           style="fill:#0000ff"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan4871">               C</flowSpan> = Ccos(β)<flowSpan
+   style="font-style:italic"
+   id="flowSpan4875">i</flowSpan> + Csen(β)<flowSpan
+   style="font-style:italic"
+   id="flowSpan4873">j</flowSpan></flowPara><flowPara
+           id="flowPara4787" /><flowPara
+           id="flowPara4789">Y utilizando el método de suma (o resta), tenemos que </flowPara><flowPara
+           id="flowPara4791" /><flowPara
+           id="flowPara4793"
+           style="fill:#0000ff"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan4881">              P</flowSpan> - <flowSpan
+   style="font-weight:bold"
+   id="flowSpan4879">C</flowSpan> = (P<flowSpan
+   style="font-size:65.10162354%;baseline-shift:sub"
+   id="flowSpan4965">x</flowSpan> - C<flowSpan
+   style="font-size:65.10162354%;baseline-shift:sub"
+   id="flowSpan4963">x</flowSpan>, P<flowSpan
+   style="font-size:65.10162354%;baseline-shift:sub"
+   id="flowSpan4961">y</flowSpan> - C<flowSpan
+   style="font-size:65.10162354%;baseline-shift:sub"
+   id="flowSpan4959">y</flowSpan>)</flowPara><flowPara
+           id="flowPara4795" /><flowPara
+           id="flowPara4797">Esto es,</flowPara><flowPara
+           id="flowPara4799" /><flowPara
+           id="flowPara4801"
+           style="fill:#0000ff"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan4887">P</flowSpan> - <flowSpan
+   style="font-weight:bold"
+   id="flowSpan4885">C</flowSpan> = </flowPara><flowPara
+           id="flowPara4883"
+           style="fill:#0000ff">      (Pcos(φ)-Ccos(β), Psen(φ)-Csen(β))</flowPara><flowPara
+           id="flowPara4803" /><flowPara
+           id="flowPara4805">O de otra manera:</flowPara><flowPara
+           id="flowPara4807" /><flowPara
+           id="flowPara4809"
+           style="fill:#0000ff"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan4889">P</flowSpan> - <flowSpan
+   style="font-weight:bold"
+   id="flowSpan4891">C</flowSpan> =</flowPara><flowPara
+           id="flowPara4813"
+           style="fill:#0000ff">     (Pcos(φ)-Ccos(β))<flowSpan
+   style="font-style:italic"
+   id="flowSpan4979">i</flowSpan> + (Psen(φ)-Csen(β))<flowSpan
+   style="font-style:italic"
+   id="flowSpan4977">j</flowSpan></flowPara><flowPara
+           style="fill:#0000ff"
+           id="flowPara4897" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4899">Ahora bien, si se requiere saber el radio de la circunferencia, entonces se debe de calcular la diferencia de los componentes:</flowPara><flowPara
+           style="fill:#0000ff"
+           id="flowPara4927" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4929">            |<flowSpan
+   style="font-weight:bold"
+   id="flowSpan4949">P</flowSpan> - <flowSpan
+   style="font-weight:bold"
+   id="flowSpan4947">C</flowSpan>|<flowSpan
+   style="font-size:65.10162354%;baseline-shift:super"
+   id="flowSpan4939">2</flowSpan> = (P<flowSpan
+   style="font-size:65.10162354%;baseline-shift:sub"
+   id="flowSpan4951">x</flowSpan> - C<flowSpan
+   style="font-size:65.10162354%;baseline-shift:sub"
+   id="flowSpan4953">x</flowSpan>)<flowSpan
+   style="font-size:65.10162354%;baseline-shift:super"
+   id="flowSpan4941">2</flowSpan> + (P<flowSpan
+   style="font-size:65.10162354%;baseline-shift:sub"
+   id="flowSpan4955">y</flowSpan> - C<flowSpan
+   style="font-size:65.10162354%;baseline-shift:sub"
+   id="flowSpan4957">y</flowSpan>)<flowSpan
+   style="font-size:65.10162354%;baseline-shift:super"
+   id="flowSpan4943">2</flowSpan></flowPara><flowPara
+           style="fill:#0000ff"
+           id="flowPara4931" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4933" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4935" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4917" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4923" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4925" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4919" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4921" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4901" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4903" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4905" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4907" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4909" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4911" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4913" /><flowPara
+           style="fill:#0000ff"
+           id="flowPara4915" /></flowRoot>      <g
+         transform="matrix(0.8,0,0,0.8,88.455004,377.26291)"
+         id="g7849" />
+      <g
+         id="g11500"
+         transform="matrix(0.8,0,0,0.8,-19.206401,630.61338)" />
+      <g
+         id="g4487"
+         transform="matrix(0.8,0,0,0.8,-14.035418,450.37189)">
+        <g
+           word-spacing="normal"
+           letter-spacing="normal"
+           font-size-adjust="none"
+           font-stretch="normal"
+           font-weight="normal"
+           font-variant="normal"
+           font-style="normal"
+           stroke-miterlimit="10.433"
+           xml:space="preserve"
+           transform="matrix(0.49285714,0,0,-0.49285714,-86.25,1012.5)"
+           id="g4489"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />      </g>
+    </g>
+  </g>
+</svg>

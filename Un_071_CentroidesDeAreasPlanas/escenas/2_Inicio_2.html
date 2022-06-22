@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_inicio.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='55' y='115' ancho='440' alto='390' fijo='sí' escala='15' O.x='-45%' O.y='36%' despl_imagen='arr-izq' fondo='d5f3fe' red='27808080' red10='grisObscuro' ejes='negro' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E3' x='550' y='110' ancho='330' alto='400' fijo='sí' O.x='-50%' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='p1' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(3,9)' constricción='(x*y>0)' fijo='sí' dibujar-si='(figura!=1)&(figura!=3)' activo-si='(figura!=1)&(figura!=3)'">
+   <param name="C_03" value="id='p2' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(7,17)' constricción='(x*y>0)' fijo='sí' dibujar-si='figura=0' activo-si='figura=0'">
+   <param name="C_04" value="id='p3' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(15,18)' constricción='(x*y>0)' fijo='sí' dibujar-si='(figura!=1)&(figura!=3)' activo-si='(figura!=1)&(figura!=3)'">
+   <param name="C_05" value="id='p4' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(22,14)' constricción='(x*y>0)' fijo='sí' dibujar-si='(figura!=1)&(figura!=3)' activo-si='(figura!=1)&(figura!=3)'">
+   <param name="C_06" value="id='p5' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(19,7)' constricción='(x*y>0)' fijo='sí' dibujar-si='(figura!=1)&(figura!=3)' activo-si='(figura!=1)&(figura!=3)'">
+   <param name="C_07" value="id='p6' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(11,3)' constricción='(x*y>0)' fijo='sí' dibujar-si='figura=0' activo-si='figura=0'">
+   <param name="C_08" value="id='tri' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Triángulo' expresión='(E1._w-450,E1._h-35,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='E3.Oy=-200\nmuestra=1\nfigura=1\np1.x=0\np2.x=0\np3.x=0\np4.x=27\np5.x=20\np6.x=10\np1.y=0\np2.y=10\np3.y=18\np4.y=0\np5.y=0\np6.y=0\nscrollmin=-355\np11.x=0\np13.x=0' pos_mensajes='centro'">
+   <param name="C_09" value="id='rect' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Rectángulo' expresión='(E1._w-310,E1._h-35,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='E3.Oy=-200\nmuestra=1\nfigura=2\np1.x=0\np2.x=0\np3.x=0\np4.x=27\np5.x=27\np6.x=27\np1.y=0\np2.y=10\np3.y=18\np4.y=18\np5.y=0\np6.y=0\nscrollmin=-390' pos_mensajes='centro'">
+   <param name="C_10" value="id='Hexa' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Hexágono' expresión='(E1._w-170,E1._h-35,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='E3.Oy=-200\nmuestra=1\nfigura=3\np1e.x=1.6\np2e.x=6\np3e.x=20\np4e.x=24.6\np5e.x=20\np6e.x=6\np1e.y=9.2\np2e.y=18.5\np3e.y=18.5\np4e.y=9.2\np5e.y=0\np6e.y=0\nscrollmin=-242' pos_mensajes='centro'">
+   <param name="C_11" value="id='E3.Oy' tipo='numérico' región='interior' espacio='E1' nombre='E3.Oy' expresión='(880,460,27,50)' valor='-200' incr='10' min='scrollmin' max='-200' decimales='0' fijo='sí' visible='no' acción='calcular' pos_mensajes='centro'">
+   <param name="C_12" value="id='Ini' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Inicio' expresión='(E1._w-585,E1._h-35,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='inicio' pos_mensajes='centro'">
+   <param name="C_13" value="id='p11' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' constricción='(x*y>0)' fijo='sí' dibujar-si='figura=1' activo-si='figura!=1'">
+   <param name="C_14" value="id='p13' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(0,18)' constricción='x=0' fijo='sí' dibujar-si='figura=1' activo-si='E3.Oy<-330'">
+   <param name="C_15" value="id='p14' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(27,0)' constricción='y=0' fijo='sí' dibujar-si='figura=1' activo-si='E3.Oy<-330'">
+   <param name="C_16" value="id='p1e' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(3,9)' constricción='(x-13)^2+(y-9.5)^2=11.5^2' fijo='sí' dibujar-si='figura=3' activo-si='figura=3'">
+   <param name="C_17" value="id='p2e' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(7,17)' constricción='(x-13)^2+(y-9.5)^2=11.5^2' fijo='sí' dibujar-si='figura=3' activo-si='figura=3'">
+   <param name="C_18" value="id='p3e' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(15,18)' constricción='(x-13)^2+(y-9.5)^2=11.5^2' fijo='sí' dibujar-si='figura=3' activo-si='figura=3'">
+   <param name="C_19" value="id='p4e' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(22,14)' constricción='(x-13)^2+(y-9.5)^2=11.5^2' fijo='sí' dibujar-si='figura=3' activo-si='figura=3'">
+   <param name="C_20" value="id='p5e' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(19,7)' constricción='(x-13)^2+(y-9.5)^2=11.5^2' fijo='sí' dibujar-si='figura=3' activo-si='figura=3'">
+   <param name="C_21" value="id='p6e' tipo='gráfico' espacio='E2' color-int='6bcc0022' tamaño='6' expresión='(11,3)' constricción='(x-13)^2+(y-9.5)^2=11.5^2' fijo='sí' dibujar-si='figura=3' activo-si='figura=3'">
+   <param name="A_01" value="id='topes()' algoritmo='sí' algoritmo='sí' hacer='p1.x=(p1.x>27)?27:p1.x;p2.x=(p2.x>27)?27:p2.x;p3.x=(p3.x>27)?27:p3.x;p4.x=(p4.x>27)?27:p4.x;p5.x=(p5.x>27)?27:p5.x;p6.x=(p6.x>27)?27:p6.x;p1.y=(p1.y>20)?20:p1.y;p2.y=(p2.y>20)?20:p2.y;p3.y=(p3.y>20)?20:p3.y;p4.y=(p4.y>20)?20:p4.y;p5.y=(p5.y>20)?20:p5.y;p6.y=(p6.y>20)?20:p6.y;p1.x=(p1.x<0)?0:p1.x;p2.x=(p2.x<0)?0:p2.x;p3.x=(p3.x<0)?0:p3.x;p4.x=(p4.x<0)?0:p4.x;p5.x=(p5.x<0)?0:p5.x;p6.x=(p6.x<0)?0:p6.x;p1.y=(p1.y<0)?0:p1.y;p2.y=(p2.y<0)?0:p2.y;p3.y=(p3.y<0)?0:p3.y;p4.y=(p4.y<0)?0:p4.y;p5.y=(p5.y<0)?0:p5.y;p6.y=(p6.y<0)?0:p6.y;'">
+   <param name="A_02" value="id='X' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='X[1]=p1.x;X[2]=p2.x;X[3]=p3.x;X[4]=p4.x;X[5]=p5.x;X[6]=p6.x'">
+   <param name="A_03" value="id='Y' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='Y[1]=p1.y;Y[2]=p2.y;Y[3]=p3.y;Y[4]=p4.y;Y[5]=p5.y;Y[6]=p6.y'">
+   <param name="A_04" value="id='coordenadas()' algoritmo='sí' algoritmo='sí' hacer='X[1]=p1.x;X[2]=p2.x;X[3]=p3.x;X[4]=p4.x;X[5]=p5.x;X[6]=p6.x;Y[1]=p1.y;Y[2]=p2.y;Y[3]=p3.y;Y[4]=p4.y;Y[5]=p5.y;Y[6]=p6.y'">
+   <param name="A_05" value="id='centroide1()' algoritmo='sí' algoritmo='sí' hacer='xc1=(p1.x+p2.x+p3.x)/3;yc1=(p1.y+p2.y+p3.y)/3;A1=abs(((p1.x*p2.y+p2.x*p3.y+p3.x*p1.y)-(p2.x*p1.y+p3.x*p2.y+p1.x*p3.y))/2)'">
+   <param name="A_06" value="id='centroide2()' algoritmo='sí' algoritmo='sí' hacer='xc2=(p1.x+p3.x+p4.x)/3;yc2=(p1.y+p3.y+p4.y)/3;A2=abs(((p1.x*p3.y+p3.x*p4.y+p4.x*p1.y)-(p3.x*p1.y+p4.x*p3.y+p1.x*p4.y))/2)'">
+   <param name="A_07" value="id='centroide3()' algoritmo='sí' algoritmo='sí' hacer='xc3=(p1.x+p4.x+p5.x)/3;yc3=(p1.y+p4.y+p5.y)/3;A3=abs(((p1.x*p4.y+p4.x*p5.y+p5.x*p1.y)-(p4.x*p1.y+p5.x*p4.y+p1.x*p5.y))/2)'">
+   <param name="A_08" value="id='centroide4()' algoritmo='sí' algoritmo='sí' hacer='xc4=(p1.x+p5.x+p6.x)/3;yc4=(p1.y+p5.y+p6.y)/3;A4=abs(((p1.x*p5.y+p5.x*p6.y+p6.x*p1.y)-(p5.x*p1.y+p6.x*p5.y+p1.x*p6.y))/2)'">
+   <param name="A_09" value="id='centroide5()' algoritmo='sí' algoritmo='sí' hacer='xcp1=(p1.x+p3.x+p4.x)/3;xcp2=(p1.x+p4.x+p5.x)/3;Ap1=abs(((p1.x*p3.y+p3.x*p4.y+p4.x*p1.y)-(p3.x*p1.y+p4.x*p3.y+p1.x*p4.y))/2);Ap2=abs(((p1.x*p4.y+p4.x*p5.y+p5.x*p1.y)-(p4.x*p1.y+p5.x*p4.y+p1.x*p5.y))/2);Ap=Ap1+Ap2;xcp=((xcp1)*(Ap1)+(xcp2)*(Ap2))/(Ap);ycp=9'">
+   <param name="A_10" value="id='centroidet()' algoritmo='sí' algoritmo='sí' hacer='A=A1+A2+A3+A4;xc=(xc1*A1+xc2*A2+xc3*A3+xc4*A4)/A;yc=(yc1*A1+yc2*A2+yc3*A3+yc4*A4)/A;'">
+   <param name="A_11" value="id='X1' vector='sí' evaluar='una-sola-vez' tamaño='5' expresión='X1[1]=p11.x;X1[2]=0;X1[3]=p13.x;X1[4]=p14.x'">
+   <param name="A_12" value="id='Y1' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='Y1[1]=p11.y;Y1[2]=0;Y1[3]=p13.y;Y1[4]=p14.y;'">
+   <param name="A_13" value="id='coordenadas1()' algoritmo='sí' algoritmo='sí' hacer='X1[1]=p11.x;X1[3]=p13.x;X1[4]=p14.x;Y1[1]=p11.y;Y1[3]=p13.y;Y1[4]=p14.y;'">
+   <param name="A_14" value="id='centroide21()' algoritmo='sí' algoritmo='sí' hacer='xc21=(p11.x+p13.x+p14.x)/3;yc21=(p11.y+p13.y+p14.y)/3;A21=abs(((p11.x*p13.y+p13.x*p14.y+p14.x*p11.y)-(p13.x*p11.y+p14.x*p13.y+p11.x*p14.y))/2)'">
+   <param name="A_15" value="id='Xe' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='Xe[1]=p1e.x;Xe[2]=p2e.x;Xe[3]=p3e.x;Xe[4]=p4e.x;Xe[5]=p5e.x;Xe[6]=p6e.x'">
+   <param name="A_16" value="id='Ye' vector='sí' evaluar='una-sola-vez' tamaño='7' expresión='Ye[1]=p1e.y;Ye[2]=p2e.y;Ye[3]=p3e.y;Ye[4]=p4e.y;Ye[5]=p5e.y;Ye[6]=p6e.y'">
+   <param name="A_17" value="id='coordenadase()' algoritmo='sí' algoritmo='sí' hacer='Xe[1]=p1e.x;Xe[2]=p2e.x;Xe[3]=p3e.x;Xe[4]=p4e.x;Xe[5]=p5e.x;Xe[6]=p6e.x;Ye[1]=p1e.y;Ye[2]=p2e.y;Ye[3]=p3e.y;Ye[4]=p4e.y;Ye[5]=p5e.y;Ye[6]=p6e.y'">
+   <param name="A_18" value="id='centroidee()' algoritmo='sí' algoritmo='sí' hacer='xc1e=(p1e.x+p2e.x+p3e.x)/3;yc1e=(p1e.y+p2e.y+p3e.y)/3;A1e=abs(((p1e.x*p2e.y+p2e.x*p3e.y+p3e.x*p1e.y)-(p2e.x*p1e.y+p3e.x*p2e.y+p1e.x*p3e.y))/2);;xc2e=(p1e.x+p3e.x+p4e.x)/3;yc2e=(p1e.y+p3e.y+p4e.y)/3;A2e=abs(((p1e.x*p3e.y+p3e.x*p4e.y+p4e.x*p1e.y)-(p3e.x*p1e.y+p4e.x*p3e.y+p1e.x*p4e.y))/2);;xc3e=(p1e.x+p4e.x+p5e.x)/3;yc3e=(p1e.y+p4e.y+p5e.y)/3;A3e=abs(((p1e.x*p4e.y+p4e.x*p5e.y+p5e.x*p1e.y)-(p4e.x*p1e.y+p5e.x*p4e.y+p1e.x*p5e.y))/2);;xc4e=(p1e.x+p5e.x+p6e.x)/3;yc4e=(p1.y+p5e.y+p6e.y)/3;A4e=abs(((p1e.x*p5e.y+p5e.x*p6e.y+p6e.x*p1e.y)-(p5e.x*p1e.y+p6e.x*p5e.y+p1e.x*p6e.y))/2);;Ae=A1e+A2e+A3e+A4e;xce=(xc1e*A1e+xc2e*A2e+xc3e*A3e+xc4e*A4e)/Ae;yce=(yc1e*A1e+yc2e*A2e+yc3e*A3e+yc4e*A4e)/Ae'">
+   <param name="A_19" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='titulo1=&squot;Centroides de polígonos&squot;;titulo2=&squot;Centroide de un triángulo&squot;;titulo3=&squot;Centroide de un rectángulo&squot;;titulo4=&squot;Centroide de un polígono regular&squot;;;figura=00;scrollmin=-380'">
+   <param name="A_20" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='topes();coordenadas();coordenadas1();coordenadase();centroide1();centroide2();centroide21();centroide3();centroide4();centroide5();centroidet();centroidee();m1=(p4.y-p3.y)/(p4.x-p3.x);b1=p3.y-m1*(p3.x);p13.y=(figura=1)?ent(p13.y):p13.y;p14.x=(figura=1)?ent(p14.x):p14.x;p14.y=(figura=1)?ent(p14.y):p14.y;d1=sqrt((p11.x-p13.x)^2+(p11.y-p13.y)^2);d2=sqrt((p14.x-p11.x)^2+(p14.y-p11.y)^2);p1.y=(figura=2)?0:p1.y;p3.y=(figura=2)?18:p3.y;p4.y=(figura=2)?18:p4.y;p5.y=(figura=2)?0:p5.y;p13.y=(p13.y<.1)?.1:p13.y;p14.x=(p14.x<.1)?.1:p14.x;;;'">
+   <param name="G_01" value="espacio='E2' tipo='arco' dibujar-si='figura=3' centro='(13,9.5)' radio='11.5' fin='360' fijo='sí' relleno='66ffff80' ancho='2'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='figura=0' expresión='[(E1._w-_AnchoDeCadena_(titulo1,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo1]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_03" value="espacio='E2' tipo='polígono' color='negro' dibujar-si='(figura!=2)&(figura!=1)&(figura!=3)' expresión='(X[1],Y[1])(X[2],Y[2])(X[3],Y[3])(X[4],Y[4])(X[5],Y[5])(X[6],Y[6])(X[1],Y[1])' relleno='39007600'">
+   <param name="G_04" value="espacio='E2' tipo='polígono' color='negro' dibujar-si='figura=2' expresión='(X[1],Y[1])(X[3],Y[3])(X[4],Y[4])(X[5],Y[5])(X[1],Y[1])' relleno='57ff0000'">
+   <param name="G_05" value="espacio='E2' tipo='punto' color='negro' dibujar-si='(figura!=2)&(figura!=1)&(figura!=3)' expresión='(xc,yc)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green255\blue0;\red0\green0\blue0;\red255\green0\blue0;}\f1\fs36\b\cf0{\*\mjaformula\cf1 c({\expr xc\decimals 1\fixed1},{\expr yc\decimals 1\fixed1})}\cf2\fs30\b0}' fuente='SansSerif,BOLD,18' fijo='sí' tamaño='4'">
+   <param name="G_06" value="espacio='E2' tipo='segmento' color='verde' dibujar-si='figura=2' expresión='(p1.x,p1.y)(p4.x,p4.y)' fijo='sí'">
+   <param name="G_07" value="espacio='E2' tipo='segmento' color='verde' dibujar-si='figura=2' expresión='(p3.x,p3.y)(p5.x,p5.y)' fijo='sí'">
+   <param name="G_08" value="espacio='E2' tipo='segmento' color='rojo' dibujar-si='figura=3' expresión='(p1e.x,p1e.y)(p4e.x,p4e.y)' fijo='sí'">
+   <param name="G_09" value="espacio='E2' tipo='segmento' color='rojo' dibujar-si='figura=3' expresión='(p2e.x,p2e.y)(p5e.x,p5e.y)' fijo='sí'">
+   <param name="G_10" value="espacio='E2' tipo='segmento' color='rojo' dibujar-si='figura=3' expresión='(p3e.x,p3e.y)(p6e.x,p6e.y)' fijo='sí'">
+   <param name="G_11" value="espacio='E3' tipo='imagen' dibujar-si='figura=0' expresión='(0,0)' archivo='images/texto3.png'">
+   <param name="G_12" value="espacio='E3' tipo='imagen' dibujar-si='figura=1' expresión='(0,0)' archivo='images/texto4.png'">
+   <param name="G_13" value="espacio='E2' tipo='texto' dibujar-si='(d1=d2)&(figura=1)' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48\b\u161 Excelente!\f2\fs30\b0}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_14" value="espacio='E2' tipo='texto' dibujar-si='(d1=d2)&(figura=1)' expresión='[21,21]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green116\blue0;\red32\green48\blue58;}\f1\fs48\b\cf0\u161 Excelente!\cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_15" value="espacio='E3' tipo='imagen' dibujar-si='figura=2' expresión='(0,0)' archivo='images/texto5.png'">
+   <param name="G_16" value="espacio='E2' tipo='punto' color='negro' dibujar-si='figura=2' expresión='(xcp,ycp)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green255\blue0;\red0\green0\blue0;\red255\green0\blue0;}\f1\fs36\b\cf0{\*\mjaformula\cf1 c({\expr xcp\decimals 1\fixed1},{\expr ycp\decimals 1\fixed1})}\cf2\fs30\b0}' fuente='SansSerif,BOLD,18' fijo='sí' tamaño='4'">
+   <param name="G_17" value="espacio='E3' tipo='imagen' dibujar-si='figura=3' expresión='(0,0)' archivo='images/texto6.png'">
+   <param name="G_18" value="espacio='E1' tipo='texto' dibujar-si='figura=1' expresión='[(E1._w-_AnchoDeCadena_(titulo2,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo2]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_19" value="espacio='E1' tipo='texto' dibujar-si='figura=2' expresión='[(E1._w-_AnchoDeCadena_(titulo3,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo3]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_20" value="espacio='E1' tipo='texto' dibujar-si='figura=3' expresión='[(E1._w-_AnchoDeCadena_(titulo4,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo4]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_21" value="espacio='E2' tipo='polígono' color='negro' dibujar-si='(figura=1)' expresión='(X1[1],Y1[1])(X1[3],Y1[3])(X1[4],Y1[4])(X1[1],Y1[1])' relleno='3b7cbe'">
+   <param name="G_22" value="espacio='E2' tipo='punto' color='negro' dibujar-si='figura=1' expresión='(xc21,yc21)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green0\blue0;}\f1\fs36\b{\*\mjaformula c({\expr xc21\decimals 1\fixed1},{\expr yc21\decimals 1\fixed1})}\cf0\fs30\b0}' fuente='SansSerif,BOLD,18' fijo='sí' tamaño='4'">
+   <param name="G_23" value="espacio='E2' tipo='segmento' color='rojo' dibujar-si='(d1=d2)&(figura=1)' expresión='(-1,-1)(23,23)' fijo='sí' tamaño='.2'">
+   <param name="G_24" value="espacio='E2' tipo='polígono' color='negro' dibujar-si='figura=3' expresión='(Xe[1],Ye[1])(Xe[2],Ye[2])(Xe[3],Ye[3])(Xe[4],Ye[4])(Xe[5],Ye[5])(Xe[6],Ye[6])(Xe[1],Ye[1])' relleno='4ce04c00'">
+   <param name="G_25" value="espacio='E2' tipo='punto' color='negro' dibujar-si='(figura=3)' expresión='(xce,yce)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green255\blue0;\red0\green0\blue0;\red255\green0\blue0;}\f1\fs36\b\cf0{\*\mjaformula\cf1 c({\expr xce\decimals 1\fixed1},{\expr yce\decimals 1\fixed1})}\cf2\fs30\b0}' fuente='SansSerif,BOLD,18' fijo='sí' tamaño='4'">
+</ajs>
+
+</body>
+</html>

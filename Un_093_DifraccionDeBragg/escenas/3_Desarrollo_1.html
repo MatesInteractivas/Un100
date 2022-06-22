@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E0' fijo='sí' imagen='images/fondo_general.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E1' x='460' y='115' ancho='450' alto='400' fijo='sí' escala='40' O.x='-200' O.y='100' imagen='images/fondo1.png' despl_imagen='arr-izq' fondo='76c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E2' x='60' y='120' ancho='320' alto='390' fijo='sí' O.x='-50%' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='E2.Oy' tipo='numérico' interfaz='barra' región='interior' espacio='E0' expresión='(385,115,30,400)' valor='-200' incr='1' min='-400' max='-200' decimales='0' fijo='sí' visible='no' acción='calcular'">
+   <param name="C_02" value="id='A1' tipo='numérico' interfaz='barra' región='interior' espacio='E1' nombre='A' expresión='(20,25,20,80)' valor='15' incr='.1' min='10' max='20' decimales='0' fijo='sí' visible='no' acción='calcular' dibujar-si='E2.Oy<-299'">
+   <param name="C_03" value="id='L1' tipo='numérico' interfaz='barra' región='interior' espacio='E1' nombre='Longitud' expresión='(60,105,150,20)' valor='15' incr='.1' min='10' max='20' decimales='0' fijo='sí' visible='no' acción='calcular' dibujar-si='E2.Oy<-299' pos_mensajes='centro'">
+   <param name="C_04" value="id='d1' tipo='numérico' interfaz='barra' región='interior' espacio='E1' nombre='Corrimiento' expresión='(250,105,150,20)' incr='.1' min='0' max='50' decimales='0' fijo='sí' visible='no' acción='calcular' dibujar-si='E2.Oy<-299' pos_mensajes='centro'">
+   <param name="C_05" value="id='A2' tipo='numérico' interfaz='barra' región='interior' espacio='E1' nombre='A' expresión='(20,140,20,80)' valor='15' incr='.1' min='10' max='20' decimales='0' fijo='sí' visible='no' acción='calcular' dibujar-si='E2.Oy<-299' pos_mensajes='centro'">
+   <param name="C_06" value="id='L2' tipo='numérico' interfaz='barra' región='interior' espacio='E1' nombre='Longitud' expresión='(60,220,150,20)' valor='15' incr='.1' min='10' max='20' decimales='0' fijo='sí' visible='no' acción='calcular' dibujar-si='E2.Oy<-299' pos_mensajes='centro'">
+   <param name="C_07" value="id='d2' tipo='numérico' interfaz='barra' región='interior' espacio='E1' nombre='Corrimiento' expresión='(250,220,150,20)' incr='.1' min='0' max='50' decimales='0' fijo='sí' visible='no' acción='calcular' dibujar-si='E2.Oy<-299' pos_mensajes='centro'">
+   <param name="A_01" value="id='init()' algoritmo='sí' algoritmo='sí' hacer='A2=20;L2=20'">
+   <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Ley de Bragg e interferencia de ondas&squot;' hacer='init()'">
+   <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E0' tipo='texto' fondo='sí' expresión='[(E0._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E2' tipo='imagen' expresión='(0,0)' archivo='images/texto5.png'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' dibujar-si='E2.Oy>-300' coord_abs='sí' expresión='(20,50)' archivo='images/esquema_bragg.png'">
+   <param name="G_04" value="espacio='E0' tipo='texto' dibujar-si='E2.Oy<-299' expresión='[403,87]' texto='Encuentra las condiciones necesarias para crear una interferencia constructiva' fuente='SansSerif,PLAIN,16' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='E2.Oy<-299' expresión='[180,20]' texto='Onda 1' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='curva' dibujar-si='E2.Oy<-299' coord_abs='sí' expresión='(50+t,80+(A1*sen((t+tim+d1)/L1)))' t.intervalo='[0,350]' t.pasos='350'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='E2.Oy<-299' expresión='[180,140]' texto='Onda 2' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='curva' dibujar-si='E2.Oy<-299' coord_abs='sí' expresión='(50+t,195+(A2*sen((t+tim+d2)/L2)))' t.intervalo='[0,350]' t.pasos='350'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='E2.Oy<-299' expresión='[25,260]' texto='Resultado de la interferencia de la onda 1 y 2' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='curva' dibujar-si='E2.Oy<-299' coord_abs='sí' expresión='(50+t,330+(A1*sen((t+tim+d1)/L1))+(A2*sen((t+tim+d2)/L2)))' t.intervalo='[0,350]' t.pasos='350'">
+   <param name="Animación" value="controles='no' auto='sí' inicio='tim=0' hacer='tim=tim+1' mientras='1'">
+</ajs>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E0' fijo='sí' imagen='images/fondo.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E1' x='460' y='115' ancho='450' alto='400' fijo='sí' escala='40' O.x='-200' O.y='70' imagen='images/contenedor.png' despl_imagen='arr-izq' fondo='76c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E2' x='55' y='115' ancho='330' alto='400' fijo='sí' O.x='-50%' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='E2.Oy' tipo='numérico' interfaz='barra' región='interior' espacio='E0' expresión='(385,115,30,400)' valor='-200' incr='1' min='-800' max='-200' decimales='0' fijo='sí' visible='no' acción='calcular'">
+   <param name="C_02" value="id='N+' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(320,60,20,20)' fijo='sí' visible='sí' imagen='images/mas.png' acción='calcular' parámetro='Ni=Ni+50\nllenaPos()\npermutaPos()' dibujar-si='(Ni<2500)&(t=0)'">
+   <param name="C_03" value="id='N-' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(320,150,20,20)' fijo='sí' visible='sí' imagen='images/menos.png' acción='calcular' parámetro='Ni=Ni-50\nllenaPos()\npermutaPos()' dibujar-si='(Ni>500)&(t=0)' pos_mensajes='centro'">
+   <param name="C_04" value="id='inicia' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Iniciar' expresión='(318,360,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='animar' dibujar-si='t=0'">
+   <param name="A_01" value="id='init()' algoritmo='sí' algoritmo='sí' hacer='elem=ent(rnd*3);Ni=1200;anim=0;llenaPos();permutaPos()'">
+   <param name="A_02" value="id='posX' vector='sí' evaluar='una-sola-vez' tamaño='2500'">
+   <param name="A_03" value="id='posY' vector='sí' evaluar='una-sola-vez' tamaño='2500'">
+   <param name="A_04" value="id='Vm' vector='sí' evaluar='una-sola-vez' expresión='Vm[0]=11.7;Vm[1]=3.64;Vm[2]=14.8'">
+   <param name="A_05" value="id='decae' vector='sí' evaluar='una-sola-vez' tamaño='2500'">
+   <param name="A_06" value="id='decaimiento()' algoritmo='sí' algoritmo='sí' inicio='_i=0;N=Ni*exp((-.693/(Vm[elem]*24))*t);decaen=Ni-N' hacer='decae[_i]=1;_i=_i+1' mientras='_i<decaen'">
+   <param name="A_07" value="id='llenaPos()' algoritmo='sí' algoritmo='sí' Local='_i' inicio='_i=0' hacer='posX[_i]=70+4*(_i%50);posY[_i]=50+4*ent(_i/50);decae[_i]=0;_i=_i+1' mientras='_i<Ni'">
+   <param name="A_08" value="id='permutaPos()' algoritmo='sí' algoritmo='sí' Local='_i,aa' inicio='_i=0' hacer='aa=ent(rnd*Ni);primerX=posX[_i];primerY=posY[_i];segundoX=posX[aa];segundoY=posY[aa];posX[_i]=segundoX;posY[_i]=segundoY;posX[aa]=primerX;posY[aa]=primerY;_i=_i+1' mientras='_i<Ni'">
+   <param name="A_09" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Actividad y ley de decaimiento&squot;' hacer='init()'">
+   <param name="A_10" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='anim=(N>Ni/4)?1:0'">
+   <param name="G_01" value="espacio='E0' tipo='texto' fondo='sí' expresión='[(E0._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E0' tipo='texto' fondo='sí' expresión='[120,85]' texto='A partir de la actividad inicial y la vida media nota cuantos nucleos quedan al tiempo t.' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_03" value="espacio='E2' tipo='imagen' expresión='(0,0)' archivo='images/texto9.png'">
+   <param name="G_04" value="espacio='E2' tipo='imagen' expresión='(0,-10.8)' archivo='images/texto10.png'">
+   <param name="G_05" value="espacio='E1' tipo='texto' expresión='[100,10]' texto='Elemento Ra[223+elem]' fuente='SansSerif,BOLD,17' decimales='0' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' expresión='[50,320]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs36 Vida media = {\*\mjaformula{\expr Vm[elem]}} dias\par N(0 hrs) = {\*\mjaformula{\expr Ni\decimals 0\fixed0}}\par N({\*\mjaformula{\expr t\decimals 0\fixed0}}hrs) = {\*\mjaformula{\expr N\decimals 0\fixed0}}\fs34}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='texto' dibujar-si='t>0' expresión='[315,320]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs36 Vidas medias\par transcurridas\par       {\*\mjaformula{\expr t/(Vm[elem]*24)\decimals 1\fixed1}}\fs34}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='punto' color='(decae[s],decae[s],decae[s],)' coord_abs='sí' expresión='(posX[s],posY[s])' familia='s' s.intervalo='[0,Ni-1]' s.pasos='Ni-1' fijo='sí'">
+   <param name="G_09" value="espacio='E0' tipo='texto' dibujar-si='debug' expresión='[20,50]' texto='Ni=[Ni]\nt=[t]' fijo='sí'">
+   <param name="Animación" value="controles='no' auto='no' inicio='t=0' hacer='decaimiento();t=t+1' mientras='anim'">
+</ajs>
+
+</body>
+</html>

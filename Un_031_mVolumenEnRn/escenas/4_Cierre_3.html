@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Cierre</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' imagen='images/fondo_cierre_03.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R3' id='Principal' x='40' y='78' ancho='440' alto='440' escala='30' despl_imagen='arr-izq' fondo='ffd5f3ff' R3='sí'">
+   <param name="E_03" value="tipo='R2' id='E3' x='490' y='78' ancho='440' alto='440' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='goTo4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,4);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='a' tipo='numérico' región='interior' espacio='Principal' nombre='a' expresión='(0,Principal._h-50,Principal._w/3,50)' valor='3' incr='1' min='1' max='7' discreto='sí' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_04" value="id='b' tipo='numérico' región='interior' espacio='Principal' nombre='b' expresión='(Principal._w/3,Principal._h-50,Principal._w/3,50)' valor='7' incr='1' min='1' max='8' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_05" value="id='c' tipo='numérico' región='interior' espacio='Principal' nombre='c' expresión='(2*Principal._w/3,Principal._h-50,Principal._w/3,50)' valor='5' incr='1' min='1' max='7' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Teorema de Pitágoras en tetraedros&squot;' hacer='Principal.rot.z=130;Principal.rot.y=-40'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E3' tipo='texto' expresión='[10,E3._h-60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red128\green128\blue128;\red32\green48\blue58;\red255\green0\blue0;\red0\green0\blue105;\red0\green100\blue0;}\cf0\f1\fs34\b (2\u183 \u193 rea ABC )\u178 \b0\cf1 =\cf2{\*\mjaformula{\expr a\decimals 2\fixed0}{\supix 2}{\expr b\decimals 2\fixed0}{\supix 2}}\cf1 +\cf3{\*\mjaformula{\expr a\decimals 2\fixed0}{\supix 2}{\expr c\decimals 2\fixed0}{\supix 2}}\cf1 +\cf4{\*\mjaformula{\expr b\decimals 2\fixed0}{\supix 2}{\expr c\decimals 2\fixed0}{\supix 2}}\cf1 =\cf0\b{\*\mjaformula{\expr (a*b)^2+(b*c)^2+(a*c)^2\decimals 2\fixed0}}\cf1\b0}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_03" value="espacio='E3' tipo='imagen' coord_abs='sí' expresión='(10,20)' archivo='images/4_Cierre_3_text1.jpg'">
+   <param name="S_01" value="espacio='Principal' tipo='paralelepípedo' color='71ffffff' color_reverso='92ffffff' expresión='Paralelepípedo' posini='(a/2,b/2,c/2)' aristas='sí' ancho='a' largo='b' alto='c'">
+   <param name="S_02" value="espacio='Principal' tipo='triángulo' color='32ff0000' color_reverso='32ff0000' expresión='(0,0,0)(a,0,0)(0,b,0)' modelo='metal'">
+   <param name="S_03" value="espacio='Principal' tipo='triángulo' color='30008900' color_reverso='30148521' expresión='(0,0,0)(0,0,c)(0,b,0)' modelo='metal'">
+   <param name="S_04" value="espacio='Principal' tipo='triángulo' color='306d92ff' color_reverso='30669dff' expresión='(0,0,0)(a,0,0)(0,0,c)' modelo='metal'">
+   <param name="S_05" value="espacio='Principal' tipo='triángulo' color='2ec0c0c0' color_reverso='grisClaro' expresión='(0,b,0)(a,0,0)(0,0,c)' modelo='metal'">
+   <param name="S_06" value="espacio='Principal' tipo='punto' color='grisObscuro' color_reverso='negro' expresión='(0,0,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40\b O\b0 (0, 0, 0)\f3\fs30}' fuente='SansSerif,BOLD,20' fijo='sí' ancho='4'">
+   <param name="S_07" value="espacio='Principal' tipo='punto' color='grisObscuro' color_reverso='negro' expresión='(a,0,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40\b A\b0 (a, 0, 0)\f3\fs30}' fuente='SansSerif,BOLD,20' fijo='sí' ancho='4'">
+   <param name="S_08" value="espacio='Principal' tipo='punto' color='grisObscuro' color_reverso='negro' expresión='(0,b,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40\b B\b0 (0, b, 0)\f3\fs30}' fuente='SansSerif,BOLD,20' fijo='sí' ancho='4'">
+   <param name="S_09" value="espacio='Principal' tipo='punto' color='grisObscuro' color_reverso='negro' expresión='(0,0,c)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40\b C\b0 (0, 0, c)\f3\fs30}' fuente='SansSerif,BOLD,20' fijo='sí' ancho='4'">
+</ajs>
+
+</body>
+</html>

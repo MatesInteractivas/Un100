@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E0' fijo='sí' imagen='images/fondo_inicio.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E1' x='55' y='115' ancho='440' alto='390' fijo='sí' escala='40' O.x='-40%' O.y='40%' despl_imagen='arr-izq' fondo='d5f3fe' red='5ec0c0c0' red10='no' ejes='negro' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E2' x='550' y='110' ancho='330' alto='400' fijo='sí' O.x='-50%' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo0' tipo='numérico' interfaz='botón' región='interior' espacio='E0' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,0);\nparent.update()' dibujar-si='0'">
+   <param name="C_02" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E0' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='v2' tipo='video' región='interior' espacio='E1' expresión='(185,105,600,400)' dibujar-si='0' archivo='http://arquimedes.matem.unam.mx/chile/videos/R4/video_1.mp4'">
+   <param name="C_04" value="id='A' tipo='gráfico' espacio='E1' tamaño='5' expresión='(0,7)' fijo='sí'">
+   <param name="C_05" value="id='B' tipo='gráfico' espacio='E1' tamaño='5' expresión='(8,4)' fijo='sí'">
+   <param name="C_06" value="id='C' tipo='gráfico' espacio='E1' tamaño='5' expresión='(2,1)' fijo='sí'">
+   <param name="C_07" value="id='E2.Oy' tipo='numérico' región='interior' espacio='E0' nombre='E2.Oy' expresión='(880,461,27,50)' valor='-200' incr='10' min='-990' max='-200' decimales='0' fijo='sí' visible='no' acción='calcular' pos_mensajes='centro'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='siempre' hacer='titulo1=&squot;Centroide de un triángulo&squot;;titulo2=&squot;El centroide es el baricentro&squot;;titulo3=&squot;¡Practica con el triángulo!&squot;;titulo4=&squot;Las ecuaciones del centroide&squot;;titulo5=&squot;¡Construye y verifica!&squot;;;subtitulo=&squot;Lee el texto y realiza las actividades propuestas&squot;;;x1=A.x;y1=A.y;x4=B.x;y4=B.y;x2=(x4+C.x)/2;y2=(y4+C.y)/2;x3=(x1+C.x)/2;y3=(y1+C.y)/2;xi=(A.x+B.x+C.x)/3;yi=(A.y+B.y+C.y)/3'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='A.x=(A.x<-.8)?-.8:A.x;B.x=(B.x<-.8)?-.8:B.x;C.x=(C.x<-.8)?-.8:C.x;A.x=(A.x>9.5)?9.5:A.x;B.x=(B.x>9.5)?9.5:B.x;C.x=(C.x>9.5)?9.5:C.x;A.y=(A.y<-.7)?-.7:A.y;B.y=(B.y<-.7)?-.7:B.y;C.y=(C.y<-.7)?-.7:C.y;A.y=(A.y>8.5)?8.5:A.y;B.y=(B.y>8.5)?8.5:B.y;C.y=(C.y>8.5)?8.5:C.y'">
+   <param name="G_01" value="espacio='E1' tipo='polígono' expresión='(A.x,A.y)(B.x,B.y)(C.x,C.y)(A.x,A.y)' relleno='90ffff80' ancho='2'">
+   <param name="G_02" value="espacio='E1' tipo='segmento' color='00a300' expresión='(A.x,A.y)(x2,y2)' fijo='sí' ancho='2'">
+   <param name="G_03" value="espacio='E1' tipo='segmento' color='00a300' expresión='(B.x,B.y)(x3,y3)' fijo='sí' ancho='2'">
+   <param name="G_04" value="espacio='E1' tipo='segmento' color='00a300' expresión='(C.x,C.y)((A.x+B.x)/2,(A.y+B.y)/2)' fijo='sí' ancho='2'">
+   <param name="G_05" value="espacio='E1' tipo='punto' color='azul' expresión='(xi,yi)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f1\fs40\b\cf0 Centroide}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='5'">
+   <param name="G_06" value="espacio='E2' tipo='imagen' expresión='(0,0)' archivo='images/texto1.png'">
+   <param name="G_07" value="espacio='E2' tipo='imagen' expresión='(0,-13)' archivo='images/texto2.png'">
+   <param name="G_08" value="espacio='E0' tipo='texto' dibujar-si='E2.Oy>-270' expresión='[(E0._w-_AnchoDeCadena_(titulo1,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo1]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_09" value="espacio='E0' tipo='texto' dibujar-si='(E2.Oy<-270)&(E2.Oy>-390)' expresión='[(E0._w-_AnchoDeCadena_(titulo2,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo2]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_10" value="espacio='E0' tipo='texto' dibujar-si='(E2.Oy<-390)&(E2.Oy>-450)' expresión='[(E0._w-_AnchoDeCadena_(titulo3,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo3]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_11" value="espacio='E0' tipo='texto' dibujar-si='(E2.Oy<-450)&(E2.Oy>-810)' expresión='[(E0._w-_AnchoDeCadena_(titulo4,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo4]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_12" value="espacio='E0' tipo='texto' dibujar-si='(E2.Oy<-810)' expresión='[(E0._w-_AnchoDeCadena_(titulo5,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo5]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_13" value="espacio='E0' tipo='texto' dibujar-si='E2.Oy=-200' expresión='[(E0._w-_AnchoDeCadena_(subtitulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;22&squot;))/2,78]' texto='[subtitulo]' fuente='SansSerif,PLAIN,22' fijo='sí'">
+   <param name="G_14" value="espacio='E1' tipo='texto' dibujar-si='(E2.Oy<-450)&(E2.Oy>-810)' expresión='[131,13]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f1\fs48\b\cf0{\*\mjaformula ({\fraction{\num x{\subix 1}+x{\subix 2}+x{\subix 3}}{\den 3}},{\fraction{\num y{\subix 1}+y{\subix 2}+y{\subix 3}}{\den 3}})}\f2\fs60\b0}' fuente='Serif,BOLD,24' fijo='sí'">
+</ajs>
+
+</body>
+</html>

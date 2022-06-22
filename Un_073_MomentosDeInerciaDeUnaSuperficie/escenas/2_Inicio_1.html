@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='n4' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' expresión='(820,155,70,35)' valor='&squot;&squot;' fijo='sí' visible='sí' dibujar-si='paso=2'">
+   <param name="C_03" value="id='n5' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Continuar' expresión='(820,490,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='paso=paso+1' dibujar-si='((paso!=2)|(n4!=&squot;&squot;))&(paso<4)'">
+   <param name="C_04" value="id='n6' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Inicio' expresión='(545,490,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='inicio' parámetro='paso=1' dibujar-si='paso=4'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Momento de inercia de un rectángulo&squot;' hacer='paso=1'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='correcto=((n4=&squot;bdy&squot;)|(n4=&squot;dyb&squot;))'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' dibujar-si='(paso<3)' expresión='(-4,-1,.7,.7)' archivo='images/deduce1.png'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='paso=2' expresión='[520,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40 Recordemos que {\*\mjaformula I{\subix x}={\integral{\from}{\to}{\what y{\supix 2}dA}}}\par En la figura, \u191 a qu\u233  es igual dA?         \par \fs32    Escribe la expresi\u243 n sin espacios\f3\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='(correcto=1)&(n4!=&squot;&squot;)&(paso=2)' expresión='[520,250]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green163\blue0;\red32\green48\blue58;}\cf0\f1\fs40\b\u161 Excelente!\b0\cf1\par \par Entonces, \b{\*\mjaformula I{\subix x}={\integral{\from 0}{\to h}{\what by{\supix 2}dy}}}\b0\par \par Integrando entre 0 y h, obtenemos:\par \par                  \b{\*\mjaformula I{\subix x}={\fraction{\num 1}{\den 3}}bh{\supix 3}}\f3\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='(correcto=0)&(n4!=&squot;&squot;)&(paso=2)' expresión='[520,250]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue0;}\f1\fs40\b\cf0\u161 Incorrecto!\b0  {\*\mjaformula dA=bdy}\par \par \cf1 Entonces, \b{\*\mjaformula I{\subix x}={\integral{\from 0}{\to h}{\what by{\supix 2}dy}}}\b0\par \par Integrando entre 0 y h, obtenemos:\par \par                  \b{\*\mjaformula I{\subix x}={\fraction{\num 1}{\den 3}}bh{\supix 3}}\f3\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='paso=1' expresión='[520,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 Vamos a deducir el momento de inercia\par de un rect\u225 ngulo, con respecto al eje x.\par \par Para el eje y, el procedimiento es similar.\par \par Haz  clic  en el bot\u243 n &squot;&squot;Continuar&squot;&squot;\f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='paso=3' expresión='(-4,-1,.7,.7)' archivo='images/deduce2.png'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='paso=3' expresión='[520,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red255\green89\blue0;\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 Ahora, si  deseamos  deducir  el momento de\par inercia con respecto al eje x&squot;, tendr\u237 amos que\par calcular dos integrales (observa la figura).\par La primera con los l\u237 mites de integraci\u243 n entre\par 0 y \fs44{\*\mjaformula{\fraction{\num h}{\den 2}}}\fs40 , la  segunda  integral  entre 0 y \fs44{\*\mjaformula -{\fraction{\num h}{\den 2}}}\fs40 ,\par que podemos simplificar as\u237 : \par                        \b{\*\mjaformula I{\subix x}=2{\integral{\from 0}{\to{\fraction{\num h}{\den 2}}}{\what by{\supix 2}dy}}}\b0\par Integrando obtenemos:\par \par                     \cf0    \b\cf1  {\*\mjaformula I{\subix x&squot;}={\fraction{\num 1}{\den 12}}bh{\supix 3}}\cf2\f4\fs30\b0}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_09" value="espacio='E1' tipo='imagen' dibujar-si='(paso=4)' expresión='(-5.5,-2,.5,.5)' archivo='images/rectangulo.png'">
+   <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='(paso=4)' expresión='(-1.3,-0.5,.6,.6)' archivo='images/rectangulof.png'">
+   <param name="G_11" value="espacio='E1' tipo='texto' dibujar-si='paso=4' expresión='[540,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 En la figura aparecen los momentos de\par inercia  con  respecto  a  los  ejes  que\par pasan  por el origen de coordenadas y\par con respecto  a los ejes que pasan por\par el centroide del rect\u225 ngulo.\par \par Trata de  deducir las  expresiones para\par el  momento de  inercia con respecto a\par los ejes \cf0\b y\cf1\b0  y \b\cf0 y&squot;\b0\cf1 .\par \f3\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(15,90)' archivo='images/panel_940x445.png'">
+</ajs>
+
+</body>
+</html>

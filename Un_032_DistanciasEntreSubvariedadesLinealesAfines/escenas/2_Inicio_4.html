@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='40' y='90' ancho='890' alto='445' fijo='sí' imagen='images/panel.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R3' id='Principal' x='520' y='98' ancho='390' alto='412' escala='32' despl_imagen='arr-izq' fondo='cfd3f8' R3='sí'">
+   <param name="C_01" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_02" value="id='Inicio' tipo='numérico' interfaz='botón' región='interior' espacio='Principal' nombre='Inicio' expresión='(Principal._w-103,Principal._h-33,100,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='inicio'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Un ejemplo&squot;' hacer='Principal.rot.z=-34;u1=4;u2=0;u3=0;v1=2;v2=3;v3=0;w1=1;w2=1;w3=4;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E2' tipo='texto' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green4\blue58;\red255\green0\blue0;\red64\green64\blue64;}\f1\fs34\b\cf0 r=P(7, 4, 4)+<D(4, 0, 0)>\cf1  \b0 y \b\cf2 r&squot;=P&squot;(6, 3, 0)+<D&squot;(2, 3, 0)>\cf1\par P-P&squot;\b0 =(7-6, 4-3, 4-0), vol{\*\mjaformula{\matrix\rows 2\columns 1{\element D}{\element D&squot;}}}\u8800 0 por tanto R={\*\mjaformula{\matrix\rows 2\columns 1{\element D}{\element D&squot;}}}\par \par La distancia entre r y r&squot; es:\par {\*\mjaformula{\fraction{\num vol{\matrix\rows 3\columns 1{\element P-P&squot;}{\element D}{\element D&squot;}}}{\den vol{\matrix\rows 2\columns 1{\element D}{\element D&squot;}}}}={\fraction{\num vol{\matrix\rows 3\columns 3{\element 7-6}{\element 4-3}{\element 4-0}{\element 4}{\element 0}{\element 0}{\element 2}{\element 3}{\element 0}}}{\den vol{\matrix\rows 2\columns 3{\element 4}{\element 0}{\element 0}{\element 2}{\element 3}{\element 0}}}}={\fraction{\num |det{\matrix\rows 3\columns 3{\element 1}{\element 1}{\element 4}{\element 4}{\element 0}{\element 0}{\element 2}{\element 3}{\element 0}}|}{\den{\radical{\index}{\radicand 12{\supix 2}}}}}=4}\par \par La distancia entre r y r&squot; es la altura del paralelep\u237 pedo,\par es decir, su volumen dividido entre el \u225 rea de la base :\par {\*\mjaformula Altura o distancia={\fraction{\num{\matrix\rows 2\columns 1{\element volumen del}{\element paralelep\u237 pedo}}}{\den{\matrix\rows 2\columns 1{\element\u193 rea de la base}{\element del paralelep\u237 pedo}}}}={\fraction{\num vol{\matrix\rows 3\columns 1{\element P-P&squot;}{\element D}{\element D&squot;}}}{\den vol{\matrix\rows 2\columns 1{\element D}{\element D&squot;}}}}}\fs26\par \fs16\par \fs24\cf3 A continuaci\u243 n aplicaremos esta f\u243 rmula para el c\u225 lculo de distancias \par entre subvariedades lineales afines del espacio tridimensional.\cf1\fs34}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="S_01" value="espacio='Principal' tipo='segmento' color='000066' expresión='(0,0,0)(u1-(min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala))/2*u1/sqrt(u1^2+u2^2+u3^2),u2-(min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala))/2*u2/sqrt(u1^2+u2^2+u3^2),u3-(min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala))/2*u3/sqrt(u1^2+u2^2+u3^2))' ancho='3'">
+   <param name="S_02" value="espacio='Principal' tipo='cono' color='000066' color_reverso='5ffaafff' expresión='Cono' rotini='(0,90+asen(u3/sqrt(u1^2+u2^2+u3^2))*180/pi,(u1#0)?90*(1+sgn(u1))+atan(u2/u1)*180/pi:90*-sgn(u2))' posini='(u1-((min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*u1/sqrt(u1^2+u2^2+u3^2),u2-((min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*u2/sqrt(u1^2+u2^2+u3^2),u3-((min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*u3/sqrt(u1^2+u2^2+u3^2))' modelo='metal' ancho='0.2*48/Principal.escala' largo='0.2*48/Principal.escala' alto='min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala)' Nu='10' Nv='1'">
+   <param name="S_03" value="espacio='Principal' tipo='segmento' color='660000' expresión='(0,0,0)(v1-(min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala))/2*v1/sqrt(v1^2+v2^2+v3^2),v2-(min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala))/2*v2/sqrt(v1^2+v2^2+v3^2),v3-(min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala))/2*v3/sqrt(v1^2+v2^2+v3^2))' ancho='3'">
+   <param name="S_04" value="espacio='Principal' tipo='cono' color='660000' color_reverso='5ffaafff' expresión='Cono' rotini='(0,90+asen(v3/sqrt(v1^2+v2^2+v3^2))*180/pi,(v1#0)?90*(1+sgn(v1))+atan(v2/v1)*180/pi:90*-sgn(v2))' posini='(v1-((min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*v1/sqrt(v1^2+v2^2+v3^2),v2-((min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*v2/sqrt(v1^2+v2^2+v3^2),v3-((min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*v3/sqrt(v1^2+v2^2+v3^2))' modelo='metal' ancho='0.2*48/Principal.escala' largo='0.2*48/Principal.escala' alto='min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala)' Nu='10' Nv='1'">
+   <param name="S_05" value="espacio='Principal' tipo='segmento' color='006600' expresión='(0,0,0)(w1-(min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala))/2*w1/sqrt(w1^2+w2^2+w3^2),w2-(min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala))/2*w2/sqrt(w1^2+w2^2+w3^2),w3-(min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala))/2*w3/sqrt(w1^2+w2^2+w3^2))' ancho='3'">
+   <param name="S_06" value="espacio='Principal' tipo='cono' color='006600' color_reverso='5ffaafff' expresión='Cono' rotini='(0,90+asen(w3/sqrt(w1^2+w2^2+w3^2))*180/pi,(w1#0)?90*(1+sgn(w1))+atan(w2/w1)*180/pi:90*-sgn(w2))' posini='(w1-((min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*w1/sqrt(w1^2+w2^2+w3^2),w2-((min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*w2/sqrt(w1^2+w2^2+w3^2),w3-((min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*w3/sqrt(w1^2+w2^2+w3^2))' modelo='metal' ancho='0.2*48/Principal.escala' largo='0.2*48/Principal.escala' alto='min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala)' Nu='10' Nv='1'">
+   <param name="S_07" value="espacio='Principal' tipo='superficie' color='aaaeafff' color_reverso='aab1afff' expresión='x=u*u1+v*v1 y=u*u2+v*v2 z=u*u3+v*v3' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_08" value="espacio='Principal' tipo='superficie' color='aaaeafff' color_reverso='aab1afff' expresión='x=v*u1+u*w1 y=v*u2+u*w2 z=v*u3+u*w3' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_09" value="espacio='Principal' tipo='superficie' color='aaaeafff' color_reverso='aab1afff' expresión='x=u*v1+v*w1 y=u*v2+v*w2 z=u*v3+v*w3' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_10" value="espacio='Principal' tipo='superficie' color='aaaeafff' color_reverso='aab1afff' expresión='x=u1+v*v1+u*w1 y=u2+v*v2+u*w2 z=u3+v*v3+u*w3' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_11" value="espacio='Principal' tipo='superficie' color='aaaeafff' color_reverso='aab1afff' expresión='x=v1+u*u1+v*w1 y=v2+u*u2+v*w2 z=v3+u*u3+v*w3' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_12" value="espacio='Principal' tipo='superficie' color='aaaeafff' color_reverso='aab1afff' expresión='x=w1+v*u1+u*v1 y=w2+v*u2+u*v2 z=w3+v*u3+u*v3' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_13" value="espacio='Principal' tipo='punto' color='000066' expresión='(u1,u2,u3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b D}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="S_14" value="espacio='Principal' tipo='punto' color='660000' expresión='(v1,v2,v3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b D&squot;}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="S_15" value="espacio='Principal' tipo='punto' color='006600' expresión='(w1,w2,w3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b P-P&squot;}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="S_16" value="espacio='Principal' tipo='punto' color='azul' expresión='(7,4,4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b P}' fuente='SansSerif,BOLD,17' fijo='sí' ancho='5'">
+   <param name="S_17" value="espacio='Principal' tipo='punto' color='rojo' color_reverso='rosa' expresión='(6,3,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b P&squot;}' fuente='SansSerif,BOLD,17' fijo='sí' ancho='5'">
+   <param name="S_18" value="espacio='Principal' tipo='curva' color='azul' expresión='x=7+s*u*u1 y=4+s*u*u2 z=4+u*s*u3' familia='s' s.intervalo='[-1,1]' s.pasos='2' Nu='1'">
+   <param name="S_19" value="espacio='Principal' tipo='curva' color='rojo' expresión='x=6+u*s*v1 y=3+u*s*v2 z=u*s*v3' familia='s' s.intervalo='[-1,1]' s.pasos='2' Nu='1'">
+</ajs>
+
+
+
+</body>
+
+</html>

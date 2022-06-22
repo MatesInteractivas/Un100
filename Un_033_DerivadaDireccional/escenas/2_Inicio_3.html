@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='TEXTO1' x='60' y='120' ancho='340' alto='350' fijo='sí' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='TEXTO2' x='550' y='120' ancho='400' alto='350' fijo='sí' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='HTMLIFrame' id='HF2' x='535' y='350' ancho='385' alto='230' dibujar-si='herra=1' imagen='images/retro_790x470.png' despl_imagen='arr-izq' fondo='negro' archivo='[pagina]'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='abrirCalculo' tipo='numérico' interfaz='botón' región='interior' espacio='TEXTO2' nombre='Herramienta de cálculo' expresión='(TEXTO2._w/2-120,300,210,30)' fijo='sí' visible='sí' color='blanco' color-int='ff404040' fuente puntos='18' imagen='images/btn210.png' acción='calcular' parámetro='herra=1'">
+   <param name="C_03" value="id='cerrarCalculo' tipo='numérico' interfaz='botón' región='interior' espacio='TEXTO2' nombre='_._' expresión='(345,208,21,20)' fijo='sí' visible='sí' color='blanco' negrita='sí' imagen='images/cerrar.png' acción='calcular' parámetro='herra=0' dibujar-si='herra=1'">
+   <param name="A_01" value="id='fichero' vector='sí' evaluar='una-sola-vez' expresión='fichero[0]=&squot;http://arquimedes.matem.unam.mx/_Un100_/2_Entregas/Desarrollador05/_Un_000_DerivadaDireccional/escenas/derivada.html&squot;;fichero[1]=0;fichero[2]=0'">
+   <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Definición. Propiedades&squot;' hacer='herra=0;pagina=fichero[0]'">
+   <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='TEXTO1' tipo='imagen' coord_abs='sí' expresión='(5,5)' archivo='imagen/ver1.png'">
+   <param name="G_03" value="espacio='TEXTO2' tipo='imagen' coord_abs='sí' expresión='(5,5)' archivo='imagen/ver3.png'">
+   <param name="G_04" value="espacio='TEXTO1' tipo='texto' expresión='[50,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Courier New;}{\colortbl\red0\green120\blue198;\red32\green48\blue58;}\cf0\f1\fs36 Definici\u243 n\cf1\par \fs34\b\par \b0 La derivada parcial de  f({\*\mjaformula x{\subix 1}},{\*\mjaformula x{\subix 2}},...,{\*\mjaformula x{\subix n}}) \par respecto a la variable {\*\mjaformula x{\subix 1}} se define como\fs30\par \par lim{\*\mjaformula{\subix h\u8594 0}}{\*\mjaformula{\fraction{\num f(x{\subix 1},x{\subix 2},...,x{\subix i}+h,...x{\subix n})-f(x{\subix 1},x{\subix 2},...,x{\subix i},,...x{\subix n})}{\den h}}}\f5\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_05" value="espacio='TEXTO1' tipo='imagen' coord_abs='sí' expresión='(5,200)' archivo='imagen/ver2.png'">
+   <param name="G_06" value="espacio='TEXTO1' tipo='texto' expresión='[50,205]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green120\blue198;\red32\green48\blue58;}\cf0\f1\fs36 Interpretaci\u243 n\cf1\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_07" value="espacio='TEXTO2' tipo='texto' expresión='[50,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green120\blue198;\red32\green48\blue58;}\cf0\f1\fs36 Forma pr\u225 ctica de calcular la\par derivada parcial\cf1\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_08" value="espacio='TEXTO2' tipo='texto' expresión='[50,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34 Para calcular la derivada parcial de\par una funci\u243 n   f( x{\*\mjaformula{\subix 1}}, x{\*\mjaformula{\subix 2}} ,..., x {\*\mjaformula{\subix n}} )\par respecto a la componente i-\u233 sima se\par calcular\u225  la derivada de la funci\u243 nde\par una variable obtenida al fijar como\par constantes los valores de todos los\par componentes excepto la i-\u233 sima.\f2\fs30}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_09" value="espacio='TEXTO1' tipo='texto' expresión='[50,235]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34 Las derivadas parciales de funciones de \par varias variables se pueden interpretar \par f\u237 sicamente como razones de cambio, \par variaciones instant\u225 neas o coeficientes \par de variaci\u243 n de la misma manera que la\par derivada de una funci\u243 n de una variable.\f2\fs30}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+</ajs>
+
+</body>
+</html>

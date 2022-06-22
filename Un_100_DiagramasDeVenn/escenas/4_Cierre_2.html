@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Cierre</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' O.x='10%' O.y='4%' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_03" value="id='n1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Verificar' expresión='(380,495,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='verifica=1'">
+   <param name="C_04" value="id='n2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Limpiar' expresión='(505,495,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='r1=0\nr2=0\nr3=0\nr4=0\ndibujo=0\nE1.mouse_pressed=0\nverifica=0'">
+   <param name="C_05" value="id='n3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Respuesta' expresión='(640,495,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='dibujo=0\nrespuesta=1' activo-si='verifica&(correcto=0)'">
+   <param name="C_06" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Otro ejercicio' expresión='(780,495,150,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn140.png' acción='calcular' parámetro='dibujo=0\nk=ent(rnd*16)\ncorrecto=0\nverifica=0\nrespuesta=0\nr1=0\nr2=0\nr3=0\nr4=0' activo-si='verifica'">
+   <param name="A_01" value="id='I' vector='sí' evaluar='una-sola-vez' tamaño='16' expresión='I[0]=&squot;images/i0.png&squot;;I[1]=&squot;images/i1.png&squot;;I[2]=&squot;images/i2.png&squot;;I[3]=&squot;images/i3.png&squot;;I[4]=&squot;images/i4.png&squot;;I[5]=&squot;images/i5.png&squot;;I[6]=&squot;images/i6.png&squot;;I[7]=&squot;images/i7.png&squot;;I[8]=&squot;images/i8.png&squot;;I[9]=&squot;images/i9.png&squot;;I[10]=&squot;images/i10.png&squot;;I[11]=&squot;images/i11.png&squot;;I[12]=&squot;images/i12.png&squot;;I[13]=&squot;images/i13.png&squot;;I[14]=&squot;images/i14.png&squot;;I[15]=&squot;images/i15.png&squot;;;'">
+   <param name="A_02" value="id='f' vector='sí' evaluar='una-sola-vez' tamaño='16' expresión='f[0]=&squot;images/f0.png&squot;;f[1]=&squot;images/f1.png&squot;;f[2]=&squot;images/f2.png&squot;;f[3]=&squot;images/f3.png&squot;;f[4]=&squot;images/f4.png&squot;;f[5]=&squot;images/f5.png&squot;;f[6]=&squot;images/f6.png&squot;;f[7]=&squot;images/f7.png&squot;;f[8]=&squot;images/f8.png&squot;;f[9]=&squot;images/f9.png&squot;;f[10]=&squot;images/f10.png&squot;;f[11]=&squot;images/f11.png&squot;;f[12]=&squot;images/f12.png&squot;;f[13]=&squot;images/f13.png&squot;;f[14]=&squot;images/f14.png&squot;;f[15]=&squot;images/f15.png&squot;'">
+   <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Primer ejercicio&squot;' hacer='k=ent(rnd*16)'">
+   <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='x=(E1.mouse_x);y=(E1.mouse_y);r1=((x-3)^2+y^2<9)&(x^2+y^2<9)&(E1.mouse_pressed)?((r1=0)?1:0):r1;r2=((x-3)^2+y^2>9)&(x^2+y^2<9)&(E1.mouse_pressed)?((r2=0)?1:0):r2;r3=((x-3)^2+y^2<9)&(x^2+y^2>9)&(E1.mouse_pressed)?((r3=0)?1:0):r3;r4=((x-3)^2+y^2>9)&(x^2+y^2>9)&(y<4)&(y>-4)&(x<7.2)&(x>-3.3)&(E1.mouse_pressed)?((r4=0)?1:0):r4;;dibujo=(r1=1)&(r2=0)&(r3=0)&(r4=0)?1:dibujo;dibujo=(r1=0)&(r2=0)&(r3=1)&(r4=0)?2:dibujo;dibujo=(r1=0)&(r2=1)&(r3=0)&(r4=0)?3:dibujo;dibujo=(r1=0)&(r2=0)&(r3=0)&(r4=1)?4:dibujo;dibujo=(r1=1)&(r2=1)&(r3=0)&(r4=0)?5:dibujo;dibujo=(r1=1)&(r2=0)&(r3=1)&(r4=0)?6:dibujo;dibujo=(r1=1)&(r2=1)&(r3=1)&(r4=0)?7:dibujo;dibujo=(r1=0)&(r2=1)&(r3=1)&(r4=0)?8:dibujo;dibujo=(r1=0)&(r2=0)&(r3=1)&(r4=1)?9:dibujo;dibujo=(r1=0)&(r2=1)&(r3=0)&(r4=1)?10:dibujo;dibujo=(r1=1)&(r2=0)&(r3=0)&(r4=1)?11:dibujo;dibujo=(r1=1)&(r2=0)&(r3=1)&(r4=1)?12:dibujo;dibujo=(r1=1)&(r2=1)&(r3=0)&(r4=1)?13:dibujo;dibujo=(r1=0)&(r2=1)&(r3=1)&(r4=1)?14:dibujo;dibujo=(r1=1)&(r2=1)&(r3=1)&(r4=1)?15:dibujo;;correcto=(k=dibujo);;'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(15,90)' archivo='images/panel_940x445.png'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' dibujar-si='respuesta=0' expresión='(1.5,0,1,1)' archivo='I[dibujo]'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' expresión='(-8.5,3,.6,.6)' archivo='f[k]'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='verifica&correcto&(respuesta=0)' expresión='[130,421]' texto='¡Excelente!' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='verifica&(correcto=0)&(respuesta=0)' expresión='[130,421]' texto='¡Incorrecto!' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='respuesta=1' expresión='(1.5,0,1,1)' archivo='I[k]'">
+   <param name="G_08" value="espacio='E1' tipo='texto' expresión='[23,181]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\cf0\f1\fs40 Halla  las  regiones que satisfacen\par la expresi\u243 n dada. Para ello,\par colorea el diagrama haciendo clic\par en la o las regiones correspondientes\cf1 .\f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_09" value="espacio='E1' tipo='texto' expresión='[410,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs72\b A\f2\fs30\b0}' fuente='SansSerif,BOLD,36' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='texto' expresión='[800,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs72\b B\f2\fs30\b0}' fuente='SansSerif,BOLD,36' fijo='sí'">
+</ajs>
+
+</body>
+</html>

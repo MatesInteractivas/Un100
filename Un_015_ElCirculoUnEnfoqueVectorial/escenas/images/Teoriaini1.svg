@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="350"
+   height="1355"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Teoriaini1.svg"
+   inkscape:export-filename="/home/muscol/Escritorio/_Un_012_VectoresYSusOperaciones/escenas/images/Teoriaini1.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="-62.644362"
+     inkscape:cy="1171.5353"
+     inkscape:document-units="px"
+     inkscape:current-layer="g13249"
+     showgrid="false"
+     inkscape:snap-bbox="false"
+     inkscape:bbox-paths="true"
+     inkscape:snap-to-guides="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <sodipodi:guide
+       id="guide2985"
+       orientation="0,345"
+       position="-5.3901367,305.46641" />
+    <sodipodi:guide
+       id="guide2987"
+       orientation="1,0"
+       position="345,305.46641" />
+    <sodipodi:guide
+       id="guide2989"
+       orientation="0,1"
+       position="339.60986,1350" />
+    <sodipodi:guide
+       id="guide2991"
+       orientation="1,0"
+       position="5,1357.8286" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-5.3901367,-2.8286469)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Capa 1">
+    <flowRoot
+       style="font-size:17px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot2993"
+       xml:space="preserve"><flowRegion
+         id="flowRegion2995"><rect
+           y="7.3621817"
+           x="5"
+           height="121.42857"
+           width="335"
+           id="rect2997" /></flowRegion><flowPara
+         id="flowPara2999" /></flowRoot>    <g
+       id="g13249"
+       transform="translate(4,0)">
+      <flowRoot
+         transform="matrix(0.99685784,0,0,1.0000173,1.0883652,-2.0225061)"
+         xml:space="preserve"
+         id="flowRoot3001"
+         style="font-size:17px;font-style:normal;font-weight:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><flowRegion
+           id="flowRegion3003"><rect
+             id="rect3005"
+             width="341.39014"
+             height="1345.3622"
+             x="5"
+             y="6.6478958"
+             style="font-style:normal;text-align:justify;text-anchor:start;-inkscape-font-specification:Sans" /></flowRegion><flowPara
+           id="flowPara3911">En el estudio de la circunferencia es importante tener en cuenta que los parámetros asociados con las coordenadas de posición del centro del círculo y el radio del mismo.  </flowPara><flowPara
+           id="flowPara3919">  En este sentido, si se conocen las coordenadas <flowSpan
+   style="font-style:italic;fill:#0000ff"
+   id="flowSpan3949">x</flowSpan> y <flowSpan
+   style="font-style:italic;fill:#0000ff"
+   id="flowSpan3951">y</flowSpan> del centro y la magnitud del radio <flowSpan
+   style="font-style:italic;fill:#0000ff"
+   id="flowSpan3955">r</flowSpan>, entonces se tiene toda la información necesaria para determianar este lugar geométrico.</flowPara><flowPara
+           id="flowPara3921">     Es importante tener en cuenta que cuando el centro de la circunferencia está situado en el origen, las cordenadas</flowPara><flowPara
+           id="flowPara3927">                            (x,y) = (0,0)</flowPara><flowPara
+           id="flowPara3931">     También hay que tener presente que el radio <flowSpan
+   style="font-style:italic;fill:#0000ff"
+   id="flowSpan3947">r</flowSpan> sólo tiene sentido en la geometría cartesiana para r≥0</flowPara><flowPara
+           id="flowPara3933" /></flowRoot>      <g
+         transform="matrix(0.8,0,0,0.8,88.455004,377.26291)"
+         id="g7849" />
+      <g
+         id="g11500"
+         transform="matrix(0.8,0,0,0.8,-19.206401,630.61338)" />
+      <g
+         id="g4487"
+         transform="matrix(0.8,0,0,0.8,-14.035418,450.37189)">
+        <g
+           word-spacing="normal"
+           letter-spacing="normal"
+           font-size-adjust="none"
+           font-stretch="normal"
+           font-weight="normal"
+           font-variant="normal"
+           font-style="normal"
+           stroke-miterlimit="10.433"
+           xml:space="preserve"
+           transform="matrix(0.49285714,0,0,-0.49285714,-86.25,1012.5)"
+           id="g4489"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />      </g>
+    </g>
+  </g>
+</svg>

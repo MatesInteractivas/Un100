@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+   <link rel="stylesheet" href="css/style.css">	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' escala='36' O.y='-40' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='Titulo' alto='70' fijo='sí' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='Info' x='50' y='395' ancho='870' alto='100' dibujar-si='!explica' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='E3' dibujar-si='explica' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='E2' x='12%' y='12%' ancho='736' alto='422' dibujar-si='explica' fijo='sí' escala='36' despl_imagen='arr-izq' fondo='f0f4f8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='Titulo' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='Titulo' expresión='(880,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='A' tipo='gráfico' espacio='E1' tamaño='6' expresión='(-2,3)' fijo='sí'">
+   <param name="C_04" value="id='B' tipo='gráfico' espacio='E1' tamaño='6' expresión='(0,-1)' fijo='sí'">
+   <param name="C_05" value="id='C' tipo='gráfico' espacio='E1' tamaño='6' expresión='(4,2)' fijo='sí'">
+   <param name="C_06" value="id='explicar' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Discusión' expresión='((E1._w-150)/2,E1._h-45,140,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn140.png' acción='calcular' parámetro='explica=1-explica;;scroll=0' pos_mensajes='centro'">
+   <param name="C_07" value="id='close' tipo='numérico' interfaz='botón' región='interior' espacio='E2' expresión='(E2._w-28,8,20,20)' fijo='sí' visible='sí' color='blanco' color-int='blanco' negrita='sí' fuente puntos='30' imagen='images/cerrar.png' acción='calcular' parámetro='explica=0' pos_mensajes='centro'">
+   <param name="C_08" value="id='scroll' tipo='numérico' región='interior' espacio='E2' nombre='scroll' expresión='(E2._w-33,E2._h-63,30,60)' incr='1' min='-25' max='0' decimales='0' fijo='sí' visible='no' pos_mensajes='centro'">
+   <param name="A_01" value="id='dist(x1,y1,x2,y2)' expresión='sqrt(abs((x2-x1)^2+(y2-y1)^2))'">
+   <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='D.x=B.x+(A.x-C.x);D.y=B.y+(A.y-C.y);a=dist(B.x,B.y,C.x,C.y);b=dist(A.x,A.y,C.x,C.y);c=dist(B.x,B.y,A.x,A.y);bd=dist(B.x,B.y,D.x,D.y);tA=((A.x-B.x)*(C.x-B.x)+(A.y-B.y)*(C.y-B.y))/a^2;HA.x=B.x+(C.x-B.x)*tA;HA.y=B.y+(C.y-B.y)*tA;tB=((B.x-A.x)*(C.x-A.x)+(B.y-A.y)*(C.y-A.y))/b^2;HB.x=A.x+(C.x-A.x)*tB;HB.y=A.y+(C.y-A.y)*tB;tC=((B.x-D.x)*(C.x-D.x)+(B.y-D.y)*(C.y-D.y))/bd^2;HC.x=D.x+(B.x-D.x)*tC;HC.y=D.y+(B.y-D.y)*tC;;'">
+   <param name="G_01" value="espacio='Titulo' tipo='texto' fondo='sí' dibujar-si='t<20' expresión='[150,12]' texto='En un paralelogramo con lados b, b&squot; y alturas respectivas h, h&squot;:\n                                         b·h = b&squot;·h&squot;' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='polígono' expresión='(A.x,A.y)(D.x,D.y)(B.x,B.y)(C.x,C.y)(A.x,A.y)' relleno='ffff80' ancho='2'">
+   <param name="G_03" value="espacio='E1' tipo='segmento' expresión='(A.x,A.y)(HA.x,HA.y)' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='segmento' color='8020303a' expresión='(C.x,C.y)(HA.x,HA.y)' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='segmento' dibujar-si='0' expresión='(B.x,B.y)(HB.x,HB.y)' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='segmento' color='8020303a' dibujar-si='0' expresión='(A.x,A.y)(HB.x,HB.y)' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='segmento' color='8020303a' dibujar-si='0' expresión='(C.x,C.y)(HA.x,HA.y)' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='punto' expresión='((A.x+D.x)/2,(A.y+D.y)/2)' texto='b' fuente='Serif,BOLD+ITALIC,20' fijo='sí' tamaño='0'">
+   <param name="G_09" value="espacio='E1' tipo='punto' expresión='((A.x+HA.x)/2,(A.y+HA.y)/2)' texto='h' fuente='Serif,BOLD+ITALIC,20' fijo='sí' tamaño='0'">
+   <param name="G_10" value="espacio='E2' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(E2._w-1,0)(E2._w-1,E2._h-1)(0,E2._h-1)(0,0)'">
+   <param name="G_11" value="espacio='E1' tipo='punto' expresión='((C.x+A.x)/2,(C.y+A.y)/2)' texto='b&squot;' fuente='Serif,BOLD+ITALIC,20' fijo='sí' tamaño='0'">
+   <param name="G_12" value="espacio='E1' tipo='punto' expresión='((A.x+A.x+B.x-HB.x)/2,(A.y+A.y+B.y-HB.y)/2)' texto='h&squot;' fuente='Serif,BOLD+ITALIC,20' fijo='sí' tamaño='0'">
+   <param name="G_13" value="espacio='E1' tipo='polígono' expresión='(A.x,A.y)(D.x,D.y)(D.x+(HA.x-A.x),D.y+(HA.y-A.y))(HA.x,HA.y)'">
+   <param name="G_14" value="espacio='E1' tipo='polígono' expresión='(C.x,C.y)(C.x+(B.x-HB.x),C.y+(B.y-HB.y))(A.x+(B.x-HB.x),A.y+(B.y-HB.y))(A.x,A.y)'">
+   <param name="G_15" value="espacio='E1' tipo='polígono' color='9020303a' dibujar-si='0' coord_abs='sí' expresión='(150,375)(825,375)(825,495)(150,495)(150,375)' relleno='fbfadc'">
+   <param name="G_16" value="espacio='Info' tipo='texto' expresión='[10,8]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}\f1\fs40 El paralelogramo se puede partir y recomponer en un rect\u225 ngulo de lados\f2\fs44\i{\*\mjaformula b,}{\*\mjaformula h}\f1\fs40\i0 y tambi\u233 n en \par uno de lados\f2\fs44\i{\*\mjaformula b&squot;,}{\*\mjaformula h&squot;}\f1\fs40\i0 . As\u237  que\f2\fs44\i{\*\mjaformula b&squot;\f2\fs44\i\u183 h&squot;= b\u183 h}.\f1\fs40\i0  Por lo tanto se puede definir el \u225 rea del \par paralelogramo como\f2\fs44\i{\*\mjaformula b\u183 h}\f1\fs40\i0 donde\f2\fs44\i{\*\mjaformula b}\f1\fs40\i0 es cualquiera de sus lados y\f2\fs44\i{\*\mjaformula h}\f1\fs40\i0 es la altura correspondiente.}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_17" value="espacio='E2' tipo='texto' expresión='[22,55+scroll*35]' texto='Se puede deducir que  b&squot;·h&squot; = b·h  suponiendo que existe una función de área definida en las figuras planas limitadas por segmentos rectos tal que:\n\n     1) el área de una unión de figuras ajenas es la suma de sus áreas,\n     2) el área de un rectángulo es el producto de sus lados,\n\nEn efecto, un paralelogramo se puede descomponer en un rectángulo de lados  b, h  y también en uno de lados b&squot;, h&squot;. Por 1) las áreas de estos dos rectángulos son iguales y por 2) éstas son  b·h  y  b&squot;·h&squot;  respectivamente. Por tanto b&squot;·h&squot; = b·h. \n\nEuclides hace tácitamente la suposición 1) en Los Elementos (Libro I, Proposición 35). Habla de igualdad entre dos figuras planas cuando una de ellas puede descomponerse en partes que pueden recomponerse en la otra. Hoy reconocemos esta propiedad como una relación de equivalencia y decimos que los dos rectángulos de lados  b, h  y  b&squot;, h&squot; la satisfacen. Pero no decimos que son iguales.\n\nEuclides nunca adopta 2). En Los Elementos,  b&squot;·h&squot; = b·h  no debe entenderse como igualdad entre números, solo indica que el rectángulo de lados  b, h, es equivalente al de lados  b&squot;, h&squot;, es decir, que el primero puede descomponerse en partes que pueden a su vez recomponerse en el segundo.\n\nPara poder entender la igualdad  b&squot;·h&squot; = b·h  como numérica y poder operar con ella es necesario demostrarla a partir de algún resultado previo, o bien asumir la hipótesis de la existencia de una función de área con las propiedades 1) y 2).\n\nAmbas opciones son aceptables. A lo largo de esta unidad adoptaremos la hipótesis de la existencia de la función de área, pero conviene saber que la igualdad  b&squot;·h&squot; = b·h  es un resultado inmediato de la proporcionalidad de los lados de triángulos semejantes, En esta unidad demostraremos en cambio que tal resultado, la proporcionalidad de los lados de triángulos semejantes, es consecuencia de la existencia de la función de área. Es decir, la existencia de la función de área con las propiedades 1) y 2) es equivalente a la proporcionalidad de los lados de triángulos semejantes. \n\nCuando  las cantidades  b, h, b&squot;, h&squot;  son números enteros o incluso fracciones, es posible demostrar la igualdad  b&squot;·h&squot; = b·h  con relativa facilidad, pero al incluir longitudes de segmentos arbitrarios, pudiendo ser éstas irracionales, acabamos enfrentando de nuevo la misma dificultad que al querer asignar números a las proporciones. En realidad el problema de asignar valores numéricos al área de figuras planas lineales es equivalente al de asignar valores numéricos a las proporciones. Ambos casos requieren de una construcción más o menos explícita de los números reales.\n\nEstamos frente a uno de los problemas fundamentales de la Geometría. Para poder asignar valores numéricos a las proporciones o las áreas de las figuras planas lineales, es necesario pasar por el proceso de construcción de los números reales, o bien adoptar un axioma adicional a los tradicionales, en esta unidad optamos por adoptar como axioma precisamente que   b&squot;·h&squot; = b·h  siempre que  b, h sean un lado y su altura correspondiente de un paralelogramo y  b&squot;, h&squot; sean el otro lado y la altura respectiva.\n' fuente='SansSerif,PLAIN,18' fijo='sí' ancho='680'">
+   <param name="G_18" value="espacio='E2' tipo='imagen' coord_abs='sí' expresión='(E2._w/2,18,E2._w,1)' archivo='images/barraInfo.jpg'">
+</ajs>
+
+</body>
+</html>

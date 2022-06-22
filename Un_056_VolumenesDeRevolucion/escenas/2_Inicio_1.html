@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_inicio01.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R3' id='E4' x='53' y='102' ancho='424' alto='396' escala='28' despl_imagen='arr-izq' fondo='af000000' despliegue='pintor' R3='sí'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='a' tipo='numérico' interfaz='barra' región='interior' espacio='E4' expresión='(5,(E4._h-220)/2,35,220)' incr='0.5' min='0' max='2' decimales='1' fijo='no' visible='no' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='paso>0'">
+   <param name="C_03" value="id='b' tipo='numérico' interfaz='barra' región='interior' espacio='E4' nombre='a' expresión='((E4._w-220)/2,E4._h-35,220,30)' valor='2' min='1' max='5' decimales='1' fijo='no' visible='no' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='paso>0'">
+   <param name="C_04" value="id='f' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E4' nombre='f(x)=' expresión='(5,5,220,30)' valor='&squot;2*sqrt(x)&squot;' fijo='sí' visible='sí' dibujar-si='paso=2'">
+   <param name="C_05" value="id='Animar' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Animar' expresión='(670,460,100,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='animar' dibujar-si='(paso=0)&(a=0)'">
+   <param name="C_06" value="id='Continuar' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Continuar' expresión='(670,460,100,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='paso=paso+1\na=0\nb=2' dibujar-si='((paso=0)&(a=2))|((paso>0)&(paso<2))'">
+   <param name="A_01" value="id='f2(x)' expresión='x/3.4'">
+   <param name="A_02" value="id='f1(x)' expresión='_Eval_(f)'">
+   <param name="A_03" value="id='f3(x)' expresión='0'">
+   <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=1' hacer='titulo=&squot;Generando volúmenes de revolución&squot;;c2=1;yt=450;E4.rot.z=-30;paso=0'">
+   <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="A_06" value="id='e10' evento='sí' condición='c2=1' acción='calcular' parámetro='a=0\nb=5\nnj=8\nmuestra=1\n' parámetro.fuente='Monospaced,PLAIN,12' ejecución='alternar' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' color='amarillo' expresión='[540,105]' texto='Cuerpos o volúmenes de revolución' fuente='SansSerif,BOLD,21' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='paso=0' expresión='[540,145]' texto='Un volumen de revolución se genera\ncuando una sección  rota  alrededor\nde un eje. \n\nEn la figura de la izquierda, la región\nde  color  naranja  la  vamos  a rotar\nalrededor del eje x. \n\nHaz clic en  el botón de  animación y\nobserva cómo se genera el volumen\nde revolución.' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='texto' color='000087' dibujar-si='paso=1' expresión='[550,245]' texto='Ahora, usa los controles para que\ngeneres el volumen manualmente.' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='texto' color='000087' dibujar-si='paso=2' expresión='[550,180]' texto='Ahora, puedes cambiar la función,\ndigítala  en  el cuadro  de  texto y\npresiona la tecla intro.\n\nCon  el  clic  izquierdo  sostenido,\npuedes rotar le volumen. Con clic\nderecho  sostenido,  cambiar  su\ntamaño. ' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="S_01" value="espacio='E4' tipo='curva' color='azul' expresión='U=5*u y=U x=0 z=f1(U)' ancho='3' Nu='15'">
+   <param name="S_02" value="espacio='E4' tipo='curva' color='verde' expresión='U=5*u y=U x=0 z=f3(U)' ancho='3' Nu='15'">
+   <param name="S_03" value="espacio='E4' tipo='superficie' color='51ff0000' color_reverso='51ff0000' dibujar-si='a>0' expresión='U=u V=b*v z=f1(V)*cos(a*pi*U) x=f1(V)*sen(a*pi*U) y=V' modelo='metal' Nu='15' Nv='15'">
+   <param name="S_04" value="espacio='E4' tipo='superficie' color='naranja' color_reverso='naranja' expresión='U=u V=b*v z=f3(V)*cos(a*pi*U) x=f3(V)*sen(a*pi*U) y=V' modelo='metal' Nu='15' Nv='15'">
+   <param name="S_05" value="espacio='E4' tipo='superficie' color='naranja' color_reverso='naranja' expresión='V=f3(b)+(f1(b)-f3(b))*v U=-u*pi*a x=V*cos(U) y=0 z=V*sen(U)' rotini='(0,-90,0)' posini='(0,b,0)' cortar='sí' modelo='metal' Nu='15' Nv='1'">
+   <param name="S_06" value="espacio='E4' tipo='segmento' color='blanco' expresión='(0,0,0)(8,0,0)' Nu='1'">
+   <param name="S_07" value="espacio='E4' tipo='segmento' color='blanco' expresión='(0,0,0)(0,7,0)' Nu='1'">
+   <param name="S_08" value="espacio='E4' tipo='segmento' color='blanco' expresión='(0,0,0)(0,0,4)' Nu='1'">
+   <param name="S_09" value="espacio='E4' tipo='punto' color_reverso='rosa' expresión='(0,7,0)' posini='(0,0,0.8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green255\blue255;\red255\green0\blue255;}\cf0\f1\fs30\b x\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,15' fijo='sí' ancho='.1'">
+   <param name="S_10" value="espacio='E4' tipo='superficie' color='naranja' color_reverso='naranja' expresión='U=b*u V=f3(b*u)+(f1(b*u)-f3(b*u))*v x=0 y=U z=V' modelo='metal' Nu='15' Nv='1'">
+   <param name="S_11" value="espacio='E4' tipo='superficie' color='naranja' color_reverso='naranja' expresión='U=b*u V=f3(b*u)+(f1(b*u)-f3(b*u))*v x=0 y=U z=V' rotini='(0,a*180,0)' modelo='metal' Nu='15' Nv='1'">
+   <param name="S_12" value="espacio='E4' tipo='segmento' color='blanco' dibujar-si='a=0' expresión='(0,b,-3)(0,b,4.55)' Nu='1'">
+   <param name="S_13" value="espacio='E4' tipo='punto' color_reverso='rosa' dibujar-si='a=0' expresión='(0,b,4.7)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green255\blue0;\red255\green0\blue255;}\cf0\f1\fs28\b   \fs24 x = {\*\mjaformula{\expr b\decimals 1\fixed1}}\cf1\f3\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='sí' ancho='.1'">
+   <param name="Animación" value="controles='no' auto='no' inicio='a=0' hacer='a=a+.1' mientras='a<2'">
+</ajs>
+
+</body>
+</html>

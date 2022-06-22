@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_052_ElTiroParabolico" 
+	nivel="Licenciatura" 
+	area="Matem&aacute;ticas, Geometr&iacute;a anal&iacute;tica, F&iacute;sica, Cinem&aacute;tica" 
+	plataforma="HTML 5"
+        ver="En desarrollo"
+	>
+	<titulo><![CDATA[
+		El tiro parab&oacute;lico 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		Se estudia el tiro parab&oacute;lico como un fen&oacute;meno f&iacute;sico desde un punto de vista din&aacute;mico. Adicionalmente, se hace un estudio geom&eacute;trico de las trayectorias generadas por un proyectil disparado a igual velocidad y con distintos &aacute;ngulos, incluyendo su envolvente y el lugar geom&eacute;trico de sus focos. Se incluye una justificaci&oacute;n de dicho abordaje geom&eacute;trico desde el punto de vista de conservaci&oacute;n de la energ&iacute;a, as&iacute; como una deducci&oacute;n del dicho abordaje.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

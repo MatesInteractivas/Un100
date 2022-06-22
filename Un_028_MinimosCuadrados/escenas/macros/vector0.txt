@@ -1,0 +1,13 @@
+tipo_de_macro=R3
+id='a' expresión='0' evaluar='una-sola-vez' constante='si'
+id='b' expresión='1' evaluar='una-sola-vez' constante='si'
+id='c' expresión='0' evaluar='una-sola-vez' constante='si'
+id='m' expresión='sqrt(a^2+b^2+c^2)' evaluar='siempre' constante='si'
+id='alto_cono' expresión='min(m/2,0.36*48/escala)' evaluar='siempre' constante='si'
+id='ry' expresión='(m=0)?0:90+asen(c/m)*180/pi' evaluar='siempre' constante='si'
+id='rz' expresión='(a#0)?90*(1+sgn(a))+atan(b/a)*180/pi:90*-sgn(b)' evaluar='siempre' constante='si'
+id='rojo' expresión='0.9' evaluar='una-sola-vez' constante='si'
+id='verde' expresión='0' evaluar='una-sola-vez' constante='si'
+id='azul' expresión='0' evaluar='una-sola-vez' constante='si'tipo='segmento' expresión='(0,0,0)(a,b,c)' color='(rojo,verde,azul)' ancho='3'
+tipo='segmento' expresión='(0,0,0)(a-alto_cono/2*a/m,b-alto_cono/2*b/m,c-alto_cono/2*c/m)' color='(rojo,verde,azul)' ancho='3'
+tipo='cono' expresión='Cono' rotini='(0,ry,rz)' posini='(a-(alto_cono/2-2/escala)*a/m,b-(alto_cono/2-2/escala)*b/m,c-(alto_cono/2-2/escala)*c/m)' color='(rojo,verde,azul)' color_reverso='60aaaaaa' modelo='luz' Nu='3' Nv='1' aristas='si' ancho='0.2*48/escala' largo='0.2*48/escala' alto='alto_cono' 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inicio</title>
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="../lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="970x550">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' imagen='images/fondo_desarrollo_1.jpg' despl_imagen='arr-izq' fondo='cdc0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R3' id='E2' x='520' y='70' ancho='400' alto='425' fijo='s&iacute;' O.y='20' despl_imagen='expand.' fondo='fff0f8fa' despliegue='pintor' R3='s&iacute;'">
+   <param name="E_03" value="tipo='R2' id='E3' x='55' y='120' ancho='440' alto='410' fijo='s&iacute;' despl_imagen='arr-izq' fondo='ffc0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(60,22,30,30)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' imagen='images/retroceder.png' acci&oacute;n='calcular' par&aacute;metro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo4' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(880,22,30,30)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' imagen='images/retroceder.png' acci&oacute;n='calcular' par&aacute;metro='parent.set(&squot;scene&squot;,4);\nparent.update()' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_03" value="id='teta' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='E1' nombre='&Aacute;ngulo' expresi&oacute;n='(545,490,150,40)' valor='90' incr='10' min='90' max='270' decimales='0' fijo='s&iacute;' visible='s&iacute;' dibujar-si='avanza' pos_mensajes='centro'">
+   <param name="C_04" value="id='n4' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E3' nombre='Continuar' expresi&oacute;n='(E3._w-125,E3._h-35,120,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='fff0f8ff' negrita='s&iacute;' fuente puntos='18' imagen='images/btn120.png' acci&oacute;n='calcular' par&aacute;metro='avanza=avanza+1' dibujar-si='avanza=0' pos_mensajes='centro'">
+   <param name="C_05" value="id='n5' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E3' nombre='Atr&aacute;s' expresi&oacute;n='(E3._w-125,E3._h-35,120,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='fff0f8ff' negrita='s&iacute;' fuente puntos='18' imagen='images/btn120.png' acci&oacute;n='calcular' par&aacute;metro='avanza=avanza-1' dibujar-si='avanza=1' pos_mensajes='centro'">
+   <param name="A_01" value="id='f1(x)' algoritmo='s&iacute;' expresi&oacute;n='sqrt(1-x^2)' dominio='x&gt;cos(ang)' algoritmo='s&iacute;'">
+   <param name="A_02" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='teta=90;E2.rot.z=-90;E2.rot.y=10;A=2;B=2;avanza=0;;'">
+   <param name="A_03" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer='C=A*B*sin(teta*pi/180);ang=teta*pi/180'">
+   <param name="G_01" value="espacio='E1' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(276+450*s,320,.82-(.15*s),1)' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/panel_550x435.png'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='t&lt;20' expresi&oacute;n='[300,22]' texto='Regla de la mano derecha' fuente='SansSerif,PLAIN,30' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' dibujar-si='C&gt;0' expresi&oacute;n='(-5.5,-1,.7,.7)' archivo='images/mano1.png'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' dibujar-si='C&lt;0' expresi&oacute;n='(-5.5,-2,.7,.7)' archivo='images/mano1.png' rotini='180'">
+   <param name="G_05" value="espacio='E1' tipo='imagen' dibujar-si='C&gt;0' expresi&oacute;n='(4.3,0.6)' archivo='images/mano.png'">
+   <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='C&lt;0' expresi&oacute;n='(4.3,0)' archivo='images/mano.png' rotini='180'">
+   <param name="G_07" value="espacio='E3' tipo='texto' dibujar-si='avanza=0' expresi&oacute;n='[20,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 De acuerdo a la definici\u243 n del producto vectorial,\par el momento {\*\mjaformula M{\subix o}=r x F} es perpendicular al plano\par que contiene a los vectores r y F.\par \par La direcci\u243 n del momento se define por el sentido\par de rotaci\u243 n que se genera al llevar el vector r a la\par posici\u243 n del vector F. Si esta rotaci\u243 n, observada\par desde la punta de {\*\mjaformula M{\subix o}}, es en sentido  antihorario,\par decimos  que  el  momento  es  positivo,  en  caso \par contrario, lo asumiremos negativo.\par \par Otra forma, es usar la regla de la mano derecha.\par Curve sus dedos, simulando el giro que se genera\par al  llevar   r  a  F. La  direcci\u243 n del pulgar indica el\par sentido del momento.\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='E3' tipo='texto' dibujar-si='avanza=1' expresi&oacute;n='[20,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 Observa la siguiente imagen, en la que los dedos\par siguen la direcci\u243 n del vector r hacia el vector p,\par el pulgar se\u241 ala la direcci\u243 n del vector resultante\par del producto vectorial, que para la imagen es L.\par  \par \par \par \par \par \par \par \par Ahora, interact\u250 a con la imagen del lado derecho,\par cambiando los valores del \u225 ngulo que forman los\par dos vectores r y F, observa c\u243 mo cambia el valor\par y la direcci\u243 n del momento.\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='E3' tipo='imagen' dibujar-si='avanza' expresi&oacute;n='(-1,0.5,.8,.8)' archivo='images/mano2.png'">
+   <param name="S_01" value="espacio='E2' tipo='segmento' color='azul' expresi&oacute;n='(0,0,0)(A,A,0)' ancho='4' Nu='1'">
+   <param name="S_02" value="espacio='E2' tipo='segmento' color='009600' expresi&oacute;n='(0,0,0)(B,B,0)' rotini='(0,0,teta)' ancho='4' Nu='1'">
+   <param name="S_03" value="espacio='E2' tipo='segmento' color='rojo' expresi&oacute;n='(0,0,0)(0,0,C)' rotini='(0,0,90)' ancho='4' Nu='1'">
+   <param name="S_04" value="espacio='E2' tipo='superficie' color='a890908b' color_reverso='a890908b' expresi&oacute;n='x=6*u-3 y=6*v-3 z=0' posini='(0,0,-0.01)' Nu='1' Nv='1'">
+   <param name="S_05" value="espacio='E2' tipo='curva' color='negro' dibujar-si='(teta&lt;180)&amp;(teta&gt;90)' expresi&oacute;n='x=u y=sqrt(1-u^2) z=0' rotini='(0,0,teta-45)' ancho='2' Nu='20'">
+   <param name="S_06" value="espacio='E2' tipo='curva' color='negro' dibujar-si='(teta&lt;180)' expresi&oacute;n='x=u y=f1(u) z=0' rotini='(0,0,45)' ancho='2' Nu='20'">
+   <param name="S_07" value="espacio='E2' tipo='curva' color='negro' dibujar-si='(teta&gt;180)' expresi&oacute;n='x=u y=sqrt(1-u^2) z=0' rotini='(0,0,teta+45)' ancho='2' Nu='20'">
+   <param name="S_08" value="espacio='E2' tipo='curva' color='negro' dibujar-si='(teta&gt;180)' expresi&oacute;n='x=u y=-f1(u) z=0' rotini='(0,0,45)' ancho='2' Nu='20'">
+   <param name="S_09" value="espacio='E2' tipo='segmento' color='azul' expresi&oacute;n='(A-.2,A,0)(A,A,0)' ancho='4' Nu='1'">
+   <param name="S_10" value="espacio='E2' tipo='segmento' color='azul' expresi&oacute;n='(A,A-.2,0)(A,A,0)' ancho='4' Nu='1'">
+   <param name="S_11" value="espacio='E2' tipo='segmento' color='009600' expresi&oacute;n='(B,B-.2,0)(B,B,0)' rotini='(0,0,teta)' ancho='4' Nu='1'">
+   <param name="S_12" value="espacio='E2' tipo='segmento' color='009600' expresi&oacute;n='(B-.2,B,0)(B,B,0)' rotini='(0,0,teta)' ancho='4' Nu='1'">
+   <param name="S_13" value="espacio='E2' tipo='cono' color='rojo' color_reverso='94ff0000' dibujar-si='C&gt;0' expresi&oacute;n='Cono' rotini='(0,180,0)' posini='(0,0,C)' modelo='metal' ancho='.3' largo='.3' alto='.3'">
+   <param name="S_14" value="espacio='E2' tipo='cono' color='rojo' color_reverso='94ff0000' dibujar-si='C&lt;=0' expresi&oacute;n='Cono' posini='(0,0,C)' modelo='metal' ancho='.3' largo='.3' alto='.3'">
+   <param name="S_15" value="espacio='E2' tipo='punto' color='negro' expresi&oacute;n='(A,A,0)' texto='r' fijo='s&iacute;' ancho='.1'">
+   <param name="S_16" value="espacio='E2' tipo='punto' color='negro' expresi&oacute;n='(B,B,0)' rotini='(0,0,teta)' texto='F' fijo='s&iacute;' ancho='.1'">
+   <param name="S_17" value="espacio='E2' tipo='punto' color='negro' dibujar-si='C&gt;0' expresi&oacute;n='(0,0,C)' texto='  M = r x F' fijo='s&iacute;' ancho='.1'">
+   <param name="S_18" value="espacio='E2' tipo='punto' color='negro' dibujar-si='C&lt;=0' expresi&oacute;n='(0,0,C)' texto='  M = - r x F' fijo='s&iacute;' ancho='.1'">
+</ajs>
+
+</body>
+</html>

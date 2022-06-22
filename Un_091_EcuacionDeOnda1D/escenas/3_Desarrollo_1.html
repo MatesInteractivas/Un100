@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E0' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E_clasico' x='10' y='90' ancho='64%' alto='35%' fijo='sí' escala='25' despl_imagen='arr-izq' fondo='d5f3fe' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E_cuantico' x='10' y='289' ancho='64%' alto='35%' fijo='sí' escala='25' despl_imagen='arr-izq' fondo='d5f3fe' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='E_Fondo' x='10' y='488' ancho='64%' alto='10%' fijo='sí' despl_imagen='arr-izq' fondo='d5f3fe' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='E_I' x='66%' y='90' ancho='33%' alto='35%' fijo='sí' escala='20' despl_imagen='arr-izq' fondo='d5f3fe' red='no' red10='no' ejes='405860' texto='no'">
+   <param name="E_06" value="tipo='R2' id='E_II' x='66%' y='289' ancho='33%' alto='35%' fijo='sí' escala='20' despl_imagen='arr-izq' fondo='d5f3fe' red='no' red10='no' ejes='405860' texto='no'">
+   <param name="E_07" value="tipo='R2' id='E_Fondo_2' x='66%' y='488' ancho='33%' alto='10%' fijo='sí' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_08" value="tipo='HTMLIFrame' id='E_Explicacion' x='66%' y='90' ancho='320' alto='395' dibujar-si='var_si_visible_E_III' despl_imagen='arr-izq' fondo='blanco' archivo='[vec_explicacion[var_explicacion]]'">
+   <param name="C_01" value="id='menu_altura' tipo='numérico' interfaz='menú' región='interior' espacio='E_Fondo' nombre='_nada_' expresión='(75,10,100,30)' valor='2' decimales='0' fijo='sí' visible='no' opciones='baja,media,alta' parámetro.fuente='Serif,PLAIN,9'">
+   <param name="C_02" value="id='menu_velocidad' tipo='numérico' interfaz='menú' región='interior' espacio='E_Fondo' nombre='_nada_' expresión='(325,10,100,30)' decimales='0' fijo='sí' visible='no' opciones='baja,media,alta' parámetro.fuente='Serif,PLAIN,9'">
+   <param name="C_03" value="id='tiempo' tipo='numérico' región='interior' espacio='E_Fondo_2' nombre='Tiempo' expresión='(10,5,150,45)' valor='-4.5' incr='1' min='-4.5' max='5' fijo='sí' visible='no'">
+   <param name="C_04" value="id='particula' tipo='numérico' interfaz='menú' región='interior' espacio='E_cuantico' nombre='_nada_' expresión='(E_cuantico._w-99,E_cuantico._h-43,98,30)' valor='1' fijo='sí' visible='no' opciones='onda,partícula'">
+   <param name="C_05" value="id='var_si_visible_E_III' tipo='numérico' interfaz='menú' región='interior' espacio='E_Fondo' nombre='_nada_' expresión='(550,10,50,30)' valor='no' fijo='sí' visible='no' opciones='no,si' dibujar-si='1'">
+   <param name="C_06" value="id='var_explicacion' tipo='numérico' región='exterior' espacio='E_clasico' nombre='var_explicacion' incr='1' min='0' max='10' decimales='0' fijo='sí' visible='sí'">
+   <param name="C_07" value="id='btnIniAnimacion' tipo='numérico' interfaz='botón' región='interior' espacio='E_Fondo_2' nombre='Animación' expresión='(200,13,100,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn100.png' acción='animar' parámetro='Descartes.continuar()'">
+   <param name="A_01" value="id='controles()' algoritmo='sí' algoritmo='sí' hacer='alt.x=75;alt.txt.x=alt.x-60;;vel.x=325;vel.txt.x=vel.x-85;;exp.x=550;exp.txt.x=exp.x-100;;tie.x=80;tie.txt.x=tie.x-70'">
+   <param name="A_02" value="id='limite1' expresión='-1'">
+   <param name="A_03" value="id='limite2' expresión='1'">
+   <param name="A_04" value="id='v_altura' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='v_altura[0]=0;v_altura[1]=2;v_altura[2]=4;'">
+   <param name="A_05" value="id='v_velocidad' vector='sí' evaluar='una-sola-vez' tamaño='4' expresión='v_velocidad[0]=0;v_velocidad[1]=2;v_velocidad[2]=4;'">
+   <param name="A_06" value="id='f2(y)' expresión='v_altura[menu_altura]-1.75 + seno(5*(1+v_velocidad[menu_velocidad])*x)/9' dominio='(x >-4.5)&(x < tiempo)&(x <= limite1)'">
+   <param name="A_07" value="id='seno(x)' expresión='sen(x)'">
+   <param name="A_08" value="id='f1(x)' expresión='v_altura[menu_altura]-1.75' dominio='(x >-4.5)&(x < tiempo)&(x <= limite1)'">
+   <param name="A_09" value="id='f_cl_2(x)' expresión='v_altura[menu_altura]-1.75' dominio='(x >-1)&(x < tiempo)&(x >= limite1)'">
+   <param name="A_10" value="id='f_cu_2(y)' expresión='v_altura[menu_altura]-1.75 + seno(5*(1+v_velocidad[menu_velocidad])*x)/9' dominio='(x >-4.5)&(x < tiempo)&(x > limite1)'">
+   <param name="A_11" value="id='f_muro(x)' expresión='(1/100)*e^-(0.5*x-5)-3'">
+   <param name="A_12" value="id='e_bajo_bajo(x)' expresión='(1.1/1.2)*e^-(1.2*x-(-1.7))-2.2' dominio='(x >limite1)&(x < tiempo)&(x < limite2)&(y > -2)&(v_altura[menu_altura]=0)&(v_velocidad[menu_velocidad]=0)'">
+   <param name="A_13" value="id='e_bajo_medio(x)' expresión='(0.98/0.4)*e^-(0.3*x-(-1.7))-2.4' dominio='(x >limite1)&(x < tiempo)&(x < limite2)&(y > -2)&(v_altura[menu_altura]=0)&(v_velocidad[menu_velocidad]=2)'">
+   <param name="A_14" value="id='e_bajo_alto(x)' expresión='(1.1/1.2)*e^-(0.4*x-(-1.2))-2.2' dominio='(x >limite1)&(x < tiempo)&(x < limite2)&(y > -2)&(v_altura[menu_altura]=0)&(v_velocidad[menu_velocidad]=4)'">
+   <param name="A_15" value="id='e_medio_bajo(x)' expresión='(1.1/1.2)*e^-(1.2*x-(-1.7))-0.2' dominio='(x >limite1)&(x < tiempo)&(x < limite2)&(y > -2)&(v_altura[menu_altura]=2)&(v_velocidad[menu_velocidad]=0)'">
+   <param name="A_16" value="id='e_medio_medio(x)' expresión='(0.98/0.4)*e^-(0.3*x-(-1.7))-0.4' dominio='(x >limite1)&(x < tiempo)&(x < limite2)&(y > -2)&(v_altura[menu_altura]=2)&(v_velocidad[menu_velocidad]=2)'">
+   <param name="A_17" value="id='e_medio_alta(x)' expresión='(1.1/1.2)*e^-(0.4*x-(-1.2))-0.2' dominio='(x >limite1)&(x < tiempo)&(x < limite2)&(y > -2)&(v_altura[menu_altura]=2)&(v_velocidad[menu_velocidad]=4)'">
+   <param name="A_18" value="id='f_cu_3(y)' expresión='v_altura[menu_altura]-2.1 + seno(5*(1+v_velocidad[menu_velocidad])*x)/15' dominio='(x >limite2)&(x < tiempo)&(v_altura[menu_altura]=2)'">
+   <param name="A_19" value="id='f_particula(y)' expresión='v_altura[menu_altura]-1.75 '">
+   <param name="A_20" value="id='part_altura_media' vector='sí' evaluar='una-sola-vez' expresión='part_altura_media[0]=-0.15;part_altura_media[1]=-0.075;part_altura_media[2]=0'">
+   <param name="A_21" value="id='energia_clasica(y)' expresión='2*(ind(x<limite1)|(menu_altura=2))' dominio='(x >-4.5)&(x < tiempo)'">
+   <param name="A_22" value="id='v_altura_inicial' vector='sí' evaluar='una-sola-vez' expresión='v_altura_inicial[0]=0.66666;v_altura_inicial[1]=1.33333;v_altura_inicial[2]=2;'">
+   <param name="A_23" value="id='energia_cuantico(x)' expresión='v_altura_inicial[menu_altura]' dominio='(ind(x>-4.5)&ind(x<5))&(x < tiempo)'">
+   <param name="A_24" value="id='energia_cuantica_alta(x)' expresión='v_altura_inicial[menu_altura]' dominio='(ind(x>-4.5)&ind(x<5))&(x < tiempo)&ind(menu_altura=2)'">
+   <param name="A_25" value="id='energia_cuantica_media(x)' expresión='v_altura_inicial[menu_altura]' dominio='(ind(x>-4.5)&ind(x<5))&(x < tiempo)&ind(menu_altura=1)'">
+   <param name="A_26" value="id='energia_cuantica_baja(x)' expresión='energia_cuantico(x)' dominio='ind(menu_altura=0)'">
+   <param name="A_27" value="id='ec_media_bajo(x)' expresión='(1.1/1.2)*e^-(1.2*x-(-1.7))'">
+   <param name="A_28" value="id='ec_media_medio(x)' expresión='(0.98/0.4)*e^-(0.3*x-(-1.7))'">
+   <param name="A_29" value="id='ec_media_alto(x)' expresión='(1.1/1.2)*e^-(0.4*x-(-1.2))'">
+   <param name="A_30" value="id='ec_bajo_bajo(x)' expresión='(5.9/1.2)*e^-(1.4*x-(-2.6))'">
+   <param name="A_31" value="id='ec_bajo_medio(x)' expresión='(1.8/1.2)*e^-(1.4*x-(-1.7))'">
+   <param name="A_32" value="id='ec_media_medio2(x)' expresión='0.5+ec_media_medio(x)*energia_cuantica_media(x)' dominio='(ind(x>=limite1)&ind(x<=limite2)&ind(menu_velocidad=1)&ind(x<tiempo))'">
+   <param name="A_33" value="id='energia_cuantica_media_pre(x)' expresión='v_altura_inicial[menu_altura]' dominio='(ind(x>-4.5)&ind(x<=limite1))&(x < tiempo)&ind(menu_altura=1)'">
+   <param name="A_34" value="id='energia_cuantica_media_pos(x)' expresión='v_altura_inicial[menu_altura]' dominio='(ind(x>=limite2)&ind(x<5))&(x < tiempo)&ind(menu_altura=1)'">
+   <param name="A_35" value="id='ec_media_bajo2(x)' expresión='0.55+ec_media_bajo(x)*energia_cuantica_media(x)' dominio='(ind(x>=limite1-0.05)&ind(x<=limite2)&ind(menu_velocidad=0)&ind(x<tiempo))'">
+   <param name="A_36" value="id='ec_media_alto2(x)' expresión='0.75+ec_media_alto(x)*energia_cuantica_media(x)' dominio='(ind(x>=limite1-0.05)&ind(x<=limite2)&ind(menu_velocidad=2)&ind(x<tiempo))'">
+   <param name="A_37" value="id='energia_cuantica_baja_pre(x)' expresión='v_altura_inicial[menu_altura]' dominio='(ind(x>-4.5)&ind(x<=limite1))&(x < tiempo)&ind(menu_altura=0)'">
+   <param name="A_38" value="id='ec_bajo_bajo2(x)' expresión='-0.25+ec_bajo_bajo(x)*energia_cuantica_baja(x)' dominio='(ind(x>=limite1-0.001)&ind(x<=limite2-1)&ind(menu_velocidad=0)&ind(x<tiempo))'">
+   <param name="A_39" value="id='ec_bajo_medio2(x)' expresión='-0.15+ec_bajo_medio(x)*energia_cuantica_baja(x)' dominio='(ind(x>=limite1-0.05)&ind(x<=limite2-0.5)&ind(menu_velocidad=1)&ind(x<tiempo))'">
+   <param name="A_40" value="id='ec_bajo_alto(x)' expresión='(1.8/1.2)*e^-(1.4*x-(-1.7))'">
+   <param name="A_41" value="id='ec_bajo_alto2(x)' expresión='-0.05+ec_bajo_alto(x)*energia_cuantica_baja(x)' dominio='(ind(x>=limite1-0.00)&ind(x<=limite2-0.0)&ind(menu_velocidad=2)&ind(x<tiempo))'">
+   <param name="A_42" value="id='energia_cuantica_bajo_pos_bajo(x)' expresión='0' dominio='(ind(x>=limite2-1.0)&ind(x<5))&(x < tiempo)&ind(menu_altura=0)'">
+   <param name="A_43" value="id='energia_cuantica_bajo_pos_medio(x)' expresión='0' dominio='(ind(x>=limite2-1.0)&ind(x<5))&(x < tiempo)&ind(menu_altura=0)'">
+   <param name="A_44" value="id='energia_cuantica_bajo_pos_alto(x)' expresión='0' dominio='(ind(x>=limite2-0.0)&ind(x<5))&(x < tiempo)&ind(menu_altura=0)'">
+   <param name="A_45" value="id='vec_explicacion' vector='sí' evaluar='una-sola-vez' tamaño='6' expresión='vec_explicacion[0]=&squot;../escenas/explicacion/muro_antes/Explicacion_E1_Muro_Antes.html&squot;;vec_explicacion[1]=&squot;../escenas/explicacion/muro_durante/Explicacion_E2.1_Muro_Durante.html&squot;;vec_explicacion[2]=&squot;../escenas/explicacion/muro_durante/Explicacion_E2.2_Muro_Durante.html&squot;;vec_explicacion[3]=&squot;../escenas/explicacion/muro_despues/Explicacion_E3.1_Muro_Despues.html&squot;;vec_explicacion[4]=&squot;../escenas/explicacion/muro_despues/Explicacion_E3.2_Muro_Despues.html&squot;;vec_explicacion[5]=&squot;../escenas/explicacion/muro_despues/Explicacion_E3.3_Muro_Despues.html&squot;'">
+   <param name="A_46" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Modelo clásico y cuántico&squot;'">
+   <param name="A_47" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="A_48" value="id='Ex1' evento='sí' condición='(tiempo < limite1)' acción='calcular' parámetro='var_explicacion = 0' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_49" value="id='Ex2.1' evento='sí' condición='(tiempo >= limite1)&(tiempo <= limite2)&(menu_altura = 2)' acción='calcular' parámetro='var_explicacion = 1' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_50" value="id='controles' evento='sí' condición='1' acción='calcular' parámetro='controles()' ejecución='siempre' pos_mensajes='centro'">
+   <param name="A_51" value="id='Ex2.2' evento='sí' condición='(tiempo >= limite1)&(tiempo <= limite2)&(!(menu_altura = 2))' acción='calcular' parámetro='var_explicacion = 2' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_52" value="id='Ex3.1' evento='sí' condición='(tiempo >= limite2)&(menu_altura = 2)' acción='calcular' parámetro='var_explicacion = 3' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_53" value="id='Ex3.2' evento='sí' condición='(tiempo >= limite2)&(menu_altura = 1)' acción='calcular' parámetro='var_explicacion = 4' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_54" value="id='Ex3.3' evento='sí' condición='(tiempo >= limite2)&(menu_altura = 0)' acción='calcular' parámetro='var_explicacion = 5' ejecución='alternar' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E_clasico' tipo='polígono' expresión='(-6,-2)(-6,-3)(6,-3)(6,-2)' relleno='negro'">
+   <param name="G_02" value="espacio='E_cuantico' tipo='polígono' expresión='(-6,-2)(-6,-3)(6,-3)(6,-2)' relleno='negro'">
+   <param name="G_03" value="espacio='E_clasico' tipo='polígono' expresión='(-5,-2+v_altura[menu_altura])(-5,-1.5+v_altura[menu_altura])(-4,-1.5+v_altura[menu_altura])(-4,-2+v_altura[menu_altura])(-5,-2+v_altura[menu_altura])' relleno='ffff80'">
+   <param name="G_04" value="espacio='E_cuantico' tipo='polígono' expresión='(-5,-2+v_altura[menu_altura])(-5,-1.5+v_altura[menu_altura])(-4,-1.5+v_altura[menu_altura])(-4,-2+v_altura[menu_altura])(-5,-2+v_altura[menu_altura])' relleno='rojo'">
+   <param name="G_05" value="espacio='E_clasico' tipo='polígono' expresión='(-1,-2)(-1,2)(1,2)(1,-2)' relleno='gris'">
+   <param name="G_06" value="espacio='E_cuantico' tipo='polígono' expresión='(-1,-2)(-1,2)(1,2)(1,-2)' relleno='gris'">
+   <param name="G_07" value="espacio='E_clasico' tipo='texto' color='blanco' expresión='[235,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 MODELO CL\u193 SICO\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_08" value="espacio='E_cuantico' tipo='texto' color='blanco' expresión='[220,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 MODELO CU\u193 NTICO\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_09" value="espacio='E_clasico' tipo='ecuación' color='rojo' dibujar-si='0' expresión='y = f1(x)' ancho='4'">
+   <param name="G_10" value="espacio='E_cuantico' tipo='ecuación' color='magenta' dibujar-si='particula = 0' expresión='y=f2(y)' ancho='4'">
+   <param name="G_11" value="espacio='E_clasico' tipo='ecuación' color='rojo' dibujar-si='(menu_altura = 2)&0' expresión='y =f_cl_2(x)' ancho='4'">
+   <param name="G_12" value="espacio='E_cuantico' tipo='ecuación' color='magenta' dibujar-si='(menu_altura=2)&(particula=0)' expresión='y=f_cu_2(y)' ancho='4'">
+   <param name="G_13" value="espacio='E_cuantico' tipo='ecuación' color='690069' expresión='y=e_bajo_bajo(x)' ancho='4'">
+   <param name="G_14" value="espacio='E_cuantico' tipo='ecuación' color='690069' expresión='y=e_bajo_medio(x)' ancho='4'">
+   <param name="G_15" value="espacio='E_cuantico' tipo='ecuación' color='690069' expresión='y=e_bajo_alto(x)' ancho='4'">
+   <param name="G_16" value="espacio='E_cuantico' tipo='ecuación' color='690069' expresión='y=e_medio_bajo(x)' ancho='4'">
+   <param name="G_17" value="espacio='E_cuantico' tipo='ecuación' color='690069' expresión='y=e_medio_medio(x)' ancho='4'">
+   <param name="G_18" value="espacio='E_cuantico' tipo='ecuación' color='690069' expresión='y=e_medio_alta(x)' ancho='4'">
+   <param name="G_19" value="espacio='E_cuantico' tipo='ecuación' color='magenta' dibujar-si='(particula=0)' expresión='y=f_cu_3(y)' ancho='4'">
+   <param name="G_20" value="espacio='E_cuantico' tipo='arco' dibujar-si='(tiempo < limite1)&(particula=1)' centro='(tiempo,f_particula(y))' radio='0.09' fin='360' fijo='sí' relleno='ffff80'">
+   <param name="G_21" value="espacio='E_cuantico' tipo='arco' dibujar-si='(tiempo > limite1)&(particula=1)&(menu_altura = 2)' centro='(tiempo,f_particula(y))' radio='0.09' fin='360' fijo='sí' relleno='ffff80'">
+   <param name="G_22" value="espacio='E_cuantico' tipo='arco' dibujar-si='(tiempo > limite2)&(particula=1)&(menu_altura = 1)' centro='(tiempo,part_altura_media[menu_velocidad])' radio='0.09' fin='360' fijo='sí' relleno='ffff80'">
+   <param name="G_23" value="espacio='E_clasico' tipo='arco' dibujar-si='(tiempo < limite1)|(menu_altura=2)' centro='(tiempo,v_altura[menu_altura]-1.75)' radio='0.2' fin='360' fijo='sí' relleno='grisObscuro'">
+   <param name="G_24" value="espacio='E_I' tipo='texto' fondo='sí' color='negro' expresión='[40,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34 Energ\u237 a del Modelo Cl\u225 sico\f2\fs30}' fuente='SansSerif,PLAIN,17' fijo='sí' color_borde_texto='negro'">
+   <param name="G_25" value="espacio='E_II' tipo='texto' fondo='sí' color='negro' expresión='[40,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs34 Energ\u237 a del Modelo Cu\u225 ntico\f2\fs30}' fuente='SansSerif,PLAIN,17' fijo='sí' color_borde_texto='negro'">
+   <param name="G_26" value="espacio='E_I' tipo='ecuación' color='azul' expresión='y=energia_clasica(x)' ancho='4'">
+   <param name="G_27" value="espacio='E_I' tipo='ecuación' color='rojo' expresión='x=-4.5'">
+   <param name="G_28" value="espacio='E_I' tipo='ecuación' color='rojo' expresión='x=5'">
+   <param name="G_29" value="espacio='E_II' tipo='ecuación' color='rojo' expresión='x=-4.5'">
+   <param name="G_30" value="espacio='E_II' tipo='ecuación' color='rojo' expresión='x=5'">
+   <param name="G_31" value="espacio='E_II' tipo='ecuación' color='verde' expresión='y=energia_cuantica_alta(x)' ancho='4'">
+   <param name="G_32" value="espacio='E_II' tipo='ecuación' color='verde' expresión='y=energia_cuantica_media_pre(x)' ancho='4'">
+   <param name="G_33" value="espacio='E_II' tipo='ecuación' color='verde' expresión='y=energia_cuantica_baja_pre(x)' ancho='4'">
+   <param name="G_34" value="espacio='E_II' tipo='ecuación' color='verde' dibujar-si='(menu_velocidad=0)&(menu_altura=1)' expresión='y=ec_media_bajo2(x)' ancho='4'">
+   <param name="G_35" value="espacio='E_II' tipo='ecuación' color='verde' dibujar-si='(menu_velocidad=1)&(menu_altura=1)' expresión='y=ec_media_medio2(x)' ancho='4'">
+   <param name="G_36" value="espacio='E_II' tipo='ecuación' color='verde' dibujar-si='(menu_velocidad=2)&(menu_altura=1)' expresión='y=ec_media_alto2(x)' ancho='4'">
+   <param name="G_37" value="espacio='E_II' tipo='ecuación' color='verde' dibujar-si='(menu_velocidad=0)&(menu_altura=1)' expresión='y=-0.7+energia_cuantica_media_pos(x)' ancho='4'">
+   <param name="G_38" value="espacio='E_II' tipo='ecuación' color='verde' dibujar-si='(menu_velocidad=1)&(menu_altura=1)' expresión='y=-0.4+energia_cuantica_media_pos(x)' ancho='4'">
+   <param name="G_39" value="espacio='E_II' tipo='ecuación' color='verde' dibujar-si='(menu_velocidad=2)&(menu_altura=1)' expresión='y=-0.35+energia_cuantica_media_pos(x)' ancho='4'">
+   <param name="G_40" value="espacio='E_II' tipo='ecuación' color='verde' dibujar-si='(menu_velocidad=0)&(menu_altura=0)' expresión='y=ec_bajo_bajo2(x)' ancho='4'">
+   <param name="G_41" value="espacio='E_II' tipo='ecuación' color='verde' dibujar-si='(menu_velocidad=1)&(menu_altura=0)' expresión='y=ec_bajo_medio2(x)' ancho='4'">
+   <param name="G_42" value="espacio='E_II' tipo='ecuación' color='verde' dibujar-si='(menu_velocidad=2)&(menu_altura=0)' expresión='y=ec_bajo_alto2(x)' ancho='4'">
+   <param name="G_43" value="espacio='E_II' tipo='ecuación' color='verde' dibujar-si='(menu_velocidad=0)&(menu_altura=0)' expresión='y=energia_cuantica_bajo_pos_bajo(x)' ancho='4'">
+   <param name="G_44" value="espacio='E_II' tipo='ecuación' color='verde' dibujar-si='(menu_velocidad=1)&(menu_altura=0)' expresión='y=energia_cuantica_bajo_pos_medio(x)' ancho='4'">
+   <param name="G_45" value="espacio='E_II' tipo='ecuación' color='verde' dibujar-si='(menu_velocidad=2)&(menu_altura=0)' expresión='y=energia_cuantica_bajo_pos_alto(x)' ancho='4'">
+   <param name="G_46" value="espacio='E_Fondo' tipo='texto' expresión='[alt.txt.x,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34 Altura}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_47" value="espacio='E_Fondo' tipo='texto' expresión='[vel.txt.x,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34 Velocidad}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_48" value="espacio='E_Fondo' tipo='texto' expresión='[exp.txt.x,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34 Explicaci\u243 n}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_49" value="espacio='E0' tipo='texto' expresión='[(E0._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="Animación" value="controles='no' auto='no' inicio='tiempo = -4.5' hacer='tiempo = tiempo  + 0.1;;E_clasico.var_explicacion = 1;' mientras='tiempo <= 5'">
+</ajs>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_02.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='GRAF' x='55' y='105' ancho='425' alto='400' dibujar-si='!info' fijo='sí' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' cID='12f2d9061fb'">
+   <param name="E_03" value="tipo='R2' id='E2' x='540' y='105' ancho='375' alto='399' dibujar-si='!info' fijo='sí' despl_imagen='arr-izq' fondo='25f0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='E0' x='55' y='105' ancho='425' alto='400' dibujar-si='ej' fijo='sí' despl_imagen='arr-izq' fondo='negro' red='no' red10='no' ejes='no' texto='no' cID='12f2d9061fb'">
+   <param name="E_05" value="tipo='R2' id='Covertura' dibujar-si='info' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_06" value="tipo='R2' id='INFO' x='(970-400)/2' y='100' ancho='400' alto='350' dibujar-si='info' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo0' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(15,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,0);\nparent.update()' dibujar-si='0'">
+   <param name="C_02" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='cerrarInfo' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(INFO._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='info=0' pos_mensajes='centro'">
+   <param name="C_04" value="id='scroll' tipo='numérico' región='interior' espacio='E2' nombre='scroll' expresión='(E2._w-33,E2._h-55,28,50)' incr='50' min='-550' max='0' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_05" value="id='retrocede' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(15,475,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='av=max(0,av-1)' dibujar-si='(av>0)&(av<5)&(ej)' pos_mensajes='centro'">
+   <param name="C_06" value="id='avanza' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(488,475,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='av=av+1\nenv=0' dibujar-si='(av<4)&(ej)' pos_mensajes='centro'">
+   <param name="C_07" value="id='GRAF.escala' tipo='numérico' región='interior' espacio='E1' nombre='_nada_' expresión='(71+GRAF._w,105+55,28,50)' valor='32' incr='1' min='1' max='1000000' decimales='6' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='curva==0' pos_mensajes='centro'">
+   <param name="C_08" value="id='GRAF.Ox' tipo='numérico' región='interior' espacio='E1' nombre='_nada_' expresión='(71+GRAF._w,105+2*55+50,28,50)' incr='10' decimales='6' fijo='no' visible='no' dibujar-si='curva==0' pos_mensajes='centro'">
+   <param name="C_09" value="id='GRAF.Oy' tipo='numérico' región='interior' espacio='E1' nombre='_nada_' expresión='(71+GRAF._w,105+3*55+2*50,28,50)' valor='-30' incr='10' decimales='6' fijo='no' visible='no' dibujar-si='curva==0' pos_mensajes='centro'">
+   <param name="C_10" value="id='t' tipo='numérico' región='interior' espacio='GRAF' nombre='_nada_' expresión='(30,GRAF._h-55,27,50)' incr='0.02' min='0' max='1' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_11" value="id='R' tipo='numérico' región='interior' espacio='GRAF' nombre='_nada_' expresión='(152,GRAF._h-55,70,50)' valor='1.5' min='0' decimales='1' fijo='sí' visible='sí' acción='calcular' pos_mensajes='centro'">
+   <param name="C_12" value="id='envolvente' tipo='numérico' región='interior' espacio='GRAF' nombre='_nada_' expresión='(GRAF._w-60,GRAF._h-55,55,50)' incr='1' min='0' max='1' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_13" value="id='verEj' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='Ejemplos' expresión='(E2._w/2-50,880+scroll,100,30)' fijo='sí' visible='sí' color='blanco' color-int='ffa0a0a0' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='ej=1' dibujar-si='!ej' pos_mensajes='centro'">
+   <param name="C_14" value="id='ocEj' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='Ocultar' expresión='(E2._w/2-50,880+scroll,100,30)' fijo='sí' visible='sí' color='blanco' color-int='ffa0a0a0' fuente puntos='18' imagen='images/btn100.png' acción='calcular' parámetro='ej=0' dibujar-si='ej' pos_mensajes='centro'">
+   <param name="C_15" value="id='avX' tipo='numérico' región='interior' espacio='E1' nombre='avX' incr='1' fijo='no' visible='sí' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_16" value="id='avY' tipo='numérico' región='interior' espacio='E1' nombre='avY' incr='1' fijo='no' visible='sí' dibujar-si='0' pos_mensajes='centro'">
+   <param name="A_01" value="id='T' expresión='pi/2+2*pi*t'">
+   <param name="A_02" value="id='X' expresión='R*cos(T)'">
+   <param name="A_03" value="id='Y' expresión='R*sen(T)'">
+   <param name="A_04" value="id='r' expresión='sqrt((X-0)^2+(Y-R)^2)'">
+   <param name="A_05" value="id='T2(u)' expresión='3*pi/2+4*pi*u'">
+   <param name="A_06" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Envolvente&squot;' hacer='info=1;ej=0;av=0;RA=R'">
+   <param name="A_07" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='GRAF.escala=((R!=RA)|(eA!=envolvente))?GRAF.escala+0.000001:GRAF.escala;t=(eA!=envolvente)?0:t;RA=R;eA=envolvente;tm=t'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' dibujar-si='ej' coord_abs='sí' expresión='(30,490,.8,.8)' archivo='images/fondo_izq.png'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' dibujar-si='ej' coord_abs='sí' expresión='(505,490,.8,.8)' archivo='images/fondo_der.png'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' dibujar-si='!info' coord_abs='sí' expresión='(540,105)' archivo='images/envelope.jpg'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='0' expresión='[50,20]' texto='th=[th]   ah=[ah]\nRh=[Rh]   rh=[rh]\nRr=[Rr]   T=[T]   T2=[T2]\ncurva=[curva]\ntAh=[tAh]\n' fijo='no'">
+   <param name="G_06" value="espacio='INFO' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(INFO._w/2,18,INFO._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_07" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_08" value="espacio='E2' tipo='texto' expresión='[10,10+scroll]' texto='La envolvente es una curva que es tangente a todas las curvas que integran una familia de curvas. De ahí que pueda verse como una forma de obtener una nueva curva a partir de una familia de curvas. Dos curvas son tangentes entre sí si y sólo si comparten una tangente común en un punto común.\n\nHabíamos visto que la cardioide es un ejemplo de epicicloide, que se genera cuando los radios de la circunferencia base y de la circunferencia generatriz son iguales. La cardioide también es la envolvente de los círculos cuyo diámetro une un punto fijo (en este caso Q) de un círculo (aquí, la circunferencia base de la epicicloide) con otro punto de este círculo (el punto C, en este caso). Presiona sobre el control t para generar esta curva como envolvente.\n\nEn óptica, la cáustica es la envolvente de los rayos de luz reflejados o refractados. Cuando la luz se refleja en una curva, la envolvente de los rayos reflejados es una cáustica por reflexión o catatáustica. Cuando los rayos se refractan en una curva, la envolvente de los rayos reflejados es una cáustica por refracción o diacáustica.\nLas cáusticas fueron estudiadas por primera vez por Huygens y Tschirnhaus al rededor de 1678. Johann Bernoulli, Jacob Bernoulli, de L&squot;Hôpital y Lagrange estudiaron también las curvas cáusticas.\n\nAprieta sobre el botón para ver algunos ejemplos de envolventes como cáusticas.\n\n' fuente='SansSerif,PLAIN,18' fijo='sí' ancho='360'">
+   <param name="G_09" value="espacio='GRAF' tipo='arco' color='004488' dibujar-si='(t<1)' radio='R' fin='360' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='3'">
+   <param name="G_10" value="espacio='GRAF' tipo='arco' color='d80028' dibujar-si='(t<1)&envolvente' centro='(X,Y)' radio='r' fin='360' rastro='f080a0' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_11" value="espacio='GRAF' tipo='arco' color='0077dd' dibujar-si='(t<1)' centro='(2*X,2*Y)' radio='R' fin='360' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='3'">
+   <param name="G_12" value="espacio='GRAF' tipo='arco' color='5599ff' dibujar-si='(t<1)&envolvente' centro='(X,Y)' radio='r' fin='360' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='2'">
+   <param name="G_13" value="espacio='GRAF' tipo='curva' color='d80028' expresión='(2*X+R*cos(T2(t)),2*Y+R*sen(T2(t)))' t.intervalo='[0,tm]' t.pasos='128' ancho='3'">
+   <param name="G_14" value="espacio='GRAF' tipo='segmento' color='0077dd' dibujar-si='(t<1)' expresión='(2*X,2*Y)(2*X+R*cos(T2(t)),2*Y+R*sen(T2(t)))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='3' ancho='2'">
+   <param name="G_15" value="espacio='GRAF' tipo='segmento' color='5599ff' dibujar-si='(t<1)&envolvente' expresión='(X,Y)(0,R)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='3' ancho='2'">
+   <param name="G_16" value="espacio='GRAF' tipo='punto' expresión='(2*X+R*cos(T2(t)),2*Y+R*sen(T2(t)))' texto='P' fuente='Serif,PLAIN,14' fijo='sí'">
+   <param name="G_17" value="espacio='GRAF' tipo='punto' dibujar-si='(0.03<t)&(t<1-0.03)' expresión='(X,Y)' texto='C' fuente='Serif,BOLD,16' fijo='sí'">
+   <param name="G_18" value="espacio='GRAF' tipo='punto' dibujar-si='(0.03<t)&(t<1-0.03)' expresión='(0,R)' texto='Q' fuente='Serif,PLAIN,14' fijo='sí'">
+   <param name="G_19" value="espacio='GRAF' tipo='texto' expresión='[15,GRAF._h-44]' texto='t' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_20" value="espacio='GRAF' tipo='texto' expresión='[128,GRAF._h-44]' texto='R' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_21" value="espacio='GRAF' tipo='texto' expresión='[54+2*70+46,GRAF._h-44]' texto='Envolvente' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_22" value="espacio='E0' tipo='imagen' dibujar-si='av==0' coord_abs='sí' expresión='((E0._w-400)/2,(E0._h-255)/2-30)' archivo='images/Caustic00.jpg'">
+   <param name="G_23" value="espacio='E0' tipo='texto' color='blanco' dibujar-si='av==0' expresión='[20+77+_avX,E0._h-55]' texto='Cáustica en una taza de café' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_24" value="espacio='E0' tipo='imagen' dibujar-si='av==1' coord_abs='sí' expresión='((E0._w-280)/2,10+avY)' archivo='images/caustica0.gif'">
+   <param name="G_25" value="espacio='E0' tipo='texto' color='blanco' dibujar-si='av==1' expresión='[27+_avX,E0._h-150+_avY]' texto='Jacob Bernouilli descubrió varias propiedades de la Espiral logarítmica que les pasaron desapercibidas a Descartes y Torricelli, entre ellas el hecho de que es la única curva cuya caústica, evoluta, involuta y podaria son, a su vez, una espiral logarítmica.' fuente='SansSerif,PLAIN,18' fijo='sí' ancho='380'">
+   <param name="G_26" value="espacio='E0' tipo='imagen' dibujar-si='av==2' coord_abs='sí' expresión='((E0._w-251)/2,(E0._h-186)/2-50+_avY)' archivo='images/caustica1.jpg'">
+   <param name="G_27" value="espacio='E0' tipo='texto' color='blanco' dibujar-si='av==2' expresión='[35+_avX,E0._h-100+_avY]' texto='La cáustica de una superficie circular puede también ser una nefroide.' fuente='SansSerif,PLAIN,18' fijo='sí' ancho='380'">
+   <param name="G_28" value="espacio='E0' tipo='imagen' dibujar-si='av==3' coord_abs='sí' expresión='((E0._w-280)/2,(E0._h-216)/2+_avY)' archivo='images/caustica2.jpg'">
+   <param name="G_29" value="espacio='E0' tipo='texto' color='blanco' dibujar-si='av==3' expresión='[54+_avX,E0._h-250-140+avY]' texto='Científicos de Duke ven El Cosmos en una taza de café.\nEs el título de un artítulo publicado en el sitio de esta universidad. Un profesor de Matemáticas de la Universidad de Duke ha descubierto un principio universal que une la curiosa interrelación de la luz y la sombra en la superficie de una sencilla taza de café, con la manera en que la gravedad magnifica y distorsiona la luz que proviene de galaxias distantes.\n\n' fuente='SansSerif,PLAIN,18' fijo='sí' ancho='320'">
+   <param name="G_30" value="espacio='E0' tipo='texto' color='blanco' dibujar-si='av==3' expresión='[10+_avX,E0._h-95+_avY]' texto='http://today.duke.edu/2009/04/caustics.html\nPuedes ver más en \nhttp://scitation.aip.org/content/aip/journal/jmp/50/3/10.1063/1.3081055' fuente='SansSerif,PLAIN,18' fijo='sí' ancho='400'">
+   <param name="G_31" value="espacio='E0' tipo='imagen' dibujar-si='av==4' coord_abs='sí' expresión='((E0._w-300)/2,(E0._h-264)/2-50+_avY)' archivo='images/caustica3.gif'">
+   <param name="G_32" value="espacio='E0' tipo='texto' color='blanco' dibujar-si='av==4' expresión='[10+_avX,E0._h-95-13+avY]' texto='Aquí puedes encontrar un applet para generar una cáustica simulando rayos de luz:\nhttp://www.math.harvard.edu/archive/21a_spring_06/exhibits/coffeecup/index.html' fuente='SansSerif,PLAIN,18' fijo='sí' ancho='400'">
+   <param name="G_33" value="espacio='INFO' tipo='texto' color='blanco' expresión='[10,5]' texto='Cierre' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_34" value="espacio='INFO' tipo='texto' color='negro' expresión='[25,60]' texto='Para cerrar esta unidad hablaremos de tres formas de obtener algunas de la curvas que hemos estudiado hasta ahorita, y muchas otras, pero no son las únicas.\n\nLas curvas que vamos a describir se llaman curvas asociadas, pues como su nombre lo dice, están asociadas a otra curva. El nombre de estas curvas se da de acuerdo a una clasificación de las curvas con respecto a su construcción.\n\n\n' fuente='SansSerif,PLAIN,18' fijo='sí' ancho='INFO._w-50'">
+</ajs>
+
+</body>
+</html>

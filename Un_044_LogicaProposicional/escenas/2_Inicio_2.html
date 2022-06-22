@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='126' O.x='-350' O.y='-140' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='Covertura' dibujar-si='(info)||(mostrar==1)' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='INFO' x='(970-490)/2' y='100' ancho='490' alto='400' dibujar-si='info' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='E2' x='(970-440)/2' y='100' ancho='440' alto='400' dibujar-si='mostrar=1' fijo='sí' O.x='-50%' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='cerrarInfo' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(INFO._w-30,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='info=0'">
+   <param name="C_03" value="id='g1' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/1.png'">
+   <param name="C_04" value="id='g1.x' tipo='numérico' región='interior' espacio='E1' nombre='g1.x' expresión='(990,0)' valor='ctrPosX' fijo='sí' visible='sí'">
+   <param name="C_05" value="id='g1.y' tipo='numérico' región='interior' espacio='E1' nombre='g1.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_06" value="id='g2' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/2.png'">
+   <param name="C_07" value="id='g2.x' tipo='numérico' región='interior' espacio='E1' nombre='g2.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_08" value="id='g2.y' tipo='numérico' región='interior' espacio='E1' nombre='g2.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_09" value="id='g3' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/3.png'">
+   <param name="C_10" value="id='g3.x' tipo='numérico' región='interior' espacio='E1' nombre='g3.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_11" value="id='g3.y' tipo='numérico' región='interior' espacio='E1' nombre='g3.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_12" value="id='g4' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/4.png'">
+   <param name="C_13" value="id='g4.x' tipo='numérico' región='interior' espacio='E1' nombre='g4.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_14" value="id='g4.y' tipo='numérico' región='interior' espacio='E1' nombre='g4.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_15" value="id='g5' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/5.png'">
+   <param name="C_16" value="id='g5.x' tipo='numérico' región='interior' espacio='E1' nombre='g5.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_17" value="id='g5.y' tipo='numérico' región='interior' espacio='E1' nombre='g5.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_18" value="id='g6' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/6.png'">
+   <param name="C_19" value="id='g6.x' tipo='numérico' región='interior' espacio='E1' nombre='g6.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_20" value="id='g6.y' tipo='numérico' región='interior' espacio='E1' nombre='g6.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_21" value="id='g7' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/7.png'">
+   <param name="C_22" value="id='g7.x' tipo='numérico' región='interior' espacio='E1' nombre='g7.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_23" value="id='g7.y' tipo='numérico' región='interior' espacio='E1' nombre='g7.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_24" value="id='g8' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/8.png'">
+   <param name="C_25" value="id='g8.x' tipo='numérico' región='interior' espacio='E1' nombre='g8.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_26" value="id='g8.y' tipo='numérico' región='interior' espacio='E1' nombre='g8.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_27" value="id='g9' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/9.png'">
+   <param name="C_28" value="id='g9.x' tipo='numérico' región='interior' espacio='E1' nombre='g9.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_29" value="id='g9.y' tipo='numérico' región='interior' espacio='E1' nombre='g9.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_30" value="id='g10' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/10.png'">
+   <param name="C_31" value="id='g10.x' tipo='numérico' región='interior' espacio='E1' nombre='g10.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_32" value="id='g10.y' tipo='numérico' región='interior' espacio='E1' nombre='g10.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_33" value="id='g11' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/11.png'">
+   <param name="C_34" value="id='g11.x' tipo='numérico' región='interior' espacio='E1' nombre='g11.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_35" value="id='g11.y' tipo='numérico' región='interior' espacio='E1' nombre='g11.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_36" value="id='g12' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/12.png'">
+   <param name="C_37" value="id='g12.x' tipo='numérico' región='interior' espacio='E1' nombre='g12.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_38" value="id='g12.y' tipo='numérico' región='interior' espacio='E1' nombre='g12.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_39" value="id='g13' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/13.png'">
+   <param name="C_40" value="id='g13.x' tipo='numérico' región='interior' espacio='E1' nombre='g13.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_41" value="id='g13.y' tipo='numérico' región='interior' espacio='E1' nombre='g13.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_42" value="id='g14' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/14.png'">
+   <param name="C_43" value="id='g14.x' tipo='numérico' región='interior' espacio='E1' nombre='g14.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_44" value="id='g14.y' tipo='numérico' región='interior' espacio='E1' nombre='g14.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_45" value="id='g15' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/15.png'">
+   <param name="C_46" value="id='g15.x' tipo='numérico' región='interior' espacio='E1' nombre='g15.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_47" value="id='g15.y' tipo='numérico' región='interior' espacio='E1' nombre='g15.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_48" value="id='g16' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/16.png'">
+   <param name="C_49" value="id='g16.x' tipo='numérico' región='interior' espacio='E1' nombre='g16.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_50" value="id='g16.y' tipo='numérico' región='interior' espacio='E1' nombre='g16.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_51" value="id='g17' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/17.png'">
+   <param name="C_52" value="id='g17.x' tipo='numérico' región='interior' espacio='E1' nombre='g17.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_53" value="id='g17.y' tipo='numérico' región='interior' espacio='E1' nombre='g17.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_54" value="id='g18' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/18.png'">
+   <param name="C_55" value="id='g18.x' tipo='numérico' región='interior' espacio='E1' nombre='g18.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_56" value="id='g18.y' tipo='numérico' región='interior' espacio='E1' nombre='g18.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_57" value="id='g19' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/19.png'">
+   <param name="C_58" value="id='g19.x' tipo='numérico' región='interior' espacio='E1' nombre='g19.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_59" value="id='g19.y' tipo='numérico' región='interior' espacio='E1' nombre='g19.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_60" value="id='g20' tipo='gráfico' espacio='E1' tamaño='40' imagen='images/images2/20.png'">
+   <param name="C_61" value="id='g20.x' tipo='numérico' región='interior' espacio='E1' nombre='g20.x' expresión='(990,0)' valor='ctrPosX' min='0.5' max='6.5' fijo='sí' visible='sí'">
+   <param name="C_62" value="id='g20.y' tipo='numérico' región='interior' espacio='E1' nombre='g20.y' expresión='(990,30)' valor='ctrPosY' min='-3' max='1' fijo='sí' visible='sí'">
+   <param name="C_63" value="id='n101' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Pistas' expresión='(378,420,140,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn140.png' acción='calcular' parámetro='mostrar=1' dibujar-si='mostrar=0'">
+   <param name="C_64" value="id='n102' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Ocultar Pistas' expresión='(378,420,140,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn140.png' acción='calcular' parámetro='mostrar=0' dibujar-si='mostrar=1'">
+   <param name="C_65" value="id='E2.Oy' tipo='numérico' interfaz='barra' región='interior' espacio='E2' nombre='_._' expresión='(E2._w-30,36,30,400-36)' valor='P' incr='1' min='-1450' max='-200' decimales='0' fijo='sí' visible='no'">
+   <param name="C_66" value="id='cerrarPista' tipo='numérico' interfaz='botón' región='interior' espacio='E2' expresión='(E2._w-30,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='mostrar=0'">
+   <param name="A_01" value="id='ctrPosX' expresión='5.7+(rnd*.5)'">
+   <param name="A_02" value="id='ctrPosY' expresión='0.2-(rnd*4)'">
+   <param name="A_03" value="id='P' vector='sí' evaluar='una-sola-vez' tamaño='5' expresión='P[0]=0;P[1]=0;P[2]=0'">
+   <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='g1.x=(g1.x>0)&(g1.x<1)?0.5:g1.x;g1.x=(g1.x>1)&(g1.x<2)?1.5:g1.x;g1.x=(g1.x>2)&(g1.x<3)?2.5:g1.x;g1.x=(g1.x>3)&(g1.x<4)?3.5:g1.x;g1.x=(g1.x>4)&(g1.x<5)?4.5:g1.x;g1.y=(g1.y>-.81)&(g1.y<-.41)?-.63:g1.y;r1=(g1.x=.5)&(g1.y=-.63);;g2.x=(g2.x>0)&(g2.x<1)?0.5:g2.x;g2.x=(g2.x>1)&(g2.x<2)?1.5:g2.x;g2.x=(g2.x>2)&(g2.x<3)?2.5:g2.x;g2.x=(g2.x>3)&(g2.x<4)?3.5:g2.x;g2.x=(g2.x>4)&(g2.x<5)?4.5:g2.x;g2.y=(g2.y>-.81)&(g2.y<-.41)?-.63:g2.y;r2=(g2.x=1.5)&(g2.y=-.63);;g3.x=(g3.x>0)&(g3.x<1)?0.5:g3.x;g3.x=(g3.x>1)&(g3.x<2)?1.5:g3.x;g3.x=(g3.x>2)&(g3.x<3)?2.5:g3.x;g3.x=(g3.x>3)&(g3.x<4)?3.5:g3.x;g3.x=(g3.x>4)&(g3.x<5)?4.5:g3.x;g3.y=(g3.y>-.81)&(g3.y<-.41)?-.63:g3.y;r3=(g3.x=2.5)&(g3.y=-.63);;g4.x=(g4.x>0)&(g4.x<1)?0.5:g4.x;g4.x=(g4.x>1)&(g4.x<2)?1.5:g4.x;g4.x=(g4.x>2)&(g4.x<3)?2.5:g4.x;g4.x=(g4.x>3)&(g4.x<4)?3.5:g4.x;g4.x=(g4.x>4)&(g4.x<5)?4.5:g4.x;g4.y=(g4.y>-.81)&(g4.y<-.41)?-.63:g4.y;r4=(g4.x=3.5)&(g4.y=-.63);;g5.x=(g5.x>0)&(g5.x<1)?0.5:g5.x;g5.x=(g5.x>1)&(g5.x<2)?1.5:g5.x;g5.x=(g5.x>2)&(g5.x<3)?2.5:g5.x;g5.x=(g5.x>3)&(g5.x<4)?3.5:g5.x;g5.x=(g5.x>4)&(g5.x<5)?4.5:g5.x;g5.y=(g5.y>-.81)&(g5.y<-.41)?-.63:g5.y;r5=(g5.x=4.5)&(g5.y=-.63);;g6.x=(g6.x>0)&(g6.x<1)?0.5:g6.x;g6.x=(g6.x>1)&(g6.x<2)?1.5:g6.x;g6.x=(g6.x>2)&(g6.x<3)?2.5:g6.x;g6.x=(g6.x>3)&(g6.x<4)?3.5:g6.x;g6.x=(g6.x>4)&(g6.x<5)?4.5:g6.x;g6.y=(g6.y>-1.24)&(g6.y<-.81)?-1.04:g6.y;r6=(g6.x=.5)&(g6.y=-1.04);;g7.x=(g7.x>0)&(g7.x<1)?0.5:g7.x;g7.x=(g7.x>1)&(g7.x<2)?1.5:g7.x;g7.x=(g7.x>2)&(g7.x<3)?2.5:g7.x;g7.x=(g7.x>3)&(g7.x<4)?3.5:g7.x;g7.x=(g7.x>4)&(g7.x<5)?4.5:g7.x;g7.y=(g7.y>-1.24)&(g7.y<-.81)?-1.04:g7.y;r7=(g7.x=1.5)&(g7.y=-1.04);;g8.x=(g8.x>0)&(g8.x<1)?0.5:g8.x;g8.x=(g8.x>1)&(g8.x<2)?1.5:g8.x;g8.x=(g8.x>2)&(g8.x<3)?2.5:g8.x;g8.x=(g8.x>3)&(g8.x<4)?3.5:g8.x;g8.x=(g8.x>4)&(g8.x<5)?4.5:g8.x;g8.y=(g8.y>-1.24)&(g8.y<-.81)?-1.04:g8.y;r8=(g8.x=2.5)&(g8.y=-1.04);;g9.x=(g9.x>0)&(g9.x<1)?0.5:g9.x;g9.x=(g9.x>1)&(g9.x<2)?1.5:g9.x;g9.x=(g9.x>2)&(g9.x<3)?2.5:g9.x;g9.x=(g9.x>3)&(g9.x<4)?3.5:g9.x;g9.x=(g9.x>4)&(g9.x<5)?4.5:g9.x;g9.y=(g9.y>-1.24)&(g9.y<-.81)?-1.04:g9.y;r9=(g9.x=3.5)&(g9.y=-1.04);;g10.x=(g10.x>0)&(g10.x<1)?0.5:g10.x;g10.x=(g10.x>1)&(g10.x<2)?1.5:g10.x;g10.x=(g10.x>2)&(g10.x<3)?2.5:g10.x;g10.x=(g10.x>3)&(g10.x<4)?3.5:g10.x;g10.x=(g10.x>4)&(g10.x<5)?4.5:g10.x;g10.y=(g10.y>-1.24)&(g10.y<-.81)?-1.04:g10.y;r10=(g10.x=4.5)&(g10.y=-1.04);;g11.x=(g11.x>0)&(g11.x<1)?0.5:g11.x;g11.x=(g11.x>1)&(g11.x<2)?1.5:g11.x;g11.x=(g11.x>2)&(g11.x<3)?2.5:g11.x;g11.x=(g11.x>3)&(g11.x<4)?3.5:g11.x;g11.x=(g11.x>4)&(g11.x<5)?4.5:g11.x;g11.y=(g11.y>-1.65)&(g11.y<-1.24)?-1.45:g11.y;r11=(g11.x=.5)&(g11.y=-1.45);;g12.x=(g12.x>0)&(g12.x<1)?0.5:g12.x;g12.x=(g12.x>1)&(g12.x<2)?1.5:g12.x;g12.x=(g12.x>2)&(g12.x<3)?2.5:g12.x;g12.x=(g12.x>3)&(g12.x<4)?3.5:g12.x;g12.x=(g12.x>4)&(g12.x<5)?4.5:g12.x;g12.y=(g12.y>-1.65)&(g12.y<-1.24)?-1.45:g12.y;r12=(g12.x=1.5)&(g12.y=-1.45);;g13.x=(g13.x>0)&(g13.x<1)?0.5:g13.x;g13.x=(g13.x>1)&(g13.x<2)?1.5:g13.x;g13.x=(g13.x>2)&(g13.x<3)?2.5:g13.x;g13.x=(g13.x>3)&(g13.x<4)?3.5:g13.x;g13.x=(g13.x>4)&(g13.x<5)?4.5:g13.x;g13.y=(g13.y>-1.65)&(g13.y<-1.24)?-1.45:g13.y;r13=(g13.x=2.5)&(g13.y=-1.45);;g14.x=(g14.x>0)&(g14.x<1)?0.5:g14.x;g14.x=(g14.x>1)&(g14.x<2)?1.5:g14.x;g14.x=(g14.x>2)&(g14.x<3)?2.5:g14.x;g14.x=(g14.x>3)&(g14.x<4)?3.5:g14.x;g14.x=(g14.x>4)&(g14.x<5)?4.5:g14.x;g14.y=(g14.y>-1.65)&(g14.y<-1.24)?-1.45:g14.y;r14=(g14.x=3.5)&(g14.y=-1.45);;g15.x=(g15.x>0)&(g15.x<1)?0.5:g15.x;g15.x=(g15.x>1)&(g15.x<2)?1.5:g15.x;g15.x=(g15.x>2)&(g15.x<3)?2.5:g15.x;g15.x=(g15.x>3)&(g15.x<4)?3.5:g15.x;g15.x=(g15.x>4)&(g15.x<5)?4.5:g15.x;g15.y=(g15.y>-1.65)&(g15.y<-1.24)?-1.45:g15.y;r15=(g15.x=4.5)&(g15.y=-1.45);;g16.x=(g16.x>0)&(g16.x<1)?0.5:g16.x;g16.x=(g16.x>1)&(g16.x<2)?1.5:g16.x;g16.x=(g16.x>2)&(g16.x<3)?2.5:g16.x;g16.x=(g16.x>3)&(g16.x<4)?3.5:g16.x;g16.x=(g16.x>4)&(g16.x<5)?4.5:g16.x;g16.y=(g16.y>-2.05)&(g16.y<-1.65)?-1.86:g16.y;r16=(g16.x=.5)&(g16.y=-1.86);;g17.x=(g17.x>0)&(g17.x<1)?0.5:g17.x;g17.x=(g17.x>1)&(g17.x<2)?1.5:g17.x;g17.x=(g17.x>2)&(g17.x<3)?2.5:g17.x;g17.x=(g17.x>3)&(g17.x<4)?3.5:g17.x;g17.x=(g17.x>4)&(g17.x<5)?4.5:g17.x;g17.y=(g17.y>-2.05)&(g17.y<-1.65)?-1.86:g17.y;r17=(g17.x=1.5)&(g17.y=-1.86);;g18.x=(g18.x>0)&(g18.x<1)?0.5:g18.x;g18.x=(g18.x>1)&(g18.x<2)?1.5:g18.x;g18.x=(g18.x>2)&(g18.x<3)?2.5:g18.x;g18.x=(g18.x>3)&(g18.x<4)?3.5:g18.x;g18.x=(g18.x>4)&(g18.x<5)?4.5:g18.x;g18.y=(g18.y>-2.05)&(g18.y<-1.65)?-1.86:g18.y;r18=(g18.x=2.5)&(g18.y=-1.86);;g19.x=(g19.x>0)&(g19.x<1)?0.5:g19.x;g19.x=(g19.x>1)&(g19.x<2)?1.5:g19.x;g19.x=(g19.x>2)&(g19.x<3)?2.5:g19.x;g19.x=(g19.x>3)&(g19.x<4)?3.5:g19.x;g19.x=(g19.x>4)&(g19.x<5)?4.5:g19.x;g19.y=(g19.y>-2.05)&(g19.y<-1.65)?-1.86:g19.y;r19=(g19.x=3.5)&(g19.y=-1.86);;g20.x=(g20.x>0)&(g20.x<1)?0.5:g20.x;g20.x=(g20.x>1)&(g20.x<2)?1.5:g20.x;g20.x=(g20.x>2)&(g20.x<3)?2.5:g20.x;g20.x=(g20.x>3)&(g20.x<4)?3.5:g20.x;g20.x=(g20.x>4)&(g20.x<5)?4.5:g20.x;g20.y=(g20.y>-2.05)&(g20.y<-1.65)?-1.86:g20.y;r20=(g20.x=4.5)&(g20.y=-1.86);z=r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20;;;;;;;;'">
+   <param name="A_05" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Acertijo de Einstein&squot;' hacer='info=1'">
+   <param name="A_06" value="id='e3' evento='sí' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_07" value="id='estado' algoritmo='sí' evaluar='siempre' hacer='x=E1.mouse_x;y=E1.mouse_y;p1=(x<0)&(x>-2)&(y<3)&(y>1)&(E1.mouse_pressed)?(p1=0?1:0):p1;p2=(x<2)&(x>0)&(y<3)&(y>1)&(E1.mouse_pressed)?(p2=0?1:0):p2;p3=(x<0)&(x>-2)&(y<1)&(y>-1)&(E1.mouse_pressed)?(p3=0?1:0):p3;p4=(x<2)&(x>0)&(y<1)&(y>-1)&(E1.mouse_pressed)?(p4=0?1:0):p4;p1=(p2+p3+p4>0)?0:p1;p2=(p1+p3+p4>0)?0:p2;p3=(p2+p1+p4>0)?0:p3;p4=(p2+p3+p1>0)?0:p4;P[1]=p1;P[2]=p2;P[3]=p3;P[4]=p4'">
+   <param name="G_01" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(0,0)' archivo='images/fondoEspecial.png'">
+   <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' expresión='(0,0)' archivo='images/images2/casas.png'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='raro' expresión='[20,20]' texto='       [g66.x] [g66.y]  z=[z] [(rnd*4)]' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='raro' expresión='[20,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs40 Se tiene cinco casas de cinco colores diferentes y en cada una de ellas vive una persona \par de una nacionalidad diferente. Cada uno de los due\u241 os tiene una mascota y una bebida \par diferente y fuma una marca de cigarrillos diferente.}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_06" value="espacio='INFO' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(INFO._w/2,18,INFO._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_07" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_08" value="espacio='E1' tipo='texto' fondo='sí' expresión='[20,105]' texto='Arrastra las tarjetas hacia los recuadros de acuerdo con las pistas.' fuente='SansSerif,PLAIN,21' fijo='sí'">
+   <param name="G_09" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(-50,195+s*50)' familia='s' s.intervalo='[0,3]' s.pasos='3' archivo='images/fondoTexto.png'">
+   <param name="G_10" value="espacio='E1' tipo='texto' fondo='sí' color='blanco' expresión='[10,200]' texto='Nacionalidad' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='texto' fondo='sí' color='blanco' expresión='[46,250]' texto='Mascota' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='texto' fondo='sí' color='blanco' expresión='[57,300]' texto='Bebida' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_13" value="espacio='E1' tipo='texto' fondo='sí' color='blanco' expresión='[41,350]' texto='Cigarillos' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_14" value="espacio='E2' tipo='imagen' expresión='(-.2,-.7)' archivo='images/texto1.png'">
+   <param name="G_15" value="espacio='E2' tipo='imagen' expresión='(-0.2,-12)' archivo='images/texto2.png'">
+   <param name="G_16" value="espacio='E2' tipo='imagen' expresión='(-0.2,-23.3)' archivo='images/texto3.png'">
+   <param name="G_17" value="espacio='E1' tipo='texto' color='d79600' dibujar-si='(z>5)&(z<20)' expresión='[20,500]' texto='Tarjetas colocadas: [z] ' fuente='SansSerif,BOLD,20' decimales='0' fijo='sí'">
+   <param name="G_18" value="espacio='E1' tipo='texto' color='22ff0000' dibujar-si='z=20' expresión='[290,460]' texto='¡Excelente!' fuente='SansSerif,BOLD,60' fijo='sí'">
+   <param name="G_19" value="espacio='E2' tipo='imagen' coord_abs='sí' expresión='(E2._w/2,18,E2._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_20" value="espacio='INFO' tipo='texto' fondo='sí' color='blanco' expresión='[15,5]' texto='Acertijo de Einstein' fuente='SansSerif,PLAIN,21' fijo='sí'">
+   <param name="G_21" value="espacio='INFO' tipo='texto' fondo='sí' expresión='[15,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs42\b Acertijo\b0\par \par Tenemos cinco casas de cinco colores \par diferentes en cada una de ellas vive \par una persona con nacionalidad diferente.\par \par Cada uno de los due\u241 os bebe una bebida\par diferente, fuma una marca de cigarrillos\par diferente y tiene una mascota diferente.\par \par \u191 Qui\u233 n es el due\u241 o del pececito?\par  }' fuente='SansSerif,BOLD,21' fijo='sí'">
+   <param name="G_22" value="espacio='E2' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(E2._w-1,0)(E2._w-1,E2._h-1)(0,E2._h-1)(0,0)' relleno='f85566aa'">
+</ajs>
+
+</body>
+</html>

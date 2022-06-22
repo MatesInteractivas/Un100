@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_inicio.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='55' y='115' ancho='440' alto='390' fijo='sí' O.x='-40%' O.y='30%' despl_imagen='arr-izq' fondo='dce9f8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E3' x='55' y='115' ancho='440' alto='390' dibujar-si='ver' fijo='sí' O.x='-40%' O.y='30%' despl_imagen='arr-izq' fondo='30dce9f8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='btn' tipo='gráfico' espacio='E2' expresión='(7,-.1)' constricción='y=-.1' imagen='images/botoncito.png'">
+   <param name="C_03" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='Fuerza resultante' expresión='(270,350,160,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn160.png' acción='calcular' parámetro='ver=1' dibujar-si='ver=0'">
+   <param name="C_04" value="id='n5' tipo='numérico' interfaz='botón' región='interior' espacio='E3' nombre='Fuerza distribuida' expresión='(270,350,160,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn160.png' acción='calcular' parámetro='ver=0'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Fuerza resultante y punto de aplicación&squot;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='btn.x=ent(btn.x*10)/10;btn.x=btn.x>7?7:btn.x;btn.x=btn.x<3?3:btn.x;q=400;p=q*btn.x;btn.y=-0.1'">
+   <param name="G_01" value="espacio='E1' tipo='texto' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E2' tipo='imagen' expresión='(-.15,2.6)' archivo='images/viga.png'">
+   <param name="G_03" value="espacio='E2' tipo='flecha' color='rojo' dibujar-si='s>.6' expresión='(s,2.5+.07*s^2)(s,2.52)' familia='s' s.intervalo='[0,btn.x]' s.pasos='12' fijo='sí' tamaño='1' ancho='0' ancho='0' punta='2'">
+   <param name="G_04" value="espacio='E2' tipo='ecuación' color='rojo' dibujar-si='(x>0)&(x<btn.x)' expresión='y=2.55+.07*x^2'">
+   <param name="G_05" value="espacio='E2' tipo='segmento' expresión='(0,1.1)(7,1.1)' fijo='sí'">
+   <param name="G_06" value="espacio='E2' tipo='segmento' dibujar-si='btn.x<7' expresión='(0,1.6)(btn.x,1.6)' fijo='sí'">
+   <param name="G_07" value="espacio='E2' tipo='segmento' color='azul' expresión='(0,0)(7,0)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_08" value="espacio='E2' tipo='segmento' expresión='(0,1)(0,2)' fijo='sí' tamaño='0'">
+   <param name="G_09" value="espacio='E2' tipo='segmento' expresión='(7,1)(7,2)' fijo='sí' tamaño='0'">
+   <param name="G_10" value="espacio='E2' tipo='segmento' dibujar-si='btn.x<7' expresión='(btn.x,1.5)(btn.x,2)' fijo='sí' tamaño='0'">
+   <param name="G_11" value="espacio='E2' tipo='punto' dibujar-si='ver=0' expresión='(3.5,.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36 L}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_12" value="espacio='E2' tipo='punto' dibujar-si='(ver=0)&(btn.x<7)' expresión='(btn.x/2,1.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36 a}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_13" value="espacio='E2' tipo='punto' dibujar-si='ver=0' expresión='(btn.x/2,4.7-(2.3-btn.x/3))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40\cf0{\*\mjaformula q=kx{\supix 2}}\cf1\f0\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí' tamaño='0'">
+   <param name="G_14" value="espacio='E3' tipo='imagen' expresión='(-.15,2.6)' archivo='images/viga.png'">
+   <param name="G_15" value="espacio='E3' tipo='flecha' expresión='(3*btn.x/4,3.8)(3*btn.x/4,2.55)' familia='s' s.intervalo='[0,btn.x]' s.pasos='2*btn.x' fijo='sí' tamaño='1' ancho='1' punta='4' flecha='azul'">
+   <param name="G_16" value="espacio='E3' tipo='punto' dibujar-si='btn.x=7' expresión='(3*btn.x/4-.5,4.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;}\f1\fs40\b{\*\mjaformula F{\subix R}={\fraction{\num kL{\supix 3}}{\den 3}}}\fs30\b0}' fuente='Serif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_17" value="espacio='E3' tipo='punto' dibujar-si='btn.x<7' expresión='(3*btn.x/4-.5,4.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;}\f1\fs40\b{\*\mjaformula F{\subix R}={\fraction{\num ka{\supix 3}}{\den 3}}}\fs30\b0}' fuente='Serif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_18" value="espacio='E3' tipo='segmento' expresión='(0,1.5)(3*btn.x/4,1.5)' fijo='sí'">
+   <param name="G_19" value="espacio='E3' tipo='segmento' expresión='(0,1)(0,2)' fijo='sí' tamaño='0'">
+   <param name="G_20" value="espacio='E3' tipo='segmento' expresión='(3*btn.x/4,1)(3*btn.x/4,2)' fijo='sí' tamaño='0'">
+   <param name="G_21" value="espacio='E3' tipo='punto' dibujar-si='btn.x=7' expresión='(btn.x/2-.6,1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs36\b{\*\mjaformula{\fraction{\num 3L}{\den 4}}}\b0}' fuente='SansSerif,BOLD,18' fijo='sí' tamaño='0'">
+   <param name="G_22" value="espacio='E3' tipo='punto' dibujar-si='btn.x<7' expresión='(btn.x/2-.6,1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs36\b{\*\mjaformula{\fraction{\num 3a}{\den 4}}}\b0}' fuente='SansSerif,BOLD,18' fijo='sí' tamaño='0'">
+   <param name="G_23" value="espacio='E1' tipo='texto' dibujar-si='(ver=0)&(btn.x=7)' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs36 Una fuerza distribuida de forma\par parab\u243 lica, se muestra en la figura.\par La fuerza resultante {\*\mjaformula F{\subix R}}, como lo\par viste  en  el v\u237 deo, debe ser igual a la\par suma de  todas la fuerzas de la\par par\u225 bola, que equivale al \u225 rea debajo\par de la curva de carga:\par \par {\*\mjaformula F{\subix R}={\integral{\from A}{\to}{\what dA}}={\integral{\from A}{\to}{\what kx{\supix 2}dx}}={\integral{\from 0}{\to L}{\what kx{\supix 2}dx}}}\par \par \cf0{\*\mjaformula F{\subix R}={\fraction{\num kL{\supix 3}}{\den 3}}}\cf1\par \par Haz  clic  en  el bot\u243 n  para  mostrar\par la  fuerza resultante.\fs40\par \f3\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_24" value="espacio='E1' tipo='texto' dibujar-si='(ver=0)&(btn.x<7)' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs36 Una fuerza distribuida de forma\par parab\u243 lica, se muestra en la figura.\par La fuerza resultante {\*\mjaformula F{\subix R}}, como lo\par viste en el v\u237 deo, debe ser igual a la\par suma de todas la fuerzas de la\par par\u225 bola, que equivale al \u225 rea\par debajo de la curva de carga:\par \par {\*\mjaformula F{\subix R}={\integral{\from A}{\to}{\what dA}}={\integral{\from A}{\to}{\what kx{\supix 2}dx}}={\integral{\from 0}{\to a}{\what kx{\supix 2}dx}}}\par \par \cf0{\*\mjaformula F{\subix R}={\fraction{\num ka{\supix 3}}{\den 3}}}\cf1\par \par Haz  clic  en  el bot\u243 n  para  mostrar \par la fuerza resultante.\fs40\par \f3\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_25" value="espacio='E1' tipo='texto' dibujar-si='(ver=1)&(btn.x=7)' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;\red0\green0\blue0;}\f1\fs36 La posici\u243 n de la fuerza resultante,\par medidad desde el extremo A, se\par determina por la expresi\u243 n:\par \cf0{\*\mjaformula x&squot;={\fraction{\num{\integral{\from A}{\to}{\what xdA}}}{\den{\integral{\from A}{\to}{\what dA}}}}={\fraction{\num{\integral{\from 0}{\to L}{\what x(kx{\supix 2})dx}}}{\den{\fraction{\num kL{\supix 3}}{\den 3}}}}=}\cf1\par {\*\mjaformula\cf0\f2\fs40 ={\fraction{\num{\integral{\from 0}{\to L}{\what kx{\supix 3}}}dx}{\den{\fraction{\num kL{\supix 3}}{\den 3}}}}\cf1\f3\fs40\i}\par \cf0{\*\mjaformula x&squot;={\fraction{\num{\fraction{\num kL{\supix 4}}{\den 4}}}{\den{\fraction{\num kL{\supix 3}}{\den 3}}}}}\cf2 , entonces\cf0  {\*\mjaformula x&squot;={\fraction{\num 3L}{\den 4}}}\cf1\par \par \f3\fs40\i\par \f4\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_26" value="espacio='E1' tipo='texto' dibujar-si='(ver=1)&(btn.x<7)' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;\red0\green0\blue0;}\f1\fs36 La posici\u243 n de la fuerza resultante,\par medidad desde el extremo A, se\par determina por la expresi\u243 n:\par \cf0{\*\mjaformula x&squot;={\fraction{\num{\integral{\from A}{\to}{\what xdA}}}{\den{\integral{\from A}{\to}{\what dA}}}}={\fraction{\num{\integral{\from 0}{\to a}{\what x(kx{\supix 2})dx}}}{\den{\fraction{\num ka{\supix 3}}{\den 3}}}}}\cf1\par {\*\mjaformula\cf0 ={\fraction{\num{\integral{\from 0}{\to a}{\what kx{\supix 3}}}dx}{\den{\fraction{\num ka{\supix 3}}{\den 3}}}}\cf1}\par \cf0{\*\mjaformula x&squot;={\fraction{\num{\fraction{\num ka{\supix 4}}{\den 4}}}{\den{\fraction{\num ka{\supix 3}}{\den 3}}}}}\cf2 , entonces\cf0  {\*\mjaformula x&squot;={\fraction{\num 3a}{\den 4}}}\cf1\par \fs40\par \par \f3\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_27" value="espacio='E2' tipo='punto' expresión='(-0.5,2.8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs44\b A}' fuente='SansSerif,BOLD,22' fijo='sí' tamaño='0'">
+   <param name="G_28" value="espacio='E2' tipo='punto' expresión='(7.2,2.8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs44\b B}' fuente='SansSerif,BOLD,22' fijo='sí' tamaño='0'">
+</ajs>
+
+</body>
+</html>

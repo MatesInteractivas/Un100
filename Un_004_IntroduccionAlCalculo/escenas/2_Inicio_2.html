@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='INFO' x='10' y='100' ancho='490' alto='420' dibujar-si='info' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E0' x='510' y='100' ancho='450' alto='420' dibujar-si='sig==1' fijo='sí' O.x='150' O.y='50' despl_imagen='arr-izq' fondo='a8ffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='HTMLIFrame' id='E2' x='510' y='100' ancho='450' alto='210' dibujar-si='sig==0' despl_imagen='arr-izq' archivo='http://www.youtube.com/embed/Zzs3a52De-I'">
+   <param name="E_05" value="tipo='HTMLIFrame' id='E3' x='510' y='310' ancho='450' alto='210' dibujar-si='sig==0' despl_imagen='arr-izq' archivo='http://www.youtube.com/embed/BFPnb43NL8I'">
+   <param name="C_01" value="id='X' tipo='numérico' región='interior' espacio='E1' nombre='X' incr='1' fijo='no' visible='sí' dibujar-si='0'">
+   <param name="C_02" value="id='Y' tipo='numérico' región='interior' espacio='E1' nombre='Y' incr='1' fijo='no' visible='sí' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_03" value="id='sig' tipo='numérico' región='interior' espacio='E1' nombre='X' incr='1' fijo='no' visible='sí' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_04" value="id='goTo0' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_05" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(E1._w-47,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_06" value="id='continuar' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(INFO._w-35,INFO._h-35,30,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/avanzar.png' acción='calcular' parámetro='sig=sig+1' dibujar-si='sig<1'">
+   <param name="C_07" value="id='regresar' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(5,INFO._h-35,31,31)' fijo='sí' visible='sí' color='blanco' color-int='a0a0a0' fuente puntos='18' imagen='images/retroceder.png' acción='calcular' parámetro='sig=sig11' dibujar-si='sig==1'">
+   <param name="C_08" value="id='v5' tipo='video' región='interior' espacio='E1' expresión='(510,100)' dibujar-si='0' archivo='http://www.youtube.com/embed/Zzs3a52De-I'">
+   <param name="C_09" value="id='v6' tipo='video' región='interior' espacio='E1' expresión='(510,300)' dibujar-si='0' archivo='http://www.youtube.com/embed/BFPnb43NL8I'">
+   <param name="A_01" value="id='scrl' expresión='-(250-scroll)*2*(max(0,2.5-12))/25'">
+   <param name="A_02" value="id='init()' algoritmo='sí' algoritmo='sí' inicio='sig=0' hacer='a=-5.5;b=2;w=4;h=1.8;a1=-4.2;b1=0.8;w1=6;h1=2.45;a2=-3;b2=-3;w2=6;h2=2.45;A=1;B=6'">
+   <param name="A_03" value="id='r(t)' expresión='1+0.03*(sen(6*pi*t)+cos(10*pi*t+1))'">
+   <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=1' hacer='titulo=&squot;Introducción a los conceptos fundamentales del Cálculo&squot;;init()'">
+   <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='INFO' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(INFO._w/2,18,INFO._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_03" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_04" value="espacio='INFO' tipo='texto' fondo='sí' color='blanco' expresión='[38,5]' texto='Los problemas que llevaron al Cálculo' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_05" value="espacio='INFO' tipo='texto' color='negro' dibujar-si='sig==0' expresión='[25+X,50+Y]' texto='El tercer  problema que ocupó a los matemáticos y físicos de la época fue encontrar los valores máximo y mínimo de funciones. Cuando se dispara una bala hacia arriba, tal vez se desee saber qué altura alcanzará. \n\nPodemos determinar la altura máxima de movimientos simples, pero no es suficiente para analizar el movimiento de los cuerpos que no son próximos a la superficie de la Tierra, por ejemplo, la distancia máximo o mínima de un planeta al Sol. Tampoco lo es para analizar el movimiento de un cohete, en cuyo recorrido se aleja tanto de la Tierra, que debe tomarse en cuenta la variación de la aceleración debida gravedad o la aceleración necesaria para despegar.' fuente='SansSerif,PLAIN,17' fijo='sí' ancho='INFO._w-50'">
+   <param name="G_06" value="espacio='E0' tipo='polígono' fondo='sí' color='203044' expresión='(a,b)(a+w,b)(a+w,b+h)(a,b+h)(a,b)' relleno='ffff80'">
+   <param name="G_07" value="espacio='E0' tipo='punto' fondo='sí' color='203044' expresión='(a-0.2+w/2,b-0.2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs42\i a\f2\fs24\i0}' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_08" value="espacio='E0' tipo='punto' fondo='sí' color='203044' expresión='(a-0.3,b+h/2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs42\i b\f2\fs24\i0}' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_09" value="espacio='E0' tipo='punto' fondo='sí' color='203044' expresión='(a-1.0+w/2,b+h/2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs42\i\u193 rea=a\u215 b\f2\fs24\i0}' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_10" value="espacio='E0' tipo='polígono' fondo='sí' color='negro' dibujar-si='0' expresión='(a1,b1)(a1+w1,b1)(a1+w1,b1+h1)(a1,b1+h1)(a1,b1)' relleno='blanco'">
+   <param name="G_11" value="espacio='E0' tipo='curva' fondo='sí' color='203044' expresión='(a+w/2+2*r(t)*cos(2*pi*t),b-4+h/2+r(t)*sen(2*pi*t))' t.pasos='96' relleno='ffff80'">
+   <param name="G_12" value="espacio='E0' tipo='punto' fondo='sí' color='203044' expresión='(a-0.5+w/2,b-4+h/2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs42\i\u193 rea = ?\f2\fs24\i0}' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_13" value="espacio='E0' tipo='polígono' fondo='sí' color='turquesa' dibujar-si='0' expresión='(a1,b1)(a1+w1+1,b1)(a1+w1+1,b1+h1)(a1,b1+h1)(a1,b1)' relleno='blanco'">
+   <param name="G_14" value="espacio='INFO' tipo='texto' color='negro' dibujar-si='sig==1' expresión='[25+X,50+Y]' texto='El cuarto problema fue determinar longitudes, áreas y volumenes. Para encontrar el área de una figura rectangular, basta medir dos de sus lados y multiplicar los valores obtenidos. Pero el área de una figura delimitada por curvas no se pueden obtener con procedimientos tan simples.\n\nPor otra parte, los objetos pueden ser tan grandes como la Tierra, o las longitudes a calcular son las de las órbitas de los planetas en un tiempo dado. \n\nTodos estos problemas ocuparon la mente de cientos de matemáticos. Fueron Newton y Leibnitz quienes reconocieron claramente la íntima relación entre ellos.\n' fuente='SansSerif,PLAIN,17' fijo='sí' ancho='INFO._w-50'">
+</ajs>
+
+</body>
+</html>

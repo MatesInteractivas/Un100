@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='n3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Intersecar' expresión='(220,490,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fdf0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='animar' dibujar-si='h1=3'">
+   <param name="C_03" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Repetir' expresión='(220,490,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fdf0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='h1=3' dibujar-si='h1=-1'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Ley de DeMorgan para el complemento de la unión&squot;' hacer='h1=3'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(15,90)' archivo='images/panel_940x445.png'">
+   <param name="G_03" value="espacio='E1' tipo='polígono' expresión='(1,-1)(7,-1)(7,-5)(1,-5)(1,-1)' relleno='51ff0000' ancho='2'">
+   <param name="G_04" value="espacio='E1' tipo='arco' centro='(5,-3)' radio='1.5' fin='360' fijo='sí' relleno='ffff0000'">
+   <param name="G_05" value="espacio='E1' tipo='polígono' expresión='(1,h1)(7,h1)(7,h1-4)(1,h1-4)(1,h1)' relleno='6fffff00' ancho='2'">
+   <param name="G_06" value="espacio='E1' tipo='arco' centro='(3,h1-2)' radio='1.5' fin='360' fijo='sí' relleno='ffffff00'">
+   <param name="G_07" value="espacio='E1' tipo='arco' centro='(5,h1-2)' radio='1.5' fin='360' fijo='sí' relleno='blanco'">
+   <param name="G_08" value="espacio='E1' tipo='arco' centro='(3,-3)' radio='1.5' fin='360' fijo='sí' relleno='blanco'">
+   <param name="G_09" value="espacio='E1' tipo='arco' centro='(5,-3)' radio='1.5' fin='360' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='arco' centro='(3,h1-2)' radio='1.5' fin='360' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='polígono' expresión='(-7,2)(-1,2)(-1,-2)(-7,-2)(-7,2)' relleno='59ff9f00' ancho='2'">
+   <param name="G_12" value="espacio='E1' tipo='arco' centro='(-5,0)' radio='1.5' fin='360' fijo='sí' relleno='blanco'">
+   <param name="G_13" value="espacio='E1' tipo='arco' centro='(-3,0)' radio='1.5' fin='360' fijo='sí' relleno='blanco'">
+   <param name="G_14" value="espacio='E1' tipo='arco' centro='(-5,0)' radio='1.5' fin='360' fijo='sí'">
+   <param name="G_15" value="espacio='E1' tipo='texto' expresión='[160,210]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs48\b A}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_16" value="espacio='E1' tipo='texto' expresión='[400,210]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs48\b B}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_17" value="espacio='E1' tipo='imagen' expresión='(-3.8,2.5,.8,.8)' archivo='images/f4.png'">
+   <param name="G_18" value="espacio='E1' tipo='texto' dibujar-si='h1=4' expresión='[550,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs48\b A}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_19" value="espacio='E1' tipo='texto' dibujar-si='h1=4' expresión='[780,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs48\b B}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_20" value="espacio='E1' tipo='texto' expresión='[550,340]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs48\b A}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_21" value="espacio='E1' tipo='texto' expresión='[780,340]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs48\b B}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_22" value="espacio='E1' tipo='imagen' dibujar-si='h1=4' expresión='(7.5,2.1,.8,.8)' archivo='images/f10.png'">
+   <param name="G_23" value="espacio='E1' tipo='imagen' dibujar-si='h1=4' expresión='(7.5,-3.1,.8,.8)' archivo='images/f9.png'">
+   <param name="G_24" value="espacio='E1' tipo='imagen' dibujar-si='h1=-1' expresión='(4,0,.6,.6)' archivo='images/f16.png'">
+   <param name="G_25" value="espacio='E1' tipo='texto' dibujar-si='h1=4' expresión='[40,390]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green200\blue0;\red32\green48\blue58;}\f1\fs36\cf0 En  el  lado  izquierdo, observamos  el  complemento  de\par AUB. Al lado derecho, hemos dibujado los complementos\par de  A y de B. Observemos  qu\u233   ocurre  si  intersecamos\par estos dos \u250 ltimos.\par \cf1  \f2\fs30\cf2}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_26" value="espacio='E1' tipo='texto' dibujar-si='h1=-1' expresión='[40,390]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\f1\fs36\cf0 Podemos concluir que el complemento de la uni\u243 n de dos\par conjuntos, es igual a la intersecci\u243 n de sus complementos.\par \par  \f2\fs30\cf1}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="Animación" value="controles='no' auto='no' inicio='h1=3' hacer='h1=h1-.25' mientras='h1>-1'">
+</ajs>
+
+</body>
+</html>

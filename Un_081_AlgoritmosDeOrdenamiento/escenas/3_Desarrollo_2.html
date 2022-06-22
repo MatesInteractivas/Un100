@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>
+  <style type="text/css"> 
+  div#NavegacionAtras {
+    box-shadow: 0px 0px 5px #000;
+    border-radius: 0px 10px 10px 0px;
+  }
+  div#NavegacionAdelante {
+    box-shadow: 0px 0px 5px #000;
+    border-radius: 10px 0px 0px 10px;
+  }
+  div#MenuPrincipal {
+    box-shadow: 0px 0px 5px #000;
+    border-radius: 20px 0px 0px 0px;
+  }
+  </style>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_01.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='HTMLIFrame' id='VideoSpace' x='185' y='105' ancho='600' alto='400' dibujar-si='paso==0' despl_imagen='arr-izq' archivo='http://www.youtube.com/embed/lyZQPjUT5B4'">
+   <param name="E_03" value="tipo='R2' id='NavegacionAtras' x='0' y='240' ancho='25' alto='80' dibujar-si='paso>0' fijo='sí' despl_imagen='arr-izq' fondo='d7d746' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='NavegacionAdelante' x='945' y='240' ancho='25' alto='80' dibujar-si='paso<limPasos' fijo='sí' despl_imagen='arr-izq' fondo='d7d746' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='MenuPrincipal' x='920' y='500' ancho='50' alto='50' dibujar-si='0' fijo='sí' despl_imagen='arr-izq' fondo='d7d746' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='back' tipo='numérico' interfaz='botón' región='interior' espacio='NavegacionAtras' nombre='◄' expresión='(0,0,25,80)' fijo='sí' visible='sí' color='blanco' color-int='ffffffff' negrita='sí' fuente puntos='18' imagen='vacio.gif' acción='calcular' parámetro='paso=(paso<=0)?0:paso-1' activo-si='paso>0'">
+   <param name="C_02" value="id='next' tipo='numérico' interfaz='botón' región='interior' espacio='NavegacionAdelante' nombre='►' expresión='(0,0,25,80)' fijo='sí' visible='sí' color='blanco' color-int='ffffffff' negrita='sí' fuente puntos='18' imagen='vacio.gif' acción='calcular' parámetro='paso=(paso>=limPasos)?limPasos:paso+1' activo-si='paso<limPasos'">
+   <param name="C_03" value="id='pasoAlgoMas' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(440,E1._h-35,80,30)' fijo='no' visible='sí' imagen='images/lplay.png' acción='calcular' parámetro='pasoAlgo=(pasoAlgo>=maxPasos)?maxPasos:pasoAlgo+1' dibujar-si='(paso==3)' activo-si='(pasoAlgo<maxPasos)'">
+   <param name="C_04" value="id='pasoAlgoMenos' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(350,E1._h-35,80,30)' fijo='no' visible='sí' imagen='images/lback.png' acción='calcular' parámetro='pasoAlgo=(pasoAlgo<=0)?0:pasoAlgo-1' dibujar-si='(paso==3)' activo-si='(pasoAlgo>0)'">
+   <param name="C_05" value="id='nuevaSecuencia' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Otro ejemplo' expresión='(E1._w/2+50,E1._h-35,160,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn160.png' acción='calcular' parámetro='init()\ninitLosPasos()\ngeneraOrden()' dibujar-si='(paso==3)' activo-si='(pasoAlgo==maxPasos)||(pasoAlgo==0)'">
+   <param name="C_06" value="id='regresar' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='30' imagen='images/menuvideos.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="A_01" value="id='cartas_img' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='cartas_img[0]=&squot;images/c_01.png&squot;;cartas_img[1]=&squot;images/c_02.png&squot;;cartas_img[2]=&squot;images/c_03.png&squot;;cartas_img[3]=&squot;images/c_04.png&squot;;cartas_img[4]=&squot;images/c_05.png&squot;;cartas_img[5]=&squot;images/c_06.png&squot;;cartas_img[6]=&squot;images/c_07.png&squot;;cartas_img[7]=&squot;images/c_08.png&squot;;cartas_img[8]=&squot;images/c_09.png&squot;;cartas_img[9]=&squot;images/c_10.png&squot;'">
+   <param name="A_02" value="id='valores' vector='sí' evaluar='una-sola-vez' tamaño='10' expresión='valores[0]=1;valores[1]=2;valores[2]=3;valores[3]=4;valores[4]=5;valores[5]=6;valores[6]=7;valores[7]=8;valores[8]=9;valores[9]=10;'">
+   <param name="A_03" value="id='permutaValores()' algoritmo='sí' expresión='x' algoritmo='sí' Local='_i;_indrnd;_tmpval' inicio='_i=0' hacer='_indrnd=ent(rnd*10);_tmpval=valores[_i];;valores[_i]=valores[_indrnd];valores[_indrnd]=_tmpval;;_i=_i+1' mientras='_i<10'">
+   <param name="A_04" value="id='losPasos' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='1000' filas='30' expresión=';'">
+   <param name="A_05" value="id='init()' algoritmo='sí' algoritmo='sí' hacer='_pos_0=0;_pos_1=1;_pos_2=2;_pos_3=3;_pos_4=4;_pos_5=5;_pos_6=6;_pos_7=7;_pos_8=8;_pos_9=9;_pos_10=10;_pos_11=11;_pos_12=12;_pos_13=13;_pos_14=14;_pos_15=15;_pos_16=16;_pos_17=17;_pos_18=18;_pos_19=19;;_marca_1=20;_marca_2=21;;_texto=22;;initLosPasos();generaOrden();'">
+   <param name="A_06" value="id='initLosPasos()' algoritmo='sí' algoritmo='sí' Local='_ii' inicio='_ii=0' hacer='initUnPaso(_ii);_ii=_ii+1' mientras='_ii<500'">
+   <param name="A_07" value="id='initUnPaso(_p_)' algoritmo='sí' algoritmo='sí' Local='_iii' inicio='_iii=0' hacer='losPasos[_p_,_iii]=-1;_iii=_iii+1' mientras='_iii<30'">
+   <param name="A_08" value="id='generaSecuenciaInicial()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='pasoAlgo=0' hacer='losPasos[pasoAlgo,_pos_0]=valores[0];losPasos[pasoAlgo,_pos_1]=valores[1];losPasos[pasoAlgo,_pos_2]=valores[2];losPasos[pasoAlgo,_pos_3]=valores[3];losPasos[pasoAlgo,_pos_4]=valores[4];losPasos[pasoAlgo,_pos_5]=valores[5];losPasos[pasoAlgo,_pos_6]=valores[6];losPasos[pasoAlgo,_pos_7]=valores[7];losPasos[pasoAlgo,_pos_8]=valores[8];losPasos[pasoAlgo,_pos_9]=valores[9];'">
+   <param name="A_09" value="id='generaOrden()' algoritmo='sí' expresión='x' algoritmo='sí' hacer='permutaValores();generaSecuenciaInicial();_elem_actual_=0;_paso_=0;;copiaValores();_paso_=_paso_+1;losPasos[_paso_,_texto]=&squot;Iniciamos el primer recorrido&squot;;;generaPasos();;losPasos[_paso_,_texto]=&squot;Como tenemos 10 elementos al realizar 9 recorridos el algoritmo termina&squot;;losPasos[_paso_,_marca_1]=-1;losPasos[_paso_,_marca_2]=-1;;maxPasos=_paso_'">
+   <param name="A_10" value="id='generaPasos()' algoritmo='sí' expresión='x' algoritmo='sí' Local='_i' inicio='_i=0' hacer='hasRecorrido(_i);;_i=_i+1;' mientras='_i<9'">
+   <param name="A_11" value="id='hasRecorrido(_j)' algoritmo='sí' expresión='x' algoritmo='sí' Local='_i' inicio='_i=0' hacer='pasoIntercambiar(_i,_i+1);;_i=_i+1' mientras='_i<9-_j'">
+   <param name="A_12" value="id='copiaValores()' algoritmo='sí' expresión='x' algoritmo='sí' Local='_i' inicio='_i=0' hacer='losPasos[_paso_+1,_i]=losPasos[_paso_,_i];_i=_i+1' mientras='_i<30'">
+   <param name="A_13" value="id='intercambia(_ind1,_ind2)' algoritmo='sí' expresión='x' algoritmo='sí' Local='_tmp' hacer='_tmp=losPasos[_paso_,_ind1];losPasos[_paso_,_ind1]=losPasos[_paso_,_ind2];losPasos[_paso_,_ind2]=_tmp;;'">
+   <param name="A_14" value="id='pasoIntercambiar(_ind1,_ind2)' algoritmo='sí' expresión='cond' algoritmo='sí' Local='val1;val2;cond' hacer='copiaValores();_paso_=_paso_+1;;losPasos[_paso_,_texto]=&squot;Se toma la pareja y se comparan sus elementos&squot;;losPasos[_paso_,_marca_1]=_ind1;losPasos[_paso_,_marca_2]=_ind2;;copiaValores();_paso_=_paso_+1;;val1=losPasos[_paso_,_ind1];val2=losPasos[_paso_,_ind2];;cond=(val1<val2);;losPasos[_paso_,_texto]=(cond)?&squot;Como el de la izquierda es menor al de la derecha, se dejan como están&squot;:&squot;Como el de la izquierda es mayor o igual al de la derecha, se intercambian&squot;;;copiaValores();_paso_=(!cond)?_paso_+1:_paso_;;tt=(!cond)?intercambia(_ind1,_ind2):0;;'">
+   <param name="A_15" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='titulo1=&squot;Ordenamiento de burbuja&squot;;titulo2=&squot;Ordenamiento de burbuja - Ejemplos&squot;;;borde=15;marco.x=50;marco.y=85+15;marco.w=870;marco.h=410;;desp=-30;;paso=0;limPasos=3;;init();'">
+   <param name="A_16" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='imagen' dibujar-si='paso==0' coord_abs='sí' expresión='(0,0)' archivo='images/fondo_video.jpg'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='(paso<3)' expresión='[(E1._w-_AnchoDeCadena_(titulo1,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo1]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='(paso==3)' expresión='[(E1._w-_AnchoDeCadena_(titulo2,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo2]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='texto' color='negro' dibujar-si='paso==1' expresión='[marco.x+borde,marco.y+borde]' texto='Dada una colección de elementos que queremos ordenar, el algoritmo de ordenamiento de burbuja, consiste en realizar varios recorridos en la colección, logrando que en cada recorrido el elemento de mayor valor se coloque en su posición final, por medio de intercambios.\n\nLos recorridos e intercambios realizados, simulan la forma en la que una burbuja sube a la superficie, por eso el nombre de ordenamiento de burbuja.\n' fuente='SansSerif,PLAIN,22' fijo='sí' ancho='marco.w - 2*borde'">
+   <param name="G_05" value="espacio='E1' tipo='punto' dibujar-si='0' expresión='(0,0)' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' color='negro' dibujar-si='paso==2' expresión='[marco.x+borde,marco.y+borde]' texto='Primero, se toman el primer y el segundo elemento de la colección y se comparan, si el primero es menor que el segundo se dejan como están y sino se intercambian, luego se toma el segundo y el tercer elemento y se comparan, si el segundo es menor que el tercero se dejan como están y sino se intercambian, este procedimiento se repite hasta llegar a la pareja correspondiente al penúltimo y último elemento de la colección. Al final de este recorrido el elemento de mayor valor ha alcanzado el lugar que le corresponde dentro de la secuencia ordenada.\n\nLuego, se deben realizar tantos recorridos como elementos hay en la colección menos uno. Y en cada recorrido los elementos de mayor valor alcanzaran su posición correspondiente.' fuente='SansSerif,PLAIN,22' fijo='sí' ancho='marco.w - 2*borde'">
+   <param name="G_07" value="espacio='E1' tipo='punto' dibujar-si='0' expresión='(0,0)' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='texto' color='negro' dibujar-si='0&&(paso==3)&&(losPasos[pasoAlgo,s]!=-1)' expresión='[50+s*90,180]' familia='s' s.intervalo='[0,9]' s.pasos='9' texto='[losPasos[pasoAlgo,s]]' fuente='Monospaced,BOLD,40' decimales='0' fijo='no'">
+   <param name="G_09" value="espacio='E1' tipo='texto' color='negro' dibujar-si='(paso==3)&&(losPasos[pasoAlgo,_texto]!=-1)' expresión='[70,110]' texto='[losPasos[pasoAlgo,_texto]]' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='punto' dibujar-si='0' expresión='(0,0)' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='texto' color='negro' dibujar-si='0' expresión='[0,0]' texto='[_elem_actual_] [_paso_] | [losPasos[pasoAlgo,_marca_1]] [losPasos[pasoAlgo,_marca_2]] ' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='(paso==3)&&(losPasos[pasoAlgo,s]!=-1)' coord_abs='sí' expresión='(80+s*80,220+((losPasos[pasoAlgo,_marca_1]==s)?desp:0)+((losPasos[pasoAlgo,_marca_2]==s)?desp:0))' familia='s' s.intervalo='[0,9]' s.pasos='9' archivo='[cartas_img[losPasos[pasoAlgo,s]-1]]' info='las cartas'">
+</ajs>
+
+</body>
+</html>

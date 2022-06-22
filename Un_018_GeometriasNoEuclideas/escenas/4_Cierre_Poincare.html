@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+
+<title>Cierre</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.11, 2014-07-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E35' x='260' y='140' ancho='45%' alto='55%' dibujar-si='postulado=5' fijo='sí' escala='120' O.y='-20' despl_imagen='arr-izq' fondo='d5f3ff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='postulado' tipo='numérico' interfaz='menú' región='interior' espacio='E1' nombre='postulado' expresión='(15,73,169,35)' valor='5' decimales='0' fijo='sí' visible='no' opciones='Primer postulado [1],Segundo postulado [2],Tercer postulado [3],Cuarto postulado [4],Quinto postulado [5]' dibujar-si='0'">
+   <param name="C_02" value="id='geodesicaE35' tipo='numérico' interfaz='botón' región='interior' espacio='E35' nombre='trazar una geodésica' expresión='(183,255,190,20)' fijo='sí' visible='sí' color='rojo' fuente puntos='18' acción='calcular' parámetro='npuntosE35=npuntosE35+1' dibujar-si='npuntosE35=2' pos_mensajes='centro'">
+   <param name="C_03" value="id='pgeodesicaE35' tipo='numérico' interfaz='botón' región='interior' espacio='E35' nombre='trazar una geodésica por R' expresión='(183,255,220,20)' fijo='sí' visible='sí' color='rojo' fuente puntos='18' acción='calcular' parámetro='npuntosE35=npuntosE35+1' dibujar-si='npuntosE35=4' pos_mensajes='centro'">
+   <param name="C_04" value="id='pruebaE35' tipo='numérico' interfaz='botón' región='interior' espacio='E35' nombre='¡Prueba' expresión='(117,279,80,20)' fijo='sí' visible='no' color='rojo' fuente puntos='18' opciones=' [0],Sí [1], No [2]' acción='calcular' parámetro='pruebaE35=1' dibujar-si='(npuntosE35=5)&(pruebaE35=0)' pos_mensajes='centro'">
+   <param name="C_05" value="id='q1E35' tipo='gráfico' espacio='E35' tamaño='6' expresión='(rnd,rnd)' constricción='(x*x+y*y<1)' fijo='sí' dibujar-si='(npuntosE35=5)&pruebaE35'">
+   <param name="C_06" value="id='sinoE35' tipo='numérico' interfaz='menú' región='interior' espacio='E35' nombre='_._' expresión='(343,280,80,20)' fijo='sí' visible='no' color='rojo' fuente puntos='18' opciones=' [0],Ninguna [1], Una [2], Varias [3], Infinitas [4]' acción='calcular' dibujar-si='(npuntosE35=5)&(pruebaE35=1)' pos_mensajes='centro'">
+   <param name="C_07" value="id='inicioE35' tipo='numérico' interfaz='botón' región='interior' espacio='E35' nombre='inicio' expresión='(343,280,80,20)' fijo='sí' visible='sí' color='rojo' fuente puntos='18' acción='calcular' parámetro='npuntosE35=0\npruebaE35=0' dibujar-si='npuntosE35>=6' pos_mensajes='centro'">
+   <param name="A_01" value="id='incr' expresión='2*pi/128'">
+   <param name="A_02" value="id='xcir' vector='sí' evaluar='una-sola-vez' tamaño='128'">
+   <param name="A_03" value="id='ycir' vector='sí' evaluar='una-sola-vez' tamaño='128'">
+   <param name="A_04" value="id='cir()' algoritmo='sí' algoritmo='sí' inicio='i=0' hacer='xcir[i]=cos(i*incr);ycir[i]=sen(i*incr);i=i+1' mientras='i<=128'">
+   <param name="A_05" value="id='geodesica(p1,p2,q1,q2)' algoritmo='sí' expresión='0' algoritmo='sí' hacer='arcogeo=2*(p2*q1-p1*q2);cageo=(q1*q1+q2*q2+1)*p2-(p1*p1+p2*p2+1)*q2;cbgeo=(p1*p1+p2*p2+1)*q1-(q1*q1+q2*q2+1)*p1;cageo=arcogeo#0?cageo/arcogeo:0;cbgeo=arcogeo#0?cbgeo/arcogeo:0;rgeo=cageo*cageo+cbgeo*cbgeo-1;rgeo=(rgeo>=0)?sqrt(rgeo):50;'">
+   <param name="A_06" value="id='corte(a,b)' algoritmo='sí' expresión='x' algoritmo='sí' hacer='x1=(b=0)?1/a:(a+b*sqrt(a*a+b*b-1))/(a*a+b*b);y1=(b=0)?sqrt(a*a-1)/a:(1-a*x1)/b;x2=(b=0)?1/a:(a-b*sqrt(a*a+b*b-1))/(a*a+b*b);y2=(b=0)?-sqrt(a*a-1)/a:(1-a*x2)/b;'">
+   <param name="A_07" value="id='corter(p1,p2,q1,q2)' algoritmo='sí' expresión='x' algoritmo='sí' hacer='mm=sqrt((q1-p1)*(q1-p1)+(q2-p2)*(q2-p2));x1=mm=0?0:(q1-p1)/mm;y1=mm=0?0:(q2-p2)/mm;x2=-x1;y2=-y1;'">
+   <param name="A_08" value="id='deuclidea(p1,p2,q1,q2))' algoritmo='sí' expresión='d' algoritmo='sí' hacer='d=sqrt((q1-p1)*(q1-p1)+(q2-p2)*(q2-p2))'">
+   <param name="A_09" value="id='angulo(ux,uy,vx,vy)' algoritmo='sí' expresión='ang' algoritmo='sí' hacer='mod1=sqrt(ux*ux+uy*uy);mod2=sqrt(vx*vx+vy*vy);ang=(mod1*mod2#0)?acos((ux*vx+uy*vy)/(mod1*mod2)):0'">
+   <param name="A_10" value="id='distancia(p1,p2,q1,q2,pc1,pc2,qc1,qc2,ca,cb,r)' algoritmo='sí' expresión='xx' algoritmo='sí' hacer='dpa=angulo(pc1-ca,pc2-cb,p1-ca,p2-cb)*r;dpb=angulo(p1-ca,p2-cb,qc1-ca,qc2-cb)*r;dqa=angulo(pc1-ca,pc2-cb,q1-ca,q2-cb)*r;dqb=angulo(q1-ca,q2-cb,qc1-ca,qc2-cb)*r;xx=(dpa<0.001)|(dqb<0.001)|(dqa<0.001)|(dpb<0.001)?2000:abs(log(dpa)+log(dqb)-log(dqa)-log(dpb));;'">
+   <param name="A_11" value="id='drecta(p1,p2,q1,q2,pc1,pc2,qc1,qc2)' algoritmo='sí' expresión='xx' algoritmo='sí' hacer='dpa=sqrt((p1-pc1)*(p1-pc1)+(p2-pc2)*(p2-pc2));dpb=sqrt((p1-qc1)*(p1-qc1)+(p2-qc2)*(p2-qc2));dqa=sqrt((q1-pc1)*(q1-pc1)+(q2-pc2)*(q2-pc2));dqb=sqrt((q1-qc1)*(q1-qc1)+(q2-qc2)*(q2-qc2));xx=(dpa<0.001)|(dqb<0.001)|(dqa<0.001)|(dpb<0.001)?2000:abs(log(dpa)+log(dqb)-log(dqa)-log(dpb));;'">
+   <param name="A_12" value="id='cir2(x1,y1,x2,y2,d)' algoritmo='sí' expresión='x' algoritmo='sí' hacer='a=sqrt(x1^2+y1^2);b1=(e^d*(a+1)-(1-a))/(e^d*(a+1)+(1-a));b2=(e^(-d)*(a+1)-(1-a))/(e^(-d)*(a+1)+(1-a));centro=0.5*(b1+b2);radio=abs(b1-b2)*0.5;uux=x1;uuy=y1;mm=sqrt(uux*uux+uuy*uuy);uux=(mm=0)?0:uux/mm;uuy=(mm=0)?0:uuy/mm;centrox=centro*uux;centroy=centro*uuy'">
+   <param name="A_13" value="id='geop(a,b,x1,y1)' algoritmo='sí' expresión='x' algoritmo='sí' hacer='A=a*x1+b*y1;B=(a-x1)*x1+(b-y1)*y1;det=x1*(b-y1)-y1*(a-x1);cgeop=A*(b-y1)-B*y1;dgeop=x1*B-A*(a-x1);cgeop=(det#0)?cgeop/det:0;dgeop=(det#0)?dgeop/det:0;rgeop=cgeop*cgeop+dgeop*dgeop-1;rgeop=(rgeop>=0)?sqrt(rgeop):50;;'">
+   <param name="A_14" value="id='cirycir(a,b,c,d)' algoritmo='sí' expresión='corta' algoritmo='sí' hacer='A=-2*a;B=-2*b;C=-2*c;D=-2*c;r1=sqrt(a*a+b*b-1);r2=sqrt(c*c+d*d-1);dc=sqrt((c-a)^2+(d-b)^2);corta=(dc<=(r1+r2))&(dc>=abs(r2-r1))?1:-2;x1=((a=c)&corta)?(a+sqrt(a*a-1)):-2;y1=((a=c)&corta)?0:-2;x2=((a=c)&corta)?(a-sqrt(a*a-1)):-2;y2=((a=c)&corta)?0:-2;m=(b-d)/(c-a);aux1=(-(A*m+B)+sqrt(abs((A*m+B)^2-4*(1+m*m))))/(2*(1+m*m));y1=((a#c)&corta)?aux1:-2;x1=((a#c)&corta)?m*y1:-2;aux2=(-(A*m+B)-sqrt(abs((A*m+B)^2-4*(1+m*m))))/(2*(1+m*m));y2=((a#c)&corta)?aux2:-2;x2=((a#c)&corta)?m*y2:-2;xsol=(x1*x1+y1*y1)<1?x1:x2;ysol=(x1*x1+y1*y1)<1?y1:y2;;'">
+   <param name="A_15" value="id='recyrec(x1c,y1c,x2c,y2c,x3c,y3c,x4c,y4c)' algoritmo='sí' expresión='corta' algoritmo='sí' hacer='corta=1;xsol=0;ysol=0'">
+   <param name="A_16" value="id='ciryrec(aa,bb,x1c,y1c,x2c,y2c)' algoritmo='sí' expresión='corta' algoritmo='sí' hacer='A=y2c-y1c;B=-(x2c-x1c);rr=sqrt(aa*aa+bb*bb-1);dd=abs(A*aa+B*bb)/(sqrt(A*A+B*B));corta=(dd<=rr)?1:-2;x1=((A=0)&corta)?aa+sqrt(aa*aa-1):-2;y1=((A=0)&corta)?0:-2;x2=((A=0)&corta)?aa-sqrt(aa*aa-1):-2;y2=((A=0)&corta)?0:-2;m=((A#0)&corta)?-B/A:0;n=((A#0)&corta)?-C/A:0;P=((A#0)&corta)?m*m+1:0;Q=((A#0)&corta)?-2*aa*m-2*bb:0;y1=((A#0)&corta)?(-Q+sqrt(abs(Q*Q-4*P)))/(2*P):-2;x1=((A#0)&corta)?m*y1:-2;y2=((A#0)&corta)?(-Q-sqrt(abs(Q*Q-4*P)))/(2*P):-2;x2=((A#0)&corta)?m*y2:-2;xsol=(x1*x1+y1*y1)<1?x1:x2;ysol=(x1*x1+y1*y1)<1?y1:y2'">
+   <param name="A_17" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Quinto Postulado de Euclides en el disco de Poincaré&squot;' hacer='cir()'">
+   <param name="A_18" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='npuntosE35=(E35.clic_izquierdo=1)&(npuntosE35<=1)?npuntosE35+1:npuntosE35;pxE35=((E35.clic_izquierdo=1)&(npuntosE35=1))?E35.mouse_x:pxE35;pyE35=((E35.clic_izquierdo=1)&(npuntosE35=1))?E35.mouse_y:pyE35;qxE35=((E35.clic_izquierdo=1)&(npuntosE35=2))?E35.mouse_x:qxE35;qyE35=((E35.clic_izquierdo=1)&(npuntosE35=2))?E35.mouse_y:qyE35;pfueraE35=(pxE35*pxE35+pyE35*pyE35)>=1?1:0;qfueraE35=(qxE35*qxE35+qyE35*qyE35)>=1?1:0;mensajeE35=(pfueraE35|qfueraE35)?&squot;Este punto no está en el disco de Poincaré&squot;:&squot;&squot;;npuntosE35=(pfueraE35&(npuntosE35=1))?npuntosE35-1:npuntosE35;npuntosE35=(qfueraE35&(npuntosE35=2))?npuntosE35-1:npuntosE35;npuntosE35= (sqrt((pxE35-qxE35)^2+(pyE35-qyE35)^2)<0.05)&(npuntosE35=2)?npuntosE35-1:npuntosE35;geodesica(pxE35,pyE35,qxE35,qyE35);arcogeoE35=arcogeo;cageoE35=cageo;cbgeoE35=cbgeo;rgeoE35=rgeo;aa=(npuntosE35>=3)&(abs(rgeoE35)<=25)?corte(cageoE35,cbgeoE35):corter(pxE35,pyE35,qxE35,qyE35);pcE35.x=x1;pcE35.y=y1;qcE35.x=x2;qcE35.y=y2;npuntosE35=(E35.clic_izquierdo=1)&(npuntosE35=3)?npuntosE35+1:npuntosE35;pexE35=((E35.clic_izquierdo=1)&(npuntosE35=4))?E35.mouse_x:pexE35;peyE35=((E35.clic_izquierdo=1)&(npuntosE35=4))?E35.mouse_y:peyE35;pengeoE35=(abs(pexE35*pexE35+peyE35*peyE35-2*cageoE35*pexE35-2*cbgeoE35*peyE35+1)<0.05)?1:0;mensajeE35=pengeoE35?&squot;El punto está en la geodésica&squot;:&squot;&squot;;npuntosE35=( pengeoE35&(npuntosE35=4))?npuntosE35-1:npuntosE35;pefueraE35=(pexE35*pexE35+peyE35*peyE35)>=1?1:0;mensajeE35=(pefueraE35)?&squot;Este punto no está en el disco de Poincaré&squot;:mensajeE35;npuntosE35=(pefueraE35&(npuntosE35=4))?npuntosE35-1:npuntosE35;geodesica(pexE35,peyE35,q1E35.x,q1E35.y);parcogeoE35=arcogeo;pcageoE35=cageo;pcbgeoE35=cbgeo;prgeoE35=rgeo;aa=(npuntosE35>=5)&(abs(prgeoE35)<=25)?corte(pcageoE35,pcbgeoE35):corter(pexE35,peyE35,q1E35.x,q1E35.y);ppcE35.x=x1;ppcE35.y=y1;pqcE35.x=x2;pqcE35.y=y2;xsolE35=-5;ysolE35=-5;corta4E35=((rgeoE35>25)&(prgeoE35>25))?recyrec(pcE35.x,pcE35.y,qcE35.x,qcE35.y,ppcE35.x,ppcE35.y,pqcE35.x,pqcE35.y):-2;xsolE35=corta4E35?xsol:xsolE35;ysolE35=corta4E35?ysol:ysolE35;corta3E35=((rgeoE35>25)&(prgeoE35<=25))?ciryrec(pcageoE35,pcbgeoE35,pcE35.x,pcE35.y,qcE35.x,qcE35.y):-2;xsolE35=corta3E35?xsol:xsolE35;ysolE35=corta3E35?ysol:ysolE35;corta2E35=((rgeoE35<=25)&(prgeoE35>25))?ciryrec(cageoE35,cbgeoE35,ppcE35.x,ppcE35.y,pqcE35.x,pqcE35.y):-2;xsolE35=corta2E35?xsol:xsolE35;ysolE35=corta2E35?ysol:ysolE35;corta1E35=((rgeoE35<=25)&(prgeoE35<=25))?cirycir(cageoE35,cbgeoE35,pcageoE35,pcbgeoE35):-2;xsolE35=corta1E35?xsol:xsolE35;ysolE35=corta1E35?ysol:ysolE35;cortaE35=((corta1E35=1)|(corta2E35=1)|(corta3E35=1)|(corta4E35=1));npuntosE35=(sinoE35=4)?npuntosE35+1:npuntosE35;sinoE35=(sinoE35=4)?1:sinoE35;;'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' expresión='[270,90]' texto='Geodésica en el disco: Arco ortogonal' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(postulado=5)&(npuntosE35=5)' expresión='[270,460]' texto='Dos geodésicas son paralelas si no\n   tienen ningún punto en común' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(postulado=5)&(npuntosE35=6)' expresión='[250,460]' texto='En el disco de Poincaré por un punto exterior\n        a una geodésica pueden trazarse\n                     infinitas paralelas' fuente='SansSerif,BOLD,22' fijo='sí'">
+   <param name="G_05" value="espacio='E35' tipo='segmento' dibujar-si='postulado=5' expresión='(xcir[s],ycir[s])(xcir[s+1],ycir[s+1])' familia='s' s.intervalo='[0,126]' s.pasos='63' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_06" value="espacio='E35' tipo='texto' color='rojo' dibujar-si='npuntosE35=0' expresión='[20,280]' texto='Haz clic para marcar un punto' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_07" value="espacio='E35' tipo='texto' color='rojo' dibujar-si='npuntosE35=1' expresión='[20,280]' texto='Haz clic para marcar otro punto' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_08" value="espacio='E35' tipo='texto' color='rojo' dibujar-si='npuntosE35=2' expresión='[20,255]' texto='Pulsa el botón para ' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_09" value="espacio='E35' tipo='texto' color='rojo' dibujar-si='npuntosE35=3' expresión='[5,280]' texto='Haz clic para marcar un punto exterior a la geodésica' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_10" value="espacio='E35' tipo='texto' color='rojo' dibujar-si='npuntosE35=4' expresión='[20,255]' texto='Pulsa el botón para ' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_11" value="espacio='E35' tipo='texto' color='rojo' dibujar-si='npuntosE35=5' expresión='[2,255]' texto='¿Cuántas paralelas pueden trazarse que pasen por R\n                         ¡Prueba y responde!' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_12" value="espacio='E35' tipo='texto' color='rojo' expresión='[20,260]' texto='[mensajeE35]' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_13" value="espacio='E35' tipo='arco' color='rojo' dibujar-si='(npuntosE35>=5)&(abs(prgeoE35)<=25)' centro='(pcageoE35,pcbgeoE35)' radio='prgeoE35' inicio='(ppcE35.x,ppcE35.y)' fin='(pqcE35.x,pqcE35.y)' fijo='sí' ancho='3'">
+   <param name="G_14" value="espacio='E35' tipo='segmento' color='rojo' dibujar-si='(npuntosE35>=5)&(abs(prgeoE35)>25)' expresión='(ppcE35.x,ppcE35.y)(pqcE35.x,pqcE35.y)' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_15" value="espacio='E35' tipo='segmento' color='azul' dibujar-si='(npuntosE35>=3)&(abs(rgeoE35)>25)' expresión='(pcE35.x,pcE35.y)(qcE35.x,qcE35.y)' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_16" value="espacio='E35' tipo='arco' color='azul' dibujar-si='(npuntosE35>=3)&(abs(rgeoE35)<=25)' centro='(cageoE35,cbgeoE35)' radio='rgeoE35' inicio='(pcE35.x,pcE35.y)' fin='(qcE35.x,qcE35.y)' fijo='sí' ancho='3'">
+   <param name="G_17" value="espacio='E35' tipo='punto' color='rojo' dibujar-si='((npuntosE35=2)|(npuntosE35=3))&(pruebaE35=0)' expresión='(qxE35,qyE35)' texto='Q' fuente='Monospaced,BOLD,18' fijo='sí' tamaño='6'">
+   <param name="G_18" value="espacio='E35' tipo='punto' color='rojo' dibujar-si='((npuntosE35=1)|(npuntosE35=2)|(npuntosE35=3))&(pruebaE35=0)' expresión='(pxE35,pyE35)' texto='P' fuente='Monospaced,BOLD,18' fijo='sí' tamaño='6'">
+   <param name="G_19" value="espacio='E35' tipo='punto' color='rojo' dibujar-si='(npuntosE35>=4)' expresión='(pexE35,peyE35)' texto='R' fuente='Monospaced,BOLD,18' fijo='sí' tamaño='6'">
+   <param name="G_20" value="espacio='E35' tipo='punto' dibujar-si='cortaE35&(npuntosE35=5)' expresión='(xsolE35,ysolE35)' texto='S' fuente='Monospaced,BOLD,18' fijo='sí' tamaño='6'">
+   <param name="G_21" value="espacio='E35' tipo='texto' dibujar-si='(cortaE35=0)&(npuntosE35=5)' expresión='[340,220]' texto='paralela' fuente='Monospaced,BOLD,18' fijo='sí'">
+   <param name="G_22" value="espacio='E35' tipo='texto' dibujar-si='cortaE35&(npuntosE35=5)' expresión='[340,220]' texto='secante' fuente='Monospaced,BOLD,18' fijo='sí'">
+</ajs>
+
+
+
+<script type="descartes/macro" id="macros/arco3D.txt">
+
+tipo_de_macro=R3
+
+Idioma=español
+
+id='px' expresión='0'
+
+id='py' expresión='0'
+
+id='pz' expresión='0'
+
+id='qx' expresión='1'
+
+id='qy' expresión='0'
+
+id='qz' expresión='0'
+
+id='rx' expresión='0'
+
+id='ry' expresión='0'
+
+id='rz' expresión='1'
+
+id='radio' expresión='1'
+
+id='npuntos' expresión='10'
+
+id='anchoarco' expresión='3'
+
+id='colort' expresión='0'
+
+id='colorr' expresión='1'
+
+id='colorv' expresión='200/255'
+
+id='colora' expresión='0'
+
+id='xn' vector='sí' evaluar='una-sola-vez' tamaño='4*npuntos+1'
+
+id='yn' vector='sí' evaluar='una-sola-vez' tamaño='4*npuntos+1'
+
+id='zn' vector='sí' evaluar='una-sola-vez' tamaño='4*npuntos+1'
+
+id='uwv()' algoritmo='sí' algoritmo='sí' hacer='ux=qx-px;uy=qy-py;uz=qz-pz;modulou=sqrt(ux*ux+uy*uy+uz*uz);ux=(modulou=0)?0:ux/modulou;uy=(modulou=0)?0:uy/modulou;uz=(modulou=0)?0:uz/modulou;vx=rx-px;vy=ry-py;vz=rz-pz;modulov=sqrt(vx*vx+vy*vy+vz*vz);vx=(modulov=0)?0:vx/modulov;vy=(modulov=0)?0:vy/modulov;vz=(modulov=0)?0:vz/modulov;wx=ux+vx;wy=uy+vy;wz=uz+vz;modulouv=sqrt(wx*wx+wy*wy+wz*wz);wx=(modulouv=0)?0:wx/modulouv;wy=(modulouv=0)?0:wy/modulouv;wz=(modulouv=0)?0:wz/modulouv;'
+
+id='puntos_arco1()' algoritmo='sí' algoritmo='sí' inicio='s=0;' hacer='xn[s]=ux+wx*s/npuntos;yn[s]=uy+wy*s/npuntos;zn[s]=uz+wz*s/npuntos;modulo=sqrt(xn[s]*xn[s]+yn[s]*yn[s]+zn[s]*zn[s]);xn[s]=((modulo=0)|(modulouv=0))?px:px+radio*xn[s]/modulo;yn[s]=((modulo=0)|(modulouv=0))?py:py+radio*yn[s]/modulo;zn[s]=((modulo=0)|(modulouv=0))?pz:pz+radio*zn[s]/modulo;s=s+1' mientras='s<=npuntos'
+
+id='puntos_arco2()' algoritmo='sí' algoritmo='sí' inicio='s=1' hacer='xn[npuntos+s]=wx+ux*(npuntos-s)/npuntos;yn[npuntos+s]=wy+uy*(npuntos-s)/npuntos;zn[npuntos+s]=wz+uz*(npuntos-s)/npuntos;modulo=sqrt(xn[npuntos+s]*xn[npuntos+s]+yn[npuntos+s]*yn[npuntos+s]+zn[npuntos+s]*zn[npuntos+s]);xn[npuntos+s]=((modulo=0)|(modulouv=0))?px:px+radio*xn[npuntos+s]/modulo;yn[npuntos+s]=((modulo=0)|(modulouv=0))?py:py+radio*yn[npuntos+s]/modulo;zn[npuntos+s]=((modulo=0)|(modulouv=0))?pz:pz+radio*zn[npuntos+s]/modulo;s=s+1' mientras='s<=npuntos'
+
+id='puntos_arco3()' algoritmo='sí' algoritmo='sí' inicio='s=1;' hacer='xn[2*npuntos+s]=wx+vx*s/npuntos;yn[2*npuntos+s]=wy+vy*s/npuntos;zn[2*npuntos+s]=wz+vz*s/npuntos;modulo=sqrt(xn[2*npuntos+s]*xn[2*npuntos+s]+yn[2*npuntos+s]*yn[2*npuntos+s]+zn[2*npuntos+s]*zn[2*npuntos+s]);xn[2*npuntos+s]=((modulo=0)|(modulouv=0))?px:px+radio*xn[2*npuntos+s]/modulo;yn[2*npuntos+s]=((modulo=0)|(modulouv=0))?py:py+radio*yn[2*npuntos+s]/modulo;zn[2*npuntos+s]=((modulo=0)|(modulouv=0))?pz:pz+radio*zn[2*npuntos+s]/modulo;s=s+1' mientras='s<=npuntos'
+
+id='puntos_arco4()' algoritmo='sí' algoritmo='sí' inicio='s=1' hacer='xn[3*npuntos+s]=vx+wx*(npuntos-s)/npuntos;yn[3*npuntos+s]=vy+wy*(npuntos-s)/npuntos;zn[3*npuntos+s]=vz+wz*(npuntos-s)/npuntos;modulo=sqrt(xn[3*npuntos+s]*xn[3*npuntos+s]+yn[3*npuntos+s]*yn[3*npuntos+s]+zn[3*npuntos+s]*zn[3*npuntos+s]);xn[3*npuntos+s]=((modulo=0)|(modulouv=0))?px:px+radio*xn[3*npuntos+s]/modulo;yn[3*npuntos+s]=((modulo=0)|(modulouv=0))?py:py+radio*yn[3*npuntos+s]/modulo;zn[3*npuntos+s]=((modulo=0)|(modulouv=0))?pz:pz+radio*zn[3*npuntos+s]/modulo;s=s+1' mientras='s<=npuntos'
+
+id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='uwv();puntos_arco1();puntos_arco2();puntos_arco3();puntos_arco4();'
+
+tipo='segmento' color='(colorr,colorv,colora,colort)' expresión='(xn[t],yn[t],zn[t])(xn[t+1],yn[t+1],zn[t+1])' familia='t' t.intervalo='[0,4*npuntos-1]' t.pasos='4*npuntos-1' ancho='anchoarco' Nu='1' 
+
+</script>
+
+</body>
+
+</html>

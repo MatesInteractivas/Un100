@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_01.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='datos' x='50' y='100' ancho='500' alto='140' despl_imagen='arr-izq' fondo='fafcfa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='recta' x='50' y='100' ancho='500' alto='100' escala='10' despl_imagen='arr-izq' fondo='f2f2e5' red='no' red10='no' ejes='gris' texto='no' números='sí' eje-y='no'">
+   <param name="E_04" value="tipo='R2' id='plano' x='50' y='200' ancho='500' alto='300' fijo='sí' O.x='-200' O.y='60' despl_imagen='arr-izq' fondo='f0f9ff' red='ffffe7' red10='ffffe2' ejes='gris' texto='no' números='sí'">
+   <param name="E_05" value="tipo='R2' id='valor' x='590' y='120' ancho='300' alto='400' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_06" value="tipo='R2' id='Convertura' dibujar-si='(info)' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_07" value="tipo='R2' id='INFO' x='(970-490)/2' y='100' ancho='490' alto='400' dibujar-si='info' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='decimales' tipo='numérico' región='interior' espacio='datos' nombre='decimales' expresión='(20,5,100,20)' valor='15' incr='1' min='4' max='10' discreto='sí' decimales='0' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='ff' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='valor' expresión='(40,10,150,25)' valor='&squot;(15*n+10)/(n+5)&squot;' fijo='sí' visible='sí' acción='calcular' parámetro='paso=1' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='plano.escala' tipo='numérico' región='interior' espacio='plano' nombre='_._' expresión='(5,5,23,45)' valor='10' incr='0.1*plano.escala' min='0.001' max='1000000' decimales='4*(plano.escala<10)' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='Ox' tipo='numérico' región='exterior' espacio='E1' valor='-190' fijo='sí' pos_mensajes='centro'">
+   <param name="C_06" value="id='Oy' tipo='numérico' región='exterior' espacio='E1' valor='50' fijo='sí' pos_mensajes='centro'">
+   <param name="C_07" value="id='nMin' tipo='numérico' región='interior' espacio='valor' nombre=' nMin ' expresión='(180,180,90,25)' valor='1' incr='1' min='1' decimales='0' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_08" value="id='nMax' tipo='numérico' región='interior' espacio='valor' nombre=' nMax ' expresión='(180,220,90,25)' valor='40' incr='1' min='nMin' decimales='0' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_09" value="id='decimales' tipo='numérico' región='interior' espacio='valor' nombre='decimales' expresión='(400,110,150,20)' valor='2' incr='1' min='6' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_10" value="id='limite' tipo='numérico' región='interior' espacio='valor' nombre='_._' expresión='(90,40,160,25)' valor='15' incr='0.5' decimales='decimales' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_11" value="id='epsilon' tipo='numérico' región='interior' espacio='valor' nombre='_._' expresión='(90,70,160,25)' valor='2' min='0' max='5' decimales='decimales' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_12" value="id='cerrarInfo' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(INFO._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='info=0' pos_mensajes='centro'">
+   <param name="C_13" value="id='explica' tipo='numérico' interfaz='botón' región='interior' espacio='valor' nombre='Límite' expresión='(100,350,80,30)' fijo='sí' visible='sí' color='blanco' color-int='ff404040' fuente puntos='18' imagen='images/btn080.png' acción='calcular' parámetro='info=1' pos_mensajes='centro'">
+   <param name="A_01" value="id='funcion' expresión='_Eval_(ff)'">
+   <param name="A_02" value="id='num' expresión='nMax-nMin'">
+   <param name="A_03" value="id='sucesion(x)' algoritmo='sí' expresión='an' algoritmo='sí' hacer='n=x;an=funcion;'">
+   <param name="A_04" value="id='vinf' expresión='limite-epsilon-sucesion(s)'">
+   <param name="A_05" value="id='vsup' expresión='limite+epsilon-sucesion(s)'">
+   <param name="A_06" value="id='nMaxi' expresión='nMin+6'">
+   <param name="A_07" value="id='numero' expresión='nMaxi-nMin-1'">
+   <param name="A_08" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Límite de una sucesión&squot;' hacer='info=1'">
+   <param name="A_09" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="A_10" value="id='algo' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='polígono' fondo='sí' color='5566aa' dibujar-si='0' coord_abs='sí' expresión='(0,0)(E1._w-1,0)(E1._w-1,E1._h-1)(0,E1._h-1)(0,0)' relleno='f05566aa'">
+   <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_03" value="espacio='plano' tipo='punto' color='00916f' dibujar-si='s#0' expresión='(s,sucesion(s))' familia='s' s.intervalo='[nMin,nMax]' s.pasos='num' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24}' fuente='Serif,PLAIN,15' fijo='sí' tamaño='3'">
+   <param name="G_04" value="espacio='plano' tipo='punto' color='00916f' expresión='(nMax+0.5,sucesion(nMax))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30{\*\mjaformula a{\subix{\expr nMax\decimals 0\fixed0}}}={\*\mjaformula{\expr sucesion(nMax)\decimals 2\fixed0}}\f2\fs24\par }' fuente='SansSerif,PLAIN,15' fijo='sí' tamaño='0'">
+   <param name="G_05" value="espacio='plano' tipo='punto' color='ff6200' dibujar-si='((limite-epsilon-sucesion(nMax))<0)&((limite+epsilon-sucesion(nMax))>0)' expresión='(nMax+0.5,sucesion(nMax))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30{\*\mjaformula a{\subix{\expr nMax\decimals 0\fixed0}}}={\*\mjaformula{\expr sucesion(nMax)\decimals 2\fixed0}}\f2\fs24\par }' fuente='SansSerif,PLAIN,15' fijo='sí' tamaño='0'">
+   <param name="G_06" value="espacio='recta' tipo='punto' color='00916f' dibujar-si='s#0' expresión='(sucesion(s),0)' familia='s' s.intervalo='[nMin,nMax]' s.pasos='num' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='3'">
+   <param name="G_07" value="espacio='recta' tipo='punto' color='00916f' expresión='(sucesion(nMax)-0.5,1.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 a{\*\mjaformula{\subix{\expr nMax\decimals 0\fixed0}}}={\*\mjaformula{\expr sucesion(nMax)\decimals 2\fixed0}}\f2\fs24\par }' fuente='SansSerif,PLAIN,15' fijo='sí' tamaño='0'">
+   <param name="G_08" value="espacio='recta' tipo='punto' color='ff6200' dibujar-si='((limite-epsilon-sucesion(nMax))<0)&((limite+epsilon-sucesion(nMax))>0)' expresión='(sucesion(nMax)-0.5,1.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30 a{\*\mjaformula{\subix{\expr nMax\decimals 0\fixed0}}}={\*\mjaformula{\expr sucesion(nMax)\decimals 2\fixed0}}\f2\fs24\par }' fuente='SansSerif,PLAIN,15' fijo='sí' tamaño='0'">
+   <param name="G_09" value="espacio='plano' tipo='texto' color='8080ff' expresión='[80,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs28\b Plano\fs24\b0}' fuente='SansSerif,BOLD,14' fijo='sí'">
+   <param name="G_10" value="espacio='plano' tipo='segmento' color='d99346' expresión='(-100,limite-epsilon)(100,limite-epsilon)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_11" value="espacio='recta' tipo='segmento' color='f2a86f' expresión='(limite-epsilon,5)(limite-epsilon,-5)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_12" value="espacio='plano' tipo='segmento' color='ffb388' expresión='(-100,limite+epsilon)(100,limite+epsilon)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_13" value="espacio='recta' tipo='segmento' color='d49d5f' expresión='(limite+epsilon,5)(limite+epsilon,-5)' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='0'">
+   <param name="G_14" value="espacio='plano' tipo='punto' color='4a89ff' expresión='(0,limite)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b L\f2\fs24\b0}' fuente='SansSerif,BOLD,14' fijo='sí' tamaño='4'">
+   <param name="G_15" value="espacio='plano' tipo='punto' color='ff6200' dibujar-si='(vsup>0)&(vinf<0)' expresión='(s,sucesion(s))' familia='s' s.intervalo='[nMin,nMax]' s.pasos='num' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24\par }' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='3'">
+   <param name="G_16" value="espacio='valor' tipo='texto' color='00916f' expresión='[20,220+20*(s-nMin)]' familia='s' s.intervalo='[nMin,nMin+numero]' s.pasos='numero' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30{\*\mjaformula a{\subix{\expr s\decimals 0\fixed0}}}={\*\mjaformula{\expr sucesion(s)\decimals decimales\fixed0}}\f2\fs24\par }' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_17" value="espacio='E1' tipo='punto' color='rojo' dibujar-si='(vinf<0)&(vsup>0)' expresión='(sucesion(s),0)' familia='s' s.intervalo='[nMin,nMax]' s.pasos='num' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='3'">
+   <param name="G_18" value="espacio='valor' tipo='texto' color='ff6200' dibujar-si='(vinf<0)&(vsup>0)' expresión='[20,220+20*(s-nMin)]' familia='s' s.intervalo='[nMin,nMin+numero]' s.pasos='numero' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30{\*\mjaformula a{\subix{\expr s\decimals 0\fixed0}}}={\*\mjaformula{\expr sucesion(s)\decimals decimales\fixed0}}\f2\fs24\par }' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_19" value="espacio='recta' tipo='punto' color='00916f' dibujar-si='s#0' expresión='(sucesion(s),0)' familia='s' s.intervalo='[nMin,nMax]' s.pasos='num' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24}' fuente='Serif,PLAIN,15' fijo='sí' tamaño='3'">
+   <param name="G_20" value="espacio='recta' tipo='punto' color='ff6200' dibujar-si='((limite-epsilon-sucesion(s))<0)&((limite+epsilon-sucesion(s))>0)' expresión='(sucesion(s),0)' familia='s' s.intervalo='[nMin,nMax]' s.pasos='num' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24}' fuente='Serif,PLAIN,15' fijo='sí' tamaño='3'">
+   <param name="G_21" value="espacio='recta' tipo='texto' color='8080ff' expresión='[80,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs28\b Recta real\fs24\b0}' fuente='SansSerif,BOLD,14' fijo='sí'">
+   <param name="G_22" value="espacio='valor' tipo='texto' expresión='[0,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30\b a{\*\mjaformula{\subix n}}=\f2\fs30\b0}' fuente='SansSerif,BOLD,15' fijo='sí'">
+   <param name="G_23" value="espacio='valor' tipo='texto' expresión='[0,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30\b L\u237 mite  L=\f2\fs30\b0}' fuente='SansSerif,BOLD,15' fijo='sí'">
+   <param name="G_24" value="espacio='valor' tipo='texto' expresión='[0,70]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs30\b Epsilon  \f2\fs34\u949 \f1\fs30  =\f3\fs30\b0}' fuente='SansSerif,BOLD,15' fijo='sí'">
+   <param name="G_25" value="espacio='INFO' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(INFO._w/2,18,INFO._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_26" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_27" value="espacio='valor' tipo='texto' expresión='[0,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30\b Introduce el valor del l\u237 mite y comprueba\par si existe un \u237 ndice a partir del cual la \par sucesi\u243 n se encuentra en el l\u237 mite \par (L-epsilon, L+epsilon)\f2\fs30\b0}' fuente='SansSerif,BOLD,15' fijo='sí'">
+   <param name="G_28" value="espacio='INFO' tipo='texto' fondo='sí' color='blanco' expresión='[10,7]' texto='¿Qué es el límite de una sucesión?' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_29" value="espacio='INFO' tipo='texto' fondo='sí' expresión='[40,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;}\f1\fs42 Dada un sucesi\u243 n\b  {\*\mjaformula a{\subix n}}\b0 , su l\u237 mite es\par un n\u250 mero real L cuando en cualquier\par entorno de L est\u225 n todos los t\u233 rminos\par de la sucesi\u243 n salvo un n\u250 mero\par finito de ellos.\par \par Es decir, para todo \f3\fs46\b\u949 \f1\fs42\b0 >0, existe \b  \b0 un n\u250 mero\b\par \b0 natural {\*\mjaformula n{\subix 0}} de forma que para todo {\*\mjaformula n>n{\subix 0}}\par se cumple:\par \b          \b0{\*\mjaformula a{\subix n}}\b\u8712 \b0  (L -\f3\fs46\b  \u949 \f1\fs42\b0 , L + \f3\fs46\b\u949 \f1\fs42\b0 )\par   \b}' fuente='SansSerif,PLAIN,21' fijo='sí'">
+</ajs>
+
+</body>
+</html>

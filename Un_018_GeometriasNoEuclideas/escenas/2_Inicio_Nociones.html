@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+
+<title>Cierre</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+
+<ajs name="Descartes" width=909 height=404 code="Descartes">
+   <param name="tamaño" value="909x404">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.11, 2014-07-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E21' x='445' y='85' ancho='437' alto='303' dibujar-si='postulado=1' fijo='sí' despl_imagen='arr-izq' fondo='d5f3ff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E22' x='445' y='85' ancho='437' alto='303' dibujar-si='postulado=2' despl_imagen='arr-izq' fondo='d5f3ff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='E23' x='445' y='85' ancho='437' alto='303' dibujar-si='postulado=3' despl_imagen='arr-izq' fondo='d5f3ff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='E24' x='445' y='85' ancho='437' alto='303' dibujar-si='postulado=4' despl_imagen='arr-izq' fondo='d5f3ff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_06" value="tipo='R2' id='E25' x='445' y='85' ancho='437' alto='303' dibujar-si='postulado=5' despl_imagen='arr-izq' fondo='d5f3ff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='postulado' tipo='numérico' interfaz='menú' región='interior' espacio='E1' nombre='postulado' expresión='(15,73,151,35)' valor='1' decimales='0' fijo='sí' visible='no' opciones='Primer axioma [1],Segundo axioma [2],Tercer axioma [3],Cuarto axioma [4],Quinto axioma [5]'">
+   <param name="C_02" value="id='A21' tipo='gráfico' espacio='E21' tamaño='6' expresión='(-3,2)' fijo='sí'">
+   <param name="C_03" value="id='B21' tipo='gráfico' espacio='E21' tamaño='6' expresión='(-1,1)' fijo='sí'">
+   <param name="C_04" value="id='C21' tipo='gráfico' espacio='E21' tamaño='6' expresión='(1,2)' fijo='sí'">
+   <param name="C_05" value="id='D21' tipo='gráfico' espacio='E21' tamaño='6' expresión='(-3,-2)' fijo='sí'">
+   <param name="C_06" value="id='E21' tipo='gráfico' espacio='E21' tamaño='6' expresión='(-0.5,-2)' fijo='sí'">
+   <param name="C_07" value="id='F21' tipo='gráfico' espacio='E21' tamaño='6' expresión='(2,-2)' fijo='sí'">
+   <param name="C_08" value="id='inicio21' tipo='numérico' interfaz='botón' región='interior' espacio='E21' nombre='Inicio' expresión='(170,260,100,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' negrita='sí' fuente puntos='17' imagen='images/btn100.png' acción='calcular' parámetro='l21=ent(2*rnd)+1\nm21=ent(2*rnd)+1'">
+   <param name="C_09" value="id='A22' tipo='gráfico' espacio='E22' tamaño='6' expresión='(-3,2)' fijo='sí'">
+   <param name="C_10" value="id='B22' tipo='gráfico' espacio='E22' tamaño='6' expresión='(-1,1)' fijo='sí'">
+   <param name="C_11" value="id='D22' tipo='gráfico' espacio='E22' tamaño='6' expresión='(-4.25,-2)' fijo='sí'">
+   <param name="C_12" value="id='E22' tipo='gráfico' espacio='E22' tamaño='6' expresión='(0.25,-2)' fijo='sí'">
+   <param name="C_13" value="id='inicio22' tipo='numérico' interfaz='botón' región='interior' espacio='E22' nombre='inicio' expresión='(170,260,100,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' negrita='sí' fuente puntos='16' imagen='images/btn100.png' acción='calcular' parámetro='l22=ent(2*rnd)+1\nm22=ent(2*rnd)+1\na22=l22*0.95*rnd' pos_mensajes='centro'">
+   <param name="C_14" value="id='A23' tipo='gráfico' espacio='E23' tamaño='6' expresión='(-3,2)' fijo='sí'">
+   <param name="C_15" value="id='B23' tipo='gráfico' espacio='E23' tamaño='6' expresión='(-1,1)' fijo='sí'">
+   <param name="C_16" value="id='D23' tipo='gráfico' espacio='E23' tamaño='6' expresión='(-4.25,-2)' fijo='sí'">
+   <param name="C_17" value="id='E23' tipo='gráfico' espacio='E23' tamaño='6' expresión='(0.25,-2)' fijo='sí'">
+   <param name="C_18" value="id='inicio23' tipo='numérico' interfaz='botón' región='interior' espacio='E23' nombre='inicio' expresión='(170,260,100,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' negrita='sí' fuente puntos='16' imagen='images/btn100.png' acción='calcular' parámetro='l23=ent(2*rnd)+1\nm23=ent(2*rnd)+1\nr23=l23*0.95*rnd' pos_mensajes='centro'">
+   <param name="C_19" value="id='A24' tipo='gráfico' espacio='E24' tamaño='6' expresión='(-3,2)' fijo='sí'">
+   <param name="C_20" value="id='B24' tipo='gráfico' espacio='E24' tamaño='6' expresión='(-1,1)' fijo='sí'">
+   <param name="C_21" value="id='C24' tipo='gráfico' espacio='E24' tamaño='6' expresión='(1,2)' fijo='sí'">
+   <param name="C_22" value="id='D24' tipo='gráfico' espacio='E24' tamaño='6' expresión='(-3,-2)' fijo='sí'">
+   <param name="C_23" value="id='E24' tipo='gráfico' espacio='E24' tamaño='6' expresión='(-0.5,-2)' fijo='sí'">
+   <param name="C_24" value="id='F24' tipo='gráfico' espacio='E24' tamaño='6' expresión='(2,-2)' fijo='sí'">
+   <param name="C_25" value="id='inicio24' tipo='numérico' interfaz='botón' región='interior' espacio='E24' nombre='inicio' expresión='(170,260,100,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' negrita='sí' fuente puntos='16' imagen='images/btn100.png' acción='calcular' parámetro='l24=ent(2*rnd)+1\nm24=ent(2*rnd)+1' pos_mensajes='centro'">
+   <param name="C_26" value="id='A25' tipo='gráfico' espacio='E25' tamaño='6' fijo='sí'">
+   <param name="C_27" value="id='B25' tipo='gráfico' espacio='E25' tamaño='6' expresión='(l25,0)' fijo='sí'">
+   <param name="C_28" value="id='inicio25' tipo='numérico' interfaz='botón' región='interior' espacio='E25' nombre='inicio' expresión='(170,260,100,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' negrita='sí' fuente puntos='16' imagen='images/btn100.png' acción='calcular' parámetro='l25=ent(1*rnd)+2\nn25=ent(7*rnd)+3\nm25=max(l25*rnd*0.8,0.3)\nnn25=max(3, n25-ent(n25*rnd))\nB25.x=l25\nB25.y=0' pos_mensajes='centro'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;5 Nociones Comunes (axiomas)&squot;' hacer='l21=ent(2*rnd)+1;;m21=ent(2*rnd)+1;l22=ent(2*rnd)+1;m22=ent(2*rnd)+1;a22=l22*0.95*rnd;l23=ent(2*rnd)+1;m23=ent(2*rnd)+1;r23=l23*0.75*rnd;l24=ent(2*rnd)+1;m24=ent(2*rnd)+1;l25=ent(1*rnd)+2;n25=ent(7*rnd)+3;m25=max(l25*rnd*0.8,0.3);nn25=max(3, n25-ent(n25*rnd))'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='postulado=1' expresión='[10,140]' texto='Las cosas iguales a una misma cosa\nson también iguales entre sí' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='postulado=1' expresión='[10,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;}{\colortbl\red255\green200\blue0;\red255\green0\blue0;\red0\green0\blue255;}\f1\fs48\i Si \f2\fs52   \b{\*\mjaformula{\defparts\parts 2{\element A=\cf0 C\cf1}{\element\cf2 B\cf1 =\cf0 C\cf1}}}\f1\fs48\b0    entonces \f3\fs52\b{\*\mjaformula A=\cf2 B\cf1}\f1\fs48\b0}' fuente='SansSerif,ITALIC,24' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='postulado=2' expresión='[10,140]' texto='Y si se añaden cosas iguales a cosas\niguales, los totales son iguales' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='postulado=2' expresión='[10,320]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue255;\red255\green0\blue0;\red255\green200\blue0;}\f1\fs48\i Si \f2\fs52  \fs56\b{\*\mjaformula A=\cf0 B\cf1}\fs52\b0  \f1\fs48  entonces \f4\fs52\b{\*\mjaformula A+\cf2 C\cf1 =\cf0 B\cf1 +\cf2 C\cf1}\f1\fs48\b0}' fuente='SansSerif,ITALIC,24' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='postulado=3' expresión='[10,140]' texto='Y si de cosas iguales se quitan cosas\niguales, los restos son iguales' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='postulado=3' expresión='[10,320]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue255;\red255\green0\blue0;\red255\green200\blue0;}\f1\fs48\i Si \f2\fs52  \fs56\b{\*\mjaformula A=\cf0 B\cf1}\fs52\b0  \f1\fs48  entonces \f4\fs52\b{\*\mjaformula A-\cf2 C\cf1 =\cf0 B\cf1 -\cf2 C\cf1}\f1\fs48\b0}' fuente='SansSerif,ITALIC,24' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='postulado=4' expresión='[10,140]' texto='Y las cosas que coinciden\nentre sí son iguales entre\nsí' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_09" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='postulado=4' expresión='[10,320]' fuente='SansSerif,ITALIC,24' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='texto' dibujar-si='postulado=5' expresión='[10,140]' texto='Y el todo es mayor que la parte\n' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_11" value="espacio='E21' tipo='segmento' color='rojo' expresión='(A21.x,A21.y)(A21.x+l21,A21.y)' texto='A' fuente='Serif,BOLD+ITALIC,24' fijo='sí' ancho='3'">
+   <param name="G_12" value="espacio='E21' tipo='segmento' color='azul' expresión='(B21.x,B21.y)(B21.x+l21,B21.y)' texto='B' fuente='Serif,BOLD+ITALIC,24' fijo='sí' ancho='3'">
+   <param name="G_13" value="espacio='E21' tipo='segmento' color='naranja' expresión='(C21.x,C21.y)(C21.x+l21,C21.y)' texto='C' fuente='Serif,BOLD+ITALIC,24' fijo='sí' ancho='3'">
+   <param name="G_14" value="espacio='E21' tipo='polígono' color='rojo' expresión='(D21.x,D21.y)(D21.x+l21,D21.y)(D21.x+l21,D21.y+m21)(D21.x,D21.y+m21)' relleno='90ff0000'">
+   <param name="G_15" value="espacio='E21' tipo='polígono' color='azul' expresión='(E21.x,E21.y)(E21.x+l21,E21.y)(E21.x+l21,E21.y+m21)(E21.x,E21.y+m21)' relleno='900000ff'">
+   <param name="G_16" value="espacio='E21' tipo='polígono' color='naranja' expresión='(F21.x,F21.y)(F21.x+l21,F21.y)(F21.x+l21,F21.y+m21)(F21.x,F21.y+m21)' relleno='90ffc800'">
+   <param name="G_17" value="espacio='E21' tipo='punto' color='rojo' expresión='(D21.x,D21.y)' texto='A' fuente='Serif,BOLD+ITALIC,24' fijo='sí'">
+   <param name="G_18" value="espacio='E21' tipo='punto' color='azul' expresión='(E21.x,E21.y)' texto='B' fuente='Serif,BOLD+ITALIC,24' fijo='sí'">
+   <param name="G_19" value="espacio='E21' tipo='punto' color='naranja' expresión='(F21.x,F21.y)' texto='C' fuente='Serif,BOLD+ITALIC,24' fijo='sí'">
+   <param name="G_20" value="espacio='E22' tipo='segmento' color='naranja' expresión='(B22.x+l22,B22.y)(B22.x+l22+a22,B22.y)' texto='C' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_21" value="espacio='E22' tipo='segmento' color='naranja' expresión='(A22.x+l22,A22.y)(A22.x+l22+a22,A22.y)' texto='C' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_22" value="espacio='E22' tipo='segmento' color='rojo' expresión='(A22.x,A22.y)(A22.x+l22,A22.y)' texto='A' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_23" value="espacio='E22' tipo='segmento' color='azul' expresión='(B22.x,B22.y)(B22.x+l22,B22.y)' texto='B' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_24" value="espacio='E22' tipo='polígono' color='naranja' expresión='(D22.x+l22,D22.y)(D22.x+l22+a22,D22.y)(D22.x+l22+a22,D22.y+m22)(D22.x+l22,D22.y+m22)(D22.x+l22,D22.y)' relleno='90ffc800'">
+   <param name="G_25" value="espacio='E22' tipo='polígono' color='rojo' expresión='(D22.x,D22.y)(D22.x+l22,D22.y)(D22.x+l22,D22.y+m22)(D22.x,D22.y+m22)' relleno='90ff0000'">
+   <param name="G_26" value="espacio='E22' tipo='polígono' color='naranja' expresión='(E22.x+l22,E22.y)(E22.x+l22+a22,E22.y)(E22.x+l22+a22,E22.y+m22)(E22.x+l22,E22.y+m22)(E22.x+l22,E22.y)' relleno='90ffc800'">
+   <param name="G_27" value="espacio='E22' tipo='polígono' color='azul' expresión='(E22.x,E22.y)(E22.x+l22,E22.y)(E22.x+l22,E22.y+m22)(E22.x,E22.y+m22)' relleno='900000ff'">
+   <param name="G_28" value="espacio='E22' tipo='punto' color='rojo' expresión='(D22.x,D22.y)' texto='A' fuente='Serif,BOLD+ITALIC,24' fijo='sí'">
+   <param name="G_29" value="espacio='E22' tipo='punto' color='azul' expresión='(E22.x,E22.y)' texto='B' fuente='Serif,BOLD+ITALIC,24' fijo='sí'">
+   <param name="G_30" value="espacio='E22' tipo='punto' color='naranja' expresión='(D22.x+l22,D22.y)' texto='C' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0'">
+   <param name="G_31" value="espacio='E22' tipo='punto' color='naranja' expresión='(E22.x+l22,E22.y)' texto='C' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0'">
+   <param name="G_32" value="espacio='E23' tipo='segmento' color='naranja' expresión='(A23.x+l23,A23.y-0.05)(A23.x+l23-r23,A23.y-0.05)' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_33" value="espacio='E23' tipo='segmento' color='rojo' expresión='(A23.x,A23.y)(A23.x+l23,A23.y)' texto='A' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_34" value="espacio='E23' tipo='segmento' color='naranja' expresión='(B23.x+l23,B23.y-0.05)(B23.x+l23-r23,B23.y-0.05)' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_35" value="espacio='E23' tipo='segmento' color='azul' expresión='(B23.x,B23.y)(B23.x+l23,B23.y)' texto='B' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_36" value="espacio='E23' tipo='polígono' color='naranja' expresión='(D23.x+l23,D23.y)(D23.x+l23-r23,D23.y)(D23.x+l23-r23,D23.y+m23)(D23.x+l23,D23.y+m23)(D23.x+l23,D23.y)' relleno='90ffc800'">
+   <param name="G_37" value="espacio='E23' tipo='polígono' color='rojo' expresión='(D23.x,D23.y)(D23.x+l23,D23.y)(D23.x+l23,D23.y+m23)(D23.x,D23.y+m23)' relleno='90ff0000'">
+   <param name="G_38" value="espacio='E23' tipo='polígono' color='naranja' expresión='(E23.x+l23,E23.y)(E23.x+l23-r23,E23.y)(E23.x+l23-r23,E23.y+m23)(E23.x+l23,E23.y+m23)(E23.x+l23,E23.y)' relleno='90ffc800'">
+   <param name="G_39" value="espacio='E23' tipo='polígono' color='azul' expresión='(E23.x,E23.y)(E23.x+l23,E23.y)(E23.x+l23,E23.y+m23)(E23.x,E23.y+m23)' relleno='900000ff'">
+   <param name="G_40" value="espacio='E23' tipo='punto' color='rojo' expresión='(D23.x,D23.y)' texto='A' fuente='Serif,BOLD+ITALIC,24' fijo='sí'">
+   <param name="G_41" value="espacio='E23' tipo='punto' color='azul' expresión='(E23.x,E23.y)' texto='B' fuente='Serif,BOLD+ITALIC,24' fijo='sí'">
+   <param name="G_42" value="espacio='E23' tipo='punto' color='naranja' expresión='(D23.x+l23-r23,D23.y)' texto='C' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0'">
+   <param name="G_43" value="espacio='E23' tipo='punto' color='naranja' expresión='(E23.x+l23-r23,E23.y)' texto='C' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0'">
+   <param name="G_44" value="espacio='E23' tipo='punto' color='naranja' expresión='(A23.x+l23-r23,A23.y-0.5)' texto='C' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0'">
+   <param name="G_45" value="espacio='E23' tipo='punto' color='naranja' expresión='(B23.x+l23-r23,B23.y-0.5)' texto='C' fuente='Serif,BOLD+ITALIC,24' fijo='sí' tamaño='0'">
+   <param name="G_46" value="espacio='E24' tipo='segmento' color='rojo' expresión='(A24.x,A24.y)(A24.x+l24,A24.y)' texto='A' fuente='Serif,BOLD+ITALIC,24' fijo='sí' ancho='3'">
+   <param name="G_47" value="espacio='E24' tipo='segmento' color='azul' expresión='(B24.x,B24.y)(B24.x+l24,B24.y)' texto='B' fuente='Serif,BOLD+ITALIC,24' fijo='sí' ancho='3'">
+   <param name="G_48" value="espacio='E24' tipo='segmento' color='naranja' expresión='(C24.x,C24.y)(C24.x+l24,C24.y)' texto='C' fuente='Serif,BOLD+ITALIC,24' fijo='sí' ancho='3'">
+   <param name="G_49" value="espacio='E24' tipo='polígono' color='rojo' expresión='(D24.x,D24.y)(D24.x+l24,D24.y)(D24.x,D24.y+m24)' relleno='90ff0000'">
+   <param name="G_50" value="espacio='E24' tipo='polígono' color='azul' expresión='(E24.x,E24.y)(E24.x+l24,E24.y)(E24.x,E24.y+m24)' relleno='900000ff'">
+   <param name="G_51" value="espacio='E24' tipo='polígono' color='naranja' expresión='(F24.x,F24.y)(F24.x+l24,F24.y)(F24.x,F24.y+m24)' relleno='90ffc800'">
+   <param name="G_52" value="espacio='E24' tipo='punto' color='rojo' expresión='(D24.x,D24.y)' texto='A' fuente='Serif,BOLD+ITALIC,24' fijo='sí'">
+   <param name="G_53" value="espacio='E24' tipo='punto' color='azul' expresión='(E24.x,E24.y)' texto='B' fuente='Serif,BOLD+ITALIC,24' fijo='sí'">
+   <param name="G_54" value="espacio='E24' tipo='punto' color='naranja' expresión='(F24.x,F24.y)' texto='C' fuente='Serif,BOLD+ITALIC,24' fijo='sí'">
+   <param name="G_55" value="espacio='E25' tipo='segmento' color='rojo' expresión='(A25.x+l25*cos(2*pi*s/n25),A25.y+l25*sen(2*pi*s/n25))(A25.x+l25*cos(2*pi*(s+1)/n25),A25.y+l25*sen(2*pi*(s+1)/n25))' familia='s' s.intervalo='[0,n25]' s.pasos='n25' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_56" value="espacio='E25' tipo='relleno' color='90ff0000' expresión='(A25.x-l25*0.25,A25.y)'">
+   <param name="G_57" value="espacio='E25' tipo='segmento' color='naranja' expresión='(B25.x-m25+m25*cos(2*pi*s/nn25),B25.y+m25*sen(2*pi*s/nn25))(B25.x-m25+m25*cos(2*pi*(s+1)/nn25),B25.y+m25*sen(2*pi*(s+1)/nn25))' familia='s' s.intervalo='[0,nn25]' s.pasos='nn25' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_58" value="espacio='E25' tipo='relleno' color='90ffc800' expresión='(B25.x-m25*0.25,B25.y)'">
+   <param name="G_59" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='postulado=5' expresión='[10,320]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Times New Roman;\f5\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red255\green0\blue0;\red255\green200\blue0;}\f1\fs48\i Si \f2\fs52  \fs56\b{\*\mjaformula\cf0 B\cf1\u8746 \cf2\f4\fs52\b\i  C\cf1\fs56 =A}\fs52\b0  \f1\fs48  entonces\par      \f4\fs52\b{\*\mjaformula\cf2 C\cf1}\f1\fs48\b0  est\u225  incluido en\f2\fs52  \fs56\b A\f5\fs48\b0\i0}' fuente='SansSerif,ITALIC,24' fijo='sí'">
+</ajs>
+
+
+
+<script type="descartes/macro" id="macros/arco3D.txt">
+
+tipo_de_macro=R3
+
+Idioma=español
+
+id='px' expresión='0'
+
+id='py' expresión='0'
+
+id='pz' expresión='0'
+
+id='qx' expresión='1'
+
+id='qy' expresión='0'
+
+id='qz' expresión='0'
+
+id='rx' expresión='0'
+
+id='ry' expresión='0'
+
+id='rz' expresión='1'
+
+id='radio' expresión='1'
+
+id='npuntos' expresión='10'
+
+id='anchoarco' expresión='3'
+
+id='colort' expresión='0'
+
+id='colorr' expresión='1'
+
+id='colorv' expresión='200/255'
+
+id='colora' expresión='0'
+
+id='xn' vector='sí' evaluar='una-sola-vez' tamaño='4*npuntos+1'
+
+id='yn' vector='sí' evaluar='una-sola-vez' tamaño='4*npuntos+1'
+
+id='zn' vector='sí' evaluar='una-sola-vez' tamaño='4*npuntos+1'
+
+id='uwv()' algoritmo='sí' algoritmo='sí' hacer='ux=qx-px;uy=qy-py;uz=qz-pz;modulou=sqrt(ux*ux+uy*uy+uz*uz);ux=(modulou=0)?0:ux/modulou;uy=(modulou=0)?0:uy/modulou;uz=(modulou=0)?0:uz/modulou;vx=rx-px;vy=ry-py;vz=rz-pz;modulov=sqrt(vx*vx+vy*vy+vz*vz);vx=(modulov=0)?0:vx/modulov;vy=(modulov=0)?0:vy/modulov;vz=(modulov=0)?0:vz/modulov;wx=ux+vx;wy=uy+vy;wz=uz+vz;modulouv=sqrt(wx*wx+wy*wy+wz*wz);wx=(modulouv=0)?0:wx/modulouv;wy=(modulouv=0)?0:wy/modulouv;wz=(modulouv=0)?0:wz/modulouv;'
+
+id='puntos_arco1()' algoritmo='sí' algoritmo='sí' inicio='s=0;' hacer='xn[s]=ux+wx*s/npuntos;yn[s]=uy+wy*s/npuntos;zn[s]=uz+wz*s/npuntos;modulo=sqrt(xn[s]*xn[s]+yn[s]*yn[s]+zn[s]*zn[s]);xn[s]=((modulo=0)|(modulouv=0))?px:px+radio*xn[s]/modulo;yn[s]=((modulo=0)|(modulouv=0))?py:py+radio*yn[s]/modulo;zn[s]=((modulo=0)|(modulouv=0))?pz:pz+radio*zn[s]/modulo;s=s+1' mientras='s<=npuntos'
+
+id='puntos_arco2()' algoritmo='sí' algoritmo='sí' inicio='s=1' hacer='xn[npuntos+s]=wx+ux*(npuntos-s)/npuntos;yn[npuntos+s]=wy+uy*(npuntos-s)/npuntos;zn[npuntos+s]=wz+uz*(npuntos-s)/npuntos;modulo=sqrt(xn[npuntos+s]*xn[npuntos+s]+yn[npuntos+s]*yn[npuntos+s]+zn[npuntos+s]*zn[npuntos+s]);xn[npuntos+s]=((modulo=0)|(modulouv=0))?px:px+radio*xn[npuntos+s]/modulo;yn[npuntos+s]=((modulo=0)|(modulouv=0))?py:py+radio*yn[npuntos+s]/modulo;zn[npuntos+s]=((modulo=0)|(modulouv=0))?pz:pz+radio*zn[npuntos+s]/modulo;s=s+1' mientras='s<=npuntos'
+
+id='puntos_arco3()' algoritmo='sí' algoritmo='sí' inicio='s=1;' hacer='xn[2*npuntos+s]=wx+vx*s/npuntos;yn[2*npuntos+s]=wy+vy*s/npuntos;zn[2*npuntos+s]=wz+vz*s/npuntos;modulo=sqrt(xn[2*npuntos+s]*xn[2*npuntos+s]+yn[2*npuntos+s]*yn[2*npuntos+s]+zn[2*npuntos+s]*zn[2*npuntos+s]);xn[2*npuntos+s]=((modulo=0)|(modulouv=0))?px:px+radio*xn[2*npuntos+s]/modulo;yn[2*npuntos+s]=((modulo=0)|(modulouv=0))?py:py+radio*yn[2*npuntos+s]/modulo;zn[2*npuntos+s]=((modulo=0)|(modulouv=0))?pz:pz+radio*zn[2*npuntos+s]/modulo;s=s+1' mientras='s<=npuntos'
+
+id='puntos_arco4()' algoritmo='sí' algoritmo='sí' inicio='s=1' hacer='xn[3*npuntos+s]=vx+wx*(npuntos-s)/npuntos;yn[3*npuntos+s]=vy+wy*(npuntos-s)/npuntos;zn[3*npuntos+s]=vz+wz*(npuntos-s)/npuntos;modulo=sqrt(xn[3*npuntos+s]*xn[3*npuntos+s]+yn[3*npuntos+s]*yn[3*npuntos+s]+zn[3*npuntos+s]*zn[3*npuntos+s]);xn[3*npuntos+s]=((modulo=0)|(modulouv=0))?px:px+radio*xn[3*npuntos+s]/modulo;yn[3*npuntos+s]=((modulo=0)|(modulouv=0))?py:py+radio*yn[3*npuntos+s]/modulo;zn[3*npuntos+s]=((modulo=0)|(modulouv=0))?pz:pz+radio*zn[3*npuntos+s]/modulo;s=s+1' mientras='s<=npuntos'
+
+id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='uwv();puntos_arco1();puntos_arco2();puntos_arco3();puntos_arco4();'
+
+tipo='segmento' color='(colorr,colorv,colora,colort)' expresión='(xn[t],yn[t],zn[t])(xn[t+1],yn[t+1],zn[t+1])' familia='t' t.intervalo='[0,4*npuntos-1]' t.pasos='4*npuntos-1' ancho='anchoarco' Nu='1' 
+
+</script>
+
+</body>
+
+</html>

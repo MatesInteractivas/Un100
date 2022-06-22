@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Desarrollo</title>
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="../lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="970x550">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E3' fijo='s&iacute;' escala='35' O.y='110' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='784818' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo0' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E3' expresi&oacute;n='(60,22,30,30)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' imagen='images/avanzar.png' acci&oacute;n='calcular' par&aacute;metro='parent.set(&squot;scene&squot;,0);\nparent.update()' dibujar-si='0'">
+   <param name="C_02" value="id='goTo2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E3' expresi&oacute;n='(880,22,30,30)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' imagen='images/avanzar.png' acci&oacute;n='calcular' par&aacute;metro='parent.set(&squot;scene&squot;,2);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='deduce' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E3' nombre='Ver deducci&oacute;n' expresi&oacute;n='(790,E3._h-65,150,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='ff000000' negrita='s&iacute;' fuente puntos='18' imagen='images/btn150.png' acci&oacute;n='animar' dibujar-si='jj=0'">
+   <param name="C_04" value="id='muestra' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E3' nombre='Ver imagen' expresi&oacute;n='(790,E3._h-65,150,30)' fijo='s&iacute;' visible='s&iacute;' color='blanco' color-int='ff000000' fuente puntos='18' imagen='images/btn150.png' acci&oacute;n='calcular' par&aacute;metro='jj=0' dibujar-si='jj&gt;4'">
+   <param name="A_01" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='LM=7;b=1;a=2;d=0.02;r=6/d;ang=atan(LM/r);ang2=ang*180/pi;ang2=(ang2&gt;180)?180-ang2:ang2;anima=0;formula=1'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer='r=6/d;ang=atan(LM/r);ang2=ang*180/pi;ang2=(ang2&gt;180)?180-ang2:ang2'">
+   <param name="A_03" value="id='e3' evento='s&iacute;' condici&oacute;n='LM=7' acci&oacute;n='calcular' par&aacute;metro='d=0.02\nE1.escala=35\nE2.escala=55\nE1.Oy=110\nE2.Ox=-340\nanima=0\nformula=0' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E3' tipo='texto' expresi&oacute;n='[(E3._w-_AnchoDeCadena_(&squot;F&oacute;rmula de la flexi&oacute;n&squot;,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='F&oacute;rmula de la flexi&oacute;n' fuente='SansSerif,PLAIN,30' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='E3' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(15,95)' archivo='images/panel_550x435.png'">
+   <param name="G_03" value="espacio='E3' tipo='imagen' coord_abs='s&iacute;' expresi&oacute;n='(575,95)' archivo='images/panel_380x435.png'">
+   <param name="G_04" value="espacio='E3' tipo='pol&iacute;gono' color='negro' expresi&oacute;n='(5,3)(5,8)(8,8)(8,3)(5,3)' relleno='51c0c0c0'">
+   <param name="G_05" value="espacio='E3' tipo='segmento' expresi&oacute;n='(4,3)(6.5,8)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='.2'">
+   <param name="G_06" value="espacio='E3' tipo='segmento' color='rojo' expresi&oacute;n='(3,5)(9,5)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='.2' ancho='2'">
+   <param name="G_07" value="espacio='E3' tipo='segmento' color='verde' expresi&oacute;n='((s+8)/2,3+s)(5,3+s)' familia='s' s.intervalo='[0,2]' s.pasos='6' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='.2' ancho='2'">
+   <param name="G_08" value="espacio='E3' tipo='segmento' color='amarillo' expresi&oacute;n='(5,5+s)((s+10)/2,5+s)' familia='s' s.intervalo='[0,3]' s.pasos='8' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='.2' ancho='2'">
+   <param name="G_09" value="espacio='E3' tipo='texto' expresi&oacute;n='[695,280]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs44\b\cf0\u916 x\fs40\b0\cf1}' fuente='SansSerif,BOLD,22' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E3' tipo='texto' expresi&oacute;n='[670,115]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs42\b -\u949 {\*\mjaformula{\subix m\u225 x}}\fs40\b0\cf1}' fuente='SansSerif,BOLD,21' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='E3' tipo='texto' dibujar-si='jj!=0' expresi&oacute;n='[795,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green113\blue0;\red0\green0\blue255;}\f1\fs44\b\cf0\u8594  \u949  = -{\*\mjaformula{\fraction{\num y}{\den c}}}\u949 {\*\mjaformula{\subix m\u225 x}}\fs40\b0\cf1}' fuente='SansSerif,BOLD,22' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='E3' tipo='segmento' color='negro' expresi&oacute;n='(3,8)(4.7,8)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='.2'">
+   <param name="G_13" value="espacio='E3' tipo='segmento' color='negro' expresi&oacute;n='(3.6,6.5)(4.7,6.5)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='.2'">
+   <param name="G_14" value="espacio='E3' tipo='segmento' color='negro' expresi&oacute;n='(3,5)(3,8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\cf0\f1\fs40\b c\fs32\b0}' fuente='Arial Bold,BOLD,20' fijo='s&iacute;'">
+   <param name="G_15" value="espacio='E3' tipo='segmento' color='negro' expresi&oacute;n='(4,5)(4,6.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b y\fs32\b0}' fuente='Arial Bold,BOLD,20' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='E3' tipo='pol&iacute;gono' color='negro' expresi&oacute;n='(5,1)(5,-3.8)(8,-3.8)(8,1)(5,1)' relleno='51c0c0c0'">
+   <param name="G_17" value="espacio='E3' tipo='segmento' expresi&oacute;n='(4,-3.8)(5,-2)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='.2'">
+   <param name="G_18" value="espacio='E3' tipo='segmento' expresi&oacute;n='(5,-2)(3.5,1)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='.2'">
+   <param name="G_19" value="espacio='E3' tipo='segmento' color='rojo' expresi&oacute;n='(3,-2)(9,-2)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='.2' ancho='2'">
+   <param name="G_20" value="espacio='E3' tipo='flecha' color='negro' expresi&oacute;n='(-(s-10)/2,-2+s)(5,-2+s)' familia='s' s.intervalo='[0,3]' s.pasos='8' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='.5' ancho='.5' ancho='.5' punta='2' flecha='amarillo'">
+   <param name="G_21" value="espacio='E3' tipo='flecha' color='negro' expresi&oacute;n='(5,-3.8+s)((s+8)/2,-3.8+s)' familia='s' s.intervalo='[0,2]' s.pasos='6' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='.5' ancho='.5' ancho='.5' punta='2' flecha='verde'">
+   <param name="G_22" value="espacio='E3' tipo='texto' expresi&oacute;n='[610,310]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs52\b\u963 \fs36{\*\mjaformula{\subix m\u225 x}}\fs40\b0\cf1}' fuente='Arial Bold,BOLD,26' fijo='s&iacute;'">
+   <param name="G_23" value="espacio='E3' tipo='texto' dibujar-si='jj!=0' expresi&oacute;n='[810,360]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green113\blue0;\red0\green0\blue255;}\f1\fs50\cf0\u8594 \fs40  \fs48\b\i\u963 \fs40\b0\i0  \par a una altura y\fs50\cf1}' fuente='SansSerif,PLAIN,25' fijo='s&iacute;'">
+   <param name="G_24" value="espacio='E3' tipo='segmento' color='negro' expresi&oacute;n='(8.5,1)(8.5,-2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b\par c\fs32\b0}' fuente='Arial Bold,BOLD,20' fijo='s&iacute;'">
+   <param name="G_25" value="espacio='E3' tipo='segmento' color='negro' expresi&oacute;n='(5.5,-2)(5.5,-.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b y\fs32\b0}' fuente='Arial Bold,BOLD,20' fijo='s&iacute;'">
+   <param name="G_26" value="espacio='E3' tipo='texto' dibujar-si='jj#0' expresi&oacute;n='[-470+85*jj,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;\red0\green113\blue0;}\f1\fs34\b\cf0\par \fs36\b0 En la gr\u225 fica observamos el diagrama de deformaciones, en\par amarillo las negativas  (contracci\u243 n)  y  en verde las positivas\par (tracci\u243 n). Por la  relaci\u243 n de  tri\u225 ngulos y  la expresi\u243 n\par deducida para deformaci\u243 n unitaria, concluimos:\par                           \cf1  \b  \cf2  \fs38  {\*\mjaformula\u949  =-({\fraction{\num y}{\den c}})\u949 {\subix m\u225 x}}\fs36\cf1\par \f5\fs24\b0}' fuente='SansSerif,BOLD,17' fijo='s&iacute;'">
+   <param name="G_27" value="espacio='E3' tipo='texto' dibujar-si='jj#0' expresi&oacute;n='[-470+85*jj,260]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green126\blue50;\red255\green255\blue255;\red0\green255\blue0;\red0\green0\blue255;}\cf0\f1\fs36 Con el equilibrio de momentos, podemos demostrar:\b  \cf1\u931 M = 0\par \u8594  M = {\*\mjaformula{\integral{\from A}{\to}{\what ydF }}}= {\*\mjaformula{\integral{\from A}{\to}{\what y(\u963 dA)}}}= {\*\mjaformula{\integral{\from A}{\to}{\what y({\fraction{\num y}{\den c}}\u963 {\subix m\u225 x})dA}}}\par \b0 M=\b  {\*\mjaformula{\fraction{\num\u963 {\subix m\u225 x}}{\den c}}{\integral{\from A}{\to}{\what y{\supix 2}dA}}} \cf0\b0 La integral es el momento de inercia\b\par \b0 de la secci\u243 n (\cf2 I\cf0 ), despejando el esfuerzo m\u225 ximo:\b\cf3\par \cf1                   \u963 {\*\mjaformula{\subix m\u225 x}} =  {\*\mjaformula{\fraction{\num Mc}{\den I}}}\cf4\par \cf0\b0 A una altura \cf2 y\cf0  del eje neutro:\b\cf1  \u963  = -{\*\mjaformula{\fraction{\num My}{\den I}}}  \cf0\u8594  \b0 f\u243 rmula de la flexi\u243 n\cf4\f3\fs24}' fuente='SansSerif,PLAIN,18' fijo='s&iacute;'">
+   <param name="G_28" value="espacio='E3' tipo='imagen' dibujar-si='jj#6' expresi&oacute;n='(-5-2*jj,.3,.8,.8)' archivo='images/flexion.jpg'">
+   <param name="G_29" value="espacio='E3' tipo='texto' dibujar-si='jj=0' expresi&oacute;n='[45,115]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs36 Una viga sometida a una carga se flexiona. En la imagen de\par abajo, observamos  que los planos superiores  de  la viga\par se comprimen (deformaci\u243 n que asumimos negativa), y que\par los planos inferiores se estiran o traccionan (deformaci\u243 n\par que asumimos positiva).\fs34\par \par \cf1\par \fs40\b             \cf2\fs34\b0\par \f4\fs24}' fuente='SansSerif,PLAIN,18' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="controles='no' auto='no' inicio='jj=0' hacer='jj=jj+1' mientras='jj&lt;6'">
+</ajs>
+
+</body>
+</html>

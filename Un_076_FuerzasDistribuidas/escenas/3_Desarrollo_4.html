@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_inicio.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo0' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_02" value="id='sigue' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Continúa' expresión='(360,470,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='otro=otro+1\nn8=&squot;&squot;' dibujar-si='otro<4'">
+   <param name="C_03" value="id='atras' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Atrás' expresión='(65,470,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='otro=otro-1\nn8=&squot;&squot;' dibujar-si='otro>1'">
+   <param name="C_04" value="id='g6' tipo='gráfico' espacio='E1' expresión='(-5,2.8)' constricción='y=2.8' imagen='images/botoncito.png' dibujar-si='otro=4'">
+   <param name="C_05" value="id='g7' tipo='gráfico' espacio='E1' expresión='(-3,2)' constricción='y=2' imagen='images/botoncito.png' dibujar-si='otro=4'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Superficies sumergidas&squot;' hacer='otro=1'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='g6.x=(g6.x<-8)?-8:g6.x;g6.x=(g6.x>-1)?-1:g6.x;h1=(5+g6.x)/3.5;g6.y=2.8;g7.y=2;;g7.x=(g7.x<-8)?-8:g7.x;g7.x=(g7.x>-1)?-1:g7.x;h2=(5+g7.x)/3.5;;ang=pi/11;ang2=(pi/2-ang);L1=abs(3.1+h1);L2=abs(3.1+h2)/cos(ang);;gg=abs(h1-h2)<.01?1:0;;'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='polígono' color='7400ffff' dibujar-si='otro=4' expresión='(-4.9,-3.1)(-4.9,h2)(0.2,h2)(0.2,-3.1)(-4.9,-3.1)' relleno='7400ffff'">
+   <param name="G_03" value="espacio='E1' tipo='polígono' color='7400ffff' dibujar-si='otro=4' expresión='(-8.9,-3.1)(-8.9,h1)(-5.3,h1)(-5.3,-3.1)(-8.9,-3.1)' relleno='7400ffff'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' dibujar-si='otro=4' expresión='(-4,-1,.7,.7)' archivo='images/muro.png'">
+   <param name="G_05" value="espacio='E1' tipo='segmento' color='0092ff' dibujar-si='otro=4' expresión='(-8,2.05)(-1,2.05)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_06" value="espacio='E1' tipo='segmento' color='0092ff' dibujar-si='otro=4' expresión='(-8,2.85)(-1,2.85)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_07" value="espacio='E1' tipo='polígono' color='4e94ff' dibujar-si='otro=4' expresión='(-8.9,-3.1)(0.2,-3.1)(0.2,-4.7)(-8.9,-4.7)(-8.9,-3.1)' relleno='4e94ff'">
+   <param name="G_08" value="espacio='E1' tipo='flecha' color='negro' dibujar-si='(s>0.3)&(otro=4)' expresión='(-5.3-s/1.7,h1-s)(-5.3,h1-s)' familia='s' s.intervalo='[0,L1]' s.pasos='12' fijo='sí' tamaño='1' ancho='1' punta='3' flecha='rojo'">
+   <param name="G_09" value="espacio='E1' tipo='segmento' color='rojo' dibujar-si='otro=4' expresión='(-5.3-L1/1.7,-3.1)(-5.3,h1)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_10" value="espacio='E1' tipo='flecha' color='negro' dibujar-si='(s>0.3)&(otro=4)' expresión='(-2.8+s/2-(L2-s)*sen(ang),h2-2.3*s*sen(ang))(-2.8-(L2-s)*sen(ang),h2-s*cos(ang))' familia='s' s.intervalo='[0,L2]' s.pasos='12' fijo='sí' tamaño='1' ancho='1' punta='3' flecha='rojo'">
+   <param name="G_11" value="espacio='E1' tipo='segmento' color='rojo' dibujar-si='otro=4' expresión='(-2.8+L2/2,h2-2.3*L2*sen(ang))(-2.8-L2*sen(ang),h2)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='otro<4' expresión='(-4.4,-.7,1,1)' archivo='images/presa2.png'">
+   <param name="G_13" value="espacio='E1' tipo='flecha' color='negro' dibujar-si='(s>0.3)&((otro=2)|(otro=3))' expresión='(-5.4-s/1.7,1-s)(-5.4,1-s)' familia='s' s.intervalo='[0,4.3]' s.pasos='12' fijo='sí' tamaño='1' ancho='1' punta='3' flecha='rojo'">
+   <param name="G_14" value="espacio='E1' tipo='segmento' color='rojo' dibujar-si='((otro=2)|(otro=3))' expresión='(-5.4-4.3/1.7,-3.3)(-5.45,1)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_15" value="espacio='E1' tipo='texto' dibujar-si='otro=1' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 En  la  imagen  observamos  una\par presa, que se usa para contener\par o represar un volumen de agua.\par \par La  superficie de la presa que se\par haya en contacto con el agua, es\par una regi\u243 n sumergida que queda\par sometida a la presi\u243 n del agua.\par \par Haz clic en el bot\u243 n continuar para\par observar las fuerzas que produce\par la presi\u243 n del agua.\par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_16" value="espacio='E1' tipo='texto' dibujar-si='otro=2' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 La  presi\u243 n  de  una  columna de\par agua est\u225  dada por la  expresi\u243 n\par \cf0\f2\fs44{\*\mjaformula p=\u947 h{\subix i}}\f1\fs40\cf1 , donde {\*\mjaformula\cf0 h{\subix i}\cf1} es la altura de \par la columna de agua medida desde\par la parte superior, y \cf0\f2\fs44{\*\mjaformula\u947 }\f1\fs40\cf1  es el peso\par espec\u237 fico del agua.\par \par Si la presi\u243 n aumenta  linealmente\par con  la  altura, entonces podemos\par concluir que la distribuci\u243 n de\par fuerzas es en forma triangular, tal\par como se  observa en la figura.\par \par \f3\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_17" value="espacio='E1' tipo='flecha' color='negro' dibujar-si='(otro=3)' expresión='(-8,-2.1)(-5.4,-2.1)' fijo='sí' ancho='2' ancho='2' punta='4' flecha='negro'">
+   <param name="G_18" value="espacio='E1' tipo='punto' dibujar-si='otro=3' expresión='(-8.3,-1.9)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula F{\subix R}}\b0}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_19" value="espacio='E1' tipo='punto' dibujar-si='otro=3' expresión='(-7.3,-3.7)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula\u947 bh}\f2\fs40\b0}' fuente='Serif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_20" value="espacio='E1' tipo='texto' dibujar-si='otro=3' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 La fuerza en cualquier diferencial\par de superficie sumergida es:\par \cf0{\*\mjaformula dF{\subix i}=p{\subix i}dA}\cf1\par \par Si b es el ancho de la presa, la\par fuerza por unidad de longitud,\par ser\u237 a:\cf0  \f2\fs42\b{\*\mjaformula F{\subix i}=\u947 bh{\subix i}}\cf1\f1\fs40\b0\par \par La fuerza resultante, se obtiene\par concentrando las fuerzas; es decir,\par calculando el \u225 rea de fuuerzas:\par \f2\fs42\b\cf0{\*\mjaformula F{\subix R}={\fraction{\num 1}{\den 2}}\u947 bh{\supix 2}}  o  {\*\mjaformula F{\subix R}={\fraction{\num 1}{\den 2}}\u947 hA}\cf1\f1\fs40\b0\par La l\u237 nea de acci\u243 n de la fuerza\par coincide con el centro de presiones.\par \f3\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_21" value="espacio='E1' tipo='punto' dibujar-si='(otro=4)&gg' expresión='(-6.8,-3.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40\b\cf0{\*\mjaformula\u947 bh}\cf1\f2\fs40\b0}' fuente='Serif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_22" value="espacio='E1' tipo='punto' dibujar-si='(otro=4)&gg' expresión='(-1.4,-2.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40\b\cf0{\*\mjaformula\u947 bh}\cf1\f2\fs40\b0}' fuente='Serif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_23" value="espacio='E1' tipo='texto' dibujar-si='(otro=4)&(gg=0)' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 En la figura, una presa de forma\par trapezoidal  contiene, a  lado  y\par lado, dos vol\u250 menes de agua. Se\par muestra, tambi\u233 n, la distribuci\u243 n\par de fuerzas para la pared vertical\par y la de la pared inclinada.\par \par Con los controles, haz que estas\par alturas sean iguales.\par \f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_24" value="espacio='E1' tipo='texto' dibujar-si='(otro=4)&(gg=1)' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40 Una interesante conclusi\u243 n:\par \par &squot;&squot;\cf0 Sin importar  la  inclinaci\u243 n  o la\par forma de la superficie sumergida,\par la fuerza por unidad de longitud,\par a una misma altura, siempre es\par la misma\cf1 &squot;&squot;.\par \par Esto se debe a que la presi\u243 n,\par s\u243 lo depende de la altura de la\par columna de agua.\f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+</ajs>
+
+</body>
+</html>

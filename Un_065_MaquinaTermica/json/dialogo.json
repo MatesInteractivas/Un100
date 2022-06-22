@@ -1,0 +1,763 @@
+var dialogo = {
+
+    title: "termodinamica3",
+    spellcheck: "auto",
+    autoresize: false,
+    delay: 50,
+    withAudio: false,
+    tts: false,
+    withoutServer: true,
+    styleBalloons: "img",
+    firstQuestion: "intro",
+    
+    questions: [
+      {
+        id: "intro",
+        text: "Para empezar, te damos una descripción de los componentes de la máquina térmica que analizaremos, con el fin de que hagas predicciones sobre qué sucederá en cada una de las etapas de un ciclo completo de esta máquina ideal.<br><br>Observa la imagen al lado para conocer los sistemas involucrados en nuestra máquina térmica. Cuando estés listo para iniciar, escribe 'Listo'. ",
+        display: "descripcion",
+        answers: [
+          {
+            RADialKey: "(listo)",
+            feedback: "Bien.",
+            nextQuestion: "1_1"
+          },
+          {
+            feedback: "No te entendí.",
+            nextQuestion: "intro_R2"
+          }
+        ]
+      },
+      {
+        id: "intro_R2",
+        text: "¿Listo para empezar el análisis de esta máquina?",
+        answers: [
+          {
+            RADialKey: "(SÍ)",
+            bestAnswer: "Sí.",
+            feedback: "Ok.",
+            nextQuestion: "1_1"
+          },
+          {
+            RADialKey: "(listo)",
+            feedback: "Ok.",
+            nextQuestion: "1_1"
+          },
+          {
+            RADialKey: "(NO)",
+            bestAnswer: "No.",
+            feedback: "Entonces avísame cuando sí estés listo para empezar."
+          }
+        ]
+      },
+      {
+        id: "1_1",
+        text: "En el <b>estado inicial</b> de la máquina, el gas en el cilindro se encuentra a temperatura T<font face='SubscriptSans'>1</font> y el pistón se encuentra en nivel <i>n</i>. El cilindro no está en contacto con ninguna de las fuentes de calor.<br><br>En este momento inicia el primer paso del ciclo: se montará un ladrillo sobre el pistón. ¿Qué crees que sucederá?",
+        display: "etapa1_1",
+        answers: [
+          {
+            RADialKey: "(NEG(suceder,pasar,ocurrir))",
+            bestAnswer: "No pasará nada.",
+            feedback: "Al montar un ladrillo sobre el pistón, se estará ejerciendo más presión sobre el gas y eso definitivamente tendrá una consecuencia."
+          },
+          {
+            RADialKey: "((((comprimir,condensar,encoger,contraer,apretar,compresión,compactarOR(menosANDgrande)OR(másANDpequeño)))OR((reducir,disminuir,bajar)AND(volumen))OR((bajar,desplazar,descender,abajo)AND(pistón,émbolo,tapa,ladrillo,tabique,bloque)))MAS(((calentar,calentamientoOR(másANDcaliente)))OR(((aumentar,incrementar,crecer,ascender,subir,acrecentar,alzar,elevar,mayorOR(másANDalto)))AND(temperatura))))",
+            bestAnswer: "El volumen del gas se reducirá y su temperatura aumentará.",
+            feedback: "Claro, el ladrillo estará ejerciendo <b>presión</b> sobre el gas, por lo que su volumen se reducirá y su temperatura aumentará un poco (esto ya lo pudiste ver en el diálogo anterior). A este paso del proceso se le llama <b><i>compresión adiabática</i></b>, lo que significa que la compresión se hace <i>sin transferencia de calor</i>.",
+            nextQuestion: "2_1",
+            display: "etapa1_anim"
+          },
+          {
+            RADialKey: "(((comprimir,condensar,encoger,contraer,apretar,compresión,compactarOR(menosANDgrande)OR(másANDpequeño)))OR((reducir,disminuir,bajar)AND(volumen))OR((bajar,desplazar,descender,abajo)AND(pistón,émbolo,tapa,ladrillo,tabique,bloque)))",
+            bestAnswer: "El volumen del gas se reducirá.",
+            feedback: "Es correcto, el ladrillo estará ejerciendo <b>presión</b> sobre el gas, por lo que su volumen se reducirá y el pistón con el ladrillo bajará un poco.",
+            nextQuestion: "1_1_R2",
+            display: "etapa1_anim"
+          },
+          {
+            RADialKey: "(((calentar,calentamientoOR(másANDcaliente)))OR(((aumentar,incrementar,crecer,ascender,subir,acrecentar,alzar,elevar,mayorOR(másANDalto)))AND(temperatura)))",
+            bestAnswer: "La temperatura del gas aumentará.",
+            feedback: "Es correcto, el ladrillo estará ejerciendo <b>presión</b> sobre el gas, y como consecuencia de eso subirá su temperatura. ",
+            nextQuestion: "1_1_R3"
+          },
+          { feedback: "Al montar un ladrillo sobre el pistón, se estará ejerciendo más presión sobre el gas. Recuerda la ley general de los gases: PV = knT (presión * volumen = constante del gas * cantidad de gas * temperatura). ¿Qué pasará con el volumen y la temperatura?" }
+        ]
+      },
+      {
+        id: "1_1_R2",
+        text: "Sin embargo, se llevará a cabo otro fenómeno también. ¿Cuál?",
+        answers: [
+          {
+            RADialKey: "(((calentar,calentamientoOR(másANDcaliente)))OR(((aumentar,incrementar,crecer,ascender,subir,acrecentar,alzar,elevar,mayorOR(másANDalto)))AND(temperatura)))",
+            feedback: "Así es, de acuerdo con la ley general de los gases (PV = knT), al ejercer más presión sobre un gas, éste se comprimirá y su temperatura aumentará un poco.<br><br>A este primer paso del ciclo de la máquina se le llama <b><i>compresión adiabática</i></b>, lo que significa que la compresión se hace <i>sin transferencia de calor</i>.",
+            nextQuestion: "2_1"
+          },
+          {
+            RADialKey: "((temperatura)AND((bajar,descender,disminuir,decrecerOR(menosANDalto)OR(menosANDcaliente))))",
+            feedback: "¡Al contrario! De acuerdo con la ley general de los gases (PV = knT), al ejercer más presión sobre un gas, éste se comprimirá y su temperatura <i><b>aumentará</b></i> un poco.<br><br>A este primer paso del ciclo de la máquina se le llama <b><i>compresión adiabática</i></b>, lo que significa que la compresión se hace <i>sin transferencia de calor</i>.",
+            nextQuestion: "2_1"
+          },
+          {
+            RADialKey: "(temperatura)",
+            feedback: "En efecto, algo sucederá con la temperatura del gas. ¿Pero qué exactamente? Escribe la respuesta completa, incluyendo nuevamente el término 'temperatura'."
+          },
+          {
+            feedback: "Recuerda la ley general de los gases: PV = knT (presión * volumen = constante del gas * cantidad de gas * temperatura).",
+            nextQuestion: "1_1_R2_2"
+          }
+        ]
+      },
+      {
+        id: "1_1_R2_2",
+        text: "Ya identificaste lo que ocurre con el volumen al subir la presión. Ahora, ¿qué pasa con la temperatura?",
+        answers: [
+          {
+            RADialKey: "(((calentar,calentamientoOR(másANDcaliente)))OR(((aumentar,incrementar,crecer,ascender,subir,acrecentar,alzar,elevar,mayorOR(másANDalto)))))",
+            feedback: "Así es, de acuerdo con la ley general de los gases (PV = knT), al ejercer más presión sobre un gas, éste se comprimirá y su temperatura aumentará un poco.<br><br>A este primer paso del ciclo de la máquina se le llama <b><i>compresión adiabática</i></b>, lo que significa que la compresión se hace <i>sin transferencia de calor</i>.",
+            nextQuestion: "2_1"
+          },
+          {
+            RADialKey: "((bajar,descender,disminuir,decrecerOR(menosANDalto)OR(menosANDcaliente)))",
+            feedback: "Al contrario, la temperatura del gas <i>aumentará</i>, como consecuencia de la compresión. Si no tienes claro eso, quizá valga la pena que vuelvas a estudiar el <a href='../termodinamica0/index.html'>primer diálogo sobre la termodinámica</a>.<br><br>A este primer paso del ciclo de la máquina se le llama <b><i>compresión adiabática</i></b>, lo que significa que la compresión se hace <i>sin transferencia de calor</i>.",
+            nextQuestion: "2_1"
+          },
+          {
+            feedback: "Al ejercer más presión sobre un gas, éste no sólo se comprimirá, también aumentará su temperatura. Si no tienes claro eso, quizá valga la pena que vuelvas a estudiar el <a href='../termodinamica0/index.html'>primer diálogo sobre la termodinámica</a>.<br><br>A este primer paso del ciclo de la máquina se le llama <b><i>compresión adiabática</i></b>, lo que significa que la compresión se hace <i>sin transferencia de calor</i>.",
+            nextQuestion: "2_1"
+          }
+        ]
+      },
+      {
+        id: "1_1_R3",
+        text: "Pero para que suceda eso, ¿qué tiene que ocurrir primero?",
+        answers: [
+          {
+            RADialKey: "(((comprimir,condensar,encoger,contraer,apretar,compresión,compactarOR(menosANDgrande)OR(másANDpequeño)))OR((reducir,disminuir,bajar)AND(volumen))OR((bajar,desplazar,descender,abajo)AND(pistón,émbolo,tapa,ladrillo,tabique,bloque)))",
+            feedback: "Así es, el aumento de la temperatura surge a raíz de la reducción del volumen del gas.<br><br>A este primer paso del ciclo de la máquina se le llama <b><i>compresión adiabática</i></b>, lo que significa que la compresión se hace <i>sin transferencia de calor</i>.",
+            nextQuestion: "2_1",
+            display: "etapa_1_2"
+          },
+          {
+            feedback: "Recuerda la ley general de los gases: PV = knT (presión * volumen = constante del gas * cantidad de gas * temperatura).",
+            nextQuestion: "1_1_R3_2"
+          }
+        ]
+      },
+      {
+        id: "1_1_R3_2",
+        text: "Ya identificaste lo que ocurre con la temperatura al subir la presión. Pero, ¿qué pasa con el volumen del gas?",
+        answers: [
+          {
+            RADialKey: "(((comprimir,condensar,encoger,contraer,apretar,compresión,compactarOR(menosANDgrande)OR(másANDpequeño)))OR((reducir,disminuir,bajar)))",
+            feedback: "Así es, el aumento de la temperatura surge a raíz de la reducción del volumen del gas.<br><br>A este primer paso del ciclo de la máquina se le llama <b><i>compresión adiabática</i></b>, lo que significa que la compresión se hace <i>sin transferencia de calor</i>.",
+            nextQuestion: "2_1",
+            display: "etapa1_anim"
+          },
+          {
+            feedback: "El aumento de la temperatura se da a raíz de la <i>reducción del volumen</i> del gas. Si no tienes claro eso, quizá valga la pena que vuelvas a estudiar el <a href='../termodinamica0/index.html'>primer diálogo sobre la termodinámica</a>.<br><br>A este primer paso del ciclo de la máquina se le llama <b><i>compresión adiabática</i></b>, lo que significa que la compresión se hace <i>sin transferencia de calor</i>.",
+            nextQuestion: "2_1",
+            display: "etapa1_anim"
+          }
+        ]
+      },
+      {
+        id: "2_1",
+        text: "En la 2ª etapa del ciclo, la fuente de calor con la temperatura más alta (T<font face='SubscriptSans'>2</font>) se pone en <a href='#' onclick='define(\"Contacto térmico\")'>contacto térmico</a> con el cilindro. ¿Qué te imaginas que sucederá a raíz de eso?",
+        answers: [
+          {
+            RADialKey: "((((calentar,calentamientoOR(másANDcaliente)))OR(((aumentar,incrementar,acrecentar,crecer,ascender,subir,elevar,alzar,levantar,mayorOR(másANDalto)))AND(temperatura)))MAS((expandir,expansión)OR(((aumentar,incrementar,acrecentar,crecer,ascender,subir,elevar,alzar,levantar,mayorOR(másANDalto)))AND(volumen))OR((subir,ascender,remontar,alzar,elevar,levantar,arriba)AND(émbolo,pistón,tapa,ladrillo,tabique,bloque))))OR(temperaturaANDvolumenAND(aumentar,subir,crecer,incrementar,elevar,alzar,mayorOR(másANDalto)))",
+            feedback: "En efecto, el gas se calentará y su volumen se expandirá, por lo que empezará a empujar hacia arriba el pistón con el ladrillo. Esta etapa se llama <b><i>calentamiento isóbaro</i></b>, lo que quiere decir que el calentamiento se lleva a cabo <i>a presión constante</i>.",
+            nextQuestion: "2_2",
+            display: "etapa2_anim"
+          },
+          {
+            RADialKey: "(((calentar,calentamientoOR(másANDcaliente)))OR(((aumentar,incrementar,acrecentar,crecer,ascender,subir,elevar,alzar,levantar,mayorOR(másANDalto)))AND(temperatura)))AND(NOT(pistón,tapa,ladrillo,tabique,bloque,émbolo))",
+            feedback: "En efecto, el gas empezará a calentarse.",
+            nextQuestion: "2_1_R2"
+          },
+          {
+            RADialKey: "((expandir,expansión)OR(((aumentar,incrementar,acrecentar,crecer,ascender,subir,elevar,alzar,levantar,mayorOR(másANDalto)))AND(volumen))OR((subir,ascender,remontar,alzar,elevar,levantar,arriba)AND(émbolo,pistón,tapa,ladrillo,tabique,bloque)))",
+            feedback: "En efecto, el volumen del gas incrementará y empujará hacia arriba la tapa con el tabique.",
+            display: "etapa2_anim",
+            nextQuestion: "2_1_R3" 
+          },
+          { feedback: "Aquí habrá toda una cadena de eventos. Trata de encontrar el primero y conocerás los demás." },
+          {
+            feedback: "Primero, el gas empezará a calentarse.",
+            nextQuestion: "2_1_R2"
+          }
+        ]
+      },
+      {
+        id: "2_1_R2",
+        text: "¿Y qué ocurre a causa de este calentamiento? Toma en cuenta que en esta fase la presión se mantiene constante.",
+        answers: [
+          {
+            RADialKey: "((expandir,expansión)OR(((aumentar,incrementar,acrecentar,crecer,ascender,subir,elevar,alzar,levantar,mayorOR(másANDalto)))AND(volumen))OR((subir,ascender,remontar,alzar,elevar,levantar,arriba)AND(émbolo,pistón,tapa,ladrillo,tabique,bloque)))",
+            feedback: "Así es, el volumen del gas se expandirá, por lo que empezará a empujar hacia arriba el pistón con el ladrillo. Esta etapa se llama <b><i>calentamiento isóbaro</i></b>, lo que quiere decir que el calentamiento se lleva a cabo <i>a presión constante</i>.",
+            nextQuestion: "2_2",
+            display: "etapa2_anim"
+          },
+          {
+            feedback: "El volumen del gas se expandirá, por lo que empezará a empujar hacia arriba el pistón con el ladrillo. Esta etapa se llama <b><i>calentamiento isóbaro</i></b>, lo que quiere decir que el calentamiento se lleva a cabo <i>a presión constante</i>.",
+            nextQuestion: "2_2",
+            display: "etapa2_anim"
+          }
+        ]
+      },
+      {
+        id: "2_1_R3",
+        text: "¿Y a qué se debe la expansión del gas?",
+        answers: [
+            {
+                RADialKey: "(((calentar,calentamientoOR(másANDcaliente)))OR(((aumentar,incrementar,acrecentar,crecer,ascender,subir,elevar,alzar,levantar,mayorOR(másANDalto)))AND(temperatura)))AND(NOT(pistón,tapa,ladrillo,tabique,bloque,émbolo))",
+                feedback: "Así es. Esta etapa se llama <b><i>calentamiento isóbaro</i></b>, lo que significa que el calentamiento se lleva a cabo <i>a presión constante</i>.",
+                nextQuestion: "2_2"
+            },
+            {
+                RADialKey: "(temperatura)",
+                feedback: "A la temperatura del gas, sí, porque <i>aumentó</i>. Esta etapa se llama <b><i>calentamiento isóbaro</i></b>, lo que significa que el calentamiento se lleva a cabo <i>a presión constante</i>.",
+                nextQuestion: "2_2"
+            },
+            {
+                feedback: "¡Se debe al calentamiento del gas! Esta etapa se llama <b><i>calentamiento isóbaro</i></b>, lo que significa que el calentamiento se lleva a cabo <i>a presión constante</i>.",
+                nextQuestion: "2_2"
+            }
+        ]
+      },
+      {
+        id: "2_2",
+        text: "Ahora, ¿cuál o cuáles de las leyes que se citan a continuación pueden explicar lo que sucede en el sistema del gas en esta 2ª etapa del funcionamiento de la máquina? De ser necesario, haz clic sobre las leyes para recordar lo que dicen, después escribe el nombre de la(s) que crees explica(n) el proceso del calentamiento isóbaro del gas.<p style='padding-left:20px;'><a href='#' onclick='define(\"Ley cero de la termodinámica\")'>Ley cero de la termodinámica</font><br><br><a href='#' onclick='define(\"Primera ley de la termodinámica\")'>Primera ley de la termodinámica</font><br><br><a href='#' onclick='define(\"Ley de Boyle\")'>Ley de Boyle</font><br><br><a href='#' onclick='define(\"Ley de Charles\")'>Ley de Charles</font><br><br><a href='#' onclick='define(\"Ley de Gay-Lussac\")'>Ley de Gay-Lussac</font></p>",
+        answers: [
+          {
+            RADialKey: "((ceroOR0)ANDcharles)",
+            feedback: "En efecto, para comprender este aspecto del funcionamiento de nuestra máquina térmica, se requiere primero la <b>ley cero de la termodinámica</b>, ya que ésta explica por qué la temperatura del gas empezará a subir (y lo seguirá haciendo hasta alcanzar la temperatura T<font face='SubscriptSans'>2</font>). Luego, de acuerdo con la <b>ley de Charles</b>, según aumenta la temperatura del gas, su volumen aumentará proporcionalmente ya que la presión se mantiene constante.",
+            nextQuestion: "2_3"
+          },
+          {
+            RADialKey: "((1,1a,primero)ANDcharles)",
+            feedback: "De acuerdo con la <b>ley de Charles</b>, según aumenta la temperatura del gas, su volumen aumentará de manera proporcional, siempre y cuando la presión se mantiene constante. Bien.<br><br>También reconociste de manera general la primera ley de la termodinámica en el funcionamiento de nuestra máquina.",
+            nextQuestion: "2_2_R3"
+          },
+          {
+            RADialKey: "(cero,0)",
+            bestAnswer: "La ley cero de la termodinámica",
+            feedback: "En efecto, para comprender este aspecto del funcionamiento de nuestra máquina térmica, se requiere primero la ley cero de la termodinámica, ya que ésta explica por qué la temperatura  del gas empezará a subir.",
+            nextQuestion: "2_2_R2"
+          },
+          {
+            RADialKey: "(1,1a,primero)",
+            bestAnswer: "La primera ley de la termodinámica",
+            feedback: "Reconociste correctamente la primera ley de la termodinámica en el funcionamiento de nuestra máquina. Sin embargo, tratemos de desmenuzarlo un poco más: ¿Qué ley puede explicar la energía que entra y cuál otra, la que sale del sistema?"
+          },
+          {
+            RADialKey: "(boyle)",
+            bestAnswer: "La ley de Boyle",
+            feedback: "Observa que la ley de Boyle contempla una temperatura <i>constante</i>. ¿Es el caso aquí? Piénsalo y contesta nuevamente."
+          },
+          {
+            RADialKey: "(charles)",
+            bestAnswer: "La ley de Charles",
+            feedback: "De acuerdo con la ley de Charles, según aumenta la temperatura del gas, su volumen aumentará de manera proporcional, siempre y cuando la presión se mantiene constante. Bien.",
+            nextQuestion: "2_2_R3"
+          },
+          {
+            RADialKey: "(gay,lussac)",
+            bestAnswer: "La ley de Gay-Lussac",
+            feedback: "¿Acaso se mantiene constante el volumen del gas en esta etapa?"
+          }
+        ]
+      },
+      {
+        id: "2_2_R2",
+        text: "¿Y con qué ley explicarías entonces el aumento en el volumen?",
+        answers: [
+          {
+            RADialKey: "(1,1a,primero)",
+            bestAnswer: "La primera ley de la termodinámica",
+            feedback: "Es cierto que la primera ley de la termodinámica está presente en las 4 etapas del ciclo, porque en cada una hay transformaciones y transferencias de energía. Sin embargo, ¿cómo explicarías de manera específica el aumento del volumen del gas durante el calentamiento isóbaro?"
+          },
+          {
+            RADialKey: "(boyle)",
+            bestAnswer: "La ley de Boyle",
+            feedback: "Observa que la ley de Boyle contempla una temperatura <i>constante</i>. ¿Es el caso aquí? Piénsalo y contesta nuevamente."
+          },
+          {
+            RADialKey: "(charles)",
+            bestAnswer: "La ley de Charles",
+            feedback: "Claro, de acuerdo con la ley de Charles, según aumenta la temperatura del gas, su volumen aumentará proporcionalmente, siempre y cuando la presión se mantiene constante, lo cual es el caso aquí.",
+            nextQuestion: "2_3"
+          },
+          {
+            RADialKey: "(gay,lussac)",
+            bestAnswer: "La ley de Gay-Lussac",
+            feedback: "¿Acaso se mantiene constante el volumen del gas en esta etapa? ¡Piénsalo más!"
+          }
+        ]
+      },
+      {
+        id: "2_2_R3",
+        text: "Ahora, ¿qué ley puede explicar el aumento en la temperatura del gas?",
+        answers: [
+          {
+            RADialKey: "(cero,0)",
+            feedback: "Claro, al inicio de etapa 2, la fuente de calor T<font face='SubscriptSans'>2</font> tiene una temperatura mayor que la del gas y por eso, según lo dicta la ley cero de la termodinámica, empieza a transferirle calor hasta que las temperaturas de ambos sistemas se hayan igualado.",
+            nextQuestion: "2_3"
+          },
+          {
+            feedback: "Al inicio de etapa 2, la fuente de calor T<font face='SubscriptSans'>2</font> tiene una temperatura mayor que la del gas y por eso, según lo dicta la <b>ley cero de la termodinámica</b>, empieza a transferirle calor hasta que las temperaturas de ambos sistemas se hayan igualado.",
+            nextQuestion: "2_3"
+          }
+        ]
+      },
+      {
+        id: "2_3",
+        text: "Ahora, ¿a qué equivale la magnitud de la presión constante ejercida sobre el gas en esta fase?",
+        answers: [
+          {
+            RADialKey: "(pistón,émbolo,tapa)AND(ladrillo,tabique,bloque)",
+            feedback: "Así es, la magnitud de la presión es igual al peso del pistón (pongámosle <i>pp</i>) más el peso <i>p</i> del ladrillo montado sobre este último. Estamos despreciando la presión atmosférica, ya que siempre existe.<br><br>En la siguiente etapa del mecanismo es justamente esta variable, la presión ejercida sobre el gas, que cambiará.",
+            nextQuestion: "3_1"
+          },
+          {
+            RADialKey: "(peso,masa)",
+            feedback: "Mencionas el peso, bien. Ahora, ¿del peso de qué se trata?"
+          },
+          {
+            RADialKey: "(ladrillo,tabique,bloque)",
+            feedback: "Es cierto que el ladrillo está haciendo presión sobre el gas, pero no sólo él. ¿Qué otra cosa está ejerciendo presión?",
+            nextQuestion: "2_3_R3"
+          },
+          {
+            RADialKey: "(pistón,émbolo,tapa)",
+            feedback: "Es cierto que el pistón está haciendo presión sobre el gas, pero observa bien.",
+            nextQuestion: "2_3_R4"
+          },
+          { feedback: "Una ayudita… Ignorando la presión atmosférica (ya que siempre está presente sobre cualquier cuerpo), podemos decir que en etapa 1, la presión ejercida sobre el gas era igual al peso del pistón. ¿Cómo definirías entonces la presión en esta segunda etapa?" },
+          {
+            feedback: "¡No está tan difícil! En fase dos, se monta un ladrillo sobre el pistón, por lo que la presión sobre el gas es igual al peso del pistón más el peso del ladrillo (ignorando la presión atmosférica).",
+            nextQuestion: "3_1"
+          }
+        ]
+      },
+      {
+        id: "2_3_R3",
+        text: "¿Qué otra cosa está ejerciendo presión?",
+        answers: [
+          {
+            RADialKey: "(pistón,émbolo,tapa)",
+            feedback: "Así es, la presión total ejercida sobre el gas en esta fase es igual al peso del pistón (pongámosle <i>p2</i>) más el peso <i>p</i> del ladrillo montado sobre este último. Estamos despreciando la presión atmosférica, ya que siempre existe.<br><br>En la siguiente etapa del mecanismo es justamente esta variable, la presión ejercida sobre el gas, que cambiará.",
+            nextQuestion: "3_1"
+          },
+          {
+            feedback: "En esta fase, la presión total ejercida sobre el gas es igual al peso del <b>pistón</b> (pongámosle <i>p2</i>) más el peso <i>p</i> del ladrillo montado sobre este último. Estamos despreciando la presión atmosférica, ya que siempre existe.<br><br>En la siguiente etapa del mecanismo es justamente esta variable, la presión ejercida sobre el gas, que cambiará.",
+            nextQuestion: "3_1"
+          }
+        ]
+      },
+      {
+        id: "2_3_R4",
+        text: "¿Qué otra cosa está ejerciendo presión?",
+        answers: [
+          {
+            RADialKey: "(ladrillo,bloque,tabique)",
+            feedback: "Así es, la presión total ejercida sobre el gas en esta fase es igual al peso del pistón (pongámosle <i>p2</i>) más el peso <i>p</i> del ladrillo montado sobre este último. Estamos despreciando la presión atmosférica, ya que siempre existe.<br><br>En la siguiente etapa del mecanismo es justamente esta variable, la presión ejercida sobre el gas, que cambiará.",
+            nextQuestion: "3_1"
+          },
+          {
+            feedback: "En esta fase, la presión total ejercida sobre el gas es igual al peso del pistón (pongámosle <i>p2</i>) más el peso <i>p</i> del <b>ladrillo</b> montado sobre este último. Estamos despreciando la presión atmosférica, ya que siempre existe.<br><br>En la siguiente etapa del mecanismo es justamente esta variable, la presión ejercida sobre el gas, que cambiará.",
+            nextQuestion: "3_1"
+          }
+        ]
+      },
+      {
+        id: "3_1",
+        text: "Sigamos con la siguiente etapa. La fase 3 presenta el proceso inverso de etapa 1: se retira la fuente de calor (en este caso T<font face='SubscriptSans'>2</font>) y se desmonta el ladrillo, por lo que la presión sobre el gas disminuye, equivaliendo sólo al peso <i>p</i> del pistón. Por tanto, el gas se expande aún más. ¿Cómo crees que se llama entonces esta fase?",
+        display: "etapa3_anim",
+        answers: [
+          {
+            RADialKey: "(expansión_(adiabático,adiabatico,adiabática,adiabatica))",
+            feedback: "Muy bien, inferiste que esta etapa se denomina de <b><i>expansión adiabática</i></b> ya que el gas se <i>expande</i> sin intervención de ninguna fuente de calor (“adiabático”).",
+            nextQuestion: "3_2"
+          },
+          {
+            RADialKey: "(expansión,expander)",
+            feedback: "Ya te diste cuenta de que el nombre de esta fase ha de contener la palabra 'expansión', bien. Ahora recuerda (o revisa) el nombre de la 1ª fase de la máquina y escribe el nombre completo de esta 3ª etapa."
+          },
+          { feedback: "Recuerda el nombre de la 1ª etapa. Después infiere el nombre de esta 3ª etapa, sabiendo que ahora el gas no se comprime sino se expande." },
+          {
+            feedback: "¿Te estás durmiendo? Esta etapa se denomina de <b><i>expansión adiabática</i></b> ya que el gas se expande (de ahí la palabra “expansión”) sin intervención de ninguna fuente de calor (“adiabática”).",
+            nextQuestion: "3_2"
+          }
+        ]
+      },
+      {
+        id: "3_2",
+        text: "¿Qué crees que ocurrirá con la temperatura del gas en esta fase?",
+        answers: [
+          {
+            RADialKey: "((aumentar,incrementar,crecer,alzar,subir,levantar,elevar,ascender,mayor,calentar,calienteOR(másANDalto)))",
+            bestAnswer: "Subirá.",
+            feedback: "¡No te confundas! Recuerda que al <i>comprimir</i> un gas, su temperatura aumenta. Aquí, el gas se <i>expande</i>. ¿Entonces?"
+          },
+          {
+            RADialKey: "((bajar,descender,caer,disminuir,decrecer,caída,declinar,menorOR(másANDbajo)OR(menosAND(alto,caliente))))",
+            bestAnswer: "Bajará.",
+            feedback: "Por supuesto que la temperatura del gas bajará al expandirse su volumen. Y esta pérdida de energía interna del gas (recuerda: la temperatura es la medida directa de la energía cinética) se verá compensada por un aumento en la energía potencial del pistón (por encontrarse más alto), por lo que la energía total presente en nuestra máquina permanecerá igual.",
+            nextQuestion: "4_1"
+          },
+          {
+            RADialKey: "((igual,mismo,equivalente,idéntico,constante)OR(NEG(cambiar,alterar,afectar,modificar,variar,alteración,modificación)))",
+            bestAnswer: "Se mantendrá igual.",
+            feedback: "Revisa lo que pasó en la primera etapa del ciclo y recuerda la ley general de los gases que conociste en el diálogo anterior (PV = knT). ¿Qué pasará entonces con la temperatura?"
+          }
+        ]
+      },
+      {
+        id: "4_1",
+        text: "En la 4ª y última etapa del ciclo de la máquina, la fuente <i>fría</i> se pone en contacto con el cilindro. De acuerdo con la ley cero de la termodinámica, ¿qué debería de pasar entonces con las respectivas temperaturas del cilindro y de la fuente T<font face='SubscriptSans'>1</font>?",
+        answers: [
+          {
+            RADialKey: "(((gas,cilindro)AND((bajar,caer,decaer,disminuir,decrecer,descender,menorOR(menosANDalto))))MAS((fuente,T1)AND((subir,ascender,aumentar,crecer,alzar,elevar,incrementar,mayorOR(másANDalto)OR(másANDgrande)))))",
+            feedback: "En efecto, uno pensaría que la temperatura del gas bajaría y que la de la fuente fría aumentaría un poco hasta igualarse ambas en una temperatura intermedia. Sin embargo, estamos ante una máquina ideal y nuestras fuentes de calor son, en teoría, tan grandes que son capaces de absorber o proveer una cantidad infinita de calor. Por eso la temperatura del gas bajará gradualmente hasta alcanzar la temperatura T<font face='SubscriptSans'>1</font>.<br><br>Y claro, de acuerdo con la ley de Charles, el volumen del gas disminuirá hasta que el pistón se encuentre nuevamente en el punto <i>n</i>, al igual que en el estado inicial. A este paso se le llama <b><i>compresión por enfriamiento</i></b>.",
+            nextQuestion: "4_2",
+            display: "etapa4_anim"
+          },
+          {
+            RADialKey: "(((gas,cilindro)AND((bajar,caer,decaer,disminuir,decrecer,descender,menorOR(menosANDalto))))OR(igualar,uniformar,nivelar,igual,mismo))",
+            feedback: "Tienes toda la razón: la temperatura del gas empezará a bajar gradualmente hasta alcanzar la temperatura T<font face='SubscriptSans'>1</font>. Esto se debe a que la fuente de calor es, en teoría (recuerda que se trata de una máquina ideal), tan grande que es capaz de absorber o proveer una cantidad infinita de calor.<br><br>Y claro, de acuerdo con la ley de Charles, el volumen del gas disminuirá hasta que el pistón se encuentre nuevamente en el punto <i>n</i>, al igual que en el estado inicial. A este paso se le llama <b><i>compresión por enfriamiento</i></b>.",
+            nextQuestion: "4_2",
+            display: "etapa4_anim"
+          },
+          {
+            RADialKey: "(((fuente,T1)AND((bajar,caer,decaer,disminuir,decrecer,descender,menorOR(menosANDalto))))MAS((gas,cilindro)AND((subir,ascender,aumentar,crecer,alzar,elevar,incrementar,mayorOR(másANDalto)OR(másANDgrande)))))",
+            feedback: "Se me hace que te estás confundiendo. Recuerda que T<font face='SubscriptSans'>1</font> es menor que T<font face='SubscriptSans'>2</font>."
+          },
+          {
+            RADialKey: "(((bajar,caer,decaer,disminuir,decrecer,descender,menorOR(menosANDalto)))MAS((subir,ascender,aumentar,crecer,alzar,elevar,incrementar,mayorOR(másANDalto)OR(másANDgrande))))",
+            feedback: "En efecto, la temperatura de uno subirá y la del otro bajará. Pero sé más específico: ¿cuál subirá y cuál bajará?"
+          },
+          { feedback: "Recuerda que el gas se encuentra a temperatura T<font face='SubscriptSans'>2</font>, la cual es más elevada que T<font face='SubscriptSans'>1</font>." },
+          {
+            feedback: "Lo normal sería que la temperatura del gas bajaría y que la de la fuente fría aumentaría un poco hasta igualarse ambas en una temperatura intermedia. Sin embargo, estamos ante una máquina ideal y nuestras fuentes de calor son, en teoría, tan grandes que son capaces de absorber o proveer una cantidad infinita de calor. Por eso la temperatura del gas bajará gradualmente hasta alcanzar la temperatura T<font face='SubscriptSans'>1</font>.<br><br>Y claro, de acuerdo con la ley de Charles, el volumen del gas disminuirá hasta que el pistón se encuentre nuevamente en el punto <i>n</i>, al igual que en el estado inicial. A este paso se le llama <b><i>compresión por enfriamiento</i></b>.",
+            nextQuestion: "4_2",
+            display: "etapa4_anim"
+          }
+        ]
+      },
+      {
+        id: "4_2",
+        text: "Ya sabemos que la fuente fría absorberá el calor del gas hasta que éste tenga la temperatura T<font face='SubscriptSans'>1</font>. Sin embargo, hay otro poco de calor que se transferirá del cilindro a la fuente T<font face='SubscriptSans'>1</font>. ¿De dónde crees que proviene ese calor?",
+        answers: [
+          {
+            RADialKey: "((pistón,émbolo,tapa)AND((trabajar,presión)OR(bajar,desplazar,mover,descender,caer,abajo,movimiento,desplazamiento)))",
+            feedback: "¡Se me hace que ya lo entendiste! Al bajarse el pistón, éste realiza <b>trabajo</b> sobre el gas, el cual se convierte en calor que es transferido a T<font face='SubscriptSans'>1</font>. En otras palabras, el trabajo realizado por el gas sobre el pistón en pasos 2 y 3 se recupera aquí en forma de calor.",
+            nextQuestion: "4_3"
+          },
+          {
+            RADialKey: "(pistón,émbolo,tapa)",
+            feedback: "Vas por buen camino pero te falta ser más específico.",
+            nextQuestion: "4_2_R2"
+          },
+          {
+            RADialKey: "(trabajo)",
+            feedback: "Se me hace que ya lo entendiste, pero sé más específico.",
+            nextQuestion: "4_2_R3"
+          },
+          { feedback: "Para hallar la respuesta, piensa en la expansión del gas en fases 2 y 3 del ciclo, y en sus consecuencias." },
+          {
+            feedback: "Al bajarse el pistón, éste realiza <b>trabajo</b> (fuerza * distancia) sobre el gas, el cual se convierte en calor que es transferido a T<font face='SubscriptSans'>1</font> (¡Recuerda que la aceleración del movimiento molecular se refleja macroscópicamente en una mayor temperatura!) En otras palabras, el trabajo realizado por el gas sobre el pistón en pasos 2 y 3 se recupera aquí en forma de calor.",
+            nextQuestion: "4_3"
+          }
+        ]
+      },
+      {
+        id: "4_2_R2",
+        text: "¿Cómo es que el pistón genera ese otro poco de energía? ¡Trata de usar el término físico correcto!",
+        answers: [
+          {
+            RADialKey: "(trabajo)",
+            feedback: "¡Excelente!  Al bajarse el pistón, éste realiza <b>trabajo</b> sobre el gas, el cual se convierte en calor que es transferido a T<font face='SubscriptSans'>1</font> (¡Recuerda que la aceleración del movimiento molecular se refleja macroscópicamente en una mayor temperatura!) En otras palabras, el trabajo realizado por el gas sobre el pistón en pasos 2 y 3 se recupera aquí en forma de calor.",
+            nextQuestion: "4_3"
+          },
+          {
+            RADialKey: "(bajar,desplazar,mover,descender,caer,abajo,movimiento,desplazamiento,presión)",
+            feedback: "Lo entendiste perfectamente, pero la palabra que buscábamos era <i><b>trabajo</b></i>.  Al bajarse el pistón, éste realiza trabajo (fuerza * distancia) sobre el gas, el cual se convierte en calor que es transferido a T<font face='SubscriptSans'>1</font>. En otras palabras, el trabajo realizado por el gas sobre el pistón en pasos 2 y 3 se recupera aquí en forma de calor.",
+            nextQuestion: "4_3"
+          },
+          {
+            feedback: "La palabra que buscábamos era <i><b>trabajo</b></i>.  Al bajarse el pistón, éste realiza trabajo (fuerza * distancia) sobre el gas, el cual se convierte en calor que es transferido a T<font face='SubscriptSans'>1</font>. En otras palabras, el trabajo realizado por el gas sobre el pistón en pasos 2 y 3 se recupera aquí en forma de calor.",
+            nextQuestion: "4_3"
+          }
+        ]
+      },
+      {
+        id: "4_2_R3",
+        text: "¿De dónde proviene ese trabajo? ¿Quién lo realiza?",
+        answers: [
+          {
+            RADialKey: "(pistón,émbolo,tapa)",
+            feedback: "¡Excelente!  Al bajarse el pistón, éste realiza trabajo sobre el gas, el cual se convierte en calor que es transferido a T<font face='SubscriptSans'>1</font> (¡Recuerda que la aceleración del movimiento molecular se refleja macroscópicamente en una mayor temperatura!) En otras palabras, el trabajo realizado por el gas sobre el pistón en pasos 2 y 3 se recupera aquí en forma de calor.",
+            nextQuestion: "4_3"
+          },
+          {
+            feedback: "El trabajo lo realiza el <b>pistón</b> al bajarse nuevamente sobre el gas. (¡Recuerda que la aceleración del movimiento molecular se refleja macroscópicamente en una mayor temperatura!) En otras palabras, el trabajo realizado por el gas sobre el pistón en pasos 2 y 3 se recupera aquí en forma de calor.",
+            nextQuestion: "4_3"
+          }
+        ]
+      },
+      {
+        id: "4_3",
+        text: "Ahora bien, la suma de todo el calor transferido del cilindro a la fuente T<font face='SubscriptSans'>1</font> en etapa 4, ¿cómo crees que se compara con el calor transferido de la fuente caliente (T<font face='SubscriptSans'>2</font>) al cilindro en la 2ª etapa? ¿Crees que es menor, mayor o igual?",
+        answers: [
+          {
+            RADialKey: "(menor)",
+            bestAnswer: "Menor",
+            feedback: "Ajá…",
+            nextQuestion: "4_3_menor"
+          },
+          {
+            RADialKey: "(mayor)",
+            bestAnswer: "Mayor",
+            feedback: "Ajá…",
+            nextQuestion: "4_3_mayor_1"
+          },
+          {
+            RADialKey: "(igual)",
+            bestAnswer: "Igual",
+            feedback: "Ajá…",
+            nextQuestion: "4_3_igual_1"
+          }
+        ]
+      },
+      {
+        id: "4_3_menor",
+        text: "¿Por qué crees que es así?",
+        answers: [
+          {
+            RADialKey: "((ladrillo,tabique,bloque)AND(((energía,energético))OR(altura,alto,altitud,elevación,nivel,elevado,arriba)))",
+            feedback: "¡Por supuesto! En el paso 2, parte de la energía transferida por fuente T<font face='SubscriptSans'>2</font> al gas en forma de calor se transforma en trabajo realizado sobre el pistón y el ladrillo, el cual se traduce, a su vez, en una mayor <b>energía potencial</b> del ladrillo, porque éste se encuentra a una mayor altura. Y esa parte de la energía ya no se puede transferir a T<font face='SubscriptSans'>1</font> en forma de calor.",
+            nextQuestion: "ciclo_completo"
+          },
+          {
+            RADialKey: "(ladrillo,tabique,bloque)",
+            feedback: "Mencionas el ladrillo, bien.",
+            nextQuestion: "4_3_menor_R2"
+          },
+          { feedback: "Tu contestación fue correcta: la cantidad de energía pasada del cilindro a T<font face='SubscriptSans'>1</font> en etapa 4 es, en efecto, <i>menor</i> que la cantidad de energía cedida al cilindro en el paso 2. Pero, ¿a qué se debe eso? ¿Dónde quedó esa diferencia de energía?" },
+          { feedback: "En el paso 2, parte del calor transferido de T<font face='SubscriptSans'>2</font> al gas se aprovechó para realizar un trabajo sobre el pistón y el ladrillo. ¿Qué pasó con ese trabajo? ¿Dónde quedó y en qué forma?" },
+          {
+            feedback: "¿Sólo adivinaste entonces? El trabajo que el gas realizó sobre el pistón y el ladrillo se transformó en <b>energía potencial</b> del ladrillo, porque éste se encuentra a una mayor altura. Y esa parte del calor recibido por el gas ya no se puede trasladar a T<font face='SubscriptSans'>1</font> en la última etapa del ciclo.",
+            nextQuestion: "ciclo_completo"
+          }
+        ]
+      },
+      {
+        id: "4_3_menor_R2",
+        text: "Pero sé más preciso: ¿qué tiene que ver exactamente el ladrillo en que el calor transferido en etapa 4 es menor que en etapa 2?",
+        answers: [
+            {
+                RADialKey: "(((energía,energético))OR(altura,alto,altitud,elevación,nivel,elevado,arriba))",
+                feedback: "¡Por supuesto! En el paso 2, parte de la energía transferida por fuente T<font face='SubscriptSans'>2</font> al gas en forma de calor se transforma en trabajo realizado sobre el pistón y el ladrillo, el cual se traduce, a su vez, en una mayor <b>energía potencial</b> del ladrillo, porque éste se encuentra a una mayor altura. Y esa parte de la energía ya no se puede transferir a T<font face='SubscriptSans'>1</font> en forma de calor.",
+                nextQuestion: "ciclo_completo"
+            },
+            {
+                feedback: "En el paso 2, parte de la energía transferida por fuente T<font face='SubscriptSans'>2</font> al gas en forma de calor se transforma en trabajo realizado sobre el pistón y el ladrillo, el cual se traduce, a su vez, en una mayor <b>energía potencial</b> del ladrillo, porque éste se encuentra a una <b>mayor altura</b>. Y esa parte de la energía ya no se puede transferir a T<font face='SubscriptSans'>1</font> en forma de calor.",
+                nextQuestion: "ciclo_completo"
+            }
+        ]
+      },
+      {
+        id: "4_3_mayor_1",
+        text: "¿Por qué crees eso?",
+        answers: [
+          {
+            feedback: "Pues no es así. De hecho, la cantidad de calor pasado del cilindro a T<font face='SubscriptSans'>1</font> en etapa 4 es <i>menor</i> que la cantidad de calor cedido al cilindro en el 2º paso.",
+            nextQuestion: "4_3_mayorIgual_2"
+          }
+        ]
+      },
+      {
+        id: "4_3_igual_1",
+        text: "¿Por qué crees eso?",
+        answers: [
+          {
+            RADialKey: "(((primero,primera,primer,1,1a)AND(ley))OR((energía)AND((conservar,mantener,resguardar,sostener,preservar,conservación)OR(NEG(perder,desaparecer)))))",
+            feedback: "Tienes toda la razón en citar la primera ley de la termodinámica pues, en efecto, la energía que transita por la máquina no se pierde en ningún momento. Sin embargo, la cantidad de calor pasado del cilindro a T<font face='SubscriptSans'>1</font> en etapa 4 es <i>menor</i> que la cantidad de calor cedido al cilindro en el 2º paso.",
+            nextQuestion: "4_3_mayorIgual_2"
+          },
+          {
+            feedback: "Pues no es así. De hecho, la cantidad de calor pasado del cilindro a T<font face='SubscriptSans'>1</font> en etapa 4 es <i>menor</i> que la cantidad de calor cedido al cilindro en el 2º paso.",
+            nextQuestion: "4_3_mayorIgual_2"
+          }
+        ]
+      },
+      {
+        id: "4_3_mayorIgual_2",
+        text: "Reflexiona e intenta explicar por qué es así.",
+        answers: [
+          {
+            RADialKey: "((ladrillo,tabique,bloque)AND(((energía,energético)AND(más,mayor,ganar,subir,aumentar,elevar))OR(altura,alto,altitud,elevación,nivel,elevado,arriba)))",
+            feedback: "¡Ya lo entendiste! En el paso 2, parte de la energía transferida por fuente T<font face='SubscriptSans'>2</font> al gas en forma de calor se transforma en trabajo realizado sobre el pistón y el ladrillo, el cual se traduce, a su vez, en una mayor <b>energía potencial</b> del ladrillo, porque se encuentra a una mayor altura. Y esa parte de la energía ya no se transfiere a T<font face='SubscriptSans'>1</font> en forma de calor.",
+            nextQuestion: "ciclo_completo"
+          },
+          {
+            RADialKey: "(ladrillo,tabique,bloque)",
+            feedback: "Mencionas el ladrillo, bien.",
+            nextQuestion: "4_3_menor_R2"
+          },
+          {
+            RADialKey: "(pistón,tapa,émbolo)",
+            feedback: "Tienes razón, ya dijimos que la elevación del pistón en fases 2 y 3 se tradujo en una mayor transferencia de calor a T<font face='SubscriptSans'>1</font> en paso 4. Ya casi encontraste la respuesta: junto con el pistón, ¿qué otra cosa se elevó y dónde se quedó?"
+          },
+          { feedback: "En el paso 2, parte del calor transferido de T<font face='SubscriptSans'>2</font> al gas se aprovecha para realizar un trabajo sobre el pistón y el ladrillo. ¿Qué pasa con ese trabajo? ¿En dónde queda?" },
+          {
+            feedback: "El trabajo que el gas realizó sobre el pistón y el ladrillo se transformó en <b>energía potencial</b> del ladrillo, porque éste se encuentra a una mayor altura. Y esa parte del calor pasado al cilindro ya no se traslada a T<font face='SubscriptSans'>1</font> en la última etapa del ciclo.",
+            nextQuestion: "ciclo_completo"
+          }
+        ]
+      },
+      {
+        id: "ciclo_completo",
+        text: "Te mostramos nuevamente la máquina funcionando. Observa que el ciclo 1-2-3-4 se repite indefinidamente. El resultado es que en cada ciclo, la máquina transforma calor en trabajo mecánico (elevando un ladrillo) y transfiere calor de la fuente caliente a la fría.<br><br>Ahora avanza al cierre para averiguar cómo funciona la otra máquina de calor que viste en esta unidad: la del barquito.",
+        display: "anim1",
+        endDialogue: true,
+        answers: [
+          /*{
+            RADialKey: "(listo)",
+            feedback: "Bien.",
+            nextQuestion: "grafica_1"
+          },
+          {
+            feedback: "Bueno…",
+            nextQuestion: "grafica_1"
+          }*/
+        ]
+      }
+      /*,
+      {
+        id: "grafica_1",
+        text: "Hagamos ahora un ejercicio de lectura de gráficas. Observa nuevamente la máquina junto con la gráfica que se va dibujando al lado. Después indica la magnitud representada en cada eje y presiona el botón <i>Verificar</i>.",
+        display: "anim2",
+        answers: [
+          {
+            regexKey: "(V P)",
+            feedback: "Bien. Sobre el eje Y, la gráfica muestra claramente el valor fijo de la <b>presión</b> ejercida sobre el gas en cada una de las 2 fases isóbaras: <i>p</i> y <i>p+m</i>, respectivamente. En el eje X podemos ver que el <b>volumen</b> alcanza su mayor valor al final de la expansión adiabática y su menor valor al final de la compresión adiabática.",
+            nextQuestion: "cierre"
+          },
+          {
+            regexKey: "(T T|P P|V V)",
+            feedback: "En una gráfica, siempre se representan valores distintos en ambos ejes. Reflexiona y corrige tu respuesta."
+          },
+          {
+            regexKey: "(T T|P P|V V)",
+            feedback: "Nuevamente, en una gráfica, siempre se representan valores distintos en los dos ejes. Corrige tu respuesta."
+          },
+          {
+            regexKey: "(. P)",
+            feedback: "Ya te diste cuenta de que en el eje Y, se observan los dos valores de la presión: <i>p</i> y <i>p+m</i>. Ahora sólo tienes que revisar la magnitud en el eje X."
+          },
+          {
+            regexKey: "(V .)",
+            feedback: "En el eje X se representa el volumen del gas, bien. Pero, ¿lo razonaste o adivinaste?<br><br>Ahora corrige la magnitud del eje vertical."
+          },
+          { feedback: "Observa que en el eje Y, hay dos valores que se mantienen fijos durante gran parte del proceso. ¿Cuál puede ser la magnitud correspondiente? Inténtalo otra vez." },
+          {
+            feedback: "La magnitud del eje X es el volumen y la del eje Y, la presión. Haz las correcciones necesarias y vuelve a presionar el botón <i>Verificar</i> para ir al cierre de este diálogo.",
+            nextQuestion: "cierre"
+          }
+        ]
+      },
+      {
+        id: "cierre",
+        text: "¡Felicidades!, ya sabes cómo funciona una máquina de calor. Avanza al cierre de esta unidad cuando estés listo.",
+        endDialogue: true,
+        answers: []
+      }*/
+    ],
+    
+    
+    microWorlds: [
+      {
+        id: "descripcion",
+        url: "descripcionMaquina.png",
+        w: 550,
+        h: 518,
+        front: false,
+        textLink: "Ver descripción máquina"
+      },
+      {
+        id: "etapa1_1",
+        url: "etapa1_1.png",
+        w: 497,
+        h: 469,
+        front: false,
+        textLink: "Ver estado inicial"
+      },
+      {
+        id: "etapa1_anim",
+        url: "http://arquimedes.matem.unam.mx/_Un100_/2_Entregas/Desarrollador11/_Un_065_MaquinaTermica/video/maquinaCalor/etapa1.html",
+        w: 452,
+        h: 536,
+        front: false,
+        textLink: "Ver animación etapa 1"
+      },
+      {
+        id: "etapa2_1",
+        url: "etapa2_1.png",
+        w: 497,
+        h: 469,
+        front: false,
+        textLink: "Ver inicio etapa 2"
+      },
+      {
+        id: "etapa2_anim",
+        url: "http://arquimedes.matem.unam.mx/_Un100_/2_Entregas/Desarrollador11/_Un_065_MaquinaTermica/video/maquinaCalor/etapa2.html",
+        w: 452,
+        h: 536,
+        front: false,
+        textLink: "Ver animación etapa 2"
+      },
+      {
+        id: "etapa3_anim",
+        url: "http://arquimedes.matem.unam.mx/_Un100_/2_Entregas/Desarrollador11/_Un_065_MaquinaTermica/video/maquinaCalor/etapa3.html",
+        w: 452,
+        h: 536,
+        front: false,
+        textLink: "Ver animación etapa 3"
+      },
+      {
+        id: "etapa4_1",
+        url: "etapa4_1.png",
+        w: 497,
+        h: 519,
+        front: false,
+        textLink: "Ver inicio etapa 4"
+      },
+      {
+        id: "etapa4_anim",
+        url: "http://arquimedes.matem.unam.mx/_Un100_/2_Entregas/Desarrollador11/_Un_065_MaquinaTermica/video/maquinaCalor/etapa4.html",
+        w: 452,
+        h: 536,
+        front: false,
+        textLink: "Ver animación etapa 4"
+      },
+      {
+        id: "anim1",
+        url: "maquinaCalor/maquinaCierre.html",
+        w: 450,
+        h: 550,
+        front: false,
+        textLink: "Ver máquina funcionando"
+      }
+      /*,
+      {
+        id: "anim2",
+        url: "maquinaCalor/maquina2.html",
+        w: 450,
+        h: 560,
+        front: false,
+        textLink: "Ver máquina con gráfica"
+      }*/
+    ]
+
+};

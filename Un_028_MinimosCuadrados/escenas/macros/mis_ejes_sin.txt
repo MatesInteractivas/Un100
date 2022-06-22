@@ -1,0 +1,11 @@
+tipo_de_macro=R3
+Idioma=espa&ntilde;ol
+id='lx' constante='s&iacute;' expresi&oacute;n='40' evaluar='una-sola-vez'
+id='ly' constante='s&iacute;' expresi&oacute;n='40' evaluar='una-sola-vez'
+id='lz' constante='s&iacute;' expresi&oacute;n='40' evaluar='una-sola-vez'
+tipo='segmento' color='gris' expresi&oacute;n='(0,0,0)(lx,0,0)' 
+tipo='segmento' color='gris' expresi&oacute;n='(0,0,0)(0,ly,0)' 
+tipo='segmento' color='gris' expresi&oacute;n='(0,0,0)(0,0,lz)' 
+tipo='segmento' color='aaaaaa' expresi&oacute;n='(0,0,0)(-lx,0,0)' 
+tipo='segmento' color='aaaaaa' expresi&oacute;n='(0,0,0)(0,-ly,0)' 
+tipo='segmento' color='aaaaaa' expresi&oacute;n='(0,0,0)(0,0,-lz)' 

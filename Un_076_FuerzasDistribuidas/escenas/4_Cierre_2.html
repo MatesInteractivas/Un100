@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_inicio.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='55' y='115' ancho='440' alto='390' fijo='sí' O.x='-40%' O.y='30%' despl_imagen='arr-izq' fondo='dce9f8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E3' x='55' y='115' ancho='440' alto='390' dibujar-si='ver' fijo='sí' O.x='-40%' O.y='30%' despl_imagen='arr-izq' fondo='30dce9f8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_03" value="id='btn' tipo='gráfico' espacio='E2' expresión='(5,-.1)' constricción='y=-.1' imagen='images/botoncito.png' dibujar-si='pp'">
+   <param name="C_04" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E2' nombre='Verificar' expresión='(280,350,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='ver=1' dibujar-si='(ff!=&squot;&squot;)&(aa!=&squot;&squot;)'">
+   <param name="C_05" value="id='n5' tipo='numérico' interfaz='botón' región='interior' espacio='E3' nombre='Otro ejercicio' expresión='(280,350,150,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn150.png' acción='inicio' parámetro='ver=0'">
+   <param name="C_06" value="id='ff' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(725,180,65,30)' valor='&squot;&squot;' fijo='sí' visible='sí' dibujar-si='ver=0' activo-si='ff=&squot;&squot;'">
+   <param name="C_07" value="id='aa' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E1' expresión='(725,245,65,30)' valor='&squot;&squot;' fijo='sí' visible='sí' dibujar-si='ver=0' activo-si='aa=&squot;&squot;'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Primer ejercicio de cierre&squot;' hacer='jj=ent(rnd*5)+3;q=ent(300*rnd)+200'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='btn.x=jj;p=q*btn.x;correcto1=(ff=p);correcto2=(aa=btn.x/2);correcto=correcto1+correcto2;'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E2' tipo='imagen' expresión='(-0.65,3)' archivo='images/apoyo1.png'">
+   <param name="G_03" value="espacio='E2' tipo='imagen' expresión='(6.35,3)' archivo='images/apoyo2.png'">
+   <param name="G_04" value="espacio='E2' tipo='imagen' expresión='(-.15,3.6)' archivo='images/viga.png'">
+   <param name="G_05" value="espacio='E2' tipo='flecha' color='rojo' expresión='(s,4.5)(s,3.53)' familia='s' s.intervalo='[0,btn.x]' s.pasos='2*btn.x' fijo='sí' tamaño='1' ancho='0' ancho='0' punta='2'">
+   <param name="G_06" value="espacio='E2' tipo='segmento' color='rojo' dibujar-si='s>.2' expresión='(0,4.55)(btn.x,4.55)' familia='s' s.intervalo='[0,btn.x]' s.pasos='btn.x-1' fijo='sí' tamaño='0'">
+   <param name="G_07" value="espacio='E2' tipo='segmento' dibujar-si='pp' expresión='(0,0)(7,0)' fijo='sí' tamaño='0' ancho='2'">
+   <param name="G_08" value="espacio='E2' tipo='texto' dibujar-si='ver=0' expresión='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 Viga de longitud L = 7 m\f2\fs30}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_09" value="espacio='E2' tipo='segmento' expresión='(0,1.5)(btn.x,1.5)' fijo='sí'">
+   <param name="G_10" value="espacio='E2' tipo='segmento' expresión='(0,1)(0,2)' fijo='sí' tamaño='0'">
+   <param name="G_11" value="espacio='E2' tipo='segmento' expresión='(btn.x,1)(btn.x,2)' fijo='sí' tamaño='0'">
+   <param name="G_12" value="espacio='E2' tipo='punto' dibujar-si='ver=0' expresión='(btn.x/2-.8,1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36{\*\mjaformula{\expr btn.x\decimals 1\fixed1}m}}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_13" value="espacio='E2' tipo='punto' dibujar-si='ver=0' expresión='(btn.x/2-.8,4.7)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36{\*\mjaformula{\expr q\decimals 0\fixed1}}N/m\f0\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_14" value="espacio='E3' tipo='imagen' expresión='(-.15,3.6)' archivo='images/viga.png'">
+   <param name="G_15" value="espacio='E3' tipo='flecha' expresión='(btn.x/2,4.8)(btn.x/2,3.55)' familia='s' s.intervalo='[0,btn.x]' s.pasos='2*btn.x' fijo='sí' tamaño='1' ancho='1' punta='4' flecha='azul'">
+   <param name="G_16" value="espacio='E3' tipo='punto' expresión='(btn.x/2-.5,4.9)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36\b{\*\mjaformula{\expr p\decimals 0\fixed1}}N\f0\fs30\b0}' fuente='SansSerif,BOLD,18' fijo='sí' tamaño='0'">
+   <param name="G_17" value="espacio='E3' tipo='segmento' expresión='(0,1.5)(btn.x/2,1.5)' fijo='sí'">
+   <param name="G_18" value="espacio='E3' tipo='segmento' expresión='(0,1)(0,2)' fijo='sí' tamaño='0'">
+   <param name="G_19" value="espacio='E3' tipo='segmento' expresión='(btn.x/2,1)(btn.x/2,2)' fijo='sí' tamaño='0'">
+   <param name="G_20" value="espacio='E3' tipo='punto' expresión='(btn.x/4-.6,1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36{\*\mjaformula{\expr btn.x/2\decimals 1\fixed1}m}}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_21" value="espacio='E1' tipo='texto' dibujar-si='ver=0' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 En la viga AB se ha aplicado una carga\par uniformemente distribuida. Calcula:\par \par Fuerza resultante:                   N \par \par \par Posici\u243 n desde A:                   m\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_22" value="espacio='E1' tipo='texto' dibujar-si='(ver=1)&(correcto=2)' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red0\green159\blue0;\red32\green48\blue58;\red0\green0\blue255;\red0\green0\blue0;}\cf0\f1\fs36\u161 Excelente!\cf1\par \par La magnitud de la fuerza resultante\par es igual al \u225 rea bajo el rect\u225 ngulo.\par \cf2\par {\*\mjaformula F{\subix R}={\expr q\decimals 0\fixed1}*{\expr btn.x\decimals 1\fixed1}N*m={\expr p\decimals 1\fixed1}N}\cf1\par \par La l\u237 nea de acci\u243 n de {\*\mjaformula\cf2 F{\subix R}} \cf3 pasa por\par el centroide C de este tri\u225 ngulo\cf1 ; es\par decir, a{\*\mjaformula{\fraction{\num 1}{\den 2}}}del apoyo A:\par \par \cf2{\*\mjaformula x={\fraction{\num{\expr btn.x\decimals 1\fixed1}m}{\den 2}}={\expr btn.x/2\decimals 1\fixed1}m}\fs40\b\cf1\par \b0\par \par \f4\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_23" value="espacio='E2' tipo='punto' expresión='(-0.5,2.8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs44\b A}' fuente='SansSerif,BOLD,22' fijo='sí' tamaño='0'">
+   <param name="G_24" value="espacio='E2' tipo='punto' expresión='(7.2,2.8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs44\b B}' fuente='SansSerif,BOLD,22' fijo='sí' tamaño='0'">
+   <param name="G_25" value="espacio='E1' tipo='texto' dibujar-si='(ver=1)&(correcto=1)' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red255\green100\blue0;\red32\green48\blue58;\red0\green0\blue255;\red0\green0\blue0;}\cf0\f1\fs36\u161 Una respuesta correcta!\cf1\par \par La magnitud de la fuerza resultante\par es igual al \u225 rea bajo el rect\u225 ngulo.\par \cf2\par {\*\mjaformula F{\subix R}={\expr q\decimals 0\fixed1}*{\expr btn.x\decimals 1\fixed1}N*m={\expr p\decimals 1\fixed1}N}\cf1\par \par La l\u237 nea de acci\u243 n de {\*\mjaformula\cf2 F{\subix R}} \cf3 pasa por\par el centroide C de este tri\u225 ngulo\cf1 ; es\par decir, a{\*\mjaformula{\fraction{\num 1}{\den 2}}}del apoyo A:\par \par \cf2{\*\mjaformula x={\fraction{\num{\expr btn.x\decimals 1\fixed1}m}{\den 2}}={\expr btn.x/2\decimals 1\fixed1}m}\fs40\b\cf1\par \b0\par \par \f4\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_26" value="espacio='E1' tipo='texto' dibujar-si='(ver=1)&(correcto=0)' expresión='[560,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;\red0\green0\blue255;\red0\green0\blue0;}\cf0\f1\fs36\u161 Ninguna respuesta correcta!\cf1\par \par La magnitud de la fuerza resultante\par es igual al \u225 rea bajo el rect\u225 ngulo.\par \cf2\par {\*\mjaformula F{\subix R}={\expr q\decimals 0\fixed1}*{\expr btn.x\decimals 1\fixed1}N*m={\expr p\decimals 1\fixed1}N}\cf1\par \par La l\u237 nea de acci\u243 n de {\*\mjaformula\cf2 F{\subix R}} \cf3 pasa por\par el centroide C de este tri\u225 ngulo\cf1 ; es\par decir, a{\*\mjaformula{\fraction{\num 1}{\den 2}}}del apoyo A:\par \par \cf2{\*\mjaformula x={\fraction{\num{\expr btn.x\decimals 1\fixed1}m}{\den 2}}={\expr btn.x/2\decimals 1\fixed1}m}\cf1\par \fs40\par \par \f3\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+</ajs>
+
+</body>
+</html>

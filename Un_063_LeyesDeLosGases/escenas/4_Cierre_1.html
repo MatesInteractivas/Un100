@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>TITULO</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="e0e4e8">
+
+<p align="center">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.11, 2014-07-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_cierre.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='btIni' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(420,505,124,40)' fijo='sí' visible='sí' imagen='images/bt_comoFunciona.png' acción='calcular' parámetro='iniciado=1\nt=1' dibujar-si='iniciado=0'">
+   <param name="C_02" value="id='btSig' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(500,505,60,40)' fijo='sí' visible='sí' imagen='images/bt_siguiente.png' acción='calcular' parámetro='t=t+1' dibujar-si='(iniciado)&(t<6)'">
+   <param name="C_03" value="id='btAnt' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(400,505,60,40)' fijo='sí' visible='sí' imagen='images/bt_anterior.png' acción='calcular' parámetro='t=t-1' dibujar-si='(iniciado)&(t>1)'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='iniciado=0;t=0;ok=0'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='imagen' dibujar-si='(t=0)||(t=6)' expresión='(-4.8,5.1)' archivo='images/img0.png'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' dibujar-si='t=1' expresión='(-4.8,5.1)' archivo='images/img1.png'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' dibujar-si='t=2' expresión='(-4.8,5.1)' archivo='images/img2.png'">
+   <param name="G_04" value="espacio='E1' tipo='imagen' dibujar-si='t=3' expresión='(-4.8,5.1)' archivo='images/img3.png'">
+   <param name="G_05" value="espacio='E1' tipo='imagen' dibujar-si='t=4' expresión='(-4.8,5.1)' archivo='images/img4.png'">
+   <param name="G_06" value="espacio='E1' tipo='imagen' dibujar-si='t=5' expresión='(-4.8,5.1)' archivo='images/img5.png'">
+   <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='(iniciado)&(t<6)' expresión='(-5.2,5.55)' archivo='images/fondo_txt.png'">
+   <param name="G_08" value="espacio='E1' tipo='imagen' dibujar-si='(iniciado)&(t=6)' expresión='(-8,5.55)' archivo='images/fondo_txt_gr.png'">
+   <param name="G_09" value="espacio='E1' tipo='texto' dibujar-si='t=1' expresión='[254,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs30 1. Al cerrar la olla, \u233 sta contiene b\u225 sicamente dos sustancias:\b\par     agua\b0  y \b aire\b0  (adem\u225 s de los alimentos que se le hayan puesto). \f3\fs30}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_10" value="espacio='E1' tipo='texto' dibujar-si='t=2' expresión='[254,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs30 2. Cuando se prende la estufa, ambas sustancias empiezan a\par     calentarse y suceden dos cosas. Por un lado, el \b agua\b0  comienza\par     a evaporarse, por lo que incrementa la cantidad de gas en la\par     olla. Por otro lado, el \b aire\b0  se calienta y naturalmente querr\u225 \par     expandirse.}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='texto' dibujar-si='t=3' expresión='[254,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs30 3. Sin embargo, la \b v\u225 lvula\b0  de la olla no permite que se escape\par     ni el vapor de agua ni el aire caliente, hasta haberse alcanzado\par     una presi\u243 n determinada (suficiente para empujar hacia arriba\par     la v\u225 lvula y dejar escapar los gases). }' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='texto' dibujar-si='t=4' expresión='[254,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs30 4. Recuerda ahora la f\u243 rmula de la \b ley general de los gases\b0 :\par      \b PV = knT\b0 . Tanto n (la cantidad de gas) como T (la tempe-\par      ratura) aumentan, mientras que V (el volumen) permanece\par      igual. Por tanto, la presi\u243 n en la olla (P) incrementar\u225  sus-\par      tancialmente.}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_13" value="espacio='E1' tipo='texto' dibujar-si='t=5' expresión='[254,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs30 5. La elevada presi\u243 n en la olla hace que la \b temperatura\b0  \b de\par     ebullici\u243 n\b0  del agua (normalmente de 100 \u176 C) aumenta a\par     unos 130 \u176 C, por lo que los alimentos se cocinan mucho\par     m\u225 s r\u225 pido.}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+   <param name="G_14" value="espacio='E1' tipo='texto' dibujar-si='t=6' expresión='[128,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\f1\fs30 Ahora ya sabes c\u243 mo se comportan los gases y qu\u233  sucede cuando los calentamos o comprimimos, \par ya sea a temperatura constante o no. \par \par Ahora bien, no es f\u225 cil mantener constante la temperatura de un gas al comprimirlo. Para que ocurra\par eso, se tienen que cumplir una serie de condiciones que se desmenuzar\u225 n en el di\u225 logo sobre los\par conceptos b\u225 sicos de la termodin\u225 mica.\par \par \cf0 Te invitamos a que lo estudies a continuaci\u243 n.\cf1}' fuente='SansSerif,PLAIN,15' fijo='sí'">
+</ajs></p>
+
+</body>
+</html>

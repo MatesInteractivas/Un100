@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_115_CirculoPotenciaEjeRadical" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Geometría, Geometría clásica" 
+	plataforma="HTML 5" 
+	ver="Beta"
+	>
+	<titulo><![CDATA[
+		Círculo, potencia, eje radical
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		La potencia de un punto respecto a un círculo es una propiedad que tiene que ver con la distancia de él a
+      dicho círculo, pero da más información, por lo cual es posible hacer construcciones y obtener resultados 
+      interesantes a partir de ella. En particular, se puede definir la recta radical de dos círculos, que generaliza
+      a la recta que pasa por los puntos de interseccion, aún en el caso en el que los círculos no se corten.
+
+      La idea de este interactivo es mostrar las construcciones de potencia de un punto y eje radical y algunas
+      propiedades de ellos.
+	
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

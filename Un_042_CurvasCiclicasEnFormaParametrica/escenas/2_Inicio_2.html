@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E3' x='55' y='380' ancho='859' alto='125' dibujar-si='av==0' escala='1' O.x='-429' O.y='-62' despl_imagen='arr-izq' fondo='81f0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E4' x='55' y='105' ancho='859' alto='240' dibujar-si='av==0' fijo='sí' O.x='-360' O.y='80' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='405860' texto='no' cID='12f2d9061fb'">
+   <param name="E_04" value="tipo='R2' id='E5' x='55' y='105' ancho='425' alto='400' dibujar-si='av==1' fijo='sí' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='405860' texto='no' cID='12f2d9061fb'">
+   <param name="E_05" value="tipo='R2' id='E6' x='55' y='105' ancho='425' alto='400' dibujar-si='av==2' fijo='sí' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='405860' texto='no' cID='12f2d9061fb'">
+   <param name="E_06" value="tipo='R2' id='INFO' x='(970-490)/2' y='100' ancho='490' alto='400' dibujar-si='info' fijo='sí' imagen='images/retro_490x470.png' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo0' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='avanza' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(893+34+_X,472+_Y,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='av=av+1\nteta=0' dibujar-si='av<2' activo-si='!info'">
+   <param name="C_03" value="id='retrocede' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(12+_X,472+_Y,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='av=max(0,av-1)' dibujar-si='(av>0)&(av<3)'">
+   <param name="C_04" value="id='scroll' tipo='numérico' región='interior' espacio='E3' nombre='_._' expresión='(E3._w-35,E3._h-55,30,50)' incr='50' min='-350' max='0' fijo='no' visible='no'">
+   <param name="C_05" value="id='r' tipo='numérico' región='interior' espacio='E4' nombre='_._' expresión='(E4._w-35,E4._h-55,30,50)' valor='1' min='0' fijo='sí' visible='no' acción='calcular' parámetro='teta=0'">
+   <param name="C_06" value="id='animar' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Animar/Pausar' expresión='((E1._w-160)/2,107+E4._h,160,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn160.png' acción='animar' dibujar-si='av==0'">
+   <param name="C_07" value="id='re' tipo='numérico' región='interior' espacio='E5' nombre='_._' expresión='(E5._w-35,E5._h-55,30,50)' valor='1' min='0' fijo='sí' visible='no' acción='calcular' parámetro='teta=0'">
+   <param name="C_08" value="id='Re' tipo='numérico' región='interior' espacio='E5' nombre='_._' expresión='(E5._w-2*35-40,E5._h-55,30,50)' valor='1' fijo='sí' visible='no' acción='calcular' parámetro='teta=0' activo-si='0'">
+   <param name="C_09" value="id='animar_e' tipo='numérico' interfaz='botón' región='interior' espacio='E5' nombre='Animar/Pausar' expresión='(5,E5._h-35,160,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn160.png' acción='animar' pos_mensajes='centro'">
+   <param name="C_10" value="id='rh' tipo='numérico' región='interior' espacio='E6' nombre='_._' expresión='(E6._w-35,E6._h-55,30,50)' valor='1.1' min='0' max='Rh-.1' fijo='sí' visible='no' acción='calcular' parámetro='teta=0' pos_mensajes='centro'">
+   <param name="C_11" value="id='Rh' tipo='numérico' región='interior' espacio='E6' nombre='_._' expresión='(E6._w-2*35-40,E6._h-55,30,50)' valor='2' min='0' fijo='sí' visible='no' acción='calcular' parámetro='teta=0' activo-si='0' pos_mensajes='centro'">
+   <param name="C_12" value="id='animar_h' tipo='numérico' interfaz='botón' región='interior' espacio='E6' nombre='Animar/Pausar' expresión='(5,E6._h-35,160,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn160.png' acción='animar'">
+   <param name="A_01" value="id='titulo' vector='sí' evaluar='una-sola-vez' tamaño='43' expresión='titulo[0]=&squot;Las cicloides&squot;;titulo[1]=&squot;Las epicicloides&squot;;titulo[2]=&squot;Las hipocicloides&squot;'">
+   <param name="A_02" value="id='avance()' algoritmo='sí' algoritmo='sí' hacer='flip=(teta<pi)?-1:1;cX=(2*teta+flip*sqrt(4*teta^2-4*((cos(teta))^2+teta^2-1)))/2;'">
+   <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=0' hacer='av=0;'">
+   <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='avance()'">
+   <param name="G_01" value="espacio='E1' tipo='imagen' dibujar-si='(!info)&(av==0)' coord_abs='sí' expresión='(0,0)' archivo='images/fondo_01.jpg'">
+   <param name="G_02" value="espacio='E4' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(E4._w-1,0)(E4._w-1,E4._h-1)(0,E4._h-1)(0,0)' relleno='f05566aa'">
+   <param name="G_03" value="espacio='E5' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(E5._w-1,0)(E5._w-1,E5._h-1)(0,E5._h-1)(0,0)' relleno='f05566aa'">
+   <param name="G_04" value="espacio='E6' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(E6._w-1,0)(E6._w-1,E6._h-1)(0,E6._h-1)(0,0)' relleno='f05566aa'">
+   <param name="G_05" value="espacio='E1' tipo='imagen' dibujar-si='(!info)&(av>0)' coord_abs='sí' expresión='(0,0)' archivo='images/fondo_02.jpg'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='0' expresión='[50,20]' texto='av=[av]' fijo='no' info='debug'">
+   <param name="G_07" value="espacio='E1' tipo='texto' expresión='[(E1._w-_AnchoDeCadena_(titulo[av],&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo[av]]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_08" value="espacio='INFO' tipo='texto' color='blanco' expresión='[10,5]' texto='Introducción' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_09" value="espacio='INFO' tipo='texto' color='negro' expresión='[20,100]' texto='En esta sección se presentarán de manera informal la cicloide, la epicicloide y la hipocicloide y en cada caso se dará una breve reseña histórica.' fuente='SansSerif,PLAIN,21' fijo='sí' ancho='420'">
+   <param name="G_10" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_11" value="espacio='E3' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(E3._w-1,0)(E3._w-1,E3._h-1)(0,E3._h-1)(0,0)'">
+   <param name="G_12" value="espacio='E3' tipo='texto' dibujar-si='av==0' expresión='[20,5+scroll]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;\f4\fcharset0 Arial;\f5\fcharset0 Courier New;}\f1\fs36 Esta curva es una \b\i cicloide\b0\i0 , que es la trayectoria que describe un punto de una circunferencia\par de radio \f3\fs40\b\i{\*\mjaformula r }\f1\fs36\b0\i0 que rueda sin resbalar sobre una recta, en este caso, el \f3\fs40\b\i{\*\mjaformula eje X.}\f1\fs36\b0\i0  Podemos pensar\par a esta curva como la curva que ver\u237 amos si fij\u225 ramos un foquito a un extremo de un rayo de\par una rueda de una bicicleta que recorre un camino recto en la oscuridad.\par \par Esta curva no era conocida por los griegos y fue nombrada por Galileo del griego \i kuklos\i0 : \par c\u237 rculo, rueda. Fu\u233  estudiada por Charles Bouvelles en 1501, Mersenne et Galileo en 1599,  \par Roberval en 1634, Toricelli en 1644, Huygens, Bernoulli y Newton. Este \u250 ltimo demostr\u243  una \par de las propiedades m\u225 s importantes de esta curva al resolver dos problemas planteados por\par Bernoulli en la Royal Society fundada en Londres en 1660 en el Gresham College de Londres.\par La propiedad a la que nos referimos es la de ser la \i braquist\u243 crona\i0 , es decir la curva que \par cumple con la siguiente propiedad: Dados dos puntos A y B sobre un plano vertical, determine\par la trayectoria de una part\u237 cula M a lo largo de la cual, descendiendo por su propio peso, M se \par mover\u225  de A a B en el menor tiempo posible.\par \par Huygens hab\u237 a descubierto que las cicloides son \i taut\u243 cronas\i0 , es decir que el tiempo que una \par part\u237 cula tarda en recorrer la distancia desde cualquier punto de la cicloide hasta el punto m\u225 s\par bajo de la curva es siempre el mismo, no importa si lo iniciamos en la parte m\u225 s alta de la \par curva, en la mitad o desde un punto muy cercano a la base. \par \par \par \par \par \f5\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_13" value="espacio='E4' tipo='texto' expresión='[E4._w-35-17,E4._h-47]' texto='r' fuente='SansSerif,PLAIN,26' fijo='sí'">
+   <param name="G_14" value="espacio='E4' tipo='curva' expresión='(r*sen(t)+r*teta,r*cos(t)+r)' t.intervalo='[0,2*pi]' t.pasos='30*r' info='círculo'">
+   <param name="G_15" value="espacio='E4' tipo='punto' color='000090' expresión='(r*(teta-sen(teta)),r*(1-cos(teta)))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4'">
+   <param name="G_16" value="espacio='E4' tipo='flecha' expresión='(r*teta,r)(r*(teta-sen(teta)),r*(1-cos(teta)))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1' ancho='1' punta='1'">
+   <param name="G_17" value="espacio='E4' tipo='curva' color='990000' expresión='(r*(t-sen(t)),r*(1-cos(t)))' t.intervalo='[0,teta]' t.pasos='6*pi*teta' ancho='2' info='cicloide'">
+   <param name="G_18" value="espacio='E5' tipo='curva' expresión='(Re*sen(t),Re*cos(t))' t.intervalo='[0,2*pi]' t.pasos='30' info='círculo R'">
+   <param name="G_19" value="espacio='E5' tipo='punto' color='000090' expresión='((Re+re)*(cos(teta))-re*cos(teta*(re+Re)/re),(Re+re)*(sen(teta))-re*sen(teta*(re+Re)/re))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4'">
+   <param name="G_20" value="espacio='E5' tipo='flecha' expresión='((Re+re)*cos(teta),(Re+re)*sen(teta))((Re+re)*(cos(teta))-re*cos(teta*(re+Re)/re),(Re+re)*(sen(teta))-re*sen(teta*(re+Re)/re))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1' ancho='1' punta='1'">
+   <param name="G_21" value="espacio='E5' tipo='curva' color='990000' expresión='((Re+re)*(cos(t))-re*cos(t*(re+Re)/re),(Re+re)*(sen(t))-re*sen(t*(re+Re)/re))' t.intervalo='[0,teta]' t.pasos='2*pi*teta' ancho='2' info='cicloide'">
+   <param name="G_22" value="espacio='E5' tipo='arco' centro='((Re+re)*cos(teta),(Re+re)*sen(teta))' radio='abs(re)' fin='360' fijo='sí'">
+   <param name="G_23" value="espacio='E6' tipo='curva' expresión='(Rh*sen(t),Rh*cos(t))' t.intervalo='[0,2*pi]' t.pasos='30' info='círculo R'">
+   <param name="G_24" value="espacio='E6' tipo='punto' color='000090' expresión='((Rh-rh)*(cos(teta))+rh*cos(teta*(Rh-rh)/rh),(Rh-rh)*(sen(teta))-rh*sen(teta*(Rh-rh)/rh))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='4'">
+   <param name="G_25" value="espacio='E6' tipo='flecha' expresión='((Rh-rh)*cos(teta),(Rh-rh)*sen(teta))((Rh-rh)*(cos(teta))+rh*cos(teta*(Rh-rh)/rh),(Rh-rh)*(sen(teta))-rh*sen(teta*(Rh-rh)/rh))' fuente='Monospaced,PLAIN,12' fijo='sí' tamaño='1' ancho='1' punta='1'">
+   <param name="G_26" value="espacio='E6' tipo='curva' color='990000' expresión='((Rh-rh)*(cos(t))+rh*cos(t*(Rh-rh)/rh),(Rh-rh)*(sen(t))-rh*sen(t*(Rh-rh)/rh))' t.intervalo='[0,teta]' t.pasos='2*pi*teta' ancho='2' info='cicloide'">
+   <param name="G_27" value="espacio='E1' tipo='texto' dibujar-si='av==1' expresión='[560,115]' texto='Una epicicloide es la que describe la trayectoria de un punto de una circunferencia que gira sin resbalar o deslizar sobre otra circunferencia de base.\n\nEsta curva fué estudiada por Hiparco en el siglo II a.c. Después por Dürer en 1525, RØmer en 1674 y Daniel Bernoulli en 1725. Su nombre viene del griego epi:' fuente='SansSerif,PLAIN,18' fijo='sí' ancho='330'">
+   <param name="G_28" value="espacio='E6' tipo='arco' centro='((Rh-rh)*cos(teta),(Rh-rh)*sen(teta))' radio='abs(rh)' fin='360' fijo='sí'">
+   <param name="G_29" value="espacio='E1' tipo='texto' dibujar-si='av==2' expresión='[550,115]' texto='Una hipocicloide es la que describe la trayectoria de un punto de una circunferencia que gira sin resbalar o deslizar al interior de otra circunferencia de base.\n\nAl igual que la epicicloide, esta curva fué estudiada por Dürer en 1525, RØmer en 1674 y Daniel Bernoulli en 1725. Su nombre viene del griego hipo:' fuente='SansSerif,PLAIN,18' fijo='sí' ancho='330'">
+   <param name="G_30" value="espacio='E5' tipo='texto' expresión='[E5._w-35-17,E5._h-47]' texto='r' fuente='SansSerif,PLAIN,26' fijo='sí'">
+   <param name="G_31" value="espacio='E6' tipo='texto' expresión='[E6._w-35-17,E6._h-47]' texto='r' fuente='SansSerif,PLAIN,26' fijo='sí'">
+   <param name="G_32" value="espacio='E5' tipo='texto' expresión='[E5._w-2*35-60-17,E5._h-47]' texto='R' fuente='SansSerif,PLAIN,26' fijo='sí'">
+   <param name="G_33" value="espacio='E6' tipo='texto' expresión='[E6._w-2*35-60-17,E6._h-47]' texto='R' fuente='SansSerif,PLAIN,26' fijo='sí'">
+   <param name="G_34" value="espacio='E1' tipo='imagen' dibujar-si='av<2' coord_abs='sí' expresión='(E1._w-27,487,.9,.9)' archivo='images/fondo_der.png'">
+   <param name="G_35" value="espacio='E1' tipo='imagen' dibujar-si='(av>0)&(av<3)' coord_abs='sí' expresión='(27,487,.9,.9)' archivo='images/fondo_izq.png'">
+   <param name="Animación" value="pausa='20' controles='no' auto='no' inicio='teta=0;' hacer='teta=teta+(1/(2*pi))' mientras='teta<((av==0)?(5*pi+pi/12)*(1/r):2*pi*re*10)'">
+</ajs>
+
+</body>
+</html>

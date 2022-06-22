@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>M&aacute;quinas t&eacute;rmicas</title>
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body bgColor="#d0d0d0">
+<p align="center">
+<ajs name="MaquinaDeCalor01" width=450 height=560
+        code="Descartes.class"
+        codebase="../"
+        archive="lib/Descartes5.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="450x560">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="MaquinaDeCalor01">
+   <param name="Versi&oacute;n" value="5.107, 2013-08-17">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' ancho='100%' fijo='s&iacute;' escala='48' O.y='55' imagen='images/fondo.png' despl_imagen='expand.' fondo='aaffcc' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='15%' y='3.3%' ancho='70%' alto='28%' fijo='s&iacute;' escala='75' O.x='-150' O.y='70' despl_imagen='arr-izq' fondo='c7b9a3' red='no' red10='no' ejes='negro' texto='rosa'">
+   <param name="C_01" value="id='C1' tipo='gr&aacute;fico' espacio='E1' color='negro' color-int='blanco' tama&ntilde;o='0' expresi&oacute;n='(-2.5,-2-e)' constricci&oacute;n='y=-2-e'">
+   <param name="C_02" value="id='C1.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='C1.x' min='-2.5' max='min(0,C2.x-2.5)' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_03" value="id='C1.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='C1.y' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_04" value="id='C2' tipo='gr&aacute;fico' espacio='E1' color='negro' color-int='blanco' tama&ntilde;o='0' expresi&oacute;n='(2.5,-2-e)' constricci&oacute;n='y=-2-e' fijo='s&iacute;'">
+   <param name="C_05" value="id='C2.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='C2.x' valor='C2.x' min='max(0,C1.x+2.5)' max='2.5' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_06" value="id='C2.y' tipo='num&eacute;rico' regi&oacute;n='exterior' nombre='C2.y' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_07" value="id='bloque' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='exterior' espacio='E1' nombre='montar bloque' expresi&oacute;n='(10,345,150,23)' valor='1' fijo='s&iacute;' visible='no' pos_mensajes='centro'">
+   <param name="C_08" value="id='bloque' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='exterior' espacio='E1' nombre='desmontar bloque' expresi&oacute;n='(10,370,150,23)' fijo='s&iacute;' visible='no' pos_mensajes='centro'">
+   <param name="C_09" value="id='inicio' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(E1._w/24,E1._h-55,139,38)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='17' imagen='images/btInicio.png' acci&oacute;n='inicio' pos_mensajes='centro'">
+   <param name="C_10" value="id='alto' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(E1._w/2.8,E1._h-55,139,38)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='17' imagen='images/btAnimar.png' acci&oacute;n='animar' pos_mensajes='centro'">
+   <param name="C_11" value="id='eje_x' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(387,150,45,25)' decimales='0' fijo='s&iacute;' visible='no' opciones='T,P,V'">
+   <param name="C_12" value="id='eje_y' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(20,20,45,25)' decimales='0' fijo='s&iacute;' visible='no' opciones='T,P,V'">
+   <param name="C_13" value="id='verificar' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(E1._w-130,E1._h-50,105,33)' fijo='s&iacute;' visible='s&iacute;' imagen='images/bt_verificar.png' acci&oacute;n='calcular' par&aacute;metro='res=opciones[eje_x]+&squot; &squot;+opciones[eje_y]\nparent.set(&squot;respuesta&squot;,res)' pos_mensajes='centro'">
+   <param name="A_01" value="id='h(V)' expresi&oacute;n='-1+V/A'">
+   <param name="A_02" value="id='Fase()' algoritmo='s&iacute;' expresi&oacute;n='fase' algoritmo='s&iacute;' Local='fase' inicio='fase=&squot;&squot;' hacer='fase=(enfriando)?&squot;Enfriamiento is&oacute;baro&squot;:fase;fase=(compadi)?&squot;Compresi&oacute;n adiab&aacute;tica&squot;:fase;fase=(calentando)?&squot;Calentamiento is&oacute;baro&squot;:fase;fase=(expadi)?&squot;Expansi&oacute;n adiab&aacute;tica&squot;:fase'">
+   <param name="A_03" value="id='Aclara()' algoritmo='s&iacute;' expresi&oacute;n='acla' algoritmo='s&iacute;' Local='acla' inicio='acla=&squot;&squot;' hacer='acla=(enfriando|calentando)?&squot;(a presi&oacute;n constante)&squot;:acla;acla=(compadi|expadi)?&squot;(sin intercambio de calor)&squot;:acla;'">
+   <param name="A_04" value="id='Avanza(ni,dT)' algoritmo='s&iacute;' algoritmo='s&iacute;' Local='j,dt' inicio='j=0;dt=dT/ni' hacer='ft=exp(-t);t=t+dt;C1.x=x1+(C1.x-x1)*ft;C2.x=x2+(C2.x-x2)*ft;xm=xmd+(xm-xmd)*ft;Pd=(Wp+(bloque)*Wb)/A;adi=compadi|expadi;cte=Pa*(Va^g);P=Pd+(P-Pd)*ft;V=(adi)?((cte/P)^(1/g)):nR*Tp/P;Tp=(adi)?cte/(nR*V^(g-1)):T+(Tp-T)*ft;dW=(adi)?Pa*Va-P*V:P*(V-Va);W=W+dW;dQ=dW+(Tp-Tpa)*nR;Q=Q+(Tp-Tpa)*nR;Q1=Q1-(enfriando)*dQ;Q2=Q2+(calentando)*dQ;S=S -(enfriando)*dQ*(1/T1-1/Tp)+(calentando)*dQ*(1/Tp-1/T2);yp=h(V);ym=(bloque)?h(V)+piston.b+biela.b+plato.b:ym;T=((!calentando)&amp;(!enfriando))?Tp:T;j=j+1;' mientras='j&lt;ni'">
+   <param name="A_05" value="id='initGrafs()' algoritmo='s&iacute;' expresi&oacute;n='x' algoritmo='s&iacute;' hacer='piston.a=2;piston.b=2*e;piston.rojo=0.75;piston.verde=0.75;piston.azul=0.75;biela.a=e;biela.b=2;biela.rojo=0.75;biela.verde=0.75;biela.azul=0.75;plato.a=2;plato.b=e;plato.rojo=0.75;plato.verde=0.75;plato.azul=0.75;masa.a=1.0;masa.b=0.33;masa.rojo=0.5;masa.verde=1;masa.azul=0.5;y1=h(nR*T1/(Wp/A))+piston.b+biela.b+plato.b;y2=h(nR*T2/((Wp+Wb)/A))+piston.b+biela.b+plato.b;xm=1+e;ym=y1;x1=-2.5;ypl=yp+biela.b+piston.b;yb=yp+piston.b;'">
+   <param name="A_06" value="id='opciones' vector='s&iacute;' evaluar='una-sola-vez' expresi&oacute;n='opciones[0]=&squot;T&squot;;opciones[1]=&squot;P&squot;;opciones[2]=&squot;V&squot;'">
+   <param name="A_07" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='T1=273;T2=873;T=T1;Wp=1;Wb=1;A=pi/2;Tp=T;EscV=1.5;res=&squot;&squot;' hacer='QQ2=1;QQ1=1;nR=0.003;Cv=1.5*nR;Cp=2.5*nR;g=Cp/Cv;Q1=0;Q2=0;bloque=0;Vmin=nR*T1/((Wp+Wb)/A);Vmax=nR*T2/(Wp/A);x1=C1.x;x2=C2.x;bloque=0;P=(Wp+(bloque)*Wb)/A;Pd=P;V=nR*Tp/P;Pa=P;Va=V;Tpa=Tp;e=0.15;xp=-1;yp=h(V);initGrafs();'">
+   <param name="A_08" value="id='evF1' evento='s&iacute;' condici&oacute;n='abs(C1.x)&lt;0.001' acci&oacute;n='calcular' par&aacute;metro='T=T1\nt=0\nenfriando=1\n' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_09" value="id='evF2' evento='s&iacute;' condici&oacute;n='abs(C2.x)&lt;0.001' acci&oacute;n='calcular' par&aacute;metro='T=T2\nt=0\ncalentando=1' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_10" value="id='evb1' evento='s&iacute;' condici&oacute;n='abs(Tp-T1)&lt;0.0001' acci&oacute;n='calcular' par&aacute;metro='x1=-2.5\nxmd=-masa.a/2\nt=0\nenfriando=0\nQQ1=(Q2#0)?Q1:1\nQQ2=(Q2#0)?Q2:1' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_11" value="id='evb2' evento='s&iacute;' condici&oacute;n='abs(Tp-T2)&lt;0.0001' acci&oacute;n='calcular' par&aacute;metro='x2=2.5\nxmd=1+e\nt=0\ncalentando=0' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_12" value="id='evT1' evento='s&iacute;' condici&oacute;n='abs(xm+masa.a/2)&lt;0.001' acci&oacute;n='calcular' par&aacute;metro='bloque=1\nt=0\ncompadi=1' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_13" value="id='evT2' evento='s&iacute;' condici&oacute;n='(bloque=1)&amp;(abs(xm-1-e)&lt;0.001)' acci&oacute;n='calcular' par&aacute;metro='bloque=0\nt=0\nym=y1\nexpadi=1' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_14" value="id='evVmin' evento='s&iacute;' condici&oacute;n='bloque&amp;(Pd&gt;P)&amp;((Pd-P)&lt;0.0001)' acci&oacute;n='calcular' par&aacute;metro='x2=0\nt=0\ncompadi=0' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_15" value="id='evVmax' evento='s&iacute;' condici&oacute;n='(!bloque)&amp;(Pd&lt;P-0.00001)&amp;((P-Pd)&lt;0.0001)' acci&oacute;n='calcular' par&aacute;metro='x1=0\nt=0\nexpadi=0' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E1' tipo='texto' color='negro' dibujar-si='0' expresi&oacute;n='[100,45]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Arial;}{\colortbl\red0\green0\blue255;}\f1\fs40{\*\mjaformula{\expr Fase()\decimals 2\fixed1}}\f2\fs40\b\par \b0   \f4\fs32{\*\mjaformula{\expr Aclara()\decimals 2\fixed1}}\f3\fs40\cf0\par }' fuente='SansSerif,PLAIN,20' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='E2' tipo='ecuaci&oacute;n' fondo='s&iacute;' color='8080ee' dibujar-si='(x&gt;0)&amp;0' expresi&oacute;n='y=EscV*s/x^g' familia='s' s.intervalo='[0.5,8]' s.pasos='10'">
+   <param name="G_03" value="espacio='E2' tipo='ecuaci&oacute;n' fondo='s&iacute;' color='80c080' dibujar-si='0&amp;(x&gt;0)' expresi&oacute;n='y=EscV*nR*s/x' familia='s' s.intervalo='[73,1073]' s.pasos='10'">
+   <param name="G_04" value="espacio='E1' tipo='segmento' fondo='s&iacute;' color='negro' dibujar-si='0' expresi&oacute;n='(1+e,y1+(y2-y1)*s)(5,y1+(y2-y1)*s)' familia='s' s.intervalo='[0,1]' s.pasos='1' fijo='s&iacute;' tama&ntilde;o='0' info='bandas transportadoras de los tabiques'">
+   <param name="G_05" value="espacio='E1' tipo='imagen' expresi&oacute;n='(1+e,y1+(y2-y1)*s)' familia='s' s.intervalo='[0,1]' s.pasos='1' archivo='images/repisa.png' info='bandas transportadoras de los tabiques'">
+   <param name="G_06" value="espacio='E1' tipo='pol&iacute;gono' fondo='s&iacute;' color='negro' dibujar-si='0' expresi&oacute;n='(-1,1.5)(-1,-1)(1,-1)(1,1.5)(1+e,1.5)(1+e,-1-e)(-1-e,-1-e)(-1-e,1.5)(-1,1.5)' relleno='grisClaro' info='cilindro'">
+   <param name="G_07" value="espacio='E1' tipo='imagen' expresi&oacute;n='(-1.16,1.6)' archivo='images/cilindro.png' info='cilindro'">
+   <param name="G_08" value="espacio='E1' tipo='pol&iacute;gono' color='negro' dibujar-si='0' expresi&oacute;n='(-piston.a/2,yp)(piston.a/2,yp)(piston.a/2,yp+piston.b)(-piston.a/2,yp+piston.b)(-piston.a/2,yp)' relleno='grisClaro' info='pist&oacute;n'">
+   <param name="G_09" value="espacio='E2' tipo='segmento' color='negro' expresi&oacute;n='(Va,EscV*Pa)(V,EscV*P)' rastro='rojo' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_10" value="espacio='E2' tipo='segmento' color='004080' dibujar-si='0' expresi&oacute;n='(0,0)(V,0)' fuente='Serif,BOLD,20' decimales='1' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='E1' tipo='pol&iacute;gono' color='negro' dibujar-si='0' expresi&oacute;n='(-biela.a/2,yb)(biela.a/2,yb)(biela.a/2,yb+biela.b)(-biela.a/2,yb+biela.b)(-biela.a/2,yb)' relleno='grisClaro' info='biela'">
+   <param name="G_12" value="espacio='E1' tipo='pol&iacute;gono' color='negro' dibujar-si='0' expresi&oacute;n='(-plato.a/2,ypl)(plato.a/2,ypl)(plato.a/2,ypl+plato.b)(-plato.a/2,ypl+plato.b)(-plato.a/2,ypl)' relleno='grisClaro' info='plato'">
+   <param name="G_13" value="espacio='E1' tipo='imagen' expresi&oacute;n='(-piston.a/2,yp+2.45)' archivo='images/piston.png' info='pist&oacute;n'">
+   <param name="G_14" value="espacio='E1' tipo='pol&iacute;gono' dibujar-si='0' expresi&oacute;n='(C1.x-1,C1.y-1)(C1.x+1,C1.y-1)(C1.x+1,C1.y+1)(C1.x-1,C1.y+1)' relleno='0066ff' info='Fuente de fr&iacute;o T1'">
+   <param name="G_15" value="espacio='E1' tipo='imagen' expresi&oacute;n='(C1.x-.9,C1.y+.95)' archivo='images/fuenteFrio.jpg' info='Fuente de fr&iacute;o T1'">
+   <param name="G_16" value="espacio='E2' tipo='segmento' color='004080' dibujar-si='0' expresi&oacute;n='(V,0)(V,EscV*P)' fuente='Serif,BOLD,20' decimales='1' fijo='s&iacute;'">
+   <param name="G_17" value="espacio='E1' tipo='pol&iacute;gono' dibujar-si='0' expresi&oacute;n='(C2.x-1,C2.y-1)(C2.x+1,C2.y-1)(C2.x+1,C2.y+1)(C2.x-1,C2.y+1)' relleno='ff4411' info='Fuente de calor T2'">
+   <param name="G_18" value="espacio='E1' tipo='imagen' expresi&oacute;n='(C2.x-.9,C2.y+.95)' archivo='images/fuenteCalor.jpg' info='Fuente de calor T2'">
+   <param name="G_19" value="espacio='E1' tipo='pol&iacute;gono' color='negro' dibujar-si='0' expresi&oacute;n='(xm,ym)(xm+masa.a,ym)(xm+masa.a,ym+masa.b)(xm,ym+masa.b)(xm,ym)' relleno='907020' info='tabique que sube'">
+   <param name="G_20" value="espacio='E2' tipo='punto' color='004080' expresi&oacute;n='(V,EscV*P)' fuente='Serif,BOLD,20' decimales='0' fijo='no' tama&ntilde;o='3'">
+   <param name="G_21" value="espacio='E2' tipo='texto' color='004080' expresi&oacute;n='[60,360]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;}\f1\fs40\b Volumen (lt) ={\*\mjaformula{\expr V\decimals 1\fixed1}}\par Presi\u243 n (atm) ={\*\mjaformula{\expr P/0.636\decimals 1\fixed1}}\par Temperatura (\u186 C) ={\*\mjaformula{\expr Tp-273\decimals 0\fixed1}} \par \par Trabajo realizado ={\*\mjaformula{\expr W\decimals 4\fixed0}} \par Calor transferido ={\*\mjaformula Q{\subix 2}-Q{\subix 1}={\expr Q2-Q1\decimals 4\fixed0}}     \par Rendimiento = {\*\mjaformula{\fraction{\num Q{\subix 2}-Q{\subix 1}}{\den Q{\subix 2}}}={\expr (QQ2-QQ1)/QQ2\decimals 4\fixed0}}\par Entrop\u237 a = S = {\*\mjaformula{\expr S\decimals 6\fixed0}}\par \fs32}' fuente='Serif,BOLD,20' fijo='s&iacute;'">
+   <param name="G_22" value="espacio='E1' tipo='imagen' expresi&oacute;n='(xm,ym+masa.b)' archivo='images/ladrillo.jpg' info='tabique que sube'">
+   <param name="G_23" value="espacio='E1' tipo='pol&iacute;gono' color='negro' dibujar-si='0&amp;&amp;(xmd&lt;xm)' expresi&oacute;n='(xm+s,y1)(xm+s+masa.a,y1)(xm+s+masa.a,y1+masa.b)(xm+s,y1+masa.b)(xm+s,y1)' familia='s' s.intervalo='[masa.a/2+1+e,3*(masa.a/2+1+e)]' s.pasos='2' relleno='907020' info='tabiques'">
+   <param name="G_24" value="espacio='E1' tipo='imagen' dibujar-si='xmd&lt;xm' expresi&oacute;n='(xm+s,y1+masa.b)' familia='s' s.intervalo='[masa.a/2+1+e,3*(masa.a/2+1+e)]' s.pasos='2' archivo='images/ladrillo.jpg' info='tabique'">
+   <param name="G_25" value="espacio='E1' tipo='pol&iacute;gono' color='negro' dibujar-si='0&amp;&amp;(xmd&gt;=xm)' expresi&oacute;n='(-masa.a/2+s,y1)(-masa.a/2+s+masa.a,y1)(-masa.a/2+s+masa.a,y1+masa.b)(-masa.a/2+s,y1+masa.b)(-masa.a/2+s,y1)' familia='s' s.intervalo='[masa.a/2+1+e,3*(masa.a/2+1+e)]' s.pasos='2' relleno='907020' info='tabiques'">
+   <param name="G_26" value="espacio='E1' tipo='imagen' dibujar-si='xmd&gt;=xm' expresi&oacute;n='(-masa.a/2+s,y1+masa.b)' familia='s' s.intervalo='[masa.a/2+1+e,3*(masa.a/2+1+e)]' s.pasos='2' archivo='images/ladrillo.jpg' info='tabique'">
+   <param name="G_27" value="espacio='E1' tipo='pol&iacute;gono' color='negro' dibujar-si='0&amp;&amp;(xmd&gt;xm)' expresi&oacute;n='(xm+s,y2)(xm+s+masa.a,y2)(xm+s+masa.a,y2+masa.b)(xm+s,y2+masa.b)(xm+s,y2)' familia='s' s.intervalo='[0,3*(masa.a/2+1+e)]' s.pasos='3' relleno='907020' info='tabiques'">
+   <param name="G_28" value="espacio='E1' tipo='imagen' dibujar-si='xmd&gt;xm' expresi&oacute;n='(xm+s,y2+masa.b)' familia='s' s.intervalo='[0,3*(masa.a/2+1+e)]' s.pasos='3' archivo='images/ladrillo.jpg' info='tabique'">
+   <param name="G_29" value="espacio='E1' tipo='pol&iacute;gono' color='negro' dibujar-si='0&amp;&amp;(xmd&lt;=xm)' expresi&oacute;n='(-masa.a/2+s,y2)(-masa.a/2+s+masa.a,y2)(-masa.a/2+s+masa.a,y2+masa.b)(-masa.a/2+s,y2+masa.b)(-masa.a/2+s,y2)' familia='s' s.intervalo='[masa.a/2+1+e,3*(masa.a/2+1+e)]' s.pasos='2' relleno='907020' info='tabiques'">
+   <param name="G_30" value="espacio='E1' tipo='imagen' dibujar-si='xmd&lt;=xm' expresi&oacute;n='(-masa.a/2+s,y2+masa.b)' familia='s' s.intervalo='[masa.a/2+1+e,3*(masa.a/2+1+e)]' s.pasos='2' archivo='images/ladrillo.jpg' info='tabique'">
+   <param name="G_31" value="espacio='E1' tipo='punto' color='blanco' expresi&oacute;n='(C1.x-0.3,C1.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs44\b{\*\mjaformula T{\subix 1}}\f2\fs30\b0}' fuente='Serif,BOLD,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_32" value="espacio='E1' tipo='punto' color='blanco' expresi&oacute;n='(C2.x-0.2,C2.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs44\b{\*\mjaformula T{\subix 2}}\f2\fs30\b0}' fuente='Serif,BOLD,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_33" value="espacio='E1' tipo='imagen' expresi&oacute;n='(-4.68,6.98)' archivo='images/marco.png' info='marco'">
+   <param name="G_34" value="espacio='E1' tipo='pol&iacute;gono' color='8ee7ff' expresi&oacute;n='(-piston.a/2+.1,yp+.2)(piston.a/2+.05,yp+.2)(piston.a/2+.05,C1.y+1.18)(-piston.a/2+.1,C1.y+1.18)(-piston.a/2+.1,yp+.2)' relleno='8ee7ff' info='gas'">
+   <param name="Animaci&oacute;n" value="pausa='100' controles='no' auto='no' inicio='t=0;W=0;Q=0;S=0;dt=0.001' hacer='Va=V;Pa=P;Tpa=Tp;Avanza(20,dt);ypl=yp+biela.b+piston.b;yb=yp+piston.b;' mientras='1'">
+</ajs>
+</p>
+</body>
+</html>

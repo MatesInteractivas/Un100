@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_desarrollo_1.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E4' x='55' y='115' ancho='440' alto='390' dibujar-si='(E3.Oy>-400)' fijo='sí' escala='80' O.x='-40%' O.y='40%' despl_imagen='arr-izq' red='69b8c4c8' red10='889498' ejes='negro' texto='no' eje-x='x' eje-y='y'">
+   <param name="E_03" value="tipo='R2' id='E2' x='55' y='115' ancho='440' alto='390' dibujar-si='(E3.Oy<-400)&(E3.Oy>-800)' fijo='sí' escala='28' O.x='-40%' O.y='45%' despl_imagen='arr-izq' red='no' red10='no' ejes='negro' texto='no' eje-x='x' eje-y='y'">
+   <param name="E_04" value="tipo='R2' id='E3' x='520' y='115' ancho='400' alto='390' fijo='sí' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='E3.Oy' tipo='numérico' interfaz='barra' región='interior' espacio='E1' expresión='(920,115,30,390)' incr='1' min='-755' max='0' decimales='0' fijo='sí' visible='no' pos_mensajes='centro'">
+   <param name="C_04" value="id='n4' tipo='numérico' región='interior' espacio='E4' nombre='n4' expresión='(E4._w-55,260,40,80)' valor='3' incr='0.5' min='1.5' max='4' decimales='1' fijo='sí' visible='no' pos_mensajes='centro'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Equilibrio de una partícula&squot;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E2' tipo='arco' centro='(6,7)' fin='60' fijo='sí' relleno='turquesa'">
+   <param name="G_02" value="espacio='E2' tipo='arco' centro='(6,7)' inicio='120' fin='180' fijo='sí' relleno='turquesa'">
+   <param name="G_03" value="espacio='E2' tipo='arco' centro='(6,7)' inicio='180' fin='210' fijo='sí' relleno='4effff00'">
+   <param name="G_04" value="espacio='E2' tipo='arco' centro='(6,7)' inicio='330' fin='360' fijo='sí' relleno='48ffff00'">
+   <param name="G_05" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_06" value="espacio='E2' tipo='segmento' expresión='(1,7)(12,7)' fijo='sí' tamaño='0'">
+   <param name="G_07" value="espacio='E2' tipo='segmento' expresión='(6,2)(6,11)' fijo='sí' tamaño='0'">
+   <param name="G_08" value="espacio='E2' tipo='flecha' expresión='(6,7)(6+5*cos(pi/3),7+5*sen(pi/3))' fijo='sí' tamaño='1' ancho='1' punta='4' flecha='azul'">
+   <param name="G_09" value="espacio='E2' tipo='flecha' expresión='(6,7)(6+4*cos(3.5*pi/3),7+4*sen(3.5*pi/3))' texto='  ' fijo='sí' tamaño='1' ancho='1' punta='4' flecha='8500ff'">
+   <param name="G_10" value="espacio='E2' tipo='flecha' expresión='(6,7)(6+6*cos(2*pi/3),7+6*sen(2*pi/3))' fijo='sí' tamaño='1' ancho='1' punta='4' flecha='007800'">
+   <param name="G_11" value="espacio='E2' tipo='flecha' expresión='(6,7)(6+4*cos(11*pi/6),7+4*sen(11*pi/6))' fijo='sí' tamaño='1' ancho='1' punta='4' flecha='ff7e00'">
+   <param name="G_12" value="espacio='E2' tipo='punto' color='rojo' expresión='(6,7)' fijo='sí' tamaño='6'">
+   <param name="G_13" value="espacio='E4' tipo='flecha' expresión='(0,0)(n4,0)' fijo='sí' tamaño='1' ancho='1' flecha='azul'">
+   <param name="G_14" value="espacio='E4' tipo='flecha' expresión='(0,0)(1,0)' fijo='sí' tamaño='1' ancho='1'">
+   <param name="G_15" value="espacio='E4' tipo='punto' expresión='(0.4,0.1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs40\b i}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_16" value="espacio='E4' tipo='flecha' expresión='(0,0)(0,n4)' fijo='sí' tamaño='1' ancho='1' flecha='azul'">
+   <param name="G_17" value="espacio='E4' tipo='flecha' expresión='(0,0)(0,1)' fijo='sí' tamaño='1' ancho='1'">
+   <param name="G_18" value="espacio='E4' tipo='punto' expresión='(0.1,0.4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs40\b j}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_19" value="espacio='E4' tipo='flecha' expresión='(0,0)(n4,n4)' fijo='sí' tamaño='1' ancho='1' flecha='azul'">
+   <param name="G_20" value="espacio='E4' tipo='segmento' expresión='(n4,0)(n4,n4)' fijo='sí' tamaño='0'">
+   <param name="G_21" value="espacio='E4' tipo='segmento' expresión='(0,n4)(n4,n4)' fijo='sí' tamaño='0'">
+   <param name="G_22" value="espacio='E4' tipo='punto' expresión='(n4-.1,-0.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40\b\cf0{\*\mjaformula F{\subix x}}\cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_23" value="espacio='E4' tipo='punto' expresión='(-.4,n4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs40\b\cf0{\*\mjaformula F{\subix y}}\cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_24" value="espacio='E4' tipo='imagen' dibujar-si='n4=1.5' expresión='(-3.5,4.5)' archivo='images/ec1.png'">
+   <param name="G_25" value="espacio='E4' tipo='imagen' dibujar-si='n4=2' expresión='(-3.5,4.5)' archivo='images/ec2.png'">
+   <param name="G_26" value="espacio='E4' tipo='imagen' dibujar-si='n4=2.5' expresión='(-3.5,4.5)' archivo='images/ec3.png'">
+   <param name="G_27" value="espacio='E4' tipo='imagen' dibujar-si='n4=3' expresión='(-3.5,4.5)' archivo='images/ec4.png'">
+   <param name="G_28" value="espacio='E4' tipo='imagen' dibujar-si='n4=3.5' expresión='(-3.5,4.5)' archivo='images/ec5.png'">
+   <param name="G_29" value="espacio='E4' tipo='imagen' dibujar-si='n4=4' expresión='(-3.5,4.5)' archivo='images/ec6.png'">
+   <param name="G_30" value="espacio='E3' tipo='imagen' expresión='(0,-2.1,1,1)' archivo='images/desa1.png'">
+   <param name="G_31" value="espacio='E2' tipo='punto' expresión='(6+5*cos(pi/3),7+5*sen(pi/3))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs40\b{\*\mjaformula F{\subix 1}}}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_32" value="espacio='E2' tipo='punto' expresión='(6+4*cos(3.5*pi/3),7+4*sen(3.5*pi/3))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs40\b\par {\*\mjaformula F{\subix 3}}}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_33" value="espacio='E2' tipo='punto' expresión='(6+6*cos(2*pi/3),7+6*sen(2*pi/3))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs40\b  {\*\mjaformula F{\subix 2}}}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_34" value="espacio='E2' tipo='punto' expresión='(6+4*cos(11*pi/6),7+4*sen(11*pi/6))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs40\b  {\*\mjaformula F{\subix 4}}}' fuente='SansSerif,BOLD,20' fijo='sí' tamaño='0'">
+   <param name="G_35" value="espacio='E2' tipo='punto' expresión='(7,7.2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\u952 {\subix 1}}\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_36" value="espacio='E2' tipo='punto' expresión='(4,7.2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\u952 {\subix 2}}\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_37" value="espacio='E2' tipo='punto' expresión='(4,6.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\u952 {\subix 3}}\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_38" value="espacio='E2' tipo='punto' expresión='(7,6.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\u952 {\subix 4}}\f2\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí' tamaño='0'">
+   <param name="G_39" value="espacio='E3' tipo='imagen' expresión='(0,-14,1,1)' archivo='images/desa2.png'">
+</ajs>
+
+</body>
+</html>

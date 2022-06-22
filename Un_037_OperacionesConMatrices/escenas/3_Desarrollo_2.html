@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='http://arquimedes.matem.unam.mx/Descartes5/lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+
+
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' O.x='-18%' O.y='-3%' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c6d6ff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_03" value="id='n5' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Multiplicar' expresión='(650,470,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='pdto=1' dibujar-si='pdto=0'">
+   <param name="C_04" value="id='n6' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Otro ejercicio' expresión='(640,470,160,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn160.png' acción='inicio' dibujar-si='pdto=1'">
+   <param name="A_01" value="id='A' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='5' filas='5' expresión='A[0,0]=0;A[1,0]=0;A[2,0]=0;A[0,1]=0;A[1,1]=0;A[2,1]=0;A[0,2]=0;A[1,2]=0;A[2,2]=0;'">
+   <param name="A_02" value="id='AT' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='5' filas='5' expresión='AT[0,0]=0;AT[1,0]=0;AT[2,0]=0;AT[0,1]=0;AT[1,1]=0;AT[2,1]=0;AT[0,2]=0;AT[1,2]=0;AT[2,2]=0;'">
+   <param name="A_03" value="id='B' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='5' filas='5' expresión='B[0,0]=0;B[1,0]=0;B[2,0]=0;B[0,1]=0;B[1,1]=0;B[2,1]=0;B[0,2]=0;B[1,2]=0;B[2,2]=0;'">
+   <param name="A_04" value="id='BT' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='5' filas='5' expresión='BT[0,0]=0;BT[1,0]=0;BT[2,0]=0;BT[0,1]=0;BT[1,1]=0;BT[2,1]=0;BT[0,2]=0;BT[1,2]=0;BT[2,2]=0;'">
+   <param name="A_05" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Multiplicación de un escalar por una matriz&squot;'">
+   <param name="A_06" value="id='dim' constante='sí' expresión='ent(rnd*4)+2' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='c' constante='sí' expresión='ent(rnd*9)+2' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='a2' algoritmo='sí' evaluar='una-sola-vez' inicio='I=0;J=0' hacer='A[I,J]=ent(rnd*9*(1-ent(3*rnd)));A[I,J]=(A[I,J]=0)?1:A[I,J];B[I,J]=c*A[I,J];AT[I,J]=A[I,J]<0?&squot;-&squot;+abs(A[I,J]):&squot; &squot;+abs(A[I,J]);BT[I,J]=B[I,J]<0?&squot;-&squot;+abs(B[I,J]):&squot; &squot;+abs(B[I,J]);BT[I,J]=B[I,J]>9?BT[I,J]:&squot; &squot;+BT[I,J];J=J+1;J=(I<(dim-1))?J-1:J;I=(I<(dim-1))?I+1:0' mientras='J<dim'">
+   <param name="A_09" value="id='a5' algoritmo='sí' evaluar='siempre' hacer='t=&squot; &squot;;t=(opcion=1)?&squot;Matriz simétrica&squot;:t;t=(opcion=2)?&squot;Matriz triangular superior&squot;:t;t=(opcion=3)?&squot;Matriz triangular inferior&squot;:t;t=(opcion=4)?&squot;Matriz nula&squot;:t;t=(opcion=5)?&squot;Matriz identidad&squot;:t;t=(opcion=6)?&squot;Matriz diagonal&squot;:t;x1=1.2*(dim-1);x1=(dim=2)?x1+.4:x1;x1=(dim=3)?x1+.2:x1;;x2=1.2*(dim-1);x2=(dim=2)?x1+.7:x2;x2=(dim=3)?x2+.2:x2'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(485,320,1.02,1.02)' archivo='images/panel_940x445.png'">
+   <param name="G_03" value="espacio='E1' tipo='texto' expresión='[25,205-(6-dim)*15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs44\b A =\f2\fs24\b0\par }' fuente='SansSerif,BOLD,22' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='texto' expresión='[10,420-(6-dim)*15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\f1\fs36\cf0{\*\mjaformula{\expr c\decimals 0\fixed1}A=}\par \cf1\f2\fs24}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='polígono' color='negro' expresión='(-4.8,3.1)(-5,3.1)(-5,3.1-1.1*(dim-1)-.4*(dim=2))(-4.8,3.1-1.1*(dim-1)-.4*(dim=2))' ancho='2'">
+   <param name="G_06" value="espacio='E1' tipo='polígono' color='negro' expresión='(-5.2+x1,3.1)(-5+x1,3.1)(-5+x1,3.1-1.1*(dim-1)-.4*(dim=2))(-5.2+x1,3.1-1.1*(dim-1)-.4*(dim=2))' ancho='2'">
+   <param name="G_07" value="espacio='E1' tipo='texto' expresión='[67+(s%dim)*45,115+ent(s/dim)*40]' familia='s' s.intervalo='[0,dim*dim-1]' s.pasos='dim*dim-1' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs40\b{\*\mjaformula{\expr AT[s%dim,ent(s/dim)]\decimals 0\fixed1}}\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='polígono' expresión='(-4.8,-1.5)(-5,-1.5)(-5,-1.5-1.1*(dim-1)-.4*(dim=2))(-4.8,-1.5-1.1*(dim-1)-.4*(dim=2))' ancho='2'">
+   <param name="G_09" value="espacio='E1' tipo='polígono' expresión='(-5.2+1.2*x2,-1.5)(-5+1.2*x2,-1.5)(-5+1.2*x2,-1.5-1.1*(dim-1)-.4*(dim=2))(-5.2+1.2*x2,-1.5-1.1*(dim-1)-.4*(dim=2))' ancho='2'">
+   <param name="G_10" value="espacio='E1' tipo='texto' dibujar-si='pdto=1' expresión='[67+(s%dim)*50,330+ent(s/dim)*40]' familia='s' s.intervalo='[0,dim*dim-1]' s.pasos='dim*dim-1' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs36{\*\mjaformula{\expr BT[s%dim,ent(s/dim)]\decimals 0\fixed1}}\par \cf1\f2\fs24}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='texto' dibujar-si='pdto=1' expresión='[510,351]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green74\blue0;\red0\green0\blue255;}\cf0\f1\fs36 Verifica el resultado\cf1\f2\fs24}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='texto' dibujar-si='pdto=0' expresión='[411,101]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs34 Una  matriz  se  puede  multiplicar  por  un n\u250 mero real\par llamado  escalar. Para ello, se  realiza el procedimiento\par indicado a continuaci\u243 n:\par \par \par \par \par \par \par \par \par \par \par Haz clic en el bot\u243 n &squot;&squot;Multiplicar&squot;&squot;, para obtener el producto\par escalar de {\*\mjaformula\cf1{\expr c\decimals 0\fixed1}\cf0} por la matriz \cf2 A\cf0 . \par \f2\fs24\cf2\par }' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_13" value="espacio='E1' tipo='imagen' expresión='(7,0,.8,.8)' archivo='images/escalar.png'">
+</ajs></body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Cierre</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+
+
+<ajs name="Explorar" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Explorar">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E0' fijo='sí' O.x='-50%' O.y='-50%' imagen='images/fondo_cierre.jpg' despl_imagen='centrada' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R3' id='E2' x='480' y='100' ancho='470' alto='400' escala='40' O.x='-35' despl_imagen='arr-izq' fondo='ff000000' despliegue='pintor' R3='sí'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E0' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='n2' tipo='numérico' interfaz='menú' región='interior' espacio='E0' nombre='Función superior' expresión='(350,10,160,25)' fijo='sí' visible='no' opciones='1[1],2[2],3[3],4[4],5[5]' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='pp'">
+   <param name="C_03" value="id='n3' tipo='numérico' interfaz='menú' región='interior' espacio='E0' nombre='Función inferior' expresión='(530,10,160,25)' fijo='sí' visible='no' opciones='1[1],2[2],3[3],4[4],5[5]' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='pp'">
+   <param name="C_04" value="id='b' tipo='numérico' interfaz='barra' región='interior' espacio='E0' nombre='b' expresión='(170,10,160,25)' valor='3' min='1' max='3' decimales='1' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='pp'">
+   <param name="C_05" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E0' nombre='Otro ejercicio' expresión='((E0._w-160)/2,510,160,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn160.png' acción='calcular' parámetro='otro=otro+1\nb=ent(rnd*40)/10+1\nn5=0' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='(otro<5)&(n5!=0)'">
+   <param name="C_06" value="id='n5' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E0' expresión='(80,345,60,30)' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12' activo-si='n5=0'">
+   <param name="A_01" value="id='f1(x)' expresión='_Eval_(n10)'">
+   <param name="A_02" value="id='f3(x)' expresión='_Eval_(n20)'">
+   <param name="A_03" value="id='f(x)' expresión='_Eval_(n7)'">
+   <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otro=1;c8=1;b=ent(rnd*40)/10+1;titulo=&squot;Ejercicios de Cierre&squot;;;msgFinal=&squot;Terminaste todos los ejercicios&squot;'">
+   <param name="A_05" value="id='n10' constante='sí' expresión='&squot;x&squot;' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='n20' constante='sí' expresión='&squot;.5&squot;' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='a5' algoritmo='sí' evaluar='siempre' hacer='n10=(otro=1)?&squot;x&squot;:n10;n10=(otro=2)?&squot;x+1&squot;:n10;n10=(otro=3)?&squot;2*sqrt(x)&squot;:n10;n10=(otro=4)?&squot;.5*x^2+1&squot;:n10;n10=(otro=5)?&squot;4-x/2&squot;:n10;n20=(otro=1)?&squot;x/2&squot;:n20;n20=(otro=2)?&squot;.5&squot;:n20;n20=(otro=3)?&squot;sqrt(x)&squot;:n20;n20=(otro=5)?&squot;.2*x^2&squot;:n20;n20=(otro=4)?&squot;sin(x/2)&squot;:n20;S=(otro=1)?6.75:S;S=(otro=2)?20.26:S;S=(otro=3)?10.94:S;S=(otro=4)?10.14:S;S=(otro=5)?23.55:S'">
+   <param name="A_08" value="id='a6' algoritmo='sí' evaluar='siempre' hacer='b=(b>3)&(n2=3)&(n3=4)?3:b;b=(b>3.5)&(n2=5)&(n3=1)?3.5:b;b=(b>3.8)&(n2=5)&(n3=3)?3.8:b;b=(b>3)&(n2=5)&(n3=4)?3:b'">
+   <param name="A_09" value="id='E3.rot.z' constante='sí' expresión='0' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='E2.rot.z' constante='sí' expresión='-15' evaluar='una-sola-vez'">
+   <param name="G_01" value="espacio='E0' tipo='texto' fondo='sí' expresión='[(E0._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E0' tipo='texto' dibujar-si='otro=1' expresión='[35,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs44 El s\u243 lido de secci\u243 n hueca que se\par observa en la escena, se form\u243  al\par rotar la regi\u243 n acotada por:\par f(x) = x,  g(x) = {\*\mjaformula{\fraction{\num x}{\den 2}}}, a = 0, b= {\*\mjaformula{\expr b\decimals 2\fixed1}}\f2\fs24}' fuente='Arial,PLAIN,22' fijo='sí'">
+   <param name="G_03" value="espacio='E0' tipo='texto' dibujar-si='otro=2' expresión='[35,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs44 El s\u243 lido de secci\u243 n hueca que se\par observa en la escena, se form\u243  al\par rotar la regi\u243 n acotada por:\par f(x) = x + 1,  g(x) = {\*\mjaformula{\fraction{\num 1}{\den 2}}}, a = 0, b= {\*\mjaformula{\expr b\decimals 2\fixed1}}\f2\fs24}' fuente='Arial,PLAIN,22' fijo='sí'">
+   <param name="G_04" value="espacio='E0' tipo='texto' dibujar-si='otro=3' expresión='[35,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs44 El s\u243 lido de secci\u243 n hueca que se\par observa en la escena, se form\u243  al\par rotar la regi\u243 n acotada por:\par f(x) = 2{\*\mjaformula{\radical{\index}{\radicand x}}},  g(x) = {\*\mjaformula{\radical{\index}{\radicand x}}}, a = 0, b= {\*\mjaformula{\expr b\decimals 2\fixed1}}\f2\fs24}' fuente='Arial,PLAIN,22' fijo='sí'">
+   <param name="G_05" value="espacio='E0' tipo='texto' dibujar-si='otro=4' expresión='[35,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs44 El s\u243 lido de secci\u243 n hueca que se\par observa en la escena, se form\u243  al\par rotar la regi\u243 n acotada por:\par f(x) ={\*\mjaformula{\fraction{\num x{\supix 2}}{\den 2}}}+ 1,  g(x) = {\*\mjaformula sen({\fraction{\num x}{\den 2}})},\par a = 0, b= {\*\mjaformula{\expr b\decimals 2\fixed1}}\f2\fs24}' fuente='Arial,PLAIN,22' fijo='sí'">
+   <param name="G_06" value="espacio='E0' tipo='texto' dibujar-si='otro=5' expresión='[35,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs44 El s\u243 lido de secci\u243 n hueca que se\par observa en la escena, se form\u243  al\par rotar la regi\u243 n acotada por:\par f(x) = 4 - {\*\mjaformula{\fraction{\num x}{\den 2}}},  g(x) = {\*\mjaformula{\fraction{\num x{\supix 2}}{\den 5}}}, \par a = 0, b= {\*\mjaformula{\expr b\decimals 2\fixed1}}\f2\fs24}' fuente='Arial,PLAIN,22' fijo='sí'">
+   <param name="G_07" value="espacio='E0' tipo='texto' expresión='[36,291]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red128\green128\blue128;\red0\green0\blue255;}\f1\fs48\cf0 El volumen es igual a:\par \par V = \cf1\f2\fs24}' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_08" value="espacio='E0' tipo='texto' expresión='[35,290]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red0\green0\blue0;}\f1\fs48\cf0 El volumen es igual a:\par \par V =         \b  \cf1\f3\fs52\b0\i\u960 \cf0\f4\fs24\i0}' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_09" value="espacio='E0' tipo='texto' dibujar-si='abs(S-n5)<.1' expresión='[36,401]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs48\cf0\u161 EXCELENTE!\f2\fs24   \cf1}' fuente='Arial,PLAIN,24' fijo='sí'">
+   <param name="G_10" value="espacio='E0' tipo='texto' dibujar-si='abs(S-n5)<.1' expresión='[35,400]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green255\blue0;\red0\green0\blue255;}\f1\fs48\cf0\u161 EXCELENTE!\f2\fs24   \cf1}' fuente='Arial,PLAIN,24' fijo='sí'">
+   <param name="G_11" value="espacio='E0' tipo='texto' dibujar-si='(abs(S-n5)>.09)&(n5!=0)' expresión='[36,401]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs48\cf0\u161 REVISA TUS C\u193 LCULOS!\par  El volumen es \f2\fs52{\*\mjaformula{\expr S\decimals 2\fixed1}}\u960   \f3\fs24\cf1}' fuente='Arial,PLAIN,24' fijo='sí'">
+   <param name="G_12" value="espacio='E0' tipo='texto' dibujar-si='(abs(S-n5)>.09)&(n5!=0)' expresión='[35,400]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\f1\fs48\cf0\u161 REVISA TUS C\u193 LCULOS!\par  El volumen es \f2\fs52{\*\mjaformula{\expr S\decimals 2\fixed1}}\u960   \f3\fs24\cf1}' fuente='Arial,PLAIN,24' fijo='sí'">
+   <param name="G_13" value="espacio='E0' tipo='texto' color='negro' dibujar-si='(otro>=5)&&(n5!=0)' expresión='[(E0._w-_AnchoDeCadena_(msgFinal,&squot;SansSerif&squot;,&squot;BOLD&squot;,&squot;24&squot;))/2,E0._h-40]' texto='[msgFinal]' fuente='SansSerif,BOLD,24' fijo='sí' info='(otro>=5)'">
+   <param name="G_14" value="espacio='E0' tipo='texto' color='blanco' dibujar-si='(otro>=5)&&(n5!=0)' expresión='[(E0._w-_AnchoDeCadena_(msgFinal,&squot;SansSerif&squot;,&squot;BOLD&squot;,&squot;24&squot;))/2-1,E0._h-41]' texto='[msgFinal]' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="S_01" value="espacio='E2' tipo='curva' color='azul' expresión='U=6*u y=U x=0 z=f1(U)' ancho='3' Nu='15'">
+   <param name="S_02" value="espacio='E2' tipo='curva' color='rojo' expresión='U=6*u y=U x=0 z=f3(U)' ancho='3' Nu='15'">
+   <param name="S_03" value="espacio='E2' tipo='superficie' color='5100ff00' color_reverso='5100ff00' expresión='U=u V=b*v z=f1(V)*cos(2*pi*U) x=f1(V)*sen(2*pi*U) y=V' modelo='metal' Nu='15' Nv='15'">
+   <param name="S_04" value="espacio='E2' tipo='superficie' color='naranja' color_reverso='naranja' expresión='U=u V=b*v z=f3(V)*cos(2*pi*U) x=f3(V)*sen(2*pi*U) y=V' modelo='metal' Nu='15' Nv='15'">
+   <param name="S_05" value="espacio='E2' tipo='superficie' color='naranja' color_reverso='naranja' expresión='V=f3(b)+(f1(b)-f3(b))*v U=u*2*pi x=V*cos(U) y=0 z=V*sen(U)' rotini='(0,30,0)' posini='(0,b,0)' cortar='sí' modelo='metal' Nu='15' Nv='1'">
+   <param name="S_06" value="espacio='E2' tipo='superficie' color='naranja' color_reverso='naranja' expresión='V=f3(0)+(f1(0)-f3(0))*v U=u*2*pi x=V*cos(U) y=0 z=V*sen(U)' rotini='(0,30,0)' cortar='sí' modelo='metal' Nu='15' Nv='1'">
+   <param name="S_07" value="espacio='E2' tipo='segmento' color='negro' expresión='(0,0,0)(5,0,0)'">
+   <param name="S_08" value="espacio='E2' tipo='segmento' color='negro' expresión='(0,0,0)(0,6,0)'">
+   <param name="S_09" value="espacio='E2' tipo='segmento' color='negro' expresión='(0,0,0)(0,0,4)'">
+</ajs></body>
+</html>

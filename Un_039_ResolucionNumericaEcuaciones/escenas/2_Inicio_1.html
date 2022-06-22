@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Motivación</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='HTMLIFrame' id='E2' x='25' y='100' ancho='325' alto='425' despl_imagen='arr-izq' archivo='documenta-biparticion.pdf'">
+   <param name="E_03" value="tipo='R2' id='E3' x='375' y='100' ancho='575' alto='425' escala='48' O.y='-30' despl_imagen='arr-izq' fondo='d5f3fe' red='no' red10='no' ejes='405860' texto='405860' números='sí' eje-x='x' eje-y='y'">
+   <param name="E_04" value="tipo='R2' id='controles' x='375' y='425' ancho='575' alto='100' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='calculos' x='25' y='100' ancho='325' alto='425' dibujar-si='(calculos=1)' O.x='-240' O.y='+125' despl_imagen='arr-izq' fondo='e5f3fe' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='zum' tipo='numérico' interfaz='menú' región='interior' espacio='E3' nombre='zum' expresión='(0,0,175,40)' valor='1' fijo='sí' visible='no' opciones='automático [1], manual [2]'">
+   <param name="C_02" value="id='E3.escala' tipo='numérico' región='interior' espacio='E3' nombre='escala' expresión='(180,0,100,40)' valor='50' incr='0.1*E3.escala' min='0.000001' max='1000000' decimales='(E3.escala<0.01)+(E3.escala<0.1)+(E3.escala<1)+(E3.escala<10)+(E3.escala<100)+(E3.escala<1000)+(E3.escala<10000)+(E3.escala<100000)' fijo='sí' visible='no' dibujar-si='zum=2'">
+   <param name="C_03" value="id='a' tipo='numérico' interfaz='campo de texto' región='interior' espacio='controles' nombre='a' expresión='(5,5,100,40)' fijo='sí' visible='sí'">
+   <param name="C_04" value="id='b' tipo='numérico' interfaz='campo de texto' región='interior' espacio='controles' nombre='b' expresión='(110,5,100,40)' valor='3' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_05" value="id='n' tipo='numérico' región='interior' espacio='controles' nombre='n' expresión='(285,5,100,40)' incr='1' min='0' discreto='sí' decimales='0' fijo='sí' visible='sí' pos_mensajes='centro'">
+   <param name="C_06" value="id='dec' tipo='numérico' región='interior' espacio='calculos' nombre='decimales' expresión='(155,2,130,30)' valor='12' incr='1' min='0' max='12' discreto='sí' decimales='0' fijo='sí' visible='sí'">
+   <param name="C_07" value="id='calculos' tipo='numérico' interfaz='botón' región='interior' espacio='calculos' nombre='Ocultar cálculos' expresión='(2,2,150,30)' valor='1' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn150.png' acción='calcular' parámetro='calculos=0'">
+   <param name="C_08" value="id='mcalculos' tipo='numérico' interfaz='botón' región='interior' espacio='controles' nombre='Mostrar cálculos' expresión='(5,59,150,30)' valor='1' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn150.png' acción='calcular' parámetro='calculos=1' dibujar-si='calculos=0'">
+   <param name="C_09" value="id='funcion' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='controles' nombre='f(x)' expresión='(165,55,200,40)' valor='&squot;cos(x)-x&squot;' fijo='sí' visible='sí'">
+   <param name="C_10" value="id='pr' tipo='numérico' interfaz='campo de texto' región='interior' espacio='controles' nombre='_._' expresión='(535,50,25,25)' valor='-4' incr='1' max='-1' discreto='sí' decimales='0' fijo='sí' visible='sí'">
+   <param name="A_01" value="id='x' vector='sí' evaluar='una-sola-vez' tamaño='101' expresión='x[0]=0;x[1]=0;x[2]=0'">
+   <param name="A_02" value="id='p' vector='sí' evaluar='una-sola-vez' tamaño='100' expresión='p[0]=0;p[1]=0;p[2]=0'">
+   <param name="A_03" value="id='f(x)' expresión='_Eval_(funcion)'">
+   <param name="A_04" value="id='itera()' algoritmo='sí' expresión='0' algoritmo='sí' inicio='j=1;an=a;bn=b;fin=0' hacer='N=ent(log(abs(b-a)/precision)/log(2))+1;anant=an;bnant=bn;x[j]=(an+bn)/2;fin=(f(x[j])=0)?1:fin;;bn=(f(x[j])*f(an)<0)?x[j]:bn;an=(f(x[j])*f(an)>0)?x[j]:an;j=j+1' mientras='j<=n'">
+   <param name="A_05" value="id='escalaauto()' algoritmo='sí' expresión='0' algoritmo='sí' hacer='E3.escala=(bnant-anant)<0.00001?E3.escala:100*10^-(ent(log10(bnant-anant))+1);E3.Ox=-x[n]*E3.escala'">
+   <param name="A_06" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Método de la bisección&squot;' hacer='zumaux=zum;aaux=a;baux=b;faux=funcion;praux=pr;E3.escala=100*10^-(ent(log10(b-a))+1)'">
+   <param name="A_07" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='precision=10^pr;itera();n1=((n-4)>=1)?n-4:1;aaa=(zum=1)?escalaauto():0;n=(n>99)?99:n;otroej=((zum#zumaux)|(a#aaux)|(b#baux)|(funcion#faux)|(praux#pr))?1:0;zumaux=(zum=zumaux)?zumaux:zum;aaux=(a=aaux)?aaux:a;baux=(b=baux)?baux:b;faux=(funcion=faux)?faux:funcion;praux=(pr=praux)?praux:pr;;'">
+   <param name="A_08" value="id='otroejemplo1' evento='sí' condición='otroej' acción='limpiar' ejecución='siempre' pos_mensajes='centro'">
+   <param name="A_09" value="id='otroejemplo2' evento='sí' condición='otroej' acción='calcular' parámetro='n=0\nE3.Ox=0\nE3.escala=100*10^-(ent(log10(b-a))+1)\nzumaux=zum\naaux=a\nbaux=b\nfaux=funcion\npraux=pr\notroej=0' ejecución='siempre' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='calculos' tipo='texto' expresión='[5,35]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red0\green0\blue0;\red255\green0\blue0;\red32\green48\blue58;}\cf0\f1\fs34 Resoluci\u243 n de la ecuaci\u243 n:\par       \cf1{\*\mjaformula{\expr funcion\decimals 0\fixed1}=0}\par \cf0 en el intervalo \par      {\*\mjaformula\cf1 [{\expr a\decimals 2\fixed1}, {\expr b\decimals 2\fixed1}]}\par por el m\u233 todo de la bisecci\u243 n.\par \par \cf2 Evoluci\u243 n del m\u233 todo\cf3\f2\fs36\b\par \f3\fs30\b0}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_03" value="espacio='controles' tipo='texto' dibujar-si='0' expresión='[380,2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}{\colortbl\red0\green168\blue0;\red32\green48\blue58;}\f1\fs32\b{\*\mjaformula x{\subix 0}=\cf0{\expr x[0]\decimals dec\fixed0}\cf1}\par     \f2\fs30\b0}' fuente='Serif,BOLD,16' decimales='dec' fijo='no'">
+   <param name="G_04" value="espacio='controles' tipo='texto' dibujar-si='n>0' expresión='[380,2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Courier New;\f5\fcharset0 Times New Roman;}{\colortbl\red255\green0\blue0;\red0\green0\blue0;}\f1\fs36\i     \fs32\i0  \b{\*\mjaformula x{\subix{\expr n\decimals 0\fixed1}}}= \cf0{\*\mjaformula{\expr x[n]\decimals dec\fixed0}}\f4\fs30\b0\par \cf1\f3\fs32\b{\*\mjaformula f(x{\subix{\expr n\decimals 0\fixed1}})}=\cf0  {\*\mjaformula{\expr f(x[n])\decimals dec\fixed0}}\fs36\b0}' fuente='Serif,ITALIC,18' decimales='dec' fijo='no'">
+   <param name="G_05" value="espacio='E3' tipo='segmento' color='azul' dibujar-si='n=0' expresión='(a,0)(a,f(a))' fijo='sí' tamaño='0'">
+   <param name="G_06" value="espacio='controles' tipo='texto' expresión='[395,65]' texto='precisión < 10' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_07" value="espacio='calculos' tipo='texto' expresión='[20,200+(s-n1)*20]' familia='s' s.intervalo='[n1,n]' s.pasos='n-n1' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;}{\colortbl\red255\green0\blue0;}\f1\fs36\b\cf0{\*\mjaformula x{\subix{\expr s\decimals 0\fixed1}}={\expr x[s]\decimals dec\fixed0}}}' fuente='Serif,BOLD,18' fijo='sí'">
+   <param name="G_08" value="espacio='calculos' tipo='texto' dibujar-si='(n>0)&(fin=0)' expresión='[5,310]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs36\b Cota del error absoluto \par {\*\mjaformula e<{\fraction{\num abs(b-a)}{\den 2{\supix n}{\supix}}}={\fraction{\num abs(b-a)}{\den 2{\supix{\expr n\decimals 0\fixed1}}{\supix}}}={\expr abs(b-a)/2^n\decimals dec\fixed1}}\par \par \f2\fs30\b0}' fuente='Serif,BOLD,18' fijo='sí'">
+   <param name="G_09" value="espacio='calculos' tipo='texto' dibujar-si='(n>=N)&(fin=0)' expresión='[5,380]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red0\green179\blue0;\red32\green48\blue58;}\f1\fs36\b\cf0 Precisi\u243 n alcanzada  al menos \par en la iteraci\u243 n \fs40{\*\mjaformula{\expr N\decimals 0\fixed1}}\cf1\fs36\par \f3\fs30\b0}' fuente='Serif,BOLD,18' fijo='sí'">
+   <param name="G_10" value="espacio='calculos' tipo='texto' dibujar-si='(n>0)&(fin=1)' expresión='[5,380]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red0\green179\blue0;\red32\green48\blue58;}\f1\fs36\b\cf0          \fs48 Ra\u237 z exacta\cf1\f3\fs30\b0}' fuente='Serif,BOLD,18' fijo='sí'">
+   <param name="G_11" value="espacio='E3' tipo='segmento' color='azul' dibujar-si='n>0' expresión='(anant,0)(anant,f(anant))' fijo='sí' tamaño='0'">
+   <param name="G_12" value="espacio='E3' tipo='segmento' color='magenta' dibujar-si='n=0' expresión='(b,0)(b,f(b))' fijo='sí' tamaño='0'">
+   <param name="G_13" value="espacio='E3' tipo='segmento' color='magenta' dibujar-si='n>0' expresión='(bnant,0)(bnant,f(bnant))' fijo='sí' tamaño='0'">
+   <param name="G_14" value="espacio='E3' tipo='segmento' color='00d100' dibujar-si='n=0' expresión='(a,0)(b,0)' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_15" value="espacio='E3' tipo='segmento' color='00d100' dibujar-si='n>0' expresión='(anant,0)(bnant,0)' fijo='sí' tamaño='0' ancho='3'">
+   <param name="G_16" value="espacio='E3' tipo='ecuación' expresión='y=f(x)' ancho='3'">
+   <param name="G_17" value="espacio='E3' tipo='punto' color='rojo' dibujar-si='n>0' expresión='(x[n],0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}{\colortbl\red32\green48\blue58;}\f1\fs34\b{\*\mjaformula x{\subix{\expr n\decimals 0\fixed1}}}\cf0\f2\fs30\b0}' fuente='Serif,BOLD,17' fijo='sí' tamaño='4'">
+   <param name="G_18" value="espacio='E3' tipo='polígono' fondo='sí' color='blanco' coord_abs='sí' expresión='(0,0)(E3._w-1,0)(E3._w-1,E3._h-1)(0,E3._h-1)(0,0)' familia='s' s.intervalo='[0,4]' s.pasos='4' ancho='2'">
+   <param name="G_19" value="espacio='calculos' tipo='polígono' fondo='sí' color='blanco' coord_abs='sí' expresión='(0,0)(calculos._w-1,0)(calculos._w-1,calculos._h-1)(0,calculos._h-1)(0,0)' familia='s' s.intervalo='[0,4]' s.pasos='4' ancho='2'">
+   <param name="Animación" value="pausa='1000' controles='no' auto='sí' inicio='t=0' hacer='t=t+1' mientras='1'">
+</ajs>
+
+</body>
+</html>

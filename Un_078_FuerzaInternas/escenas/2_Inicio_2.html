@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R3' id='E0' x='70' y='200' ancho='380' alto='190' escala='23' O.y='-50' despl_imagen='expand.' fondo='fbfadc' despliegue='pintor' R3='sí'">
+   <param name="E_03" value="tipo='R3' id='E2' x='70' y='400' ancho='380' alto='120' escala='22' O.y='10' despl_imagen='arr-izq' fondo='fbfadc' despliegue='pintor' R3='sí'">
+   <param name="E_04" value="tipo='R2' id='E3' x='500' y='100' ancho='460' alto='430' fijo='sí' escala='27' O.x='-100' O.y='-55' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_03" value="id='L' tipo='numérico' región='interior' espacio='E3' nombre='L' expresión='(20,380,100,40)' valor='4' incr='1' min='1' max='8' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_04" value="id='a' tipo='numérico' región='interior' espacio='E3' nombre='a' expresión='(170,380,100,40)' valor='.3*L' incr='1' min='0' max='L/2' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_05" value="id='c' tipo='numérico' región='interior' espacio='E3' nombre='b' expresión='(320,380,100,40)' valor='.3*L' incr='1' min='0' max='L/2' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;De la realidad a la representación&squot;' hacer='E0.rot.z=60;E2.rot.z=30;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='b=L-a-c;R1=p*(b+2*c)/L;R2=p*(b+2*a)/L;Mmax=max(p*a*(b+2*c)/L,p*c*(b+2*a)/L);;'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(15,90)' archivo='images/panel_940x445.png'">
+   <param name="G_03" value="espacio='E3' tipo='polígono' color='grisObscuro' expresión='(0,3)(L,3)(L,2.8)(0,2.8)(0,3)' relleno='grisClaro'">
+   <param name="G_04" value="espacio='E3' tipo='flecha' dibujar-si='(a!=L/2)|(c!=L/2)' expresión='(a,4)(a,3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs24   {\*\mjaformula P}\f2\fs24\par }' fuente='Serif,PLAIN,12' fijo='sí' ancho='2' ancho='2' punta='3' flecha='negro'">
+   <param name="G_05" value="espacio='E3' tipo='polígono' expresión='(0,2.8)(.2,2.65)(-.2,2.65)(0,2.8)' relleno='amarillo'">
+   <param name="G_06" value="espacio='E3' tipo='polígono' expresión='(L,2.8)(L+.2,2.7)(L-.2,2.7)(L,2.8)' relleno='amarillo'">
+   <param name="G_07" value="espacio='E3' tipo='segmento' expresión='(L+.2,2.65)(L-.2,2.65)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_08" value="espacio='E3' tipo='flecha' color='verde' expresión='(0,2)(0,2.65)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green255\blue0;}\f1\fs24\cf0   R1\cf1\f2\fs24\par }' fuente='SansSerif,PLAIN,12' fijo='sí' ancho='2' ancho='2' punta='3' flecha='verde'">
+   <param name="G_09" value="espacio='E3' tipo='flecha' color='verde' expresión='(L,2)(L,2.65)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green255\blue0;}\cf0\f1\fs24   R2\cf1\f2\fs24\par }' fuente='SansSerif,PLAIN,12' fijo='sí' ancho='2' ancho='2' punta='3' flecha='verde'">
+   <param name="G_10" value="espacio='E3' tipo='segmento' expresión='(0,-1)(L,-1)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_11" value="espacio='E3' tipo='segmento' color='grisClaro' expresión='(0,2)(0,-6)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_12" value="espacio='E3' tipo='segmento' color='grisClaro' expresión='(L2,2.7)(L2,-6)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_13" value="espacio='E3' tipo='segmento' color='grisClaro' expresión='(L,2)(L,-6)' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_14" value="espacio='E3' tipo='polígono' dibujar-si='kk=1' expresión='(0,-1)(L2,1.3*(L-L2)*L2/L-1)(L,-1)(0,-1)' relleno='640088ff'">
+   <param name="G_15" value="espacio='E3' tipo='texto' expresión='[30,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b M\f2\fs24\b0\par }' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_16" value="espacio='E3' tipo='texto' expresión='[30,325]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b V\f2\fs24\b0\par }' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="G_17" value="espacio='E3' tipo='flecha' dibujar-si='(a!=L/2)|(c!=L/2)' expresión='(L-c,4)(L-c,3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs24    {\*\mjaformula P}\f2\fs24\par }' fuente='Serif,PLAIN,12' fijo='sí' ancho='2' ancho='2' punta='3' flecha='negro'">
+   <param name="G_18" value="espacio='E3' tipo='polígono' expresión='(0,-1)(a,-1+a*(b+2*c)/L)(L-c,-1+c*(b+2*a)/L)(L,-1)(0,-1)' relleno='amarillo'">
+   <param name="G_19" value="espacio='E3' tipo='flecha' dibujar-si='(a=L/2)&(c=L/2)' expresión='(L-c,4)(L-c,3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs24     {\*\mjaformula 2P}\f2\fs24\par }' fuente='Serif,PLAIN,12' fijo='sí' ancho='2' ancho='2' punta='3' flecha='negro'">
+   <param name="G_20" value="espacio='E3' tipo='polígono' dibujar-si='a>0' expresión='(0,-4)(0,-4+1.7*(b+2*c)/L)(a,-4+1.7*(b+2*c)/L)(a,-4)(0,-4)' relleno='turquesa'">
+   <param name="G_21" value="espacio='E3' tipo='polígono' expresión='(a,-4)(a,-4+(1.7*(b+2*c)/L-1.7))(L-c,-4+(1.7*(b+2*c)/L-1.7))(L-c,-4)(a,-4)' relleno='turquesa'">
+   <param name="G_22" value="espacio='E3' tipo='polígono' dibujar-si='c>0' expresión='(L-c,-4)(L-c,-4-1.7*(b+2*a)/L)(L,-4-1.7*(b+2*a)/L)(L,-4)(L-c,-4)' relleno='turquesa'">
+   <param name="G_23" value="espacio='E3' tipo='texto' expresión='[1,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\cf0\f1\fs36     Diagramas de Momento Flector y fuerza cortante\fs34\cf1\par Puedes variar la posici\u243 n de la carga y la longitud de la viga\f3\fs24\par }' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_24" value="espacio='E1' tipo='texto' expresión='[30,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red238\green255\blue170;\red32\green48\blue58;}\f1\fs34\cf0 En el techo se observan las correas apoyadas sobre la viga\par cumbrera, las cargas de techo que soportan las correas se\par transmiten a la viga como cargas puntuales.\par Puedes rotar el techo con clic sostenido\fs32\b\cf1\par \cf2\f3\fs30\b0}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="S_01" value="espacio='E0' tipo='paralelepípedo' color='724c00' color_reverso='rosa' expresión='Paralelepípedo' cortar='sí' modelo='metal' ancho='.3' largo='12' alto='.5'">
+   <param name="S_02" value="espacio='E0' tipo='paralelepípedo' color='724c00' color_reverso='rosa' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(0,-4,-.75)' cortar='sí' modelo='metal' ancho='.3' largo='6' alto='.4'">
+   <param name="S_03" value="espacio='E0' tipo='paralelepípedo' color='724c00' color_reverso='rosa' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(0,4,-.75)' cortar='sí' modelo='metal' ancho='.3' largo='6' alto='.4'">
+   <param name="S_04" value="espacio='E0' tipo='paralelepípedo' color='724c00' color_reverso='rosa' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(0,-4,-.405)' cortar='sí' modelo='metal' ancho='.3' largo='.4' alto='.405'">
+   <param name="S_05" value="espacio='E0' tipo='paralelepípedo' color='724c00' color_reverso='rosa' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(0,4,-.41)' cortar='sí' modelo='metal' ancho='.4' largo='.5' alto='.41'">
+   <param name="S_06" value="espacio='E0' tipo='paralelepípedo' color='e14c00' color_reverso='rosa' expresión='Paralelepípedo' posini='(2.92,0,-1.05)' cortar='sí' aristas='sí' modelo='metal' ancho='.5' largo='12' alto='.2'">
+   <param name="S_07" value="espacio='E0' tipo='paralelepípedo' color='e14c00' color_reverso='rosa' expresión='Paralelepípedo' posini='(-2.92,0,-1.05)' cortar='sí' aristas='sí' modelo='metal' ancho='.5' largo='12' alto='.2'">
+   <param name="S_08" value="espacio='E0' tipo='paralelepípedo' color='e14c00' color_reverso='rosa' expresión='Paralelepípedo' posini='(-2.92,0,-1.25)' cortar='sí' aristas='sí' modelo='metal' ancho='.5' largo='12' alto='.2'">
+   <param name="S_09" value="espacio='E0' tipo='paralelepípedo' color='e14c00' color_reverso='rosa' expresión='Paralelepípedo' posini='(2.92,0,-1.25)' cortar='sí' aristas='sí' modelo='metal' ancho='.5' largo='12' alto='.2'">
+   <param name="S_10" value="espacio='E0' tipo='paralelepípedo' color='e14c00' color_reverso='rosa' expresión='Paralelepípedo' posini='(2.92,0,-1.45)' cortar='sí' aristas='sí' modelo='metal' ancho='.5' largo='12' alto='.2'">
+   <param name="S_11" value="espacio='E0' tipo='paralelepípedo' color='e14c00' color_reverso='rosa' expresión='Paralelepípedo' posini='(-2.92,0,-1.45)' cortar='sí' aristas='sí' modelo='metal' ancho='.5' largo='12' alto='.2'">
+   <param name="S_12" value="espacio='E0' tipo='paralelepípedo' color='e14c00' color_reverso='rosa' expresión='Paralelepípedo' posini='(-2.92,0,-1.65)' cortar='sí' aristas='sí' modelo='metal' ancho='.5' largo='12' alto='.2'">
+   <param name="S_13" value="espacio='E0' tipo='paralelepípedo' color='e14c00' color_reverso='rosa' expresión='Paralelepípedo' posini='(2.92,0,-1.65)' cortar='sí' aristas='sí' modelo='metal' ancho='.5' largo='12' alto='.2'">
+   <param name="S_14" value="espacio='E0' tipo='paralelepípedo' color='e14c00' color_reverso='rosa' expresión='Paralelepípedo' posini='(2.92,0,-1.85)' cortar='sí' aristas='sí' modelo='metal' ancho='.5' largo='12' alto='.2'">
+   <param name="S_15" value="espacio='E0' tipo='paralelepípedo' color='e14c00' color_reverso='rosa' expresión='Paralelepípedo' posini='(-2.92,0,-1.85)' cortar='sí' aristas='sí' modelo='metal' ancho='.5' largo='12' alto='.2'">
+   <param name="S_16" value="espacio='E0' tipo='paralelepípedo' color='e14c00' color_reverso='rosa' expresión='Paralelepípedo' posini='(-2.92,0,-2.05)' cortar='sí' aristas='sí' modelo='metal' ancho='.5' largo='12' alto='.2'">
+   <param name="S_17" value="espacio='E0' tipo='paralelepípedo' color='e14c00' color_reverso='rosa' expresión='Paralelepípedo' posini='(2.92,0,-2.05)' cortar='sí' aristas='sí' modelo='metal' ancho='.5' largo='12' alto='.2'">
+   <param name="S_18" value="espacio='E0' tipo='paralelepípedo' color='724c00' color_reverso='rosa' expresión='Paralelepípedo' rotini='(22,0,90)' posini='(2,1.5,-.3)' cortar='sí' modelo='metal' ancho='.2' largo='4' alto='.3'">
+   <param name="S_19" value="espacio='E0' tipo='paralelepípedo' color='724c00' color_reverso='rosa' expresión='Paralelepípedo' rotini='(-22,0,90)' posini='(-2,1.5,-.3)' cortar='sí' modelo='metal' ancho='.2' largo='4' alto='.3'">
+   <param name="S_20" value="espacio='E0' tipo='paralelepípedo' color='724c00' color_reverso='rosa' expresión='Paralelepípedo' rotini='(-22,0,90)' posini='(-2,-1.5,-.3)' cortar='sí' modelo='metal' ancho='.2' largo='4' alto='.3'">
+   <param name="S_21" value="espacio='E0' tipo='paralelepípedo' color='724c00' color_reverso='rosa' expresión='Paralelepípedo' rotini='(22,0,90)' posini='(2,-1.5,-.3)' cortar='sí' modelo='metal' ancho='.2' largo='4' alto='.3'">
+   <param name="S_22" value="espacio='E0' tipo='cara' color='grisClaro' color_reverso='grisObscuro' expresión='(0,0)(.8,0)(.8,0.2)(0,0.2)(0,0)' rotini='(90,0,0)' posini='(-0.4,1.39,0.3)' cortar='sí' modelo='metal'">
+   <param name="S_23" value="espacio='E0' tipo='cara' color='grisObscuro' color_reverso='grisClaro' expresión='(0,0)(.8,0)(.8,0.2)(0,0.2)(0,0)' rotini='(90,0,0)' posini='(-0.4,-1.39,0.3)' cortar='sí' modelo='metal'">
+   <param name="S_24" value="espacio='E0' tipo='cara' color='grisObscuro' color_reverso='grisClaro' expresión='(0,0)(.8,0)(.8,0.2)(0,0.2)(0,0)' rotini='(90,0,0)' posini='(-0.4,1.62,0.3)' cortar='sí' modelo='metal'">
+   <param name="S_25" value="espacio='E0' tipo='cara' color='grisClaro' color_reverso='grisObscuro' expresión='(0,0)(.8,0)(.8,0.2)(0,0.2)(0,0)' rotini='(90,0,0)' posini='(-0.4,-1.62,0.3)' cortar='sí' modelo='metal'">
+   <param name="S_26" value="espacio='E2' tipo='paralelepípedo' color='724c00' color_reverso='rosa' expresión='Paralelepípedo' cortar='sí' modelo='metal' ancho='.3' largo='12' alto='.5'">
+   <param name="S_27" value="espacio='E2' tipo='paralelepípedo' color='724c00' color_reverso='rosa' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(0,-4,-.405)' cortar='sí' modelo='metal' ancho='.3' largo='.4' alto='.405'">
+   <param name="S_28" value="espacio='E2' tipo='paralelepípedo' color='724c00' color_reverso='rosa' expresión='Paralelepípedo' rotini='(0,0,90)' posini='(0,4,-.41)' cortar='sí' modelo='metal' ancho='.4' largo='.5' alto='.41'">
+   <param name="S_29" value="espacio='E2' tipo='segmento' color='azul' expresión='(-0.02,1.5,1.5)(-0.02,1.5,0.3)' ancho='3'">
+   <param name="S_30" value="espacio='E2' tipo='cono' color='azul' color_reverso='turquesa' expresión='Cono' posini='(-0.02,1.5,0.4)' modelo='metal' ancho='.5' largo='.5' alto='.5' Nv='1'">
+   <param name="S_31" value="espacio='E2' tipo='segmento' color='azul' expresión='(-0.02,-1.5,1.5)(-0.02,-1.5,0.3)' ancho='3'">
+   <param name="S_32" value="espacio='E2' tipo='cono' color='azul' color_reverso='turquesa' expresión='Cono' posini='(-0.02,-1.5,0.4)' modelo='metal' ancho='.5' largo='.5' alto='.5' Nv='1'">
+   <param name="S_33" value="espacio='E2' tipo='texto' expresión='[35,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red238\green255\blue170;}\cf0\f1\fs34 Diagrama de cargas en la viga cumbrera\cf1\f2\fs24}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+</ajs>
+
+</body>
+</html>

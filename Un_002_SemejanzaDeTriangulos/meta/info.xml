@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_002_SemejanzaDeTriangulos" 
+	nivel="Licenciatura" 
+	area="Matem&aacute;ticas, Geometr&iacute;a, Geometr&iacute;a cl&aacute;sica" 
+	plataforma="HTML 5"
+        ver="En desarrollo"
+	>
+	<titulo><![CDATA[
+		Semejanza de tri&aacute;ngulos 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+		El objetivo de esta unidad es mostrar gr&aacute;ficamente al estudiante la semejanza de tri&aacute;ngulos cuando comparten 1) un m&iacute;nimo de 2 &aacute;ngulos o, 2) cuando comparten un &aacute;ngulo y sus lados adyacentes son proporcionales entre s&iacute;. Se demuestra que los tri&aacute;ngulos semejantes tienen sus lados proporcionales. La presentaci&oacute;n de esta unidad es equivalente a la teor&iacute;a de las proporciones de Eudoxo que se encuentra en el libro V de Los Elementos de Euclides.
+	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

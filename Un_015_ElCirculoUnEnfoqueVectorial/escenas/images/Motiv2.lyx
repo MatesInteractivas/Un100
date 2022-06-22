@@ -1,0 +1,106 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Antes del desarrollo conceptual y de la maquinaria matemática que hoy se
+ conoce de vectores, muchas de las teorías físicas se desarrollaron con
+ los cuaterniones de Hamilton, tal es el caso de las ecuaciones de Maxwell,
+ que en un principio eran trece ecuaciones.
+ Fueron Hertz y Heaviside quienes sintetizaron las ecuaciones en las cuatro
+ conocidas actualmente.
+\end_layout
+
+\begin_layout Standard
+Para representar magnitudes físicas orientadas se comenzó con los números
+ complejos, pero eso solo funcionaba en el plano, para hacer este trabajo
+ en el espacio era más complicado y por eso es que Hamilton desarrolló los
+ cuaterniones, Maxwell utilizaba este tipo de números para representar las
+ cantidades requeridas.
+ Heaviside observó que la notación de cuaterniones era demasiado compleja
+ para un ámbito académico, por lo que desarrolló un análisis vectorial como
+ un álgebra independiente.
+\end_layout
+
+\begin_layout Standard
+Gibbs desarrolló al mismo tiempo que Heaviside un cálculo simbólico de los
+ cuaterniones en el que separaba la parte vectorial y la parte escalar de
+ estos.
+ Como una nueva estructura matemática creada para satisfacer las necesidades
+ de las teorías físicas, hubo físicos 
+\begin_inset Quotes eld
+\end_inset
+
+cuaternionistas
+\begin_inset Quotes erd
+\end_inset
+
+ que se oponían al uso de estas nuevas herramientas negando la utilidad
+ práctica que los vectores tendrían para el futuro.
+ 
+\end_layout
+
+\begin_layout Standard
+El Electromagnetismo fue la primera teoría físca que encajó completamente
+ con la estructura algebraica de los vectores.
+\end_layout
+
+\end_body
+\end_document

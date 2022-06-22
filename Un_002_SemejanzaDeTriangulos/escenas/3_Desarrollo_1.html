@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<head>
+
+
+<title>La ley de las proporciones: Eudoxio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+
+
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+
+
+
+
+
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='ff90e6f0' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='600' y='90' ancho='360' alto='450' dibujar-si='paso>1' fijo='sí' despl_imagen='arr-izq' fondo='90d9f0' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='Covertura' dibujar-si='info' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='Info' x='(970-740)/2' y='15%' ancho='740' alto='400' dibujar-si='info' fijo='sí' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='A' tipo='gráfico' espacio='E1' color='negro' color-int='f0f800' tamaño='5' expresión='(-8,0)'">
+   <param name="C_02" value="id='B' tipo='gráfico' espacio='E1' color='negro' color-int='f0f800' tamaño='5' expresión='(1,-2)' fijo='sí'">
+   <param name="C_03" value="id='C' tipo='gráfico' espacio='E1' color='negro' color-int='f0f800' tamaño='5' expresión='(-1,3)' fijo='sí'">
+   <param name="C_04" value="id='T' tipo='gráfico' espacio='E1' color='negro' color-int='f0f800' tamaño='5' expresión='(2,1)' fijo='sí'">
+   <param name="C_05" value="id='B1' tipo='gráfico' espacio='E1' color='negro' color-int='f0f800' tamaño='5' expresión='(T.x+6,T.y+1)' fijo='sí'">
+   <param name="C_06" value="id='C1' tipo='gráfico' espacio='E1' color='negro' color-int='f0f800' tamaño='5' expresión='(T.x+3,T.y+2)' fijo='sí'">
+   <param name="C_07" value="id='signRef' tipo='numérico' región='interior' espacio='E1' nombre='_nada_' expresión='(125,E1._h-60,27,50)' incr='1' min='0' max='1' discreto='sí' decimales='0' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='!info' pos_mensajes='centro'">
+   <param name="C_08" value="id='n' tipo='numérico' región='interior' espacio='E1' nombre='_nada_' expresión='(320,E1._h-60,27,50)' valor='8' incr='1' min='1' max='99' decimales='0' fijo='sí' visible='no' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='paso>0' pos_mensajes='centro'">
+   <param name="C_09" value="id='pasoInv' tipo='numérico' región='interior' espacio='E1' nombre='_nada_' expresión='(E1._w-42,E1._h-68,27,50)' valor='5' incr='1' min='0' max='5' discreto='sí' decimales='0' fijo='sí' visible='no' acción='calcular' parámetro='paso=5-pasoInv\nE1.Ox=(paso>1)?-90:0' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='showStep&(!info)' pos_mensajes='centro'">
+   <param name="C_10" value="id='pasoInv' tipo='numérico' región='interior' espacio='E2' nombre='_nada_' expresión='(E2._w-33,E2._h-56,27,50)' valor='5' incr='1' min='0' max='5' discreto='sí' decimales='0' fijo='sí' visible='no' acción='calcular' parámetro='paso=5-pasoInv' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='showStep&(!info)' pos_mensajes='centro'">
+   <param name="C_11" value="id='avanzar' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(E1._w-50,(E1._h-35)/2,40,35)' fijo='sí' visible='sí' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,5)\nparent.update()' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_12" value="id='avanzar' tipo='numérico' interfaz='botón' región='interior' espacio='E2' expresión='(E2._w-40,(E2._h-35)/2,40,35)' fijo='sí' visible='sí' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,5)\nparent.update()' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_13" value="id='retroceder' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(10,(E1._h-35)/2,40,35)' fijo='sí' visible='sí' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3)\nparent.update()' parámetro.fuente='Monospaced,PLAIN,12' dibujar-si='0' pos_mensajes='centro'">
+   <param name="C_14" value="id='ClsInfoBt' tipo='numérico' interfaz='botón' región='interior' espacio='Info' expresión='(Info._w-30,9,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='info=0' dibujar-si='InfoStp==2' pos_mensajes='centro'">
+   <param name="C_15" value="id='InfoStpInv' tipo='numérico' región='interior' espacio='Info' nombre='_nada_' expresión='(Info._w-30,Info._h-53,27,50)' valor='2' incr='1' min='0' max='2' discreto='sí' decimales='0' fijo='sí' visible='no' acción='calcular' parámetro='InfoStp=2-InfoStpInv' pos_mensajes='centro'">
+   <param name="A_01" value="id='ArcTan(x,y)' algoritmo='sí' expresión='at' algoritmo='sí' inicio='at=(abs(x)>epsilon)?atan(abs(y/x)):pi/2' hacer='at=((x>=0)&(y>=0))?at:at;at=((x<0)&(y>=0))?pi-at:at;at=((x<0)&(y<0))?pi+at:at;at=((x>=0)&(y<0))?2*pi-at:at;'">
+   <param name="A_02" value="id='norm(x,y)' expresión='sqrt(x*x+y*y)'">
+   <param name="A_03" value="id='dist(x1,y1,x2,y2)' expresión='norm(x2-x1,y2-y1)'">
+   <param name="A_04" value="id='X' vector='sí' evaluar='una-sola-vez' expresión='X[0]=0;X[1]=0;X[2]=0'">
+   <param name="A_05" value="id='Y' vector='sí' evaluar='una-sola-vez' expresión='X[0]=0;X[1]=0;X[2]=0'">
+   <param name="A_06" value="id='X1' vector='sí' evaluar='una-sola-vez' expresión='X[0]=0;X[1]=0;X[2]=0'">
+   <param name="A_07" value="id='Y1' vector='sí' evaluar='una-sola-vez' expresión='X[0]=0;X[1]=0;X[2]=0'">
+   <param name="A_08" value="id='R' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='2' filas='2' expresión='R[0,0]=cos(alfa*pi/180);R[1,0]=sen(alfa*pi/180);R[0,1]=-R[1,0];R[1,1]=R[0,0];'">
+   <param name="A_09" value="id='D' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='2' filas='2' expresión='D[0,0]=d;D[1,0]=0;D[0,1]=0;D[1,1]=d;'">
+   <param name="A_10" value="id='M' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='2' filas='2' expresión=';'">
+   <param name="A_11" value="id='RF' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='2' filas='2' expresión='RF[0,0]=1;RF[1,0]=0;RF[0,1]=0;RF[1,1]=1;;'">
+   <param name="A_12" value="id='name(s,k)' algoritmo='sí' expresión='nm' algoritmo='sí' inicio='nm=&squot;&squot;' hacer='nm=(s==0)?&squot;A&squot;:nm;nm=(s==1)?&squot;B&squot;:nm;nm=(s==2)?&squot;C&squot;:nm;nm=(k==1)?nm+&squot;´&squot;:nm'">
+   <param name="A_13" value="id='calcM()' algoritmo='sí' algoritmo='sí' hacer='alfa0=ArcTan(B.x-A.x,B.y-A.y);alfa1=ArcTan(B1.x-A1.x,B1.y-A1.y);alfa=(abs(alfa1-alfa0)<pi/45)?0:alfa1-alfa0;AB=dist(A.x,A.y,B.x,B.y);A1B1=dist(A1.x,A1.y,B1.x,B1.y);d=A1B1/AB;R[0,0]=cos(alfa);R[1,0]=sen(alfa);R[0,1]=-R[1,0];R[1,1]=R[0,0];D[0,0]=d;D[1,0]=0;D[0,1]=0;D[1,1]=d;COMMENT=&squot;M=R*D&squot;;M[0,0]=R[0,0]*D[0,0]+R[0,1]*D[1,0];M[0,1]=R[0,0]*D[0,1]+R[0,1]*D[1,1];M[1,0]=R[1,0]*D[0,0]+R[1,1]*D[1,0];M[1,1]=R[1,0]*D[1,0]+R[1,1]*D[1,1];RF[0,0]=1;RF[1,0]=0;RF[0,1]=0;RF[1,1]=1'">
+   <param name="A_14" value="id='calcW(x,y)' algoritmo='sí' vector='sí' matriz='sí' algoritmo='sí' hacer='W.x=M[0,0]*x+M[0,1]*y+T.x;W.y=M[1,0]*x+M[1,1]*y+T.y;'">
+   <param name="A_15" value="id='Transform()' algoritmo='sí' algoritmo='sí' inicio='j=0' hacer='calcW(X[j]-A.x,Y[j]-A.y);X1[j]=W.x;Y1[j]=W.y;j=j+1;' mientras='j<3'">
+   <param name="A_16" value="id='reflectC1()' algoritmo='sí' algoritmo='sí' hacer='NA1B1=norm(B1.x-A1.x,B1.y-A1.y);NA1C1=norm(C1.x-A1.x,C1.y-A1.y);dotPN=((C1.x-A1.x)*(B1.x-A1.x)+(C1.y-A1.y)*(B1.y-A1.y))/(NA1B1);P1.x=(B1.x-A1.x)*dotPN/NA1B1;P1.y=(B1.y-A1.y)*dotPN/NA1B1;Q1.x=(signRef)?P1.x+(C1.x-A1.x-P1.x):P1.x-(C1.x-A1.x-P1.x);Q1.y=(signRef)?P1.y+(C1.y-A1.y-P1.y):P1.y-(C1.y-A1.y-P1.y);C1.x=A1.x+Q1.x;C1.y=A1.y+Q1.y;X1[2]=C1.x;Y1[2]=C1.y;'">
+   <param name="A_17" value="id='calcDivs()' algoritmo='sí' algoritmo='sí' hacer='tAB.x=(B.x-A.x)/n;tAB.y=(B.y-A.y)/n;tAC.x=(C.x-A.x)/n;tAC.y=(C.y-A.y)/n;dA1B1.x=(B1.x-A1.x)*AB/(n*A1B1);dA1B1.y=(B1.y-A1.y)*AB/(n*A1B1);AC=dist(A.x,A.y,C.x,C.y);A1C1=dist(A1.x,A1.y,C1.x,C1.y);dA1C1.x=(C1.x-A1.x)*AB/(n*A1B1);dA1C1.y=(C1.y-A1.y)*AB/(n*A1B1);m=ent(n*A1B1/AB);'">
+   <param name="A_18" value="id='H(paso)' algoritmo='sí' expresión='(paso-1)*500/4' algoritmo='sí'">
+   <param name="A_19" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='epsilon=0.000001' hacer='info=1;titulo=&squot;La ley de las proporciones (Eudoxio y Euclides)&squot;'">
+   <param name="A_20" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='snap=(dist(T.x,T.y,A.x,A.y)*E1.escala<12)' hacer='T.x=(snap)?A.x:T.x;T.y=(snap)?A.y:T.y;calcM();X[0]=A.x;X[1]=B.x;X[2]=C.x;Y[0]=A.y;Y[1]=B.y;Y[2]=C.y;Transform();A1.x=X1[0];A1.y=Y1[0];B1.x=X1[1];B1.y=Y1[1];C1.x=X1[2];C1.y=Y1[2];aux=(signRef)?0:reflectC1();calcDivs();showStep=(signRef>0)&(snap==1)&(abs(alfa)<epsilon);showStep=1;'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='showStep&(!info)' expresión='[20,E1._h-55]' texto='Reflejar' fuente='Serif,BOLD+ITALIC,28' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='0&(showStep&(!info))' expresión='[E1._w-110,E1._h-55]' texto='paso' fuente='Serif,BOLD+ITALIC,28' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='curva' expresión='(X[t%3],Y[t%3])' t.intervalo='[0,3]' t.pasos='3' ancho='2'">
+   <param name="G_05" value="espacio='E1' tipo='curva' expresión='(X1[t%3],Y1[t%3])' t.intervalo='[0,3]' t.pasos='3' ancho='2'">
+   <param name="G_06" value="espacio='E1' tipo='segmento' color='ee1122' dibujar-si='paso>0' expresión='(A.x+tAB.x*s,A.y+tAB.y*s)(A.x+tAC.x*s,A.y+tAC.y*s)' familia='s' s.intervalo='[0,n]' s.pasos='n' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='segmento' color='0044dd' dibujar-si='paso>0' expresión='(A1.x+dA1B1.x*s,A1.y+dA1B1.y*s)(A1.x+dA1C1.x*s,A1.y+dA1C1.y*s)' familia='s' s.intervalo='[0,m]' s.pasos='m' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='punto' color='negro' expresión='(X[s]-30/E1.escala,Y[s]+10/E1.escala)' familia='s' s.intervalo='[0,2]' s.pasos='2' texto='[name(s,0)]' fuente='Serif,PLAIN,30' fijo='sí' tamaño='0'">
+   <param name="G_09" value="espacio='E1' tipo='punto' color='negro' expresión='(X1[s]-30/E1.escala,Y1[s]-35/E1.escala)' familia='s' s.intervalo='[0,2]' s.pasos='2' texto='[name(s,1)]' fuente='Serif,PLAIN,30' fijo='sí' tamaño='0'">
+   <param name="G_10" value="espacio='E1' tipo='punto' dibujar-si='(paso>0)&(n<=20)' expresión='(A.x+tAB.x,A.y+tAB.y)' texto='X' fuente='Serif,PLAIN,30' fijo='sí' tamaño='3'">
+   <param name="G_11" value="espacio='E1' tipo='punto' dibujar-si='(paso>0)&(n<=20)' expresión='(A.x+tAC.x,A.y+tAC.y)' texto='Y' fuente='Serif,PLAIN,30' fijo='sí' tamaño='3'">
+   <param name="G_12" value="espacio='E2' tipo='polígono' fondo='sí' color='blanco' coord_abs='sí' expresión='(0,0)(E2._w-1,0)(E2._w-1,E2._h-1)(0,E2._h-1)(0,0)' relleno='eeeef7' ancho='10'">
+   <param name="G_13" value="espacio='E1' tipo='punto' dibujar-si='(paso>0)&(n<=20)' expresión='(A1.x+dA1B1.x,A1.y+dA1B1.y)' fuente='Serif,PLAIN,30' fijo='sí' tamaño='3'">
+   <param name="G_14" value="espacio='E1' tipo='punto' dibujar-si='(paso>0)&(n<=20)' expresión='(A1.x+dA1C1.x,A1.y+dA1C1.y)' fuente='Serif,PLAIN,30' fijo='sí' tamaño='3'">
+   <param name="G_15" value="espacio='E2' tipo='texto' dibujar-si='0' expresión='[E2._w-100,E2._h-45]' texto='paso' fuente='Serif,BOLD+ITALIC,28' fijo='sí'">
+   <param name="G_16" value="espacio='E2' tipo='texto' dibujar-si='(paso>1)' expresión='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;}\f1\fs40\i     {\*\mjaformula m AX\u8804  A\u180 B\u180 &lt;(m+1)AX}\par      {\*\mjaformula n AX= AB =n AX}\par \u8756    {\*\mjaformula{\fraction{\num m}{\den n}} \u8804  {\fraction{\num A\u180 B\u180 }{\den AB}} &lt;{\fraction{\num m+1}{\den n}}}\par \fs44\i0}' fuente='Serif,ITALIC,20' fijo='sí'">
+   <param name="G_17" value="espacio='E2' tipo='texto' dibujar-si='(paso>2)' expresión='[10,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;}\f1\fs40\i     {\*\mjaformula m AY\u8804  A\u180 C\u180 &lt;(m+1)AY}\par      {\*\mjaformula n AY= AC =n AY}\par \u8756   {\*\mjaformula{\fraction{\num m}{\den n}} \u8804  {\fraction{\num A\u180 C\u180 }{\den AC}} &lt;{\fraction{\num m+1}{\den n}}}\par \fs44\i0}' fuente='Serif,ITALIC,20' fijo='sí'">
+   <param name="G_18" value="espacio='E1' tipo='texto' dibujar-si='0' expresión='[50,520]' texto='signRef=[signRef] snap=[snap] alfa=[alfa]' fuente='SansSerif,PLAIN,18' decimales='6' fijo='sí' info='debug'">
+   <param name="G_19" value="espacio='E1' tipo='texto' dibujar-si='paso>0' expresión='[300,410]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs44\b\i AB={\*\mjaformula{\expr n}}AX   A\u180 B\u180 \f2\fs48\b0\u8776 \f1\fs44\b{\*\mjaformula{\expr m}}AX\f3\fs24\b0\i0}' fuente='Times New Roman Negrita Cursiva,BOLD+ITALIC,22' decimales='0' fijo='no'">
+   <param name="G_20" value="espacio='E1' tipo='texto' dibujar-si='paso>0' expresión='[300,440]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs44\b\i AC={\*\mjaformula{\expr n}}AY   A\u180 C\u180 \f2\fs48\b0\u8776 \f1\fs44\b{\*\mjaformula{\expr m}}AY\f3\fs24\b0\i0}' fuente='Times New Roman Negrita Cursiva,BOLD+ITALIC,22' decimales='0' fijo='no'">
+   <param name="G_21" value="espacio='E1' tipo='texto' dibujar-si='paso>0' expresión='[360,E1._h-55]' texto='n=[n]  m=[m]  ' fuente='Serif,ITALIC,30' decimales='0' fijo='sí'">
+   <param name="G_22" value="espacio='E2' tipo='texto' dibujar-si='(paso>3)' expresión='[10,225]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}\f1\fs40 Entonces:\f2\fs44}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_23" value="espacio='Info' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(Info._w/2,18,Info._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_24" value="espacio='Info' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(Info._w-1,0)(Info._w-1,Info._h-1)(0,Info._h-1)(0,0)'">
+   <param name="G_25" value="espacio='Info' tipo='texto' color='blanco' expresión='[20,5]' texto='Instrucciones' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_26" value="espacio='Info' tipo='texto' dibujar-si='InfoStp==0' expresión='[20,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36 Intenta hacer que el tri\u225 ngulo A&squot;B&squot;C&squot; tenga lados que concuerden con su semejante\par ABC.}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_27" value="espacio='Info' tipo='texto' dibujar-si='InfoStp==0' expresión='[20,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36 Puede ser inicialmente necesario reflejarlo ante uno de sus lados, lo que puedes\par hacer con el pulsador &squot;Reflejar&squot;.}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_28" value="espacio='E2' tipo='texto' dibujar-si='(paso>3)' expresión='[10,270]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;}\f1\fs40\i  {\*\mjaformula |{\fraction{\num A\u180 C\u180 }{\den AC}}\u8722 {\fraction{\num A\u180 B\u180 }{\den AB}}|&lt;{\fraction{\num 1}{\den n}}={\fraction{\num 1}{\den{\expr n\decimals 0\fixed0}}}}  \u8704  n &gt; 0\par \fs44\i0}' fuente='Serif,ITALIC,20' fijo='sí'">
+   <param name="G_29" value="espacio='E2' tipo='texto' dibujar-si='(paso>4)' expresión='[10,325]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Arial;\f4\fcharset0 Times New Roman;}\f1\fs40 Por lo tanto:\f2\fs40\par \par      {\*\mjaformula{\fraction{\num A\u180 C\u180 }{\den AC}}={\fraction{\num A\u180 B\u180 }{\den AB}}}   \f3\fs40\b Q.E.D.\f2\fs40\b0\par \fs44}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="G_30" value="espacio='Info' tipo='texto' dibujar-si='InfoStp==0' expresión='[20,180]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36 Posteriormente puedes arrastrar el v\u233 rtice A&squot; a su lugar.}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_31" value="espacio='Info' tipo='texto' dibujar-si='InfoStp==0' expresión='[20,220]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36 Una vez colocado, puedes acomodar el v\u233 rtice B&squot; en su lado correspondiente.}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_32" value="espacio='Info' tipo='texto' dibujar-si='InfoStp==0' expresión='[20,260]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36 Entonces podr\u225 s observar una demostraci\u243 n formal que relaciona la semejanza de\par dos tri\u225 ngulos con la proporcionalidad de sus lados.}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_33" value="espacio='Info' tipo='texto' dibujar-si='InfoStp==1' expresión='[20,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36 Una vez que haya logrado que los v\u233 rtices A y A&squot; queden superpuestos, y que el\par B y B&squot; queden alineados y el C quede alineado con el C&squot;, podr\u225 s mover el v\u233 rtice\par B&squot;. As\u237  podr\u225 s modificar el tama\u241 o del tri\u225 ngulo A&squot;B&squot;C&squot;.}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_34" value="espacio='Info' tipo='texto' dibujar-si='InfoStp==1' expresión='[20,145]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}\f1\fs36 Al hacer avanzar el pulsador &squot;Paso&squot;, ver\u225 s que el lado AC y AB del tri\u225 ngulo ABC se\par dividen ambos en \f2\fs40\i n\f1\fs36\i0  pedazos de longitud AY y AB respectivamente. Cada v\u233 rtice\par divisorio del lado AC se conecta con su correspondiente en el lado AB.}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_35" value="espacio='Info' tipo='texto' dibujar-si='InfoStp==1' expresión='[20,240]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}\f1\fs36 Adicionalmente, se calcula el numero \f2\fs40\i m\f1\fs36\i0 , que es el n\u250 mero de pedazos AY que\par caben en A&squot;C&squot;, o de pedazos AX que caben en A&squot;B&squot;, sin llegar a rebasar dicha\par longitud.}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_36" value="espacio='Info' tipo='texto' dibujar-si='InfoStp==2' expresión='[20,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}\f1\fs36 Puedes modificar el valor de \f2\fs40\i n\f1\fs36\i0 , as\u237  como la posici\u243 n de B&squot; sobre el segmento AB.}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_37" value="espacio='Info' tipo='texto' dibujar-si='InfoStp==2' expresión='[20,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}\f1\fs36 Intenta hacer \f2\fs40\i n\f1\fs36\i0  muy grande y observa qu\u233  pasa con el cociente \f2\fs40\i{\*\mjaformula{\fraction{\num m}{\den n}}}\f1\fs36\i0 .}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_38" value="espacio='Info' tipo='texto' dibujar-si='InfoStp==2' expresión='[20,170]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36 Avanza m\u225 s el pulsador &squot;Paso&squot; para entender qu\u233  est\u225  sucediendo.}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+</ajs>
+
+
+</body>
+
+
+</html>

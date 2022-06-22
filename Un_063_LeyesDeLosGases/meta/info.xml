@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="_Un_063_LeyesDeLosGases" 
+	nivel="Licenciatura, Bachillerato" 
+	area="Física, Fisicoquímica, Termodinámica" 
+	plataforma="HTML 5" 
+	versión="Beta"
+	>
+	<titulo><![CDATA[
+		Leyes de los gases 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+	A través de una conversación con un tutor digital y la observación y/o manipulación simultánea de modelos
+      interactivos, el estudiante analizará, tanto a nivel macro como submicroscópico, el comportamiento de un 
+      gas que está siendo comprimido dentro de un cilindro con un émbolo. Esto le permitirá conocer y entender
+      la ley general de los gases, y las leyes de Boyle y Gay-Lussac en particular.
+     	]]></Descripcion>
+</recurso>
+
+<!--
+********************************************************************************
+                               **** Áreas **** 
+Matemáticas 
+	Aritmética
+		Fracciones
+	Álgebra
+		Combinatoria
+		Ecuaciones lineales
+		Ecuaciones polinomiales
+		Polinomios
+		Álgebra lineal
+		Teoría de grupos
+		Álgebra abstracta
+	Geometría
+		Geometría elemental
+		Geometría clásica
+		Geometría analítica
+	Trigonometría 
+	Probabilidad 
+		Cálculo de probabilidades
+		Eventos
+		Variables aleatorias
+		Ley de los grandes números
+		Teorema del límite central
+	Estadística
+		Medidas de tendencia central
+		Muestreo
+		Distribuciones
+		Inferencia
+	Cálculo
+		Funciones 
+		Límites
+		Continuidad
+		Derivadas 
+		Integrales 
+	Teoría de números
+	Teoría de gráficas
+Física
+	Mecánica
+	Electromagnetismo
+	Óptica
+	Físico-química 
+	Termodinámica
+	Mecánica estadística
+	Mecánica cuántica
+	Relatividad
+
+********************************************************************************
+
+********************************************************************************
+                             **** Niveles ****
+
+	Primaria
+	Preescolar
+	Secundaria
+	Bachillerato
+	Licenciatura
+	Posgrado 
+	Maestria
+	Doctorado
+
+********************************************************************************
+
+-->

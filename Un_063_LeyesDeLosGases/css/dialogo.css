@@ -1,0 +1,348 @@
+#contenedor{
+	
+	/*Ancho y alto s—lo importan si en dialogo.xml autoresize="off" */
+	background-image:url('../img/fondoDialogo.png');
+	width:970px;
+	height:550px;
+	
+	/*
+	background: #efefef; //Older browsers 
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ededed 100%); //FF3.6+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ededed)); // Chrome,Safari4+
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ededed 100%); // Chrome10+,Safari5.1+ 
+	background: -o-linear-gradient(top,  #ffffff 0%,#ededed 100%); // Opera 11.10+
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ededed 100%); // IE10+ 
+	background: linear-gradient(top,  #ffffff 0%,#ededed 100%); //W3C 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f0eb',GradientType=0 ); ///IE6-9
+	
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	*/
+}
+
+#tablaPrincipal{
+	width: 100%;
+	height: 550px;
+}
+
+#tablaPrincipal *{
+	padding: 0px;
+}
+
+/*width de td_micromundo y width de td_chat tienen que sumar 100% */
+#td_micromundo{
+	width:58.5%;
+}
+
+#micromundo{
+	height: 550px;
+}
+
+#td_chat{
+	width:41.5%;
+}
+
+#chat{
+	height: 550px;
+	top: 12px;
+}
+
+#chat_globos{
+	width: 390px;
+	height: 480px;
+}
+
+
+#chat_campo{
+	margin-left:6px;
+	margin-right:20px;
+	top: 492px;
+	height:45px;
+	width: 380px;
+}
+
+
+.esquinaGlobo{
+	width: 19px;
+	height: 19px;
+	overflow: hidden;
+}
+
+.globo_avatar{
+		
+	/*
+	border: 5px solid transparent;
+	border-top:30px solid transparent;
+	border-left:30px solid transparent;
+	-moz-border-image: url(../img/globoUsuario.png) 30 5 5 30 stretch; 
+	-webkit-border-image: url(../img/globoUsuario.png) 30 5 5 30  stretch; 
+	-o-border-image: url(../img/globoUsuario.png) 30 5 5 30  stretch; 
+	border-image: url(../img/globoTutor.png) 30 5 5 30 stretch;	
+	background:url(../img/fondoGloboTutor.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-origin:content-box;
+	*/
+	
+	/*
+	border: 1px solid #c7c7c7;
+	background-color: #fcfcfc;
+	*/
+	
+	width: 350px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+	/*
+	width: 90%;
+	margin-left: 4%;
+	margin-right: 6%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	*/
+	
+	/*
+	background: #fcfcfc;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #fae0c0 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fae0c0)); 
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#fae0c0 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#fae0c0 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#fae0c0 100%);
+	background: linear-gradient(top,  #ffffff 0%,#fae0c0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fae0c0',GradientType=0 );
+
+	border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-right-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	border-bottom-right-radius: 15px;
+	-moz-border-radius-bottomright: 15px;
+	border-bottom-left-radius: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	*/
+}
+
+.globo_usuario{
+	
+	/*
+	border:5px solid transparent;
+	border-top:30px solid transparent;
+	border-right:30px solid transparent;
+	-moz-border-image: url(../img/globoUsuario.png) 30 30 5 5 stretch;
+	-webkit-border-image: url(../img/globoUsuario.png) 30 30 5 5 stretch;
+	-o-border-image: url(../img/globoUsuario.png) 30 30 5 5 stretch;
+	border-image: url(../img/globoUsuario.png) 30 30 5 5 stretch;
+	
+	background:url(../img/fondoGloboUsuario.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-origin:content-box;
+	*/
+	
+	/*
+	border: 1px solid #c1c2c6;
+	background-color: #d8ecf5;
+	
+	background: #ffffff; 
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e7fed6 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7fed6)); 
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e7fed6 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e7fed6 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e7fed6 100%);
+	background: linear-gradient(top,  #ffffff 0%,#e7fed6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7fed6',GradientType=0 );
+	*/
+	
+	width: 350px;
+	margin-left: 20px;
+	/*margin-right: 3%;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+	/*
+	border-top-left-radius: 15px;
+	-moz-border-radius-topleft: 15px;
+	border-top-right-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-bottom-left-radius: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	*/
+}
+
+.txt_avatar{
+	font-family:Arial;
+	font-size: 13px;
+	text-align: justify;
+	color: #4a4a4a;
+	margin: -10px;
+	margin-right: -8px;
+	margin-left: 0px;
+}
+
+.txt_usuario{
+	font-family:Arial;
+	font-size: 13px;
+	text-align: justify;
+	color: #363636;
+	margin: -10px;
+	margin-left: -8px;
+	margin-right: 0px;
+}
+
+.opcMult{
+	font-family:Arial;
+	font-size: 13px;
+	text-align: left;
+	color: #222222;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+/*Borde del micromundo*/
+.micromundo{
+	border: 1px hidden #eb7433;
+}
+
+
+.btCerrar_mm{
+	font-family:Arial;
+	font-size: 11px;
+	font-style: normal;
+	text-align: right;
+	color: #4a4a4a;
+	margin-right: 11px;
+}
+
+
+.ligaMicromundo{
+	font-family:Arial;
+	font-size: 10px;
+	font-style: italic;
+	text-align: right;
+	color: #777777;
+	margin-right: 11px;
+}
+
+/*Ventana en la que aparecen los micromundos que se despliegan enfrente */
+.ventana_mm_frente{
+	border: 1px groove #abbf6e;
+	background-color: #e9ebdc;
+	border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+
+.ventana_definicion{
+	background-image:url('../img/fondo_def.png');
+	width: 700px;
+	height: 450px;
+	padding: 100px;
+	padding-top: 60px;
+	font-family:Arial;
+	font-size: 12px;
+	font-style: normal;
+	text-align: justify;
+	color: #666666;
+}
+
+/*En caso de haber audio, sea pregrabado o mediante tts, bot—n para apagar y volver a prender los audios
+Background-image debe hacer referencia al bt para prender el audio, y habr‡ que crear otro bot—n llamado nombreBoton_apagar.ext para apagar el audio*/
+#bt_apagar_audio{
+	background-image:url('../img/bt_audio.png');
+	width:62px;
+	height: 20px;
+	top: 6px;
+	left: 938px;
+	font-family:Arial;
+	font-size: 11px;
+	font-style: normal;
+	text-align: right;
+	color: #4a4a4a;
+	margin-right: 11px;
+}
+
+.loader{
+	//background-color: #efefef;
+	background: #efefef; /* Older browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ededed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ededed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ededed 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#ededed 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+	font-family:Arial;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold; 
+	color: #777777;
+}
+
+
+
+#chat_scroll{
+	background-image: url('../img/scroll_fondo.png');
+	top: 24px;
+	right: 12px;
+	width: 15px;
+	height: 480px;
+}
+
+#scroll_flecha_arriba{
+	background-image: url('../img/scroll_arriba.png');
+	top: 2px;
+	right: 1px;
+	width: 13px;
+	height: 11px;
+	cursor: pointer;
+}
+#scroll_flecha_abajo{
+	background-image: url('../img/scroll_abajo.png');
+	bottom: 2px;
+	right: 1px;
+	width: 13px;
+	height: 11px;
+	cursor: pointer;
+}
+#scroll_barra{
+	background-image: url('../img/scroll_barra.png');
+	right: 2px;
+	width: 11px;
+	height: 76px;
+}
+
+
+@font-face{ 
+	font-family: 'SubscriptSans';
+	src: url('../fonts/ggsubsans-webfont.eot');
+	src: url('../fonts/ggsubsans-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/ggsubsans-webfont.woff') format('woff'),
+	     url('../fonts/ggsubsans-webfont.ttf') format('truetype'),
+	     url('../fonts/ggsubsans-webfont.svg#webfont') format('svg');
+}
+@font-face{ 
+	font-family: 'SuperscriptSans';
+	src: url('../fonts/ggsupersans-webfont.eot');
+	src: url('../fonts/ggsupersans-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/ggsupersans-webfont.woff') format('woff'),
+	     url('../fonts/ggsupersans-webfont.ttf') format('truetype'),
+	     url('../fonts/ggsupersans-webfont.svg#webfont') format('svg');
+}
+
+textarea
+{
+   resize: none;
+}

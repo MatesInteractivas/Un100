@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+
+
+<ajs name="Explorar" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Explorar">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E0' fijo='sí' imagen='images/fondo_inicio02.jpg' despl_imagen='centrada' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='270' y='75' ancho='350' alto='411' fijo='sí' escala='30' O.x='-20' O.y='50' despl_imagen='arr-izq' fondo='e1000000' red='grisClaro' red10='gris' ejes='negro' texto='no'">
+   <param name="E_03" value="tipo='R3' id='E1' x='630' y='76' ancho='330' alto='408' escala='30' O.x='-15' O.y='50' despl_imagen='arr-izq' fondo='e1000000' despliegue='pintor' R3='sí'">
+   <param name="E_04" value="tipo='R2' id='E4' x='55' y='485' ancho='159' alto='31' despl_imagen='arr-izq' fondo='grisObscuro' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='BARRAS' x='262' y='477' ancho='700' alto='44' fijo='sí' imagen='images/fondoBarras1.png' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E0' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='nj' tipo='numérico' interfaz='barra' región='interior' espacio='BARRAS' nombre='n' expresión='(5,7,210,30)' valor='10' incr='1' min='5' max='30' discreto='sí' decimales='0' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_03" value="id='a' tipo='numérico' interfaz='barra' región='interior' espacio='BARRAS' nombre='a' expresión='(245,7,210,30)' valor='0.01' incr='0.01' min='-4' max='5' fijo='no' visible='sí' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_04" value="id='b' tipo='numérico' interfaz='barra' región='interior' espacio='BARRAS' nombre='b' expresión='(485,7,210,30)' valor='3' incr='0.01' min='1' max='5' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_05" value="id='n7' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E4' nombre='f(x)=' expresión='(2,2,155,27)' valor='&squot;3*sen(x/2)&squot;' fijo='sí' visible='sí' parámetro.fuente='Monospaced,PLAIN,12'">
+   <param name="A_01" value="id='f(x)' expresión='_Eval_(n7)'">
+   <param name="A_02" value="id='S()' algoritmo='sí' algoritmo='sí' inicio='S=0;t=0;incx=(b-a)/30' hacer='punx1=a+t*incx;punx3=a+(t+1)*incx;punx2=a+incx/2+t*incx;S=S+(f(punx1)+4*f(punx2)+f(punx3))*incx/6;t=t+1' mientras='t<30'">
+   <param name="A_03" value="id='E3.rot.z' constante='sí' expresión='0' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='a6' algoritmo='sí' evaluar='siempre' inicio='svs=0;svi=0;j=a;radios=0;radioi=0;ct3=0' hacer='ct3=ct3+1;radios=max(abs(f(j)),abs(f(j+(b-a)/nj)));radioi=min(abs(f(j)),abs(f(j+(b-a)/nj)));dx=(b-a)/nj;svs=(ct3<=nj)?svs+pi*radios^2*dx:svs;svi=(ct3<=nj)?svi+pi*radioi^2*dx:svi;j=j+(b-a)/nj;b=(b<a+.5)?a+.5:b;a=(a=0)?0.01:a' mientras='j<b'">
+   <param name="A_05" value="id='a7' algoritmo='sí' evaluar='siempre' inicio='svs2=0;svi2=0;j1=a;n1=1000' hacer='radios2=max(abs(f(j1)),abs(f(j1+(b-a)/n1)));radioi2=min(abs(f(j1)),abs(f(j1+(b-a)/n1)));dx1=(b-a)/n1;svs2=svs2+pi*radios2^2*dx1;svi2=svi2+pi*radioi2^2*dx1;j1=j1+(b-a)/n1' mientras='j1<b'">
+   <param name="A_06" value="id='tapas' constante='sí' expresión='1' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='a1' algoritmo='sí' evaluar='una-sola-vez' hacer='titulo=&squot;Aplicaciones en el plano y en el espacio&squot;;a=0.01;b=3;nj=5;superior=0;;'">
+   <param name="A_08" value="id='Integral' algoritmo='sí' evaluar='siempre' hacer='S();'">
+   <param name="G_01" value="espacio='E0' tipo='texto' fondo='sí' expresión='[(E0._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E2' tipo='curva' expresión='(t,f(t))' t.intervalo='[a,b]' t.pasos='400' ancho='3'">
+   <param name="G_03" value="espacio='E2' tipo='curva' color='rojo' expresión='(t,f(t))' t.intervalo='[-10,10]' t.pasos='100'">
+   <param name="G_04" value="espacio='E2' tipo='polígono' color='006400' dibujar-si='superior=0' expresión='[s,0][s,sgn(f(s))*min(abs(f(s)),abs(f(s+(b-a)/nj)))][s+(b-a)/nj,sgn(f(s))*min(abs(f(s)),abs(f(s+(b-a)/nj)))][s+(b-a)/nj,0][s,0]' familia='s' s.intervalo='[a,b-(b-a)/nj]' s.pasos='nj-1' relleno='4c008900'">
+   <param name="G_05" value="espacio='E2' tipo='segmento' color='grisObscuro' expresión='(a,0)(a,f(a))' fuente='Monospaced,PLAIN,12' fijo='sí' ancho='2'">
+   <param name="G_06" value="espacio='E2' tipo='punto' color='negro' expresión='(a,0)' texto='a' fuente='Monospaced,BOLD,20' fijo='sí' tamaño='.1'">
+   <param name="G_07" value="espacio='E2' tipo='punto' color='negro' expresión='(b,0)' texto='b' fuente='Monospaced,BOLD,20' fijo='sí'">
+   <param name="G_08" value="espacio='E2' tipo='segmento' color='grisObscuro' expresión='(b,0)(b,f(b))' fuente='Monospaced,PLAIN,12' fijo='sí'">
+   <param name="G_09" value="espacio='E2' tipo='texto' expresión='[55,5]' texto='ÁREA BAJO LA CURVA ' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_10" value="espacio='E2' tipo='texto' color='grisObscuro' expresión='[6,56]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red165\green0\blue50;\red64\green64\blue64;}\f1\fs40\b\cf0\u193 rea = {\*\mjaformula{\integral{\from{\expr a\decimals 1\fixed1}}{\to{\expr b\decimals 1\fixed1}}{\what{\expr n7\decimals 0\fixed1}dx}}}={\*\mjaformula{\expr S\decimals 2\fixed0}} \cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_11" value="espacio='E0' tipo='texto' fondo='sí' color='amarillo' expresión='[30,78]' texto='Integral definida' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_12" value="espacio='E0' tipo='texto' expresión='[17,125]' texto='El  cálculo  del  área de una\nregión plana y un volumen\nde revolución, son límites de\nlas  sumas de Riemann, que\nse convierten en integrales y\nse  solucionan, usando el\nteorema fundamental del\ncálculo.\n\nEn esta escena, puedes ver\ndos de las aplicaciones de \nlas integral definida. Cambia,\nsi lo deseas, la función y\nalguno de sus parámetros.' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="S_01" value="espacio='E1' tipo='curva' fondo='sí' color='rojo' expresión='U=-5+11*u y=U x=0 z=f(U)' Nu='20'">
+   <param name="S_02" value="espacio='E1' tipo='segmento' color='negro' expresión='(-7,0,0)(7,0,0)' Nu='1'">
+   <param name="S_03" value="espacio='E1' tipo='segmento' color='negro' expresión='(0,-7,0)(0,7,0)' Nu='1'">
+   <param name="S_04" value="espacio='E1' tipo='segmento' color='negro' expresión='(0,0,-7)(0,0,7)' Nu='1'">
+   <param name="S_05" value="espacio='E1' tipo='curva' color='azul' expresión='U=a+(b-a)*u y=U x=0 z=f(U)' ancho='3' Nu='20'">
+   <param name="S_06" value="espacio='E1' tipo='cilindro' color='4c008900' color_reverso='4c008900' dibujar-si='superior=0' expresión='Cilindro' familia='s' s.intervalo='[a,b-(b-a)/nj]' s.pasos='nj-1' rotini='(90,0,0)' posini='(0,s+(b-a)/(2*nj),0)' aristas='sí' modelo='luz' ancho='(pi/1.57)*sgn(f(s))*min(abs(f(s)),abs(f(s+(b-a)/nj)))' largo='(pi/1.57)*sgn(f(s))*min(abs(f(s)),abs(f(s+(b-a)/nj)))' alto='(b-a)/nj' Nu='15' Nv='1'">
+   <param name="S_07" value="espacio='E1' tipo='polireg' color='4c008900' color_reverso='4c008900' dibujar-si='(superior=0)&(tapas=1)' expresión='Polireg' familia='s' s.intervalo='[a,b-(b-a)/nj]' s.pasos='nj-1' rotini='(90,0,0)' posini='(0,s,0)' modelo='luz' ancho='(pi/1.57)*sgn(f(s))*min(abs(f(s)),abs(f(s+(b-a)/nj)))' largo='(pi/1.57)*sgn(f(s))*min(abs(f(s)),abs(f(s+(b-a)/nj)))' Nu='15'">
+   <param name="S_08" value="espacio='E1' tipo='texto' color='negro' expresión='[115,25]' texto='VOLUMEN' fuente='SansSerif,BOLD,22' fijo='sí'">
+   <param name="S_09" value="espacio='E1' tipo='texto' expresión='[10,75]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red165\green0\blue50;\red255\green0\blue255;}\f1\fs36\b\cf0 V = \u960 {\*\mjaformula{\integral{\from{\expr a\decimals 1\fixed1}}{\to{\expr b\decimals 1\fixed1}}{\what ({\expr n7\decimals 0\fixed1}){\supix 2}}}dx}={\*\mjaformula{\expr (svs2+svi2)/2\decimals 2\fixed1}} \fs40   \f3\fs24\b0\par \cf1}' fuente='SansSerif,BOLD,18' fijo='sí'">
+   <param name="S_10" value="espacio='E1' tipo='polireg' color='4c008900' color_reverso='4c008900' dibujar-si='(superior=0)&(tapas=1)' expresión='Polireg' rotini='(90,0,0)' posini='(0,b,0)' modelo='luz' ancho='(pi/1.57)*sgn(f(b-(b-a)/nj))*min(abs(f(b-(b-a)/nj)),abs(f(b-(b-a)/nj+(b-a)/nj)))' largo='(pi/1.57)*sgn(f(b-(b-a)/nj))*min(abs(f(b-(b-a)/nj)),abs(f(b-(b-a)/nj+(b-a)/nj)))' Nu='15'">
+</ajs></body>
+</html>

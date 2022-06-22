@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+
+<title>Cierre</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.11, 2014-07-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E25' x='260' y='140' ancho='45%' alto='55%' dibujar-si='postulado=5' despl_imagen='arr-izq' fondo='d5f3ff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='postulado' tipo='numérico' interfaz='menú' región='interior' espacio='E1' nombre='postulado' expresión='(15,73,169,35)' valor='5' decimales='0' fijo='sí' visible='no' opciones='Primer postulado [1],Segundo postulado [2],Tercer postulado [3],Cuarto postulado [4],Quinto postulado [5]' dibujar-si='0'">
+   <param name="C_02" value="id='pexteriorE25' tipo='numérico' interfaz='botón' región='interior' espacio='E25' nombre='pulsa para continuar' expresión='(183,260,210,20)' fijo='sí' visible='sí' color='rojo' fuente puntos='18' acción='calcular' parámetro='npuntosE25=npuntosE25+1' dibujar-si='npuntosE25=2' pos_mensajes='centro'">
+   <param name="C_03" value="id='paralelaE25' tipo='numérico' interfaz='botón' región='interior' espacio='E25' nombre='trazar una recta paralela' expresión='(183,280,210,20)' fijo='sí' visible='sí' color='rojo' fuente puntos='18' acción='calcular' parámetro='npuntosE25=npuntosE25+1' dibujar-si='npuntosE25=4' pos_mensajes='centro'">
+   <param name="C_04" value="id='pruebaE25' tipo='numérico' interfaz='botón' región='interior' espacio='E25' nombre='¡Prueba' expresión='(93,280,80,20)' fijo='sí' visible='no' color='rojo' fuente puntos='18' opciones=' [0],Sí [1], No [2]' acción='calcular' parámetro='pruebaE25=1;npuntosE25=npuntosE25+1' dibujar-si='(npuntosE25=5)&(pruebaE25=0)' pos_mensajes='centro'">
+   <param name="C_05" value="id='sinoE25' tipo='numérico' interfaz='menú' región='interior' espacio='E25' nombre='_._' expresión='(343,280,80,20)' fijo='sí' visible='no' color='rojo' fuente puntos='18' opciones=' [0],Sí [1], No [2]' acción='calcular' dibujar-si='(npuntosE25=6)&(pruebaE25=1)' pos_mensajes='centro'">
+   <param name="C_06" value="id='inicioE25' tipo='numérico' interfaz='botón' región='interior' espacio='E25' nombre='inicio' expresión='(343,280,80,20)' fijo='sí' visible='sí' color='rojo' fuente puntos='18' acción='calcular' parámetro='npuntosE25=0\npruebaE25=0' dibujar-si='npuntosE25>=7' pos_mensajes='centro'">
+   <param name="C_07" value="id='sE25' tipo='gráfico' espacio='E25' tamaño='6' expresión='(qxE24,qyE24)' fijo='sí' dibujar-si='(npuntosE25=6)&(pruebaE25=1)'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Quinto postulado de Euclides en el plano&squot;' hacer='npuntosE21=0;npuntosE22=0;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='npuntosE25=(E25.clic_izquierdo=1)&(npuntosE25<=3)?npuntosE25+1:npuntosE25;pxE25=((E25.clic_izquierdo=1)&(npuntosE25=1))?E25.mouse_x:pxE25;pyE25=((E25.clic_izquierdo=1)&(npuntosE25=1))?E25.mouse_y:pyE25;qxE25=((E25.clic_izquierdo=1)&(npuntosE25=2))?E25.mouse_x:qxE25;qyE25=((E25.clic_izquierdo=1)&(npuntosE25=2))?E25.mouse_y:qyE25;dE25=sqrt((pxE25-qxE25)^2+(pyE25-qyE25)^2);npuntosE25= (dE25<0.2)&(npuntosE25=2)?npuntosE25-1:npuntosE25;rxE25=((E25.clic_izquierdo=1)&(npuntosE25=4))?E25.mouse_x:rxE25;ryE25=((E25.clic_izquierdo=1)&(npuntosE25=4))?E25.mouse_y:ryE25;d2E25=(npuntosE25=4)?abs((qxE25-pxE25)*(ryE25-pyE25)-(qyE25-pyE25)*(rxE25-pxE25))/sqrt((qxE25-pxE25)^2+(qyE25-pyE25)^2):10;npuntosE25= ((d2E25<0.1)&(npuntosE25=4))?npuntosE25-1:npuntosE25;sE25.x=(npuntosE25=5)?rxE25+0.3*(qxE25-pxE25):sE25.x;sE25.y=(npuntosE25=5)?ryE25+0.3*(qyE25-pyE25):sE25.y;;npuntosE25=(sinoE25=2)?npuntosE25+1:npuntosE25;sinoE25=(sinoE25=2)?0:sinoE25;;;'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' expresión='[285,90]' texto='Geodésica en el plano: Línea recta' fuente='SansSerif,PLAIN,24' fijo='sí'">
+   <param name="G_03" value="espacio='E25' tipo='texto' color='rojo' dibujar-si='npuntosE25=0' expresión='[20,280]' texto='Haz clic para marcar un punto' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_04" value="espacio='E25' tipo='punto' color='rojo' dibujar-si='npuntosE25>=1' expresión='(pxE25,pyE25)' fuente='Monospaced,BOLD,18' fijo='sí' tamaño='6'">
+   <param name="G_05" value="espacio='E25' tipo='texto' color='rojo' dibujar-si='npuntosE25=1' expresión='[20,280]' texto='Haz clic para marcar otro punto' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_06" value="espacio='E25' tipo='punto' color='rojo' dibujar-si='npuntosE25>=2' expresión='(qxE25,qyE25)' fijo='sí' tamaño='6'">
+   <param name="G_07" value="espacio='E25' tipo='ecuación' color='rojo' dibujar-si='npuntosE25>=2' expresión='(qxE25-pxE25)*(y-pyE25)=(qyE25-pyE25)*(x-pxE25)' ancho='2'">
+   <param name="G_08" value="espacio='E25' tipo='texto' color='rojo' dibujar-si='npuntosE25=2' expresión='[5,5]' texto='Por el primer postulado por dos puntos\npasa una única recta' fuente='Monospaced,BOLD,18' fijo='sí'">
+   <param name="G_09" value="espacio='E25' tipo='texto' color='rojo' dibujar-si='npuntosE25=3' expresión='[20,280]' texto='Haz clic para marcar un punto exterior a esa recta' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_10" value="espacio='E25' tipo='punto' color='rojo' dibujar-si='npuntosE25>=4' expresión='(rxE25,ryE25)' fijo='sí' tamaño='6'">
+   <param name="G_11" value="espacio='E25' tipo='texto' color='rojo' dibujar-si='npuntosE25=4' expresión='[20,280]' texto='Pulsa el botón para ' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_12" value="espacio='E25' tipo='ecuación' color='azul' dibujar-si='(npuntosE25>=5)' expresión='(qxE25-pxE25)*(y-ryE25)=(qyE25-pyE25)*(x-rxE25)' ancho='2'">
+   <param name="G_13" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(postulado=5)&(npuntosE25>=5)&(npuntosE25<=6)' expresión='[265,460]' texto='Dos rectas son paralelas si no tienen\n         ningún punto en común' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_14" value="espacio='E25' tipo='texto' color='rojo' dibujar-si='(npuntosE25=5)|(npuntosE25=6)' expresión='[10,233]' texto='¿Por ese mismo punto puede trazarse otra recta \nparalela diferente? \n                   ¡Prueba y responde!' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_15" value="espacio='E25' tipo='texto' color='negro' dibujar-si='(npuntosE25=5)|(npuntosE25=6)' expresión='[35,240]' texto='  \n                                (puede que tengas que cambiar la escala)\n                  ' fuente='SansSerif,PLAIN,14' fijo='sí'">
+   <param name="G_16" value="espacio='E25' tipo='ecuación' color='naranja' dibujar-si='(npuntosE25>=6)&(npuntosE25<7)' expresión='(rxE25-sE25.x)*(y-ryE25)=(ryE25-sE25.y)*(x-rxE25)' ancho='2'">
+   <param name="G_17" value="espacio='E1' tipo='texto' color='007a00' dibujar-si='(postulado=5)&(npuntosE25>=7)' expresión='[250,465]' texto='En el plano por un punto exterior a una\n recta sólo puede trazarse otra paralela' fuente='SansSerif,BOLD,24' fijo='sí'">
+</ajs>
+
+
+
+<script type="descartes/macro" id="macros/arco3D.txt">
+
+tipo_de_macro=R3
+
+Idioma=español
+
+id='px' expresión='0'
+
+id='py' expresión='0'
+
+id='pz' expresión='0'
+
+id='qx' expresión='1'
+
+id='qy' expresión='0'
+
+id='qz' expresión='0'
+
+id='rx' expresión='0'
+
+id='ry' expresión='0'
+
+id='rz' expresión='1'
+
+id='radio' expresión='1'
+
+id='npuntos' expresión='10'
+
+id='anchoarco' expresión='3'
+
+id='colort' expresión='0'
+
+id='colorr' expresión='1'
+
+id='colorv' expresión='200/255'
+
+id='colora' expresión='0'
+
+id='xn' vector='sí' evaluar='una-sola-vez' tamaño='4*npuntos+1'
+
+id='yn' vector='sí' evaluar='una-sola-vez' tamaño='4*npuntos+1'
+
+id='zn' vector='sí' evaluar='una-sola-vez' tamaño='4*npuntos+1'
+
+id='uwv()' algoritmo='sí' algoritmo='sí' hacer='ux=qx-px;uy=qy-py;uz=qz-pz;modulou=sqrt(ux*ux+uy*uy+uz*uz);ux=(modulou=0)?0:ux/modulou;uy=(modulou=0)?0:uy/modulou;uz=(modulou=0)?0:uz/modulou;vx=rx-px;vy=ry-py;vz=rz-pz;modulov=sqrt(vx*vx+vy*vy+vz*vz);vx=(modulov=0)?0:vx/modulov;vy=(modulov=0)?0:vy/modulov;vz=(modulov=0)?0:vz/modulov;wx=ux+vx;wy=uy+vy;wz=uz+vz;modulouv=sqrt(wx*wx+wy*wy+wz*wz);wx=(modulouv=0)?0:wx/modulouv;wy=(modulouv=0)?0:wy/modulouv;wz=(modulouv=0)?0:wz/modulouv;'
+
+id='puntos_arco1()' algoritmo='sí' algoritmo='sí' inicio='s=0;' hacer='xn[s]=ux+wx*s/npuntos;yn[s]=uy+wy*s/npuntos;zn[s]=uz+wz*s/npuntos;modulo=sqrt(xn[s]*xn[s]+yn[s]*yn[s]+zn[s]*zn[s]);xn[s]=((modulo=0)|(modulouv=0))?px:px+radio*xn[s]/modulo;yn[s]=((modulo=0)|(modulouv=0))?py:py+radio*yn[s]/modulo;zn[s]=((modulo=0)|(modulouv=0))?pz:pz+radio*zn[s]/modulo;s=s+1' mientras='s<=npuntos'
+
+id='puntos_arco2()' algoritmo='sí' algoritmo='sí' inicio='s=1' hacer='xn[npuntos+s]=wx+ux*(npuntos-s)/npuntos;yn[npuntos+s]=wy+uy*(npuntos-s)/npuntos;zn[npuntos+s]=wz+uz*(npuntos-s)/npuntos;modulo=sqrt(xn[npuntos+s]*xn[npuntos+s]+yn[npuntos+s]*yn[npuntos+s]+zn[npuntos+s]*zn[npuntos+s]);xn[npuntos+s]=((modulo=0)|(modulouv=0))?px:px+radio*xn[npuntos+s]/modulo;yn[npuntos+s]=((modulo=0)|(modulouv=0))?py:py+radio*yn[npuntos+s]/modulo;zn[npuntos+s]=((modulo=0)|(modulouv=0))?pz:pz+radio*zn[npuntos+s]/modulo;s=s+1' mientras='s<=npuntos'
+
+id='puntos_arco3()' algoritmo='sí' algoritmo='sí' inicio='s=1;' hacer='xn[2*npuntos+s]=wx+vx*s/npuntos;yn[2*npuntos+s]=wy+vy*s/npuntos;zn[2*npuntos+s]=wz+vz*s/npuntos;modulo=sqrt(xn[2*npuntos+s]*xn[2*npuntos+s]+yn[2*npuntos+s]*yn[2*npuntos+s]+zn[2*npuntos+s]*zn[2*npuntos+s]);xn[2*npuntos+s]=((modulo=0)|(modulouv=0))?px:px+radio*xn[2*npuntos+s]/modulo;yn[2*npuntos+s]=((modulo=0)|(modulouv=0))?py:py+radio*yn[2*npuntos+s]/modulo;zn[2*npuntos+s]=((modulo=0)|(modulouv=0))?pz:pz+radio*zn[2*npuntos+s]/modulo;s=s+1' mientras='s<=npuntos'
+
+id='puntos_arco4()' algoritmo='sí' algoritmo='sí' inicio='s=1' hacer='xn[3*npuntos+s]=vx+wx*(npuntos-s)/npuntos;yn[3*npuntos+s]=vy+wy*(npuntos-s)/npuntos;zn[3*npuntos+s]=vz+wz*(npuntos-s)/npuntos;modulo=sqrt(xn[3*npuntos+s]*xn[3*npuntos+s]+yn[3*npuntos+s]*yn[3*npuntos+s]+zn[3*npuntos+s]*zn[3*npuntos+s]);xn[3*npuntos+s]=((modulo=0)|(modulouv=0))?px:px+radio*xn[3*npuntos+s]/modulo;yn[3*npuntos+s]=((modulo=0)|(modulouv=0))?py:py+radio*yn[3*npuntos+s]/modulo;zn[3*npuntos+s]=((modulo=0)|(modulouv=0))?pz:pz+radio*zn[3*npuntos+s]/modulo;s=s+1' mientras='s<=npuntos'
+
+id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='uwv();puntos_arco1();puntos_arco2();puntos_arco3();puntos_arco4();'
+
+tipo='segmento' color='(colorr,colorv,colora,colort)' expresión='(xn[t],yn[t],zn[t])(xn[t+1],yn[t+1],zn[t+1])' familia='t' t.intervalo='[0,4*npuntos-1]' t.pasos='4*npuntos-1' ancho='anchoarco' Nu='1' 
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>
+  <style type="text/css"> 
+  div#NavegacionAtras {
+    box-shadow: 0px 0px 5px #000;
+    border-radius: 0px 10px 10px 0px;
+  }
+  div#NavegacionAdelante {
+    box-shadow: 0px 0px 5px #000;
+    border-radius: 10px 0px 0px 10px;
+  }
+  </style>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" style="margin: 0px; padding: 0px">
+
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' ancho='970' alto='550' fijo='sí' imagen='images/fondo_01.jpg' despl_imagen='arr-izq' fondo='bb808080' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='NavegacionAtras' x='0' y='240' ancho='25' alto='80' dibujar-si='paso>0' fijo='sí' despl_imagen='arr-izq' fondo='d7d746' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='NavegacionAdelante' x='945' y='240' ancho='25' alto='80' dibujar-si='paso<limPasos' fijo='sí' despl_imagen='arr-izq' fondo='d7d746' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='DefinicionPoligonoSimple' ancho='970' alto='550' dibujar-si='muestraDefinicionDePoligonoSimple' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ff808080' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='back' tipo='numérico' interfaz='botón' región='interior' espacio='NavegacionAtras' nombre='◄' expresión='(0,0,25,80)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='vacio.gif' acción='calcular' parámetro='paso=(paso<=0)?0:paso-1' activo-si='paso>0'">
+   <param name="C_02" value="id='next' tipo='numérico' interfaz='botón' región='interior' espacio='NavegacionAdelante' nombre='►' expresión='(0,0,25,80)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='vacio.gif' acción='calcular' parámetro='paso=(paso>=limPasos)?limPasos:paso+1' activo-si='paso<limPasos'">
+   <param name="C_03" value="id='muestraDefinicionDePoligonoSimple' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(70,145,150,23)' fijo='sí' visible='sí' imagen='vacio.gif' acción='calcular' parámetro='muestraDefinicionDePoligonoSimple=1' dibujar-si='paso==0'">
+   <param name="C_04" value="id='cerrarDefinicionPoligonoSimple' tipo='numérico' interfaz='botón' región='interior' espacio='DefinicionPoligonoSimple' expresión='(850,48,21,20)' fijo='sí' visible='sí' color='negro' color-int='rosa' fuente puntos='22' imagen='images/cerrar.png' acción='calcular' parámetro='muestraDefinicionDePoligonoSimple=0'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='titulo1=&squot;Teorema de Pick&squot;;titulo2=&squot;Ejemplos&squot;;;borde=15;marco.x=50;marco.y=85+15;marco.w=870;marco.h=410;;posImagenEjemplo.x=80;posImagenEjemplo.y=130;posTextoEjemplo.x=posImagenEjemplo.x+520;posTextoEjemplo.y=130;;paso=0;limPasos=3;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='DefinicionPoligonoSimple' tipo='imagen' fondo='sí' expresión='(0,0,1,1)' archivo='images/retro_790x470.png'">
+   <param name="G_02" value="espacio='E1' tipo='punto' dibujar-si='0' expresión='(0,0)' fijo='sí'">
+   <param name="G_03" value="espacio='DefinicionPoligonoSimple' tipo='texto' fondo='sí' color='negro' expresión='[110,100]' texto='Un polígono se llama simple si:\n\n    • sus vértices no coinciden unos con otros, \n    • ninguno de los vértices se encuentra sobre uno de los lados del polígono \n    • y para cualesquiera dos de sus lados estos no se cortan.' fuente='SansSerif,PLAIN,22' fijo='sí'">
+   <param name="G_04" value="espacio='DefinicionPoligonoSimple' tipo='imagen' fondo='sí' expresión='(0,-2.3,.9,.9)' archivo='images/ejemploPoligonosSimples.png'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='paso==0' expresión='[(E1._w-_AnchoDeCadena_(titulo1,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo1]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' color='negro' dibujar-si='paso==0' expresión='[marco.x+borde,marco.y+borde]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;\f4\fcharset0 Times New Roman;\f5\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red0\green0\blue0;}\f1\fs44 El teorema de Pick, proporciona una f\u243 rmula elegante para calcular el \u225 rea de un \par \cf0\ul pol\u237 gono simple\ulnone\cf1 , cuyos v\u233 rtices se encuentran sobre una ret\u237 cula.\par \par El \u225 rea \f3\fs44\i{\*\mjaformula A}\f1\fs44\i0  de un pol\u237 gono simple con v\u233 rtices sobre una ret\u237 cula es:\par \f3\fs44\i\par                                                    \fs48{\*\mjaformula A = I+{\fraction{\num B}{\den 2}} -1}\f1\fs44\i0\par \par donde \f3\fs44\i{\*\mjaformula B} \f1\fs44\i0 son los puntos de la ret\u237 cula que se encuentran en el borde del pol\u237 gono, \par e \f3\fs44\i{\*\mjaformula I}\f5\fs44  \i0 son los puntos de la ret\u237 cula que se encuentran en el interior del pol\u237 gono.\par \par }' fuente='SansSerif,PLAIN,22' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='punto' dibujar-si='0' expresión='(0,0)' fijo='sí'">
+   <param name="G_08" value="espacio='E1' tipo='texto' dibujar-si='paso>0' expresión='[(E1._w-_AnchoDeCadena_(titulo2,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo2]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_09" value="espacio='E1' tipo='imagen' dibujar-si='paso==1' coord_abs='sí' expresión='(posImagenEjemplo.x,posImagenEjemplo.y)' archivo='images/ejemploInicio1.png'">
+   <param name="G_10" value="espacio='E1' tipo='texto' color='negro' dibujar-si='paso==1' expresión='[posTextoEjemplo.x,posTextoEjemplo.y]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;}\f1\fs44 El n\u250 mero de puntos sobre el \par borde es: \f2\fs48\i{\*\mjaformula B=26}\f1\fs44\i0\par El n\u250 mero de puntos interiores \par es: \f2\fs48\i{\*\mjaformula I=30}\f1\fs44\i0\par \par Aplicando el teorema de Pick \par tenemos\par \f2\fs48\i{\*\mjaformula A = I+{\fraction{\num B}{\den 2}} -1}\f1\fs44\i0\par \f2\fs48\i{\*\mjaformula =30+{\fraction{\num 26}{\den 2}} -1}\f1\fs44\i0\par \f2\fs48\i{\*\mjaformula =30+13-1}\par \fs52{\*\mjaformula =42}\f1\fs44\i0}' fuente='SansSerif,PLAIN,22' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='punto' dibujar-si='0' expresión='(0,0)' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='imagen' dibujar-si='paso==2' coord_abs='sí' expresión='(posImagenEjemplo.x,posImagenEjemplo.y)' archivo='images/ejemploInicio2.png'">
+   <param name="G_13" value="espacio='E1' tipo='texto' color='negro' dibujar-si='paso==2' expresión='[posTextoEjemplo.x,posTextoEjemplo.y]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Times New Roman;}\f1\fs44 El n\u250 mero de puntos sobre el \par borde es: \f2\fs48\i{\*\mjaformula B=8}\f1\fs44\i0\par El n\u250 mero de puntos interiores \par es: \f2\fs48\i{\*\mjaformula I=9}\f1\fs44\i0\par \par Aplicando el teorema de Pick \par tenemos\par \f2\fs48\i{\*\mjaformula A = I+{\fraction{\num B}{\den 2}} -1}\f1\fs44\i0\par \f2\fs48\i{\*\mjaformula =9+{\fraction{\num\f3\fs44\i 8}{\den 2}} -1}\f1\fs44\i0\par \f2\fs48\i{\*\mjaformula =9+4-1}\par \fs52{\*\mjaformula =12}\f1\fs44\i0}' fuente='SansSerif,PLAIN,22' fijo='sí'">
+   <param name="G_14" value="espacio='E1' tipo='punto' dibujar-si='0' expresión='(0,0)' fijo='sí'">
+   <param name="G_15" value="espacio='E1' tipo='imagen' dibujar-si='paso==3' coord_abs='sí' expresión='(posImagenEjemplo.x,posImagenEjemplo.y)' archivo='images/ejemploInicio3.png'">
+   <param name="G_16" value="espacio='E1' tipo='texto' color='negro' dibujar-si='paso==3' expresión='[posTextoEjemplo.x,posTextoEjemplo.y]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Times New Roman;\f4\fcharset0 Times New Roman;}\f1\fs44 El n\u250 mero de puntos sobre el \par borde es: \f2\fs48\i{\*\mjaformula B=14}\f1\fs44\i0\par El n\u250 mero de puntos interiores \par es: \f2\fs48\i{\*\mjaformula I=16}\f1\fs44\i0\par \par Aplicando el teorema de Pick \par tenemos\par \f2\fs48\i{\*\mjaformula A = I+{\fraction{\num B}{\den 2}} -1}\f1\fs44\i0\par \f2\fs48\i{\*\mjaformula =16+{\fraction{\num\f3\fs44\i 14}{\den 2}} -1}\f1\fs44\i0\par \f2\fs48\i{\*\mjaformula =16+7-1}\par \fs52{\*\mjaformula =22}\f1\fs44\i0}' fuente='SansSerif,PLAIN,22' fijo='sí'">
+</ajs>
+
+</body>
+</html>

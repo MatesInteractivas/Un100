@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="sonido" value="sí">
+   <param name="álgebra" value="sí">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E0' fijo='sí' imagen='images/fondo_02b.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E1' x='55' y='105' ancho='375' alto='400' dibujar-si='info=0' fijo='sí' despl_imagen='arr-izq' fondo='ffc0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E2' x='490' y='105' ancho='425' alto='400' dibujar-si='info=0' fijo='sí' O.x='-50%' despl_imagen='arr-izq' fondo='ffffff00' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='Covertura' dibujar-si='info' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='INFO' x='(970-490)/2' y='100' ancho='490' alto='400' dibujar-si='info' fijo='sí' imagen='images/retro_490x470.png' despl_imagen='arr-izq' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_06" value="tipo='HTMLIFrame' id='E6' x='55' y='105' ancho='375' alto='400' dibujar-si='(E2.Oy<-800)&(E2.Oy>-1370)' despl_imagen='arr-izq' archivo='http://www.youtube.com/embed/wclrISwNL7s'">
+   <param name="E_07" value="tipo='HTMLIFrame' id='E7' x='55' y='105' ancho='375' alto='400' dibujar-si='(E2.Oy<-1370)' despl_imagen='arr-izq' archivo='images/ani_information.gif'">
+   <param name="C_01" value="id='goTo0' tipo='numérico' interfaz='botón' región='interior' espacio='E0' expresión='(60,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()' dibujar-si='0'">
+   <param name="C_02" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E0' expresión='(880,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='cerrarInfo' tipo='numérico' interfaz='botón' región='interior' espacio='INFO' expresión='(INFO._w-29,8,21,21)' fijo='sí' visible='sí' imagen='images/cerrar.png' acción='calcular' parámetro='info=0' pos_mensajes='centro'">
+   <param name="C_04" value="id='E2.Oy' tipo='numérico' interfaz='barra' región='interior' espacio='E2' expresión='(395,0,30,400)' valor='p' incr='1' min='-1440' max='-200' decimales='0' fijo='sí' visible='no' acción='calcular' pos_mensajes='centro'">
+   <param name="A_01" value="id='A' vector='sí' evaluar='una-sola-vez' tamaño='5'">
+   <param name="A_02" value="id='P' vector='sí' evaluar='una-sola-vez' tamaño='5' expresión='P[0]=0;P[1]=0;P[2]=0'">
+   <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='info=1' hacer='titulo=&squot;Importancia de la Información&squot;;p=-200;'">
+   <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='x=E1.mouse_x;y=E1.mouse_y;p1=(x<0)&(x>-2)&(y<3)&(y>1)&(E1.mouse_pressed)?(p1=0?1:0):p1;p2=(x<2)&(x>0)&(y<3)&(y>1)&(E1.mouse_pressed)?(p2=0?1:0):p2;p3=(x<0)&(x>-2)&(y<1)&(y>-1)&(E1.mouse_pressed)?(p3=0?1:0):p3;p4=(x<2)&(x>0)&(y<1)&(y>-1)&(E1.mouse_pressed)?(p4=0?1:0):p4;p1=(p2+p3+p4>0)?0:p1;p2=(p1+p3+p4>0)?0:p2;p3=(p2+p1+p4>0)?0:p3;p4=(p2+p3+p1>0)?0:p4;P[1]=p1;P[2]=p2;P[3]=p3;P[4]=p4;'">
+   <param name="G_01" value="espacio='E0' tipo='texto' expresión='[(E0._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='INFO' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(INFO._w/2,18,INFO._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_03" value="espacio='INFO' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(INFO._w-1,0)(INFO._w-1,INFO._h-1)(0,INFO._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_04" value="espacio='E2' tipo='imagen' expresión='(-.2,0)' archivo='images/texto4.png'">
+   <param name="G_05" value="espacio='E2' tipo='imagen' expresión='(-0.2,-11.3)' archivo='images/texto5.png'">
+   <param name="G_06" value="espacio='E2' tipo='imagen' expresión='(-0.2,-22.6)' archivo='images/texto6.png'">
+   <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='E2.Oy>-370' expresión='(-0.2,0,1,1)' archivo='images/digitech.png'">
+   <param name="G_08" value="espacio='E0' tipo='texto' dibujar-si='(E2.Oy<-370)&(E2.Oy>-800)' expresión='[60,290]' texto='¿Porqué al hablar de Informática se relaciona \nel concepto con computadores?\nEn  la  actualidad  los   computadores son los \ndispositivos  que  mejor   pueden cumplir con \nel objetivo de la Oportunidad  ya que trabajan \na velocidades altas (millonésimas de segundo).   \nY  quién   se  encargada   de   cumplir    con   la \nveracidad?   Pues el ser humano quien planea, \norganiza,   programa  y  ejecuta  todo  lo que el \ncomputador va a  entregar  como  información.' fuente='SansSerif,BOLD,16' fijo='sí'">
+   <param name="G_09" value="espacio='E1' tipo='imagen' dibujar-si='(E2.Oy<-370)&(E2.Oy>-800)' expresión='(0,2,.4,.4)' archivo='images/digitech.png'">
+   <param name="G_10" value="espacio='INFO' tipo='texto' fondo='sí' color='blanco' expresión='[160,5]' texto='Instrucciones' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_11" value="espacio='INFO' tipo='texto' fondo='sí' expresión='[15,50]' texto='Lee completamente el texto, usando la barra de \ndesplazamiento. A medida que lo hagas, podrás\ninteractuar con diferentes actividades que, en\nesta unidad, vamos a trabajar.  \n\nEs posible que en la información encuentres\notros elementos interactivos en la ventana de \nla izquierda o enlaces a sitios de interés.\n' fuente='SansSerif,PLAIN,21' fijo='sí'">
+</ajs>
+
+</body>
+</html>

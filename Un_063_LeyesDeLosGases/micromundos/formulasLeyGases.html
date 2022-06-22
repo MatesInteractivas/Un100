@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>F—rmulas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script>
+    
+    function choice(id){
+      deseleccionarOtros(id);
+      var padre = window.parent;
+      var mensajeTipoSet = { type: "set", name: "respuesta", value: id };
+      padre.postMessage(mensajeTipoSet, "*");
+    }
+    
+    function deseleccionarOtros(id){
+      var inputs = document.getElementsByTagName("input");
+      for(var i=0;i<inputs.length;i++){
+        if(inputs[i].id!=id){
+          inputs[i].checked = false;
+        }
+      }
+    }
+    
+    // funcion para recibir los mensajes del padre
+    function receiveMessage(evt) {
+      // mensaje tipo set
+      if (evt.data && evt.data.type === "set") {
+        //aqui va el codigo de manejo de mensajes de tipo set enviados por el padre
+        
+        //alert("mensaje tipo <set> enviado por el padre");
+        //alert("name="+evt.data.name);
+        //alert("value="+evt.data.value);
+      }
+      // mensaje tipo set
+      if (evt.data && evt.data.type === "update") {
+        //aqui va el codigo de manejo de mensajes de tipo update enviados por el padre
+        //alert("mensaje tipo <update> enviado por el padre");
+        
+      }
+    }
+    window.addEventListener("message", receiveMessage, false);
+    
+    </script>
+  </head>
+
+  <body style="overflow: hidden; ">
+    <div id="contenedorPrincipal" align="center" style="width: 280px; height: 278px; background-image: url('../img/fondoFormulas.png'); position: relative; overflow: hidden; ">
+      <table style="margin-top: 50px; ">
+        <tr>
+          <td>
+            <input style="cursor:pointer;" id="P/V = knT" type="radio" onclick="choice(this.id)">
+          </td>
+          <td>
+            <p style="cursor:pointer;" onclick="document.getElementById('P/V = knT').checked=true;choice('P/V = knT')">P/V = knT</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input style="cursor:pointer;" id="PV = knT" type="radio" onclick="choice(this.id)">
+          </td>
+          <td>
+            <p style="cursor:pointer;" onclick="document.getElementById('PV = knT').checked=true;choice('PV = knT')">PV = knT</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input style="cursor:pointer;" id="nPVT = k" type="radio" onclick="choice(this.id)">
+          </td>
+          <td>
+            <p style="cursor:pointer;" onclick="document.getElementById('nPVT = k').checked=true;choice('nPVT = k')">nPVT = k</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

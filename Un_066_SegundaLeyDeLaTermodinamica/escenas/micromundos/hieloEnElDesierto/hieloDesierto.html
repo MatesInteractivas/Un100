@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hielo en el desierto</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script>
+    
+    function cerrar(){
+      document.getElementById("info").style.display="none";
+      document.getElementById("bt").style.display="block";
+    }
+    
+    function abrir(){
+      document.getElementById("info").style.display="block";
+      document.getElementById("bt").style.display="none";
+    }
+
+    </script>
+  </head>
+
+  <body style="overflow: hidden; ">
+    <div id="contenedorPrincipal" align="center" style="width: 464px; height: 338px; background-image: url('hojas.png'); position: relative; overflow: hidden; ">
+      
+      <div id="info" style="width: 350px; height: 262px; background-image: url('fondoTxt.png'); position: absolute; top: 35px; left: 48px; overflow: hidden; ">
+          
+          <p style="font-family:Arial; font-size: 13px; text-align: justify; color: #666666; margin: 15px;">
+          
+            <b>Hielo en el desierto</b>
+            <br>
+            <br>
+            Con estas gigantescas estructuras en forma de hoja de olmo, el artista holandés Ap Verheggen pretende hacer hielo en el desierto. 
+            <br>
+            <br>
+            Verheggen asegura haber tenido una visión para crear un "glaciar" en el desierto y así resolver la cada vez más grave escasez de agua en ciertos lugares del mundo, demostrando que lo aparentemente imposible es posible.
+            <br>
+            <br>
+            "Doy la inspiración. Qué se puede hacer con ella es cosa de los demás. Hay que abrir las fronteras del pensamiento", declaró el artista.
+
+          </p>
+          
+          <input type="button" value="x" style="position:absolute; top:12px; right:12px; cursor:pointer;" onclick="cerrar()"/>
+          
+      </div>
+      
+      <img id="bt" src="btInfo.png" style="position:absolute; bottom:15px; left:15px; cursor:pointer; display:none; " onclick="abrir()" /> 
+      
+    </div>
+  </body>
+</html>

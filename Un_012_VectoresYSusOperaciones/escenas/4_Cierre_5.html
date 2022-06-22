@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Cierre</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_preguntas.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='Cuestionario' x='55' y='105' ancho='860' alto='400' fijo='sí' despl_imagen='arr-izq' fondo='ffffeaea' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='Covertura' dibujar-si='interactuar=0' fijo='sí' imagen='images/backwindow.png' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='Instrucciones' x='(970-450)/2' y='60' ancho='450' alto='400' dibujar-si='interactuar=0' fijo='sí' despl_imagen='mosaico' fondo='eeeef7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()'">
+   <param name="C_02" value="id='interactuar' tipo='numérico' interfaz='botón' región='interior' espacio='Instrucciones' expresión='(Instrucciones._w-28,8,20,20)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/cerrar.png' acción='calcular' parámetro='interactuar=1'">
+   <param name="C_03" value="id='contestar' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Contestar' expresión='(E1._w/3-135/2,E1._h-35,135,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/boton_corto.png' acción='calcular' parámetro='calificar()' pos_mensajes='centro'">
+   <param name="C_04" value="id='instrucciones' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Instrucciones' expresión='(2*E1._w/3-135/2,E1._h-35,135,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/boton_corto.png' acción='calcular' parámetro='interactuar=0 \n contestar=0' pos_mensajes='centro'">
+   <param name="C_05" value="id='p1' tipo='numérico' interfaz='menú' región='interior' espacio='Cuestionario' nombre='_nada_' expresión='(p.opc.x,p1.opc.y,120,30)' decimales='0' fijo='sí' visible='no' opciones=' ,Verdadero,Falso' acción='calcular' parámetro='contestar=0' pos_mensajes='centro'">
+   <param name="C_06" value="id='p2' tipo='numérico' interfaz='menú' región='interior' espacio='Cuestionario' nombre='_nada_' expresión='(p.opc.x,p2.opc.y,120,30)' decimales='0' fijo='sí' visible='no' opciones=' ,Características,Componentes' acción='calcular' parámetro='contestar=0' pos_mensajes='centro'">
+   <param name="C_07" value="id='p3' tipo='numérico' interfaz='menú' región='interior' espacio='Cuestionario' nombre='_nada_' expresión='(p.opc.x,p3.opc.y,120,30)' decimales='0' fijo='sí' visible='no' opciones=' ,División,Suma,Resta,Multiplicación' acción='calcular' parámetro='contestar=0' pos_mensajes='centro'">
+   <param name="C_08" value="id='p4' tipo='numérico' interfaz='menú' región='interior' espacio='Cuestionario' nombre='_nada_' expresión='(p.opc.x,p4.opc.y,120,30)' decimales='0' fijo='sí' visible='no' opciones=' ,Conmutativa,Distributiva,Neutro,Asociativa' acción='calcular' parámetro='contestar=0' pos_mensajes='centro'">
+   <param name="C_09" value="id='p5' tipo='numérico' interfaz='menú' región='interior' espacio='Cuestionario' nombre='_nada_' expresión='(p.opc.x,p5.opc.y,120,30)' decimales='0' fijo='sí' visible='no' opciones=' ,Vector,Escalar' acción='calcular' parámetro='contestar=0' pos_mensajes='centro'">
+   <param name="C_10" value="id='p6' tipo='numérico' interfaz='menú' región='interior' espacio='Cuestionario' nombre='_nada_' expresión='(p.opc.x,p6.opc.y,120,30)' decimales='0' fijo='sí' visible='no' opciones=' ,Cero,Dif. de Cero' acción='calcular' parámetro='contestar=0' pos_mensajes='centro'">
+   <param name="C_11" value="id='p7' tipo='numérico' interfaz='menú' región='interior' espacio='Cuestionario' nombre='_nada_' expresión='(p.opc.x,p7.opc.y,120,30)' decimales='0' fijo='sí' visible='no' opciones=' ,Conmutativo,Anticonmutativo' acción='calcular' parámetro='contestar=0' pos_mensajes='centro'">
+   <param name="C_12" value="id='p8' tipo='numérico' interfaz='menú' región='interior' espacio='Cuestionario' nombre='_nada_' expresión='(p.opc.x,p8.opc.y,120,30)' decimales='0' fijo='sí' visible='no' opciones=' ,Fuerza,Velocidad,Masa,Campo Eléctrico' acción='calcular' parámetro='contestar=0' pos_mensajes='centro'">
+   <param name="A_01" value="id='bienCond' vector='sí' evaluar='una-sola-vez' tamaño='8'">
+   <param name="A_02" value="id='calificar()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='contestar=1' hacer='bienCond[0]=(p1==2);bienCond[1]=(p2==2);bienCond[2]=(p3==1);bienCond[3]=(p4==2);bienCond[4]=(p5==2);bienCond[5]=(p6==1);bienCond[6]=(p7==2);bienCond[7]=(p8==3);;calif=bienCond[0]+bienCond[1]+bienCond[2]+bienCond[3]+bienCond[4]+bienCond[5]+bienCond[6]+bienCond[7];;Retro=&squot;&squot;;Retro=(p1!=2)?Retro+&squot; características, &squot;:Retro;Retro=(p2!=2)?Retro+&squot; suma, &squot;:Retro;Retro=(p3!=1)?Retro+&squot; operaciones, &squot;:Retro;Retro=(p4!=2)?Retro+&squot; producto por escalar, &squot;:Retro;Retro=(p5!=2)?Retro+&squot; producto interno, &squot;:Retro;Retro=(p6!=1)?Retro+&squot; producto punto, &squot;:Retro;Retro=(p7!=2)?Retro+&squot; producto cruz, &squot;:Retro;Retro=(p8!=3)?Retro+ &squot;definición &squot;:Retro'">
+   <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;¿Qué tanto has aprendido?&squot;' hacer='p.opc.x=Cuestionario._w-130;p.x=10;p1.opc.y=20;p1.y=p1.opc.y;p2.opc.y=p1.opc.y+35;p2.y=p2.opc.y;p3.opc.y=p2.opc.y+35;p3.y=p3.opc.y;p4.opc.y=p3.opc.y+35;p4.y=p4.opc.y;p5.opc.y=p4.opc.y+35;p5.y=p5.opc.y;p6.opc.y=p5.opc.y+35;p6.y=p6.opc.y;p7.opc.y=p6.opc.y+35;p7.y=p7.opc.y;p8.opc.y=p7.opc.y+35;p8.y=p8.opc.y'">
+   <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='Cuestionario' tipo='texto' color='0ac30a' dibujar-si='(contestar=1)&&(bienCond[s])' expresión='[p.opc.x-30,p1.y-5+s*35]' familia='s' s.intervalo='[0,7]' s.pasos='7' texto='✓' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_03" value="espacio='Cuestionario' tipo='texto' color='rojo' dibujar-si='(contestar=1)&&(!bienCond[s])' expresión='[p.opc.x-30,p1.y-5+s*35]' familia='s' s.intervalo='[0,7]' s.pasos='7' texto='✗' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_04" value="espacio='Cuestionario' tipo='texto' expresión='[p.x,p1.y]' texto='1.- Las cantidades vectoriales se caracterizan por tener magnitud, dirección y ángulo\n' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_05" value="espacio='Cuestionario' tipo='texto' expresión='[p.x,p2.y]' texto='2.- Cuando se suman dos vectores algebraicamente, se suman uno a uno sus\n' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_06" value="espacio='Cuestionario' tipo='texto' expresión='[p.x,p3.y]' texto='3.- ¿Qué operación no está definida entre vectores?' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_07" value="espacio='Cuestionario' tipo='texto' expresión='[p.x,p4.y]' texto='4.- ¿Cuál propiedad aritmética se utiliza para calcular el producto por un escalar?' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_08" value="espacio='Cuestionario' tipo='texto' expresión='[p.x,p5.y]' texto='5.- El producto interno o producto punto de dos vectores da como resultado un:' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_09" value="espacio='Cuestionario' tipo='texto' expresión='[p.x,p6.y]' texto='6.- Dados dos vectores perpendiculares, ¿cuánto es su producto punto?' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_10" value="espacio='Cuestionario' tipo='texto' expresión='[p.x,p7.y]' texto='7.- El producto vectorial o producto cruz tiene la característica de ser:' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_11" value="espacio='Cuestionario' tipo='texto' expresión='[p.x,p8.y]' texto='8.- De las siguientes cantidades, ¿cuál no es una cantidad vectorial?' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_12" value="espacio='Instrucciones' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(Instrucciones._w/2,18,Instrucciones._w,1)' archivo='images/barraInfo.jpg'">
+   <param name="G_13" value="espacio='Instrucciones' tipo='polígono' fondo='sí' color='5566aa' coord_abs='sí' expresión='(0,0)(Instrucciones._w-1,0)(Instrucciones._w-1,Instrucciones._h-1)(0,Instrucciones._h-1)(0,0)' relleno='f85566aa'">
+   <param name="G_14" value="espacio='Cuestionario' tipo='texto' dibujar-si='contestar=1' expresión='[250,Cuestionario._h-100]' texto='Debes de repasar los conceptos siguientes:' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="G_15" value="espacio='Cuestionario' tipo='texto' dibujar-si='contestar=1' expresión='[5,Cuestionario._h-75]' texto='[Retro]' fuente='SansSerif,PLAIN,16' decimales='0' fijo='sí'">
+   <param name="G_16" value="espacio='Cuestionario' tipo='texto' color='azul' dibujar-si='contestar=1' expresión='[Cuestionario._w-160,Cuestionario._h-35,100,30]' texto='Aciertos: [calif] de 8' fuente='SansSerif,BOLD,18' decimales='0' fijo='sí'">
+   <param name="G_17" value="espacio='Instrucciones' tipo='texto' fondo='sí' color='blanco' expresión='[(Instrucciones._w-_AnchoDeCadena_(&squot;Instrucciones&squot;,&squot;SansSerif&squot;,&squot;BOLD&squot;,&squot;24&squot;))/2,5]' texto='Instrucciones' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_18" value="espacio='Instrucciones' tipo='texto' fondo='sí' expresión='[25,60]' texto='Verifica lo que has aprendido respondiendo este breve cuestionario.\n\nSelecciona la opción correcta de cada pregunta y selecciona el botónde contestar al final del cuestionario para que seas evaluado.\n\nSe te dará retroalimentación a cada una de tus respuestas.' fuente='SansSerif,PLAIN,20' fijo='sí' ancho='Instrucciones._w-50'">
+</ajs>
+
+</body>
+</html>

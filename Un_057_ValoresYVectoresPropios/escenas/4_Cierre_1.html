@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Inicio</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_01.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' x='100' y='300' ancho='425' alto='150' fijo='sí' despl_imagen='arr-izq' fondo='ff119fff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Otra matriz' expresión='(80,465,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='otra()'">
+   <param name="A_01" value="id='A' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='2' filas='2' expresión='A[0,0]=0;A[1,0]=0;A[2,0]=0;A[0,1]=0;A[1,1]=0;A[2,1]=0;A[0,2]=0;A[1,2]=0;A[2,2]=0;'">
+   <param name="A_02" value="id='AT' vector='sí' matriz='sí' evaluar='una-sola-vez' columnas='2' filas='2' expresión='AT[0,0]=0;AT[1,0]=0;AT[2,0]=0;AT[0,1]=0;AT[1,1]=0;AT[2,1]=0;AT[0,2]=0;AT[1,2]=0;AT[2,2]=0;'">
+   <param name="A_03" value="id='Ajusta_texto()' algoritmo='sí' algoritmo='sí' inicio='i=0;j=-1' hacer='i=i+(j=1);j=(j=1)?0:j+1;AT[i,j]=(A[i,j]>0)|(A[i,j]=0)?&squot; &squot;+A[i,j]:&squot;&squot;+A[i,j]' mientras='i<2'">
+   <param name="A_04" value="id='otra()' algoritmo='sí' algoritmo='sí' hacer='A[0,0]=ent(rnd*10)*(1-ent(3*rnd));A[0,0]=(A[0,0]=0)?3:A[0,0];A[0,1]=ent(rnd*10)*(1-ent(3*rnd));A[1,0]=ent(rnd*10)*(1-ent(3*rnd));A[1,1]=ent(rnd*10)*(1-ent(3*rnd));A[1,1]=(A[1,1]=0)?-2:A[1,1];Ajusta_texto()'">
+   <param name="A_05" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Conclusiones de la unidad&squot;' hacer='info=0;A[0,0]=4;A[0,1]=-5;A[1,0]=2;A[1,1]=-3;Ajusta_texto();paso=4'">
+   <param name="A_06" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='a=1;b=-(A[1,1]+A[0,0]);bt=(b>0)?&squot; + &squot;+b:((b=0)?&squot;  &squot;:&squot; - &squot;+abs(b));c=A[0,0]*A[1,1]-A[0,1]*A[1,0];ct=(c>0)?&squot; + &squot;+c:((c=0)?&squot;  &squot;:&squot; - &squot;+abs(c));disc=b^2-4*a*c;L1=(disc>0)|(disc=0)?(-b+sqrt(disc))/2:1000;L2=(disc>0)|(disc=0)?(-b-sqrt(disc))/2:1000;t=A[0,1]*A[1,0];v1y1=(A[0,0]-L1)/(-A[0,1]);v1y2=(A[1,0])/(-A[0,1]+L1);v1y=(-A[0,1]/(A[0,0]-L1))*((A[1,0])/(-A[0,1]+L1));v1y=(v1y1=v1y2)?v1y1:v1y;'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='texto' expresión='[100,110]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red0\green0\blue0;}\cf0\f1\fs36 DETERMINANTE DE UNA MATRIZ\par \par \cf1 El determinante de una matriz n x n, se puede calcular de la siguiente forma:\par Sea una matriz A cuadrada de orden 2:\fs34}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_03" value="espacio='E1' tipo='imagen' expresión='(-7,2)' archivo='images/det_2x2.png'">
+   <param name="G_04" value="espacio='E2' tipo='texto' expresión='[10,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs48\b A =\f2\fs30\b0}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_05" value="espacio='E2' tipo='texto' expresión='[50,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red128\green128\blue128;\red32\green48\blue58;}\f1\fs160\cf0 [\cf1\f2\fs30}' fuente='SansSerif,PLAIN,80' fijo='sí'">
+   <param name="G_06" value="espacio='E2' tipo='texto' expresión='[60+60*s,20]' familia='s' s.intervalo='[0,1]' s.pasos='1' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs48\b{\*\mjaformula{\expr AT[0,s]\decimals 0\fixed1}}\fs44\b0}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_07" value="espacio='E2' tipo='texto' expresión='[60+60*s,60]' familia='s' s.intervalo='[0,1]' s.pasos='1' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs48\b{\*\mjaformula{\expr AT[1,s]\decimals 0\fixed1}}\fs44\b0}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_08" value="espacio='E2' tipo='texto' expresión='[155,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red128\green128\blue128;\red32\green48\blue58;}\f1\fs160\cf0 ]\cf1\f2\fs30}' fuente='SansSerif,PLAIN,80' fijo='sí'">
+   <param name="G_09" value="espacio='E2' tipo='texto' dibujar-si='paso=1' expresión='[10,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs48\b det(A - \cf0\f2\fs52\u955 \cf1\f1\fs48 I) =\f3\fs30\b0}' fuente='SansSerif,BOLD,24' fijo='sí'">
+   <param name="G_10" value="espacio='E2' tipo='texto' expresión='[180,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs44 =  ({\*\mjaformula{\expr A[0,0]\decimals 0\fixed1}})({\*\mjaformula{\expr A[1,1]\decimals 0\fixed1}}) - ({\*\mjaformula{\expr A[1,0]\decimals 0\fixed1}})({\*\mjaformula{\expr A[0,1]\decimals 0\fixed1})}\f2\fs30}' fuente='SansSerif,PLAIN,22' fijo='sí'">
+   <param name="G_11" value="espacio='E2' tipo='texto' expresión='[120,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;}\f1\fs44\b\cf0 det A ={\*\mjaformula{\expr A[0,0]*A[1,1]-A[0,1]*A[1,0]\decimals 0\fixed1}}\cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,22' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='texto' fondo='sí' color='9fffff' expresión='[530,400]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;\red0\green0\blue0;}\cf0\f1\fs36 Recuerda:\cf1\par \par \cf2 El determinante de una matriz nos ayudar\u225 \par a encontrar el polin\u243 mio caracter\u237 stico.\fs34}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+</ajs>
+
+</body>
+</html>

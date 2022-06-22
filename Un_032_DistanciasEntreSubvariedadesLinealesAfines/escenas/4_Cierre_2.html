@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+
+<title>Cierre</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo_suave.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R3' id='Principal' x='540' y='90' ancho='410' alto='450' escala='24' O.x='-100' O.y='-0' despl_imagen='arr-izq' fondo='e3e5e3' R3='sí'">
+   <param name="E_03" value="tipo='R2' id='E2' x='20' y='90' ancho='510' alto='450' fijo='sí' escala='24' O.x='-100' O.y='-0' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='goTo1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(60,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/retroceder.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,1);\nparent.update()'">
+   <param name="C_02" value="id='goTo3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,32,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,3);\nparent.update()' pos_mensajes='centro'">
+   <param name="C_03" value="id='u1' tipo='numérico' región='interior' espacio='Principal' nombre='a1' expresión='(60,Principal._h-90,Principal._w/3-20,30)' valor='u1' incr='1' discreto='sí' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_04" value="id='u2' tipo='numérico' región='interior' espacio='Principal' nombre='a2' expresión='(Principal._w/3+40,Principal._h-90,Principal._w/3-20,30)' valor='u2' incr='1' discreto='sí' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_05" value="id='u3' tipo='numérico' región='interior' espacio='Principal' nombre='a3' expresión='(2*Principal._w/3+20,Principal._h-90,Principal._w/3-20,30)' valor='u3' incr='1' discreto='sí' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_06" value="id='v1' tipo='numérico' región='interior' espacio='Principal' nombre='b1' expresión='(60,Principal._h-60,Principal._w/3-20,30)' valor='v1' incr='1' discreto='sí' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_07" value="id='v2' tipo='numérico' región='interior' espacio='Principal' nombre='b2' expresión='(Principal._w/3+40,Principal._h-60,Principal._w/3-20,30)' valor='v2' incr='1' discreto='sí' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_08" value="id='v3' tipo='numérico' región='interior' espacio='Principal' nombre='b3' expresión='(2*Principal._w/3+20,Principal._h-60,Principal._w/3-20,30)' valor='v3' incr='1' discreto='sí' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_09" value="id='w1' tipo='numérico' región='interior' espacio='Principal' nombre='c1' expresión='(60,Principal._h-30,Principal._w/3-20,30)' valor='w1' incr='1' discreto='sí' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_10" value="id='w2' tipo='numérico' región='interior' espacio='Principal' nombre='c2' expresión='(Principal._w/3+40,Principal._h-30,Principal._w/3-20,30)' valor='w2' incr='1' discreto='sí' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_11" value="id='w3' tipo='numérico' región='interior' espacio='Principal' nombre='c3' expresión='(2*Principal._w/3+20,Principal._h-30,Principal._w/3-20,30)' valor='w3' incr='1' discreto='sí' fijo='no' visible='sí' pos_mensajes='centro'">
+   <param name="C_12" value="id='Inicio' tipo='numérico' interfaz='botón' región='interior' espacio='Principal' nombre='Inicio' expresión='(0,Principal._h-60,60,30)' fijo='sí' visible='sí' color='blanco' color-int='blanco' fuente puntos='18' imagen='images/btn080.png' acción='inicio'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Diagonal del paralelepípedo&squot;' hacer='Principal.rot.z=20;u1=5;u2=0;u3=0;v1=2;v2=6;v3=0;w1=1;w2=1;w3=4;'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E2' tipo='texto' expresión='[10,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\cf0\f1\fs34 Veremos  c\u243 mo  calcular la distancia entre dos segmentos que \par se cruzan sin conocer las coordenadas de sus extremos. Pero \par antes necesitamos hacer un c\u225 lculo.\par \par \b C\u193 LCULO DE LA DIAGONAL DEL PARALELEP\u205 PEDO\b0\par \b El cuadrado de la diagonal \b0 OE del paralelep\u237 pedo \b es la suma \par de los cuadrados de las diagonales  de las caras \b0 que parten \par de O \b menos la suma de los cuadrados de las aristas \b0 que \par parten de O.\par \par Comprobaci\u243 n: (mueve los controles de la parte inferior)\par \fs28{\*\mjaformula OE\f1\fs34\u178 \fs28{\expr (u1+v1+w1)^2+(u2+v2+w2)^2+(u3+v3+w3)^2\decimals 2\fixed0}}\fs34 =\fs28{\*\mjaformula OD\f1\fs34\u178 \fs28{\expr (u1+v1)^2+(u2+v2)^2+(u3+v3)^2\decimals 2\fixed0}}\fs34 +\fs28{\*\mjaformula OG\f1\fs34\u178 \fs28{\expr (u1+w1)^2+(u2+w2)^2+(u3+w3)^2\decimals 2\fixed0}}\fs34 +\fs28{\*\mjaformula OF\u178 {\expr (v1+w1)^2+(v2+w2)^2+(v3+w3)^2\decimals 2\fixed0}}\fs34 -\fs28{\*\mjaformula\f3\fs28 OA\fs34\u178 \fs28{\expr (u1)^2+(u2)^2+(u3)^2\decimals 2\fixed0}}\fs34 -\fs28{\*\mjaformula OB\f1\fs34\u178 \fs28{\expr (v1)^2+(v2)^2+(v3)^2\decimals 2\fixed0}}\fs34 -\fs28 OC\fs34\u178 \fs28{\*\mjaformula{\expr (w1)^2+(w2)^2+(w3)^2\decimals 2\fixed0}}\fs34\par                  =\fs28                 {\*\mjaformula{\expr (u1+v1)^2+(u2+v2)^2+(u3+v3)^2+(v1+w1)^2+(v2+w2)^2+(v3+w3)^2+(u1+w1)^2+(u2+w2)^2+(u3+w3)^2\decimals 2\fixed0}}\fs34          -           \fs28{\*\mjaformula{\expr (u1)^2+(u2)^2+(u3)^2+(v1)^2+(v2)^2+(v3)^2+(w1)^2+(w2)^2+(w3)^2\decimals 2\fixed0}}\fs34\par \cf1\par \cf0 Demostraci\u243 n:\par \par \par \par \par  \cf1\f4\fs24}' fuente='SansSerif,PLAIN,17' fijo='sí'">
+   <param name="G_03" value="espacio='E2' tipo='imagen' coord_abs='sí' expresión='(10,343)' archivo='images/dem.jpg'">
+   <param name="G_04" value="espacio='E2' tipo='polígono' color='113388' coord_abs='sí' expresión='(0,0)(E2._w-1,0)(E2._w-1,E2._h-1)(0,E2._h-1)(0,0)'">
+   <param name="S_01" value="espacio='Principal' tipo='superficie' expresión='VECTORa1a2a3'">
+   <param name="S_02" value="espacio='Principal' tipo='segmento' color='000066' expresión='(0,0,0)(u1-(min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala))/2*u1/sqrt(u1^2+u2^2+u3^2),u2-(min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala))/2*u2/sqrt(u1^2+u2^2+u3^2),u3-(min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala))/2*u3/sqrt(u1^2+u2^2+u3^2))' ancho='3'">
+   <param name="S_03" value="espacio='Principal' tipo='cono' color='000066' color_reverso='5ffaafff' expresión='Cono' rotini='(0,90+asen(u3/sqrt(u1^2+u2^2+u3^2))*180/pi,(u1#0)?90*(1+sgn(u1))+atan(u2/u1)*180/pi:90*-sgn(u2))' posini='(u1-((min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*u1/sqrt(u1^2+u2^2+u3^2),u2-((min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*u2/sqrt(u1^2+u2^2+u3^2),u3-((min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*u3/sqrt(u1^2+u2^2+u3^2))' modelo='metal' ancho='0.2*48/Principal.escala' largo='0.2*48/Principal.escala' alto='min(sqrt(u1^2+u2^2+u3^2)/2,0.3*48/Principal.escala)' Nu='10' Nv='1'">
+   <param name="S_04" value="espacio='Principal' tipo='segmento' color='660000' expresión='(0,0,0)(v1-(min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala))/2*v1/sqrt(v1^2+v2^2+v3^2),v2-(min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala))/2*v2/sqrt(v1^2+v2^2+v3^2),v3-(min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala))/2*v3/sqrt(v1^2+v2^2+v3^2))' ancho='3'">
+   <param name="S_05" value="espacio='Principal' tipo='cono' color='660000' color_reverso='5ffaafff' expresión='Cono' rotini='(0,90+asen(v3/sqrt(v1^2+v2^2+v3^2))*180/pi,(v1#0)?90*(1+sgn(v1))+atan(v2/v1)*180/pi:90*-sgn(v2))' posini='(v1-((min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*v1/sqrt(v1^2+v2^2+v3^2),v2-((min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*v2/sqrt(v1^2+v2^2+v3^2),v3-((min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*v3/sqrt(v1^2+v2^2+v3^2))' modelo='metal' ancho='0.2*48/Principal.escala' largo='0.2*48/Principal.escala' alto='min(sqrt(v1^2+v2^2+v3^2)/2,0.3*48/Principal.escala)' Nu='10' Nv='1'">
+   <param name="S_06" value="espacio='Principal' tipo='segmento' color='006600' expresión='(0,0,0)(w1-(min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala))/2*w1/sqrt(w1^2+w2^2+w3^2),w2-(min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala))/2*w2/sqrt(w1^2+w2^2+w3^2),w3-(min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala))/2*w3/sqrt(w1^2+w2^2+w3^2))' ancho='3'">
+   <param name="S_07" value="espacio='Principal' tipo='cono' color='006600' color_reverso='5ffaafff' expresión='Cono' rotini='(0,90+asen(w3/sqrt(w1^2+w2^2+w3^2))*180/pi,(w1#0)?90*(1+sgn(w1))+atan(w2/w1)*180/pi:90*-sgn(w2))' posini='(w1-((min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*w1/sqrt(w1^2+w2^2+w3^2),w2-((min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*w2/sqrt(w1^2+w2^2+w3^2),w3-((min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala))/2-2/Principal.escala)*w3/sqrt(w1^2+w2^2+w3^2))' modelo='metal' ancho='0.2*48/Principal.escala' largo='0.2*48/Principal.escala' alto='min(sqrt(w1^2+w2^2+w3^2)/2,0.3*48/Principal.escala)' Nu='10' Nv='1'">
+   <param name="S_08" value="espacio='Principal' tipo='superficie' color='aaaeafff' color_reverso='aab1afff' expresión='x=u*u1+v*v1 y=u*u2+v*v2 z=u*u3+v*v3' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_09" value="espacio='Principal' tipo='superficie' color='aaaeafff' color_reverso='aab1afff' expresión='x=v*u1+u*w1 y=v*u2+u*w2 z=v*u3+u*w3' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_10" value="espacio='Principal' tipo='superficie' color='aaaeafff' color_reverso='aab1afff' expresión='x=u*v1+v*w1 y=u*v2+v*w2 z=u*v3+v*w3' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_11" value="espacio='Principal' tipo='superficie' color='aaaeafff' color_reverso='aab1afff' expresión='x=u1+v*v1+u*w1 y=u2+v*v2+u*w2 z=u3+v*v3+u*w3' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_12" value="espacio='Principal' tipo='superficie' color='aaaeafff' color_reverso='aab1afff' expresión='x=v1+u*u1+v*w1 y=v2+u*u2+v*w2 z=v3+u*u3+v*w3' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_13" value="espacio='Principal' tipo='superficie' color='aaaeafff' color_reverso='aab1afff' expresión='x=w1+v*u1+u*v1 y=w2+v*u2+u*v2 z=w3+v*u3+u*v3' cortar='sí' aristas='sí' Nu='1' Nv='1'">
+   <param name="S_14" value="espacio='Principal' tipo='punto' color='000066' expresión='(u1,u2,u3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b A}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="S_15" value="espacio='Principal' tipo='punto' color='660000' expresión='(v1,v2,v3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b B}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="S_16" value="espacio='Principal' tipo='punto' color='006600' expresión='(w1,w2,w3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b C}' fuente='SansSerif,BOLD,17' fijo='sí'">
+   <param name="S_17" value="espacio='Principal' tipo='punto' color='grisObscuro' expresión='(0,0,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b O}' fuente='SansSerif,BOLD,17' fijo='sí' ancho='0'">
+   <param name="S_18" value="espacio='Principal' tipo='punto' color='grisObscuro' expresión='(u1+v1+w1,u2+v2+w2,u3+v3+w3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b E}' fuente='SansSerif,BOLD,17' fijo='sí' ancho='0'">
+   <param name="S_19" value="espacio='Principal' tipo='punto' color='grisObscuro' expresión='(u1+v1,u2+v2,u3+v3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b D}' fuente='SansSerif,BOLD,17' fijo='sí' ancho='0'">
+   <param name="S_20" value="espacio='Principal' tipo='punto' color='grisObscuro' expresión='(v1+w1,v2+w2,v3+w3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b F}' fuente='SansSerif,BOLD,17' fijo='sí' ancho='0'">
+   <param name="S_21" value="espacio='Principal' tipo='punto' color='grisObscuro' expresión='(u1+w1,u2+w2,u3+w3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs34\b G}' fuente='SansSerif,BOLD,17' fijo='sí' ancho='0'">
+   <param name="S_22" value="espacio='Principal' tipo='segmento' color='grisObscuro' expresión='(0,0,0)(u1+v1+w1,u2+v2+w2,u3+v3+w3)' ancho='2'">
+   <param name="S_23" value="espacio='Principal' tipo='segmento' color='grisObscuro' expresión='(0,0,0)(u1+v1,u2+v2,u3+v3)' ancho='2'">
+   <param name="S_24" value="espacio='Principal' tipo='segmento' color='grisObscuro' expresión='(0,0,0)(v1+w1,v2+w2,v3+w3)' ancho='2'">
+   <param name="S_25" value="espacio='Principal' tipo='segmento' color='grisObscuro' expresión='(0,0,0)(u1+w1,u2+w2,u3+w3)' ancho='2'">
+</ajs>
+
+
+
+</body>
+
+</html>

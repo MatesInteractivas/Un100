@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>TITULO</title>
+
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="e0e4e8">
+
+<p align="center">
+<ajs name="Descartes" width=550 height=520
+        code="Descartes.class"
+        codebase="../"
+        archive="lib/Descartes5.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="550x520">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versi&oacute;n" value="5.107, 2013-08-17">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' ancho='550' alto='550' imagen='images/fondo.png' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='onda' x='50' y='160' ancho='450' alto='250' O.x='-25' imagen='images/fondoOnda.png' despl_imagen='arr-izq' red='no' red10='no' ejes='405860' texto='405860'">
+   <param name="C_01" value="id='cntrlLong' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='E1' nombre='long' expresi&oacute;n='(280,440,39,20)' valor='long*100' incr='5' min='380' max='780' decimales='0' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='long=cntrlLong/100\nfrec=vLuz/long\ncntrlFrec=frec*100'">
+   <param name="C_02" value="id='cntrlFrec' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='E1' nombre='frec' expresi&oacute;n='(280,480,39,20)' valor='frec*100' incr='5' min='400' max='800' decimales='0' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='frec=cntrlFrec/100\nlong=vLuz/frec\ncntrlLong=long*100' pos_mensajes='centro'">
+   <param name="A_01" value="id='Rojo(long)' expresi&oacute;n='rI*exp(-(long-r0)*(long-r0)/dr2)+vI*exp(-(long-v0)*(long-v0)/dv2)'">
+   <param name="A_02" value="id='Verde(long)' expresi&oacute;n='gI*exp(-(long-g0)*(long-g0)/dg2)'">
+   <param name="A_03" value="id='Azul(long)' expresi&oacute;n='bI*exp(-(long-b0)*(long-b0)/db2)'">
+   <param name="A_04" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='h=60;long=5;frec=6;vLuz=30' hacer='rI=1.0;r0=6.7;dr=1.1;dr2=dr*dr;gI=1.0;g0=5.4;dg=1.0;dg2=dg*dg;bI=1.0;b0=4.1;db=0.9;db2=db*db;vI=0.35;v0=3.5;dv=0.7;dv2=dv*dv'">
+   <param name="A_05" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer='rojo=Rojo(long);verde=Verde(long);azul=Azul(long)'">
+   <param name="G_01" value="espacio='E1' tipo='texto' expresi&oacute;n='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs30 La \b frecuencia\b0  es una magnitud que mide  el n\u250 mero de repeticiones por\par unidad de tiempo de cualquier fen\u243 meno peri\u243 dico. Se expresa en her-\par cios (\b Hz\b0 ), \u161 en homenaje justamente a Heinrich Hertz!\par \par En fen\u243 menos ondulatorios, la \b frecuencia de onda\b0  es inversamente pro-\par porcional a la \b longitud de onda\b0 , como lo puedes observar abajo.\f3\fs30}' fuente='SansSerif,PLAIN,15' fijo='s&iacute;' info='texto principal'">
+   <param name="G_02" value="espacio='E1' tipo='texto' expresi&oacute;n='[120,440]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green65\blue72;\red32\green48\blue58;}\f1\fs30\b\cf0 Longitud de onda: \cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,15' fijo='s&iacute;' info='Longitud de onda'">
+   <param name="G_03" value="espacio='E1' tipo='texto' expresi&oacute;n='[120,480]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green65\blue72;\red32\green48\blue58;}\f1\fs30\b\cf0 Frecuencia de onda: \cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,15' fijo='s&iacute;' info='Frecuencia de onda:'">
+   <param name="G_04" value="espacio='E1' tipo='texto' expresi&oacute;n='[320,440]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green65\blue72;\red32\green48\blue58;}\f1\fs30\b\cf0 nm (nan\u243 metros) \cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,15' fijo='s&iacute;' info='nm'">
+   <param name="G_05" value="espacio='E1' tipo='texto' expresi&oacute;n='[320,480]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green65\blue72;\red32\green48\blue58;}\f1\fs30\b\cf0 THz (terahercios) \cf1\f2\fs30\b0}' fuente='SansSerif,BOLD,15' fijo='s&iacute;' info='THz'">
+   <param name="G_06" value="espacio='onda' tipo='ecuaci&oacute;n' color='(rojo,verde,azul,00)' expresi&oacute;n='y=h*sen((2*pi/(long/2))*x)/onda.escala' ancho='2'">
+   <param name="G_07" value="espacio='onda' tipo='segmento' expresi&oacute;n='(long/8,h/onda.escala+0.1)((long/8)+(long/2),h/onda.escala+0.1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs30\i Longitud\f2\fs30\i0}' fuente='SansSerif,ITALIC,15' fijo='s&iacute;' tama&ntilde;o='3' ancho='2' info='((long/4)/onda.escala,h/onda.escala)((5*(long/4))/onda.escala,h/onda.escala)'">
+</ajs></p>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Desarrollo</title>	
+	<script type='text/javascript' src='../lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="c0c0c0" leftmargin="0" topmargin="0">
+<ajs name="Descartes" width=970 height=550 code="Descartes">
+   <param name="tamaño" value="970x550">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.3.12, 2014-07-09">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='images/fondo.jpg' despl_imagen='arr-izq' fondo='c0d0d8' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R3' id='E2' x='55' y='115' ancho='430' alto='400' dibujar-si='sigue=0' escala='80' despl_imagen='arr-izq' fondo='fbfadc' despliegue='pintor' R3='sí'">
+   <param name="C_01" value="id='goTo2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' expresión='(880,22,30,30)' fijo='sí' visible='sí' fuente puntos='14' imagen='images/avanzar.png' acción='calcular' parámetro='parent.set(&squot;scene&squot;,2);\nparent.update()'">
+   <param name="C_02" value="id='n3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Continuar' expresión='(650,518,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='sigue=sigue+1' dibujar-si='sigue=0'">
+   <param name="C_03" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Regresar' expresión='(650,518,120,30)' fijo='sí' visible='sí' color='blanco' color-int='fff0f8ff' fuente puntos='18' imagen='images/btn120.png' acción='calcular' parámetro='sigue=sigue-1' dibujar-si='sigue=1'">
+   <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='titulo=&squot;Componentes rectangulares del momento&squot;' hacer='E2.rot.z=-20;E2.Oy=70;E2.Ox=-50;L=3;a=L*sqrt(3)/3;sigue=0'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='texto' fondo='sí' expresión='[(E1._w-_AnchoDeCadena_(titulo,&squot;SansSerif&squot;,&squot;PLAIN&squot;,&squot;30&squot;))/2,20]' texto='[titulo]' fuente='SansSerif,PLAIN,30' fijo='sí'">
+   <param name="G_02" value="espacio='E1' tipo='imagen' fondo='sí' coord_abs='sí' expresión='(710,315,.77,.92)' archivo='images/panel_550x435.png'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='sigue=0' expresión='[505,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red32\green48\blue58;\red0\green172\blue0;}\f1\fs36 La determinaci\u243 n del momento de una fuerza, en\par el espacio, se puede simplificar si la fuerza \cf0\b F\cf1\b0  y el\par vector de posici\u243 n \b\cf2 r\cf1\b0  (ver figura), se  expresan  en\par sus componentes rectangulares x, y y z.\par \par Las  componentes  de  la  fuerza \cf0\b F\cf1\b0  son Fx, Fy, Fz \par aplicadas en el punto A de  coordenadas  (x, y, z).\par Por otra parte, las componentes rectangulares del\par vector  de posici\u243 n r son  respectivamente iguales\par a las coordenadas x, y, y z del punto A, entonces:\f3\fs30}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='sigue=0' expresión='[561,341]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red32\green48\blue58;}\f1\fs40\b\cf0{\*\mjaformula r=xi+yj+zk}    \f2\fs40{\*\mjaformula F=F{\subix x}i+F{\subix y}j+F{\subix z}k}\cf1\f3\fs30\b0}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='sigue=0' expresión='[505,380]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs36 Substituyendo  estas  expresiones en la ecuaci\u243 n\par Mo = r x F y  considerando  que las  componentes\par de Mo son {\*\mjaformula M{\subix x}i+M{\subix y}j+M{\subix z}k{\subix}}, tendr\u237 amos:\f2\fs30\par \cf0\f3\fs36\b   {\*\mjaformula M{\subix x}=yF{\subix z}-zF{\subix y}},{\*\mjaformula M{\subix y}=zF{\subix x}-xF{\subix z}},{\*\mjaformula M{\subix z}=xF{\subix y}-yF{\subix x}}\cf1\f2\fs30\b0}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_06" value="espacio='E1' tipo='texto' dibujar-si='sigue' expresión='[505,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs36 Las  ecuaciones  anteriores se pueden organizar\par en forma de determinante, de  la siguiente forma:\par \par \fs40\b\cf0                  {\*\mjaformula Mo=Det{\matrix\rows 3\columns 3{\element i}{\element j}{\element k}{\element x}{\element y}{\element z}{\element F{\subix x}}{\element F{\subix y}}{\element F{\subix z}}}}\fs36\b0\par \cf1\par En el caso  de problemas que usan s\u243 lo el plano\par xy, como en  el  ejemplo de la  ventana izquierda,\par la  ecuaci\u243 n  que  podemos  usar  para el c\u225 lculo \par del momento ser\u237 a:\par \f3\fs30\par \f2\fs40\b               \cf0     {\*\mjaformula Mo=Mz=xF{\subix y}-yF{\subix x}}\cf1\f3\fs30\b0}' fuente='SansSerif,PLAIN,18' fijo='sí'">
+   <param name="G_07" value="espacio='E1' tipo='imagen' expresión='(-7.5,1.5)' archivo='images/2d.png'">
+   <param name="S_01" value="espacio='E2' tipo='segmento' color='66000000' expresión='(0,0,0)(0,0,3)' Nu='1'">
+   <param name="S_02" value="espacio='E2' tipo='punto' color='negro' expresión='(0,0,3.2)' texto=' y' fuente='SansSerif,BOLD,20' fijo='sí' ancho='.01'">
+   <param name="S_03" value="espacio='E2' tipo='segmento' color='66000000' expresión='(0,0,0)(0,3,0)' Nu='1'">
+   <param name="S_04" value="espacio='E2' tipo='punto' color='negro' expresión='(0,3,0)' texto='x' fuente='SansSerif,BOLD,20' fijo='sí' ancho='.1'">
+   <param name="S_05" value="espacio='E2' tipo='segmento' color='66000000' expresión='(0,0,0)(3,0,0)' Nu='1'">
+   <param name="S_06" value="espacio='E2' tipo='punto' color='negro' expresión='(3,0,0)' texto='z' fuente='SansSerif,BOLD,20' fijo='sí' ancho='.1'">
+   <param name="S_07" value="espacio='E2' tipo='cubo' color='41ffffff' color_reverso='41ffffff' expresión='Cubo' posini='(a/2,a/2,a/2)' modelo='alambre' ancho='L'">
+   <param name="S_08" value="espacio='E2' tipo='segmento' color='verde' expresión='(0,0,0)(0,0,a)' ancho='3' Nu='1'">
+   <param name="S_09" value="espacio='E2' tipo='segmento' color='verde' expresión='(0,0,0)(0,a,0)' ancho='3' Nu='1'">
+   <param name="S_10" value="espacio='E2' tipo='segmento' color='verde' expresión='(0,0,0)(a,0,0)' ancho='3' Nu='1'">
+   <param name="S_11" value="espacio='E2' tipo='segmento' color='verde' expresión='(0,0,0)(a,a,a)' ancho='3' Nu='1'">
+   <param name="S_12" value="espacio='E2' tipo='cono' color='3b00ff00' color_reverso='verde' expresión='Cono' rotini='(90,0,0)' posini='(0,a-.1,0)' modelo='metal' ancho='.2' largo='.2' alto='.2' Nu='20' Nv='1'">
+   <param name="S_13" value="espacio='E2' tipo='cono' color='3b00ff00' color_reverso='verde' expresión='Cono' rotini='(0,-90,0)' posini='(a-.1,0,0)' modelo='metal' ancho='.2' largo='.2' alto='.2' Nu='20' Nv='1'">
+   <param name="S_14" value="espacio='E2' tipo='cono' color='3b00ff00' color_reverso='verde' expresión='Cono' rotini='(0,180,0)' posini='(0,0,a-.1)' modelo='metal' ancho='.2' largo='.2' alto='.2' Nu='20' Nv='1'">
+   <param name="S_15" value="espacio='E2' tipo='cono' color='3b00ff00' color_reverso='verde' expresión='Cono' rotini='(135,45,0)' posini='(a-.1,a-.1,a-.1)' modelo='metal' ancho='.2' largo='.2' alto='.2' Nu='20' Nv='1'">
+   <param name="S_16" value="espacio='E2' tipo='punto' color='verde' expresión='(a/2,a/2,a/2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;}\f1\fs40\cf0 r}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="S_17" value="espacio='E2' tipo='punto' color='verde' expresión='(a/2,0,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green255\blue0;}\f1\fs40\cf0 zk\cf1}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="S_18" value="espacio='E2' tipo='punto' color='verde' expresión='(0,a/2,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green255\blue0;}\f1\fs40\cf0 xi\cf1}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="S_19" value="espacio='E2' tipo='punto' color='verde' expresión='(0,0,a/2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green255\blue0;}\f1\fs40\cf0 yj\cf1}' fuente='SansSerif,PLAIN,20' fijo='sí'">
+   <param name="S_20" value="espacio='E2' tipo='segmento' color='rojo' expresión='(a,a,a)(a,a,a+1)' ancho='3' Nu='1'">
+   <param name="S_21" value="espacio='E2' tipo='segmento' color='rojo' expresión='(a,a,a)(a,a+1,a)' ancho='3' Nu='1'">
+   <param name="S_22" value="espacio='E2' tipo='segmento' color='rojo' expresión='(a,a,a)(a+1,a,a)' ancho='3' Nu='1'">
+   <param name="S_23" value="espacio='E2' tipo='cono' color='44ff0000' color_reverso='44ff0000' expresión='Cono' rotini='(90,0,0)' posini='(a,a+1,a)' modelo='metal' ancho='.15' largo='.15' alto='.15' Nu='20' Nv='1'">
+   <param name="S_24" value="espacio='E2' tipo='cono' color='14ff0000' color_reverso='14ff0000' expresión='Cono' rotini='(0,-90,0)' posini='(a+1,a,a)' modelo='metal' ancho='.15' largo='.15' alto='.15' Nu='20' Nv='1'">
+   <param name="S_25" value="espacio='E2' tipo='cono' color='14ff0000' color_reverso='14ff0000' expresión='Cono' rotini='(0,180,0)' posini='(a,a,a+1)' modelo='metal' ancho='.15' largo='.15' alto='.15' Nu='20' Nv='1'">
+   <param name="S_26" value="espacio='E2' tipo='punto' color='14ff0000' expresión='(a,a,a+1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green0\blue0;}\cf0\f1\fs40\b  {\*\mjaformula F{\subix y}j}\fs36}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="S_27" value="espacio='E2' tipo='punto' color='rojo' expresión='(a,a+.9,a)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b  {\*\mjaformula F{\subix x}i}\fs36}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="S_28" value="espacio='E2' tipo='punto' color='rojo' expresión='(a+1,a,a)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs40\b  {\*\mjaformula F{\subix z}k}\fs36}' fuente='SansSerif,BOLD,20' fijo='sí'">
+   <param name="S_29" value="espacio='E2' tipo='punto' expresión='(a,a,a)' texto='A(x,y,z)' fijo='sí'">
+   <param name="S_30" value="espacio='E2' tipo='punto' expresión='(0,0,0)' texto='O' fijo='sí'">
+</ajs>
+
+</body>
+</html>
